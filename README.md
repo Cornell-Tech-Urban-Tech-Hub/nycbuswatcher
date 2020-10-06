@@ -20,8 +20,8 @@ Fetches list of active routes from OneBusAway API via asynchronous http requests
     - MapBox
 
     ```txt
-    API_KEY = fasjhfasfajskjrwer242jk424242'
-    MAPBOX_API_KEY = pk.ey42424fasjhfasfajskjrwer242jk424242'
+    API_KEY = 'fasjhfasfajskjrwer242jk424242'
+    MAPBOX_API_KEY = 'pk.ey42424fasjhfasfajskjrwer242jk424242'
     ```
     
 3. build and run the images
