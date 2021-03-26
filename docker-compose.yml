@@ -15,7 +15,7 @@ services:
       MYSQL_PASSWORD: bustime
       TZ: America/New_York
     ports:
-      - 6033:3306
+      - 6033:3306 # n.b this is only for external connections
     volumes:
       - bus_database:/var/lib/mysql
 

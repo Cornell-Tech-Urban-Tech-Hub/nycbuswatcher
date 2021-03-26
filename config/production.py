@@ -1,5 +1,5 @@
 config = {
     'dbhost': 'db',
-    'dbport': '6033',
+    'dbport': '3306',
     'http_connections': 20
 }
