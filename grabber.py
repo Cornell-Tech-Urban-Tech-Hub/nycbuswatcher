@@ -70,6 +70,7 @@ def get_db_args():
     return (config.config['dbuser'],
             config.config['dbpassword'],
             dbhost,
+            config.config['dbport'],
             config.config['dbname']
             )
 

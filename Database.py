@@ -11,11 +11,11 @@ def create_table(db_url):
     engine = create_engine(db_url, echo=False)
     Base.metadata.create_all(engine)
 
-def get_db_url(dbuser,dbpassword,dbhost,dbname):
-    return 'mysql://{}:{}@{}/{}'.format(dbuser,dbpassword,dbhost,dbname)
+def get_db_url(dbuser,dbpassword,dbhost,dbport,dbname):
+    return 'mysql://{}:{}@{}:{}/{}'.format(dbuser,dbpassword,dbhost,dbport,dbname)
 
-def get_session(dbuser,dbpassword,dbhost,dbname):
-    engine = create_engine(get_db_url(dbuser,dbpassword,dbhost,dbname), echo=False)
+def get_session(dbuser,dbpassword,dbhost,dbport,dbname):
+    engine = create_engine(get_db_url(dbuser,dbpassword,dbhost,dbport,dbname), echo=False)
     Session = sessionmaker(bind=engine)
     session = Session()
     return session
