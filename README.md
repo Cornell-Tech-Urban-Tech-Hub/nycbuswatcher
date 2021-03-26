@@ -15,13 +15,13 @@ Fetches list of active routes from OneBusAway API via asynchronous http requests
 
     `git clone https://github.com/anthonymobile/nycbuswatcher.git`
     
-2. obtain API keys and put them in .env
+2. create a `.env.` file in the top folder of the repo (or use the one provided), and obtain and enter your API keys 
     - http://bustime.mta.info/wiki/Developers/Index/
     - MapBox
 
     ```txt
-    API_KEY = fasjhfasfajskjrwer242jk424242'
-    MAPBOX_API_KEY = pk.ey42424fasjhfasfajskjrwer242jk424242'
+    API_KEY = fasjhfasfajskjrwer242jk424242
+    MAPBOX_API_KEY = pk.ey42424fasjhfasfajskjrwer242jk424242
     ```
     
 3. build and run the images
