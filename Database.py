@@ -56,6 +56,7 @@ def parse_buses(timestamp, route, data, db_url):
                         val = b['MonitoredVehicleJourney'][v[0]][v[1]][v[2]][v[3]] # bug b[
                         # 'MonitoredVehicleJourney']['MonitoredCall']['Extensions']['Capacities'][
                         # 'EstimatedPassengerCount'] works
+                        setattr(bus, k, val)
                     else:
                         val = b['MonitoredVehicleJourney'][v[0]]
                         setattr(bus, k, val)
