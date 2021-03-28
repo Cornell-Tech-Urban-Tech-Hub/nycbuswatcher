@@ -56,11 +56,13 @@ Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous h
     python grabber.py -p # production: runs in infinite loop at set interval using scheduler (hardcoded for now)
     ```
 
-## usage 
+# usage 
 
-if you just want to test out the grabber, you can run `export PYTHON_ENV=development; python grabber.py -l` and it will run once, dump the responses to a pile of files, and quit after throwing a database connection error. (or not, if you did step 3 in "manual" above) 
+## 1. localhost production mode
 
-## troubleshooting docker stack
+if you just want to test out the grabber, you can run `export PYTHON_ENV=development; python grabber.py -l` and it will run once, dump the responses to a pile of files, and quit after throwing a database connection error. (or not, if you did step 3 in "manual" above). if you have a mysql database running it will operate in production mode locally until stopped.
+
+## 2. docker stack
 
 ### grabber
 
@@ -95,12 +97,23 @@ talking to a database inside a docker container is a little weird
      FROM buses GROUP BY service_date, date_format(timestamp,'%Y-%m-%d %H-%i');
     ```
 
+## 3. API
+
+The API returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time. e.g.
+
+Required arguments: `output, route_short, start, end`
+Output must be `json` for now, other formats may be supported in the future. Also try to limit to one hour of data per request.
+
+```json
+http://127.0.0.:5000/api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
+```
+
+
 
 # master to-do list
 Can draw on these for our project steps as we have time/interest/relevance.
 
 1. **Batch processor for archives.** Script or switch that can unzip/tar and parse JSON API responses through parser, db_dump.
-2. **Bulk query API.** Bulk query API for all buses in the system during {time period}. Requires ISO 8601 datetime range ike `/trips&start=2020-08-11T14:42:00+00:00&end=2020-08-11T15:12:00+00:00` per [urschrei](https://twitter.com/urschrei/status/1309473665789165569). Can use a query filter to enforce a maximum interval of 1 hour? (for now). What fields should the API return?
 3. **Replace flask frontend.** Rebuild entire front end as a Gatsby app (using the [gatsby-starter-mapbox](https://github.com/anthonymobile/gatsby-starter-mapbox) and [gatsby-start-mapbox-examples](https://github.com/astridx/gatsby-starter-mapbox-examples) templates).
 4. **Parser extension.** Ad parsing for the MonitoredCall portion of API response for each bus (currently skipped).
 5. **New parser/parser plug-in for SIRIStopMonitoring API.** [SIRIStopMonitoring](http://bustime.mta.info/wiki/Developers/SIRIStopMonitoring) reports info on individual stops, 1 at a time only.
