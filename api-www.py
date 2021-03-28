@@ -1,5 +1,7 @@
 import os
 from datetime import date, datetime
+from dateutil import parser
+
 
 from flask import Flask, render_template, request, jsonify, abort, send_from_directory
 from flask_cors import CORS
@@ -54,10 +56,16 @@ def query_builder(parameters):
         if field == 'output':
             continue
         elif field == 'start':
-            query_suffix = query_suffix + '{} >= "{}" AND '.format('timestamp',value)
+            query_suffix = query_suffix + '{} >= "{}" AND '\
+                .format('timestamp',parser.isoparse(value.replace(" ", "+", 1)))
+                # replace is a hack but gets the job done because + was stripped from url replaced by space
             continue
         elif field == 'end':
-            query_suffix = query_suffix + '{} < "{}" AND '.format('timestamp', value)
+            query_suffix = query_suffix + '{} < "{}" AND '\
+                .format('timestamp', parser.isoparse(value.replace(" ", "+", 1)))
+            continue
+        elif field == 'route_short':
+            query_suffix = query_suffix + '{} = "{}" AND '.format('route_short', value)
             continue
         else:
             query_suffix = query_suffix + '{} = "{}" AND '.format(field,value)
@@ -76,6 +84,7 @@ def results_to_FeatureCollection(results):
             if isinstance(v, (datetime, date)):
                 v = v.isoformat()
             feature['properties'][k] = v
+        print (feature)
         geojson['features'].append(feature)
     return geojson
 
@@ -120,6 +129,12 @@ class LiveMap(Resource):
         #todo change results = {'observations': sparse_unpack_for_livemap(query)}
         geojson = results_to_FeatureCollection(results)
         return geojson
+class LiveMap2(Resource):
+    def get(self):
+        import geojson
+        with open('./api-www/static/lastknownpositions.geojson', 'r') as infile:
+            return geojson.load(infile)
+
 
 #--- ALL OBSERVATIONS FOR A SINGLE UNIQUE TRIP (GEOJSON or KEPLER TABLE) ---#
 
@@ -129,29 +144,30 @@ class TripQuerySchema(Schema):
     trip_id = fields.Str(required=True)
     output = fields.Str(required=True)
 
-trip_schema = TripQuerySchema()
-
-
-class TripAPI(Resource):
-    def get(self):
-        errors = trip_schema.validate(request.args)
-        if errors:
-            abort(400, str(errors))
-        conn = db_connect.connect()
-        query_suffix = query_builder(request.args)
-        query = conn.execute("SELECT * FROM buses WHERE {}".format(query_suffix ))
-        results = {'observations': unpack_query_results(query)}
-        if request.args['output'] == 'geojson':
-            return results_to_FeatureCollection(results)
-        elif request.args['output'] == 'kepler':
-            return jsonify(results_to_KeplerTable(results))
-
+# trip_schema = TripQuerySchema()
+#
+#
+# class TripAPI(Resource):
+#     def get(self):
+#         errors = trip_schema.validate(request.args)
+#         if errors:
+#             abort(400, str(errors))
+#         conn = db_connect.connect()
+#         query_suffix = query_builder(request.args)
+#         query = conn.execute("SELECT * FROM buses WHERE {}".format(query_suffix ))
+#         results = {'observations': unpack_query_results(query)}
+#         if request.args['output'] == 'geojson':
+#             return results_to_FeatureCollection(results)
+#         elif request.args['output'] == 'kepler':
+#             return jsonify(results_to_KeplerTable(results))
+#
 
 #--- ALL OBSERVATIONS FOR A WHOLE SYSTEM FOR A TIME PERIOD (GEOJSON or KEPLER TABLE) ---#
 
 class SystemQuerySchema(Schema):
-    start = fields.DateTime(required=False)  # bug ISO 8601 ? e.g. 2020-08-11T14:42:00+00:00
-    end = fields.DateTime(required=False)  # bug ISO 8601 ? e.g. 2020-08-11T15:12:00+00:00
+    route_short = fields.Str(required=True)
+    start = fields.Str(required=False)  # in ISO 8601 e.g. 2020-08-11T14:42:00+00:00
+    end = fields.Str(required=False)  # in ISO 8601 e.g. 2020-08-11T15:12:00+00:00
     output = fields.Str(required=True)
 
 system_schema = SystemQuerySchema()
@@ -162,32 +178,37 @@ class SystemAPI(Resource):
         if errors:
             abort(400, str(errors))
         conn = db_connect.connect()
+        query_prefix = "SELECT * FROM buses WHERE {}"
         query_suffix = query_builder(request.args)
-        query = conn.execute("SELECT * FROM buses WHERE {}".format(query_suffix ))
+        query_compound = query_prefix.format(query_suffix )
+        # print (query_compound)
+        query = conn.execute(query_compound)
         results = {'observations': unpack_query_results(query)}
+        # print (results)
         if request.args['output'] == 'geojson':
             return results_to_FeatureCollection(results)
         elif request.args['output'] == 'kepler':
             return results_to_KeplerTable(results)
 
 
-class LiveMap2(Resource):
-    def get(self):
-        import geojson
-        with open('./api-www/static/lastknownpositions.geojson', 'r') as infile:
-            return geojson.load(infile)
-
-
-
 #--- URLS ---#
 api.add_resource(KnownRoutes, '/api/v1/nyc/knownroutes')
 api.add_resource(LiveMap, '/api/v1/nyc/livemap')
 api.add_resource(LiveMap2, '/api/v1/nyc/livemap2')
-api.add_resource(TripAPI, '/api/v1/nyc/trips', endpoint='trips') #todo test /trips endpoints
-api.add_resource(SystemAPI, '/api/v1/nyc/buses', endpoint='buses') #todo test /buses endpoints
+# api.add_resource(TripAPI, '/api/v1/nyc/trips', endpoint='trips')
 
 
-#-----------------------------------------------------------------------------------------
+#--------VIP ENDPOINT
+# gives out all positions on a given 'route_short' during the specific interval in ISO 8601 format
+# from 'start'
+# to 'end'
+# output=json for now
+api.add_resource(SystemAPI, '/api/v1/nyc/buses', endpoint='buses')
+# todo for testing
+# /api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-04-30T00:00:00+00:00
+
+
+
 #-----------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------
 

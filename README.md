@@ -102,7 +102,7 @@ talking to a database inside a docker container is a little weird
 The API returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time. e.g.
 
 Required arguments: `output, route_short, start, end`
-Output must be `json` for now, other formats may be supported in the future. Also try to limit to one hour of data per request.
+Output must be `geojson` for now, other formats may be supported in the future. Also try to limit to one hour of data per request.
 
 ```json
 http://127.0.0.:5000/api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00

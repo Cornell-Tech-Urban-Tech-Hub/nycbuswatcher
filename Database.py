@@ -53,9 +53,7 @@ def parse_buses(timestamp, route, data, db_url):
                         val = b['MonitoredVehicleJourney'][v[0]][v[1]]
                         setattr(bus, k, val)
                     elif len(v) == 4:
-                        val = b['MonitoredVehicleJourney'][v[0]][v[1]][v[2]][v[3]] # bug b[
-                        # 'MonitoredVehicleJourney']['MonitoredCall']['Extensions']['Capacities'][
-                        # 'EstimatedPassengerCount'] works
+                        val = b['MonitoredVehicleJourney'][v[0]][v[1]][v[2]][v[3]]
                         setattr(bus, k, val)
                     else:
                         val = b['MonitoredVehicleJourney'][v[0]]

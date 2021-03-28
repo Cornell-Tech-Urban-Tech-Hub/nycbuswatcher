@@ -205,8 +205,6 @@ def async_grab_and_store():
                     n.start_soon(grabber, s, path, route_id )
 
     trio.run(main, path_list)
-
-
     timestamp = dump_to_file(feeds)
     dump_to_lastknownpositions(feeds)
     num_buses = dump_to_db(timestamp, feeds)
@@ -214,7 +212,6 @@ def async_grab_and_store():
     print('Fetched {} buses on {} routes in {:2f} seconds to gzipped archive and mysql database.\n'.format(
     num_buses,len(feeds),(end - start)))
     return
-
 
 
 if __name__ == "__main__":
@@ -232,16 +229,6 @@ if __name__ == "__main__":
     if os.environ['PYTHON_ENV'] == "production":
         interval = 60
         print('Scanning on {}-second interval.'.format(interval))
-        # scheduler = BackgroundScheduler({
-        #                                     'apscheduler.jobstores.default':
-        #                                         {
-        #                                             'type': 'sqlalchemy',
-        #                                             'url': 'sqlite:///jobs.sqlite'
-        #                                         },
-        #                                     'apscheduler.job_defaults.coalesce': 'false',
-        #                                     'apscheduler.job_defaults.max_instances': '3',
-        #                                     'apscheduler.timezone': 'UTC',
-        #                                 })
         scheduler = BackgroundScheduler()
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
         scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') #run at 2am daily
