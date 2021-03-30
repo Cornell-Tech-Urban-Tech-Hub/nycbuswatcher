@@ -5,6 +5,10 @@ from sqlalchemy import Column, Date, DateTime, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 
 
+# v1.0 to v1.11 manual migration
+# ALTER TABLE buses ADD(passenger_count varchar(31));
+#
+
 Base = declarative_base()
 
 def create_table(db_url):
