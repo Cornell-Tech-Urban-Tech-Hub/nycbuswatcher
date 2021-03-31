@@ -30,7 +30,7 @@ from config import config
 #--------------- INITIALIZATION ---------------
 
 db_connect = create_engine(db.get_db_url(config.config['dbuser'], config.config['dbpassword'], config.config[
-    'dbhost'], config.config['dbport'], config.config['dbname'])) # todo need a production override for this to set
+    'dbhost'], config.config['dbport'], config.config['dbname']))
 # to 'localhost' for debugging?
 app = Flask(__name__,template_folder='./api-www/templates',static_url_path='/static',static_folder="api-www/static/")
 api = Api(app)
@@ -44,7 +44,6 @@ def unpack_query_results(query):
 
 def sparse_unpack_for_livemap(query):
     unpacked = [dict(zip(tuple(query.keys()), i)) for i in query.cursor]
-    #todo return a much smaller
     sparse_results = []
     for row in unpacked:
         sparse_results.append('something')
@@ -55,11 +54,16 @@ def query_builder(parameters):
     for field, value in parameters.items():
         if field == 'output':
             continue
+
+
+        # todo query optimization--convert this to get the date part of the start date and query service_date instead
         elif field == 'start':
             query_suffix = query_suffix + '{} >= "{}" AND '\
                 .format('timestamp',parser.isoparse(value.replace(" ", "+", 1)))
                 # replace is a hack but gets the job done because + was stripped from url replaced by space
             continue
+
+        # todo query optimization--convert this to get the date part of the start date and query service_date instead
         elif field == 'end':
             query_suffix = query_suffix + '{} < "{}" AND '\
                 .format('timestamp', parser.isoparse(value.replace(" ", "+", 1)))
@@ -124,9 +128,8 @@ class KnownRoutes(Resource):
 class LiveMap(Resource):
     def get(self):
         conn = db_connect.connect()
-        query = conn.execute("SELECT * FROM buses WHERE timestamp >= NOW() - INTERVAL 60 SECOND;") #todo refine this to smooth out
+        query = conn.execute("SELECT * FROM buses WHERE timestamp >= NOW() - INTERVAL 60 SECOND;")
         results = {'observations': unpack_query_results(query)}
-        #todo change results = {'observations': sparse_unpack_for_livemap(query)}
         geojson = results_to_FeatureCollection(results)
         return geojson
 class LiveMap2(Resource):
@@ -181,7 +184,7 @@ class SystemAPI(Resource):
         query_prefix = "SELECT * FROM buses WHERE {}"
         query_suffix = query_builder(request.args)
         query_compound = query_prefix.format(query_suffix )
-        # print (query_compound)
+        print (query_compound)
         query = conn.execute(query_compound)
         results = {'observations': unpack_query_results(query)}
         # print (results)
@@ -204,7 +207,6 @@ api.add_resource(LiveMap2, '/api/v1/nyc/livemap2')
 # to 'end'
 # output=json for now
 api.add_resource(SystemAPI, '/api/v1/nyc/buses', endpoint='buses')
-# todo for testing
 # /api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-04-30T00:00:00+00:00
 
 
@@ -229,8 +231,7 @@ def occupancy():
 def faq():
     return render_template('faq.html')
 
-# todo pretty clear the browser is caching this
-# todo wrap this in an http header?
+# is the browser still caching this — wrap this in an http header to expire it?
 @app.route('/api/v1/nyc/lastknownpositions')
 def lkp():
     print (app.static_folder)

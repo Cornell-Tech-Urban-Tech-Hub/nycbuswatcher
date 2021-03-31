@@ -113,6 +113,7 @@ http://127.0.0.:5000/api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-
 # master to-do list
 Can draw on these for our project steps as we have time/interest/relevance.
 
+1. **database optimization.** Field types, add indices in the ORM model or on the server? Query optimization, etc.
 1. **Batch processor for archives.** Script or switch that can unzip/tar and parse JSON API responses through parser, db_dump.
 3. **Replace flask frontend.** Rebuild entire front end as a Gatsby app (using the [gatsby-starter-mapbox](https://github.com/anthonymobile/gatsby-starter-mapbox) and [gatsby-start-mapbox-examples](https://github.com/astridx/gatsby-starter-mapbox-examples) templates).
 4. **Parser extension.** Ad parsing for the MonitoredCall portion of API response for each bus (currently skipped).

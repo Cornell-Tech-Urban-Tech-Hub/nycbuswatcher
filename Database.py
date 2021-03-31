@@ -43,7 +43,7 @@ def parse_buses(timestamp, route, data, db_url):
               'progress_rate': ['ProgressRate'],
               'progress_status': ['ProgressStatus'],
               'occupancy': ['Occupancy'],
-              'vehicle_id':['VehicleRef'], #todo use this to lookup if articulated or not https://en.wikipedia.org/wiki/MTA_Regional_Bus_Operations_bus_fleet
+              'vehicle_id':['VehicleRef'], #use this to lookup if articulated or not https://en.wikipedia.org/wiki/MTA_Regional_Bus_Operations_bus_fleet
               'gtfs_block_id':['BlockRef'],
               'passenger_count': ['MonitoredCall', 'Extensions','Capacities','EstimatedPassengerCount']
               }

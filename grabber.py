@@ -131,7 +131,7 @@ def dump_to_lastknownpositions(feeds):
                     p = geojson.Point((b['MonitoredVehicleJourney']['VehicleLocation']['Longitude'],
                                        b['MonitoredVehicleJourney']['VehicleLocation']['Latitude']))
 
-                    # todo warning this creates a gigantic file, need to be more selective with fields
+                    # this creates a gigantic file, need to be more selective with fields
                     # f = geojson.Feature(geometry=p, properties=flatten(b['MonitoredVehicleJourney']))
 
                     # this version only shows ones with reported values
@@ -143,10 +143,9 @@ def dump_to_lastknownpositions(feeds):
                     except KeyError:
                         occupancy = {'occupancy': 'empty'}
 
-                    try: #bug finish coding + debugging here
+                    try:
                         passengers={'passengers': str(b['MonitoredVehicleJourney']['MonitoredCall']['Extensions'][
                             'Capacities']['EstimatedPassengerCount'])}
-                        print('{} passengers seen'.format(passengers))
                     except KeyError:
                         passengers = {'passengers': '0'}
 
@@ -196,7 +195,7 @@ def async_grab_and_store():
         from asks.sessions import Session
 
         if args.localhost is True:
-            s = Session('http://bustime.mta.info', connections=5) #todo load this from config!
+            s = Session('http://bustime.mta.info', connections=5)
         else:
             s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
         async with trio.open_nursery() as n:
@@ -216,7 +215,7 @@ def async_grab_and_store():
 
 if __name__ == "__main__":
 
-    print('NYC MTA BusTime API Scraper v1.0. October 2020. Anthony Townsend <atownsend@cornell.edu>')
+    print('NYC MTA BusTime API Scraper v1.11. March 2021. Anthony Townsend <atownsend@cornell.edu>')
     print('mode: {}'.format(os.environ['PYTHON_ENV']))
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
