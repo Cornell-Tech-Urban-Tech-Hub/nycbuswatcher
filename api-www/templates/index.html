@@ -42,7 +42,7 @@
           </li>
         </ul>
       <div class="container">
-        <span class="text-white">Circle ~ # of passengers (max. 40). Red is full. Small, green dots are empty buses.
+        <span class="text-white">Circle ~ # of passengers (max. 40). Green=empty, red=full, black=not equipped w/ occupancy sensor.
         </span>
       </div>
       </div>
@@ -129,7 +129,8 @@
                     'circle-color': {
                         property: 'passengers',
                         stops: [
-                        [0, '#23bf06'],
+                        [0, '#000000'],
+                        [1, '#23bf06'],
                         [40, '#e55e5e']
                         ]
                         },
