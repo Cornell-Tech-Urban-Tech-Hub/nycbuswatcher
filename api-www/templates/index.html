@@ -121,26 +121,31 @@
                 'id': 'buses',
                 'type': 'circle',
                 'source': 'observations',
+
+                {#v1 based on https://docs.mapbox.com/mapbox-gl-js/example/cluster/#}
+
                 'paint': {
-                'circle-radius':
-                    ["interpolate", ["linear"], ["zoom"],
-                        0, 0,
-                        20, ['*', 2, ['get', 'passengers']]],
-
-
-                    'circle-color': [
-                        'match',
-                        ['get', 'passengers'],
-                        '10',
-                        '#e55e5e',
-                        '5',
-                        '#FFFF00',
-                        '0',
-                        '#00FF00',
-                        /* null */ '#426578'
+                        'circle-color': [
+                                'step',
+                                    ['get', 'passengers'],
+                                '#000000',
+                                1,
+                                '#f1f075',
+                                10,
+                                '#f28cb1'
+                            ],
+                        'circle-radius': [
+                            'step',
+                                ['get', 'passengers'],
+                                    2,
+                                    1,
+                                    4,
+                                    10,
+                                    8
                         ]
-                        },
-            });
+
+                        }
+                });
             });
 
 
