@@ -149,7 +149,7 @@ def dump_to_lastknownpositions(feeds):
                     except KeyError:
                         passengers = {'passengers': '0'}
 
-                    f = geojson.Feature(geometry=p, properties=[occupancy,passengers])
+                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers})
 
                     f_list.append(f)
             except KeyError: # no VehicleActivity?

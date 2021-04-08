@@ -42,8 +42,7 @@
           </li>
         </ul>
       <div class="container">
-        <span class="text-muted"><span style="color: #87CEFA">blue</span> no occupancy data reported <span style="color: #00FF00">green</span> seats available <span style="color: #FFFF00">yellow</span> standing room only <span style="color: #e55e5e">red</span> full
-
+        <span class="text-muted">Colored circles indicate buses reporting passenger count, sized proportional to #.
         </span>
       </div>
       </div>
@@ -131,14 +130,14 @@
 
                     'circle-color': [
                         'match',
-                        ['get', 'occupancy'],
-                        'full',
+                        ['get', 'passengers'],
+                        '10',
                         '#e55e5e',
-                        'standingAvailable',
+                        '5',
                         '#FFFF00',
-                        'seatsAvailable',
+                        '0',
                         '#00FF00',
-                        /* null */ '#87CEFA'
+                        /* null */ '#426578'
                         ]
                         },
             });
