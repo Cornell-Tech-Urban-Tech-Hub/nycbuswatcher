@@ -42,7 +42,7 @@
           </li>
         </ul>
       <div class="container">
-        <span class="text-muted">Colored circles indicate buses reporting passenger count, sized proportional to #.
+        <span class="text-white">Circle ~ # of passengers (max. 40). Red is full. Small, green dots are empty buses.
         </span>
       </div>
       </div>
@@ -122,27 +122,29 @@
                 'type': 'circle',
                 'source': 'observations',
 
-                {#v1 based on https://docs.mapbox.com/mapbox-gl-js/example/cluster/#}
+                {#v2 based on https://blog.mapbox.com/introducing-data-driven-styling-in-mapbox-gl-js-f273121143c3#}
 
                 'paint': {
-                        'circle-color': [
-                                'step',
-                                    ['get', 'passengers'],
-                                '#000000',
-                                1,
-                                '#f1f075',
-                                10,
-                                '#f28cb1'
-                            ],
-                        'circle-radius': [
-                            'step',
-                                ['get', 'passengers'],
-                                    2,
-                                    1,
-                                    4,
-                                    10,
-                                    8
+
+                    'circle-color': {
+                        property: 'passengers',
+                        stops: [
+                        [0, '#23bf06'],
+                        [40, '#e55e5e']
                         ]
+                        },
+
+                    'circle-radius': {
+                        property: 'passengers',
+                        stops: [
+                        [{zoom: 8, value: 0}, 2],
+                        [{zoom: 8, value: 40}, 3],
+                        [{zoom: 11, value: 0}, 2],
+                        [{zoom: 11, value: 40}, 9],
+                        [{zoom: 16, value: 0}, 2],
+                        [{zoom: 16, value: 40}, 40]
+                        ]
+                        }
 
                         }
                 });
