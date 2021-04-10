@@ -144,12 +144,12 @@ def dump_to_lastknownpositions(feeds):
                         occupancy = {'occupancy': 'empty'}
 
                     try:
-                        passengers={'passengers': str(b['MonitoredVehicleJourney']['MonitoredCall']['Extensions'][
+                        passengers={'passengers': int(b['MonitoredVehicleJourney']['MonitoredCall']['Extensions'][
                             'Capacities']['EstimatedPassengerCount'])}
                     except KeyError:
-                        passengers = {'passengers': '0'}
+                        passengers = {'passengers': 0}
 
-                    f = geojson.Feature(geometry=p, properties=[occupancy,passengers])
+                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers})
 
                     f_list.append(f)
             except KeyError: # no VehicleActivity?

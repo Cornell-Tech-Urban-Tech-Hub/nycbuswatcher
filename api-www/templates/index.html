@@ -18,6 +18,20 @@
       z-index:2;
       background: white;
     }
+    {# .floating{#}
+    {#  position: relative; left:10%; top: 10%;#}
+    {#  max-width: 200px;#}
+    {#  z-index:2;#}
+    {#  background: white;#}
+    {#}#}
+     .floating{
+      position: absolute; width: 30%; top: 100px; left: 100px;
+      z-index:2;
+      background: white;
+    }
+
+
+
 
 </style>
 </head>
@@ -25,7 +39,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark overlap">
-      <a class="navbar-brand" >NYCBusWatcher</a>
+      <a class="navbar-brand" >NYCBusWatcher </a>
+
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,14 +54,17 @@
             <a class="nav-link" href="/faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/anthonymobile/nycbuswatcher">Code</a>
+            <a class="nav-link" href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher">Code</a>
           </li>
         </ul>
-      <div class="container">
-        <span class="text-muted"><span style="color: #87CEFA">blue</span> no occupancy data reported <span style="color: #00FF00">green</span> seats available <span style="color: #FFFF00">yellow</span> standing room only <span style="color: #e55e5e">red</span> full
 
-        </span>
-      </div>
+          <div class="container">
+              </div>
+          <div class="float-right">
+              <a class="navbar-brand" href="https://urban.tech.cornell.edu/" ><img src="static/jacobs.png" height="60"></a>
+          </div>
+
+
       </div>
 
     </nav>
@@ -54,7 +73,11 @@
     <div id="map">
     </div>
 
-
+    <div class="floating container m-5">
+        <h3>How Many Passengers?</h3>
+      Red buses are crowded, green buses have fewer passengers. The size of each circle shows how many people are on board. Gray circles mark buses that don't have occupancy sensors yet.
+<P></P>
+        </div>
 
 
     <script>
@@ -122,26 +145,34 @@
                 'id': 'buses',
                 'type': 'circle',
                 'source': 'observations',
+
+                {#v2 based on https://blog.mapbox.com/introducing-data-driven-styling-in-mapbox-gl-js-f273121143c3#}
+
                 'paint': {
-                'circle-radius':
-                    ["interpolate", ["linear"], ["zoom"],
-                        0, 0,
-                        20, ['*', 2, ['get', 'passengers']]],
 
-
-                    'circle-color': [
-                        'match',
-                        ['get', 'occupancy'],
-                        'full',
-                        '#e55e5e',
-                        'standingAvailable',
-                        '#FFFF00',
-                        'seatsAvailable',
-                        '#00FF00',
-                        /* null */ '#87CEFA'
+                    'circle-color': {
+                        property: 'passengers',
+                        stops: [
+                        [0, '#6F6F6F'],
+                        [1, '#23bf06'],
+                        [40, '#e55e5e']
                         ]
                         },
-            });
+
+                    'circle-radius': {
+                        property: 'passengers',
+                        stops: [
+                        [{zoom: 8, value: 0}, 1],
+                        [{zoom: 8, value: 40}, 4],
+                        [{zoom: 11, value: 0}, 3],
+                        [{zoom: 11, value: 40}, 15],
+                        [{zoom: 16, value: 0}, 10],
+                        [{zoom: 16, value: 40}, 50]
+                        ]
+                        }
+
+                        }
+                });
             });
 
 

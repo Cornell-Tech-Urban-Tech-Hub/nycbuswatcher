@@ -207,7 +207,7 @@ api.add_resource(LiveMap2, '/api/v1/nyc/livemap2')
 # to 'end'
 # output=json for now
 api.add_resource(SystemAPI, '/api/v1/nyc/buses', endpoint='buses')
-# /api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-04-30T00:00:00+00:00
+# /api/v1/nyc/buses?output=geojson&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-04-30T00:00:00+00:00
 
 
 
