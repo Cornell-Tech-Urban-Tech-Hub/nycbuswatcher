@@ -18,6 +18,20 @@
       z-index:2;
       background: white;
     }
+    {# .floating{#}
+    {#  position: relative; left:10%; top: 10%;#}
+    {#  max-width: 200px;#}
+    {#  z-index:2;#}
+    {#  background: white;#}
+    {#}#}
+     .floating{
+      position: absolute; width: 30%; top: 100px; left: 100px;
+      z-index:2;
+      background: white;
+    }
+
+
+
 
 </style>
 </head>
@@ -25,7 +39,9 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark overlap">
-      <a class="navbar-brand" >NYCBusWatcher</a>
+      <a class="navbar-brand" >NYCBusWatcher </a>
+
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,13 +54,17 @@
             <a class="nav-link" href="/faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/anthonymobile/nycbuswatcher">Code</a>
+            <a class="nav-link" href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher">Code</a>
           </li>
         </ul>
-      <div class="container">
-        <span class="text-white">Circle ~ # of passengers (max. 40). Green=empty, red=full, black=not equipped w/ occupancy sensor.
-        </span>
-      </div>
+
+          <div class="container">
+              </div>
+          <div class="float-right">
+              <a class="navbar-brand" href="https://urban.tech.cornell.edu/" ><img src="static/jacobs.png" height="60"></a>
+          </div>
+
+
       </div>
 
     </nav>
@@ -53,7 +73,11 @@
     <div id="map">
     </div>
 
-
+    <div class="floating container m-5">
+        <h3>How Many Passengers?</h3>
+      Red buses are crowded, green buses have fewer passengers. The size of each circle shows how many people are on board. Black dots are buses that don't have occupancy sensors yet.
+<P></P>
+        </div>
 
 
     <script>
@@ -129,7 +153,7 @@
                     'circle-color': {
                         property: 'passengers',
                         stops: [
-                        [0, '#000000'],
+                        [0, '#6F6F6F'],
                         [1, '#23bf06'],
                         [40, '#e55e5e']
                         ]
@@ -138,12 +162,12 @@
                     'circle-radius': {
                         property: 'passengers',
                         stops: [
-                        [{zoom: 8, value: 0}, 2],
-                        [{zoom: 8, value: 40}, 3],
-                        [{zoom: 11, value: 0}, 2],
-                        [{zoom: 11, value: 40}, 9],
-                        [{zoom: 16, value: 0}, 2],
-                        [{zoom: 16, value: 40}, 40]
+                        [{zoom: 8, value: 0}, 1],
+                        [{zoom: 8, value: 40}, 4],
+                        [{zoom: 11, value: 0}, 3],
+                        [{zoom: 11, value: 40}, 15],
+                        [{zoom: 16, value: 0}, 10],
+                        [{zoom: 16, value: 40}, 50]
                         ]
                         }
 

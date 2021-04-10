@@ -45,19 +45,17 @@
         </p>
 
         <p class="pt-5"><h2>What is NYCBusWatcher?</h2>
-        NYCBusWatcher is an ongoing resarch project that aims to collect, analyze, and archive real-time location data of vehicles in the MTA New York City bus system. It was launched in September 2020 with the goal of monitoring bus service during the recovery from the COVID-19 pandemic including:
+        NYCBusWatcher is an ongoing research project that aims to collect, analyze, and archive real-time location data of vehicles in the MTA New York City bus system. It was launched in September 2020 with the goal of monitoring bus service during the recovery from the COVID-19 pandemic including:
         <ul>
-            <li>
-                reduced travel speeds due to the resumption of vehicle traffic,
-            </li>
+            <li>reduced travel speeds due to the resumption of vehicle traffic, </li>
             <li>schedule changes due to MTA's deteriorating fiscal situation, </li>
             <li>and crowding conditions indicated by new vehicle occupancy sensors deployed by the MTA on selected vehicles in 2020.</li>
             </ul>
 
         </p>
 
-               <p class="pt-5"><h2>What do the colored dots indicate?</h2>
-        As of October 2020, we're useing the main map to call attention to occupancy data. Blue dots are buses not reporting occupancy. Green indicates seat available, orange means standing-room only, and red is full.</a></p>
+        <p class="pt-5"><h2>What do the colored dots indicate?</h2>
+        Each dot represents a bus in active service. Colored dots range from red (heavily loaded) to green (lightly loaded), and are sized based on the total number of passengers. Black dots do not have occupancy sensors installed and are not reporting passenger counts. Positions are updated every 60 seconds.</p>
 
 
         <p class="pt-5"><h2>Isn't someone else already doing this?</h2>
@@ -65,13 +63,15 @@
 
 
         <p class="pt-5"><h2>Who made it?</h2>
-        NYC BusWatcher is produced by <a href="https://urbantech.jacobs.cornell.edu/">the Urban Tech Hub at Cornell Tech.</a></p>
+        NYC BusWatcher is produced by <a href="https://urbantech.jacobs.cornell.edu/">the Urban Tech Hub</a>, part of the Jacobs Technion-Cornell Institute at Cornell Tech.</p>
 
         <p class="pt-5">
         <h2>Where does the data come from?</h2>
-        All data is retreieved automatcially from the <a href="https://bustime.mta.info/wiki/Developers/Index">MTA BusTime and OneBusAway APIs</a>.</p>
+        All data is retrieved programmatically from the <a href="https://bustime.mta.info/wiki/Developers/Index">MTA BusTime and OneBusAway APIs</a>.</p>
 
-       <p class="pt-5"><h2>Can I have access to the data?</h2>We are developing an API and will update plans soon. Please contact us at urbantech@cornell.edu to discuss data needs in the meantime.</p>
+       <p class="pt-5"><h2>Can I have access to the data?</h2>
+
+        Certainly! We have an API that provides access to detailed position data. Please contact us at urbantech at cornell.edu for access.</p>
 
 
 
@@ -81,7 +81,7 @@
 
     <footer class="text-center">
 
-            <small> &copy; 2018–<script>document.write(new Date().getFullYear())</script> <a href="https://urbantech.network" title="Urban Tech Hub">Urban Tech Hub</a>
+            <small> &copy; 2020–<script>document.write(new Date().getFullYear())</script> <a href="https://urbantech.network" title="Urban Tech Hub">Urban Tech Hub</a>
             </small>
 
     </footer>
