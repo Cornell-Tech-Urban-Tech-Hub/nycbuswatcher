@@ -149,7 +149,22 @@ def dump_to_lastknownpositions(feeds):
                     except KeyError:
                         passengers = {'passengers': 0}
 
-                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers})
+                    try:
+                        lineref={'lineref':b['MonitoredVehicleJourney']['LineRef']}
+                    except KeyError:
+                        lineref = {'lineref': 'n/a'}
+
+                    try:
+                        vehicleref={'vehicleref':b['MonitoredVehicleJourney']['VehicleRef']}
+                    except KeyError:
+                        vehicleref = {'vehicleref': 'n/a'}
+
+                    try:
+                        trip_id={'trip_id':b['MonitoredVehicleJourney']['FramedVehicleJourneyRef']['DatedVehicleJourneyRef']}
+                    except:
+                        trip_id = {'trip_id': 'n/a'}
+
+                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers,**lineref,**trip_id,**vehicleref})
 
                     f_list.append(f)
             except KeyError: # no VehicleActivity?
