@@ -175,27 +175,26 @@ api.add_resource(SystemAPI, '/api/v1/nyc/buses', endpoint='buses')
 #-----------------------------------------------------------------------------------------
 
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
-@app.route('/map')
-def map():
-    return render_template('map.html')
-
-@app.route('/occupancy')
-def occupancy():
-    return render_template('occupancy.html')
-
-@app.route('/faq')
-def faq():
-    return render_template('faq.html')
-
-# is the browser still caching this — wrap this in an http header to expire it?
-@app.route('/api/v1/nyc/lastknownpositions')
-def lkp():
-    print (app.static_folder)
-    return send_from_directory(app.static_folder,'lastknownpositions.geojson')
+# is the browser s# @app.route('/')
+# # def index():
+# #     return render_template('index.html')
+# #
+# # @app.route('/map')
+# # def map():
+# #     return render_template('map.html')
+# #
+# # @app.route('/occupancy')
+# # def occupancy():
+# #     return render_template('occupancy.html')
+# #
+# # @app.route('/faq')
+# # def faq():
+# #     return render_template('faq.html')till caching this — wrap this in an http header to expire it?
+# @app.route('/api/v1/nyc/lastknownpositions')
+# def lkp():
+#     print (app.static_folder)
+#     return send_from_directory(app.static_folder,'lastknownpositions.geojson')
 
 if __name__ == '__main__':
     app.run(debug=True)
