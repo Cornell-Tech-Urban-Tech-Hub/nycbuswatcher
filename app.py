@@ -4,15 +4,14 @@ api_url = "http://127.0.01:5000/api/v1/nyc/livemap"
 JACOBS_LOGO = "/assets/jacobs.png"
 
 
-# todo adapt this starter template from https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-spatial-clustering
-# todo and pull my data from http://nyc.buswatcher.org/api/v1/nyc/livemap
-
-
-# todo add stamen
-# todo add the base map and styling
-# todo add popups with bus metadata (route, trip, bus id)
 # todo add zoom
 # todo add a route filter dropdown with callback
+# todo change api call to get a time period data from the datetime API endpoint and
+# todo style base map and controls
+# ----- using https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html?highlight=scatter_mapbox
+# todo
+# todo pull data from live api
+
 
 import requests
 import json
@@ -57,8 +56,10 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("Map", href="")),
         dbc.NavItem(dbc.NavLink("Code", href="/faq")),
         dbc.NavItem(dbc.NavLink("FAQ", href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher")),
-        html.A(dbc.Row([dbc.Col(html.Img(src=JACOBS_LOGO, height="100px"))],
-                       ))],
+        # html.A(dbc.Row([dbc.Col(html.Img(src=JACOBS_LOGO, height="100px"))],
+        # ))
+
+        ],
 
     brand="NYCBuswatcher",
     brand_href="#",
@@ -70,15 +71,15 @@ def get_map():
 
     buses_gdf = remoteGeoJSONToGDF(api_url)
 
-    # todo use this page https://plotly.com/python/scattermapbox/
-
     fig = px.scatter_mapbox(buses_gdf,
                             lat=buses_gdf.geometry.y,
                             lon=buses_gdf.geometry.x,
+                            size='passengers',
+                            color='passengers',
+                            # animation_frame='timestamp',
                             hover_name="lineref",
-                            hover_data=["trip_id", "vehicleref"],
-                            zoom=10,
-                            height=900)
+                            hover_data=["trip_id","vehicleref"],
+                            zoom=11)
 
     fig.update_layout(mapbox_style="stamen-toner")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
@@ -87,9 +88,9 @@ def get_map():
 
 
 app.layout = \
-    html.Div(
-        [navbar,
-         dcc.Graph(figure=get_map())]
+    html.Div([navbar,dcc.Graph(figure=get_map(),
+                       style={'height': '100vh'}
+                                 )]
 
     )
 
