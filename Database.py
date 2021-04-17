@@ -95,11 +95,10 @@ class BusObservation(Base):
     origin_id=Column(String(31))
     destination_id=Column(String(31))
     destination_name=Column(String(127))
-    next_stop_id=Column(String(63)) #todo db migration add column
-    next_stop_eta=Column(String(63)) #todo db migration add column
-    #todo change above to datetime?
-    next_stop_d_along_route=Column(Float) #todo db migration add column
-    next_stop_d=Column(Float) #todo db migration add column
+    next_stop_id=Column(String(63))
+    next_stop_eta=Column(String(63)) #todo change to datetime?
+    next_stop_d_along_route=Column(Float)
+    next_stop_d=Column(Float)
     alert=Column(String(127))
     lat=Column(Float)
     lon=Column(Float)
