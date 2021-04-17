@@ -1,8 +1,51 @@
 # NYC MTA BusTime Scraper
 This is a tagline.
 
-#### v1.11 2021 Mar 26
+#### v1.2 2021 Apr 19
 Anthony Townsend <atownsend@cornell.edu>
+
+## database migration plan
+
+1. stop the stack
+
+    ```bash
+    cd nycbuswatcher
+    docker-compose down
+    ```
+
+1. dump the db to a backup
+
+    ```bash
+    mysqldump buses buses | gzip -c > "buses.through.$(date +"%Y_%m_%d_%I_%M_%p").sql.gz"
+    ```
+    
+2. move it somewhere safe
+
+2. add 4 new columns to table
+
+    ```sql
+    ALTER TABLE buses ADD next_stop_id varchar(63) ;
+    ALTER TABLE buses ADD next_stop_eta varchar(63) ;
+    ALTER TABLE buses ADD next_stop_d_along_route float ;
+    ALTER TABLE buses ADD next_stop_d float ;
+    ```
+
+5. pull the newest code and deploy it
+
+    ```bash
+    git pull
+    git checkout new_dashboard
+    docker-compose up -d --build
+    ```
+6. debugging possibilities
+
+    - need to delete the static volume?
+    
+        ```bash
+        docker volume rm buswatcher_1_bus_static
+        ```
+
+
 
 ## function
 

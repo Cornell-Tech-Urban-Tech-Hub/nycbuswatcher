@@ -221,7 +221,7 @@ def update_route_map():
 
     feature_collection = gj.FeatureCollection(features_container)
 
-    with open('api-www/static/route_shapes_nyc.geojson', 'w') as outfile:
+    with open('api/static/route_shapes_nyc.geojson', 'w') as outfile:
         gj.dump(feature_collection, outfile)
 
     for file in filelist:

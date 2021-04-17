@@ -193,7 +193,7 @@ def dump_to_lastknownpositions(feeds):
                 pass
     fc = geojson.feature.FeatureCollection(f_list)
 
-    with open('./api-www/static/lastknownpositions.geojson', 'w') as outfile:
+    with open('./api/static/lastknownpositions.geojson', 'w') as outfile:
         geojson.dump(fc, outfile)
 
     return

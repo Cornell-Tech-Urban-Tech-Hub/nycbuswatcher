@@ -32,7 +32,7 @@ from config import config
 db_connect = create_engine(db.get_db_url(config.config['dbuser'], config.config['dbpassword'], config.config[
     'dbhost'], config.config['dbport'], config.config['dbname']))
 # to 'localhost' for debugging?
-app = Flask(__name__,template_folder='./api-www/templates',static_url_path='/static',static_folder="api-www/static/")
+app = Flask(__name__,template_folder='./api/templates',static_url_path='/static',static_folder="api-www/static/")
 api = Api(app)
 CORS(app)
 
@@ -120,7 +120,7 @@ def results_to_FeatureCollection(results):
 class LiveMap(Resource):
     def get(self):
         import geojson
-        with open('./api-www/static/lastknownpositions.geojson', 'r') as infile:
+        with open('./api/static/lastknownpositions.geojson', 'r') as infile:
             return geojson.load(infile)
 
 class RouteQuerySchema(Schema):
