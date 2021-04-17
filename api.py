@@ -72,7 +72,6 @@ def query_builder(parameters):
             interval_start = value
             continue
 
-        # todo query optimization--convert this to get the date part of the start date and query service_date instead
         elif field == 'end':
 
             # if request is for more than one hour, truncate it to 1 hour
@@ -90,11 +89,6 @@ def query_builder(parameters):
                         'timestamp',
                         parser.isoparse(value.replace(" ", "+", 1))
                         )
-
-
-
-
-
 
             continue
         elif field == 'route_short':

@@ -9,6 +9,10 @@ from sqlalchemy.ext.declarative import declarative_base
 # ALTER TABLE buses ADD(passenger_count varchar(31));
 #
 
+# v1.11 to v1.2 manual migration
+# see below
+#
+
 Base = declarative_base()
 
 def create_table(db_url):
@@ -24,6 +28,7 @@ def get_session(dbuser,dbpassword,dbhost,dbport,dbname):
     session = Session()
     return session
 
+
 def parse_buses(timestamp, route, data, db_url):
     lookup = {'route_long':['LineRef'],
               'direction':['DirectionRef'],
@@ -35,7 +40,10 @@ def parse_buses(timestamp, route, data, db_url):
               'origin_id':['OriginRef'],
               'destination_id':['DestinationRef'],
               'destination_name':['DestinationName'],
-              # 'scheduled_origin':['OriginAimedDepartureTime'], # appears to be omitted from feed
+              'next_stop_id': ['MonitoredCall','StopPointRef'], #<-- GTFS of next stop
+              'next_stop_eta': ['MonitoredCall','ExpectedArrivalTime'], # <-- eta to next stop
+              'next_stop_d_along_route': ['MonitoredCall','Extensions','Distances','CallDistanceAlongRoute'], # <-- The distance of the stop from the beginning of the trip/route
+              'next_stop_d': ['MonitoredCall','Extensions','Distances','DistanceFromCall'], # <-- The distance of the stop from the beginning of the trip/route
               'alert': ['SituationRef', 'SituationSimpleRef'],
               'lat':['VehicleLocation','Latitude'],
               'lon':['VehicleLocation','Longitude'],
@@ -87,7 +95,11 @@ class BusObservation(Base):
     origin_id=Column(String(31))
     destination_id=Column(String(31))
     destination_name=Column(String(127))
-    # scheduled_origin=Column(String) # appears to be omitted from feed
+    next_stop_id=Column(String(63)) #todo db migration add column
+    next_stop_eta=Column(String(63)) #todo db migration add column
+    #todo change above to datetime?
+    next_stop_d_along_route=Column(Float) #todo db migration add column
+    next_stop_d=Column(Float) #todo db migration add column
     alert=Column(String(127))
     lat=Column(Float)
     lon=Column(Float)

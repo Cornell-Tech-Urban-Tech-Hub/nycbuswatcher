@@ -164,7 +164,29 @@ def dump_to_lastknownpositions(feeds):
                     except:
                         trip_id = {'trip_id': 'n/a'}
 
-                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers,**lineref,**trip_id,**vehicleref})
+                    try:
+                        next_stop_id={'next_stop_id':b['MonitoredVehicleJourney']['MonitoredCall']['StopPointRef']}
+                    except:
+                        next_stop_id = {'next_stop_id': 'n/a'}
+
+                    try:
+                        next_stop_eta={'next_stop_eta':b['MonitoredVehicleJourney']['MonitoredCall']['ExpectedArrivalTime']}
+                    except:
+                        next_stop_eta = {'next_stop_eta': 'n/a'}
+
+                    try:
+                        next_stop_d_along_route={'next_stop_d_along_route':b['MonitoredVehicleJourney']['MonitoredCall']['Extensions']['Distances'][
+                        'CallDistanceAlongRoute']}
+                    except:
+                        next_stop_d_along_route = {'next_stop_d_along_route': 'n/a'}
+
+                    try:
+                        next_stop_d={'next_stop_d':b['MonitoredVehicleJourney']['MonitoredCall']['Extensions']['Distances']['DistanceFromCall']}
+                    except:
+                        next_stop_d = {'next_stop_d': 'n/a'}
+
+
+                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers,**lineref,**trip_id,**vehicleref,**next_stop_id,**next_stop_eta,**next_stop_d_along_route,**next_stop_d})
 
                     f_list.append(f)
             except KeyError: # no VehicleActivity?

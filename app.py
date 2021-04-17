@@ -4,14 +4,13 @@ api_url = "http://127.0.01:5000/api/v1/nyc/livemap"
 JACOBS_LOGO = "/assets/jacobs.png"
 
 
-# todo add zoom
-# todo add a route filter dropdown with callback
-# todo change api call to get a time period data from the datetime API endpoint and
 # todo style base map and controls
 # ----- using https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html?highlight=scatter_mapbox
-# todo
-# todo pull data from live api
-
+# todo customize popup fields and text
+# todo add zoom control
+# todo add a route filter selector with callback
+# todo change api call to get a time period data from the datetime API endpoint (or use last hour)
+# todo add a datetime selector and callback
 
 import requests
 import json
@@ -76,6 +75,7 @@ def get_map():
                             lon=buses_gdf.geometry.x,
                             size='passengers',
                             color='passengers',
+                            color_continuous_scale=['#23bf06','#e55e5e'],
                             # animation_frame='timestamp',
                             hover_name="lineref",
                             hover_data=["trip_id","vehicleref"],
@@ -88,14 +88,26 @@ def get_map():
 
 
 app.layout = \
-    html.Div([navbar,dcc.Graph(figure=get_map(),
-                       style={'height': '100vh'}
-                                 )]
+    html.Div([
+        navbar,
+        dcc.Graph(id='map',
+                      figure=get_map(),
+                      style={
+                          'height': '100vh'
+                      }
+                  ),
+        dcc.Interval(
+            id='30-second-interval',
+            interval=30000,  # milliseconds
+            n_intervals=0
+        ),
+    ])
 
-    )
-
-
-
+# based on https://towardsdatascience.com/python-for-data-science-advanced-guide-to-plotly-dash-interactive-visualizations-8586b0895032
+@app.callback(Output('map','figure'),[Input('30-second-interval', 'n_intervals')])
+def update_layout(n):
+    figure=get_map() #todo debug this?
+    return figure
 
 
 if __name__ == "__main__":
