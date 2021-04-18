@@ -104,17 +104,13 @@ def get_bus_map():
                             title='Passenger Counts: Active Buses',
                             zoom=11)
 
-    # todo add route map layer, (ensuring its visible?)
-    # todo need to unpack the routemap geojson
-    route_json = requests.get(routemap_url).json()
-
-    gdf = gpd.GeoDataFrame.from_features(requests.get(routemap_url).json()['features'])
-
-    fig.add_scattermapbox(gdf,
-                mode="lines",
-                line=dict(width=8, color="#F00")
-            )
-
+    # todo add route map layer, need to unpack the routemap geojson
+    # route_json = requests.get(routemap_url).json()
+    # gdf = gpd.GeoDataFrame.from_features(requests.get(routemap_url).json()['features'])
+    # fig.add_scattermapbox(gdf,
+    #             mode="lines",
+    #             line=dict(width=8, color="#F00")
+    #         )
 
     fig.update_layout(mapbox_style="carto-positron")     # fig.update_layout(mapbox_style="stamen-toner")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
