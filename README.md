@@ -1,60 +1,87 @@
 # NYC MTA BusTime Scraper
-This is a tagline.
+
+# future work
+
+### finish new_dashboard
+1. migrate db to add new fields (DONE)
+1. finish TODOs and test locally
+1. push deploy commit to `new_dashboard` branch
+1. pull and deploy `new_dashboard` branch to server, rebuild containers
+1. after a week, merge `new_dashboard` branch to `master` and redeploy to server
+
+
+### reprocessor
+
+###### asap
+1. backup the main db
+    ```bash
+    mysqldump buses buses | gzip -c > "buses.through.$(date +"%Y_%m_%d_%I_%M_%p").sql.gz"
+    ```
+2. download it
+
+###### prototyping
+1. start protoyping in a notebook
+    - just use a copy of the database code for now
+    - dynamically create the `Table` class with `type()` like here on [StackOverflow](https://stackoverflow.com/questions/973481/dynamic-table-creation-and-orm-mapping-in-sqlalchemy)
+
+        ```python
+        from sqlalchemy.ext.declarative import declarative_base
+        from sqlalchemy import Column, Integer, String
+
+        Base = declarative_base()
+   
+        from datetime import datetime
+
+        tablename = 'buses' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
+
+        attribs = {
+            '__tablename__': tablename,
+            'test_id': Column(Integer, primary_key=True, autoincrement=True),
+            'fldA': Column(String),  
+            ... other columns
+            }
+        
+        Test = type('Test', (Base,), attribs )
+        
+        Base.metadata.create_all(engine)
+        
+        #  passed session create with sqlalchemy
+        session.query(Test).all() 
+        ```
+    - then map the `BusOservation` object model to this table?
+    
+2. requirements
+    - can crawl everything in the current folder
+    - can take a date range and just look for those files
+    - can open and unzip the files
+    - can pass the JSON responses through the same parser/duplicate parser
+    - Should compare existing records to ones it wants to add or update
+    - has a dry-run switch (by default) that says what it is going to write
+    - can use thesame db_dump or equivalent
+    - never overwrites anything that contains data (only inserts records and updates empty/null/0 fields)
+    
+###### building
+1. how much does it make sense to just copy the existing code (will my db change?) or does it make sense to refactor `Database.py` and `grabber.py` for maximum reusability?
+2. e.g. should grabber just have the async logic and the dump commands?
+
+###### deploying
+1. test first on a local server with a copy of the master db, dropping all but a month's worth or records
+
+
+
+
 
 #### v1.2 2021 Apr 19
 Anthony Townsend <atownsend@cornell.edu>
 
-## database migration plan
-
-1. stop the stack
-
-    ```bash
-    cd nycbuswatcher
-    docker-compose down
-    ```
-
-1. dump the db to a backup
-
-    ```bash
-    mysqldump buses buses | gzip -c > "buses.through.$(date +"%Y_%m_%d_%I_%M_%p").sql.gz"
-    ```
-    
-2. move it somewhere safe
-
-2. add 4 new columns to table
-
-    ```sql
-    ALTER TABLE buses ADD next_stop_id varchar(63) ;
-    ALTER TABLE buses ADD next_stop_eta varchar(63) ;
-    ALTER TABLE buses ADD next_stop_d_along_route float ;
-    ALTER TABLE buses ADD next_stop_d float ;
-    ```
-
-5. pull the newest code and deploy it
-
-    ```bash
-    git pull
-    git checkout new_dashboard
-    docker-compose up -d --build
-    ```
-6. debugging possibilities
-
-    - need to delete the static volume?
-    
-        ```bash
-        docker volume rm buswatcher_1_bus_static
-        ```
-
-
-
-## function
+## description
 
 Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous http requests, then cycles through and fetches current vehicle positions for all buses operating on these routes. This avoids the poor performance of trying to grab the entire system feed from the MTA BusTime SIRI API. Dumps full API response (for later reprocessing to extract additional data) to compressed individual files and most of the vehicle status fields to mysql table (the upcoming stop data is omitted from the database dump for now). Fully dockerized, runs on scheduler 1x per minute. Data storage requirments ~ 1-2 Gb/day (guesstimate).
 
 
 ## installation 
 
-### (docker)
+#### with docker-compose
 
 1. clone the repo
 
@@ -62,11 +89,9 @@ Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous h
     
 2. obtain API keys and put them in .env (quotes not needed apparently)
     - http://bustime.mta.info/wiki/Developers/Index/
-    - MapBox
 
     ```txt
     API_KEY = fasjhfasfajskjrwer242jk424242
-    MAPBOX_API_KEY = pk.ey42424fasjhfasfajskjrwer242jk424242
     ```
     
 3. build and run the images
@@ -76,7 +101,7 @@ Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous h
     docker-compose up -d --build
     ```
 
-### (manual)
+#### manual installation
 
 1. clone the repo
 
@@ -101,72 +126,57 @@ Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous h
     python grabber.py -p # production: runs in infinite loop at set interval using scheduler (hardcoded for now)
     ```
 
-# usage 
+## usage 
 
-## 1. localhost production mode
+#### 1. localhost production mode
 
 if you just want to test out the grabber, you can run `export PYTHON_ENV=development; python grabber.py -l` and it will run once, dump the responses to a pile of files, and quit after throwing a database connection error. (or not, if you did step 3 in "manual" above). if you have a mysql database running it will operate in production mode locally until stopped.
 
-## 2. docker stack
+#### 2. docker stack
 
-### grabber
 
-1. get a shell on the container and run another instance of the script, it should run with the same environment as the docker entrypoint and will spit out any errors that process is having without having to hunt around through log files
+###### dash
+- Dash app running the front end.
+
+####### api
+- Flask app providing the API endpoints:
+    - `/api/v1/nyc/livemap` Selected fields for buses seen in the last 60 seconds.
+    - `/api/v1/nyc/buses?` Returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time.
+    - Required:
+        - `output=geojson`
+        - `route_short` e.g. `Bx4`
+        - `start`
+        - `end` in ISO8601, max 1 hour. e.g.
+    - example: 
+        ```json
+        http://nyc.buswatcher.org/api/v1/nyc/buses?output=geojson&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
+        ```
+
+###### grabber
+- Daemon that uses apscheduler to trigger a set of asynchronous API requests to get each route's current bus locations, dump the responses to archive files, parse the response and dump that to the database. For debugging, its possible to get a shell on the container and run another instance of the script, it should run with the same environment as the docker entrypoint and will spit out any errors that process is having without having to hunt around through log files.
+
     ```
     docker exec -it nycbuswatcher_grabber_1 /bin/bash
     python buswatcher.py
     ```
- 
 
-### mysql database
-
-talking to a database inside a docker container is a little weird
-
-1. *connect to mysql inside a container* to start a mysql client inside a mysql docker container
-
+###### db
+- For debugging, run the mysql client directly inside the container.
+    
     ```
     docker exec -it nycbuswatcher_db_1 mysql -uroot -p buses
     [root password=bustime]
     ```
     
-2. quick diagnostic query for how many records per day
+- quick diagnostic query for how many records per day
 
     ```sql
-   SELECT service_date, COUNT(*) FROM buses GROUP BY service_date;
+    SELECT service_date, COUNT(*) FROM buses GROUP BY service_date;
     ```
-    
-3. query # of records by date/hour/minute
+
+- query # of records by date/hour/minute
 
     ```sql
      SELECT service_date, date_format(timestamp,'%Y-%m-%d %H-%i'), COUNT(*) \
      FROM buses GROUP BY service_date, date_format(timestamp,'%Y-%m-%d %H-%i');
     ```
-
-## 3. API
-
-The API returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time. e.g.
-
-Required arguments: `output, route_short, start, end`
-Output must be `geojson` for now, other formats may be supported in the future. Also try to limit to one hour of data per request.
-
-```json
-http://127.0.0.:5000/api/v1/nyc/buses?output=json&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
-```
-
-
-
-# master to-do list
-Can draw on these for our project steps as we have time/interest/relevance.
-
-1. **database optimization.** Field types, add indices in the ORM model or on the server? Query optimization, etc.
-1. **Batch processor for archives.** Script or switch that can unzip/tar and parse JSON API responses through parser, db_dump.
-3. **Replace flask frontend.** Rebuild entire front end as a Gatsby app (using the [gatsby-starter-mapbox](https://github.com/anthonymobile/gatsby-starter-mapbox) and [gatsby-start-mapbox-examples](https://github.com/astridx/gatsby-starter-mapbox-examples) templates).
-4. **Parser extension.** Ad parsing for the MonitoredCall portion of API response for each bus (currently skipped).
-5. **New parser/parser plug-in for SIRIStopMonitoring API.** [SIRIStopMonitoring](http://bustime.mta.info/wiki/Developers/SIRIStopMonitoring) reports info on individual stops, 1 at a time only.
-6. **OneBusAway API parser.** Route geometry from [OneBusAway API](http://bustime.mta.info/wiki/Developers/OneBusAwayRESTfulAPI) may be easier than working with the GTFS:
-            - Full information about each stop covered by MTA Bus Time (e.g. the lat/lon coordinates, stop name, list of routes serving that stop)
-            - The stops served by a given route
-            - The physical geometry for a given route (for mapping and geographic calculations) **MTA endpoint appears to be inoperative**
-            - The schedule of trips serving a given stop or route (repeat: schedule, having nothing to do with the real-time data)
-            - The stops or routes near a given location
-7. **GTFS Integration.** [Read this first](https://medium.com/analytics-vidhya/the-hitchhikers-guide-to-gtfs-with-python-e9790090952a)

@@ -10,8 +10,14 @@ from sqlalchemy.ext.declarative import declarative_base
 #
 
 # v1.11 to v1.2 manual migration
-# see below
-#
+# started 2021-04-18 11:14am
+# ALTER TABLE buses
+# ADD COLUMN next_stop_id varchar(63),
+# ADD COLUMN next_stop_eta varchar(63),
+# ADD COLUMN next_stop_d_along_route float,
+# ADD COLUMN next_stop_d float;
+
+
 
 Base = declarative_base()
 
