@@ -54,18 +54,16 @@ navbar = dbc.NavbarSimple(
     dark=True,
 )
 
+# todo 1 add a route filter selector with callback
 
-# todo add a route filter selector with callback
+
+# todo stand up a 2nd app on another page for the historical viewer with animated playback?
+
 # todo add a datetime selector and callback + change api call to get a time period data from the datetime API endpoint (or use last hour)
 # todo style base map and controls
 # ----- using https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html?highlight=scatter_mapbox
-# todo customize popup fields and text
+
 # todo add zoom control
-
-
-# todo debug this
-# https://community.plotly.com/t/how-do-i-plot-a-line-on-a-map-from-a-geojson-file/33320/2
-# https://plotly.com/python/lines-on-mapbox/
 
 
 def get_route_map():
@@ -88,31 +86,76 @@ def get_route_map():
 
 def get_bus_map():
     buses_gdf = remoteGeoJSONToGDF(api_url)
+
+
+    # todo 1 is there a way to further manipulate this figure using the https://plotly.com/python-api-reference/generated/plotly.graph_objects.Scattermapbox.html#plotly.graph_objects.Scattermapbox API?
     fig = px.scatter_mapbox(buses_gdf,
                             lat=buses_gdf.geometry.y,
                             lon=buses_gdf.geometry.x,
                             size='passengers',
-                            size_max=40,
+                            # todo how to make the buses with zero passengers appear?
+                            size_max=30,
                             color='passengers',
                             # color_continuous_scale=['#23bf06','#e55e5e'],
                             color_continuous_scale=[(0, "black"), (0.5, "green"), (1, "red")],
-                            range_color=[0,0], #todo how to make the buses with zero passengers appear?
                             hover_name="lineref",
-                            hover_data=["trip_id","vehicleref","next_stop_id","next_stop_eta","next_stop_d_along_route","next_stop_d"],
-                            # animation_group="vehicleref",
-                            # animation_frame="lineref",
-                            title='Passenger Counts: Active Buses',
+                            hover_data=["trip_id",
+                                        "vehicleref",
+                                        "next_stop_id",
+                                        "next_stop_eta",
+                                        "next_stop_d_along_route",
+                                        "next_stop_d"],
+                            # todo write labels for rest of hover fields
+                            labels={
+                                'trip_id':'GTFS Trip Identifier'
+                            },
+                            opacity=0.8,
                             zoom=11)
 
-    # todo add route map layer, need to unpack the routemap geojson
-    # route_json = requests.get(routemap_url).json()
-    # gdf = gpd.GeoDataFrame.from_features(requests.get(routemap_url).json()['features'])
-    # fig.add_scattermapbox(gdf,
-    #             mode="lines",
-    #             line=dict(width=8, color="#F00")
-    #         )
 
-    fig.update_layout(mapbox_style="carto-positron")     # fig.update_layout(mapbox_style="stamen-toner")
+    # # todo 1 add route map layer
+    # # api doc https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html
+    # # search for "add_scattermapbox"
+    # route_json = requests.get(routemap_url).json()
+    #
+    # # UNPACK THE COORDS FOR THE MULTILINESTRING
+    # coords = list()
+    # for feature in route_json["features"]:
+    #     for multiline in feature["geometry"]["coordinates"]:
+    #         try:
+    #             lat = np.array(multiline)[:, 1]
+    #             lon = np.array(multiline)[:, 0]
+    #             multiline_coords = [lat, lon]
+    #         except Exception as e:
+    #             # print('I got an error on but kept going: {}'.format(feature['properties']['route_id']))
+    #             pass
+    #         coords.append(multiline_coords)
+    # coord_array = np.array(coords, dtype=object)
+    #
+    # # https://community.plotly.com/t/how-do-i-plot-a-line-on-a-map-from-a-geojson-file/33320/2
+    # fig.add_scattermapbox(
+    #             lat=coord_array[:, 1],
+    #             lon=coord_array[:, 0],
+    #             mode="lines",
+    #             line={'width':8,
+    #                   'color':"#F00"
+    #             }
+    # )
+
+    #
+    # fig.update_layout(
+    #     margin={"r": 0, "t": 0, "l": 0, "b": 0},
+    #     mapbox=go.layout.Mapbox(
+    #         style="stamen-terrain",
+    #         zoom=10,
+    #         center_lat=40.5,
+    #         center_lon=-105.08,
+    #     )
+    # )
+    # fig.show()
+
+
+    fig.update_layout(mapbox_style="carto-positron")     # fig.update_layout(mapbox_style="stamen-toner") #todo comment this out to see the route_map?
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
 

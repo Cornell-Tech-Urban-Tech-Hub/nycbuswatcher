@@ -96,7 +96,7 @@ class BusObservation(Base):
     destination_id=Column(String(31))
     destination_name=Column(String(127))
     next_stop_id=Column(String(63))
-    next_stop_eta=Column(String(63)) #todo change to datetime?
+    next_stop_eta=Column(String(63)) #future change to datetime?
     next_stop_d_along_route=Column(Float)
     next_stop_d=Column(Float)
     alert=Column(String(127))
