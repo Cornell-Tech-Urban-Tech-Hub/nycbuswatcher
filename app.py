@@ -95,10 +95,10 @@ def get_bus_map():
                             size_max=40,
                             color='passengers',
                             # color_continuous_scale=['#23bf06','#e55e5e'],
-                            color_continuous_scale=[(0, "red"), (0.5, "green"), (1, "blue")],
+                            color_continuous_scale=[(0, "black"), (0.5, "green"), (1, "red")],
                             range_color=[0,0], #todo how to make the buses with zero passengers appear?
                             hover_name="lineref",
-                            hover_data=["trip_id","vehicleref"],
+                            hover_data=["trip_id","vehicleref","next_stop_id","next_stop_eta","next_stop_d_along_route","next_stop_d"],
                             # animation_group="vehicleref",
                             # animation_frame="lineref",
                             title='Passenger Counts: Active Buses',
