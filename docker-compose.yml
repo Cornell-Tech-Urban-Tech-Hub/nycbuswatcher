@@ -40,8 +40,9 @@ services:
       context: .
     volumes:
       - bus_static:/app/api/static
-    ports:
-      - "8001:80"
+# uncomment to make the API publicly available
+#    ports:
+#      - "8001:80"
     environment:
       - FLASK_APP=/app/api.py
       - FLASK_DEBUG=1 #future change this for deployment

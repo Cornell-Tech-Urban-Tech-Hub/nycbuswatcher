@@ -144,7 +144,7 @@ def get_bus_map():
     # fig.update_layout(mapbox_style="white-bg")
     fig.update_layout(mapbox_style="carto-positron")
     # fig.update_layout(mapbox_style="stamen-toner")
-    #fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
 
 

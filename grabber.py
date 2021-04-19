@@ -15,7 +15,7 @@ from config import config
 
 def get_db_args(): #todo refactor me into Database.py?
 
-    if args.localhost is True: #n.b. this ignores what's in config/development.py
+    if args.localhost is True: # todo fix this why does it ignore what's in config/development.py
         dbhost = 'localhost'
     elif os.environ['PYTHON_ENV'] == "development":
         dbhost = 'localhost'
