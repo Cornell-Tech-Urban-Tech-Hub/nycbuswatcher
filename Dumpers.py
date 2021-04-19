@@ -1,24 +1,13 @@
-import argparse
 import requests
 import os
 import glob, shutil
 import datetime
 import json
-import time
 import gzip
 import pickle
-import collections.abc
 
 import geojson
 
-from apscheduler.schedulers.background import BackgroundScheduler
-import trio
-from dotenv import load_dotenv
-
-import Database as db
-import GTFS2GeoJSON
-
-from config import config
 
 def get_path_list():
     path_list = []
@@ -72,6 +61,8 @@ def to_file(feeds):
     return timestamp
 
 
+# todo get more aggressive, rotate hourly?
+# todo check if actually deleting the old individual response files on last line
 # https://programmersought.com/article/77402568604/
 def rotate_files():
     today = datetime.date.today()
@@ -91,11 +82,11 @@ def rotate_files():
             with open(fn, 'rb') as rfp:
                 shutil.copyfileobj(rfp, wfp)
     for file in yesterday_gz_files:
-        os.remove(file)
+        os.remove(file) #bug
 
 
 
-def to_lastknownpositions(feeds):
+def to_lastknownpositions(feeds): #future please refactor me
     f_list=[]
     for route_bundle in feeds:
         for route_id,route_report in route_bundle.items():

@@ -1,10 +1,3 @@
-## config
-# api_url = "http://nyc.buswatcher.org/api/v1/nyc/livemap"
-api_url = "http://127.0.01:5000/api/v1/nyc/livemap"
-routemap_url = "http://nyc.buswatcher.org/static/route_shapes_nyc.geojson"
-JACOBS_LOGO = "/assets/jacobs.png"
-
-#imports
 import requests
 import json
 import numpy as np
@@ -19,6 +12,13 @@ import dash_bootstrap_components as dbc
 
 import plotly.graph_objects as go
 import plotly.express as px
+
+from config import config
+
+api_url = config.config['api_url']
+routemap_url = "http://nyc.buswatcher.org/static/route_shapes_nyc.geojson"
+JACOBS_LOGO = "/assets/jacobs.png"
+
 
 ## instantiate the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -54,16 +54,9 @@ navbar = dbc.NavbarSimple(
     dark=True,
 )
 
-# todo 1 add a route filter selector with callback
-
-
-# todo stand up a 2nd app on another page for the historical viewer with animated playback?
-
-# todo add a datetime selector and callback + change api call to get a time period data from the datetime API endpoint (or use last hour)
-# todo style base map and controls
-# ----- using https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html?highlight=scatter_mapbox
-
-# todo add zoom control
+# future add a route filter selector with callback
+# future stand up a 2nd app on another page for the historical viewer with animated playback?
+# future add a datetime selector and callback + change api call to get a time period data from the datetime API endpoint (or use last hour)
 
 
 def get_route_map():
@@ -85,35 +78,41 @@ def get_route_map():
 
 
 def get_bus_map():
+
     buses_gdf = remoteGeoJSONToGDF(api_url)
 
+    # scattermapbox api—not that many options for customization
+    # https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html
+    # https://plotly.com/python-api-reference/generated/plotly.graph_objects.Scattermapbox.html#plotly.graph_objects.Scattermapbox
 
-    # todo 1 is there a way to further manipulate this figure using the https://plotly.com/python-api-reference/generated/plotly.graph_objects.Scattermapbox.html#plotly.graph_objects.Scattermapbox API?
     fig = px.scatter_mapbox(buses_gdf,
-                            lat=buses_gdf.geometry.y,
-                            lon=buses_gdf.geometry.x,
-                            size='passengers',
-                            # todo how to make the buses with zero passengers appear?
-                            size_max=30,
-                            color='passengers',
-                            # color_continuous_scale=['#23bf06','#e55e5e'],
-                            color_continuous_scale=[(0, "black"), (0.5, "green"), (1, "red")],
-                            hover_name="lineref",
-                            hover_data=["trip_id",
-                                        "vehicleref",
-                                        "next_stop_id",
-                                        "next_stop_eta",
-                                        "next_stop_d_along_route",
-                                        "next_stop_d"],
-                            # todo write labels for rest of hover fields
-                            labels={
-                                'trip_id':'GTFS Trip Identifier'
-                            },
-                            opacity=0.8,
-                            zoom=11)
+        lat=buses_gdf.geometry.y,
+        lon=buses_gdf.geometry.x,
+        size='passengers', # bug how to make the buses with zero passengers appear? can see the hover data
+        size_max=30,
+        color='passengers',
+        # color_continuous_scale=['#23bf06','#e55e5e'],
+        color_continuous_scale=[(0, "black"), (0.5, "green"), (1, "red")],
+        hover_name="lineref",
+        hover_data=["trip_id",
+                    "vehicleref",
+                    "next_stop_id",
+                    "next_stop_eta",
+                    "next_stop_d_along_route",
+                    "next_stop_d"],
+        labels={
+            'trip_id':'Trip (GTFS): ',
+            'vehicleref':'Vehicle (GTFS): ',
+            'next_stop_id':'Next Stop (GTFS): ',
+            'next_stop_eta': 'ETA: ',
+            'next_stop_d':'Distance to Next Stop (m): ',
+            'next_stop_d_along_route': 'Distance traveled on route (m): '
+        },
+        opacity=0.8,
+        zoom=11)
 
 
-    # # todo 1 add route map layer
+    # # bug make route map layer display
     # # api doc https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html
     # # search for "add_scattermapbox"
     # route_json = requests.get(routemap_url).json()
@@ -138,25 +137,14 @@ def get_bus_map():
     #             lon=coord_array[:, 0],
     #             mode="lines",
     #             line={'width':8,
-    #                   'color':"#F00"
+    #                   'color':"#000"
     #             }
     # )
 
-    #
-    # fig.update_layout(
-    #     margin={"r": 0, "t": 0, "l": 0, "b": 0},
-    #     mapbox=go.layout.Mapbox(
-    #         style="stamen-terrain",
-    #         zoom=10,
-    #         center_lat=40.5,
-    #         center_lon=-105.08,
-    #     )
-    # )
-    # fig.show()
-
-
-    fig.update_layout(mapbox_style="carto-positron")     # fig.update_layout(mapbox_style="stamen-toner") #todo comment this out to see the route_map?
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+    # fig.update_layout(mapbox_style="white-bg")
+    fig.update_layout(mapbox_style="carto-positron")
+    # fig.update_layout(mapbox_style="stamen-toner")
+    #fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
 
 

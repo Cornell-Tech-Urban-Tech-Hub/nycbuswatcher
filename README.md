@@ -1,4 +1,3 @@
-# NYC MTA BusTime Scraper
 
 # future work
 
@@ -12,15 +11,19 @@
 
 ### reprocessor
 
-###### asap
+##### asap
+1. finish db migration, adding 4 columns for `MonitoredStop`
 1. backup the main db
     ```bash
     mysqldump buses buses | gzip -c > "buses.through.$(date +"%Y_%m_%d_%I_%M_%p").sql.gz"
     ```
 2. download it
 
-###### prototyping
-1. start protoyping in a notebook
+##### prototyping
+1. assemble sample data
+    - dump a month's worth of records from the server database
+    - grab a month's worth of archived repsonse from the server /data locker
+2. start protoyping in a notebook
     - just use a copy of the database code for now
     - dynamically create the `Table` class with `type()` like here on [StackOverflow](https://stackoverflow.com/questions/973481/dynamic-table-creation-and-orm-mapping-in-sqlalchemy)
 
@@ -50,29 +53,31 @@
         ```
     - then map the `BusOservation` object model to this table?
     
-2. requirements
+3. basic requirements
     - can crawl everything in the current folder
     - can take a date range and just look for those files
     - can open and unzip the files
     - can pass the JSON responses through the same parser/duplicate parser
+    - can connect to two SQlalchemy tables (`buses` and the temp one it wants to write, unless dry-)
     - Should compare existing records to ones it wants to add or update
-    - has a dry-run switch (by default) that says what it is going to write
-    - can use thesame db_dump or equivalent
+    - two levels of failsafe
+        - has a dry-run switch (by default) that says what it is going to write
+        - has a real-update switch (off by default) that makes it update the master db 
+    - can use the same db_dump or equivalent
     - never overwrites anything that contains data (only inserts records and updates empty/null/0 fields)
     
-###### building
-1. how much does it make sense to just copy the existing code (will my db change?) or does it make sense to refactor `Database.py` and `grabber.py` for maximum reusability?
-2. e.g. should grabber just have the async logic and the dump commands?
+##### from prototying to development
+1. separate script—just implement the prototype notebook as a separate script, copy the code and hope we dont need to update it later
+2. refactor-finish refactoring `grabber.py` and `Database.py`?
 
-###### deploying
+##### from development to production
 1. test first on a local server with a copy of the master db, dropping all but a month's worth or records
 
 
 
-
-
-#### v1.2 2021 Apr 19
-Anthony Townsend <atownsend@cornell.edu>
+# NYC MTA BusTime Scraper
+- v1.2 2021 Apr 19
+- Anthony Townsend <atownsend@cornell.edu>
 
 ## description
 

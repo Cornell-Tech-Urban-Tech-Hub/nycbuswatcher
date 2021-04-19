@@ -33,14 +33,15 @@ services:
       # tail -f /dev/null
       /opt/conda/envs/nycbuswatcher/bin/python3 /app/grabber.py
 
+#future will need to route this through the nginx proxy
   api:
     restart: always
     build:
       context: .
     volumes:
-      - bus_static:/app/app/static
+      - bus_static:/app/api/static
     ports:
-      - "80:80"
+      - "8001:80"
     environment:
       - FLASK_APP=/app/api.py
       - FLASK_DEBUG=1 #future change this for deployment
@@ -49,24 +50,31 @@ services:
     # Infinite loop, to keep it alive, for debugging
     # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
 
-  # todo dockerize the dash app
-  ## follow this https://ldnicolasmay.medium.com/deploying-a-free-dash-open-source-app-from-a-docker-container-with-gunicorn-3f426b5fd5df
-#  www:
+  # after https://github.com/sladkovm/docker-flask-gunicorn-nginx
+  dash_app:
+    restart: always
+    build:
+      context: .
+    volumes:
+      - bus_assets:/app/assets # <---------------------------------------------------------------------------------
+    ports:
+      - "8000:8000" # <---------------------------------------------------------------------------------
+#    environment:
+#      -
+    command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 app:server
+    # Infinite loop, to keep it alive, for debugging
+    # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
+
+# future for production add the proxy?
+#  # after https://github.com/sladkovm/docker-flask-gunicorn-nginx
+#  nginx:
+#    container_name: nginx
 #    restart: always
-#    build:
-#      context: .
-#    volumes:
-#      - bus_assets:/app/assets
+#    build: ./nginx
 #    ports:
 #      - "80:80"
-#    environment:
-#      - FLASK_APP=/app/app.py
-#      - FLASK_DEBUG=1 #future change this for deployment
-#      - 'RUN=flask run --host=0.0.0.0 --port=80'
-#    command: flask run --host=0.0.0.0 --port=80
-#    # Infinite loop, to keep it alive, for debugging
-#    # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
-
+#    depends_on:
+#      - dash_app
 
 volumes:
   bus_database:
