@@ -1,29 +1,21 @@
 
 # future work
 
-### finish new_dashboard
-1. migrate db to add new fields (DONE)
+## 1. branch: fast_api
+1. test and debug
+2. merge back into dashboard_new branch
+
+## 2. branch: new_dashboard
 1. finish TODOs and test locally
-1. push deploy commit to `new_dashboard` branch
-1. pull and deploy `new_dashboard` branch to server, rebuild containers
-1. after a week, merge `new_dashboard` branch to `master` and redeploy to server
+2. do alembic migration
+3. debug docker stack
+4. push deploy commit to github
+5. deploy to cornell server for testing on this branch
+6. merge `new_dashboard` branch to `master` and redeploy to server
 
 
 ### reprocessor
-
-##### asap
-1. finish db migration, adding 4 columns for `MonitoredStop`
-1. backup the main db
-    ```bash
-    mysqldump buses buses | gzip -c > "buses.through.$(date +"%Y_%m_%d_%I_%M_%p").sql.gz"
-    ```
-2. download it
-
-##### prototyping
-1. assemble sample data
-    - dump a month's worth of records from the server database
-    - grab a month's worth of archived repsonse from the server /data locker
-2. start protoyping in a notebook
+1. start protoyping in a notebook
     - just use a copy of the database code for now
     - dynamically create the `Table` class with `type()` like here on [StackOverflow](https://stackoverflow.com/questions/973481/dynamic-table-creation-and-orm-mapping-in-sqlalchemy)
 
@@ -52,7 +44,6 @@
         session.query(Test).all() 
         ```
     - then map the `BusOservation` object model to this table?
-    
 3. basic requirements
     - can crawl everything in the current folder
     - can take a date range and just look for those files
@@ -66,12 +57,12 @@
     - can use the same db_dump or equivalent
     - never overwrites anything that contains data (only inserts records and updates empty/null/0 fields)
     
-##### from prototying to development
-1. separate script—just implement the prototype notebook as a separate script, copy the code and hope we dont need to update it later
-2. refactor-finish refactoring `grabber.py` and `Database.py`?
+3. from prototying to development
+    - separate script—just implement the prototype notebook as a separate script, copy the code and hope we dont need to update it later
+    - refactor-finish refactoring `grabber.py` and `Database.py`?
 
-##### from development to production
-1. test first on a local server with a copy of the master db, dropping all but a month's worth or records
+4. from development to production
+-    test first on a local server with a copy of the master db, dropping all but a month's worth or records
 
 
 
@@ -143,8 +134,8 @@ if you just want to test out the grabber, you can run `export PYTHON_ENV=develop
 ###### dash
 - Dash app running the front end.
 
-####### api
-- Flask app providing the API endpoints:
+####### api v2 (april 2021)
+- FastAPI app providing the API endpoints:
     - `/api/v1/nyc/livemap` Selected fields for buses seen in the last 60 seconds.
     - `/api/v1/nyc/buses?` Returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time.
     - Required:
@@ -156,6 +147,8 @@ if you just want to test out the grabber, you can run `export PYTHON_ENV=develop
         ```json
         http://nyc.buswatcher.org/api/v1/nyc/buses?output=geojson&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
         ```
+- Swagger doc endpoint `http://127.0.0.1:8000/docs`
+- ReDoc doc endpoint `http://127.0.0.1:8000/redoc`
 
 ###### grabber
 - Daemon that uses apscheduler to trigger a set of asynchronous API requests to get each route's current bus locations, dump the responses to archive files, parse the response and dump that to the database. For debugging, its possible to get a shell on the container and run another instance of the script, it should run with the same environment as the docker entrypoint and will spit out any errors that process is having without having to hunt around through log files.
