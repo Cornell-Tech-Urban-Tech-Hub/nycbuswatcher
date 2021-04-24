@@ -1,4 +1,6 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Query
+from fastapi.staticfiles import StaticFiles
+
 import uvicorn
 from sqlalchemy import create_engine
 
@@ -25,8 +27,14 @@ db_connect = create_engine(db.get_db_url(config.config['dbuser'], config.config[
 
 app = FastAPI()
 
+app.mount("/static", StaticFiles(directory="api/static/"), name="static")
+
+#todo CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
+
 
 #-------------- Fast API -------------------------------------------------------------
+
+
 @app.get("/")
 async def root():
     return {"message": "NYCBuswatcher API v2"}
@@ -38,15 +46,21 @@ async def fetch_livemap():
     with open('./api/static/lastknownpositions.geojson', 'r') as infile:
         return geojson.load(infile)
 
-# /api/v2/nyc/buses?route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
+# /api/v2/nyc/buses?route_short=Bx4&start=2021-04-23T21:00:00+00:00&end=2021-04-23T22:00:00+00:00
 
-
-# todo add validatiopn for these requests (using similar filters as the flask_restful v1 api
-# https://fastapi.tiangolo.com/tutorial/query-params-str-validations/
 
 @app.get("/api/v2/nyc/buses")
 # per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
-async def fetch_snapshot(request: Request, route_short: str, start: str, end: str):
+async def fetch_snapshot(
+                        request: Request,
+                        route_short: str,
+                        start: str = Query (None,
+                                            min_length=25,
+                                            max_length=25),
+                        end: str = Query (None,
+                                            min_length=25,
+                                            max_length=25)
+                        ):
     conn = db_connect.connect()
     query_prefix = "SELECT * FROM buses WHERE {}"
     query_suffix = query_builder(request.query_params)
