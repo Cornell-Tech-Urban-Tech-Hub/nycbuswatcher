@@ -4,12 +4,12 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 from sqlalchemy import create_engine
 
-import Database as db
-from APIhelpers import *
+import shared.Database as db
+from shared.APIhelpers import *
 
 from dotenv import load_dotenv
 load_dotenv()
-from config import config
+from shared.config import config
 api_url_stem="/api/v1/nyc/livemap"
 
 #-----------------------------------------------------------------------------------------
@@ -40,16 +40,16 @@ async def root():
     return {"message": "NYCBuswatcher API v2"}
 
 
-@app.get("/api/v2/nyc/livemap")
+@app.get("/api/v1/nyc/livemap")
 async def fetch_livemap():
     import geojson
-    with open('./api/static/lastknownpositions.geojson', 'r') as infile:
+    with open('./static/lastknownpositions.geojson', 'r') as infile:
         return geojson.load(infile)
 
-# /api/v2/nyc/buses?route_short=Bx4&start=2021-04-23T21:00:00+00:00&end=2021-04-23T22:00:00+00:00
+# /api/v1/nyc/buses?route_short=Bx4&start=2021-04-23T21:00:00+00:00&end=2021-04-23T22:00:00+00:00
 
 
-@app.get("/api/v2/nyc/buses")
+@app.get("/api/v1/nyc/buses")
 # per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
 async def fetch_snapshot(
                         request: Request,

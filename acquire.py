@@ -6,11 +6,11 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import trio
 from dotenv import load_dotenv
 
-import Database as db
-import Dumpers as dump
-import GTFS2GeoJSON
+import shared.Database as db
+import shared.Dumpers as dump
+import shared.GTFS2GeoJSON as GTFS2GeoJSON
 
-from config import config
+from shared.config import config
 
 
 def get_db_args(): #todo refactor me into Database.py?
