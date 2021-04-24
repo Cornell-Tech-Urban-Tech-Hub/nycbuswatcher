@@ -73,4 +73,4 @@ async def fetch_snapshot(
 
 
 if __name__ == '__main__':
-    uvicorn.run(app,debug=True)
+    uvicorn.run(app, port=5000, debug=True)
