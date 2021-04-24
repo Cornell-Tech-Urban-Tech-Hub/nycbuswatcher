@@ -27,7 +27,7 @@ db_connect = create_engine(db.get_db_url(config.config['dbuser'], config.config[
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="api/static/"), name="static")
+app.mount("/static", StaticFiles(directory="static/"), name="static")
 
 #todo CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
 

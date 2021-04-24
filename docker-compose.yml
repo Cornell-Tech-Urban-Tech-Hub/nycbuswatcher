@@ -23,7 +23,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./build/grabber/Dockerfile
     depends_on:
       - db
     volumes:
@@ -37,17 +37,13 @@ services:
   api:
     restart: always
     build:
-      context: .
+      context: ./build/api/Dockerfile
     volumes:
       - bus_static:/app/api/static
-# uncomment to make the API publicly available
+# # uncomment to make the API publicly available
 #    ports:
 #      - "8001:80"
-    environment:
-      - FLASK_APP=/app/api.py
-      - FLASK_DEBUG=1 #future change this for deployment
-      - 'RUN=flask run --host=0.0.0.0 --port=80'
-    command: flask run --host=0.0.0.0 --port=80
+    command: uvicorm --host=0.0.0.0 --port=80 api:app
     # Infinite loop, to keep it alive, for debugging
     # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
 
@@ -60,8 +56,6 @@ services:
       - bus_assets:/app/assets # <---------------------------------------------------------------------------------
     ports:
       - "8000:8000" # <---------------------------------------------------------------------------------
-#    environment:
-#      -
     command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 app:server
     # Infinite loop, to keep it alive, for debugging
     # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
