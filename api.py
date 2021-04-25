@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request, Query
 from fastapi.staticfiles import StaticFiles
+from typing import Optional
 
 import uvicorn
 from sqlalchemy import create_engine
@@ -53,13 +54,13 @@ async def fetch_livemap():
 # per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
 async def fetch_snapshot(
                         request: Request,
-                        route_short: str,
+                        route_short: Optional[str] = None,
                         start: str = Query (None,
                                             min_length=25,
-                                            max_length=25),
+                                            max_length=30),
                         end: str = Query (None,
                                             min_length=25,
-                                            max_length=25)
+                                            max_length=30)
                         ):
     conn = db_connect.connect()
     query_prefix = "SELECT * FROM buses WHERE {}"

@@ -1,6 +1,7 @@
+import datetime as dt
 import requests
-
 import geopandas as gpd
+import numpy as np
 
 import dash
 import dash_core_components as dcc
@@ -14,7 +15,7 @@ import plotly.express as px
 
 from shared.config import config
 
-api_url = config.config['api_url']
+
 routemap_url = "http://nyc.buswatcher.org/static/route_shapes_nyc.geojson"
 JACOBS_LOGO = "/assets/jacobs.png"
 
@@ -78,7 +79,32 @@ def get_route_map():
 
 def get_bus_map():
 
+    # # livemap version
+    # api_url = config.config['api_livemap_url']
+
+    # todo tune date format and time zone to match what's expected (e.g. time zone support)
+    # playback a day version
+    end = str(
+        dt.datetime.today().isoformat()
+    )
+    start = str(
+        (dt.datetime.today() - dt.timedelta(hours=24)
+             ).isoformat()
+    )
+
+    end = dt.datetime.today().isoformat()
+
+    start = (dt.datetime.today() - dt.timedelta(hours=24)
+         ).isoformat()
+
+
+    api_url = config.config['api_base_url'] + ( 'buses?start='+ start) + ( '&end='+ end )
+
     buses_gdf = remoteGeoJSONToGDF(api_url)
+
+    # clean up the passenger_count column
+    buses_gdf['passenger_count']=buses_gdf['passenger_count'].astype('float')
+    buses_gdf['passenger_count'] = buses_gdf['passenger_count'].fillna(0)
 
     # scattermapbox api—not that many options for customization
     # https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html
@@ -87,21 +113,22 @@ def get_bus_map():
     fig = px.scatter_mapbox(buses_gdf,
         lat=buses_gdf.geometry.y,
         lon=buses_gdf.geometry.x,
-        size='passengers', # todo VIP how to make the buses with zero passengers appear? can see the hover data
+        size='passenger_count', # todo VIP how to make the buses with zero passengers appear? can see the hover data but not symbol
         size_max=30,
-        color='passengers',
+        color='passenger_count',
         # color_continuous_scale=['#23bf06','#e55e5e'],
+        animation_frame='timestamp',
         color_continuous_scale=[(0, "black"), (0.5, "green"), (1, "red")],
-        hover_name="lineref",
+        hover_name="route_short",
         hover_data=["trip_id",
-                    "vehicleref",
+                    "vehicle_id",
                     "next_stop_id",
                     "next_stop_eta",
                     "next_stop_d_along_route",
                     "next_stop_d"],
         labels={
             'trip_id':'Trip (GTFS): ',
-            'vehicleref':'Vehicle (GTFS): ',
+            'vehicle_id':'Vehicle (GTFS): ',
             'next_stop_id':'Next Stop (GTFS): ',
             'next_stop_eta': 'ETA: ',
             'next_stop_d':'Distance to Next Stop (m): ',
@@ -156,11 +183,11 @@ app.layout = \
                           'height': '100vh',
                       }
                   ),
-        dcc.Interval(
-            id='30-second-interval',
-            interval=30000,  # milliseconds
-            n_intervals=0
-        ),
+        # dcc.Interval(
+        #     id='30-second-interval',
+        #     interval=30000,  # milliseconds
+        #     n_intervals=0
+        # ),
     ])
 
 # based on https://towardsdatascience.com/python-for-data-science-advanced-guide-to-plotly-dash-interactive-visualizations-8586b0895032

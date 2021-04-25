@@ -39,11 +39,11 @@ def query_builder(parameters):
 
         elif field == 'end':
 
-            # if request is for more than one hour, truncate it to 1 hour
+            # if request is for more than one day, truncate it to 1 day
             interval_end = value
             interval_length = parser.isoparse(interval_end .replace(" ", "+", 1)) - \
                               parser.isoparse(interval_start.replace(" ", "+", 1))
-            if interval_length > timedelta(hours=1):
+            if interval_length > timedelta(hours=24):
                 value = add_1hr_to_iso(interval_start)
 
             else:
