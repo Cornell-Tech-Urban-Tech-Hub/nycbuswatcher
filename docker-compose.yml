@@ -1,5 +1,3 @@
-# todo use this guide https://www.valentinog.com/blog/traefik/
-
 version: '3'
 
 services:
@@ -54,6 +52,7 @@ services:
       - "traefik.http.routers.app.entrypoints=web"
     command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
+  # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
   # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
   traefik:
     image: traefik:latest
@@ -67,6 +66,13 @@ services:
       - "8080:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  dyndns:
+    restart: always
+    build:
+      context: ./build/dyndns
+      dockerfile: ./Dockerfile
+
 volumes:
   bus_database:
   bus_files:
