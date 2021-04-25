@@ -1,8 +1,5 @@
 version: '3'
 
-# from https://www.dabbleofdevops.com/blog/setup-a-mysql-python-docker-dev-stack
-# docker-compose build; docker-compose up -d
-
 services:
 
   db:
@@ -14,16 +11,16 @@ services:
       MYSQL_USER: nycbuswatcher
       MYSQL_PASSWORD: bustime
       TZ: America/New_York
-    ports:
-      - 6033:3306 # n.b this is only for external connections
+#    ports:
+#      - 6033:3306 # n.b this is only for external connections
     volumes:
       - bus_database:/var/lib/mysql
 
-  grabber:
+  acquire:
     restart: always
     build:
       context: .
-      dockerfile: ./build/grabber/Dockerfile
+      dockerfile: ./build/acquire/Dockerfile
     depends_on:
       - db
     volumes:
@@ -31,31 +28,36 @@ services:
       - bus_static:/app/api/static
     command:
       # tail -f /dev/null
-      /opt/conda/envs/nycbuswatcher/bin/python3 /app/grabber.py
+      python3 /app/acquire.py
 
-#future will need to route this through the nginx proxy
   api:
-    restart: always
-    build:
-      context: ./build/api/Dockerfile
-    volumes:
-      - bus_static:/app/api/static
-# # uncomment to make the API publicly available
-#    ports:
-#      - "8001:80"
-    command: uvicorm --host=0.0.0.0 --port=80 api:app
-    # Infinite loop, to keep it alive, for debugging
-    # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
-
-  # after https://github.com/sladkovm/docker-flask-gunicorn-nginx
-  dash_app:
+    #future will need to route this through the nginx proxy
     restart: always
     build:
       context: .
+      dockerfile: ./build/api/Dockerfile
+    volumes:
+      - bus_static:/app/api/static
+#    # API is only available inside the stack now
+#    # uncomment to make the API publicly available
+#    # but will need tu update config.production
+#    ports:
+#      - 5000:5000
+    command: uvicorn --host=0.0.0.0 --port=80 api:app
+    # Infinite loop, to keep it alive, for debugging
+    # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
+
+
+  app:
+    # after https://github.com/sladkovm/docker-flask-gunicorn-nginx
+    restart: always
+    build:
+      context: .
+      dockerfile: ./build/app/Dockerfile
     volumes:
       - bus_assets:/app/assets # <---------------------------------------------------------------------------------
     ports:
-      - "8000:8000" # <---------------------------------------------------------------------------------
+      - 8000:8000 # <---------------------------------------------------------------------------------
     command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 app:server
     # Infinite loop, to keep it alive, for debugging
     # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"

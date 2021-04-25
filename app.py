@@ -87,7 +87,7 @@ def get_bus_map():
     fig = px.scatter_mapbox(buses_gdf,
         lat=buses_gdf.geometry.y,
         lon=buses_gdf.geometry.x,
-        size='passengers', # bug how to make the buses with zero passengers appear? can see the hover data
+        size='passengers', # todo VIP how to make the buses with zero passengers appear? can see the hover data
         size_max=30,
         color='passengers',
         # color_continuous_scale=['#23bf06','#e55e5e'],
@@ -111,7 +111,7 @@ def get_bus_map():
         zoom=11)
 
 
-    # # bug make route map layer display
+    # # todo VIP make route map layer display
     # # api doc https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html
     # # search for "add_scattermapbox"
     # route_json = requests.get(routemap_url).json()

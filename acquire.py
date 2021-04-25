@@ -13,12 +13,15 @@ import shared.GTFS2GeoJSON as GTFS2GeoJSON
 from shared.config import config
 
 
-def get_db_args(): #todo refactor me into Database.py?
+def get_db_args(): #future refactor me into Database.py?
 
-    if args.localhost is True: # todo fix this why does it ignore what's in config/development.py
+    # for PYTHON_ENV=production, but changing database hostname from 'db' to 'localhost'
+    if args.localhost is True:
         dbhost = 'localhost'
+    # development mode
     elif os.environ['PYTHON_ENV'] == "development":
         dbhost = 'localhost'
+    # production mode
     else:
         dbhost = config.config['dbhost']
 
@@ -29,7 +32,7 @@ def get_db_args(): #todo refactor me into Database.py?
             config.config['dbname']
             )
 
-def to_db(timestamp, feeds): #todo refactor me into Database.py?
+def to_db(timestamp, feeds): #future refactor me into Database.py?
     db_url=db.get_db_url(*get_db_args())
     db.create_table(db_url)
     session = db.get_session(*get_db_args())

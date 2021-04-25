@@ -61,8 +61,6 @@ def to_file(feeds):
     return timestamp
 
 
-# todo get more aggressive, rotate hourly?
-# todo check if actually deleting the old individual response files on last line
 # https://programmersought.com/article/77402568604/
 def rotate_files():
     today = datetime.date.today()
@@ -82,7 +80,7 @@ def rotate_files():
             with open(fn, 'rb') as rfp:
                 shutil.copyfileobj(rfp, wfp)
     for file in yesterday_gz_files:
-        os.remove(file) #bug
+        os.remove(file) #todo VIP check if actually deleting the old individual response files on last line
 
 
 
