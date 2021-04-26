@@ -46,18 +46,14 @@ services:
     build:
       context: .
       dockerfile: ./build/app/Dockerfile
-#    expose:
-#      - 8000
     volumes:
       - bus_assets:/app/assets
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.app.rule=Host(`app.localhost`)"
       - "traefik.http.routers.app.entrypoints=web"
-      # - "traefik.port=80"
       - "traefik.http.services.app.loadbalancer.server.port=8000"
     command:
-      #todo how to get traefik to find gunicorn on a port other than 80?
       gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
   # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
