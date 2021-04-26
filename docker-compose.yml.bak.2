@@ -5,7 +5,7 @@ services:
   db:
     image: mysql:5.7
     restart: always
-    environment:
+    environment:   # Set up mysql database name and password
       MYSQL_ROOT_PASSWORD: bustime
       MYSQL_DATABASE: buses
       MYSQL_USER: nycbuswatcher
@@ -24,43 +24,36 @@ services:
     volumes:
       - bus_files:/app/data
       - bus_static:/app/api/static
-    command:
-      python3 /app/acquire.py
+    command: python3 /app/acquire.py
 
   api:
     restart: always
     build:
       context: .
       dockerfile: ./build/api/Dockerfile
+    expose:
+      - 80
     volumes:
       - bus_static:/app/api/static
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.api.rule=Host(`api.localhost`)"
-      - "traefik.http.routers.api.entrypoints=web"
-    command:
-      uvicorn --host=0.0.0.0 --port=80 api:app
+    command: uvicorn --host=0.0.0.0 --port=80 api:app
 
   app:
     restart: always
     build:
       context: .
       dockerfile: ./build/app/Dockerfile
-#    expose:
-#      - 8000
     volumes:
       - bus_assets:/app/assets
+    expose:
+      - 5000
     labels:
+      - "traefik.port=5000"
       - "traefik.enable=true"
       - "traefik.http.routers.app.rule=Host(`app.localhost`)"
       - "traefik.http.routers.app.entrypoints=web"
-      # - "traefik.port=80"
-      - "traefik.http.services.app.loadbalancer.server.port=8000"
-    command:
-      #todo how to get traefik to find gunicorn on a port other than 80?
-      gunicorn --workers=5 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
-  # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
+    command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:5000 app:server
+
   # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
   traefik:
     image: traefik:latest
@@ -68,19 +61,13 @@ services:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
-      - "--providers.docker.exposedbydefault=false"
     ports:
       - "80:80"
       - "8080:8080"
+#    networks:
+#      - "nycbuswatcher_default"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-
-  dyndns:
-    restart: always
-    build:
-      context: ./build/dyndns
-      dockerfile: ./Dockerfile
-
 volumes:
   bus_database:
   bus_files:

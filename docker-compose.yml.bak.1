@@ -33,10 +33,12 @@ services:
     build:
       context: .
       dockerfile: ./build/api/Dockerfile
-    expose:
-      - 80
     volumes:
       - bus_static:/app/api/static
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`api.localhost`)"
+      - "traefik.http.routers.api.entrypoints=web"
     command: uvicorn --host=0.0.0.0 --port=80 api:app
 
   app:
@@ -46,15 +48,11 @@ services:
       dockerfile: ./build/app/Dockerfile
     volumes:
       - bus_assets:/app/assets
-    expose:
-      - 5000
     labels:
-      - "traefik.port=5000"
       - "traefik.enable=true"
       - "traefik.http.routers.app.rule=Host(`app.localhost`)"
       - "traefik.http.routers.app.entrypoints=web"
-
-    command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:5000 app:server
+    command: gunicorn --workers=5 --threads=1 -b 0.0.0.0:5000 --forwarded-allow-ips="*" app:server
 
   # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
   traefik:
@@ -63,11 +61,10 @@ services:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
+      - "--providers.docker.exposedbydefault=false"
     ports:
       - "80:80"
       - "8080:8080"
-#    networks:
-#      - "nycbuswatcher_default"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 volumes:

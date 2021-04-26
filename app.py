@@ -84,13 +84,6 @@ def get_bus_map():
 
     # todo tune date format and time zone to match what's expected (e.g. time zone support)
     # playback a day version
-    end = str(
-        dt.datetime.today().isoformat()
-    )
-    start = str(
-        (dt.datetime.today() - dt.timedelta(hours=24)
-             ).isoformat()
-    )
 
     end = dt.datetime.today().isoformat()
 
@@ -168,8 +161,8 @@ def get_bus_map():
     # )
 
     # fig.update_layout(mapbox_style="white-bg")
-    fig.update_layout(mapbox_style="carto-positron")
-    # fig.update_layout(mapbox_style="stamen-toner")
+    # fig.update_layout(mapbox_style="carto-positron")
+    fig.update_layout(mapbox_style="stamen-toner")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
 
