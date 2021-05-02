@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -209,4 +210,7 @@ def update_layout(n):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    if os.environ['PYTHON_ENV'] == 'production':
+        app.run_server(debug=False)
+    else:
+        app.run_server(debug=True)

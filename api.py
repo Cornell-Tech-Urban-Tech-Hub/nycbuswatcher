@@ -14,7 +14,6 @@ from shared.config import config
 api_url_stem="/api/v1/nyc/livemap"
 
 #-----------------------------------------------------------------------------------------
-# sources
 # fastapi implementation after tutorial https://fastapi.tiangolo.com/tutorial/query-params/
 # query parameter handling after https://stackoverflow.com/questions/30779584/flask-restful-passing-parameters-to-get-request
 #-----------------------------------------------------------------------------------------
@@ -30,10 +29,8 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static/"), name="static")
 
-# todo CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
-
-
-# todo auth/key registry (3rd party plugin? for API control)
+# future CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
+# future auth/key registry (3rd party plugin? for API control)
 #-------------- Fast API -------------------------------------------------------------
 
 
