@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from sqlalchemy import Column, Date, DateTime, Integer, String, Float
+from sqlalchemy import Column, Date, DateTime, Integer, String, Float, Index
 from sqlalchemy.ext.declarative import declarative_base
 
 import datetime
@@ -76,15 +76,15 @@ def parse_buses(timestamp, route, data):
 class BusObservation(Base):
     __tablename__ = "buses"
     id = Column(Integer, primary_key=True)
-    timestamp = Column(DateTime)
+    timestamp = Column(DateTime, index=True)
     server_timestamp = Column(DateTime)
     route_simple=Column(String(31)) #this is the route name passed through from the command line, may or may not match route_short
     route_long=Column(String(127))
     direction=Column(String(1))
-    service_date=Column(String(31)) #future check inputs and convert to Date
-    trip_id=Column(String(63))
+    service_date=Column(String(31), index=True) #future check inputs and convert to Date
+    trip_id=Column(String(63), index=True)
     gtfs_shape_id=Column(String(31))
-    route_short=Column(String(31))
+    route_short=Column(String(31), index=True)
     agency=Column(String(31))
     origin_id=Column(String(31))
     destination_id=Column(String(31))
@@ -117,3 +117,6 @@ class BusObservation(Base):
         self.route_simple = route
         self.timestamp = timestamp
         self.server_timestamp = datetime.datetime.fromisoformat(server_timestamp)
+
+Index('index_servicedate_routeshort', BusObservation.service_date, BusObservation.route_short)
+Index('index_routeshort_timestamp', BusObservation.route_short, BusObservation.timestamp)
