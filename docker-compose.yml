@@ -34,10 +34,12 @@ services:
       dockerfile: ./build/api/Dockerfile
     volumes:
       - bus_static:/app/api/static
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.api.rule=Host(`api.localhost`)"
-      - "traefik.http.routers.api.entrypoints=web"
+# # stack doesnt work if this is uncommented
+# # uncomment to make externally accessible DOESNT WORK
+#    labels:
+#      - "traefik.enable=true"
+#      - "traefik.http.routers.api.rule=Host(`api.localhost`)"
+#      - "traefik.http.routers.api.entrypoints=web"
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
 
@@ -50,11 +52,12 @@ services:
       - bus_assets:/app/assets
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.app.rule=Host(`app.localhost`)"
+      - "traefik.http.routers.app.rule=Host(`app.localhost`,`www.nycbuswatcher.org`)"
+      # - "traefik.http.routers.app.rule=Host(`www.nycbuswatcher.org`)"
       - "traefik.http.routers.app.entrypoints=web"
       - "traefik.http.services.app.loadbalancer.server.port=8000"
     command:
-      gunicorn --workers=4 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+      gunicorn --log-level debug --workers=4 --timeout=90 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
   # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
   # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/

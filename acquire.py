@@ -54,6 +54,7 @@ def async_grab_and_store():
     path_list = dump.get_path_list()
     feeds = []
 
+    # future trap some of the connection/DNS errors that can happen in here to suppress a lot of errors messages and/or retry intelligently
     async def grabber(s,a_path,route_id):
         try:
             r = await s.get(path=a_path)

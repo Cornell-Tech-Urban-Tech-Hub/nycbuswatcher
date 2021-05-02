@@ -9,9 +9,9 @@ def get_buses_gdf():
     # # livemap version
     # api_url = config.config['api_livemap_url']
 
-    # playback a day version
+    # playback an hour version
     end=dt.datetime.today().isoformat()
-    start=(dt.datetime.today()-dt.timedelta(hours=24)).isoformat()
+    start=(dt.datetime.today()-dt.timedelta(hours=24)).isoformat() #bug this usually times out gunicorn if set to 24 hours
     api_url = config.config['api_base_url'] + ( 'buses?start='+ start) + ( '&end='+ end )
 
     # get the gdf
