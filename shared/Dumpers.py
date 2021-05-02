@@ -1,13 +1,14 @@
 import requests
 import os
-import glob, shutil
+import glob
 import datetime
 import json
 import gzip
 import pickle
 
 import geojson
-
+import tarfile
+import os.path
 
 def get_path_list():
     path_list = []
@@ -58,29 +59,36 @@ def to_file(feeds):
                     json.dump(route_report.json(), zipfile)
                 except:
                     pass # if error, dont write and return
-    return timestamp
+    return
 
 
 # https://programmersought.com/article/77402568604/
 def rotate_files():
+
     today = datetime.date.today()
-    yesterday = today - datetime.timedelta(days = 1) # e.g. 2020-10-04
-    # print ('today is {}, yesterday was {}'.format(today,yesterday))
+    yesterday = today - datetime.timedelta(days = 1)
+
     datapath = './data/'
     outfile = '{}daily-{}.gz'.format(datapath, yesterday)
-    # print ('bundling minute grabs from {} into {}'.format(yesterday,outfile))
+
     all_gz_files = glob.glob("{}*.gz".format(datapath))
     yesterday_gz_files = []
+
     for file in all_gz_files:
-        if file[7:17] == str(yesterday): # this should parse the path using os.path.join?
+        if file[6:16] == str(yesterday):
             yesterday_gz_files.append(file)
-    # print ('adding {} files'.format(len(yesterday_gz_files)))
-    with open(outfile, 'wb') as wfp:
-        for fn in yesterday_gz_files:
-            with open(fn, 'rb') as rfp:
-                shutil.copyfileobj(rfp, wfp)
+
+    with tarfile.open(outfile, "w:gz") as tar:
+        for file in yesterday_gz_files:
+            tar.add(file)
+
+    # with open(outfile, 'wb') as wfp:
+    #     for fn in yesterday_gz_files:
+    #         with open(fn, 'rb') as rfp:
+    #             shutil.copyfileobj(rfp, wfp)
+
     for file in yesterday_gz_files:
-        os.remove(file) #todo VIP check if actually deleting the old individual response files on last line
+        os.remove(file)
 
 
 
@@ -100,10 +108,10 @@ def to_lastknownpositions(feeds): #future please refactor me
                         occupancy = {'occupancy': 'empty'}
 
                     try:
-                        passengers={'passengers': int(b['MonitoredVehicleJourney']['MonitoredCall']['Extensions'][
+                        passenger_count={'passenger_count': int(b['MonitoredVehicleJourney']['MonitoredCall']['Extensions'][
                             'Capacities']['EstimatedPassengerCount'])}
                     except KeyError:
-                        passengers = {'passengers': 0}
+                        passenger_count = {'passenger_count': 0}
 
                     try:
                         lineref={'lineref':b['MonitoredVehicleJourney']['LineRef']}
@@ -142,7 +150,7 @@ def to_lastknownpositions(feeds): #future please refactor me
                         next_stop_d = {'next_stop_d': 'n/a'}
 
 
-                    f = geojson.Feature(geometry=p, properties={**occupancy,**passengers,**lineref,**trip_id,**vehicleref,**next_stop_id,**next_stop_eta,**next_stop_d_along_route,**next_stop_d})
+                    f = geojson.Feature(geometry=p, properties={**occupancy,**passenger_count,**lineref,**trip_id,**vehicleref,**next_stop_id,**next_stop_eta,**next_stop_d_along_route,**next_stop_d})
 
                     f_list.append(f)
             except KeyError: # no VehicleActivity?

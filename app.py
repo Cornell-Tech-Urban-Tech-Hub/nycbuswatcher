@@ -1,40 +1,22 @@
-import datetime as dt
-import requests
-import geopandas as gpd
-import numpy as np
-
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
-
 import dash_bootstrap_components as dbc
-
+from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
 
-from shared.config import config
 
+from shared.Helpers import *
 
+# config
 routemap_url = "http://nyc.buswatcher.org/static/route_shapes_nyc.geojson"
 JACOBS_LOGO = "/assets/jacobs.png"
-
 
 ## instantiate the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 app.config.suppress_callback_exceptions = True
-
-### helpers
-def remoteGeoJSONToGDF(url, display = False):
-    """https://maptastik.medium.com/remote-geojson-to-geodataframe-19c3c1282a64
-    """
-    r = requests.get(url)
-    data = r.json()
-    gdf = gpd.GeoDataFrame.from_features(data['features'])
-    if display:
-        gdf.plot()
-    return gdf
 
 
 ### content sections
@@ -54,54 +36,15 @@ navbar = dbc.NavbarSimple(
     dark=True,
 )
 
-# future add a route filter selector with callback
-# future stand up a 2nd app on another page for the historical viewer with animated playback?
-# future add a datetime selector and callback + change api call to get a time period data from the datetime API endpoint (or use last hour)
 
-
-def get_route_map():
-    fig = go.Figure(data=[go.Scattermapbox(lat=[0], lon=[0])])
-    fig.update_layout(
-        margin={"r": 0, "t": 0, "l": 0, "b": 0},
-        mapbox=go.layout.Mapbox(
-            layers=[{
-                'sourcetype': 'geojson',
-                'source': routemap_url,
-                'type': 'line',
-                'color': '#000000',
-                'line' : {'width': 2},
-                'opacity': 0.5
-            }]
-        )
-    )
-    return fig
 
 
 def get_bus_map():
 
-    # # livemap version
-    # api_url = config.config['api_livemap_url']
+    buses_gdf=get_buses_gdf()
 
-    # todo tune date format and time zone to match what's expected (e.g. time zone support)
-    # playback a day version
-
-    end = dt.datetime.today().isoformat()
-
-    start = (dt.datetime.today() - dt.timedelta(hours=24)
-         ).isoformat()
-
-
-    api_url = config.config['api_base_url'] + ( 'buses?start='+ start) + ( '&end='+ end )
-
-    buses_gdf = remoteGeoJSONToGDF(api_url)
-
-    # clean up the passenger_count column
-    buses_gdf['passenger_count']=buses_gdf['passenger_count'].astype('float')
-    buses_gdf['passenger_count'] = buses_gdf['passenger_count'].fillna(0)
-
-    # scattermapbox api—not that many options for customization
+    # plotly express scattermapbox api—not that many options for customization
     # https://plotly.com/python-api-reference/generated/plotly.express.scatter_mapbox.html
-    # https://plotly.com/python-api-reference/generated/plotly.graph_objects.Scattermapbox.html#plotly.graph_objects.Scattermapbox
 
     fig = px.scatter_mapbox(buses_gdf,
         lat=buses_gdf.geometry.y,
@@ -130,35 +73,9 @@ def get_bus_map():
         opacity=0.8,
         zoom=11)
 
+    # todo supress the plotly hover
 
-    # # todo VIP make route map layer display
-    # # api doc https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html
-    # # search for "add_scattermapbox"
-    # route_json = requests.get(routemap_url).json()
-    #
-    # # UNPACK THE COORDS FOR THE MULTILINESTRING
-    # coords = list()
-    # for feature in route_json["features"]:
-    #     for multiline in feature["geometry"]["coordinates"]:
-    #         try:
-    #             lat = np.array(multiline)[:, 1]
-    #             lon = np.array(multiline)[:, 0]
-    #             multiline_coords = [lat, lon]
-    #         except Exception as e:
-    #             # print('I got an error on but kept going: {}'.format(feature['properties']['route_id']))
-    #             pass
-    #         coords.append(multiline_coords)
-    # coord_array = np.array(coords, dtype=object)
-    #
-    # # https://community.plotly.com/t/how-do-i-plot-a-line-on-a-map-from-a-geojson-file/33320/2
-    # fig.add_scattermapbox(
-    #             lat=coord_array[:, 1],
-    #             lon=coord_array[:, 0],
-    #             mode="lines",
-    #             line={'width':8,
-    #                   'color':"#000"
-    #             }
-    # )
+    # todo VIP make route map layer display
 
     # fig.update_layout(mapbox_style="white-bg")
     # fig.update_layout(mapbox_style="carto-positron")
@@ -167,13 +84,72 @@ def get_bus_map():
     return fig
 
 
+def get_bus_map2():
+
+    # plotly full more customization
+    # https://plotly.com/python/reference/scattermapbox/
+    # https://plotly.com/python-api-reference/generated/plotly.graph_objects.Scattermapbox.html#plotly.graph_objects.Scattermapbox
+
+    buses_gdf = get_buses_gdf()
+
+    # after https://medium.com/analytics-vidhya/introduction-to-interactive-geoplots-with-plotly-and-mapbox-9249889358eb
+
+    # set the geo=spatial data
+    bus_data = [go.Scattermapbox(
+        lat=buses_gdf['lat'],
+        lon=buses_gdf['lon'],
+        customdata=buses_gdf['passenger_count'],
+        mode='markers',
+        marker=dict(
+            size=4,
+            color='gold',
+            opacity=.8,
+        ),
+    )]
+
+    # set the layout to plot
+    bus_layout = go.Layout(autosize=True,
+                       mapbox=dict(
+                                   bearing=30,
+                                   pitch=60,
+                                   zoom=13,
+                                   center=dict(lat=40.721319,
+                                               lon=-73.987130),
+                        ),
+
+                       # title="Bus locations in New York"
+                           )
+
+    fig = go.Figure(data=bus_data, layout=bus_layout)
+
+
+    # bug seems to be working, but all the maps are in the wrong layer order
+    # method 2 https://community.plotly.com/t/how-do-i-plot-a-line-on-a-map-from-a-geojson-file/33320
+
+    fig.update_layout(
+        mapbox=go.layout.Mapbox(
+            layers=[{
+                'sourcetype': 'geojson',
+                'source': requests.get(routemap_url).json(),
+                'type': 'line',
+            }]
+        )
+    )
+
+    fig.update_layout(mapbox_style="stamen-toner")
+    # fig.update_layout(mapbox_style="white-bg")
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
+    return fig
+
 app.layout = \
     html.Div([
         navbar,
         dcc.Graph(id='map',
-                  figure=get_bus_map(),
+                  # figure=get_bus_map(),
+                  figure=get_bus_map2(),
                   style={
-                          'height': '100vh',
+                          'height': '90vh',
                       }
                   ),
         # dcc.Interval(

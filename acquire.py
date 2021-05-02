@@ -32,7 +32,7 @@ def get_db_args(): #future refactor me into Database.py?
             config.config['dbname']
             )
 
-def to_db(timestamp, feeds): #future refactor me into Database.py?
+def to_db(feeds): #future refactor me into Database.py?
     db_url=db.get_db_url(*get_db_args())
     db.create_table(db_url)
     session = db.get_session(*get_db_args())
@@ -40,7 +40,7 @@ def to_db(timestamp, feeds): #future refactor me into Database.py?
     num_buses = 0
     for route_bundle in feeds:
         for route_id,route_report in route_bundle.items():
-            buses = db.parse_buses(timestamp, route_id, route_report.json(), db_url)
+            buses = db.parse_buses(route_id, route_report.json(), db_url)
             for bus in buses:
                 session.add(bus)
                 num_buses = num_buses + 1
@@ -74,12 +74,11 @@ def async_grab_and_store():
                     n.start_soon(grabber, s, path, route_id )
 
     trio.run(main, path_list)
-    timestamp = dump.to_file(feeds)
+    dump.to_file(feeds)
     dump.to_lastknownpositions(feeds)
-    num_buses = to_db(timestamp, feeds)
+    num_buses = to_db(feeds)
     end = time.time()
-    print('Fetched {} buses on {} routes in {:2f} seconds to gzipped archive and mysql database.\n'.format(
-    num_buses,len(feeds),(end - start)))
+    print('Fetched {} buses on {} routes in {:2f} seconds to gzipped archive and mysql database.\n'.format(num_buses,len(feeds),(end - start)))
     return
 
 
