@@ -4,6 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import Column, Date, DateTime, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 
+import datetime
 
 # v1.0 to v1.11 manual migration
 # ALTER TABLE buses ADD(passenger_count varchar(31));
@@ -35,7 +36,7 @@ def get_session(dbuser,dbpassword,dbhost,dbport,dbname):
     return session
 
 
-def parse_buses(timestamp, route, data, db_url):
+def parse_buses(route, data, db_url):
     lookup = {'route_long':['LineRef'],
               'direction':['DirectionRef'],
               'service_date': ['FramedVehicleJourneyRef', 'DataFrameRef'],
@@ -63,8 +64,9 @@ def parse_buses(timestamp, route, data, db_url):
               }
     buses = []
     try:
+        timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
         for b in data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
-            bus = BusObservation(route,db_url,timestamp)
+            bus = BusObservation(route,timestamp)
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
@@ -125,6 +127,6 @@ class BusObservation(Base):
                 output = output + ('{} {} '.format(var,val))
         return output
 
-    def __init__(self,route,db_url,timestamp):
+    def __init__(self,route,timestamp):
         self.route_simple = route
-        self.timestamp = timestamp
+        self.timestamp = datetime.datetime.fromisoformat(timestamp)
