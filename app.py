@@ -30,9 +30,9 @@ app.config.suppress_callback_exceptions = True
 
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink("Map", href="")),
-        dbc.NavItem(dbc.NavLink("FAQ", href="/faq")), #bug make me work
-        dbc.NavItem(dbc.NavLink("Code", href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher")),
+        # dbc.NavItem(dbc.NavLink("Map", href="")),
+        # dbc.NavItem(dbc.NavLink("FAQ", href="/faq")), #bug make me work
+        # dbc.NavItem(dbc.NavLink("Code", href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher")),
         html.A(dbc.Row([dbc.Col(html.Img(src=JACOBS_LOGO, height="100px"))],
         ))
 

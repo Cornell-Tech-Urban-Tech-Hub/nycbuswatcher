@@ -59,7 +59,7 @@ def to_file(feeds):
                     json.dump(route_report.json(), zipfile)
                 except:
                     pass # if error, dont write and return
-    return
+    return timestamp
 
 
 # https://programmersought.com/article/77402568604/

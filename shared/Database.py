@@ -6,20 +6,6 @@ from sqlalchemy.ext.declarative import declarative_base
 
 import datetime
 
-# v1.0 to v1.11 manual migration
-# ALTER TABLE buses ADD(passenger_count varchar(31));
-#
-
-# v1.11 to v1.2 manual migration
-# started 2021-04-18 11:14am
-# ALTER TABLE buses
-# ADD COLUMN next_stop_id varchar(63),
-# ADD COLUMN next_stop_eta varchar(63),
-# ADD COLUMN next_stop_d_along_route float,
-# ADD COLUMN next_stop_d float;
-
-
-
 Base = declarative_base()
 
 def create_table(db_url):
@@ -35,8 +21,7 @@ def get_session(dbuser,dbpassword,dbhost,dbport,dbname):
     session = Session()
     return session
 
-
-def parse_buses(route, data, db_url):
+def parse_buses(timestamp, route, data):
     lookup = {'route_long':['LineRef'],
               'direction':['DirectionRef'],
               'service_date': ['FramedVehicleJourneyRef', 'DataFrameRef'],
@@ -64,9 +49,9 @@ def parse_buses(route, data, db_url):
               }
     buses = []
     try:
-        timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
+        server_timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
         for b in data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
-            bus = BusObservation(route,timestamp)
+            bus = BusObservation(route,timestamp, server_timestamp)
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
@@ -92,6 +77,7 @@ class BusObservation(Base):
     __tablename__ = "buses"
     id = Column(Integer, primary_key=True)
     timestamp = Column(DateTime)
+    server_timestamp = Column(DateTime)
     route_simple=Column(String(31)) #this is the route name passed through from the command line, may or may not match route_short
     route_long=Column(String(127))
     direction=Column(String(1))
@@ -127,6 +113,7 @@ class BusObservation(Base):
                 output = output + ('{} {} '.format(var,val))
         return output
 
-    def __init__(self,route,timestamp):
+    def __init__(self,route,timestamp,server_timestamp):
         self.route_simple = route
-        self.timestamp = datetime.datetime.fromisoformat(timestamp)
+        self.timestamp = timestamp
+        self.server_timestamp = datetime.datetime.fromisoformat(server_timestamp)
