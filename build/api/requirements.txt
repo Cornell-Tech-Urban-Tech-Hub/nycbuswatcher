@@ -1,0 +1,9 @@
+aiofiles
+dateutils
+geojson
+python-dotenv
+fastapi
+mysqlclient
+python-dotenv
+sqlalchemy
+

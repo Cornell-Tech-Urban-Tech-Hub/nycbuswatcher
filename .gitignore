@@ -8,7 +8,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -86,9 +85,6 @@ venv.bak/
 
 
 # archives
-google_transit*.zip
 *.gz
 /data
 /routemap
-*.geojson
-*.sqlite

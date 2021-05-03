@@ -1,0 +1,11 @@
+apscheduler
+asks
+geojson
+python-dotenv
+sqlalchemy
+mysqlclient
+mysql-connector-python
+pandas
+requests
+shapely
+trio
