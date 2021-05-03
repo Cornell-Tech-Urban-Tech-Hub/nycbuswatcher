@@ -57,7 +57,10 @@ services:
       - "traefik.http.routers.app.entrypoints=web"
       - "traefik.http.services.app.loadbalancer.server.port=8000"
     command:
-      gunicorn --log-level debug --workers=4 --timeout=90 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+      # gunicorn -k gevent --worker-connections 1000 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+
+
 
   # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
   # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/

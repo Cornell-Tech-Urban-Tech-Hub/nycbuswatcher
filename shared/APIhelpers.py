@@ -39,12 +39,12 @@ def query_builder(parameters):
 
         elif field == 'end':
 
-            # future move API_timelimit to config — currently 24 hours
-            # if request is for more than 24 hour, truncate it to 24 hour
+            # future move API_timelimit to config — currently 1 hours
+            # if request is for more than 1 hour, truncate it to 1 hour
             interval_end = value
             interval_length = parser.isoparse(interval_end .replace(" ", "+", 1)) - \
                               parser.isoparse(interval_start.replace(" ", "+", 1))
-            if interval_length > timedelta(hours=24):
+            if interval_length > timedelta(hours=1):
                 value = add_1hr_to_iso(interval_start)
 
             else:
