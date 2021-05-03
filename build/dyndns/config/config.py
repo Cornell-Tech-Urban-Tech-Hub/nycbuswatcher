@@ -22,7 +22,7 @@ api_endpoint = 'https://dns.api.gandi.net/api/v5'
 domain = 'buswatcher.org'
 
 #enter all subdomains to be updated, subdomains must already exist to be updated
-subdomains = ["test"]
+subdomains = ["nyc"]
 
 #300 seconds = 5 minutes
 ttl = '300'
