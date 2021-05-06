@@ -37,15 +37,15 @@ def get_path_list():
 
 
 def filepath():
-    path = ("data/")
-    check = os.path.isdir(path)
+    now = datetime.datetime.now()
+    filepath = ('').join('data/',now.year, '/', now.month, '/', now.day, '/')
+    check = os.path.isdir(filepath)
     if not check:
-        os.makedirs(path)
-        print("created folder : ", path)
+        os.makedirs(filepath)
+        print("created folder : ", filepath)
     else:
         pass
-    return path
-
+    return filepath
 
 
 def to_file(feeds):
@@ -62,33 +62,32 @@ def to_file(feeds):
     return timestamp
 
 
+# bundle up ./data/YYYY/MM/DD-1 into a tarball
 # https://programmersought.com/article/77402568604/
 def rotate_files():
 
     today = datetime.date.today()
     yesterday = today - datetime.timedelta(days = 1)
 
-    datapath = './data/'
-    outfile = '{}daily-{}.gz'.format(datapath, yesterday)
+    archivepath = './data/'
+    filepath = ('').join('data/',yesterday.year, '/', yesterday.month, '/', yesterday.day, '/')
+    outfile = '{}daily-{}.tar.gz'.format(archivepath, yesterday)
 
-    all_gz_files = glob.glob("{}*.gz".format(datapath))
+    all_gz_files = glob.glob("{}*.gz".format(filepath))
     yesterday_gz_files = []
-
     for file in all_gz_files:
         if file[6:16] == str(yesterday):
             yesterday_gz_files.append(file)
+
+    print ('rotating {} files from {} into {}'.format(len(yesterday_gz_files), yesterday, outfile))
 
     with tarfile.open(outfile, "w:gz") as tar:
         for file in yesterday_gz_files:
             tar.add(file)
 
-    # with open(outfile, 'wb') as wfp:
-    #     for fn in yesterday_gz_files:
-    #         with open(fn, 'rb') as rfp:
-    #             shutil.copyfileobj(rfp, wfp)
-
+    #remove all files rotated
     for file in yesterday_gz_files:
-        os.remove(file)
+        os.remove(filepath+file)
 
 
 
