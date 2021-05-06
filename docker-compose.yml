@@ -2,6 +2,12 @@ version: '3'
 
 services:
 
+  dyndns:
+    restart: always
+    build:
+      context: ./build/dyndns
+      dockerfile: ./Dockerfile
+
   db:
     image: mysql:5.7
     restart: always
@@ -34,6 +40,8 @@ services:
       dockerfile: ./build/api/Dockerfile
     volumes:
       - bus_static:/app/api/static
+    ports:
+      - 80
     # # stack doesnt work if this is uncommented
     # # uncomment to make externally accessible DOESNT WORK
     #    labels:
@@ -43,18 +51,18 @@ services:
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
 
-  # non-proxied version
-  app:
-    restart: always
-    build:
-      context: .
-      dockerfile: ./build/app/Dockerfile
-    volumes:
-      - bus_assets:/app/assets
-    ports:
-      - 8000:80
-    command:
-      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+#  # non-proxied version
+#  app:
+#    restart: always
+#    build:
+#      context: .
+#      dockerfile: ./build/app/Dockerfile
+#    volumes:
+#      - bus_assets:/app/assets
+#    ports:
+#      - 8000:80
+#    command:
+#      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
 
 #  # traefik version (doesnt work on cornell EC2)
@@ -73,7 +81,7 @@ services:
 #    command:
 #      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 #
-#  # todo SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
+#  # future SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
 #  # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
 #  traefik:
 #    image: traefik:latest
@@ -87,12 +95,6 @@ services:
 #      - "8080:8080"
 #    volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock:ro
-
-  dyndns:
-    restart: always
-    build:
-      context: ./build/dyndns
-      dockerfile: ./Dockerfile
 
 volumes:
   bus_database:

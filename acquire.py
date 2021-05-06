@@ -74,7 +74,7 @@ def async_grab_and_store():
                 for route_id,path in path_bundle.items():
                     n.start_soon(grabber, s, path, route_id )
 
-    trio.run(main, path_list)
+    trio.run(main, path_list) # todo trap ValueError: 'bustime.mta.info' does not appear to be an IPv4 or IPv6 address / socket.gaierror: [Errno 8] nodename nor servname provided, or not known
     timestamp = dump.to_file(feeds)
     dump.to_lastknownpositions(feeds)
     num_buses = to_db(timestamp, feeds)

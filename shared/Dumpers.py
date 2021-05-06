@@ -38,7 +38,7 @@ def get_path_list():
 
 def filepath():
     now = datetime.datetime.now()
-    filepath = ('').join('data/',now.year, '/', now.month, '/', now.day, '/')
+    filepath = ('').join(['data/',str(now.year), '/', str(now.month), '/', str(now.day), '/'])
     check = os.path.isdir(filepath)
     if not check:
         os.makedirs(filepath)
@@ -67,17 +67,11 @@ def to_file(feeds):
 def rotate_files():
 
     today = datetime.date.today()
-    yesterday = today - datetime.timedelta(days = 1)
-
+    yesterday = today - datetime.timedelta(days=1)
     archivepath = './data/'
-    filepath = ('').join('data/',yesterday.year, '/', yesterday.month, '/', yesterday.day, '/')
+    filepath = ('').join(['data/', str(yesterday.year), '/', str(yesterday.month), '/', str(yesterday.day), '/'])
     outfile = '{}daily-{}.tar.gz'.format(archivepath, yesterday)
-
-    all_gz_files = glob.glob("{}*.gz".format(filepath))
-    yesterday_gz_files = []
-    for file in all_gz_files:
-        if file[6:16] == str(yesterday):
-            yesterday_gz_files.append(file)
+    yesterday_gz_files = glob.glob("{}*.gz".format(filepath))
 
     print ('rotating {} files from {} into {}'.format(len(yesterday_gz_files), yesterday, outfile))
 
@@ -86,17 +80,20 @@ def rotate_files():
             tar.add(file)
 
     #remove all files rotated
-    for file in yesterday_gz_files:
-        os.remove(filepath+file)
 
+    for file in yesterday_gz_files:
+        try:
+            os.remove(file)
+        except:
+            pass
 
 
 def to_lastknownpositions(feeds): #future please refactor me
     f_list=[]
     for route_bundle in feeds:
         for route_id,route_report in route_bundle.items():
-            route_report = route_report.json()
             try:
+                route_report = route_report.json() #bug sometimes get a Json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
                 for b in route_report['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
                     p = geojson.Point((b['MonitoredVehicleJourney']['VehicleLocation']['Longitude'],
                                        b['MonitoredVehicleJourney']['VehicleLocation']['Latitude']))
