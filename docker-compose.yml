@@ -41,7 +41,7 @@ services:
     volumes:
       - bus_static:/app/api/static
     ports:
-      - 80
+      - 80:80
     # # stack doesnt work if this is uncommented
     # # uncomment to make externally accessible DOESNT WORK
     #    labels:
