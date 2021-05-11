@@ -1,5 +1,4 @@
-# future could use a smaller python 3.7 image?
-FROM tiangolo/uwsgi-nginx-flask:python3.7
+FROM python:3.7
 
 # RUN apt-get update -y; apt-get upgrade -y; apt-get install -y default-libmysqlclient-dev python-dev gcc python3-pip
 RUN apt-get update -y; apt-get upgrade -y; apt-get install -y python3-pip
