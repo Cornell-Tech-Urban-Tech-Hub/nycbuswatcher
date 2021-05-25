@@ -11,6 +11,8 @@ services:
   db:
     image: mysql:5.7
     restart: always
+    command:
+      - --secure_file_priv=''
     environment:
       MYSQL_ROOT_PASSWORD: bustime
       MYSQL_DATABASE: buses
