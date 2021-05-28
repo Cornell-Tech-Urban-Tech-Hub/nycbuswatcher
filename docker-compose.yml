@@ -2,11 +2,18 @@ version: '3'
 
 services:
 
-  dyndns:
+  gandi_dns:
+    image: anthonymobile/gandi-live-dns
     restart: always
-    build:
-      context: ./build/dyndns
-      dockerfile: ./Dockerfile
+    environment:
+      - GANDI_API_KEY=$GANDI_API_KEY
+      - GANDI_DOMAIN=$GANDI_DOMAIN
+      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
+#  dyndns:
+#    restart: always
+#    build:
+#      context: ./build/dyndns
+#      dockerfile: ./Dockerfile
 
   db:
     image: mysql:5.7
