@@ -24,7 +24,7 @@ def get_session(dbuser,dbpassword,dbhost,dbport,dbname):
     session = Session()
     return session
 
-def parse_buses(timestamp, route, data):
+def parse_buses(route, data):
     lookup = {'route_long':['LineRef'],
               'direction':['DirectionRef'],
               'service_date': ['FramedVehicleJourneyRef', 'DataFrameRef'],
@@ -54,8 +54,8 @@ def parse_buses(timestamp, route, data):
     try:
         server_timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
         for b in data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
-            bus = BusObservation(route,timestamp, server_timestamp)
-            setattr(bus,'recorded_at_time',dateutil.parser.isoparse(b['RecordedAtTime']))
+            timestamp = dateutil.parser.isoparse(b['RecordedAtTime'])
+            bus = BusObservation(route,server_timestamp)
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
@@ -80,10 +80,8 @@ def parse_buses(timestamp, route, data):
 class BusObservation(Base):
     __tablename__ = "buses"
     id = Column(Integer, primary_key=True)
-    timestamp = Column(DateTime, index=True)
+    timestamp = Column(DateTime, index=True) # is now RecordedAtTime from SIRI
     server_timestamp = Column(DateTime)
-    # recorded_at_time = Column(String(127))
-    recorded_at_time = Column(DateTime)
     route_simple=Column(String(31)) #this is the route name passed through from the command line, may or may not match route_short
     route_long=Column(String(127))
     direction=Column(String(1))
@@ -119,9 +117,8 @@ class BusObservation(Base):
                 output = output + ('{} {} '.format(var,val))
         return output
 
-    def __init__(self,route,timestamp,server_timestamp):
+    def __init__(self,route,server_timestamp):
         self.route_simple = route
-        self.timestamp = timestamp
         self.server_timestamp = datetime.datetime.fromisoformat(server_timestamp)
 
 Index('index_servicedate_routeshort', BusObservation.service_date, BusObservation.route_short)

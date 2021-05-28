@@ -59,7 +59,7 @@ def to_file(feeds):
                     json.dump(route_report.json(), zipfile)
                 except:
                     pass # if error, dont write and return
-    return timestamp
+    return
 
 
 # bundle up ./data/YYYY/MM/DD-1 into a tarball
