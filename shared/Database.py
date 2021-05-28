@@ -6,6 +6,9 @@ from sqlalchemy.ext.declarative import declarative_base
 
 import datetime
 
+import dateutil.parser
+
+
 Base = declarative_base()
 
 def create_table(db_url):
@@ -52,6 +55,7 @@ def parse_buses(timestamp, route, data):
         server_timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
         for b in data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
             bus = BusObservation(route,timestamp, server_timestamp)
+            setattr(bus,'recorded_at_time',dateutil.parser.isoparse(b['RecordedAtTime']))
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
@@ -78,6 +82,8 @@ class BusObservation(Base):
     id = Column(Integer, primary_key=True)
     timestamp = Column(DateTime, index=True)
     server_timestamp = Column(DateTime)
+    # recorded_at_time = Column(String(127))
+    recorded_at_time = Column(DateTime)
     route_simple=Column(String(31)) #this is the route name passed through from the command line, may or may not match route_short
     route_long=Column(String(127))
     direction=Column(String(1))
