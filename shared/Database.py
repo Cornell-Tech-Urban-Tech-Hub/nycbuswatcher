@@ -54,8 +54,9 @@ def parse_buses(route, data):
     try:
         server_timestamp = data['Siri']['ServiceDelivery']['ResponseTimestamp']
         for b in data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
-            timestamp = dateutil.parser.isoparse(b['RecordedAtTime'])
+
             bus = BusObservation(route,server_timestamp)
+            setattr(bus,'timestamp',dateutil.parser.isoparse(b['RecordedAtTime']))
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
