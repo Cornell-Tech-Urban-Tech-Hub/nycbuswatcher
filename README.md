@@ -1,12 +1,52 @@
 # NYCBusWatcher
-- v1.2 2021 May 2
+- v2.0 June 2021
 - Anthony Townsend <atownsend@cornell.edu>
 
-## description
+## v2 TODOs
 
-Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous http requests, then cycles through and fetches current vehicle positions for all buses operating on these routes. This avoids the poor performance of trying to grab the entire system feed from the MTA BusTime SIRI API. Dumps full API response (for later reprocessing to extract additional data) to compressed individual files and most of the vehicle status fields to mysql table (the upcoming stop data is omitted from the database dump for now). Fully dockerized, runs on scheduler 1x per minute. Data storage requirments ~ 1-2 Gb/day (guesstimate).
+1. make a list of code changes
+    - move all scheduled functions into a new, single, common library (e.g. shared/Jobs.py )
+    - review, rewrite Dumpers
+    - excise all Database code (but keep BusObservation class?)
+2. update the docker stack
+3. write dumper to export existing database into static API files per route per hour
+    - will need to run it on existing stack before shutting down + deploying new stack (or give the new stack a new new `nycbuswatcher2` and let the stack during migration)
 
+## v2 design vision
 
+### Goals:
+- provide single robust, low cost point of data access to processed SIRI API data for students
+- Provide ongoing archival of feed JSON
+
+### Data Acquisition + Storage
+
+A slightly modified version of v1.2 `acquire.py` runs the following scheduled jobs:
+
+##### Per minute:
+1. Fetches list of active routes from MTA BusTime OneBusAway API
+2. Retrieves SIRI `VehicleMonitoring` response for each route asynchronously. (This avoids the poor performance of trying to grab the entire system feed from the MTA BusTime SIRI API.)
+3. `BusObservations` are parsed and pickled to disk (in one file for all routes per scheduled run, e.g. `BusObservations_2021-05-02T12:00:11.2342.pickle`).
+4. API JSON responses are saved directly to disk without parsing (one file per route).
+
+##### Per hour:
+5. Per route, all pickle files for the hour are loaded, concatenated, and serialized into a single static JSON file which is served up by app.py FastAPI app with an endpoint like:
+    `http://api.buswatcher.org/2021/05/11/09/M15`
+   Optionally, export a single file for all routes at `http://api.buswatcher.org/2021/05/11/09/all`
+6. Available routes for an hourly interval are discoverable at:
+   `http://api.buswatcher.org/2021/05/11/09/routes`
+7. The individual JSON responses (n routes * ~60 grabs) are bundled together into a compressed tarball and put in cold storage. Data storage requirements ~ 1-2 Gb/day (guesstimate).
+
+### pros
+- Reuses existing code
+- Uses existing docker stack
+- No database
+### cons
+- All API queries need to be hardcoded/built statically
+- need to export entire database to static files
+- storage requirements, but can integrate with S3
+
+--------------
+# REVISE EVERYTHING BELOW HERE FOR V2
 ## installation 
 
 #### with docker-compose
@@ -88,25 +128,4 @@ if you just want to test out the grabber, you can run `export PYTHON_ENV=develop
     ```
     docker exec -it nycbuswatcher_grabber_1 /bin/bash
     python buswatcher.py
-    ```
-
-###### db
-- For debugging, run the mysql client directly inside the container.
-    
-    ```
-    docker exec -it nycbuswatcher_db_1 mysql -uroot -p buses
-    [root password=bustime]
-    ```
-    
-- quick diagnostic query for how many records per day
-
-    ```sql
-    SELECT service_date, COUNT(*) FROM buses GROUP BY service_date;
-    ```
-
-- query # of records by date/hour/minute
-
-    ```sql
-     SELECT service_date, date_format(timestamp,'%Y-%m-%d %H-%i'), COUNT(*) \
-     FROM buses GROUP BY service_date, date_format(timestamp,'%Y-%m-%d %H-%i');
     ```
