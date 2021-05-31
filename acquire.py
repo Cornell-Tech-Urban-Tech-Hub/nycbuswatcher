@@ -1,64 +1,29 @@
 import argparse
 import os
 import time
+import datetime as dt
 
 from apscheduler.schedulers.background import BackgroundScheduler
 import trio
 from dotenv import load_dotenv
 
-import shared.Database as db
+import shared.Helpers as help
 import shared.Dumpers as dump
 import shared.GTFS2GeoJSON as GTFS2GeoJSON
 
 from shared.config import config
 
 
-def get_db_args(): #future refactor me into Database.py?
-
-    # for PYTHON_ENV=production, but changing database hostname from 'db' to 'localhost'
-    if args.localhost is True:
-        dbhost = 'localhost'
-    # development mode
-    elif os.environ['PYTHON_ENV'] == "development":
-        dbhost = 'localhost'
-    # production mode
-    else:
-        dbhost = config.config['dbhost']
-
-    return (config.config['dbuser'],
-            config.config['dbpassword'],
-            dbhost,
-            config.config['dbport'],
-            config.config['dbname']
-            )
-
-def to_db(feeds): #future refactor me into Database.py?
-    db_url=db.get_db_url(*get_db_args())
-    db.create_table(db_url)
-    session = db.get_session(*get_db_args())
-    print('Dumping to {}'.format(db_url))
-    num_buses = 0
-    for route_bundle in feeds:
-        for route_id,route_report in route_bundle.items():
-            buses = db.parse_buses(route_id, route_report.json())
-            for bus in buses:
-                session.add(bus)
-                num_buses = num_buses + 1
-        session.commit()
-    return num_buses
-
-
 def async_grab_and_store():
 
     start = time.time()
-    path_list = dump.get_path_list()
+    SIRI_request_urlpaths = help.get_SIRI_request_urlpaths()
     feeds = []
 
-    # future trap some of the connection/DNS errors that can happen in here to suppress a lot of errors messages and/or retry intelligently
     async def grabber(s,a_path,route_id):
         try:
             r = await s.get(path=a_path)
-        except ValueError as e :
+        except Exception as e :
             print ('{} from DNS issues'.format(e))
         feeds.append({route_id:r})
 
@@ -74,18 +39,24 @@ def async_grab_and_store():
                 for route_id,path in path_bundle.items():
                     n.start_soon(grabber, s, path, route_id )
 
-    trio.run(main, path_list) # todo trap ValueError: 'bustime.mta.info' does not appear to be an IPv4 or IPv6 address / socket.gaierror: [Errno 8] nodename nor servname provided, or not known
-    dump.to_file(feeds)
-    dump.to_lastknownpositions(feeds)
-    num_buses = to_db(feeds)
+    trio.run(main, SIRI_request_urlpaths)
+
+    # dump to the various locations
+    timestamp = dt.datetime.now().strftime("%Y-%m-%dT_%H:%M:%S.%f")
+    dump.to_barrel(feeds, timestamp) # parse and pickle all the visible buses as BusObservation objects
+    dump.to_files(feeds, timestamp) # save the original JSON responses into files
+    dump.to_lastknownpositions(feeds) # make a GeoJSON file for real-time map
+
+    # report results to console
+    num_buses = help.num_buses(feeds)
     end = time.time()
-    print('Fetched {} buses on {} routes in {:2f} seconds to gzipped archive and mysql database.\n'.format(num_buses,len(feeds),(end - start)))
+    print('Fetched {} BusObservations on {} routes in {:2f} seconds to pickle barrel and responsepath.\n'.format(num_buses,len(feeds),(end - start)))
     return
 
 
 if __name__ == "__main__":
 
-    print('NYC MTA BusTime API Scraper v1.11. March 2021. Anthony Townsend <atownsend@cornell.edu>')
+    print('NYC MTA BusTime API Scraper v2.0 (no-database branch) June 2021. Anthony Townsend <atownsend@cornell.edu>')
     print('mode: {}'.format(os.environ['PYTHON_ENV']))
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
@@ -99,10 +70,20 @@ if __name__ == "__main__":
         interval = 60
         print('Scanning on {}-second interval.'.format(interval))
         scheduler = BackgroundScheduler()
+
+        # every minute
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
-        scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') #run at 2am daily
-        scheduler.add_job(dump.rotate_files,'cron', hour='1') #run at 1 am daily
+
+        # every hour
+        # scheduler.add_job(dump.render_barrel, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.tarball_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+
+        # every day
+        # scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') # rebuilds the system map file, run at 2am daily
+        # scheduler.add_job(dump.rotate_files,'cron', hour='1') #run at 1 am daily
+
         scheduler.start()
+
         try:
             while True:
                 time.sleep(2)
