@@ -23,9 +23,9 @@ def async_grab_and_store():
     async def grabber(s,a_path,route_id):
         try:
             r = await s.get(path=a_path)
+            feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
         except Exception as e :
             print ('{} from DNS issues'.format(e))
-        feeds.append({route_id:r})
 
     async def main(path_list):
         from asks.sessions import Session
@@ -75,8 +75,10 @@ if __name__ == "__main__":
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
+        # todo write render_barrel  (and cleanup)
+        # todo write render_responses (and cleanup)
         # scheduler.add_job(dump.render_barrel, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-        # scheduler.add_job(dump.tarball_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.render_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         # every day
         # scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') # rebuilds the system map file, run at 2am daily

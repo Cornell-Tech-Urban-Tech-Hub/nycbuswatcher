@@ -3,50 +3,37 @@ import os
 import glob
 import datetime as dt
 import json
-import gzip
 import pickle
 import geojson
 import tarfile
 import os.path
+from glob import glob
 
 from shared.BusObservation import BusObservation
 
-def dir_check(checkpath):
-    check = os.path.isdir(checkpath)
-    if not check:
-        os.makedirs(checkpath)
-        print("created folder : ", checkpath)
-    else:
-        pass
-    return
-
-def get_dumppaths(rt):
-
-    barrelpath='data/barrel/{}'.format(rt)
-    responsepath='data/responses/{}'.format(rt)
-    archivepath='data/archive/{}'.format(rt)
+def get_datehourpath(path_prefix):
 
     now = dt.datetime.now()
-    staticpath = ('').join(['static/',
+    datehourpath = ('').join([
                            str(now.year),
                            '/',
                            str(now.month),
                            '/',
-                           str(now.day)])
-
-
-    dumppaths = {
-        'barrelpath': barrelpath,
-        'responsepath': responsepath,
-        'archivepath': archivepath,
-        'staticpath' : staticpath
-    }
+                           str(now.day),
+                           '/',
+                           str(now.hour),
+                            '/'
+    ])
 
     # make sure any paths we return exist, or create them
-    for pathitem, checkpath in dumppaths.items():
-        dir_check(checkpath)
+    check = os.path.isdir(path_prefix + datehourpath)
+    if not check:
+        os.makedirs(path_prefix + datehourpath)
+        print("created folder : ", path_prefix + datehourpath)
+    else:
+        pass
 
-    return dumppaths
+    return path_prefix + datehourpath
 
 def to_barrel(feeds, timestamp):
 
@@ -56,13 +43,17 @@ def to_barrel(feeds, timestamp):
             pickles=[]
             try:
                 route_data = route_data.json()
-                barrel='{}/barrel_{}_{}.dat'.format(get_dumppaths(route_id.split('_')[1])['barrelpath'],
-                                                    route_id.split('_')[1],
-                                                    timestamp)
+
+                path_prefix = ('data/barrel/' +
+                               route_id.split('_')[1] +
+                               '/')
+                barrel_folder = get_datehourpath(path_prefix)
+                barrelfile = barrel_folder + 'barrel_{}_{}.dat'.format(route_id.split('_')[1],timestamp)
+
                 for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
                     bus = BusObservation(route_id, monitored_vehicle_journey)
                     pickles.append(bus)
-                with open(barrel, "wb") as f:
+                with open(barrelfile, "wb") as f:
                     pickle.dump(pickles, f)
             except KeyError: # no VehicleActivity?
                 # print ('i didnt dump barrel file for {}'.format(route_id.split('_')[1]))
@@ -76,57 +67,80 @@ def to_files(feeds, timestamp):
         for route_id,route_data in route_report.items():
             try:
                 route_data = route_data.json()
-                outfile='{}/response_{}_{}.json'.format(get_dumppaths(route_id.split('_')[1])['responsepath'],
-                                                        route_id.split('_')[1],
-                                                        timestamp
-                                                        )
 
-                with open(outfile, 'wt', encoding="ascii") as f:
+                path_prefix = ('data/response/' +
+                               route_id.split('_')[1] +
+                               '/')
+                response_folder = get_datehourpath(path_prefix)
+                responsefile = response_folder + 'reponse_{}_{}.json'.format(route_id.split('_')[1],timestamp)
+
+                with open(responsefile, 'wt', encoding="ascii") as f:
                     json.dump(route_data, f)
             except Exception as e: # no vehicle activity?
                 print (e)
                 pass
     return
 
-# def render_barrel(): #todo
-#
-#     json_template = {'buses': None}
-#
-#     picklefile_list = glob.glob("{}*.dat".format(get_dumppaths(route_id)['barrelpath']))
-#     pickle_array = []
-#     for picklefile in picklefile_list:
-#         pickle_array.append(pickle.load(picklefile))
-#
-#     # todo dump the pickle_array to a static json file in the fastapi's static folder
-#
-#     renderfile_path='' # year/month/day/hour
-#     renderfile_name='' # year_month_day_hour_route
-#
-#     print('fetched {} pickles from {} files in the barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), renderfile_path+renderfile_name)
-#
-#     return
+'''
+def render_barrel():
 
-# def tarball_responses():  #todo
-#     # bundle up ./data/responses/*json into a tarball into ./data/archive
-#     # https://programmersought.com/article/77402568604/
-#
-#     tarballpath = './data/archive'
-#     raw_response_path = ('').join(['data/', )
-#
-#     #     print ('made a tarball of {} files from {} into {}'.format(len(yesterday_gz_files), yesterday, outfile))
-#     #
-#     #     with tarfile.open(outfile, "w:gz") as tar:
-#     #         for file in yesterday_gz_files:
-#     #             tar.add(file)
-#     #
-#     #     #remove all files rotated
-#     #
-#     #     for file in yesterday_gz_files:
-#     #         try:
-#     #             os.remove(file)
-#     #         except:
-#     #             pass
-#     return
+    route_folders = glob("{}*".format(get_dumppaths()['barrelpath']))
+
+    for folderpath in route_folders:
+        picklefile_list = glob("{}/*.dat".format(folderpath))
+
+        pickle_array = []
+        for picklefile in picklefile_list:
+            with open(picklefile, 'rb') as pickle_file:
+                pickle_array.append(pickle.load(pickle_file))
+
+        #todo ------STOPPED DEBUGGING HERE SUNDAY NIGHT-------------------------------------------------
+
+        # todo pickle the pickle_array in get_dumppaths()['barrelpath'] with a route and date path
+
+        renderfile_template = {'buses': None}
+
+
+        #
+        #     renderfile_path='' # year/month/day/hour
+        #     renderfile_name='' # year_month_day_hour_route
+        #
+        #     print('fetched {} pickles from {} files in the barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), renderfile_path+renderfile_name)
+        #
+    return
+
+def render_responses():  #todo
+
+    # bundle up everything in ./data/responses/*.json into a tarball into ./data/archive
+    # https://programmersought.com/article/77402568604/
+
+    tarballpath = './data/archive'
+    raw_response_path = ''.join(['data/',get_dumppaths()['responsepath'],'**/*.json'])
+
+    files_to_archive = glob.glob(raw_response_path, recursive=True)
+
+    outfile=
+    with tarfile.open(outfile, "w:gz") as tar:
+        for file in yesterday_gz_files:
+            tar.add(file)
+
+    # walk and glob
+
+    #     print ('made a tarball of {} files from {} into {}'.format(len(yesterday_gz_files), yesterday, outfile))
+    #
+    #     with tarfile.open(outfile, "w:gz") as tar:
+    #         for file in yesterday_gz_files:
+    #             tar.add(file)
+    #
+    #     #remove all files rotated
+    #
+    #     for file in yesterday_gz_files:
+    #         try:
+    #             os.remove(file)
+    #         except:
+    #             pass
+    return
+'''
 
 def to_lastknownpositions(feeds): #future please refactor me
     f_list=[]
