@@ -44,16 +44,13 @@ class DumpFolder():
         return
 
 
-# should jsut be able to create a Barrel instance and it automagically inherits/creates
-# b = Barrel('Bx19','2021-02-21T23:23:11.34234')
-
 class FeedBarrel(DumpFolder):
 
     def __init__(self, feeds, timestamp, kind='barrel'):
         super().__init__(kind)
         self.make_pickles(feeds, timestamp)
 
-    # dump each pickle to data/barrel/route_id/barrel_2021-04-03T12:12:12.dat
+    # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
     def make_pickles(self, feeds, timestamp):
 
         for route_report in feeds:
@@ -172,44 +169,42 @@ class FeedBarrel(DumpFolder):
     #         #             pass
     #     return
 
-
+#bug debug me
 class FeedLake(DumpFolder):
 
-    def __init__ (self, route, timestamp):
-        self.type = 'response'
-        self.route = route
-        self.timestamp = timestamp
-        self.path = self.get_dumppath(self.type) # generate the path to this barrel
-        self.checkpath(self.path) # make sure my folder exists, if not create it
+    def __init__(self, feeds, timestamp, kind='lake'):
+        super().__init__(kind)
+        self.make_lakes(feeds, timestamp)
 
-    #todo update me
+    # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/response_2021-04-03T12:12:12.json
     def make_lakes(self, feeds, timestamp):
-        # dump each route's response as a raw JSON file data/responses/route_id/responses_2021-04-03T12:12:12.json
+
         for route_report in feeds:
             # dump each route's response as a raw JSON file
             for route_id,route_data in route_report.items():
                 route=route_id.split('_')[1]
                 try:
                     route_data = route_data.json()
+                    folder = self.path+route
+                    self.checkpath(folder)
+                    file = '{}/response_{}_{}.json'.format(folder,
+                                                        route,
+                                                        timestamp
+                                                        )
 
-                    path_prefix = ('data/response/')
-                    response_folder = self.get_dumppath(path_prefix, route)
-                    responsefile = response_folder + \
-                                   'reponse_{}_{}.json'.format(route,timestamp)
-
-                    with open(responsefile, 'wt', encoding="ascii") as f:
+                    with open(file, 'wt', encoding="ascii") as f:
                         json.dump(route_data, f)
                 except Exception as e: # no vehicle activity?
                     print (e)
                     pass
         return
 
-    def get_lakes(self):
-        return # lake_array
-
-    def render_lakes(self):  #todo
-
-        #todo use the path crawling algorithm like above
+    # def get_lakes(self):
+    #     return # lake_array
+    #
+    # def render_lakes(self):  #todo
+    #
+    #     #todo use the path crawling algorithm like above
 
         # bundle up everything in ./data/responses/*.json into a tarball into ./data/archive
         # https://programmersought.com/article/77402568604/
@@ -233,4 +228,4 @@ class FeedLake(DumpFolder):
         #             os.remove(file)
         #         except:
         #             pass
-        return
+        # return
