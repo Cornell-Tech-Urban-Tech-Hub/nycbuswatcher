@@ -43,14 +43,18 @@ def async_grab_and_store():
 
     # dump to the various locations
     timestamp = dt.datetime.now().strftime("%Y-%m-%dT_%H:%M:%S.%f")
-    dump.to_barrel(feeds, timestamp) # parse and pickle all the visible buses as BusObservation objects
-    dump.to_files(feeds, timestamp) # save the original JSON responses into files
-    dump.to_lastknownpositions(feeds) # make a GeoJSON file for real-time map
+
+    # create instances of the DumpFolder child classes, which will process the feeds and store them appropriately
+    barrel = dump.FeedBarrel(feeds, timestamp)
+    # lake = dump.FeedLake(feeds, timestamp) #todo write me
+
+    # # make a GeoJSON file for real-time map
+    # dump.to_lastknownpositions(feeds)
 
     # report results to console
     num_buses = help.num_buses(feeds)
     end = time.time()
-    print('Fetched {} BusObservations on {} routes in {:2f} seconds to pickle barrel and responsepath.\n'.format(num_buses,len(feeds),(end - start)))
+    print('Fetched {} BusObservations on {} routes in {:2f} seconds to a pickle Barrel and a json Lake.\n'.format(num_buses,len(feeds),(end - start)))
     return
 
 
@@ -75,6 +79,7 @@ if __name__ == "__main__":
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
+        # todo need a new way to trigger these jobs
         scheduler.add_job(dump.render_barrel, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
         scheduler.add_job(dump.render_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
