@@ -109,7 +109,7 @@ def render_barrel():
     # 'data/barrel/YYYY/M/D/HH'
     hour_folder_pathlist = hour_folder_pathlist[3:]
 
-    # setup the exclude path
+    # setup the exclude path for the current hour folder
     now = datetime.datetime.now()
     excluded_path = ('{}{}/{}/{}/{}').format(rootdir, str(now.year), str(now.month), str(now.day), str(now.hour))
 
@@ -118,7 +118,7 @@ def render_barrel():
     try:
         hour_folder_pathlist.remove(excluded_path)
     except:
-        print ('error: cannot render current hour folder')
+        print ('stopping: i wasnt able to exclude the current hour folder. add some logic to avoid this, or run the grabber now to trigger it')
         sys.exit()
         pass
 
@@ -142,15 +142,15 @@ def render_barrel():
                         pickle_array.append(p)
                     print ('added {} to route pickle'.format(picklefile))
 
-            #todo 1 make a template for valid JSON
+            #make a template for valid JSON
             json_container = dict()
 
-            #todo 2 iterate over pickle_array and insert into JSON
-            json_array=[]
+            #iterate over pickle_array and insert into JSON
+            serial_array=[]
             for p in pickle_array:
-                json_array.append(p.to_dict())
+                serial_array.append(p.to_serial())
 
-            json_container['buses'] = json_array
+            json_container['buses'] = serial_array
 
             path_prefix='static/'
             static_path=route_folder.replace('data/barrel','static')
@@ -158,10 +158,15 @@ def render_barrel():
 
             rendered_file='rendered_barrel_{}.json'.format(route) #todo add date to filename?
             with open(static_path+'/'+rendered_file, 'w') as f:
-                json.dump(json_array, f)
+                json.dump(json_container, f)
+
             print ('rendered {} pickles from {} files in this barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), static_path+rendered_file))
 
-        #remove everything in the response directory (but what if something is writing to it during the run?)
+        #todo figure out how to stop it from reprocessing old files
+        #option 1=delete them
+        #option 2=??
+
+        #remove everything in the barrel directory (but what if something is writing to it during the run?)
         #     for file in yesterday_gz_files:
         #         try:
         #             os.remove(file)

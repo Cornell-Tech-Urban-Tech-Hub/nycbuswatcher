@@ -53,14 +53,8 @@ class BusObservation():
         return buses
 
 
-    def json_repr(self):
+    def to_serial(self):
         
-        # Represent instance of a class as JSON.
-        # Arguments:
-        # obj -- any object
-        # Return:
-        # String that represent JSON-encoded object.
-
         def serialize(obj):
             # Recursively walk object's hierarchy.
             
@@ -83,10 +77,11 @@ class BusObservation():
               return serialize(obj.__dict__)
             
             else:
-              return repr(obj) # Don't know how to handle, convert to string
+              # return repr(obj) # Don't know how to handle, convert to string
+                return str(obj) # avoids single quotes around strings
 
-        return json.dumps(serialize(self))
-        # return serialize(self)
+        # return json.dumps(serialize(self))
+        return serialize(self)
 
     def __repr__(self):
         output = ''
