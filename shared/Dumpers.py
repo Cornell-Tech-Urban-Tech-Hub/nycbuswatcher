@@ -17,8 +17,8 @@ class GenericFolder():
 
     def __init__(self, date_tuple, kind = None):
         pathmap = {
-            'barrel':'data/barrel',
-            'puddle':'data/puddle',
+            'barrel':'data/barrels',
+            'puddle':'data/puddles',
             'static':'static'
         }
         self.path = self.get_path(pathmap[kind],date_tuple) # generate the path to this barrel
@@ -33,12 +33,6 @@ class GenericFolder():
     def checkpath(self,path):
         Path(path).mkdir(parents=True, exist_ok=True)
         return
-
-# a DataStore instance represents all of the Barrels and Stages
-class DataStore():
-    def __init__(self):
-        self.barrels= None #todo automatically crawl the whole tree
-        pass
 
 # each Barrel instance represents a collection of pickles parsed from a collection of feeds
 class Barrel(GenericFolder):
@@ -84,20 +78,12 @@ class Barrel(GenericFolder):
         #
         return
 
-
 # each Stage instance represents a collection of static JSON files rendered from a pickle Barrel
 class Stage(GenericFolder):
 
     def __init__(self, date_tuple):
         super().__init__(date_tuple, kind='static')
         # self.path is inherited from GenericFolder
-
-
-# a DataLake instance represents all of the Puddles
-class DataLake():
-    def __init__(self):
-        self.puddles = None #todo automatically crawl the whole tree
-        pass
 
 # each Puddle instance represents a collection of pickles parsed from a collection of feeds
 class Puddle(GenericFolder):
@@ -106,9 +92,28 @@ class Puddle(GenericFolder):
         super().__init__(date_tuple, kind='puddle')
         # self.path is inherited from GenericFolder
 
-    def put_responses(self,feed):
-        #
+    # dump each response to data/puddle/YYYY/MM/DD/HH/route_id/response_2021-04-03T12:12:12.json
+    def put_responses(self,feeds,timestamp):
+        for route_report in feeds:
+            for route_id,route_data in route_report.items():
+                route=route_id.split('_')[1]
+                try:
+                    route_data = route_data.json()
+
+                    # create each route folder and the pickle filepath
+                    folder = self.path / str(route)
+                    self.checkpath(folder)
+                    filename = 'response_{}_{}.json'.format(route,timestamp)
+                    filepath = folder / filename
+
+                    with open(filepath, 'wt', encoding="ascii") as f:
+                        json.dump(route_data, f, indent=4)
+
+                except Exception as e: # no vehicle activity?
+                    print (e)
+                    pass
         return
+
 
     def list_responses(self):
         #
@@ -122,7 +127,25 @@ class Puddle(GenericFolder):
         #
         return
 
+# a DataStore instance represents all of the Barrels and Stages
+class DataStore():
+    def __init__(self):
+        self.barrels= None #todo automatically crawl the whole tree
+        pass
 
+    def render_pickles(self):
+        print('This will trigger the pickle rendering and cleanup?')
+        return
+
+# a DataLake instance represents all of the Puddles
+class DataLake():
+    def __init__(self):
+        self.puddles = None #todo automatically crawl the whole tree
+        pass
+
+
+
+# OLD CODE TO DRAW ON
 
 '''
     def render_barrel(self):
@@ -203,27 +226,7 @@ class Puddle(GenericFolder):
 
 class ResponseStore(GenericFolder):
 
-    def __init__(self, feeds, timestamp, kind='lake'):
-        super().__init__(kind)
-        self.make_lakes(feeds, timestamp)
 
-    # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/response_2021-04-03T12:12:12.json
-    def make_lakes(self, feeds, timestamp):
-        for route_report in feeds:
-            # dump each route's response as a raw JSON file
-            for route_id,route_data in route_report.items():
-                route=route_id.split('_')[1]
-                try:
-                    route_data = route_data.json()
-                    folder = self.path+route
-                    self.checkpath(folder)
-                    file = '{}/response_{}_{}.json'.format(folder,route,timestamp)
-                    with open(file, 'wt', encoding="ascii") as f:
-                        json.dump(route_data, f)
-                except Exception as e: # no vehicle activity?
-                    print (e)
-                    pass
-        return
 
     # def get_lakes(self):
     #     return # lake_array

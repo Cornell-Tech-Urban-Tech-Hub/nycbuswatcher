@@ -45,6 +45,10 @@ def async_grab_and_store():
     timestamp = dt.datetime.now()
     date_tuple = (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)
     dump.Barrel(date_tuple).put_pickles(feeds,timestamp)
+    dump.Puddle(date_tuple).put_responses(feeds,timestamp)
+
+
+
     # lake = dump.ResponseStore(feeds, (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)) #todo write me
 
     # # make a GeoJSON file for real-time map
@@ -79,8 +83,8 @@ if __name__ == "__main__":
 
         # every hour
         # todo need a new way to trigger these jobs
-        scheduler.add_job(dump.render_barrel, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-        scheduler.add_job(dump.render_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        scheduler.add_job(dump.DataStore.render_pickles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.render_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         # every day
         # scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') # rebuilds the system map file, run at 2am daily
