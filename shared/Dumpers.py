@@ -11,28 +11,27 @@ import shared.Helpers as help
 from glob import glob
 import geojson
 import tarfile
-import os.path
-import datetime
 import sys
 import os
-import glob
 
 from shared.BusObservation import BusObservation
 
+pathmap = {
+    'barrel':'data/barrels',
+    'puddle':'data/puddles',
+    'lake': 's3',
+    'store':'static'
+}
+
 class GenericFolder():
 
-    def __init__(self, date_tuple, kind = None):
-        pathmap = {
-            'barrel':'data/barrels',
-            'puddle':'data/puddles',
-            'static':'static'
-        }
-        self.path = self.get_path(pathmap[kind],date_tuple) # generate the path to this barrel
+    def __init__(self, date_dict, kind = None):
+
+        self.path = self.get_path(pathmap[kind],date_dict) # generate the path to this barrel
         self.checkpath(self.path) # make sure my folder exists, if not create it
 
-    def get_path(self, prefix, date_tuple):
-        year, month, day, hour = date_tuple
-        folderpath = Path.cwd() / prefix / str(year) / str(month) / str(day) / str(hour)
+    def get_path(self, prefix, date_dict):
+        folderpath = Path.cwd() / prefix / date_dict['year'] / date_dict['month'] / date_dict['day'] / date_dict['hour']
         self.checkpath(folderpath)
         return folderpath
 
@@ -40,15 +39,15 @@ class GenericFolder():
         Path(path).mkdir(parents=True, exist_ok=True)
         return
 
-# each Puddle instance represents a collection of raw JSON responses - e.g. the raw data in the feeds
+# a Puddle is a folder holding raw JSON responses for a single route, single hour
 class Puddle(GenericFolder):
 
-    def __init__(self, date_tuple):
-        super().__init__(date_tuple, kind='puddle')
+    def __init__(self, date_dict):
+        super().__init__(date_dict, kind='puddle')
         # self.path is inherited from GenericFolder
 
     # dump each response to data/puddle/YYYY/MM/DD/HH/route_id/response_2021-04-03T12:12:12.json
-    def put_puddles(self, feeds, timestamp):
+    def put_responses(self, feeds, timestamp):
         for route_report in feeds:
             for route_id,route_data in route_report.items():
                 route=route_id.split('_')[1]
@@ -69,24 +68,58 @@ class Puddle(GenericFolder):
                     pass
         return
 
-
-    def list_responses(self):
-        #
-        return
+    def list_responses(self, date_dict):
+        puddle_path=Path.cwd() / 'data' / date_dict['year'] / date_dict['month'] / date_dict['day'] / date_dict['hour']
+        folders = Path('data/').glob('**')
+        return folders #todo check its just the route subfolders
 
     def get_responses(self):
         #
         return
 
-    def tar_responses_to_storage(self):
+    def render_puddle_to_storage(self):
         #
         return
+
+# a DataLake instance represents all of the Puddles
+class DataLake():
+
+    def __init__(self):
+        self.puddles = self.gen_puddle_list()
+        pass
+
+    # builds a list of paths to puddles — e.g. hourly route folders of JSON files
+    def gen_puddle_list(self):
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']), recursive=True)
+        dirs = filter(lambda f: os.path.isdir(f), files)
+        return [p for p in dirs]
+
+    # todo test
+    def render_puddles(self):
+        puddles_to_render = self.gen_puddle_list()
+        for puddlepath in puddles_to_render:
+            lake = Path.cwd() / pathmap['lake']
+            lake.mkdir(parents=True, exist_ok=True)
+            files_to_archive = glob.glob(puddlepath, recursive=True) # recursive unneeded?
+            route=puddlepath.parts[-1] # grab last part of path
+            outfile=lake / 'lake_{}.tar.gz'.format(route)
+            with tarfile.open(outfile, "w:gz") as tar:
+                for file in files_to_archive:
+                    tar.add(file)
+            # remove everything in the response directory 
+            # race issues?(what if something is writing to it during the run?)
+            for file in files_to_archive:
+                try:
+                    os.remove(file)
+                except:
+                    pass
+            return
 
 # each Barrel instance represents a collection of pickles parsed from a collection of feeds
 class Barrel(GenericFolder):
 
-    def __init__(self, date_tuple):
-        super().__init__(date_tuple, kind='barrel')
+    def __init__(self, date_dict):
+        super().__init__(date_dict, kind='barrel')
         # self.path is inherited from GenericFolder
 
     # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
@@ -117,7 +150,7 @@ class Barrel(GenericFolder):
                     pass
         return
 
-    def list_pickles(self):
+    def list_pickles(self,date_tuple):
         #
         return
 
@@ -209,41 +242,7 @@ class Stage(GenericFolder):
         super().__init__(date_tuple, kind='static')
         # self.path is inherited from GenericFolder
 
-# a DataLake instance represents all of the Puddles
-class DataLake():
-    def __init__(self):
-        # self.puddles = None #todo automatically crawl the whole tree
-        pass
 
-    def bundle_puddles(self):
-        pass
-
-    #
-    # def bundle_puddles(self):  #todo
-    #
-    # bundle up everything in ./data/responses/*.json into a tarball into ./data/archive
-    # https://programmersought.com/article/77402568604/
-    #
-    # tarballpath = './data/archive'
-    # raw_response_path = ''.join(['data/',get_dumppaths()['responsepath'],'**/*.json'])
-    #
-    # files_to_archive = glob.glob(raw_response_path, recursive=True)
-    # file_to_archive = self.puddles #todo this one
-    # outfile=
-    # with tarfile.open(outfile, "w:gz") as tar:
-    #     for file in yesterday_gz_files:
-    #         tar.add(file)
-    #
-    #     print ('made a tarball of {} files from {} into {}'.format(len(yesterday_gz_files), yesterday, outfile))
-
-    #     #remove everything in the response directory (but what if something is writing to it during the run?)
-    #
-    #     for file in yesterday_gz_files:
-    #         try:
-    #             os.remove(file)
-    #         except:
-    #             pass
-    # return
 
 # a DataStore instance represents all of the Barrels and Stages
 class DataStore():
@@ -258,7 +257,6 @@ class DataStore():
             barrel.render_pickles_to_static() #todo logic to handle duplicates and missings should be in the barrel (e.g. it should manage itself)
             print('All old Barrels are empty.')
             return
-
 
 def async_grab_and_store(localhost_flag):
 
@@ -289,9 +287,15 @@ def async_grab_and_store(localhost_flag):
 
     # dump to the various locations
     timestamp = dt.datetime.now()
-    date_tuple = (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)
-    Barrel(date_tuple).put_pickles(feeds,timestamp)
-    Puddle(date_tuple).put_puddles(feeds, timestamp)
+
+    date_dict = {'year': timestamp.year,
+                 'month': timestamp.month,
+                 'day': timestamp.day,
+                 'hour': timestamp.hour
+                 }
+
+    Barrel(date_dict).put_pickles(feeds,timestamp)
+    Puddle(date_dict).put_puddles(feeds, timestamp)
 
     # report results to console
     num_buses = help.num_buses(feeds)

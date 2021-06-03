@@ -30,12 +30,8 @@ if __name__ == "__main__":
 
         #todo activate hourly jobs
         # every hour
+        scheduler.add_job(dump.DataLake.render_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
         # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-        # scheduler.add_job(dump.DataLake.bundle_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-
-        # every day
-        # scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') # rebuilds the system map file, run at 2am daily
-        # scheduler.add_job(dump.rotate_files,'cron', hour='1') #run at 1 am daily
 
         scheduler.start()
 
