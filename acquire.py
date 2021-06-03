@@ -1,64 +1,11 @@
 import argparse
 import os
 import time
-import datetime as dt
 
 from apscheduler.schedulers.background import BackgroundScheduler
-import trio
 from dotenv import load_dotenv
 
-import shared.Helpers as help
 import shared.Dumpers as dump
-import shared.GTFS2GeoJSON as GTFS2GeoJSON
-
-from shared.config import config
-
-
-def async_grab_and_store():
-
-    start = time.time()
-    SIRI_request_urlpaths = help.get_SIRI_request_urlpaths()
-    feeds = []
-
-    async def grabber(s,a_path,route_id):
-        try:
-            r = await s.get(path=a_path)
-            feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
-        except Exception as e :
-            print ('{} from DNS issues'.format(e))
-
-    async def main(path_list):
-        from asks.sessions import Session
-
-        if args.localhost is True:
-            s = Session('http://bustime.mta.info', connections=5)
-        else:
-            s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
-        async with trio.open_nursery() as n:
-            for path_bundle in path_list:
-                for route_id,path in path_bundle.items():
-                    n.start_soon(grabber, s, path, route_id )
-
-    trio.run(main, SIRI_request_urlpaths)
-
-    # dump to the various locations
-    timestamp = dt.datetime.now()
-    date_tuple = (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)
-    dump.Barrel(date_tuple).put_pickles(feeds,timestamp)
-    dump.Puddle(date_tuple).put_responses(feeds,timestamp)
-
-
-
-    # lake = dump.ResponseStore(feeds, (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)) #todo write me
-
-    # # make a GeoJSON file for real-time map
-    # dump.to_lastknownpositions(feeds)
-
-    # report results to console
-    num_buses = help.num_buses(feeds)
-    end = time.time()
-    print('Fetched {} BusObservations on {} routes in {:2f} seconds to a pickle Barrel and a json Lake.\n'.format(num_buses,len(feeds),(end - start)))
-    return
 
 
 if __name__ == "__main__":
@@ -79,12 +26,12 @@ if __name__ == "__main__":
         scheduler = BackgroundScheduler()
 
         # every minute
-        scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
+        scheduler.add_job(dump.async_grab_and_store(args.localhost), 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
+        #todo activate hourly jobs
         # every hour
-        # todo need a new way to trigger these jobs
-        scheduler.add_job(dump.DataStore.render_pickles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-        # scheduler.add_job(dump.render_responses, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.DataLake.bundle_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         # every day
         # scheduler.add_job(GTFS2GeoJSON.update_route_map, 'cron', hour='2') # rebuilds the system map file, run at 2am daily
@@ -100,7 +47,7 @@ if __name__ == "__main__":
 
     # DEVELOPMENT = run once and quit
     elif os.environ['PYTHON_ENV'] == "development":
-        async_grab_and_store()
+        dump.async_grab_and_store(args.localhost)
 
 
 
