@@ -42,11 +42,10 @@ def async_grab_and_store():
     trio.run(main, SIRI_request_urlpaths)
 
     # dump to the various locations
-    timestamp = dt.datetime.now().strftime("%Y-%m-%dT_%H:%M:%S.%f")
-
-    # create instances of the DumpFolder child classes, which will process the feeds and store them appropriately
-    barrel = dump.FeedBarrel(feeds, timestamp)
-    lake = dump.FeedLake(feeds, timestamp) #todo write me
+    timestamp = dt.datetime.now()
+    date_tuple = (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)
+    dump.Barrel(date_tuple).put_pickles(feeds,timestamp)
+    # lake = dump.ResponseStore(feeds, (timestamp.year, timestamp.month, timestamp.day, timestamp.hour)) #todo write me
 
     # # make a GeoJSON file for real-time map
     # dump.to_lastknownpositions(feeds)
