@@ -41,8 +41,7 @@ def async_grab_and_store():
     timestamp = dt.datetime.now()
     date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
     dump.DataLake(date_pointer).make_puddles(feeds,timestamp)
-    # dump.Puddle(date_pointer).make_puddle(feeds, timestamp)
-    # dump.Barrel(date_pointer).put_pickles(feeds,timestamp)
+    dump.DataStore(date_pointer).make_barrels(feeds,timestamp)
 
     # report results to console
     num_buses = help.num_buses(feeds)
