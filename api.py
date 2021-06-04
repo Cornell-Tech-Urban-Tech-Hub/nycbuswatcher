@@ -29,8 +29,8 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static/"), name="static")
 
-# future CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
-# future auth/key registry (3rd party plugin? for API control)
+# add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
+# add auth/key registry (3rd party plugin? for API control)
 #-------------- Fast API -------------------------------------------------------------
 
 

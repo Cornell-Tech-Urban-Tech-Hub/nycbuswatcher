@@ -56,7 +56,7 @@ def num_buses(feeds):
 #
 #     # playback an hour version
 #     end=dt.datetime.today().isoformat()
-#     start=(dt.datetime.today()-dt.timedelta(hours=1)).isoformat() #bug this usually times out gunicorn if set to 24 hours
+#     start=(dt.datetime.today()-dt.timedelta(hours=1)).isoformat() # this usually times out gunicorn if set to 24 hours
 #     api_url = config.config['api_base_url'] + ( 'buses?start='+ start) + ( '&end='+ end )
 #
 #     # get the gdf
@@ -66,7 +66,7 @@ def num_buses(feeds):
 #     buses_gdf['passenger_count'] = buses_gdf['passenger_count'].astype('float')
 #     buses_gdf['passenger_count'] = buses_gdf['passenger_count'].fillna(0)
 #
-#     # todo make buses_gdf['timestamp'] format prettier?
+#     #  make buses_gdf['timestamp'] format prettier?
 #
 #     return buses_gdf
 #

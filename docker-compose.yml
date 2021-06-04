@@ -90,7 +90,7 @@ services:
 #    command:
 #      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 #
-#  # future SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
+#  # add SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
 #  # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
 #  traefik:
 #    image: traefik:latest

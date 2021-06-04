@@ -1,12 +1,54 @@
 import argparse
 import os
 import time
-
+import datetime as dt
+import trio
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
 
 import shared.Dumpers as dump
+from shared.config import config
+import shared.Helpers as help
 
+def async_grab_and_store():
+    start = time.time()
+    SIRI_request_urlpaths = help.get_SIRI_request_urlpaths()
+    feeds = []
+
+    async def grabber(s,a_path,route_id):
+        try:
+            r = await s.get(path=a_path)
+            feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
+        #bug find a way to retry these, connection errors lead to a gap for any route that raises an Exception
+        except Exception as e:
+            print (route_id, e)
+
+    async def main(path_list):
+        from asks.sessions import Session
+
+        if args.localhost is True:
+            s = Session('http://bustime.mta.info', connections=5)
+        else:
+            s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
+        async with trio.open_nursery() as n:
+            for path_bundle in path_list:
+                for route_id,path in path_bundle.items():
+                    n.start_soon(grabber, s, path, route_id )
+
+    trio.run(main, SIRI_request_urlpaths)
+
+    # dump to the various locations
+    timestamp = dt.datetime.now()
+    date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
+    dump.DataLake(date_pointer).make_puddles(feeds,timestamp)
+    # dump.Puddle(date_pointer).make_puddle(feeds, timestamp)
+    # dump.Barrel(date_pointer).put_pickles(feeds,timestamp)
+
+    # report results to console
+    num_buses = help.num_buses(feeds)
+    end = time.time()
+    print('Fetched {} BusObservations on {} routes in {:2f} seconds to a pickle Barrel and a json Lake.\n'.format(num_buses,len(feeds),(end - start)))
+    return
 
 if __name__ == "__main__":
 
@@ -26,11 +68,10 @@ if __name__ == "__main__":
         scheduler = BackgroundScheduler()
 
         # every minute
-        scheduler.add_job(dump.async_grab_and_store(args.localhost), 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
+        scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=1, misfire_grace_time=15)
 
-        #todo activate hourly jobs
         # every hour
-        scheduler.add_job(dump.DataLake.render_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        # scheduler.add_job(dump.DataLake.render_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
         # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         scheduler.start()
@@ -43,7 +84,7 @@ if __name__ == "__main__":
 
     # DEVELOPMENT = run once and quit
     elif os.environ['PYTHON_ENV'] == "development":
-        dump.async_grab_and_store(args.localhost)
+        async_grab_and_store()
 
 
 

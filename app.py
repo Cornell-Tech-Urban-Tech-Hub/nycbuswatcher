@@ -32,7 +32,7 @@ app.config.suppress_callback_exceptions = True
 navbar = dbc.NavbarSimple(
     children=[
         # dbc.NavItem(dbc.NavLink("Map", href="")),
-        # dbc.NavItem(dbc.NavLink("FAQ", href="/faq")), #bug make me work
+        # dbc.NavItem(dbc.NavLink("FAQ", href="/faq")), # make me work
         # dbc.NavItem(dbc.NavLink("Code", href="https://github.com/Cornell-Tech-Urban-Tech-Hub/nycbuswatcher")),
         html.A(dbc.Row([dbc.Col(html.Img(src=JACOBS_LOGO, height="100px"))],
         ))
@@ -57,7 +57,7 @@ def get_bus_map():
         fig = px.scatter_mapbox(buses_gdf,
             lat=buses_gdf.geometry.y,
             lon=buses_gdf.geometry.x,
-            size='passenger_count', # todo VIP how to make the buses with zero passengers appear? can see the hover data but not symbol
+            size='passenger_count', # VIP how to make the buses with zero passengers appear? can see the hover data but not symbol
             size_max=30,
             color='passenger_count',
             # color_continuous_scale=['#23bf06','#e55e5e'],
@@ -81,9 +81,9 @@ def get_bus_map():
             opacity=0.8,
             zoom=11)
 
-        # todo supress the plotly hover
+        #  suppress the plotly hover
 
-        # todo VIP make route map layer display
+        # VIP make route map layer display
 
         # fig.update_layout(mapbox_style="white-bg")
         # fig.update_layout(mapbox_style="carto-positron")
@@ -134,7 +134,7 @@ def get_bus_map2():
 
         fig = go.Figure(data=bus_data, layout=bus_layout)
 
-        # bug seems to be working, but all the maps are in the wrong layer order
+        # seems to be working, but all the maps are in the wrong layer order
         # method 2 https://community.plotly.com/t/how-do-i-plot-a-line-on-a-map-from-a-geojson-file/33320
 
         fig.update_layout(
