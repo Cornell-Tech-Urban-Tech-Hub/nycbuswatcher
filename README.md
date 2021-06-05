@@ -2,16 +2,19 @@
 - v2.0 June 2021
 - Anthony Townsend <atownsend@cornell.edu>
 
-## v2 TODOs
+## How it works
 
-1. make a list of code changes
-    - move all scheduled functions into a new, single, common library (e.g. shared/Jobs.py )
-    - review, rewrite Dumpers
-    - excise all Database code (but keep BusObservation class?)
-2. update the docker stack
-3. write dumper to export existing database into static API files per route per hour
-    - will need to run it on existing stack before shutting down + deploying new stack (or give the new stack a new new `nycbuswatcher2` and let the stack during migration)
+`acquire.py` runs as an `apscheduler` daemon. Once per minute  function `async_grab_and_store` grabs 200+ JSON responses from the MTA and uses them to initialize two class instances, one `DataLake` and one `DataStore`. The first simply dumps the files to a directory structure, the second parses the JSON into `BusObservation` object instances and pickles them to disk in a similar directory structure.
 
+- `/data/lake/puddles/YYYY/MM/DD/HH/RouteID/drop_xxx.json`
+- `/data/store/barrels/YYYY/MM/DD/HH/RouteID/barrel_xxx.dat`
+
+Once per hour, another `apscheduler` job searches these trees for any of these folders that have not been processed, and are not currently in use (e.g. in the current hour). They are then either archived into a `.tar.gz` (for the JSON) or loaded and concatenated and serialized as a JSON file (in the case of the pickles), which is what will be served as static files by  web API in response to client requests.
+
+
+
+
+#333333333333333333333333333333
 ## v2 design vision
 
 ### Goals:

@@ -278,7 +278,7 @@ class Barrel(GenericFolder):
         self.date_pointer = date_pointer
         self.route = route
 
-    # TODO
+    # TODO port render code from Puddle class
     # def render_pickles_to_static(self):
     #
     #     def render_barrel(self):
