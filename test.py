@@ -6,8 +6,11 @@ parser.add_argument('--dry-run', action="store_true", dest="dry-run", help="Forc
 runtime_args = parser.parse_args()
 
 lake = dump.DataLake(runtime_args)
-print('rendering {} puddles'.format( len(lake.puddles) ) )
-# rint([str(p.folder.path) for p in lake.puddles])
+print('considering {} puddles to render'.format( len(lake.puddles) ) )
+
+#TODO TEST
+lake.archive_puddles()
+
 
 # store = dump.DataStore(runtime_args)
 # print('rendering {} barrels'.format( len(store.barrels) ) )

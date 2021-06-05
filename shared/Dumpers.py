@@ -7,37 +7,109 @@ import geojson
 import tarfile
 import sys
 import os
+
+import shared
 from shared.BusObservation import BusObservation
 
 pathmap = {
-    'lake': 'data/lake',
-    'store':'data/store',
-    'barrel':'data/store/barrels',
-    'puddle':'data/lake/puddles'
+    'lake':
+        {'root':'data/lake'},
+    'puddle':
+        {'root':'data/lake/puddles',
+         'archive':'data/lake/archive'},
+    'store':
+        {'root':'data/store'},
+    'barrel':
+        {'root':'data/store/barrels',
+         'archive':'data/store/static'}
 }
+
+#-------------------------------------------------------------------------------------------------------------------------------------
+# base Classes
+#-------------------------------------------------------------------------------------------------------------------------------------
+#
+
+# future a bit of these two is redundant
+class GenericStore():
+
+    def __init__(self, kind=None):
+        self.path = self.get_path(pathmap[kind]['root'])
+        self.checkpath(self.path)
+
+    # generate the unique path for this folder
+    def get_path(self, prefix):
+        folderpath = Path.cwd() / prefix
+        self.checkpath(folderpath)
+        return folderpath
+
+    # create folder if it doesn't exist, including parents
+    def checkpath(self, path):
+        Path(path).mkdir(parents=True, exist_ok=True)
+        return
+
+    # round a timestamp down to the hour to use as a date_pointer
+    def timestamp_to_date_pointer(self, timestamp):
+        return datetime.datetime.now().replace(microsecond=0, second=0, minute=0)
+
+    # extract a date_pointer from a full route path e.g ..../2021/02/23/11/Bx4
+    def date_pointer_from_a_path(self,apath):
+        parts = apath.split('/')
+        year, month, day, hour = int(parts[-5]), \
+                                 int(parts[-4]), \
+                                 int(parts[-3]), \
+                                 int(parts[-2])
+        # print (year, month, day, hour)
+        date_pointer=datetime.datetime(year, month, day, hour)
+        return date_pointer
+
+
+class GenericFolder():
+
+    def __init__(self, date_pointer, route, kind = None):
+        self.path = self.get_path(pathmap[kind]['root'], date_pointer, route)
+        self.checkpath(self.path)
+        if kind in ['puddle', 'barrel']:
+            self.archive_path = self.get_path(pathmap[kind]['archive'], date_pointer, route)
+            self.checkpath(self.archive_path)
+
+    # generate the unique path for this folder
+    def get_path(self, prefix, date_pointer, route):
+        folderpath = Path.cwd() / prefix / str(date_pointer.year) / str(date_pointer.month) / str(date_pointer.day) / str(date_pointer.hour) / route
+        self.checkpath(folderpath)
+        return folderpath
+
+    # create folder if it doesn't exist, including parents
+    def checkpath(self, path):
+        Path(path).mkdir(parents=True, exist_ok=True)
+        return
+
+    def delete_folder(self):
+        # https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
+        def rm_tree(pth):
+            pth = Path(pth)
+            for child in pth.glob('*'):
+                if child.is_file():
+                    child.unlink()
+                else:
+                    rm_tree(child)
+            pth.rmdir()
+
+        rm_tree(self.path)
+        return
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 # Data Lake + Puddles
 #-------------------------------------------------------------------------------------------------------------------------------------
-# puddles are temporary storage folders for an hour's worth of JSON repsonses for a single route
+# puddles are temporary storage folders for an hour's worth of JSON responses for a single route
 
 # a DataLake instance represents all of the Puddles
-class DataLake():
+class DataLake(GenericStore):
 
-    def __init__(self,*runtime_args):
+    def __init__(self, *runtime_args):
+        super().__init__(kind='lake')
         self.puddles = self.load_puddles()
-        self.path_check()
         self.runtime_args = runtime_args
-        # todo other data late metadata -- array of dates and hours covered, total # of records, etc.
-
-    # verify the lake exists — probably redundant
-    def path_check(self):
-        lake = Path.cwd() / pathmap['lake']
-        lake.mkdir(parents=True, exist_ok=True)
-        return
-
-    def timestamp_to_date_pointer(self, timestamp):
-        return datetime.datetime.now().replace(microsecond=0, second=0, minute=0)
+        # todo other metadata -- array of dates and hours covered, total # of records, etc.
 
     # dump each response to data/puddle/YYYY/MM/DD/HH/route_id/drop_2021-04-03T12:12:12.json
     def make_puddles(self, feeds, timestamp):
@@ -47,7 +119,7 @@ class DataLake():
                 try:
 
                     # prepare the puddle
-                    folder = Path(Puddle(self.timestamp_to_date_pointer(timestamp), route).folder.path )
+                    folder = Path(Puddle(self.timestamp_to_date_pointer(timestamp), route).path)
                     filename = 'drop_{}_{}.json'.format(route,timestamp).replace(' ', 'T')
                     filepath = folder / filename
 
@@ -63,84 +135,65 @@ class DataLake():
                     pass
         return
 
-    # future factor this out of both DataLake and DataStore into a GenericStore parent class
-    def date_pointer_from_a_path(self,apath):
-        parts = apath.split('/')
-        year, month, day, hour = int(parts[-5]), \
-                                 int(parts[-4]), \
-                                 int(parts[-3]), \
-                                 int(parts[-2])
-        # print (year, month, day, hour)
-        date_pointer=datetime.datetime(year, month, day, hour)
-        return date_pointer
-
     # builds a list of paths to puddles — e.g. hourly route folders of JSON files
     def load_puddles(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']['root']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
-
         puddles = []
         for d in dirs:
             date_pointer = self.date_pointer_from_a_path(d)
             route = d.split('/')[-1]
             puddles.append(Puddle(date_pointer, route))
-
         return puddles
 
-    #TODO REWRITE THIS USING NEW CLASS STRUCTURE
+    # creates a list of all puddles that are not in current hour and can be archived
+    def list_expired_puddles(self):
+        expired_puddles = []
+        for puddle in self.puddles:
+            now_date_pointer = self.timestamp_to_date_pointer(datetime.datetime.now())
+            if puddle.date_pointer != now_date_pointer:
+                expired_puddles.append(puddle)
+        return expired_puddles
+
+    # tar up all the files in all expired puddles (not the current hour)
+    def archive_puddles(self):
+        puddles_to_archive = self.list_expired_puddles()
+        for puddle in puddles_to_archive:
+            puddle.render_myself_to_tarball()
+        return
 
 # a Puddle is a folder holding raw JSON responses for a single route, single hour
-class Puddle():
+class Puddle(GenericFolder):
 
     def __init__(self, date_pointer, route):
-        self.folder = GenericFolder(date_pointer, route, kind='puddle') #self.folder.path = the path of this puddle
+        super().__init__(date_pointer, route, kind='puddle')
         self.date_pointer = date_pointer
         self.route = route
 
-    # TODO
-   # def render_myself_to_tarball(self):
-   #     unrendered_puddlepaths = self.gen_puddle_list()
-   #
-   #     puddles_to_render=[]
-   #     for p in unrendered_puddlepaths:
-   #         date_pointer=self.date_pointer_from_puddlepath(p)
-   #         current_hour = datetime.datetime.now().replace(microsecond=0, second=0, minute=0)
-   #         if date_pointer == current_hour:
-   #             # print ('puddle EXCLUDED {}'.format(p))
-   #             continue
-   #         elif date_pointer != current_hour:
-   #             puddles_to_render.append(Puddle(date_pointer))
-   #
-   #
-   #     for p in puddles_to_render:
-   #         print (p.path)
-   #         # 1 make a list of all the files to include
-   #         drops_to_render = glob('{}*.dat'.format(p))
-   #         # print (drops_to_render)
-   #
-   #         # 2 create the outfile
-   #         lake = DataLake().pa
-   #         outfile = lake / str(p.date_pointer.year) / str(p.date_pointer.month) / str(p.date_pointer.day) / str(p.date_pointer.hour) / 'lake_{}.tar.gz'.format(outfile_stem, outfile_route)
-   #
-   #
-   #         # 3 render the files to the outfile
-   #
-   #         with tarfile.open(outfile, "w:gz") as tar:
-   #             for file in drops_to_render:
-   #                 tar.add(file)
-   #
-   #
-   #         ## create the outfile string/path
-   #         outfile_route=Path(puddlepath).parts[-1] # grab last part of path
-   #         outfile_stem=puddlepath.replace('puddles','lakes')
-   #         outfile=
-   #
-   #         for file in puddles_to_render:
-   #             try:
-   #                 print ('removing {}'.format(file))
-   #                 os.remove(file)
-   #             except:
-   #                 pass
+    #bug verify tarball contents and deletion is limited to expired hours
+    def render_myself_to_tarball(self):
+
+        # round up all the files in me and tar them to ??
+        drops_to_archive=[x for x in glob("{}*.json".format(self.path)) if x.is_file()]
+
+        outfile = self.archive_path / 'lake_{}.tar.gz'.format(self.date_pointer.year,
+                                          self.date_pointer.month,
+                                          self.date_pointer.day,
+                                          self.date_pointer.hour,
+                                          self.route
+                                          )
+        with tarfile.open(outfile, "w:gz") as tar:
+                for drop in drops_to_archive:
+                    tar.add(drop)
+
+        print ('made a tarball called {} out of {}'.format(outfile,[x for x in drops_to_archive]))
+
+        self.delete_folder()
+        # print ('and deleted the puddle at {}'.format(self.path)
+
+        return
+
+
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 # Data Store + Barrels
@@ -148,21 +201,14 @@ class Puddle():
 # barrels are temporary storage folders for an hour's worth of pickled BusObservations (in .dat files) for a single route
 
 # a DataStore instance represents all of the Barrels
-class DataStore():
+class DataStore(GenericStore):
+
     def __init__(self, *runtime_args):
+        super().__init__(kind='store')
         self.barrels = self.load_barrels()
-        self.path_check()
         self.runtime_args = runtime_args
         # todo calculate some metadata about the whole data store and keep it here (array of dates and hours covered, # of records, etc.)
 
-    # verify the store exists — probably redundant
-    def path_check(self):
-        store = Path.cwd() / pathmap['store']
-        store.mkdir(parents=True, exist_ok=True)
-        return
-
-    def timestamp_to_date_pointer(self, timestamp):
-        return datetime.datetime.now().replace(microsecond=0, second=0, minute=0)
 
     # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
     def make_barrels(self,feeds,timestamp):
@@ -173,7 +219,7 @@ class DataStore():
                 try:
 
                     # prepare the barrel
-                    folder = Path(Barrel(self.timestamp_to_date_pointer(timestamp), route).folder.path )
+                    folder = Path(Barrel(self.timestamp_to_date_pointer(timestamp), route).path )
                     filename = 'pickle_{}_{}.dat'.format(route,timestamp).replace(' ','T')
                     filepath = folder / filename
 
@@ -198,17 +244,8 @@ class DataStore():
                     pass
         return
 
-    # future factor this out of both DataLake and DataStore into a GenericStore parent class
-    def date_pointer_from_a_path(self,apath):
-        parts = apath.split('/')
-        year, month, day, hour = int(parts[-5]), \
-                                 int(parts[-4]), \
-                                 int(parts[-3]), \
-                                 int(parts[-2])
-        # print (year, month, day, hour)
-        date_pointer=datetime.datetime(year, month, day, hour)
-        return date_pointer
 
+    # future this could be abstracted into GenericStore by passing kind in and using generic names?
     # builds a list of paths to barrels — e.g. hourly route folders of dat files
     def load_barrels(self):
         files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
@@ -234,15 +271,14 @@ class DataStore():
     #         return
 
 # a Barrel is a folder holding files with multple pickled BusObservation instances parsed from responses for a single route, single hour
-class Barrel():
+class Barrel(GenericFolder):
 
     def __init__(self, date_pointer, route):
-        self.folder = GenericFolder(date_pointer, route, kind='barrel') #self.folder.path = the path of this barrel
+        super().__init__(date_pointer, route, kind='barrel') #self.path = the path of this barrel
         self.date_pointer = date_pointer
         self.route = route
 
     # TODO
-
     # def render_pickles_to_static(self):
     #
     #     def render_barrel(self):
@@ -322,19 +358,3 @@ class Barrel():
 # Misc
 #-------------------------------------------------------------------------------------------------------------------------------------
 
-class GenericFolder():
-
-    def __init__(self, date_pointer, route, kind = None):
-        self.path = self.get_path(pathmap[kind], date_pointer, route)
-        self.checkpath(self.path)
-
-    # generate the unique path for this folder
-    def get_path(self, prefix, date_pointer, route):
-        folderpath = Path.cwd() / prefix / str(date_pointer.year) / str(date_pointer.month) / str(date_pointer.day) / str(date_pointer.hour) / route
-        self.checkpath(folderpath)
-        return folderpath
-
-    # create folder if it doesn't exist, including parents
-    def checkpath(self, path):
-        Path(path).mkdir(parents=True, exist_ok=True)
-        return
