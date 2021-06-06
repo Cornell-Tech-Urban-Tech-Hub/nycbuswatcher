@@ -6,7 +6,7 @@ import trio
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
 
-import shared.Dumpers as dump
+import shared.Dumpers as data
 from shared.config import config
 import shared.Helpers as help
 
@@ -40,9 +40,8 @@ def async_grab_and_store():
     # dump to the various locations
     timestamp = dt.datetime.now()
     # date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
-    # dump.DataLake(date_pointer).make_puddles(feeds,timestamp)
-    dump.DataLake().make_puddles(feeds,timestamp)
-    # dump.DataStore(date_pointer).make_barrels(feeds,timestamp)
+    data.DataLake().make_puddles(feeds,timestamp)
+    # data.DataStore(date_pointer).make_barrels(feeds,timestamp)
 
     # report results to console
     num_buses = help.num_buses(feeds)

@@ -9,12 +9,16 @@ import tarfile
 from shared.BusObservation import BusObservation
 
 # future turn this into a class GenericTree and make GenericStore(GenericTree) a child
+#todo more elegant way to define puddle's archive path (which is a folder) vis a vis archive (which we know is a file) or at least disambiguate them
 pathmap = {
     'lake':
         {'root':'data/lake'},
     'puddle':
         {'root':'data/lake/puddles',
          'archive':'data/lake/archive'},
+    'archive':
+        {'root':'data/lake/archive'
+         },
     'store':
         {'root':'data/store'},
     'barrel':
@@ -27,10 +31,20 @@ pathmap = {
 #-------------------------------------------------------------------------------------------------------------------------------------
 #
 
+# these are methods and attributes shared by folders and files alike that have a date_pointer
+# (though maybe that is not the right way to model?)
 class GenericDatePointerObject():
 
     def __init__(self):
+        # todo it doesnt make sense that we have methods working on attributes of child class
         pass
+
+    def date_pointer_route_to_str(self,date_pointer,route):
+        return ('-'.join([str(date_pointer.year),
+                          str(date_pointer.month),
+                          str(date_pointer.day),
+                          str(date_pointer.hour),
+                         route]))
 
     def date_pointer_route_to_path(self,date_pointer,route):
         return PurePath(date_pointer.year,
@@ -47,7 +61,6 @@ class GenericDatePointerObject():
                                  int(parts[-4]), \
                                  int(parts[-3]), \
                                  int(parts[-2])
-        # print (year, month, day, hour)
         date_pointer=datetime.datetime(year, month, day, hour)
         return date_pointer
 
@@ -157,6 +170,7 @@ class DataLake(GenericStore):
         return puddles
 
     # creates a list of all puddles that are not in current hour and can be archived
+    #bug sort list from oldest to newest, currently seems to work the other way
     def list_expired_puddles(self):
         expired_puddles = []
         for puddle in self.puddles:
@@ -169,15 +183,9 @@ class DataLake(GenericStore):
     def archive_puddles(self):
         puddles_to_archive = self.list_expired_puddles()
         for puddle in puddles_to_archive:
-            puddle.render_myself_to_tarball()
+            puddle.render_myself_to_archive()
         return
 
-    # todo write me
-    # retrieves the appropriate file, optionally in another format?
-    def get_archive(self, date_pointer, route, **kwargs):
-        archive = Archive(date_pointer, route)
-        # archive = load_archive.path
-        return
 
 # a Puddle is a folder holding raw JSON responses for a single route, single hour
 class Puddle(GenericFolder):
@@ -187,46 +195,60 @@ class Puddle(GenericFolder):
         self.date_pointer = date_pointer
         self.route = route
 
-    #TODO 1 verify tarball contents
-    def render_myself_to_tarball(self):
+    #TODO COALFACE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    def render_myself_to_archive(self):
+
         # round up all the files this puddle
         drops_to_archive=[x for x in self.path.glob('*.json') if x.is_file()] #bug to test Saturday
-        # outfile = self.archive_path / 'archive-{}-{}-{}-{}-{}.tar.gz'.format(self.date_pointer.year,
-        #                                   self.date_pointer.month,
-        #                                   self.date_pointer.day,
-        #                                   self.date_pointer.hour,
-        #                                   self.route
-        #                                   )
+
+        # init folder and sanity check -- is there already an archive file at this location?
         outfile = Archive(self.date_pointer, self.route)
+        if outfile.exist == True:
+            print ('error: there is already an archive at {}'.format(outfile.path))
+            #todo how to handle? this means we already rendered this, or rendered it incomplete. best would be to create a new outfile Archive object with filename to _update.tar.gz
+        elif outfile.exist == False:
+            pass
+
+        # write the tarball
         with tarfile.open(outfile.filepath, "w:gz") as tar:
                 for drop in drops_to_archive:
-                    tar.add(drop)
-        print ('made a tarball called {} out of {}'.format(outfile,[x for x in drops_to_archive]))
-        self.delete_folder()
+                    tar.add(drop, arcname=drop.name.replace(':','-')) # tar doesnt like colons
+        print ('wrote {} drops to archive at {}'.format(len(drops_to_archive), outfile.path))
+
+        # cleanup
         # todo delete the empty parent folders as well e.g. data/lake/puddles/YYYY/MM/DD/HH
+        self.delete_folder()
+
         return
 
 # an Archive is a rendered Puddle, e.g. a tarball in a date_pointer/route folder
 class Archive(GenericFolder):
 
-    def __init__(self, date_pointer, route):
-        super().__init__(date_pointer, route)
+    def __init__(self, date_pointer, route, kind='archive'):
+        super().__init__(date_pointer, route, kind='archive')
         self.date_pointer = date_pointer
         self.route = route
         self.exist, self.filepath = self.check_exist()
 
     def check_exist(self):
 
-        filepath = self.archive_path + 'archive-{}-{}-{}-{}-{}.tar.gz'.format(self.date_pointer.year,
-                                                                              self.date_pointer.month,
-                                                                              self.date_pointer.day,
-                                                                              self.date_pointer.hour,
-                                                                              self.route
-                                                                              )
+        filepath = self.path / 'archive_{}_{}-{}-{}-{}.tar.gz'.format(self.route,
+                                                                      self.date_pointer.year,
+                                                                      self.date_pointer.month,
+                                                                      self.date_pointer.day,
+                                                                      self.date_pointer.hour
+                                                                      )
         if filepath.is_file() == True:
             return (True, filepath)
         elif filepath.is_file() == False:
             return (False, filepath)
+
+    # todo write me
+    # retrieves the appropriate file, optionally uncompresses it?
+    def get_archive(self, date_pointer, route, **kwargs):
+        # archive = load_archive.path
+        return
+
 
 
 '''
