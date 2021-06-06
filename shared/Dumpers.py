@@ -9,22 +9,14 @@ import tarfile
 from shared.BusObservation import BusObservation
 
 # future turn this into a class GenericTree and make GenericStore(GenericTree) a child
-#todo more elegant way to define puddle's archive path (which is a folder) vis a vis archive (which we know is a file) or at least disambiguate them
 pathmap = {
-    'lake':
-        {'root':'data/lake'},
-    'puddle':
-        {'root':'data/lake/puddles',
-         'archive':'data/lake/archive'},
-    'archive':
-        {'root':'data/lake/archive'
-         },
-    'store':
-        {'root':'data/store'},
-    'barrel':
-        {'root':'data/store/barrels',
-         'archive':'data/store/static'}
-}
+    'glacier':'data/lake/glacier',
+    'lake':'data/lake',
+    'puddle':'data/lake/puddles',
+    'warehouse':'data/store/static',
+    'store':'data/store',
+    'barrel':'data/store/barrels'
+    }
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 # base Classes
@@ -33,10 +25,12 @@ pathmap = {
 
 # these are methods and attributes shared by folders and files alike that have a date_pointer
 # (though maybe that is not the right way to model?)
+
+# todo refactor this because it doesnt make sense that we have methods working on attributes of child class passed back up as arguments
+#todo is also weird because it nees a route, but DataLake doesnt have a route and that is a child, so DataL
 class GenericDatePointerObject():
 
     def __init__(self):
-        # todo it doesnt make sense that we have methods working on attributes of child class
         pass
 
     def date_pointer_route_to_str(self,date_pointer,route):
@@ -68,7 +62,7 @@ class GenericStore(GenericDatePointerObject):
 
     def __init__(self, kind=None):
         super().__init__()
-        self.path = self.get_path(pathmap[kind]['root'])
+        self.path = self.get_path(pathmap[kind])
         self.checkpath(self.path)
 
     # generate the unique path for this folder
@@ -90,11 +84,11 @@ class GenericFolder(GenericDatePointerObject):
 
     def __init__(self, date_pointer, route, kind=None):
         super().__init__()
-        self.path = self.get_path(pathmap[kind]['root'], date_pointer, route)
+        self.path = self.get_path(pathmap[kind], date_pointer, route)
         self.checkpath(self.path)
-        if kind in ['puddle', 'barrel']:
-            self.archive_path = self.get_path(pathmap[kind]['archive'], date_pointer, route)
-            self.checkpath(self.archive_path)
+        # if kind in ['puddle', 'barrel']:
+        #     self.archive_path = self.get_path(pathmap[kind]['archive'], date_pointer, route)
+        #     self.checkpath(self.archive_path)
 
     # generate the unique path for this folder
     def get_path(self, prefix, date_pointer, route):
@@ -160,7 +154,7 @@ class DataLake(GenericStore):
 
     # builds a list of paths to puddles — e.g. hourly route folders of JSON files
     def load_puddles(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']['root']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         puddles = []
         for d in dirs:
@@ -181,9 +175,17 @@ class DataLake(GenericStore):
 
     # tar up all the files in all expired puddles (not the current hour)
     def archive_puddles(self):
+        print('firing DataStore.archive_puddles')
         puddles_to_archive = self.list_expired_puddles()
         for puddle in puddles_to_archive:
             puddle.render_myself_to_archive()
+
+        # quickly scan the whole datastore and delete empty folders
+        # https://gist.github.com/roddds/aff960f47d4d1dffba2235cc34cb45fb
+        for dirpath, dirnames, files in os.walk( (str(Path.cwd() / pathmap['lake'])):
+            if not (files or dirnames):
+                os.rmdir(dirpath)
+
         return
 
 
@@ -195,18 +197,16 @@ class Puddle(GenericFolder):
         self.date_pointer = date_pointer
         self.route = route
 
-    #TODO COALFACE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     def render_myself_to_archive(self):
-
+        print('firing Puddle.render_myself_to_archive')
         # round up all the files this puddle
-        drops_to_archive=[x for x in self.path.glob('*.json') if x.is_file()] #bug to test Saturday
+        drops_to_archive=[x for x in self.path.glob('*.json') if x.is_file()]
 
         # init folder and sanity check -- is there already an archive file at this location?
-        outfile = Archive(self.date_pointer, self.route)
-        if outfile.exist == True:
-            print ('error: there is already an archive at {}'.format(outfile.path))
-            #todo how to handle? this means we already rendered this, or rendered it incomplete. best would be to create a new outfile Archive object with filename to _update.tar.gz
-        elif outfile.exist == False:
+        try:
+            outfile = Glacier(self.date_pointer, self.route)
+        except OSError:
+            # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
             pass
 
         # write the tarball
@@ -216,31 +216,33 @@ class Puddle(GenericFolder):
         print ('wrote {} drops to archive at {}'.format(len(drops_to_archive), outfile.path))
 
         # cleanup
-        # todo delete the empty parent folders as well e.g. data/lake/puddles/YYYY/MM/DD/HH
         self.delete_folder()
 
         return
 
-# an Archive is a rendered Puddle, e.g. a tarball in a date_pointer/route folder
-class Archive(GenericFolder):
+# an Glacier is a rendered Puddle, e.g. a tarball in a date_pointer/route folder
+class Glacier(GenericFolder):
 
     def __init__(self, date_pointer, route, kind='archive'):
         super().__init__(date_pointer, route, kind='archive')
         self.date_pointer = date_pointer
         self.route = route
         self.exist, self.filepath = self.check_exist()
+        if self.exist == True:
+            raise OSError ('there is already an archive at {}'.format(self.filepath))
+
 
     def check_exist(self):
 
-        filepath = self.path / 'archive_{}_{}-{}-{}-{}.tar.gz'.format(self.route,
+        filepath = self.path / 'glacier_{}_{}-{}-{}-{}.tar.gz'.format(self.route,
                                                                       self.date_pointer.year,
                                                                       self.date_pointer.month,
                                                                       self.date_pointer.day,
                                                                       self.date_pointer.hour
                                                                       )
-        if filepath.is_file() == True:
+        if filepath.is_file() is True:
             return (True, filepath)
-        elif filepath.is_file() == False:
+        elif filepath.is_file() is False:
             return (False, filepath)
 
     # todo write me
@@ -304,7 +306,7 @@ class DataStore(GenericStore):
     # future this could be abstracted into GenericStore by passing kind in and using generic names?
     # builds a list of paths to barrels — e.g. hourly route folders of dat files
     def load_barrels(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']['root']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
 
         barrels = []
@@ -377,5 +379,33 @@ class Barrel(GenericFolder):
         # print ('made a static JSON file called {} out of {}'.format(outfile,[x for x in pickles_to_render]))
         # self.delete_folder() #delete route folder works ok, but # bug delete the empty folders above? e.g. data/lake/puddles/YYYY/MM/DD/HH
 
+        return
+        
+# an Warehouse is a rendered Barrel, e.g. a bunch of different BusObservations concatenated together
+class Warehouse(GenericFolder):
+
+    def __init__(self, date_pointer, route, kind='archive'):
+        super().__init__(date_pointer, route, kind='archive')
+        self.date_pointer = date_pointer
+        self.route = route
+        self.exist, self.filepath = self.check_exist()
+
+    def check_exist(self):
+
+        filepath = self.path / 'glacier_{}_{}-{}-{}-{}.tar.gz'.format(self.route,
+                                                                      self.date_pointer.year,
+                                                                      self.date_pointer.month,
+                                                                      self.date_pointer.day,
+                                                                      self.date_pointer.hour
+                                                                      )
+        if filepath.is_file() == True:
+            return (True, filepath)
+        elif filepath.is_file() == False:
+            return (False, filepath)
+
+    # todo write me
+    # retrieves the appropriate file, optionally uncompresses it?
+    def get_archive(self, date_pointer, route, **kwargs):
+        # archive = load_archive.path
         return
 '''

@@ -1,7 +1,7 @@
-import shared.Dumpers as dump
+import shared.Dumpers as data
 import argparse
 
-lake = dump.DataLake()
+lake = data.DataLake()
 
 print('considering {} puddles to archive'.format( len(lake.puddles) ) )
 
