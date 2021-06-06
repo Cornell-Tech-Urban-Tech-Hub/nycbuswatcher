@@ -39,14 +39,15 @@ def async_grab_and_store():
 
     # dump to the various locations
     timestamp = dt.datetime.now()
-    date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
-    dump.DataLake(date_pointer).make_puddles(feeds,timestamp)
-    #todo uncomment me # dump.DataStore(date_pointer).make_barrels(feeds,timestamp)
+    # date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
+    # dump.DataLake(date_pointer).make_puddles(feeds,timestamp)
+    dump.DataLake().make_puddles(feeds,timestamp)
+    # dump.DataStore(date_pointer).make_barrels(feeds,timestamp)
 
     # report results to console
     num_buses = help.num_buses(feeds)
     end = time.time()
-    print('Fetched and saved {} route feeds and pickled {} BusObservations in {:2f} seconds.\n'.format(len(feeds),num_buses,(end - start)))
+    print('Fetched and saved {} route feeds and pickled {} BusObservations in {:2f} seconds at {}.\n'.format(len(feeds),num_buses,(end - start), dt.datetime.now()))
     return
 
 if __name__ == "__main__":
@@ -56,6 +57,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
     parser.add_argument('-l', action="store_true", dest="localhost", help="force localhost for production mode")
+    parser.add_argument('--dry-run', action="store_true", dest="dry-run", help="Force dry run (dont write or delete anything) not implemented")
     args = parser.parse_args()
 
     load_dotenv()
@@ -70,7 +72,7 @@ if __name__ == "__main__":
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
-        # todo uncomment me # scheduler.add_job(dump.DataLake.archive_puddles(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        scheduler.add_job(dump.DataLake(args).archive_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
         # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         scheduler.start()

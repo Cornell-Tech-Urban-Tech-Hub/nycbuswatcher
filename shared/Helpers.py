@@ -21,7 +21,7 @@ def get_OBA_routelist():
     finally:
         routes = response.json()
         now=dt.datetime.now()
-        print('Found {} routes at {}.'.format(len(routes['data']['list']),now.strftime("%Y-%m-%d %H:%M:%S")))
+        # print('Found {} routes at {}.'.format(len(routes['data']['list']),now.strftime("%Y-%m-%d %H:%M:%S")))
 
     return routes
 

@@ -1,16 +1,14 @@
+import os
 import datetime
 import json
 import pickle
-from pathlib import Path
+from pathlib import Path, PurePath
 from glob import glob
-import geojson
 import tarfile
-import sys
-import os
 
-import shared
 from shared.BusObservation import BusObservation
 
+# future turn this into a class GenericTree and make GenericStore(GenericTree) a child
 pathmap = {
     'lake':
         {'root':'data/lake'},
@@ -29,10 +27,34 @@ pathmap = {
 #-------------------------------------------------------------------------------------------------------------------------------------
 #
 
-# future a bit of these two is redundant
-class GenericStore():
+class GenericDatePointerObject():
+
+    def __init__(self):
+        pass
+
+    def date_pointer_route_to_path(self,date_pointer,route):
+        return PurePath(date_pointer.year,
+                        date_pointer.month,
+                        date_pointer.day,
+                        date_pointer.hour,
+                        route
+                    )
+
+    # extract a date_pointer from a full route path e.g ..../2021/02/23/11/Bx4
+    def date_pointer_from_a_path(self, apath):
+        parts = apath.split('/')
+        year, month, day, hour = int(parts[-5]), \
+                                 int(parts[-4]), \
+                                 int(parts[-3]), \
+                                 int(parts[-2])
+        # print (year, month, day, hour)
+        date_pointer=datetime.datetime(year, month, day, hour)
+        return date_pointer
+
+class GenericStore(GenericDatePointerObject):
 
     def __init__(self, kind=None):
+        super().__init__()
         self.path = self.get_path(pathmap[kind]['root'])
         self.checkpath(self.path)
 
@@ -51,21 +73,10 @@ class GenericStore():
     def timestamp_to_date_pointer(self, timestamp):
         return datetime.datetime.now().replace(microsecond=0, second=0, minute=0)
 
-    # extract a date_pointer from a full route path e.g ..../2021/02/23/11/Bx4
-    def date_pointer_from_a_path(self,apath):
-        parts = apath.split('/')
-        year, month, day, hour = int(parts[-5]), \
-                                 int(parts[-4]), \
-                                 int(parts[-3]), \
-                                 int(parts[-2])
-        # print (year, month, day, hour)
-        date_pointer=datetime.datetime(year, month, day, hour)
-        return date_pointer
+class GenericFolder(GenericDatePointerObject):
 
-
-class GenericFolder():
-
-    def __init__(self, date_pointer, route, kind = None):
+    def __init__(self, date_pointer, route, kind=None):
+        super().__init__()
         self.path = self.get_path(pathmap[kind]['root'], date_pointer, route)
         self.checkpath(self.path)
         if kind in ['puddle', 'barrel']:
@@ -105,10 +116,9 @@ class GenericFolder():
 # a DataLake instance represents all of the Puddles
 class DataLake(GenericStore):
 
-    def __init__(self, *runtime_args):
+    def __init__(self):
         super().__init__(kind='lake')
         self.puddles = self.load_puddles()
-        self.runtime_args = runtime_args
         # todo other metadata -- array of dates and hours covered, total # of records, etc.
 
     # dump each response to data/puddle/YYYY/MM/DD/HH/route_id/drop_2021-04-03T12:12:12.json
@@ -162,6 +172,13 @@ class DataLake(GenericStore):
             puddle.render_myself_to_tarball()
         return
 
+    # todo write me
+    # retrieves the appropriate file, optionally in another format?
+    def get_archive(self, date_pointer, route, **kwargs):
+        archive = Archive(date_pointer, route)
+        # archive = load_archive.path
+        return
+
 # a Puddle is a folder holding raw JSON responses for a single route, single hour
 class Puddle(GenericFolder):
 
@@ -170,31 +187,49 @@ class Puddle(GenericFolder):
         self.date_pointer = date_pointer
         self.route = route
 
-    #bug verify tarball contents and deletion is limited to expired hours
+    #TODO 1 verify tarball contents
     def render_myself_to_tarball(self):
-
-        # round up all the files in me and tar them to ??
-        drops_to_archive=[x for x in glob("{}*.json".format(self.path)) if x.is_file()]
-
-        outfile = self.archive_path / 'lake_{}.tar.gz'.format(self.date_pointer.year,
-                                          self.date_pointer.month,
-                                          self.date_pointer.day,
-                                          self.date_pointer.hour,
-                                          self.route
-                                          )
-        with tarfile.open(outfile, "w:gz") as tar:
+        # round up all the files this puddle
+        drops_to_archive=[x for x in self.path.glob('*.json') if x.is_file()] #bug to test Saturday
+        # outfile = self.archive_path / 'archive-{}-{}-{}-{}-{}.tar.gz'.format(self.date_pointer.year,
+        #                                   self.date_pointer.month,
+        #                                   self.date_pointer.day,
+        #                                   self.date_pointer.hour,
+        #                                   self.route
+        #                                   )
+        outfile = Archive(self.date_pointer, self.route)
+        with tarfile.open(outfile.filepath, "w:gz") as tar:
                 for drop in drops_to_archive:
                     tar.add(drop)
-
         print ('made a tarball called {} out of {}'.format(outfile,[x for x in drops_to_archive]))
-
         self.delete_folder()
-        # print ('and deleted the puddle at {}'.format(self.path)
-
+        # todo delete the empty parent folders as well e.g. data/lake/puddles/YYYY/MM/DD/HH
         return
 
+# an Archive is a rendered Puddle, e.g. a tarball in a date_pointer/route folder
+class Archive(GenericFolder):
+
+    def __init__(self, date_pointer, route):
+        super().__init__(date_pointer, route)
+        self.date_pointer = date_pointer
+        self.route = route
+        self.exist, self.filepath = self.check_exist()
+
+    def check_exist(self):
+
+        filepath = self.archive_path + 'archive-{}-{}-{}-{}-{}.tar.gz'.format(self.date_pointer.year,
+                                                                              self.date_pointer.month,
+                                                                              self.date_pointer.day,
+                                                                              self.date_pointer.hour,
+                                                                              self.route
+                                                                              )
+        if filepath.is_file() == True:
+            return (True, filepath)
+        elif filepath.is_file() == False:
+            return (False, filepath)
 
 
+'''
 #-------------------------------------------------------------------------------------------------------------------------------------
 # Data Store + Barrels
 #-------------------------------------------------------------------------------------------------------------------------------------
@@ -203,11 +238,10 @@ class Puddle(GenericFolder):
 # a DataStore instance represents all of the Barrels
 class DataStore(GenericStore):
 
-    def __init__(self, *runtime_args):
+    def __init__(self):
         super().__init__(kind='store')
         self.barrels = self.load_barrels()
-        self.runtime_args = runtime_args
-        # todo calculate some metadata about the whole data store and keep it here (array of dates and hours covered, # of records, etc.)
+        # future calculate some metadata about the whole data store and keep it here (array of dates and hours covered, # of records, etc.)
 
 
     # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
@@ -248,7 +282,7 @@ class DataStore(GenericStore):
     # future this could be abstracted into GenericStore by passing kind in and using generic names?
     # builds a list of paths to barrels — e.g. hourly route folders of dat files
     def load_barrels(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']['root']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
 
         barrels = []
@@ -259,16 +293,24 @@ class DataStore(GenericStore):
 
         return barrels
 
+    # TODO TEST
+    # creates a list of all puddles that are not in current hour and can be archived
+    def list_expired_barrels(self):
+        expired_barrels = []
+        for barrel in self.barrels:
+            now_date_pointer = self.timestamp_to_date_pointer(datetime.datetime.now())
+            if barrel.date_pointer != now_date_pointer:
+                expired_barrels.append(barrel)
+        return expired_barrels
 
-    #TODO
-    #todo logic to handle duplicates and missings should be in the barrel (e.g. it should manage itself)
+    # TODO TEST
+    # fire the render processes for all expired barrels (not the current hour)
+    def render_barrels(self):
+        barrels_to_render = self.list_expired_barrels()
+        for barrel in barrels_to_render:
+            barrel.render_myself_to_static()
+        return
 
-    # # trigger each barrel to render itself to static
-    # def render_barrels(self):
-    #     for barrel in self.barrels:
-    #         barrel.render_pickles_to_static()
-    #         print('All old Barrels are empty.')
-    #         return
 
 # a Barrel is a folder holding files with multple pickled BusObservation instances parsed from responses for a single route, single hour
 class Barrel(GenericFolder):
@@ -278,83 +320,40 @@ class Barrel(GenericFolder):
         self.date_pointer = date_pointer
         self.route = route
 
-    # TODO port render code from Puddle class
-    # def render_pickles_to_static(self):
-    #
-    #     def render_barrel(self):
-    #
-    #         # #  make sure we are not rendering the current hour barrel, which is still in use
-    #         # more complete = compare year/month/date/hour
-    #         # self.path.split('/')[-1] # compare the last item in the path (the hour) to the current hour
-    #         current_datepath = '{}/{}/{}/{}'(datetime.datetime.now().year,
-    #                                   datetime.datetime.now().month,
-    #                                   datetime.datetime.now().day,
-    #                                   datetime.datetime.now().hour)
-    #         barrel_datepath = self.path.split('/')[2:].join('/')
-    #         if current_datepath == barrel_datepath: # compare self.path starting with the 3rd element
-    #             print ('stopping: i wasnt able to exclude the current hour folder. add some logic to avoid this, or run the grabber now to trigger it')
-    #             sys.exit()
-    #             continue # get out of here
-    #         else:
-    #             # if ok, continue to render the barrel
-    #             picklefiles=[x for x in glob("*.dat") if x.is_file()] # checkme
-    #
-    #             pickle_array = []
-    #             for picklefile in picklefiles:
-    #                 # print('checking {}'.format(picklefile))
-    #                 with open(picklefile, 'rb') as pickle_file:
-    #                     barrel = pickle.load(pickle_file)
-    #                     for p in barrel:
-    #                         pickle_array.append(p)
-    #                     # print ('added {} to route pickle'.format(picklefile))
-    #
-    #             #make a template for valid JSON
-    #             json_container = dict()
-    #
-    #             #iterate over pickle_array and insert into JSON
-    #             serial_array=[]
-    #             for p in pickle_array:
-    #                 serial_array.append(p.to_serial())
-    #
-    #             json_container['buses'] = serial_array
-    #
-    #
-    #             static_path=route_folder.replace('data/barrel','static')+'/'
-    #             checkpath(static_path)
-    #
-    #             rendered_file='rendered_barrel_{}.json'.format(route) # add date to filename?
-    #             with open(static_path+'/'+rendered_file, 'w') as f:
-    #                 json.dump(json_container, f)
-    #
-    #             print ('rendered {} pickles from {} files in {} barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), route, static_path+rendered_file))
-    #
-    #             print ('pickled {}'.format([p for p in picklefiles]))
-    #
-    #
-    #     def render_pickles(self,data):
-    #         get_pickles()
-    #         j = jsonify
-    #         with open(self.file_name, ‘w’) as f
-    #         json.dump(j,f)
-    #         return
-    #
-    #
-    #     #     # debugged to here-------------------------------------------------------------
-    #
-    #     #         # figure out how to stop it from reprocessing old files
-    #     #         #option 1=delete them
-    #     #         #option 2=check if there is a rendered_barrel_{route}.json in static/2021/6/1/22/Q4/ already and if so, dont render
-    #     #
-    #     #         #remove everything in the barrel directory (but what if something is writing to it during the run?)
-    #     #         #     for file in yesterday_gz_files:
-    #     #         #         try:
-    #     #         #             os.remove(file)
-    #     #         #         except:
-    #     #         #             pass
-    #     #     return
+    # TODO 1 test + debug
+    def render_myself_to_static(self):
 
+        #todo 1 rough code
+        pickles_to_render=[x for x in glob("*.dat") if x.is_file()]
+        pickle_array = []
+        for picklefile in pickles_to_render:
+            # print('checking {}'.format(picklefile))
+            with open(picklefile, 'rb') as pickle_file:
+                barrel = pickle.load(pickle_file)
+                for p in barrel:
+                    pickle_array.append(p)
+                print ('added {} to route pickle'.format(picklefile))
 
-#-------------------------------------------------------------------------------------------------------------------------------------
-# Misc
-#-------------------------------------------------------------------------------------------------------------------------------------
+        #iterate over pickle_array and insert into JSON
+        serial_array=[]
+        for p in pickle_array:
+            serial_array.append(p.to_serial())
 
+        json_container = dict()
+        json_container['buses'] = serial_array
+
+        outfile = self.archive_path / 'BusObservations-{}-{}-{}-{}-{}.json.tar.gz'.format(self.date_pointer.year,
+                                                              self.date_pointer.month,
+                                                              self.date_pointer.day,
+                                                              self.date_pointer.hour,
+                                                              self.route
+                                                              )
+        with open(outfile, 'w') as f:
+            json.dump(json_container, f)
+
+        # print ('rendered {} pickles from {} files in {} barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), route, static_path+rendered_file))
+        # print ('made a static JSON file called {} out of {}'.format(outfile,[x for x in pickles_to_render]))
+        # self.delete_folder() #delete route folder works ok, but # bug delete the empty folders above? e.g. data/lake/puddles/YYYY/MM/DD/HH
+
+        return
+'''
