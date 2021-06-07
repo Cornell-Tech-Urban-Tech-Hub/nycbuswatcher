@@ -19,7 +19,7 @@ def async_grab_and_store():
         try:
             r = await s.get(path=a_path)
             feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
-        #bug find a way to retry these, connection errors lead to a gap for any route that raises an Exception
+        #bug LOW find a way to retry these, connection errors lead to a gap for any route that raises an Exception
         except Exception as e:
             print (route_id, e)
 
@@ -40,7 +40,7 @@ def async_grab_and_store():
     # dump to the various locations
     timestamp = dt.datetime.now()
     # date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
-    data.DataLake().make_puddles(feeds,timestamp)
+    data.DataLake().make_puddles(feeds, data.DatePointer(timestamp))
     # data.DataStore(date_pointer).make_barrels(feeds,timestamp)
 
     # report results to console
@@ -71,9 +71,8 @@ if __name__ == "__main__":
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
-        #bug doesnt seem to run like test.py, created tree structure but didnt write archives-- run less often?
         lake = data.DataLake()
-        scheduler.add_job(lake.archive_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
         # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         scheduler.start()
