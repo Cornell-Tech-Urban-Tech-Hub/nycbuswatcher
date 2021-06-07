@@ -146,7 +146,7 @@ class DataLake(GenericStore):
             for route_id,route_data in route_report.items():
 
                 route=route_id.split('_')[1]
-                puddle_date_pointer=DatePointer(date_pointer.timestamp,route)
+                puddle_date_pointer=DatePointer(date_pointer.timestamp, route)
 
                 try:
 
@@ -163,10 +163,10 @@ class DataLake(GenericStore):
                         json.dump(route_data, f, indent=4)
 
                 except Exception as e: # no vehicle activity?
-                    # print (e)
-                    # pass
-                    import sys
-                    sys.exit()
+                    print (e)
+                    pass
+                    # import sys
+                    # sys.exit()
         return
 
     # builds a list of paths to puddles — e.g. hourly route folders of JSON files
@@ -196,7 +196,7 @@ class DataLake(GenericStore):
         print('firing DataLake.freeze_puddles')
         puddles_to_archive = self.list_expired_puddles()
         for puddle in puddles_to_archive:
-            puddle.render_myself_to_archive()
+            puddle.freeze_myself_to_glacier()
 
         # quickly scan the whole datastore and delete empty folders
         # https://gist.github.com/roddds/aff960f47d4d1dffba2235cc34cb45fb
@@ -221,10 +221,10 @@ class Puddle(GenericFolder):
             raise Exception ('tried to instantiate Puddle because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
-    def render_myself_to_archive(self):
+    def freeze_myself_to_glacier(self):
         print('firing Puddle.render_myself_to_archive')
         # round up all the files this puddle
-        drops_to_archive=[x for x in self.path.glob('*.json') if x.is_file()]
+        drops_to_freeze=[x for x in self.path.glob('*.json') if x.is_file()]
 
         # init folder and sanity check -- is there already an archive file at this location?
         try:
@@ -235,9 +235,9 @@ class Puddle(GenericFolder):
 
         # write the tarball
         with tarfile.open(outfile.filepath, "w:gz") as tar:
-                for drop in drops_to_archive:
+                for drop in drops_to_freeze:
                     tar.add(drop, arcname=drop.name.replace(':','-')) # tar doesnt like colons
-        print ('wrote {} drops to archive at {}'.format(len(drops_to_archive), outfile.path))
+        print ('froze {} drops to Glacier at {}'.format(len(drops_to_freeze), outfile.path))
 
         # cleanup
         self.delete_folder()
@@ -275,7 +275,7 @@ class Glacier(GenericFolder):
         return
 
 #-------------------------------------------------------------------------------------------------------------------------------------
-# Barrels in a DataStore are rendered into Deliveries
+# Barrels in a DataStore are rendered into Shipments
 #-------------------------------------------------------------------------------------------------------------------------------------
 
 # a DataLake instance represents all of the Barrels
@@ -283,76 +283,46 @@ class DataStore(GenericStore):
 
     def __init__(self):
         super().__init__(kind='lake')
-        self.Barrels = self.load_barrels()
+        self.barrels = self.load_barrels()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
-    # # TODO COALFACE 1 DataStore.make_barrels
-    # # dump each response to data/puddle/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
-    # def make_barrels(self, feeds, date_pointer):
-    #
-    #     # # OLD MAKE_PUDDLES CODE
-    #     #
-    #     # for route_report in feeds:
-    #     #
-    #     #     for route_id,route_data in route_report.items():
-    #     #
-    #     #         route=route_id.split('_')[1]
-    #     #         puddle_date_pointer=DatePointer(date_pointer.timestamp,route)
-    #     #
-    #     #         try:
-    #     #
-    #     #             # prepare the puddle
-    #     #             folder = Puddle(puddle_date_pointer).path
-    #     #             filename = 'drop_{}_{}.json'.format(puddle_date_pointer.route, puddle_date_pointer.timestamp).replace(' ', 'T')
-    #     #             filepath = folder / PurePath(filename)
-    #     #
-    #     #             # parse the response
-    #     #             route_data = route_data.json()
-    #     #
-    #     #             # write it
-    #     #             with open(filepath, 'wt', encoding="ascii") as f:
-    #     #                 json.dump(route_data, f, indent=4)
-    #     #
-    #     #         except Exception as e: # no vehicle activity?
-    #     #             # print (e)
-    #     #             # pass
-    #     #             import sys
-    #     #             sys.exit()
-    #     return
-    #
-    #     # # OLD MAKE_BARREL CODE
-    #     #
-    #     #     # future this could be abstracted into GenericStore by passing kind in and using generic names?
-    #     #     # builds a list of paths to barrels — e.g. hourly route folders of dat files
-    #     #     def load_barrels(self):
-    #     #         files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
-    #     #         dirs = filter(lambda f: os.path.isdir(f), files)
-    #     #
-    #     #         barrels = []
-    #     #         for d in dirs:
-    #     #             date_pointer = self.date_pointer_from_a_path(d) #todo will need this as well
-    #     #             route = d.split('/')[-1]
-    #     #             barrels.append(Barrel(date_pointer, route))
-    #     #
-    #     #         return barrels
-    #     #
-    #     #     # TODO TEST
-    #     #     # creates a list of all puddles that are not in current hour and can be archived
-    #     #     def list_expired_barrels(self):
-    #     #         expired_barrels = []
-    #     #         for barrel in self.barrels:
-    #     #             now_date_pointer = self.timestamp_to_date_pointer(datetime.datetime.now())
-    #     #             if barrel.date_pointer != now_date_pointer:
-    #     #                 expired_barrels.append(barrel)
-    #     #         return expired_barrels
-    #     #
-    #     #     # TODO TEST
-    #     #     # fire the render processes for all expired barrels (not the current hour)
-    #     #     def render_barrels(self):
-    #     #         barrels_to_render = self.list_expired_barrels()
-    #     #         for barrel in barrels_to_render:
-    #     #             barrel.render_myself_to_static()
-    #     # return
+    # TODO COALFACE 1 DataStore.make_barrels
+    # dump each pickle to data/barrel/YYYY/MM/DD/HH/route_id/barrel_2021-04-03T12:12:12.dat
+    def make_barrels(self, feeds, date_pointer):
+
+        for route_report in feeds:
+            for route_id,route_data in route_report.items():
+                route = route_id.split('_')[1]
+                barrel_date_pointer=DatePointer(date_pointer.timestamp, route)
+
+                pickles = []
+                try:
+
+                    # prepare the barrel
+                    folder = Barrel(barrel_date_pointer).path
+                    filename = 'pickle_{}_{}.dat'.format(barrel_date_pointer.route, barrel_date_pointer.timestamp).replace(' ', 'T')
+                    filepath = folder / PurePath(filename)
+
+                    # parse the response
+                    route_data = route_data.json()
+                    for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
+                        bus = BusObservation(route, monitored_vehicle_journey)
+                        pickles.append(bus)
+
+                    # write it
+                    with open(filepath, "wb") as f:
+                        pickle.dump(pickles, f)
+
+                except KeyError:
+                    # future find a way to filter these out to reduce overhead
+                    # this is almost always the result of a route that doesn't exist, so why is it in the OBA response?
+                    # 'VehicleActivity' M79+ {'Siri': {'ServiceDelivery': {'ResponseTimestamp': '2021-06-04T07:38:01.071-04:00', 'VehicleMonitoringDelivery': [{'ResponseTimestamp': '2021-06-04T07:38:01.071-04:00', 'ErrorCondition': {'OtherError': {'ErrorText': 'No such route: MTA NYCT_M79 .'}, 'Description': 'No such route: MTA NYCT_M79 .'}}]}}}
+                    pass
+                except json.JSONDecodeError:
+                    # this is probably no response?
+                    print ('JSONDecodeError: No/Bad API response? - route {}'.format(route))
+                    pass
+        return
 
 
 
@@ -383,8 +353,8 @@ class DataStore(GenericStore):
     def render_barrels(self):
         print('firing DataStore.render_barrels')
         barrels_to_archive = self.list_expired_barrels()
-        for barrels in barrels_to_archive:
-            barrels.render_myself_to_shipment()
+        for barrel in barrels_to_archive:
+            barrel.render_myself_to_shipment()
 
 
         # quickly scan the whole datastore and delete empty folders
@@ -406,43 +376,45 @@ class Barrel(GenericFolder):
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
+    def render_myself_to_shipment(self):
+        print('firing Barrel.render_myself_to_shipment')
 
-    # # TODO COALFACE2 Barrel.render_myself_to_shipment
-    # def render_myself_to_shipment(self):
-    #
-    #     # rough code
-    #     pickles_to_render=[x for x in glob("*.dat") if x.is_file()]
-    #     pickle_array = []
-    #     for picklefile in pickles_to_render:
-    #         # print('checking {}'.format(picklefile))
-    #         with open(picklefile, 'rb') as pickle_file:
-    #             barrel = pickle.load(pickle_file)
-    #             for p in barrel:
-    #                 pickle_array.append(p)
-    #             print ('added {} to route pickle'.format(picklefile))
-    #
-    #     #iterate over pickle_array and insert into JSON
-    #     serial_array=[]
-    #     for p in pickle_array:
-    #         serial_array.append(p.to_serial())
-    #
-    #     json_container = dict()
-    #     json_container['buses'] = serial_array
-    #
-    #     outfile = self.archive_path / 'BusObservations-{}-{}-{}-{}-{}.json.tar.gz'.format(self.date_pointer.year,
-    #                                                           self.date_pointer.month,
-    #                                                           self.date_pointer.day,
-    #                                                           self.date_pointer.hour,
-    #                                                           self.route
-    #                                                           )
-    #     with open(outfile, 'w') as f:
-    #         json.dump(json_container, f)
-    #
-    #     # print ('rendered {} pickles from {} files in {} barrel and dumped to static file {}'.format(len(pickle_array), len (picklefile_list), route, static_path+rendered_file))
-    #     # print ('made a static JSON file called {} out of {}'.format(outfile,[x for x in pickles_to_render]))
-    #     # self.delete_folder() #delete route folder works ok, but # bug delete the empty folders above? e.g. data/lake/puddles/YYYY/MM/DD/HH
-    #
-    #     return
+        # init folder and sanity check -- is there already an archive file at this location?
+        try:
+            outfile = Shipment(self.date_pointer, self.route)
+        except OSError:
+            # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
+            return
+
+
+        # pack the pickles
+        pickles_to_render=[x for x in glob("*.dat") if x.is_file()]
+        pickle_array = []
+        for picklefile in pickles_to_render:
+            # print('checking {}'.format(picklefile))
+            with open(picklefile, 'rb') as pickle_file:
+                barrel = pickle.load(pickle_file)
+                for p in barrel:
+                    pickle_array.append(p)
+                print ('added {} to route pickle'.format(picklefile))
+
+        #iterate over pickle_array and insert into JSON
+        serial_array=[]
+        for p in pickle_array:
+            serial_array.append(p.to_serial())
+
+        json_container = dict()
+        json_container['buses'] = serial_array
+
+        with open(outfile.filepath, 'w') as f:
+            json.dump(json_container, f)
+
+        print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.path))
+
+        # cleanup
+        self.delete_folder()
+
+        return
         
 # an Shipment is a rendered Barrel, e.g. a bunch of different BusObservations concatenated together
 class Shipment(GenericFolder):
