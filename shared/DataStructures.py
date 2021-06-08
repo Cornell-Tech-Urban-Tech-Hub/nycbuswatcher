@@ -97,7 +97,7 @@ class GenericFolder():
         Path(path).mkdir(parents=True, exist_ok=True)
         return
 
-    # this probably tries to delete the child after the parent is already gone
+
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
     def delete_folder(self):
         def rm_tree(pth):
@@ -106,13 +106,13 @@ class GenericFolder():
                 if child.is_file():
                     child.unlink()
                 else:
-                    try:
-                        rm_tree(child)
-                    except FileNotFoundError: #catch trying to delete the child after the parent?
-                        pass
-
+                    rm_tree(child)
             pth.rmdir()
-        rm_tree(self.path)
+        try:
+            # this probably tries to delete the child after the parent is already gone
+            rm_tree(self.path)
+        except FileNotFoundError: #catch trying to delete the child after the parent?
+            pass
         return
 
 
@@ -147,7 +147,9 @@ class DataLake(GenericStore):
         for d in dirs:
             date_pointer = self.date_pointer_from_a_path(d)
             date_pointer.route = d.split('/')[-1]
-            puddles.append(Puddle(date_pointer))
+            p = Puddle(date_pointer)
+            p.path = p.path / PurePath (date_pointer.route)
+            puddles.append(p)
         return puddles
 
     def list_expired_puddles(self):
@@ -157,7 +159,6 @@ class DataLake(GenericStore):
             bottom_of_hour.route=puddle.route
             if puddle.date_pointer != bottom_of_hour:
                 expired_puddles.append(puddle)
-        #bug re-sort expired_puddles list from oldest to newest
         return expired_puddles
 
     def freeze_puddles(self):
@@ -184,8 +185,8 @@ class Puddle(GenericFolder):
             raise Exception ('tried to instantiate Puddle because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
+
     def freeze_myself_to_glacier(self):
-        print('firing Puddle.render_myself_to_archive')
         drops_to_freeze=[x for x in self.path.glob('*.json') if x.is_file()]
         try:
             outfile = Glacier(self.date_pointer)
@@ -219,10 +220,10 @@ class Glacier(GenericFolder):
         elif filepath.is_file() is False:
             return (False, filepath)
 
-    def thaw_one(self, date_pointer, **kwargs): # todo write Glacier.thaw one
-        # retrieves the appropriate file, optionally uncompresses it?
-        # e.g. data = Glacier.thaw_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
-        return
+    # def thaw_one(self, date_pointer, **kwargs):
+    #     # retrieves the appropriate file, optionally uncompresses it?
+    #     # e.g. data = Glacier.thaw_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
+    #     return
 
 
 class DataStore(GenericStore):
@@ -231,7 +232,6 @@ class DataStore(GenericStore):
         super().__init__(kind='lake')
         self.barrels = self.load_barrels()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
-
 
     def make_barrels(self, feeds, date_pointer):
         for route_report in feeds:
@@ -252,7 +252,6 @@ class DataStore(GenericStore):
                 except KeyError:
                     # future find a way to filter these out to reduce overhead
                     # this is almost always the result of a route that doesn't exist, so why is it in the OBA response?
-                    # 'VehicleActivity' M79+ {'Siri': {'ServiceDelivery': {'ResponseTimestamp': '2021-06-04T07:38:01.071-04:00', 'VehicleMonitoringDelivery': [{'ResponseTimestamp': '2021-06-04T07:38:01.071-04:00', 'ErrorCondition': {'OtherError': {'ErrorText': 'No such route: MTA NYCT_M79 .'}, 'Description': 'No such route: MTA NYCT_M79 .'}}]}}}
                     pass
                 except json.JSONDecodeError:
                     # this is probably no response?
@@ -267,7 +266,9 @@ class DataStore(GenericStore):
         for d in dirs:
             date_pointer = self.date_pointer_from_a_path(d)
             date_pointer.route = d.split('/')[-1]
-            barrels.append(Barrel(date_pointer))
+            b = Barrel(date_pointer)
+            b.path = b.path / PurePath (date_pointer.route)
+            barrels.append(b)
         return barrels
 
     def list_expired_barrels(self):
@@ -277,7 +278,7 @@ class DataStore(GenericStore):
             bottom_of_hour.route=puddle.route
             if puddle.date_pointer != bottom_of_hour:
                 expired_barrels.append(puddle)
-        return expired_barrels  #bug sort list from oldest to newest
+        return expired_barrels  # future sort list from oldest to newest
 
     def render_barrels(self):
         print('firing DataStore.render_barrels')
@@ -303,14 +304,15 @@ class Barrel(GenericFolder):
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
+
     def render_myself_to_shipment(self):
-        print('firing Barrel.render_myself_to_shipment')
+        pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
+        print('rendering {} picklefiles to Shipment for Barrel {}'.format(len(pickles_to_render),self.path))
         try:
             outfile = Shipment(self.date_pointer)
         except OSError:
             # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
             return
-        pickles_to_render=[x for x in glob("*.dat") if x.is_file()]
         pickle_array = []
         for picklefile in pickles_to_render:
             with open(picklefile, 'rb') as pickle_file:
@@ -324,7 +326,7 @@ class Barrel(GenericFolder):
         json_container = dict()
         json_container['buses'] = serial_array
         with open(outfile.filepath, 'w') as f:
-            json.dump(json_container, f)
+            json.dump(json_container, f, indent=4)
         print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.path))
         self.delete_folder()
         return
@@ -349,8 +351,8 @@ class Shipment(GenericFolder):
         elif filepath.is_file() is False:
             return (False, filepath)
 
-    def ship_one(self, date_pointer, **kwargs): # todo write Shipment.get_one
-        # retrieves the appropriate file, optionally uncompresses it?
-        # e.g. data = Shipment.ship_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
-        return
+    # def ship_one(self, date_pointer, **kwargs):
+    #     # retrieves the appropriate file, optionally uncompresses it?
+    #     # e.g. data = Shipment.ship_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
+    #     return
 

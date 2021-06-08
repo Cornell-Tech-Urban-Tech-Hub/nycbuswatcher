@@ -77,7 +77,6 @@ if __name__ == "__main__":
         store = data.DataStore()
         scheduler.add_job(lake.freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
         scheduler.add_job(store.render_barrels, 'cron', hour='*',  misfire_grace_time=15)
-        # hourly_scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
         # Start the schedulers
         scheduler.start()
