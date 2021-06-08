@@ -4,9 +4,10 @@ import time
 import datetime as dt
 import trio
 from apscheduler.schedulers.background import BackgroundScheduler
+
 from dotenv import load_dotenv
 
-import shared.Dumpers as data
+import shared.DataStructures as data
 from shared.config import config
 import shared.Helpers as help
 
@@ -41,12 +42,12 @@ def async_grab_and_store():
     timestamp = dt.datetime.now()
     # date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
     data.DataLake().make_puddles(feeds, data.DatePointer(timestamp))
-    # data.DataStore(date_pointer).make_barrels(feeds,timestamp)
+    data.DataStore().make_barrels(feeds, data.DatePointer(timestamp))
 
     # report results to console
     num_buses = help.num_buses(feeds)
     end = time.time()
-    print('Fetched and saved {} route feeds and pickled {} BusObservations in {:2f} seconds at {}.\n'.format(len(feeds),num_buses,(end - start), dt.datetime.now()))
+    print('Fetched and saved {} route feeds and pickled {} BusObservations in {:2f} seconds at {}.'.format(len(feeds),num_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
     return
 
 if __name__ == "__main__":
@@ -63,18 +64,22 @@ if __name__ == "__main__":
 
     # PRODUCTION = start main loop
     if os.environ['PYTHON_ENV'] == "production":
-        interval = 60
-        print('Scanning on {}-second interval.'.format(interval))
+
         scheduler = BackgroundScheduler()
 
         # every minute
+        interval = 60
+        print('Scanning on {}-second interval.'.format(interval))
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
         lake = data.DataLake()
-        scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
-        # scheduler.add_job(dump.DataStore.render_barrels(), 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
+        store = data.DataStore()
+        scheduler.add_job(lake.freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
+        scheduler.add_job(store.render_barrels, 'cron', hour='*',  misfire_grace_time=15)
+        # hourly_scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60, max_instances=1, misfire_grace_time=15) # bundle up pickles and write static file for API
 
+        # Start the schedulers
         scheduler.start()
 
         try:
