@@ -96,6 +96,8 @@ class GenericFolder():
     def checkpath(self, path):
         Path(path).mkdir(parents=True, exist_ok=True)
         return
+
+    # this probably tries to delete the child after the parent is already gone
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
     def delete_folder(self):
         def rm_tree(pth):
@@ -104,7 +106,11 @@ class GenericFolder():
                 if child.is_file():
                     child.unlink()
                 else:
-                    rm_tree(child)
+                    try:
+                        rm_tree(child)
+                    except FileNotFoundError: #catch trying to delete the child after the parent?
+                        pass
+
             pth.rmdir()
         rm_tree(self.path)
         return
@@ -182,7 +188,7 @@ class Puddle(GenericFolder):
         print('firing Puddle.render_myself_to_archive')
         drops_to_freeze=[x for x in self.path.glob('*.json') if x.is_file()]
         try:
-            outfile = Glacier(self.date_pointer, self.route)
+            outfile = Glacier(self.date_pointer)
         except OSError:
             # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
             return
@@ -300,7 +306,7 @@ class Barrel(GenericFolder):
     def render_myself_to_shipment(self):
         print('firing Barrel.render_myself_to_shipment')
         try:
-            outfile = Shipment(self.date_pointer, self.route)
+            outfile = Shipment(self.date_pointer)
         except OSError:
             # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
             return

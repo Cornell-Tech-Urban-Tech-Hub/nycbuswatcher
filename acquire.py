@@ -22,7 +22,7 @@ def async_grab_and_store():
             feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
         #bug LOW find a way to retry these, connection errors lead to a gap for any route that raises an Exception
         except Exception as e:
-            print (route_id, e)
+            print ('\tCould not fetch feed for {}. (Maybe you should write some retry code?)'.format(route_id) )
 
     async def main(path_list):
         from asks.sessions import Session
@@ -53,7 +53,6 @@ def async_grab_and_store():
 if __name__ == "__main__":
 
     print('NYC MTA BusTime API Scraper v2.0 (no-database branch) June 2021. Anthony Townsend <atownsend@cornell.edu>')
-    print('mode: {}'.format(os.environ['PYTHON_ENV']))
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
     parser.add_argument('-l', action="store_true", dest="localhost", help="force localhost for production mode")
@@ -69,7 +68,8 @@ if __name__ == "__main__":
 
         # every minute
         interval = 60
-        print('Scanning on {}-second interval.'.format(interval))
+
+        print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), interval))
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
         # every hour
