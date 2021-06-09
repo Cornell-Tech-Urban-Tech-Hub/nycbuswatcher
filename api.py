@@ -1,9 +1,10 @@
-from fastapi import FastAPI, Request, Query
-from fastapi.staticfiles import StaticFiles
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
 import uvicorn
 from shared.API import *
 from dotenv import load_dotenv
 import datetime
+from pydantic import BaseModel
 
 #-----------------------------------------------------------------------------------------
 # fastapi implementation after tutorial https://fastapi.tiangolo.com/tutorial/query-params/
@@ -17,61 +18,41 @@ api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()
 
-# app.mount("/static", StaticFiles(directory="static/"), name="static")
-app.mount("/assets", StaticFiles(directory="assets/"), name="static")
 
 # add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
 # add auth/key registry (3rd party plugin? for API control)
 #-------------- Fast API -------------------------------------------------------------
 
 
-@app.get("/")
+@app.get('/')
 async def root():
-    return {"message": "NYCBuswatcher API v2"}
+    return {'message': 'NYCBuswatcher API v2'}
 
 
-@app.get("/api/v2/nyc/routes/{year}/{month}/{day}/{hour}")
-async def list_routes(
-                        request: Request,
-                        year: int = Query (None,
-                                           min_length=4,
-                                           max_length=4),
-                        month: int = Query (None,
-                                            min_length=4,
-                                            max_length=4),
-                        day: int = Query (None,
-                                          min_length=4,
-                                          max_length=4),
-                        hour: int = Query (None,
-                                           min_length=4,
-                                           max_length=4)
-                        ):
+@app.get('/api/v2/nyc/routes/{year}/{month}/{day}/{hour}')
+async def list_routes(year,month,day,hour):#todo add validators
     date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
-    return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer and kind"}
+    return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
+            "date_pointer": date_pointer}
 
 
-@app.get("/api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}")
-# per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
-async def fetch_Shipment(
-                        request: Request,
-                        year: int = Query (None,
-                                            min_length=4,
-                                            max_length=4),
-                        month: int = Query (None,
-                                           min_length=4,
-                                           max_length=4),
-                        day: int = Query (None,
-                                           min_length=4,
-                                           max_length=4),
-                        hour: int = Query (None,
-                                           min_length=4,
-                                           max_length=4),
-                        route: str = Query (None,
-                                            min_length=2,
-                                            max_length=6)
-                        ):
 
-    return {"message": "This will serve a static JSON Shipment for for a given date_pointer"}
+#per https://fastapi.tiangolo.com/advanced/additional-responses/#additional-media-types-for-the-main-response
+class Shipment(BaseModel):
+    id: str
+    value: str
+@app.get('/api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}',
+    response_model=Shipment,
+         responses={
+             200: {
+                 'content': {'application/json': {}},
+                 'description': 'Return the JSON item or an image.',
+             }
+         },
+         )
+async def fetch_Shipment(year,month,day,hour,route): #todo add validators
+    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/shipment_{}_{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour)
+    return FileResponse(shipment_to_get, media_type="application/json")
 
 
 if __name__ == '__main__':
