@@ -1,33 +1,24 @@
 from fastapi import FastAPI, Request, Query
 from fastapi.staticfiles import StaticFiles
-from typing import Optional
-
 import uvicorn
-from sqlalchemy import create_engine
-
-import shared.Database as db
-from shared.APIhelpers import *
-
+from shared.API import *
 from dotenv import load_dotenv
-load_dotenv()
-from shared.config import config
-api_url_stem="/api/v1/nyc/livemap"
+import datetime
 
 #-----------------------------------------------------------------------------------------
 # fastapi implementation after tutorial https://fastapi.tiangolo.com/tutorial/query-params/
 # query parameter handling after https://stackoverflow.com/questions/30779584/flask-restful-passing-parameters-to-get-request
 #-----------------------------------------------------------------------------------------
 
-
 #--------------- INITIALIZATION ---------------
-
-db_connect = create_engine(db.get_db_url(config.config['dbuser'], config.config['dbpassword'], config.config[
-    'dbhost'], config.config['dbport'], config.config['dbname']))
-# to 'localhost' for debugging?
+load_dotenv()
+from shared.config import config
+api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static/"), name="static")
+# app.mount("/static", StaticFiles(directory="static/"), name="static")
+app.mount("/assets", StaticFiles(directory="assets/"), name="static")
 
 # add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
 # add auth/key registry (3rd party plugin? for API control)
@@ -39,36 +30,48 @@ async def root():
     return {"message": "NYCBuswatcher API v2"}
 
 
-@app.get("/api/v1/nyc/livemap")
-async def fetch_livemap():
-    import geojson
-    with open('./static/lastknownpositions.geojson', 'r') as infile:
-        return geojson.load(infile)
-
-# /api/v1/nyc/buses?route_short=Bx4&start=2021-04-23T21:00:00+00:00&end=2021-04-23T22:00:00+00:00
-
-
-@app.get("/api/v1/nyc/buses")
-# per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
-async def fetch_snapshot(
+@app.get("/api/v2/nyc/routes/{year}/{month}/{day}/{hour}")
+async def list_routes(
                         request: Request,
-                        route_short: Optional[str] = None,
-                        start: str = Query (None,
-                                            min_length=25,
-                                            max_length=30),
-                        end: str = Query (None,
-                                            min_length=25,
-                                            max_length=30)
+                        year: int = Query (None,
+                                           min_length=4,
+                                           max_length=4),
+                        month: int = Query (None,
+                                            min_length=4,
+                                            max_length=4),
+                        day: int = Query (None,
+                                          min_length=4,
+                                          max_length=4),
+                        hour: int = Query (None,
+                                           min_length=4,
+                                           max_length=4)
                         ):
-    conn = db_connect.connect()
-    query_prefix = "SELECT * FROM buses WHERE {}"
-    query_suffix = query_builder(request.query_params)
-    query_compound = query_prefix.format(query_suffix )
-    print (query_compound)
-    query = conn.execute(query_compound)
-    results = {'observations': unpack_query_results(query)}
-    print(str(len(results['observations'])) + ' positions returned via API')
-    return results_to_FeatureCollection(results)
+    date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
+    return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer and kind"}
+
+
+@app.get("/api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}")
+# per https://stackoverflow.com/questions/62279710/fastapi-variable-query-parameters
+async def fetch_Shipment(
+                        request: Request,
+                        year: int = Query (None,
+                                            min_length=4,
+                                            max_length=4),
+                        month: int = Query (None,
+                                           min_length=4,
+                                           max_length=4),
+                        day: int = Query (None,
+                                           min_length=4,
+                                           max_length=4),
+                        hour: int = Query (None,
+                                           min_length=4,
+                                           max_length=4),
+                        route: str = Query (None,
+                                            min_length=2,
+                                            max_length=6)
+                        ):
+
+    return {"message": "This will serve a static JSON Shipment for for a given date_pointer"}
 
 
 if __name__ == '__main__':

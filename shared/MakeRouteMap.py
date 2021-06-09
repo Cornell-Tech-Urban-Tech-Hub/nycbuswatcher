@@ -39,7 +39,7 @@ from zipfile import ZipFile
 
 def update_route_map():
 
-    workdir="routemap/"
+    workdir="assets/routemaps/"
 
     boros = {'brooklyn':80,
              'bronx': 81,
@@ -221,7 +221,7 @@ def update_route_map():
 
     feature_collection = gj.FeatureCollection(features_container)
 
-    with open('api/static/route_shapes_nyc.geojson', 'w') as outfile:
+    with open('assets/routemaps/route_shapes_nyc.geojson', 'w') as outfile:
         gj.dump(feature_collection, outfile)
 
     for file in filelist:

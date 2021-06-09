@@ -72,11 +72,20 @@ if __name__ == "__main__":
         print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), interval))
         scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
 
-        # every hour
-        lake = data.DataLake()
-        store = data.DataStore()
-        scheduler.add_job(lake.freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
-        scheduler.add_job(store.render_barrels, 'cron', hour='*',  misfire_grace_time=15)
+        #bug lake.freeze_puddles isn't working, but test.py is?!?!
+        # test
+        # 1. try data.data.DataLake().freeze_puddles - maybe the instance isnt getting passed into the apscheduler thread?
+        # 2. try interval job instead of cron
+        # 3. ??
+
+        # # every hour
+        # lake = data.DataLake()
+        # store = data.DataStore()
+        # scheduler.add_job(lake.freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
+        # scheduler.add_job(store.render_barrels, 'cron', hour='*',  misfire_grace_time=15)
+
+        scheduler.add_job(data.DataLake().freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
+        scheduler.add_job(data.DataStore().render_barrels, 'cron', hour='*',  misfire_grace_time=15)
 
         # Start the schedulers
         scheduler.start()

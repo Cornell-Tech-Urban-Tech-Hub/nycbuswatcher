@@ -97,22 +97,16 @@ class GenericFolder():
         Path(path).mkdir(parents=True, exist_ok=True)
         return
 
-
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
     def delete_folder(self):
         def rm_tree(pth):
-            pth = Path(pth)
             for child in pth.glob('*'):
                 if child.is_file():
                     child.unlink()
                 else:
                     rm_tree(child)
             pth.rmdir()
-        try:
-            # this probably tries to delete the child after the parent is already gone
-            rm_tree(self.path)
-        except FileNotFoundError: #catch trying to delete the child after the parent?
-            pass
+        rm_tree(self.path)
         return
 
 
@@ -162,7 +156,7 @@ class DataLake(GenericStore):
         return expired_puddles
 
     def freeze_puddles(self):
-        print('firing DataLake.freeze_puddles')
+        # print('firing DataLake.freeze_puddles')
         puddles_to_archive = self.list_expired_puddles()
         if len(puddles_to_archive) == 0:
             print('no expired puddles to freeze')
@@ -271,6 +265,7 @@ class DataStore(GenericStore):
             barrels.append(b)
         return barrels
 
+    #bug seems to skip the last 2 hours, not just the last hour
     def list_expired_barrels(self):
         expired_barrels = []
         for puddle in self.barrels:
@@ -281,7 +276,7 @@ class DataStore(GenericStore):
         return expired_barrels  # future sort list from oldest to newest
 
     def render_barrels(self):
-        print('firing DataStore.render_barrels')
+        # print('firing DataStore.render_barrels')
         barrels_to_archive = self.list_expired_barrels()
         if len(barrels_to_archive) == 0:
             print('no expired barrels to render')
@@ -307,7 +302,7 @@ class Barrel(GenericFolder):
 
     def render_myself_to_shipment(self):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
-        print('rendering {} picklefiles to Shipment for Barrel {}'.format(len(pickles_to_render),self.path))
+        # print('rendering {} picklefiles to Shipment for Barrel {}'.format(len(pickles_to_render),self.path))
         try:
             outfile = Shipment(self.date_pointer)
         except OSError:
@@ -319,7 +314,7 @@ class Barrel(GenericFolder):
                 barrel = pickle.load(pickle_file)
                 for p in barrel:
                     pickle_array.append(p)
-                print ('added {} to route pickle'.format(picklefile))
+                # print ('added {} to route pickle'.format(picklefile))
         serial_array=[]
         for p in pickle_array:
             serial_array.append(p.to_serial())
