@@ -81,6 +81,7 @@ class GenericStore():
                                     ))
 
 
+
 class GenericFolder():
 
     def __init__(self, date_pointer, kind=None):
@@ -146,12 +147,16 @@ class DataLake(GenericStore):
             puddles.append(p)
         return puddles
 
+    #TODO COALFACE -- MAKE SURE I WORK WHEN TRIGGERED BY APSCHEDULER
     def list_expired_puddles(self):
         expired_puddles = []
         for puddle in self.puddles:
+            print('is puddle {} expired?'.format(puddle.path))
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
+            print ('comparing DatePointers: bottom_of_hour {} vs  puddle.date_pointer {}'.format(bottom_of_hour,puddle.date_pointer))
             if puddle.date_pointer != bottom_of_hour:
+                print('EXPIRED  puddle.date_pointer {}'.format(puddle.date_pointer))
                 expired_puddles.append(puddle)
         return expired_puddles
 
@@ -223,8 +228,9 @@ class Glacier(GenericFolder):
 class DataStore(GenericStore):
 
     def __init__(self):
-        super().__init__(kind='lake')
+        super().__init__(kind='store')
         self.barrels = self.load_barrels()
+        self.shipments = self.load_shipments()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
     def make_barrels(self, feeds, date_pointer):
@@ -265,9 +271,21 @@ class DataStore(GenericStore):
             barrels.append(b)
         return barrels
 
-    #bug seems to skip the last 2 hours, not just the last hour
+    def load_shipments(self):
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['shipment']), recursive=True)
+        dirs = filter(lambda f: os.path.isdir(f), files)
+        shipments = []
+        for d in dirs:
+            date_pointer = self.date_pointer_from_a_path(d)
+            date_pointer.route = d.split('/')[-1]
+            s = Shipment(date_pointer)
+            s.path = s.path / PurePath (date_pointer.route) #bug use s.filepath instead?
+            shipments.append(s)
+        return shipments
+
     def list_expired_barrels(self):
         expired_barrels = []
+        self.barrels = self.load_barrels() #reload here in case this was executed from apscheduler #bug testing this 933pm
         for puddle in self.barrels:
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
@@ -289,6 +307,30 @@ class DataStore(GenericStore):
                 os.rmdir(dirpath)
         return
 
+    # def list_routes(self,date_pointer):
+    #     folder = self.path / date_pointer.purepath
+    #     subfolders = [p for p in folder.iterdir() if p.is_dir()]
+    #     # print (subfolders)
+    #     return subfolders
+    #
+
+    def list_routes(self, date_pointer_query):
+        routes = []
+        self.shipments = self.load_shipments() #reload here Just In Case
+
+        dp1=date_pointer_query
+        for shipment in self.shipments:
+            dp2=shipment.date_pointer
+            print ('comparing {} and {}'.format(dp1,dp2))
+            if dp1.year == dp2.year:
+                if dp1.month == dp2.month:
+                    if dp1.day == dp2.day:
+                        if dp1.hour == dp2.hour:
+                            routes.append(shipment.route)
+
+        return routes
+
+
 
 class Barrel(GenericFolder):
 
@@ -298,7 +340,6 @@ class Barrel(GenericFolder):
         if date_pointer.route is False:
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
-
 
     def render_myself_to_shipment(self):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
@@ -322,7 +363,7 @@ class Barrel(GenericFolder):
         json_container['buses'] = serial_array
         with open(outfile.filepath, 'w') as f:
             json.dump(json_container, f, indent=4)
-        print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.path))
+        print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.filepath))
         self.delete_folder()
         return
 
