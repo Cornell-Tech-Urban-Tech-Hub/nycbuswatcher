@@ -1,9 +1,8 @@
 import os
 import datetime as dt
 import requests
-import geopandas as gpd
 import pickle
-from shared.config import config
+# from shared.config import config
 
 
 from functools import wraps

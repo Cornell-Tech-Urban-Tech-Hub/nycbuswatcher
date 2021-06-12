@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 import uvicorn
-from shared.API import *
 from dotenv import load_dotenv
 from datetime import datetime
 from pydantic import BaseModel
@@ -36,13 +35,12 @@ def make_store():
     print ('i recreated the DataStore()') #bug how to refresh the DataStore to include new Shipments while the api is running as a daemon? or is it unnecessary?
     return data.DataStore()
 
+#todo debug this
 @app.get('/api/v2/nyc/routes/{year}/{month}/{day}/{hour}')
 async def list_routes(year,month,day,hour):#todo add validators
     store = make_store() #bug this might be costly for each response? but how else to refresh it outside the function
     date_pointer=data.DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
     routes = store.list_routes(date_pointer)
-
-
     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
             "routes": json.dumps(routes)}
 
@@ -82,7 +80,10 @@ async def fetch_Shipment(year,month,day,hour,route): #todo add validators
     #             "date_pointer": (year,month,day,hour,route)}
 
 
-
+@app.get('/api/v2/nyc/dashboard')
+async def list_routes():
+    return {"message": "dashboard report title",
+            "data": "This is where the data will go, and the dashboard will display it!"}
 
 
 

@@ -279,13 +279,13 @@ class DataStore(GenericStore):
             date_pointer = self.date_pointer_from_a_path(d)
             date_pointer.route = d.split('/')[-1]
             s = Shipment(date_pointer)
-            s.path = s.path / PurePath (date_pointer.route) #bug use s.filepath instead?
+            s.path = s.path / PurePath (date_pointer.route) #if fails, use s.filepath instead?
             shipments.append(s)
         return shipments
 
     def list_expired_barrels(self):
         expired_barrels = []
-        self.barrels = self.load_barrels() #reload here in case this was executed from apscheduler #bug testing this 933pm
+        self.barrels = self.load_barrels() #reload here in case this was executed from apscheduler
         for puddle in self.barrels:
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
@@ -317,7 +317,6 @@ class DataStore(GenericStore):
     def list_routes(self, date_pointer_query):
         routes = []
         self.shipments = self.load_shipments() #reload here Just In Case
-
         dp1=date_pointer_query
         for shipment in self.shipments:
             dp2=shipment.date_pointer
@@ -327,7 +326,6 @@ class DataStore(GenericStore):
                     if dp1.day == dp2.day:
                         if dp1.hour == dp2.hour:
                             routes.append(shipment.route)
-
         return routes
 
 

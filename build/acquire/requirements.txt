@@ -1,11 +1,6 @@
 apscheduler
 asks
-geojson
 python-dotenv
-sqlalchemy
-mysqlclient
-mysql-connector-python
-pandas
+python-dateutil
 requests
-shapely
 trio

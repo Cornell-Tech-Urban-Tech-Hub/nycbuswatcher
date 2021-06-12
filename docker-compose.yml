@@ -9,36 +9,21 @@ services:
       - GANDI_API_KEY=$GANDI_API_KEY
       - GANDI_DOMAIN=$GANDI_DOMAIN
       - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
-#  dyndns:
-#    restart: always
-#    build:
-#      context: ./build/dyndns
-#      dockerfile: ./Dockerfile
 
-  db:
-    image: mysql:5.7
-    restart: always
-    command:
-      - --secure_file_priv=/tmp
-    environment:
-      MYSQL_ROOT_PASSWORD: bustime
-      MYSQL_DATABASE: buses
-      MYSQL_USER: nycbuswatcher
-      MYSQL_PASSWORD: bustime
-      TZ: America/New_York
-    volumes:
-      - bus_database:/var/lib/mysql
+  # # use for builds
+  #  dyndns:
+  #    restart: always
+  #    build:
+  #      context: ./build/dyndns
+  #      dockerfile: ./Dockerfile
 
   acquire:
     restart: always
     build:
       context: .
       dockerfile: ./build/acquire/Dockerfile
-    depends_on:
-      - db
     volumes:
-      - bus_files:/app/data
-      - bus_static:/app/api/static
+      - ./data:/app/data
     command:
       python3 /app/acquire.py
 
@@ -48,7 +33,7 @@ services:
       context: .
       dockerfile: ./build/api/Dockerfile
     volumes:
-      - bus_static:/app/api/static
+      - ./data:/app/data
     ports:
       - 80:80
     # # stack doesnt work if this is uncommented
@@ -60,53 +45,47 @@ services:
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
 
-#  # non-proxied version
-#  app:
-#    restart: always
-#    build:
-#      context: .
-#      dockerfile: ./build/app/Dockerfile
-#    volumes:
-#      - bus_assets:/app/assets
-#    ports:
-#      - 8000:80
-#    command:
-#      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+  #  # non-proxied version
+  #  app:
+  #    restart: always
+  #    build:
+  #      context: .
+  #      dockerfile: ./build/app/Dockerfile
+  #    volumes:
+  #      - bus_assets:/app/assets
+  #    ports:
+  #      - 8000:80
+  #    command:
+  #      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
 
 
-#  # traefik version (doesnt work on cornell EC2)
-#  app:
-#    restart: always
-#    build:
-#      context: .
-#      dockerfile: ./build/app/Dockerfile
-#    volumes:
-#      - bus_assets:/app/assets
-#    labels:
-#      - "traefik.enable=true"
-#      - "traefik.http.routers.app.rule=Host(`app.localhost`,`www.nycbuswatcher.org`)"
-#      - "traefik.http.routers.app.entrypoints=web"
-#      - "traefik.http.services.app.loadbalancer.server.port=8000"
-#    command:
-#      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
-#
-#  # add SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
-#  # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
-#  traefik:
-#    image: traefik:latest
-#    command:
-#      - "--api.insecure=true"
-#      - "--providers.docker=true"
-#      - "--entrypoints.web.address=:80"
-#      - "--providers.docker.exposedbydefault=false"
-#    ports:
-#      - "80:80"
-#      - "8080:8080"
-#    volumes:
-#      - /var/run/docker.sock:/var/run/docker.sock:ro
-
-volumes:
-  bus_database:
-  bus_files:
-  bus_static:
-  bus_assets:
+  #  # traefik version (doesnt work on cornell EC2)
+  #  app:
+  #    restart: always
+  #    build:
+  #      context: .
+  #      dockerfile: ./build/app/Dockerfile
+  #    volumes:
+  #      - bus_assets:/app/assets
+  #    labels:
+  #      - "traefik.enable=true"
+  #      - "traefik.http.routers.app.rule=Host(`app.localhost`,`www.nycbuswatcher.org`)"
+  #      - "traefik.http.routers.app.entrypoints=web"
+  #      - "traefik.http.services.app.loadbalancer.server.port=8000"
+  #    command:
+  #      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+  #
+  #  # add SSL / let's encrypt traefik config this guide https://www.valentinog.com/blog/traefik/
+  #  # after https://kleiber.me/blog/2021/03/23/simple-docker-traefik-python-fastapi-example/
+  #  traefik:
+  #    image: traefik:latest
+  #    command:
+  #      - "--api.insecure=true"
+  #      - "--providers.docker=true"
+  #      - "--entrypoints.web.address=:80"
+  #      - "--providers.docker.exposedbydefault=false"
+  #    ports:
+  #      - "80:80"
+  #      - "8080:8080"
+  #    volumes:
+  #      - /var/run/docker.sock:/var/run/docker.sock:ro
