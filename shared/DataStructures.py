@@ -151,11 +151,11 @@ class DataLake(GenericStore):
     def list_expired_puddles(self):
         expired_puddles = []
         for puddle in self.puddles:
-            print('is puddle {} expired?'.format(puddle.path))
+            # print('is puddle {} expired?'.format(puddle.path))
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
-            print ('comparing DatePointers: bottom_of_hour {} vs  puddle.date_pointer {}'.format(bottom_of_hour,puddle.date_pointer))
-            if puddle.date_pointer != bottom_of_hour:
+            # print ('comparing DatePointers: bottom_of_hour {} vs  puddle.date_pointer {}'.format(bottom_of_hour,puddle.date_pointer))
+            if str(puddle.date_pointer) != str(bottom_of_hour):
                 print('EXPIRED  puddle.date_pointer {}'.format(puddle.date_pointer))
                 expired_puddles.append(puddle)
         return expired_puddles
@@ -289,7 +289,7 @@ class DataStore(GenericStore):
         for puddle in self.barrels:
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
-            if puddle.date_pointer != bottom_of_hour:
+            if str(puddle.date_pointer) != str(bottom_of_hour): #bug this doesn't exclude anything from current hour
                 expired_barrels.append(puddle)
         return expired_barrels  # future sort list from oldest to newest
 
