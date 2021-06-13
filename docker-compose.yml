@@ -2,20 +2,20 @@ version: '3'
 
 services:
 
-  gandi_dns:
-    image: anthonymobile/gandi-live-dns
-    restart: always
-    environment:
-      - GANDI_API_KEY=$GANDI_API_KEY
-      - GANDI_DOMAIN=$GANDI_DOMAIN
-      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
-
-  # # use for builds
-  #  dyndns:
-  #    restart: always
-  #    build:
-  #      context: ./build/dyndns
-  #      dockerfile: ./Dockerfile
+#  gandi_dns:
+#    image: anthonymobile/gandi-live-dns
+#    restart: always
+#    environment:
+#      - GANDI_API_KEY=$GANDI_API_KEY
+#      - GANDI_DOMAIN=$GANDI_DOMAIN
+#      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
+#
+#  # # use for builds
+#  #  dyndns:
+#  #    restart: always
+#  #    build:
+#  #      context: ./build/dyndns
+#  #      dockerfile: ./Dockerfile
 
   acquire:
     restart: always

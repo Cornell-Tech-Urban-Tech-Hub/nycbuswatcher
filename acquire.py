@@ -67,31 +67,20 @@ if __name__ == "__main__":
         scheduler = BackgroundScheduler()
 
         # every minute
-        interval = 60
+        scan_interval_seconds = 60
+        print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
+        scheduler.add_job(async_grab_and_store, 'interval', seconds=scan_interval_seconds, max_instances=2, misfire_grace_time=15)
 
-        print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), interval))
-        scheduler.add_job(async_grab_and_store, 'interval', seconds=interval, max_instances=2, misfire_grace_time=15)
-
-        #bug lake.freeze_puddles doesn't work when run by APscheduler
-        # but works fine if run direct in test.py
-
-
-        #TODO try and use the decorator instead (in DataStructures.py )
-        # https://apscheduler.readthedocs.io/en/stable/modules/triggers/cron.html?highlight=decorator
-        # @sched.scheduled_job('interval', id='my_job_id', day='last sun')
-        # then here, just instantiate the class and sleep?
-
-        # # every hour
+        # # every 15 minutes
         lake = data.DataLake()
         store = data.DataStore()
-        # scheduler.add_job(lake.freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
-        # scheduler.add_job(store.render_barrels, 'cron', hour='*',  misfire_grace_time=15)
+        scheduler.add_job(store.dump_dashboard, 'interval', minutes=5, misfire_grace_time=1)
 
-        scheduler.add_job(lake.freeze_puddles, 'interval', minutes=15,  misfire_grace_time=5)
-        scheduler.add_job(store.render_barrels, 'interval', minutes=15,  misfire_grace_time=5)
+        # # every hour
+        scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60,  misfire_grace_time=5)
+        scheduler.add_job(store.render_barrels, 'interval', minutes=60,  misfire_grace_time=5)
 
-        # scheduler.add_job(data.DataLake().freeze_puddles, 'cron', hour='*',  misfire_grace_time=15)
-        # scheduler.add_job(data.DataStore().render_barrels, 'cron', hour='*',  misfire_grace_time=15)
+        # todo add an hourly job to update the dashboard.csv file that's read by dashboard.py
 
         # Start the schedulers
         scheduler.start()

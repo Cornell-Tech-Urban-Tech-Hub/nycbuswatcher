@@ -35,25 +35,26 @@ def make_store():
     print ('i recreated the DataStore()') #bug how to refresh the DataStore to include new Shipments while the api is running as a daemon? or is it unnecessary?
     return data.DataStore()
 
-#todo debug this
+#bug debug this
 @app.get('/api/v2/nyc/routes/{year}/{month}/{day}/{hour}')
 async def list_routes(year,month,day,hour):#todo add validators
     store = make_store() #bug this might be costly for each response? but how else to refresh it outside the function
     date_pointer=data.DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
-    routes = store.list_routes(date_pointer)
+    routes = store.list_routes_in_store(date_pointer)
+    print (routes)
     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
             "routes": json.dumps(routes)}
 
-# todo ENDPOINT get json array of the URLs for entire city for one hour
+# to do ENDPOINT get json array of the URLs for entire city for one hour
 # @app.get('/api/v2/nyc/citywide/{year}/{month}/{day}/{hour}')
-# async def list_routes(year,month,day,hour):#todo add validators
+# async def list_routes(year,month,day,hour):#to do add validators
 #     date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
 #     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
 #             "date_pointer": date_pointer}
 
-# todo ENDPOINT get json array of all the URLS for one route for a whole day
+# to do ENDPOINT get json array of all the URLS for one route for a whole day
 # @app.get('/api/v2/nyc/citywide/{year}/{month}/{day}/{hour}')
-# async def list_routes(year,month,day,hour):#todo add validators
+# async def list_routes(year,month,day,hour):#to do add validators
 #     date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
 #     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
 #             "date_pointer": date_pointer}
@@ -72,7 +73,7 @@ class Shipment(BaseModel):
              }
          },
          )
-async def fetch_Shipment(year,month,day,hour,route): #todo add validators
+async def fetch_Shipment(year,month,day,hour,route): #to do add validators
     shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/shipment_{}_{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour)
     return FileResponse(shipment_to_get, media_type="application/json")
     # except:

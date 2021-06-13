@@ -5,6 +5,10 @@ import pickle
 from pathlib import Path, PurePath
 from glob import glob
 import tarfile
+import pandas as pd
+from uuid import uuid4
+from random import randrange
+
 
 from shared.BusObservation import BusObservation
 
@@ -14,42 +18,45 @@ pathmap = {
     'puddle':'data/lake/puddles',
     'shipment':'data/store/shipments',
     'store':'data/store',
-    'barrel':'data/store/barrels'
+    'barrel':'data/store/barrels',
+    'dashboard':'data/dashboard.csv'
     }
 
 
 class DatePointer():
 
-    def __init__(self,timestamp,route=None):
+    def __init__(self,timestamp):
         self.timestamp = timestamp
         self.year = timestamp.year
         self.month = timestamp.month
         self.day = timestamp.day
         self.hour = timestamp.hour
-        # https://stackoverflow.com/questions/15535655/optional-arguments-in-initializer-of-python-class
-        self.route = route if route is not None else route
         self.purepath = self.get_purepath()
 
     def get_purepath(self):
-        p = PurePath(str(self.year),
+        return PurePath(str(self.year),
                      str(self.month),
                      str(self.day),
                      str(self.hour)
                      )
-        if self.route is None:
-            return p
-        elif self.route is not None:
-            return PurePath(p, PurePath(self.route))
 
     def __repr__(self):
-        if self.route is None:
-            return ('-'.join([str(self.year),
+        return ('-'.join([str(self.year),
                               str(self.month),
                               str(self.day),
                               str(self.hour)
                               ]))
-        elif self.route is not None:
-            return ('-'.join([str(self.year),
+
+
+class DateRoutePointer(DatePointer):
+
+    def __init__(self,timestamp,route=None):
+        super().__init__(timestamp)
+        self.route = route
+        self.purepath = PurePath(self.purepath, self.route) #extend self.purepath inherited from parent.super()
+
+    def __repr__(self):
+        return ('-'.join([str(self.year),
                               str(self.month),
                               str(self.day),
                               str(self.hour),
@@ -59,44 +66,38 @@ class DatePointer():
 class GenericStore():
 
     def __init__(self, kind=None):
-        super().__init__()
         self.path = self.get_path(pathmap[kind])
-        self.checkpath(self.path)
+        self.uid = uuid4().hex
+        print('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
+
 
     def get_path(self, prefix):
         folderpath = Path.cwd() / prefix
-        self.checkpath(folderpath)
+        Path(folderpath).mkdir(parents=True, exist_ok=True)
         return folderpath
 
-    def checkpath(self, path):
-        Path(path).mkdir(parents=True, exist_ok=True)
-        return
-
-    def date_pointer_from_a_path(self, apath):
+    def path_to_DateRoutePointer(self, apath, route):
         parts = apath.split('/')
-        return DatePointer(datetime.datetime(year=int(parts[-5]),
+        pointer = DateRoutePointer(datetime.datetime(year=int(parts[-5]),
                                     month=int(parts[-4]),
                                     day=int(parts[-3]),
                                     hour=int(parts[-2])
-                                    ))
-
+                                    ),
+                                route)
+        return pointer
 
 
 class GenericFolder():
 
     def __init__(self, date_pointer, kind=None):
-        super().__init__()
+        self.date_pointer=date_pointer
         self.path = self.get_path(pathmap[kind], date_pointer)
-        self.checkpath(self.path)
+        # print('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
 
     def get_path(self, prefix, date_pointer):
         folderpath = Path.cwd() / prefix / date_pointer.purepath
-        self.checkpath(folderpath)
+        Path(folderpath).mkdir(parents=True, exist_ok=True)
         return folderpath
-
-    def checkpath(self, path):
-        Path(path).mkdir(parents=True, exist_ok=True)
-        return
 
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
     def delete_folder(self):
@@ -115,14 +116,13 @@ class DataLake(GenericStore):
 
     def __init__(self):
         super().__init__(kind='lake')
-        self.puddles = self.load_puddles()
-        # future other metadata -- array of dates and hours covered, total # of records, etc.
+        #dont init self.puddles but call self.scan_puddles() as needed
 
     def make_puddles(self, feeds, date_pointer):
         for route_report in feeds:
             for route_id,route_data in route_report.items():
                 route=route_id.split('_')[1]
-                puddle_date_pointer=DatePointer(date_pointer.timestamp, route)
+                puddle_date_pointer=DateRoutePointer(date_pointer.timestamp, route)
                 try:
                     folder = Puddle(puddle_date_pointer).path
                     filename = 'drop_{}_{}.json'.format(puddle_date_pointer.route, puddle_date_pointer.timestamp).replace(' ', 'T')
@@ -135,33 +135,28 @@ class DataLake(GenericStore):
                     pass
         return
 
-    def load_puddles(self):
+    def scan_puddles(self):
         files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         puddles = []
         for d in dirs:
-            date_pointer = self.date_pointer_from_a_path(d)
-            date_pointer.route = d.split('/')[-1]
-            p = Puddle(date_pointer)
-            p.path = p.path / PurePath (date_pointer.route)
+            rt=d.split('/')[-1]
+            p=Puddle(self.path_to_DateRoutePointer(d,rt))
+            p.path = p.path / PurePath (p.route)
             puddles.append(p)
+        print('=scan::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(Path.cwd() / pathmap['puddle'])))
         return puddles
 
-    #TODO COALFACE -- MAKE SURE I WORK WHEN TRIGGERED BY APSCHEDULER
     def list_expired_puddles(self):
         expired_puddles = []
-        for puddle in self.puddles:
-            # print('is puddle {} expired?'.format(puddle.path))
+        for puddle in self.scan_puddles():
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
-            # print ('comparing DatePointers: bottom_of_hour {} vs  puddle.date_pointer {}'.format(bottom_of_hour,puddle.date_pointer))
             if str(puddle.date_pointer) != str(bottom_of_hour):
-                print('EXPIRED  puddle.date_pointer {}'.format(puddle.date_pointer))
                 expired_puddles.append(puddle)
         return expired_puddles
 
     def freeze_puddles(self):
-        # print('firing DataLake.freeze_puddles')
         puddles_to_archive = self.list_expired_puddles()
         if len(puddles_to_archive) == 0:
             print('no expired puddles to freeze')
@@ -179,10 +174,9 @@ class Puddle(GenericFolder):
 
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='puddle')
-        self.date_pointer = date_pointer
-        if date_pointer.route is False:
+        if self.date_pointer.route is False:
             raise Exception ('tried to instantiate Puddle because you called __init__ without a value in DatePointer.route')
-        self.route = date_pointer.route
+        self.route = self.date_pointer.route
 
 
     def freeze_myself_to_glacier(self):
@@ -204,40 +198,32 @@ class Glacier(GenericFolder):
 
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='glacier')
-        self.date_pointer = date_pointer
-        self.route = date_pointer.route
+        self.route = self.date_pointer.route
         self.exist, self.filepath = self.check_exist()
         if self.exist == True:
             raise OSError ('there is already an archive at {}'.format(self.filepath))
 
     def check_exist(self):
-        filepath = self.path / 'glacier_{}_{}-{}-{}-{}.tar.gz'.\
-            format(self.date_pointer.route,self.date_pointer.year,
-                   self.date_pointer.month,self.date_pointer.day,self.date_pointer.hour)
+        filepath = self.path / 'glacier_{}.tar.gz'. \
+            format(self.date_pointer)
         if filepath.is_file() is True:
             return (True, filepath)
         elif filepath.is_file() is False:
             return (False, filepath)
-
-    # def thaw_one(self, date_pointer, **kwargs):
-    #     # retrieves the appropriate file, optionally uncompresses it?
-    #     # e.g. data = Glacier.thaw_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
-    #     return
 
 
 class DataStore(GenericStore):
 
     def __init__(self):
         super().__init__(kind='store')
-        self.barrels = self.load_barrels()
-        self.shipments = self.load_shipments()
+        # dont init self.barrels and self.shipments instead call them as needed with self.scan_barrels() and self.scan_shipments()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
     def make_barrels(self, feeds, date_pointer):
         for route_report in feeds:
             for route_id,route_data in route_report.items():
                 route = route_id.split('_')[1]
-                barrel_date_pointer=DatePointer(date_pointer.timestamp, route)
+                barrel_date_pointer=DateRoutePointer(date_pointer.timestamp, route)
                 pickles = []
                 try:
                     folder = Barrel(barrel_date_pointer).path
@@ -259,42 +245,28 @@ class DataStore(GenericStore):
                     pass
         return
 
-    def load_barrels(self):
+    def scan_barrels(self):
         files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         barrels = []
         for d in dirs:
-            date_pointer = self.date_pointer_from_a_path(d)
-            date_pointer.route = d.split('/')[-1]
-            b = Barrel(date_pointer)
-            b.path = b.path / PurePath (date_pointer.route)
+            rt=d.split('/')[-1]
+            b = Barrel(self.path_to_DateRoutePointer(d,rt))
+            b.path = b.path / PurePath (b.route)
             barrels.append(b)
+        print('=scan::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(Path.cwd() / pathmap['barrel'])))
         return barrels
-
-    def load_shipments(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['shipment']), recursive=True)
-        dirs = filter(lambda f: os.path.isdir(f), files)
-        shipments = []
-        for d in dirs:
-            date_pointer = self.date_pointer_from_a_path(d)
-            date_pointer.route = d.split('/')[-1]
-            s = Shipment(date_pointer)
-            s.path = s.path / PurePath (date_pointer.route) #if fails, use s.filepath instead?
-            shipments.append(s)
-        return shipments
 
     def list_expired_barrels(self):
         expired_barrels = []
-        self.barrels = self.load_barrels() #reload here in case this was executed from apscheduler
-        for puddle in self.barrels:
+        for puddle in self.scan_barrels():
             bottom_of_hour = DatePointer(datetime.datetime.now())
             bottom_of_hour.route=puddle.route
-            if str(puddle.date_pointer) != str(bottom_of_hour): #bug this doesn't exclude anything from current hour
+            if str(puddle.date_pointer) != str(bottom_of_hour):
                 expired_barrels.append(puddle)
         return expired_barrels  # future sort list from oldest to newest
 
     def render_barrels(self):
-        # print('firing DataStore.render_barrels')
         barrels_to_archive = self.list_expired_barrels()
         if len(barrels_to_archive) == 0:
             print('no expired barrels to render')
@@ -307,20 +279,13 @@ class DataStore(GenericStore):
                 os.rmdir(dirpath)
         return
 
-    # def list_routes(self,date_pointer):
-    #     folder = self.path / date_pointer.purepath
-    #     subfolders = [p for p in folder.iterdir() if p.is_dir()]
-    #     # print (subfolders)
-    #     return subfolders
-    #
-
-    def list_routes(self, date_pointer_query):
+    #bug routes API endpoint isnt working
+    def list_routes_in_store(self, date_pointer_query):
         routes = []
-        self.shipments = self.load_shipments() #reload here Just In Case
+        self.shipments = self.scan_shipments() #reload here Just In Case #bug this seems bad
         dp1=date_pointer_query
         for shipment in self.shipments:
             dp2=shipment.date_pointer
-            print ('comparing {} and {}'.format(dp1,dp2))
             if dp1.year == dp2.year:
                 if dp1.month == dp2.month:
                     if dp1.day == dp2.day:
@@ -328,65 +293,105 @@ class DataStore(GenericStore):
                             routes.append(shipment.route)
         return routes
 
+    def dump_dashboard(self):
+        dashboard=[]
+        for b in self.scan_barrels():
+            dashboard.append(
+                ('Barrel',
+                 b.date_pointer.route,
+                 str(b.date_pointer),
+                 b.date_pointer.year,
+                 b.date_pointer.month,
+                 b.date_pointer.day,
+                 b.date_pointer.hour,
+                 randrange(100)) #todo replace with num_pickles
+            )
+        for s in self.scan_shipments():
+            dashboard.append(
+                ('Shipment',
+                 s.date_pointer.route,
+                 str(s.date_pointer),
+                 s.date_pointer.year,
+                 s.date_pointer.month,
+                 s.date_pointer.day,
+                 s.date_pointer.hour,
+                 randrange(100)) #todo replace with num_buses_
+            )
+        dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
+        dashboard_data.to_csv(Path.cwd() / Path(pathmap['dashboard']),index=False)
+        return
+
+    def scan_shipments(self):
+        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['shipment']), recursive=True)
+        dirs = filter(lambda f: os.path.isdir(f), files)
+        shipments = []
+        for d in dirs:
+            rt=d.split('/')[-1]
+            s = Shipment(self.path_to_DateRoutePointer(d,rt))
+            s.path = s.path / PurePath (s.route)
+            shipments.append(s)
+        # todo this should also return metadata like start and end dates? or an array of # of routes per hour for all the dates
+        return shipments
 
 
 class Barrel(GenericFolder):
 
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='barrel')
-        self.date_pointer = date_pointer
-        if date_pointer.route is False:
+        if self.date_pointer.route is False:
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
+        # self.pickle_count = self.count_pickles() #future use watchdog to keep this up to date automatically https://levelup.gitconnected.com/how-to-monitor-file-system-events-in-python-e8e0ed6ec2c
 
     def render_myself_to_shipment(self):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
-        # print('rendering {} picklefiles to Shipment for Barrel {}'.format(len(pickles_to_render),self.path))
-        try:
-            outfile = Shipment(self.date_pointer)
-        except OSError:
-            # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
-            return
         pickle_array = []
         for picklefile in pickles_to_render:
             with open(picklefile, 'rb') as pickle_file:
                 barrel = pickle.load(pickle_file)
                 for p in barrel:
                     pickle_array.append(p)
-                # print ('added {} to route pickle'.format(picklefile))
         serial_array=[]
         for p in pickle_array:
             serial_array.append(p.to_serial())
         json_container = dict()
         json_container['buses'] = serial_array
+        num_buses = len(serial_array)
+
+        try:
+            outfile = Shipment(self.date_pointer)
+        except OSError:
+            return
+
         with open(outfile.filepath, 'w') as f:
             json.dump(json_container, f, indent=4)
         print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.filepath))
         self.delete_folder()
         return
 
+    # def count_pickles(self):
+    #     pickles_to_count=[x for x in self.path.glob('*.dat') if x.is_file()]
+    #     pickle_count = 0
+    #     for picklefile in pickles_to_count:
+    #         with open(picklefile, 'rb') as pickle_file:
+    #             barrel = pickle.load(pickle_file)
+    #             pickle_count = pickle_count + len(barrel)
+    #     return pickle_count
+
 
 class Shipment(GenericFolder):
 
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='shipment')
-        self.date_pointer = date_pointer
         self.route = date_pointer.route
         self.exist, self.filepath = self.check_exist()
         if self.exist == True:
             raise OSError ('there is already a Shipment at {}'.format(self.filepath))
 
     def check_exist(self):
-        filepath = self.path / 'shipment_{}_{}-{}-{}-{}.json'.\
-            format(self.date_pointer.route,self.date_pointer.year,
-                   self.date_pointer.month,self.date_pointer.day,self.date_pointer.hour)
+        filepath = self.path / 'shipment_{}.json'.\
+            format(self.date_pointer)
         if filepath.is_file() is True:
             return (True, filepath)
         elif filepath.is_file() is False:
             return (False, filepath)
-
-    # def ship_one(self, date_pointer, **kwargs):
-    #     # retrieves the appropriate file, optionally uncompresses it?
-    #     # e.g. data = Shipment.ship_one(DatePointer(datetime.datetime(year=2021, month=5, day=21, hour=10), route='M15')
-    #     return
-
