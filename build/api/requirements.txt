@@ -1,6 +1,8 @@
 aiofiles
 dateutils
 geojson
+jinja2
+pandas
 python-dotenv
 fastapi
 python-dotenv

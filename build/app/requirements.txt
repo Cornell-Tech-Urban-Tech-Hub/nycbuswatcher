@@ -1,5 +1,0 @@
-dash
-dash-bootstrap-components
-gevent
-python-dotenv
-requests
