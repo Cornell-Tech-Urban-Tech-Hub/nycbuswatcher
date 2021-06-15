@@ -2,8 +2,6 @@ import os
 import datetime as dt
 import requests
 import pickle
-# from shared.config import config
-
 
 from functools import wraps
 from time import time

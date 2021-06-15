@@ -1,18 +1,17 @@
+from datetime import datetime
+
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
-from dotenv import load_dotenv
-from datetime import datetime
-
-from pydantic import BaseModel
-from typing import List
 
 from shared.DataStructures import DatePointer, DateRoutePointer, DataStore, Shipment
-
-import json
 from shared.Helpers import timeit
+
+
+from dotenv import load_dotenv
+
 #-----------------------------------------------------------------------------------------
 # fastapi implementation after tutorial https://fastapi.tiangolo.com/tutorial/query-params/
 # query parameter handling after https://stackoverflow.com/questions/30779584/flask-restful-passing-parameters-to-get-request
@@ -20,7 +19,6 @@ from shared.Helpers import timeit
 
 #--------------- INITIALIZATION ---------------
 load_dotenv()
-from shared.config import config
 api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()

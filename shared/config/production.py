@@ -1,7 +1,4 @@
 config = {
-    'api_base_url' : 'http://api:80/api/v1/nyc/',
-    'api_livemap_url': 'http://api:80/api/v1/nyc/livemap', # hostname and port inside the stack
-    'dbhost': 'db',
-    'dbport': '3306',
+    'shipment_api_url' : 'http://api:80/api/v2/nyc/{}/{}/{}/{}/{}/buses',# hostname and port inside the stack
     'http_connections': 20
 }

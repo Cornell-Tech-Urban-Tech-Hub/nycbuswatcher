@@ -1,16 +1,16 @@
 import os
-from datetime import date, datetime
 import json
 import pickle
-from pathlib import Path, PurePath
-from glob import glob
 import tarfile
 import pandas as pd
-from uuid import uuid4
-from random import randrange
 
+from datetime import date, datetime
+from pathlib import Path, PurePath
+from glob import glob
+from uuid import uuid4
 
 from shared.BusObservation import BusObservation
+import shared.config.config as config
 
 pathmap = {
     'glacier':'data/lake/glaciers',
@@ -143,7 +143,7 @@ class DataLake(GenericStore):
             rt=d.split('/')[-1]
             p=Puddle(self.path_to_DateRoutePointer(d,rt))
             puddles.append(p)
-        print('=scan::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(Path.cwd() / pathmap['puddle'])))
+        print('rescanned::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(Path.cwd() / pathmap['puddle'])))
         return puddles
 
     def list_expired_puddles(self):
@@ -252,7 +252,7 @@ class DataStore(GenericStore):
             rt=d.split('/')[-1]
             b = Barrel(self.path_to_DateRoutePointer(d,rt))
             barrels.append(b)
-        print('=scan::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(Path.cwd() / pathmap['barrel'])))
+        print('rescanned::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(Path.cwd() / pathmap['barrel'])))
         return barrels
 
     def list_expired_barrels(self):
@@ -288,7 +288,7 @@ class DataStore(GenericStore):
                 if dp1.month == dp2.month:
                     if dp1.day == dp2.day:
                         if dp1.hour == dp2.hour:
-                            routes.append(shipment.route)
+                            routes.append((shipment.route, shipment.url)) #todo change shipment.filepath to a URL
         return routes
 
     # TODO COALFACE
@@ -382,6 +382,11 @@ class Shipment(GenericFolder):
         self.route = date_pointer.route
         self.route = date_pointer.route
         self.exist, self.filepath = self.check_exist()
+        self.url = config.config['shipment_api_url'].format(str(date_pointer.year),
+                                                            str(date_pointer.month),
+                                                            str(date_pointer.day),
+                                                            str(date_pointer.hour),
+                                                            date_pointer.route)
         try:
             if self.exist == True:
                 pass
@@ -402,8 +407,8 @@ class Shipment(GenericFolder):
 
     def to_FeatureCollection(self):
         geojson = {'type': 'FeatureCollection', 'features': []}
-        buses = self.load_file()
-        for bus in buses:
+        shipment = self.load_file()
+        for bus in shipment['buses']:
             feature = {'type': 'Feature',
                        'properties': {},
                        'geometry': {'type': 'Point',
@@ -416,7 +421,6 @@ class Shipment(GenericFolder):
             geojson['features'].append(feature)
         return geojson
 
-    # todo not working
     def count_buses(self):
         data = self.load_file()
         return len(data['buses'])

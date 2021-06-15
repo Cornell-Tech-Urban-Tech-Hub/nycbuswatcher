@@ -1,7 +1,4 @@
 config = {
-    'api_base_url' : 'http://127.0.0.1:5000/api/v1/nyc/',
-    'api_livemap_url': 'http://127.0.0.1:5000/api/v1/nyc/livemap',
-    'dbhost': 'localhost',
-    'dbport': '3306',
+    'shipment_api_url' : 'http://127.0.0.1:5000/api/v2/nyc/{}/{}/{}/{}/{}/buses',
     'http_connections': 5
 }

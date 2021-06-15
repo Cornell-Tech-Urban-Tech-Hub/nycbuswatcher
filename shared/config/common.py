@@ -1,5 +1,3 @@
 config = {
-    'dbname': 'buses',
-    'dbuser': 'nycbuswatcher',
-    'dbpassword': 'bustime'
+    'app_name': 'nycbuswatcher'
 }
