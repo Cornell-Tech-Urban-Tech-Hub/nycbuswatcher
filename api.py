@@ -65,14 +65,14 @@ def make_store(): #bug how to automate this for refresh periodically
 async def discover_endpoints(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-
+# TODO COALFACE -- simply send this as a JSON response
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/dashboard
 # FUNCTION Dashboard metadata shpwing number of barrels and shipments per hour per route currently stored.
-@app.get('/api/v2/nyc/dashboard')
-async def list_routes():
-    return {"message": "dashboard report title",
-            "data": "This is where the data will go, and the dashboard will display it!"}
+@app.get('/api/v2/nyc/dashboard',response_class=PrettyJSONResponse)
+async def send_dashboard():
+    with open('data/dashboard.json', "r") as f:
+        return f.read()
 
 
 # # MAIN RESPONSE ENDPOINT (more efficient?)

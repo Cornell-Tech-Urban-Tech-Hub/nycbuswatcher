@@ -9,6 +9,9 @@ import datetime
 from datetime import datetime as dt
 import pathlib
 
+import shared.config.config as config
+
+
 app = dash.Dash(
     __name__,
     meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
@@ -22,7 +25,8 @@ BASE_PATH = pathlib.Path(__file__).parent.resolve()
 DATA_PATH = BASE_PATH.joinpath("data").resolve()
 
 # Read data
-df = pd.read_csv(DATA_PATH.joinpath("dashboard.csv"))
+# df=pd.read_csv(config.config['base_api_url']+'/api/v2/nyc/dashboard.csv')
+df=pd.read_json(config.config['base_api_url']+'/api/v2/nyc/dashboard')
 
 route_list = df["route"].unique()
 kind = df["kind"].unique().tolist()
