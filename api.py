@@ -1,10 +1,14 @@
-from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, Request
+from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 from dotenv import load_dotenv
 from datetime import datetime
 from pydantic import BaseModel
-import shared.DataStructures as data
+
+from shared.DataStructures import DatePointer, DateRoutePointer, DataStore, Shipment
+
 import json
 from shared.Helpers import timeit
 #-----------------------------------------------------------------------------------------
@@ -18,6 +22,9 @@ from shared.config import config
 api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()
+templates = Jinja2Templates(directory="assets/templates")
+
+app.mount("/static", StaticFiles(directory="assets"), name="static")
 
 
 # add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
@@ -25,68 +32,117 @@ app = FastAPI()
 #-------------- Fast API -------------------------------------------------------------
 
 
-@app.get('/')
-async def root():
-    return {'message': 'NYCBuswatcher API v2'}
+
+@timeit #bug too costly?
+def make_store(): #bug how to automate this for refresh periodically
+    print ('i recreated the DataStore()')
+    return DataStore()
 
 
-@timeit
-def make_store():
-    print ('i recreated the DataStore()') #bug how to refresh the DataStore to include new Shipments while the api is running as a daemon? or is it unnecessary?
-    return data.DataStore()
-
-#bug debug this
-@app.get('/api/v2/nyc/routes/{year}/{month}/{day}/{hour}')
-async def list_routes(year,month,day,hour):#todo add validators
-    store = make_store() #bug this might be costly for each response? but how else to refresh it outside the function
-    date_pointer=data.DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
-    routes = store.list_routes_in_store(date_pointer)
-    print (routes)
-    return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
-            "routes": json.dumps(routes)}
-
-# to do ENDPOINT get json array of the URLs for entire city for one hour
-# @app.get('/api/v2/nyc/citywide/{year}/{month}/{day}/{hour}')
-# async def list_routes(year,month,day,hour):#to do add validators
-#     date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
-#     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
-#             "date_pointer": date_pointer}
-
-# to do ENDPOINT get json array of all the URLS for one route for a whole day
-# @app.get('/api/v2/nyc/citywide/{year}/{month}/{day}/{hour}')
-# async def list_routes(year,month,day,hour):#to do add validators
-#     date_pointer=datetime.datetime(year=year,month=month,day=day,hour=hour)
-#     return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
-#             "date_pointer": date_pointer}
-
-# ENDPOINT get a single Shipment by date_pointer
-#per https://fastapi.tiangolo.com/advanced/additional-responses/#additional-media-types-for-the-main-response
-class Shipment(BaseModel):
-    id: str
-    value: str
-@app.get('/api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}',
-    response_model=Shipment,
-         responses={
-             200: {
-                 'content': {'application/json': {}},
-                 'description': 'Return the JSON item or an image.',
-             }
-         },
-         )
-async def fetch_Shipment(year,month,day,hour,route): #to do add validators
-    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/shipment_{}_{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour)
-    return FileResponse(shipment_to_get, media_type="application/json")
-    # except:
-    #     return {"message": "We couldn't find that file!",
-    #             "date_pointer": (year,month,day,hour,route)}
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /
+# FUNCTION Displays documentation
+@app.get('/', response_class=HTMLResponse)
+async def discover_endpoints(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/dashboard
+# FUNCTION Dashboard metadata shpwing number of barrels and shipments per hour per route currently stored.
 @app.get('/api/v2/nyc/dashboard')
 async def list_routes():
     return {"message": "dashboard report title",
             "data": "This is where the data will go, and the dashboard will display it!"}
 
 
+# # MAIN RESPONSE ENDPOINT (more efficient?)
+# #------------------------------------------------------------------------------------------------------------------------
+# # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
+# # FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
+# #per https://fastapi.tiangolo.com/advanced/additional-responses/#additional-media-types-for-the-main-response
+# class SimpleResponse(BaseModel):
+#     id: str
+#     value: str
+# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',
+#     response_model=SimpleResponse,
+#          responses={200: {
+#                  'content': {'application/json': {}},
+#                  'description': 'Return the JSON item or an image.',
+#              }
+#          },
+#          )
+# async def fetch_shipment(year,month,day,hour,route):
+#     shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour,route)
+#     return FileResponse(shipment_to_get, media_type="application/json")
+
+# MAIN RESPONSE ENDPOINT (more elegant)
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
+# FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
+async def fetch_Shipment(year,month,day,hour,route):
+    date_route_pointer=DateRoutePointer(datetime(year=int(year),
+                                                 month=int(month),
+                                                 day=int(day),
+                                                 hour=int(hour)),
+                                        route)
+
+    #bug need to check if the shipment exists before instantiating object, otherwise it creates an empty folder because of GenericFolder inheritance
+    return json.dumps(
+        Shipment(date_route_pointer).load_file()
+    )
+
+
+
+# todo test and debug
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}/geojson
+# FUNCTION get a single Shipment by date_pointer as geoJSON FeatureCollection
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses/geojson')
+async def fetch_Shipment_as_geoJSON(year,month,day,hour,route):
+    date_route_pointer=DateRoutePointer(datetime(year=int(year),
+                                                 month=int(month),
+                                                 day=int(day),
+                                                 hour=int(hour)),
+                                        route)
+    return json.dumps(
+        Shipment(date_route_pointer).to_FeatureCollection()
+    )
+
+
+# TODO COALFACE DEBUG THIS
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/routes
+# FUNCTION List routes with shipment data for period specified.
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/routes')
+async def list_routes(year,month,day,hour):
+    store = make_store()
+    date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
+    routes = store.list_routes_in_store(date_pointer)
+    print (routes)
+    return {"message": "This will provide a JSON formatted list of routes available for a given date_pointer",
+            "routes": json.dumps(routes)}
+
+
+# todo ENDPOINTs citywide shipment URLS for 1 month, 1 day, 1 hour
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/urls/all
+# FUNCTION get json array of the Shipment URLs for entire city for one hour
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/urls/all')
+async def get_urls_hour_all(year,month,day,hour):
+    date_pointer=DatePointer(datetime(year=year, month=month, day=day, hour=hour))
+
+    return json.dumps(
+        Shipment(date_route_pointer).to_FeatureCollection()
+    )
+
+
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/urls/all
+# ENDPOINT /api/v2/nyc/{year}/{month}/urls/all
+
+#------------------------------------------------------------------------------------------------------------------------
 
 if __name__ == '__main__':
     uvicorn.run(app, port=5000, debug=True)

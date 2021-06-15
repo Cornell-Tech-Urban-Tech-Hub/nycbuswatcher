@@ -1,5 +1,5 @@
 import os
-import datetime
+from datetime import date, datetime
 import json
 import pickle
 from pathlib import Path, PurePath
@@ -68,7 +68,7 @@ class GenericStore():
     def __init__(self, kind=None):
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
-        print('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
+        # print('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
 
 
     def get_path(self, prefix):
@@ -78,7 +78,7 @@ class GenericStore():
 
     def path_to_DateRoutePointer(self, apath, route):
         parts = apath.split('/')
-        pointer = DateRoutePointer(datetime.datetime(year=int(parts[-5]),
+        pointer = DateRoutePointer(datetime(year=int(parts[-5]),
                                     month=int(parts[-4]),
                                     day=int(parts[-3]),
                                     hour=int(parts[-2])
@@ -142,7 +142,6 @@ class DataLake(GenericStore):
         for d in dirs:
             rt=d.split('/')[-1]
             p=Puddle(self.path_to_DateRoutePointer(d,rt))
-            p.path = p.path / PurePath (p.route)
             puddles.append(p)
         print('=scan::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(Path.cwd() / pathmap['puddle'])))
         return puddles
@@ -150,7 +149,7 @@ class DataLake(GenericStore):
     def list_expired_puddles(self):
         expired_puddles = []
         for puddle in self.scan_puddles():
-            bottom_of_hour = DatePointer(datetime.datetime.now())
+            bottom_of_hour = DatePointer(datetime.now())
             bottom_of_hour.route=puddle.route
             if str(puddle.date_pointer) != str(bottom_of_hour):
                 expired_puddles.append(puddle)
@@ -252,7 +251,6 @@ class DataStore(GenericStore):
         for d in dirs:
             rt=d.split('/')[-1]
             b = Barrel(self.path_to_DateRoutePointer(d,rt))
-            b.path = b.path / PurePath (b.route)
             barrels.append(b)
         print('=scan::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(Path.cwd() / pathmap['barrel'])))
         return barrels
@@ -260,7 +258,7 @@ class DataStore(GenericStore):
     def list_expired_barrels(self):
         expired_barrels = []
         for puddle in self.scan_barrels():
-            bottom_of_hour = DatePointer(datetime.datetime.now())
+            bottom_of_hour = DatePointer(datetime.now())
             bottom_of_hour.route=puddle.route
             if str(puddle.date_pointer) != str(bottom_of_hour):
                 expired_barrels.append(puddle)
@@ -279,10 +277,10 @@ class DataStore(GenericStore):
                 os.rmdir(dirpath)
         return
 
-    #bug routes API endpoint isnt working
+
     def list_routes_in_store(self, date_pointer_query):
         routes = []
-        self.shipments = self.scan_shipments() #reload here Just In Case #bug this seems bad
+        self.shipments = self.scan_shipments() #reload here Just In Case
         dp1=date_pointer_query
         for shipment in self.shipments:
             dp2=shipment.date_pointer
@@ -293,6 +291,7 @@ class DataStore(GenericStore):
                             routes.append(shipment.route)
         return routes
 
+    # TODO COALFACE
     def dump_dashboard(self):
         dashboard=[]
         for b in self.scan_barrels():
@@ -304,7 +303,7 @@ class DataStore(GenericStore):
                  b.date_pointer.month,
                  b.date_pointer.day,
                  b.date_pointer.hour,
-                 randrange(100)) #todo replace with num_pickles
+                 b.count_pickles())
             )
         for s in self.scan_shipments():
             dashboard.append(
@@ -315,7 +314,7 @@ class DataStore(GenericStore):
                  s.date_pointer.month,
                  s.date_pointer.day,
                  s.date_pointer.hour,
-                 randrange(100)) #todo replace with num_buses_
+                 s.count_buses())
             )
         dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
         dashboard_data.to_csv(Path.cwd() / Path(pathmap['dashboard']),index=False)
@@ -330,7 +329,6 @@ class DataStore(GenericStore):
             s = Shipment(self.path_to_DateRoutePointer(d,rt))
             s.path = s.path / PurePath (s.route)
             shipments.append(s)
-        # todo this should also return metadata like start and end dates? or an array of # of routes per hour for all the dates
         return shipments
 
 
@@ -341,7 +339,6 @@ class Barrel(GenericFolder):
         if self.date_pointer.route is False:
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
-        # self.pickle_count = self.count_pickles() #future use watchdog to keep this up to date automatically https://levelup.gitconnected.com/how-to-monitor-file-system-events-in-python-e8e0ed6ec2c
 
     def render_myself_to_shipment(self):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
@@ -356,7 +353,6 @@ class Barrel(GenericFolder):
             serial_array.append(p.to_serial())
         json_container = dict()
         json_container['buses'] = serial_array
-        num_buses = len(serial_array)
 
         try:
             outfile = Shipment(self.date_pointer)
@@ -369,14 +365,14 @@ class Barrel(GenericFolder):
         self.delete_folder()
         return
 
-    # def count_pickles(self):
-    #     pickles_to_count=[x for x in self.path.glob('*.dat') if x.is_file()]
-    #     pickle_count = 0
-    #     for picklefile in pickles_to_count:
-    #         with open(picklefile, 'rb') as pickle_file:
-    #             barrel = pickle.load(pickle_file)
-    #             pickle_count = pickle_count + len(barrel)
-    #     return pickle_count
+    def count_pickles(self):
+        pickles_to_count=[x for x in self.path.glob('*.dat') if x.is_file()]
+        pickle_count = 0
+        for picklefile in pickles_to_count:
+            with open(picklefile, 'rb') as pickle_file:
+                barrel = pickle.load(pickle_file)
+                pickle_count = pickle_count + len(barrel)
+        return pickle_count
 
 
 class Shipment(GenericFolder):
@@ -384,9 +380,13 @@ class Shipment(GenericFolder):
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='shipment')
         self.route = date_pointer.route
+        self.route = date_pointer.route
         self.exist, self.filepath = self.check_exist()
-        if self.exist == True:
-            raise OSError ('there is already a Shipment at {}'.format(self.filepath))
+        try:
+            if self.exist == True:
+                pass
+        except OSError:
+            print ('!!error::Shipment::skipping! there is already a Shipment at {}'.format(self.filepath))
 
     def check_exist(self):
         filepath = self.path / 'shipment_{}.json'.\
@@ -395,3 +395,28 @@ class Shipment(GenericFolder):
             return (True, filepath)
         elif filepath.is_file() is False:
             return (False, filepath)
+
+    def load_file(self):
+        with open(self.filepath, "r") as f:
+            return json.load(f)
+
+    def to_FeatureCollection(self):
+        geojson = {'type': 'FeatureCollection', 'features': []}
+        buses = self.load_file()
+        for bus in buses:
+            feature = {'type': 'Feature',
+                       'properties': {},
+                       'geometry': {'type': 'Point',
+                                    'coordinates': []}}
+            feature['geometry']['coordinates'] = [bus['lon'], bus['lat']]
+            for k, v in bus.items():
+                if isinstance(v, (datetime, date)):
+                    v = v.isoformat()
+                feature['properties'][k] = v
+            geojson['features'].append(feature)
+        return geojson
+
+    # todo not working
+    def count_buses(self):
+        data = self.load_file()
+        return len(data['buses'])
