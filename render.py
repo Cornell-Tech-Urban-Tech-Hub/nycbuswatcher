@@ -1,4 +1,4 @@
-import shared.DataStructures as data
+import shared.Models as data
 
 lake = data.DataLake()
 lake.freeze_puddles()

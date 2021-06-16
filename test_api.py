@@ -1,4 +1,4 @@
-# apitest.py
+# test_api.py
 
 import time
 from locust import HttpUser, task, between

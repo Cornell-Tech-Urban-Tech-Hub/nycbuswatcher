@@ -25,8 +25,10 @@ BASE_PATH = pathlib.Path(__file__).parent.resolve()
 DATA_PATH = BASE_PATH.joinpath("data").resolve()
 
 # Read data
-# df=pd.read_csv(config.config['base_api_url']+'/api/v2/nyc/dashboard.csv')
-df=pd.read_json(config.config['base_api_url']+'/api/v2/nyc/dashboard')
+url=config.config['base_api_url']+'/dashboard'
+df=pd.read_csv(url)
+# url = config.config['base_api_url']+'/dashboard'
+# df = pd.read_json('https://financialmodelingprep.com/api/v3/company-key-metrics/AAPL?period=quarter', orient='records').set_index('route', inplace=True)
 
 route_list = df["route"].unique()
 kind = df["kind"].unique().tolist()

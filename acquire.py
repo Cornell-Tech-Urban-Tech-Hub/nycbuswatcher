@@ -7,7 +7,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from dotenv import load_dotenv
 
-import shared.DataStructures as data
+import shared.Models as data
 import shared.config.config as config
 import shared.Helpers as help
 

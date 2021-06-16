@@ -1,12 +1,12 @@
 from datetime import datetime
-
+from os.path import isfile
 from fastapi import FastAPI, Request
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 
-from shared.DataStructures import DatePointer, DateRoutePointer, DataStore, Shipment
+from shared.Models import DatePointer, DateRoutePointer, DataStore, Shipment
 from shared.Helpers import timeit
 
 
@@ -63,19 +63,52 @@ def make_store(): #bug how to automate this for refresh periodically
 # FUNCTION Displays documentation
 @app.get('/', response_class=HTMLResponse)
 async def discover_endpoints(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    # return templates.TemplateResponse("index.html", {"request": request})
+    return RedirectResponse("/docs")
 
-# TODO COALFACE -- simply send this as a JSON response
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/dashboard
 # FUNCTION Dashboard metadata shpwing number of barrels and shipments per hour per route currently stored.
-@app.get('/api/v2/nyc/dashboard',response_class=PrettyJSONResponse)
+@app.get('/api/v2/nyc/dashboard')
+# after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def send_dashboard():
-    with open('data/dashboard.json', "r") as f:
-        return f.read()
+    filename='data/dashboard.csv'
+    if not isfile(filename):
+        return Response(status_code=404)
+    with open(filename) as f:
+        content = f.read()
+    return Response(content, media_type='text/csv')
 
 
-# # MAIN RESPONSE ENDPOINT (more efficient?)
+# V3 MAIN RESPONSE ENDPOINT — STATIC
+#------------------------------------------------------------------------------------------------------------------------
+
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
+# after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
+async def fetch_shipment(year,month,day,hour,route):
+    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour,route)
+    if not isfile(shipment_to_get):
+        return Response(status_code=404)
+    with open(shipment_to_get) as f:
+        content = f.read()
+    return Response(content, media_type='application/json')
+
+# # V1 MAIN RESPONSE ENDPOINT (using Shipment class = elegant but creates empty folders)
+# #------------------------------------------------------------------------------------------------------------------------
+# # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
+# # FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
+# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',response_class=PrettyJSONResponse)
+# async def fetch_Shipment(year,month,day,hour,route):
+#     date_route_pointer=DateRoutePointer(datetime(year=int(year),
+#                                                  month=int(month),
+#                                                  day=int(day),
+#                                                  hour=int(hour)),
+#                                         route)
+#
+#     #bug need to check if the shipment exists before instantiating object, otherwise it creates an empty folder because of GenericFolder inheritance
+#     return Shipment(date_route_pointer).load_file()
+
+# # V2 MAIN RESPONSE ENDPOINT — STATIC, NOT SO SIMPLE, FASTER?
 # #------------------------------------------------------------------------------------------------------------------------
 # # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
 # # FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
@@ -95,24 +128,8 @@ async def send_dashboard():
 #     shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour,route)
 #     return FileResponse(shipment_to_get, media_type="application/json")
 
-# MAIN RESPONSE ENDPOINT (more elegant)
-#------------------------------------------------------------------------------------------------------------------------
-# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
-# FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
-@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',response_class=PrettyJSONResponse)
-async def fetch_Shipment(year,month,day,hour,route):
-    date_route_pointer=DateRoutePointer(datetime(year=int(year),
-                                                 month=int(month),
-                                                 day=int(day),
-                                                 hour=int(hour)),
-                                        route)
-
-    #bug need to check if the shipment exists before instantiating object, otherwise it creates an empty folder because of GenericFolder inheritance
-    return Shipment(date_route_pointer).load_file()
 
 
-
-# todo test and debug
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}/geojson
 # FUNCTION get a single Shipment by date_pointer as geoJSON FeatureCollection
@@ -123,9 +140,6 @@ async def fetch_Shipment_as_geoJSON(year,month,day,hour,route):
                                                  day=int(day),
                                                  hour=int(hour)),
                                         route)
-    # return json.dumps(
-    #     Shipment(date_route_pointer).to_FeatureCollection()
-    # )
     return Shipment(date_route_pointer).to_FeatureCollection()
 
 
@@ -138,13 +152,11 @@ async def list_routes(year,month,day,hour):
     store = make_store()
     date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
     routes = store.list_routes_in_store(date_pointer)
-
     result = {"year":year,
               "month":month,
               "day":day,
               "hour":hour,
               "routes": routes}
-
     return result
 
 

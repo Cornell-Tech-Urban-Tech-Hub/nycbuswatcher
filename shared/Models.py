@@ -291,7 +291,6 @@ class DataStore(GenericStore):
                             routes.append((shipment.route, shipment.url)) #todo change shipment.filepath to a URL
         return routes
 
-    # TODO COALFACE -- dump this to JSON instead, and convert to a df inside dashboard.py
     def dump_dashboard(self):
         dashboard=[]
         for b in self.scan_barrels():
@@ -316,10 +315,8 @@ class DataStore(GenericStore):
                  s.date_pointer.hour,
                  s.count_buses())
             )
-        # dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
-        # dashboard_data.to_csv(Path.cwd() / Path(pathmap['dashboard']),index=False)
-        with open('data/dashboard.csv', 'wb') as outfile:
-            json.dump(dashboard,outfile)
+        dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
+        dashboard_data.to_csv(Path.cwd() / Path(pathmap['dashboard']),index=False)
         return
 
     def scan_shipments(self):
