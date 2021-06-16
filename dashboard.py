@@ -33,20 +33,21 @@ df=pd.read_csv(url)
 route_list = df["route"].unique()
 kind = df["kind"].unique().tolist()
 
-# Date
-# Format checkin Time
-df["Check-In Time"] = df["Check-In Time"].apply(
-    lambda x: dt.strptime(x, "%Y-%m-%d %I:%M:%S %p")  #todo update
-)  # String -> Datetime
+# # Date
+# # Format checkin Time
+# df["Check-In Time"] = df["Check-In Time"].apply(
+#     lambda x: dt.strptime(x, "%Y-%m-%d %I:%M:%S %p")
+# )  # String -> Datetime
 
-# Insert weekday and hour of checkin time
-df["Days of Wk"] = df["hour"] = df["Check-In Time"]  #todo update
-df["Days of Wk"] = df["Days of Wk"].apply(
-    lambda x: dt.strftime(x, "%A")
-)  # Datetime -> weekday string
+# # Insert weekday and hour of checkin time
+# df["Days of Wk"] = df["hour"] = df["Check-In Time"]
+# df["Days of Wk"] = df["Days of Wk"].apply(
+#     lambda x: dt.strftime(x, "%A")
+# )  # Datetime -> weekday string
 
-df["hour"] = df["hour"].apply(
-    lambda x: dt.strftime(x, "%I %p")
+df['timestamp']=pd.to_datetime(df[['year', 'month', 'day', 'hour']])
+
+df["hour"] = df["timestamp"].apply(lambda x: dt.strftime(x, "%I %p") #todo use %-I to remove zero padding
 
 
 )  # Datetime -> int(hour) + AM/PM
@@ -60,15 +61,15 @@ day_list = [
     "Saturday",
     "Sunday",
 ]
-
-check_in_duration = df["Check-In Time"].describe() #todo update
+#
+# check_in_duration = df["Check-In Time"].describe()
 
 # Register all departments for callbacks
-all_departments = df["Department"].unique().tolist()  #todo update
+all_routes = df["route"].unique().tolist()
 wait_time_inputs = [
-    Input((i + "_wait_time_graph"), "selectedData") for i in all_departments
+    Input((i + "_wait_time_graph"), "selectedData") for i in all_routes
 ]
-score_inputs = [Input((i + "_score_graph"), "selectedData") for i in all_departments]
+score_inputs = [Input((i + "_score_graph"), "selectedData") for i in all_routes]
 
 
 def description_card():

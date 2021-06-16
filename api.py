@@ -77,7 +77,7 @@ async def send_dashboard():
         return Response(status_code=404)
     with open(filename) as f:
         content = f.read()
-    return Response(content, media_type='text/csv')
+        return Response(content, media_type='text/csv')
 
 
 # V3 MAIN RESPONSE ENDPOINT — STATIC
