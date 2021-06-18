@@ -10,6 +10,7 @@ services:
 #      - GANDI_DOMAIN=$GANDI_DOMAIN
 #      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
 
+  #todo fix uid issue, unable to delete old puddles?
   acquire:
     restart: always
     build:

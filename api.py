@@ -7,8 +7,6 @@ from fastapi.staticfiles import StaticFiles
 import uvicorn
 
 from shared.Models import DatePointer, DateRoutePointer, DataStore, Shipment
-from shared.Helpers import timeit
-
 
 from dotenv import load_dotenv
 
@@ -52,7 +50,6 @@ class PrettyJSONResponse(Response):
         ).encode("utf-8")
 
 
-@timeit
 def make_store(): #bug too costly? how to automate this for refresh periodically
     print ('i recreated the DataStore()')
     return DataStore()
