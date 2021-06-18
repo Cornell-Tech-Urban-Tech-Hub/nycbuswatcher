@@ -10,17 +10,9 @@ Once per hour, these files are reprocessed—the raw responses are tar'ed into c
 
 The API serves these hourly, per route JSON files full of serialized `BusObservation` instances. There's no database, and no queries or data processing at all to serve API responses. Endpoint routes are converted into a `DatePointer` instance, which is how `acquire.py` manages data internally (and uses several classes to convert to filepaths in the `data/` folder).
 
-##### Routes available for a given hour
-- `/api/v2/nyc/api/v2/nyc/routes/{year}/{month}/{day}/{hour}`
-
-##### Buses on a route for a given hour
-
-- `/api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}`
-
-##### Dashboard data
-
-- `/api/v2/nyc/dashboard`
-
+##### List of endpoints 
+- `/docs`
+- `/redocs`
 
 ## quick start 
 
@@ -30,11 +22,11 @@ The API serves these hourly, per route JSON files full of serialized `BusObserva
    && cd nycbuswatcher`
     
     
-2. obtain API keys and put them in .env (quotes not needed apparently)
+2. obtain API keys and put them in .env (quotes not needed apparently, no spaces)
     - http://bustime.mta.info/wiki/Developers/Index/
 
     ```txt
-    API_KEY = fasjhfasfajskjrwer242jk424242
+    API_KEY=fasjhfasfajskjrwer242jk424242
     ```
 
 3. if you want to use the gandi dyndns updater, add these three keys to .env and make sure to uncomment the appropriate section in `docker-compose.yml`
@@ -43,5 +35,6 @@ The API serves these hourly, per route JSON files full of serialized `BusObserva
 4. build and run the stack
 
     ```
+    export COMPOSE_PROJECT_NAME=nycbuswatcher2 # (optional, if running alongside another nycbuswatcher deployment)
     docker-compose up -d --build
     ```
