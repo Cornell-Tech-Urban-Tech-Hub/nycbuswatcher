@@ -52,8 +52,8 @@ class PrettyJSONResponse(Response):
         ).encode("utf-8")
 
 
-@timeit #bug too costly?
-def make_store(): #bug how to automate this for refresh periodically
+@timeit
+def make_store(): #bug too costly? how to automate this for refresh periodically
     print ('i recreated the DataStore()')
     return DataStore()
 
@@ -68,7 +68,7 @@ async def discover_endpoints(request: Request):
 
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/dashboard
-# FUNCTION Dashboard metadata shpwing number of barrels and shipments per hour per route currently stored.
+# FUNCTION Dashboard metadata showing number of barrels and shipments per hour per route currently stored.
 @app.get('/api/v2/nyc/dashboard')
 # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def fetch_dashboard_data():
@@ -115,7 +115,7 @@ async def fetch_single_Shipment_as_geoJSON(year,month,day,hour,route):
 async def list_all_routes_for_hour(year,month,day,hour):
     store = make_store() #bug is this expensive/not scalable for each request?
     date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
-    routes = store.list_routes_in_store(date_pointer)
+    routes = sorted(store.list_routes_in_store(date_pointer))
     result = {"year":year,
               "month":month,
               "day":day,
@@ -131,21 +131,20 @@ async def list_all_routes_for_hour(year,month,day,hour):
 async def list_all_shipments_in_history_for_route(route):
     store = make_store()
     route_shipments = store.find_route_shipments(route)
-
-    #todo sort by s.date_pointer
-    return  {"route":route,
-             "shipments":[
-                 {"route": s.date_pointer.route,
-                  "year":s.date_pointer.year,
-                  "month":s.date_pointer.month,
-                  "day":s.date_pointer.day,
-                  "hour":s.date_pointer.hour,
-                  "url":s.url
-                  } for s in route_shipments
-             ]}
+    shipments = [
+        {"route": s.date_pointer.route,
+         "year":s.date_pointer.year,
+         "month":s.date_pointer.month,
+         "day":s.date_pointer.day,
+         "hour":s.date_pointer.hour,
+         "url":s.url
+         } for s in route_shipments
+    ]
+    shipments_sorted = sorted(shipments, key = lambda i: (i['year'],i['month'],i['day'],i['hour']))
+    return {"route":route,
+            "shipments": shipments_sorted}
 
 #------------------------------------------------------------------------------------------------------------------------
-
 if __name__ == '__main__':
     uvicorn.run(app, port=5000, debug=True)
 
