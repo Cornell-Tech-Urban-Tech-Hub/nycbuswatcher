@@ -30,7 +30,7 @@ def async_grab_and_store():
         if args.localhost is True:
             s = Session('http://bustime.mta.info', connections=5)
         else:
-            s = Session('http://bustime.mta.info', connections=config['http_connections'])
+            s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
         async with trio.open_nursery() as n:
             for path_bundle in path_list:
                 for route_id,path in path_bundle.items():
