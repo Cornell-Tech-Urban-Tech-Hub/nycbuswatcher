@@ -330,6 +330,15 @@ class DataStore(GenericStore):
             shipments.append(s)
         return shipments
 
+    def find_route_shipments(self,route):
+        result = []
+        shipments = self.scan_shipments()
+        for s in shipments:
+            if s.route == route:
+                result.append(s)
+        return result
+
+
 
 class Barrel(GenericFolder):
 
@@ -378,7 +387,6 @@ class Shipment(GenericFolder):
 
     def __init__(self, date_pointer):
         super().__init__(date_pointer, kind='shipment')
-        self.route = date_pointer.route
         self.route = date_pointer.route
         self.exist, self.filepath = self.check_exist()
         self.url = config.config['shipment_api_url'].format(str(date_pointer.year),

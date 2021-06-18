@@ -19,8 +19,8 @@ def async_grab_and_store():
     async def grabber(s,a_path,route_id):
         try:
             r = await s.get(path=a_path)
+            #todo HIGH find a way to retry these, connection errors lead to a gap for any route that raises an Exception
             feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
-        #bug LOW find a way to retry these, connection errors lead to a gap for any route that raises an Exception
         except Exception as e:
             print ('\tCould not fetch feed for {}. (Maybe you should write some retry code?)'.format(route_id) )
 
