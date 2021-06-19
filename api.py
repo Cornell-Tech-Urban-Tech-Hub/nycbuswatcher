@@ -83,7 +83,8 @@ async def fetch_dashboard_data():
 @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
 # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def fetch_single_shipment(year,month,day,hour,route):
-    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour,route)
+    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.\
+        format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
     if not isfile(shipment_to_get):
         return Response(status_code=404)
     with open(shipment_to_get) as f:
@@ -100,7 +101,7 @@ async def fetch_single_Shipment_as_geoJSON(year,month,day,hour,route):
                                                  month=int(month),
                                                  day=int(day),
                                                  hour=int(hour)),
-                                        route)
+                                        route.upper())
     return Shipment(date_route_pointer).to_FeatureCollection()
 
 
@@ -127,7 +128,7 @@ async def list_all_routes_for_hour(year,month,day,hour):
 @app.get('/api/v2/nyc/{route}',response_class=PrettyJSONResponse)
 async def list_all_shipments_in_history_for_route(route):
     store = make_store()
-    route_shipments = store.find_route_shipments(route)
+    route_shipments = store.find_route_shipments(route.upper())
     shipments = [
         {"route": s.date_pointer.route,
          "year":s.date_pointer.year,
@@ -138,7 +139,7 @@ async def list_all_shipments_in_history_for_route(route):
          } for s in route_shipments
     ]
     shipments_sorted = sorted(shipments, key = lambda i: (i['year'],i['month'],i['day'],i['hour']))
-    return {"route":route,
+    return {"route":route.upper(),
             "shipments": shipments_sorted}
 
 #------------------------------------------------------------------------------------------------------------------------

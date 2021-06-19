@@ -348,6 +348,7 @@ class Barrel(GenericFolder):
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
+
     def render_myself_to_shipment(self):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
         pickle_array = []
@@ -356,8 +357,10 @@ class Barrel(GenericFolder):
                 barrel = pickle.load(pickle_file)
                 for p in barrel:
                     pickle_array.append(p)
+
+        sorted_pickle_array = pickle_array.sorted(key= lambda i: (i.timestamp, i.trip_id))
         serial_array=[]
-        for p in pickle_array:
+        for p in sorted_pickle_array:
             serial_array.append(p.to_serial())
         json_container = dict()
         json_container['buses'] = serial_array
