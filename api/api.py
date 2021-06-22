@@ -22,7 +22,7 @@ api_url_stem="/api/v2/nyc/"
 app = FastAPI()
 templates = Jinja2Templates(directory="assets/templates")
 
-app.mount("/static", StaticFiles(directory="assets"), name="static")
+app.mount("/static", StaticFiles(directory="../assets"), name="static")
 
 
 # add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/

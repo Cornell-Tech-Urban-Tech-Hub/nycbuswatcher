@@ -1,5 +1,4 @@
 import argparse
-import os
 import time
 import datetime as dt
 import trio
@@ -7,7 +6,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from dotenv import load_dotenv
 
-import shared.Models as data
+from shared.Models import *
 import shared.config.config as config
 import shared.Helpers as help
 
@@ -41,8 +40,8 @@ def async_grab_and_store():
     # dump to the various locations
     timestamp = dt.datetime.now()
     # date_pointer = timestamp.replace(microsecond=0, second=0, minute=0)
-    data.DataLake().make_puddles(feeds, data.DatePointer(timestamp))
-    data.DataStore().make_barrels(feeds, data.DatePointer(timestamp))
+    DataLake().make_puddles(feeds, DatePointer(timestamp))
+    DataStore().make_barrels(feeds, DatePointer(timestamp))
 
     # report results to console
     num_buses = help.num_buses(feeds)
@@ -72,8 +71,8 @@ if __name__ == "__main__":
         scheduler.add_job(async_grab_and_store, 'interval', seconds=scan_interval_seconds, max_instances=2, misfire_grace_time=15)
 
         # # every 15 minutes
-        lake = data.DataLake()
-        store = data.DataStore()
+        lake = DataLake()
+        store = DataStore()
         scheduler.add_job(store.dump_dashboard, 'interval', minutes=5, misfire_grace_time=1)
 
         # # every hour
