@@ -24,10 +24,10 @@ def get_OBA_routelist():
         if response.status_code == 503: # response is bad, so go to exception and load the pickle
             raise Exception(503, "503 error code fetching route definitions. OneBusAway API probably overloaded.")
         else: # response is good, so save it to pickle and proceed
-            with open(('data/routes-for-agency.pickle'), "wb") as pickle_file:
+            with open(('../data/routes-for-agency.pickle'), "wb") as pickle_file:
                 pickle.dump(response,pickle_file)
     except Exception as e: # response is bad, so load the last good pickle
-        with open(('data/routes-for-agency.pickle'), "rb") as pickle_file:
+        with open(('../data/routes-for-agency.pickle'), "rb") as pickle_file:
             response = pickle.load(pickle_file)
         print("Route URLs loaded from pickle cache.")
     finally:

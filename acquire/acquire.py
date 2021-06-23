@@ -55,7 +55,6 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
     parser.add_argument('-l', action="store_true", dest="localhost", help="force localhost for production mode")
-    parser.add_argument('--dry-run', action="store_true", dest="dry-run", help="Force dry run (dont write or delete anything) not implemented")
     args = parser.parse_args()
 
     load_dotenv()

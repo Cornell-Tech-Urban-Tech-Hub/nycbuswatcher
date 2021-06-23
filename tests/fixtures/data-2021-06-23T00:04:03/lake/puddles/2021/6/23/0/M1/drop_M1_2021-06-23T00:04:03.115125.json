@@ -1,0 +1,745 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.949-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M1",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OF_B1-Weekday-SDon-138500_M7_240"
+                                },
+                                "JourneyPatternRef": "MTA_M010006",
+                                "PublishedLineName": "M1",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_400001",
+                                "DestinationName": "HARLEM 147 ST via MADISON AV",
+                                "OriginAimedDepartureTime": "2021-06-23T00:05:00.000-04:00",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_2f7e9f31-d4d3-4724-86eb-223afd64c8de"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.936229,
+                                    "Latitude": 40.821312
+                                },
+                                "Bearing": 337.25784,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_OF_B1-Weekday-SDon_E_OF_56940_M1-145",
+                                "VehicleRef": "MTA NYCT_6787",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:57:00.987-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.949-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.949-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 19.54,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 12314.3
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_803003",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "146 ST/LENOX AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:00.004-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 19.54,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 12314.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803003",
+                                            "StopPointName": "146 ST/LENOX AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:28.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M1",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OF_B1-Weekday-SDon-141500_M7_238"
+                                },
+                                "JourneyPatternRef": "MTA_M010012",
+                                "PublishedLineName": "M1",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405284",
+                                "DestinationName": "EAST VILLAGE 8 ST via 5 AV",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_2f7e9f31-d4d3-4724-86eb-223afd64c8de"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.978795,
+                                    "Latitude": 40.75634
+                                },
+                                "Bearing": 233.70769,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_OF_B1-Weekday-SDon_E_OF_17040_M1-101",
+                                "VehicleRef": "MTA NYCT_3839",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:47.011-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.949-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.949-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 28.24,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8692.54
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400516",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "5 AV/W 46 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:47.024-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 28.24,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8692.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400516",
+                                            "StopPointName": "5 AV/W 46 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:38.024-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:47.777-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 190.71,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8855.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405179",
+                                            "StopPointName": "5 AV/W 44 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.024-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.705-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 402.61,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9066.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400518",
+                                            "StopPointName": "5 AV/W 41 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:45.025-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:29.648-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 690.14,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9354.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400519",
+                                            "StopPointName": "5 AV/W 38 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:20.025-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:09.872-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 876.81,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9541.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400323",
+                                            "StopPointName": "5 AV/W 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:07.025-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:04.454-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1127.5,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9791.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400324",
+                                            "StopPointName": "5 AV/W 33 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:37.026-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:33.249-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1285.13,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 9949.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400325",
+                                            "StopPointName": "5 AV/W 31 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:05.026-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:55.560-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1436.42,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10100.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400326",
+                                            "StopPointName": "5 AV/W 29 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:51.026-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:43.589-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1680.27,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10344.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400327",
+                                            "StopPointName": "5 AV/W 26 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:37.026-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:39.320-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1929.09,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 10593.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400329",
+                                            "StopPointName": "5 AV/W 23 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:20.026-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:12.520-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2156.2,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10820.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400330",
+                                            "StopPointName": "5 AV/W 20 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:01.027-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:04.789-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2376.6,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 11040.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400331",
+                                            "StopPointName": "5 AV/W 17 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:48.028-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:39.158-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2625.1,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11289.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402857",
+                                            "StopPointName": "5 AV/W 13 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:17.028-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:14.561-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2782.76,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 11447.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400333",
+                                            "StopPointName": "5 AV/W 12 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:47.029-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:35.503-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2940.73,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 11605.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400334",
+                                            "StopPointName": "5 AV/W 10 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:18.029-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:05.503-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3105.14,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 11769.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400335",
+                                            "StopPointName": "E 8 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:43.029-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:35.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3241.38,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 11905.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400336",
+                                            "StopPointName": "E 8 ST/UNIVERSITY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:18.030-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:05.503-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3427.65,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 12091.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400337",
+                                            "StopPointName": "E 8 ST/MERCER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:41.030-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3551.51,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 12215.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404010",
+                                            "StopPointName": "E 8 ST/LAFAYETTE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.030-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:01.903-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3651.12,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 12315.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403793",
+                                            "StopPointName": "4 AV/E 9 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M1",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OF_B1-Weekday-SDon-141500_M1_141"
+                                },
+                                "JourneyPatternRef": "MTA_M010006",
+                                "PublishedLineName": "M1",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_400001",
+                                "DestinationName": "HARLEM 147 ST via MADISON AV",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_2f7e9f31-d4d3-4724-86eb-223afd64c8de"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.94544,
+                                    "Latitude": 40.799156
+                                },
+                                "Bearing": 54.3696,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_OF_B1-Weekday-SDon_E_OF_21600_M1-106",
+                                "VehicleRef": "MTA NYCT_3879",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:08:00.957-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.949-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.949-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 160.05,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8797.87
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400050",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MADISON AV/E 116 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.967-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 160.05,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8797.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400050",
+                                            "StopPointName": "MADISON AV/E 116 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:29.967-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:31.197-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 303.04,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8940.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400051",
+                                            "StopPointName": "MADISON AV/E 118 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:20.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:08.136-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 551.96,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9189.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403980",
+                                            "StopPointName": "MADISON AV/E 121 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:54.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:33.008-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 714.63,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9352.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400053",
+                                            "StopPointName": "MADISON AV/E 123 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:26.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:58.591-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 875.61,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9513.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400054",
+                                            "StopPointName": "MADISON AV/E 125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:58.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:45.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1031.68,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9669.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400055",
+                                            "StopPointName": "MADISON AV/E 127 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:31.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:08.845-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1192.31,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 9830.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400056",
+                                            "StopPointName": "MADISON AV/E 129 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:21.968-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:46.390-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1436.59,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10074.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400057",
+                                            "StopPointName": "MADISON AV/E 132 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:10.969-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:07.750-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1676.94,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10314.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403711",
+                                            "StopPointName": "E 135 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:43.969-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:54.750-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1836.62,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 10474.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400059",
+                                            "StopPointName": "5 AV/E 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:18.969-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:17.243-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 2006.22,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10644.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400060",
+                                            "StopPointName": "5 AV/E 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:51.969-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:55.612-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2165.61,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 10803.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400061",
+                                            "StopPointName": "W 139 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:50.981-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:35.126-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2454.39,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11092.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400062",
+                                            "StopPointName": "MALCOLM X BL/W 139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:38.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:34.439-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2689.97,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 11327.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404335",
+                                            "StopPointName": "MALCOLM X BL/W 142 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:27.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:23.324-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2929.97,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 11567.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400065",
+                                            "StopPointName": "MALCOLM X BL/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:04.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:03.412-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3109.11,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 11746.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400066",
+                                            "StopPointName": "W 147 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:46.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:37.684-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3314.96,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 11952.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400067",
+                                            "StopPointName": "W 147 ST/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:02.482-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3676.48,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 12314.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803003",
+                                            "StopPointName": "146 ST/LENOX AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:27.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.949-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.949-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-06-22T21:51:00.000-04:00",
+                                    "EndTime": "2021-06-23T05:00:00.000-04:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Harlem-bound M1 buses are detoured because of road work on 125th St between Madison Ave and Lexington Ave.",
+                                "Description": "Harlem-bound M1 buses are detoured because of road work on 125th St between Madison Ave and Lexington Ave.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_M1",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_M1",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "CreationTime": "2021-06-22T21:51:36.127-04:00",
+                                "SituationNumber": "MTA NYCT_2f7e9f31-d4d3-4724-86eb-223afd64c8de"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

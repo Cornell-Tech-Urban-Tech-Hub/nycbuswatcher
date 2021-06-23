@@ -1,0 +1,1733 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.879-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-141000_M3_346"
+                                },
+                                "JourneyPatternRef": "MTA_M030006",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_400001",
+                                "DestinationName": "FT GEORGE 193 ST via MADISON via ST NICH",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_269970"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.95189,
+                                    "Latitude": 40.790342
+                                },
+                                "Bearing": 53.746162,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_23100_M3-313",
+                                "VehicleRef": "MTA NYCT_3874",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:59:35.959-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7517.46
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400042",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MADISON AV/E 101 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:35.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7517.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400042",
+                                            "StopPointName": "MADISON AV/E 101 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:05.977-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.612-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 135.5,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7652.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400043",
+                                            "StopPointName": "MADISON AV/E 102 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:27.978-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:37.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 235.55,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7753.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400044",
+                                            "StopPointName": "MADISON AV/E 104 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:03.980-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:09.380-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 397.79,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 7915.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400045",
+                                            "StopPointName": "MADISON AV/E 106 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:35.980-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:30.586-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 539.59,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8057.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400046",
+                                            "StopPointName": "MADISON AV/E 107 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:29.981-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:04.006-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5 stops away",
+                                                    "DistanceFromCall": 782.42,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8299.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404856",
+                                            "StopPointName": "E 110 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.981-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.882-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 922.73,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 8440.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403267",
+                                            "StopPointName": "CENTRAL PK N/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:32.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:54.808-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1251.42,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 8768.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400224",
+                                            "StopPointName": "CENTRAL PK N/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:36.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:02.008-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1478.09,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 8995.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400225",
+                                            "StopPointName": "CENTRAL PK N/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:17.983-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:16.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1840.21,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 9357.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400390",
+                                            "StopPointName": "CATHEDRAL PY/FRED DOUGLASS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.984-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:35.751-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1992.32,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 9509.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401040",
+                                            "StopPointName": "MANHATTAN AV/CATHEDRAL PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:07.984-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:12.332-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2228.92,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 9746.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405092",
+                                            "StopPointName": "MANHATTAN AV/W 113 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:03.985-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:46.372-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2423.68,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 9941.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400394",
+                                            "StopPointName": "MANHATTAN AV/W 116 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:26.985-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:53.491-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2715.21,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 10232.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400395",
+                                            "StopPointName": "MANHATTAN AV/W 119 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:12.985-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:39.304-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2877.22,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 10394.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400396",
+                                            "StopPointName": "MANHATTAN AV/W 121 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.985-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:46.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3255.7,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 10773.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404071",
+                                            "StopPointName": "ST NICHOLAS AV/W 124 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:11.985-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:19.813-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3503.71,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 11021.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400398",
+                                            "StopPointName": "ST NICHOLAS AV/W 127 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:20.986-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:02.415-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3744.11,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 11261.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400399",
+                                            "StopPointName": "ST NICHOLAS AV/W 130 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:15.986-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:51.539-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3932.58,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 11450.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400400",
+                                            "StopPointName": "ST NICHOLAS AV/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:12.986-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:30.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4134.02,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 11651.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400401",
+                                            "StopPointName": "ST NICHOLAS AV/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:49.986-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:07.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4263.1,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 11780.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403776",
+                                            "StopPointName": "ST NICHOLAS AV/W 137 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:50.986-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:59.398-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4474.29,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 11991.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400403",
+                                            "StopPointName": "ST NICHOLAS AV/W 139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:23.987-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:34.594-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4588.96,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 12106.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400404",
+                                            "StopPointName": "ST NICHOLAS AV/W 141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:36.987-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:10.845-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4842.5,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 12359.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400405",
+                                            "StopPointName": "ST NICHOLAS AV/W 144 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:14.987-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:57.221-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4973.74,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 12491.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400406",
+                                            "StopPointName": "ST NICHOLAS AV/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:54.987-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:25.886-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5113.46,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 12630.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405227",
+                                            "StopPointName": "ST NICHOLAS AV/W 147 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:31.987-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:23.086-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5452.53,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 12969.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400408",
+                                            "StopPointName": "ST NICHOLAS AV/W 151 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:15.988-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:05.897-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5606.04,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 13123.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400409",
+                                            "StopPointName": "ST NICHOLAS AV/W 153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:46.988-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:25.551-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5922.66,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 13440.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402526",
+                                            "StopPointName": "AMSTERDAM AV/W 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:58.989-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:47.132-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6172.2,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 13689.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405073",
+                                            "StopPointName": "AMSTERDAM AV/W 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:56.989-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:29.555-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6375.71,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 13893.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404853",
+                                            "StopPointName": "AMSTERDAM AV/W 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:55.990-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:59.051-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6581.46,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 14098.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400414",
+                                            "StopPointName": "ST NICHOLAS AV/W 163 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:39.990-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:09.945-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6734.41,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 14251.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405111",
+                                            "StopPointName": "ST NICHOLAS AV/W 165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.990-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:32.745-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7015.21,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 14532.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404066",
+                                            "StopPointName": "ST NICHOLAS AV/W 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:04.990-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:56.019-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7220.13,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 14737.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400418",
+                                            "StopPointName": "ST NICHOLAS AV/W 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:18.992-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:00.628-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7458.7,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 14976.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400419",
+                                            "StopPointName": "ST NICHOLAS AV/W 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:36.995-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:04.628-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7708.51,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 15225.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403975",
+                                            "StopPointName": "ST NICHOLAS AV/W 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:49.996-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:33.428-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7944.2,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 15461.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400422",
+                                            "StopPointName": "ST NICHOLAS AV/W 179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:43.996-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:37.228-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8115.12,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 15632.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400423",
+                                            "StopPointName": "ST NICHOLAS AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:54.997-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:33.090-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8343.46,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 15860.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403976",
+                                            "StopPointName": "ST NICHOLAS AV/W 184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:13.998-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:01.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8596.35,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 16113.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400426",
+                                            "StopPointName": "ST NICHOLAS AV/W 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:25.998-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:21.500-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8829.85,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 16347.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404046",
+                                            "StopPointName": "ST NICHOLAS AV/W 190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:23.998-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:19.642-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 9015.67,
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 16533.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404928",
+                                            "StopPointName": "ST NICHOLAS AV/W 193 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:00.999-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:20.842-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.8 miles away",
+                                                    "DistanceFromCall": 9326.22,
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 16843.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903219",
+                                            "StopPointName": "FT GEORGE AV/66 FT GEORGE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:42.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-133600_M3_348"
+                                },
+                                "JourneyPatternRef": "MTA_M030008",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405091",
+                                "DestinationName": "EAST VILLAGE 8 ST via 5 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.991263,
+                                    "Latitude": 40.730106
+                                },
+                                "Bearing": 337.26562,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_28140_M3-322",
+                                "VehicleRef": "MTA NYCT_4402",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:38:00.141-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 17056.15
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_903048",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 8 ST/LAFAYETTE ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:38:00.182-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 17056.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903048",
+                                            "StopPointName": "E 8 ST/LAFAYETTE ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:42.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-138000_M2_241"
+                                },
+                                "JourneyPatternRef": "MTA_M030006",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_400001",
+                                "DestinationName": "FT GEORGE 193 ST via MADISON via ST NICH",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_269970"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.939597,
+                                    "Latitude": 40.840584
+                                },
+                                "Bearing": 74.00642,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_23940_M3-314",
+                                "VehicleRef": "MTA NYCT_3849",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:00.012-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 34.67,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 14532.67
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_404066",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "ST NICHOLAS AV/W 167 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.039-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 34.67,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 14532.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404066",
+                                            "StopPointName": "ST NICHOLAS AV/W 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:04.039-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:14.496-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 239.59,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 14737.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400418",
+                                            "StopPointName": "ST NICHOLAS AV/W 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:18.040-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:19.105-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 478.15,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 14976.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400419",
+                                            "StopPointName": "ST NICHOLAS AV/W 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:36.042-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:23.105-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 727.97,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 15225.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403975",
+                                            "StopPointName": "ST NICHOLAS AV/W 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:49.042-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:51.905-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 963.66,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 15461.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400422",
+                                            "StopPointName": "ST NICHOLAS AV/W 179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:43.044-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.705-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1134.58,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 15632.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400423",
+                                            "StopPointName": "ST NICHOLAS AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:54.044-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:51.567-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1362.92,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 15860.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403976",
+                                            "StopPointName": "ST NICHOLAS AV/W 184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:13.044-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:20.167-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1615.81,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 16113.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400426",
+                                            "StopPointName": "ST NICHOLAS AV/W 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:25.046-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:39.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1849.31,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 16347.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404046",
+                                            "StopPointName": "ST NICHOLAS AV/W 190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:23.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:38.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2035.13,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 16533.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404928",
+                                            "StopPointName": "ST NICHOLAS AV/W 193 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.048-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:39.319-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2345.68,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 16843.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903219",
+                                            "StopPointName": "FT GEORGE AV/66 FT GEORGE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:41.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-142600_M2_238"
+                                },
+                                "JourneyPatternRef": "MTA_M030258",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405091",
+                                "DestinationName": "125 ST ST NICHOLAS",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.942872,
+                                    "Latitude": 40.831748
+                                },
+                                "Bearing": 234.16235,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_21540_M3-308",
+                                "VehicleRef": "MTA NYCT_4397",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:22.896-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.507-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.507-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 36.49,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3534.14
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403698",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 155 ST/AMSTERDAM AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:22.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:02.507-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 36.49,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3534.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403698",
+                                            "StopPointName": "W 155 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:46.914-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:04.923-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 417.27,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3914.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400466",
+                                            "StopPointName": "ST NICHOLAS AV/W 152 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:22.916-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:40.957-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 579.62,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4077.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400467",
+                                            "StopPointName": "ST NICHOLAS AV/W 150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:08.916-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:36.497-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 789.86,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4287.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400468",
+                                            "StopPointName": "ST NICHOLAS AV/W 148 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:01.916-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:46.534-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1033.45,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4531.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400469",
+                                            "StopPointName": "ST NICHOLAS AV/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:39.917-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:18.839-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1206.73,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4704.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400470",
+                                            "StopPointName": "ST NICHOLAS AV/W 142 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:12.917-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:39.666-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1354.46,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4852.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400471",
+                                            "StopPointName": "ST NICHOLAS AV/W 141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:06.918-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:25.462-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1602.61,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5100.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400472",
+                                            "StopPointName": "ST NICHOLAS AV/W 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:52.918-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:58.662-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1809.88,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5307.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400473",
+                                            "StopPointName": "ST NICHOLAS AV/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:39.918-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:46.671-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2023.15,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5520.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400474",
+                                            "StopPointName": "ST NICHOLAS AV/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:32.919-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:30.920-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2263.13,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5760.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400475",
+                                            "StopPointName": "ST NICHOLAS AV/W 130 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:52.919-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:47.778-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2354.81,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5852.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400476",
+                                            "StopPointName": "ST NICHOLAS AV/W 128 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.919-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:01.755-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2665.31,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6162.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400477",
+                                            "StopPointName": "ST NICHOLAS AV/W 125 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:52.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-136600_M3_345"
+                                },
+                                "JourneyPatternRef": "MTA_M030008",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405091",
+                                "DestinationName": "EAST VILLAGE 8 ST via 5 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.996335,
+                                    "Latitude": 40.732236
+                                },
+                                "Bearing": 337.38895,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_4087",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:08.062-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 43.06,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 16610.56
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400335",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 8 ST/5 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:08.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 43.06,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 16610.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400335",
+                                            "StopPointName": "E 8 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:56.999-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 365.58,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 16933.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400337",
+                                            "StopPointName": "E 8 ST/MERCER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:27.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 488.64,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 17056.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903048",
+                                            "StopPointName": "E 8 ST/LAFAYETTE ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:41.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M3",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-144600_M2_240"
+                                },
+                                "JourneyPatternRef": "MTA_M030258",
+                                "PublishedLineName": "M3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405091",
+                                "DestinationName": "125 ST ST NICHOLAS",
+                                "OriginAimedDepartureTime": "2021-06-23T00:06:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.927322,
+                                    "Latitude": 40.85715
+                                },
+                                "Bearing": 221.98721,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_38100_M3-329",
+                                "VehicleRef": "MTA NYCT_4267",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:15.932-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 53.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 265.01
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403466",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "ST NICOLAS AV/FORT GEORGE HILL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:15.934-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 53.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 265.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403466",
+                                            "StopPointName": "ST NICOLAS AV/FORT GEORGE HILL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:50.935-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.300-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 175.98,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 388.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400448",
+                                            "StopPointName": "ST NICHOLAS AV/W 192 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:49.936-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:05.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 386.21,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 598.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400449",
+                                            "StopPointName": "ST NICHOLAS AV/W 190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:51.937-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:08.712-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 608.1,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 820.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403978",
+                                            "StopPointName": "ST NICHOLAS AV/W 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:02.937-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.405-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 858.31,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1070.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400452",
+                                            "StopPointName": "ST NICHOLAS AV/W 184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:05.938-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:50.871-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1084.15,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1296.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400453",
+                                            "StopPointName": "ST NICHOLAS AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.939-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:05.494-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1277.13,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1489.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400454",
+                                            "StopPointName": "ST NICHOLAS AV/W 178 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:33.939-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:32.261-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1606.6,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1818.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403979",
+                                            "StopPointName": "ST NICHOLAS AV/W 174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:33.939-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:27.327-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1820.83,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2032.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400457",
+                                            "StopPointName": "ST NICHOLAS AV/W 172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.939-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:12.070-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2129.27,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2341.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400258",
+                                            "StopPointName": "BROADWAY/W 168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:43.942-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:42.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2322.57,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2534.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400259",
+                                            "StopPointName": "W 166 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:38.942-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:53.278-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2575.05,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2787.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400461",
+                                            "StopPointName": "ST NICHOLAS AV/W 164 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:09.943-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:19.950-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2714.34,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 2926.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400462",
+                                            "StopPointName": "ST NICHOLAS AV/W 162 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:29.943-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:51.068-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2807.25,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3019.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404949",
+                                            "StopPointName": "AMSTERDAM AV/W 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:30.943-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:57.530-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3084.96,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3296.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402638",
+                                            "StopPointName": "AMSTERDAM AV/W 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:22.944-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:05.831-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3322.13,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3534.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403698",
+                                            "StopPointName": "W 155 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:46.944-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:08.247-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3702.91,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3914.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400466",
+                                            "StopPointName": "ST NICHOLAS AV/W 152 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:22.944-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:44.281-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3865.26,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4077.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400467",
+                                            "StopPointName": "ST NICHOLAS AV/W 150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:08.945-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:39.821-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4075.5,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4287.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400468",
+                                            "StopPointName": "ST NICHOLAS AV/W 148 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:01.946-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:49.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4319.09,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4531.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400469",
+                                            "StopPointName": "ST NICHOLAS AV/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:39.946-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:22.163-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4492.37,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4704.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400470",
+                                            "StopPointName": "ST NICHOLAS AV/W 142 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:12.947-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:42.990-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4640.1,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 4852.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400471",
+                                            "StopPointName": "ST NICHOLAS AV/W 141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:06.947-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:28.786-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4888.25,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5100.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400472",
+                                            "StopPointName": "ST NICHOLAS AV/W 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:52.948-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:01.986-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5095.52,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5307.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400473",
+                                            "StopPointName": "ST NICHOLAS AV/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:39.948-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:49.995-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5308.79,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5520.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400474",
+                                            "StopPointName": "ST NICHOLAS AV/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:32.948-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:34.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5548.77,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 5760.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400475",
+                                            "StopPointName": "ST NICHOLAS AV/W 130 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:52.948-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:51.102-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5640.45,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 5852.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400476",
+                                            "StopPointName": "ST NICHOLAS AV/W 128 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:00.949-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:05.079-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5950.95,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6162.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400477",
+                                            "StopPointName": "ST NICHOLAS AV/W 125 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:37.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.879-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.879-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2020-12-05T00:00:00.000-05:00",
+                                    "EndTime": "2021-12-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Through Dec 2021 Northbound M3 stop on St Nicholas Ave at 181st St is closed while we replace elevators at the 181 St [1] station",
+                                "Description": "Through Dec 2021 Northbound M3 stop on St Nicholas Ave at 181st St is closed while we replace elevators at the 181 St [1] station   Please use nearby stops on St Nicholas Ave at 179th St or at 184th St.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_M3",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2020-12-05T00:00:00.000-05:00",
+                                "SituationNumber": "MTA NYCT_269970"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

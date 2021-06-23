@@ -1,0 +1,895 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.649-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B26",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-140000_B54_421"
+                                },
+                                "JourneyPatternRef": "MTA_B260006",
+                                "PublishedLineName": "B26",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_304417",
+                                "DestinationName": "DOWNTOWN BKLYN TILLARY ST via HALSEY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.990441,
+                                    "Latitude": 40.693866
+                                },
+                                "Bearing": 100.06069,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_76800_B54-421",
+                                "VehicleRef": "MTA NYCT_4104",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:00.657-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9219.06
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_901463",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CADMAN PZ W/TILLARY ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.664-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9219.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901463",
+                                            "StopPointName": "CADMAN PZ W/TILLARY ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:40.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B26",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-143000_B26_233"
+                                },
+                                "JourneyPatternRef": "MTA_B260006",
+                                "PublishedLineName": "B26",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_304417",
+                                "DestinationName": "DOWNTOWN BKLYN TILLARY ST via HALSEY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.926117,
+                                    "Latitude": 40.684535
+                                },
+                                "Bearing": 186.70984,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_78000_B26-233",
+                                "VehicleRef": "MTA NYCT_4068",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:43.667-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.407-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.407-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 57.88,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3121.64
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_302502",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HALSEY ST/PATCHEN AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:43.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 57.88,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3121.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302502",
+                                            "StopPointName": "HALSEY ST/PATCHEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:15.281-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 308.6,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3372.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302503",
+                                            "StopPointName": "HALSEY ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:52.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:11.106-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 555.64,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 3619.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302504",
+                                            "StopPointName": "HALSEY ST/STUYVESANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:45.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:53.868-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 804.0,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 3867.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302505",
+                                            "StopPointName": "HALSEY ST/LEWIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:38.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:57.564-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1053.7,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4117.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307511",
+                                            "StopPointName": "HALSEY ST/MARCUS GARVEY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:29.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:46.743-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1296.42,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4360.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302507",
+                                            "StopPointName": "HALSEY ST/THROOP AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:21.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:02.102-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1541.54,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4605.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302508",
+                                            "StopPointName": "HALSEY ST/TOMPKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:02.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:38.834-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1735.34,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 4799.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302509",
+                                            "StopPointName": "HALSEY ST/MARCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:25.785-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 2008.26,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5072.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307928",
+                                            "StopPointName": "HALSEY ST/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:25.785-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2324.22,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5387.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302511",
+                                            "StopPointName": "HALSEY ST/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:49.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:49.177-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2602.81,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5666.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302512",
+                                            "StopPointName": "PUTNAM AV/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:17.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:25.785-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2755.05,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5818.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302513",
+                                            "StopPointName": "PUTNAM AV/FRANKLIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:04.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:24.067-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3014.94,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6078.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302514",
+                                            "StopPointName": "PUTNAM AV/CLASSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:58.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:54.464-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3306.7,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 6370.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302419",
+                                            "StopPointName": "FULTON ST/GRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:52.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:57.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3600.6,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6664.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302421",
+                                            "StopPointName": "FULTON ST/WASHINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:43.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:04.451-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3879.12,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6942.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302423",
+                                            "StopPointName": "FULTON ST/VANDERBILT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:19.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:55.117-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4078.39,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7142.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302424",
+                                            "StopPointName": "FULTON ST/ADELPHI ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:49.171-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4302.36,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7366.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302426",
+                                            "StopPointName": "FULTON ST/GREENE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:02.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:44.120-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4545.76,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 7609.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302427",
+                                            "StopPointName": "FULTON ST/S ELLIOTT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:41.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:16.642-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4701.82,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7765.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302428",
+                                            "StopPointName": "FULTON ST/FT GREENE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:57.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:29.219-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5000.89,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8064.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302430",
+                                            "StopPointName": "FULTON ST/HUDSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:05.201-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5252.28,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8316.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302431",
+                                            "StopPointName": "FULTON ST/BOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:54.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:00.639-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5456.48,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8520.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307492",
+                                            "StopPointName": "FULTON ST/DUFFIELD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:50.674-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:39.087-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5664.16,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8727.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302433",
+                                            "StopPointName": "FULTON ST/JAY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:16.674-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:00.981-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5990.17,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 9053.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302434",
+                                            "StopPointName": "JORALEMON ST/COURT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:52.675-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6124.21,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 9187.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306533",
+                                            "StopPointName": "CADMAN PLZ W/MONTAGUE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.675-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:58.386-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6155.3,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 9219.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901463",
+                                            "StopPointName": "CADMAN PZ W/TILLARY ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:42.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B26",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-142800_B26_234"
+                                },
+                                "JourneyPatternRef": "MTA_B260005",
+                                "PublishedLineName": "B26",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307175",
+                                "DestinationName": "RIDGEWOOD TERM via HALSEY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.955363,
+                                    "Latitude": 40.683411
+                                },
+                                "Bearing": 6.927218,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_81720_B26-234",
+                                "VehicleRef": "MTA NYCT_7298",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:08:42.678-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:33.690-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:33.690-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 144.17,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4136.11
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 20
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_302461",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "PUTNAM AV/BEDFORD AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:42.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:33.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 144.17,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4136.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302461",
+                                            "StopPointName": "PUTNAM AV/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:47.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:48.290-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 414.8,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4406.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302462",
+                                            "StopPointName": "PUTNAM AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:32.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 719.68,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4711.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302464",
+                                            "StopPointName": "HALSEY ST/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:14.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:48.303-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 990.92,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4982.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302465",
+                                            "StopPointName": "HALSEY ST/MARCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:22.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:02.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1237.55,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5229.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302466",
+                                            "StopPointName": "HALSEY ST/TOMPKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:28.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:20.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1478.12,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5470.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302467",
+                                            "StopPointName": "HALSEY ST/THROOP AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:35.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:23.133-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1723.76,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5715.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302468",
+                                            "StopPointName": "HALSEY ST/MARCUS GARVEY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:42.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:07.228-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1967.39,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5959.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302469",
+                                            "StopPointName": "HALSEY ST/LEWIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:51.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:25.666-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2217.7,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6209.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302470",
+                                            "StopPointName": "HALSEY ST/STUYVESANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:35.293-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2470.38,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6462.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302471",
+                                            "StopPointName": "HALSEY ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:52.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:34.093-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2714.34,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6706.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302472",
+                                            "StopPointName": "HALSEY ST/PATCHEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:52.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:44.846-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2996.15,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6988.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302473",
+                                            "StopPointName": "HALSEY ST/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:41.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:31.732-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3222.71,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7214.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302474",
+                                            "StopPointName": "HALSEY ST/HOWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:31.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:21.667-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3457.35,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7449.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302475",
+                                            "StopPointName": "HALSEY ST/SARATOGA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:57.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3593.93,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7585.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302476",
+                                            "StopPointName": "HALSEY ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:02.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:23.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3865.8,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 7857.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302477",
+                                            "StopPointName": "HALSEY ST/BUSHWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:49.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:12.974-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4071.23,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 8063.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302478",
+                                            "StopPointName": "HALSEY ST/EVERGREEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:35.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:49.865-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4276.58,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 8268.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302479",
+                                            "StopPointName": "HALSEY ST/CENTRAL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:24.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:48.465-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4489.34,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8481.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302480",
+                                            "StopPointName": "HALSEY ST/WILSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:08.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:40.111-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4684.28,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 8676.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302481",
+                                            "StopPointName": "HALSEY ST/KNICKERBOCKER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:58.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:31.083-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4903.97,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8895.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302482",
+                                            "StopPointName": "HALSEY ST/IRVING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:37.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:04.483-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5075.67,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 9067.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302483",
+                                            "StopPointName": "HALSEY ST/WYCKOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:08.686-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:36.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5210.45,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 9202.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302484",
+                                            "StopPointName": "WYCKOFF AV/WEIRFIELD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:42.686-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:00.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5363.16,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 9355.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302485",
+                                            "StopPointName": "WYCKOFF AV/JEFFERSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.686-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:09.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5967.74,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 9959.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901502",
+                                            "StopPointName": "WYCKOFF AV / PALMETTO ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.649-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.649-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

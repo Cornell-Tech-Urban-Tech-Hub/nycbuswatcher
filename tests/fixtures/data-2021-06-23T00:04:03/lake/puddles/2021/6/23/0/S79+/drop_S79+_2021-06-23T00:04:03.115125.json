@@ -1,0 +1,18 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:02.008-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "ResponseTimestamp": "2021-06-23T00:04:02.008-04:00",
+                    "ErrorCondition": {
+                        "OtherError": {
+                            "ErrorText": "No such route: MTA NYCT_S79 ."
+                        },
+                        "Description": "No such route: MTA NYCT_S79 ."
+                    }
+                }
+            ]
+        }
+    }
+}

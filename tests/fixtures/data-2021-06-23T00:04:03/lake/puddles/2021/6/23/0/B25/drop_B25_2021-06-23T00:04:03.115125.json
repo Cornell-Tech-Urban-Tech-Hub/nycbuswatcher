@@ -1,0 +1,1371 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.632-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B25",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-143000_B25_235"
+                                },
+                                "JourneyPatternRef": "MTA_B250008",
+                                "PublishedLineName": "B25",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_801177",
+                                "DestinationName": "DOWNTOWN BKLYN FRONT ST via FULTON",
+                                "OriginAimedDepartureTime": "2021-06-22T23:50:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.899986,
+                                    "Latitude": 40.67674
+                                },
+                                "Bearing": 104.03625,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_77940_B25-235",
+                                "VehicleRef": "MTA NYCT_3980",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:50:00.641-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 0.0,
+                                            "DistanceFromCall": 0.0,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_801177",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "ALABAMA AV / FULTON ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:50:00.641-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 0.0,
+                                                    "DistanceFromCall": 0.0,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801177",
+                                            "StopPointName": "ALABAMA AV / FULTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:51:21.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:28.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 355.15,
+                                                    "DistanceFromCall": 355.15,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307238",
+                                            "StopPointName": "FULTON ST/VAN SINDEREN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:11.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:04.340-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 574.09,
+                                                    "DistanceFromCall": 574.09,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307239",
+                                            "StopPointName": "FULTON ST/SACKMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:32.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:16.342-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 669.89,
+                                                    "DistanceFromCall": 669.89,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307240",
+                                            "StopPointName": "FULTON ST/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:44.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:26.168-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 985.99,
+                                                    "DistanceFromCall": 985.99,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307241",
+                                            "StopPointName": "FULTON ST/ROCKAWAY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:37.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:18.058-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1219.16,
+                                                    "DistanceFromCall": 1219.16,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307927",
+                                            "StopPointName": "FULTON ST/THOMAS S BOYLAND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:31.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.088-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1452.58,
+                                                    "DistanceFromCall": 1452.58,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307243",
+                                            "StopPointName": "FULTON ST/SARATOGA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:24.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:40.550-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1688.48,
+                                                    "DistanceFromCall": 1688.48,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307244",
+                                            "StopPointName": "FULTON ST/HOWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:00.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:08.531-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 1845.97,
+                                                    "DistanceFromCall": 1845.97,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307506",
+                                            "StopPointName": "FULTON ST/MAC DOUGAL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:57.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:19.550-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2075.75,
+                                                    "DistanceFromCall": 2075.75,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307246",
+                                            "StopPointName": "FULTON ST/BUFFALO AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:51.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:22.050-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2536.23,
+                                                    "DistanceFromCall": 2536.23,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307247",
+                                            "StopPointName": "FULTON ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:38.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:56.973-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2722.04,
+                                                    "DistanceFromCall": 2722.04,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307248",
+                                            "StopPointName": "FULTON ST/STUYVESANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:54.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:58.240-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3029.28,
+                                                    "DistanceFromCall": 3029.28,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307249",
+                                            "StopPointName": "FULTON ST/LEWIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:48.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:38.888-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3248.75,
+                                                    "DistanceFromCall": 3248.75,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307541",
+                                            "StopPointName": "FULTON ST/MARCUS GARVEY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:53.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:46.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3510.3,
+                                                    "DistanceFromCall": 3510.3,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307258",
+                                            "StopPointName": "FULTON ST/KINGSTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:36.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:29.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3681.78,
+                                                    "DistanceFromCall": 3681.78,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302413",
+                                            "StopPointName": "FULTON ST/TOMPKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:48.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:36.299-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3973.65,
+                                                    "DistanceFromCall": 3973.65,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302414",
+                                            "StopPointName": "FULTON ST/NEW YORK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:51.899-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4263.14,
+                                                    "DistanceFromCall": 4263.14,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302415",
+                                            "StopPointName": "FULTON ST/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:17.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:00.177-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4586.94,
+                                                    "DistanceFromCall": 4586.94,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302416",
+                                            "StopPointName": "FULTON ST/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:05.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:58.577-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4790.35,
+                                                    "DistanceFromCall": 4790.35,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302417",
+                                            "StopPointName": "FULTON ST/FRANKLIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:03.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:49.364-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5038.5,
+                                                    "DistanceFromCall": 5038.5,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302418",
+                                            "StopPointName": "FULTON ST/CLASSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:05.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:30.551-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5299.42,
+                                                    "DistanceFromCall": 5299.42,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302419",
+                                            "StopPointName": "FULTON ST/GRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:14.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:39.825-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5593.31,
+                                                    "DistanceFromCall": 5593.31,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302421",
+                                            "StopPointName": "FULTON ST/WASHINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:20.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:47.625-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5871.83,
+                                                    "DistanceFromCall": 5871.83,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302423",
+                                            "StopPointName": "FULTON ST/VANDERBILT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:07.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:37.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6071.1,
+                                                    "DistanceFromCall": 6071.1,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302424",
+                                            "StopPointName": "FULTON ST/ADELPHI ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:34.219-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6295.07,
+                                                    "DistanceFromCall": 6295.07,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302426",
+                                            "StopPointName": "FULTON ST/GREENE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:17.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:36.758-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6538.47,
+                                                    "DistanceFromCall": 6538.47,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302427",
+                                            "StopPointName": "FULTON ST/S ELLIOTT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:06.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:06.680-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6694.53,
+                                                    "DistanceFromCall": 6694.53,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302428",
+                                            "StopPointName": "FULTON ST/FT GREENE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:41.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:32.384-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6993.61,
+                                                    "DistanceFromCall": 6993.61,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302430",
+                                            "StopPointName": "FULTON ST/HUDSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:10.166-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7244.99,
+                                                    "DistanceFromCall": 7244.99,
+                                                    "PresentableDistance": "4.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302431",
+                                            "StopPointName": "FULTON ST/BOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:40.653-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:01.398-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7449.2,
+                                                    "DistanceFromCall": 7449.2,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307492",
+                                            "StopPointName": "FULTON ST/DUFFIELD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:21.654-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:36.640-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7656.87,
+                                                    "DistanceFromCall": 7656.87,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302433",
+                                            "StopPointName": "FULTON ST/JAY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:26.655-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:00.334-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7982.88,
+                                                    "DistanceFromCall": 7982.88,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302434",
+                                            "StopPointName": "JORALEMON ST/COURT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:52.656-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:28.365-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8116.92,
+                                                    "DistanceFromCall": 8116.92,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306533",
+                                            "StopPointName": "CADMAN PLZ W/MONTAGUE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:22.656-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:49.210-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8266.74,
+                                                    "DistanceFromCall": 8266.74,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307988",
+                                            "StopPointName": "CADMAN PZ W/JOHNSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.656-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:17.172-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8462.49,
+                                                    "DistanceFromCall": 8462.49,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302437",
+                                            "StopPointName": "CADMAN PZ W/TILLARY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.657-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:54.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 8729.04,
+                                                    "DistanceFromCall": 8729.04,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307355",
+                                            "StopPointName": "CADMAN PLZ W/CRANBERRY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:54.657-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:00.110-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 8968.76,
+                                                    "DistanceFromCall": 8968.76,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302440",
+                                            "StopPointName": "OLD FULTON ST/PROSPECT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.658-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:08.554-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 9262.83,
+                                                    "DistanceFromCall": 9262.83,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801071",
+                                            "StopPointName": "FRONT ST/YORK ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:48.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B25",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-140900_B12_26"
+                                },
+                                "JourneyPatternRef": "MTA_B250007",
+                                "PublishedLineName": "B25",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308626",
+                                "DestinationName": "BROADWAY JCT ALABAMA AV via FULTON",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.922228,
+                                    "Latitude": 40.678894
+                                },
+                                "Bearing": 355.8724,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_73920_B12-26",
+                                "VehicleRef": "MTA NYCT_3966",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:00.663-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:12.523-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:12.523-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8052.95,
+                                            "DistanceFromCall": 83.29,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_307255",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FULTON ST/RALPH AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:12.523-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8052.95,
+                                                    "DistanceFromCall": 83.29,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307255",
+                                            "StopPointName": "FULTON ST/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:13.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:07.964-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8280.0,
+                                                    "DistanceFromCall": 310.34,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307256",
+                                            "StopPointName": "FULTON ST/HOWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:26.686-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:59.378-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8505.81,
+                                                    "DistanceFromCall": 536.16,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307257",
+                                            "StopPointName": "FULTON ST/SARATOGA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:42.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:57.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8739.01,
+                                                    "DistanceFromCall": 769.35,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307259",
+                                            "StopPointName": "FULTON ST/THOMAS S BOYLAND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:14.340-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8973.78,
+                                                    "DistanceFromCall": 1004.13,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307260",
+                                            "StopPointName": "FULTON ST/ROCKAWAY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:57.689-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:50.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9157.26,
+                                                    "DistanceFromCall": 1187.6,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307631",
+                                            "StopPointName": "FULTON ST/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:04.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:05.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 9550.22,
+                                                    "DistanceFromCall": 1580.56,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307263",
+                                            "StopPointName": "FULTON ST/VAN SINDEREN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:48.952-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 9910.58,
+                                                    "DistanceFromCall": 1940.92,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901211",
+                                            "StopPointName": "EAST NEW YORK AV/ALABAMA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:50.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B25",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-144300_B25_238"
+                                },
+                                "JourneyPatternRef": "MTA_B250007",
+                                "PublishedLineName": "B25",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308626",
+                                "DestinationName": "BROADWAY JCT ALABAMA AV via FULTON",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.994107,
+                                    "Latitude": 40.703241
+                                },
+                                "Bearing": 215.53767,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_76440_B25-238",
+                                "VehicleRef": "MTA NYCT_7103",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:05.695-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.632-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.632-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 571.63,
+                                            "DistanceFromCall": 89.38,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_302355",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "OLD FULTON ST/ELIZABETH PL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:05.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.632-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 571.63,
+                                                    "DistanceFromCall": 89.38,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302355",
+                                            "StopPointName": "OLD FULTON ST/ELIZABETH PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:46.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:26.190-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 696.42,
+                                                    "DistanceFromCall": 214.17,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306437",
+                                            "StopPointName": "OLD FULTON ST/HICKS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:37.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:24.790-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 854.46,
+                                                    "DistanceFromCall": 372.21,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302356",
+                                            "StopPointName": "OLD FULTON ST/HENRY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:37.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:20.461-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1041.06,
+                                                    "DistanceFromCall": 558.81,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302357",
+                                            "StopPointName": "CADMAN PZ W/MIDDAGH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:21.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:50.123-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1178.28,
+                                                    "DistanceFromCall": 696.02,
+                                                    "PresentableDistance": "4 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302359",
+                                            "StopPointName": "CADMAN PLZ W/CADMAN TOWER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:20.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:26.323-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1360.66,
+                                                    "DistanceFromCall": 878.41,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302358",
+                                            "StopPointName": "CADMAN PZ W/CLARK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.700-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:06.411-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1483.48,
+                                                    "DistanceFromCall": 1001.23,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303011",
+                                            "StopPointName": "TILLARY ST/CADMAN PZ E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:09.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:34.631-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1995.73,
+                                                    "DistanceFromCall": 1513.48,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307460",
+                                            "StopPointName": "ADAMS ST/BKLYN SUPREME CRT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:23.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:34.381-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2195.28,
+                                                    "DistanceFromCall": 1713.03,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302945",
+                                            "StopPointName": "FULTON ST/SMITH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:33.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:26.091-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2384.39,
+                                                    "DistanceFromCall": 1902.14,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307491",
+                                            "StopPointName": "FULTON ST/HOYT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:41.909-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2618.12,
+                                                    "DistanceFromCall": 2135.87,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302947",
+                                            "StopPointName": "FULTON ST/BOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:57.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:48.081-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3000.35,
+                                                    "DistanceFromCall": 2518.1,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303017",
+                                            "StopPointName": "FULTON ST/ROCKWELL PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:08.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:51.481-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3229.16,
+                                                    "DistanceFromCall": 2746.91,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302368",
+                                            "StopPointName": "FULTON ST/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:26.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:10.096-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3483.5,
+                                                    "DistanceFromCall": 3001.25,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302369",
+                                            "StopPointName": "FULTON ST/S PORTLAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:25.050-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3791.35,
+                                                    "DistanceFromCall": 3309.1,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302370",
+                                            "StopPointName": "FULTON ST/CARLTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:53.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:12.648-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3999.47,
+                                                    "DistanceFromCall": 3517.22,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302371",
+                                            "StopPointName": "FULTON ST/CLERMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:38.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:48.353-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4181.03,
+                                                    "DistanceFromCall": 3698.78,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302372",
+                                            "StopPointName": "FULTON ST/CLINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:28.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:26.812-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4377.73,
+                                                    "DistanceFromCall": 3895.48,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302374",
+                                            "StopPointName": "FULTON ST/WASHINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:51.711-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:43.206-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4468.53,
+                                                    "DistanceFromCall": 3986.28,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302375",
+                                            "StopPointName": "FULTON ST/ST JAMES PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:23.711-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:05.863-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4597.51,
+                                                    "DistanceFromCall": 4115.25,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302376",
+                                            "StopPointName": "FULTON ST/GRAND  AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:45.712-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:10.627-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4920.56,
+                                                    "DistanceFromCall": 4438.31,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302377",
+                                            "StopPointName": "FULTON ST/CLASSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:48.712-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:18.723-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5169.28,
+                                                    "DistanceFromCall": 4687.02,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302378",
+                                            "StopPointName": "FULTON ST/FRANKLIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:42.713-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:12.409-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5384.85,
+                                                    "DistanceFromCall": 4902.6,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302379",
+                                            "StopPointName": "FULTON ST/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.713-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:28.604-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5692.94,
+                                                    "DistanceFromCall": 5210.69,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302380",
+                                            "StopPointName": "FULTON ST/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:15.713-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:01.189-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5988.34,
+                                                    "DistanceFromCall": 5506.09,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302381",
+                                            "StopPointName": "FULTON ST/MARCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:47.713-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:31.241-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6115.02,
+                                                    "DistanceFromCall": 5632.77,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302382",
+                                            "StopPointName": "FULTON ST/BROOKLYN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:47.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:27.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6350.87,
+                                                    "DistanceFromCall": 5868.62,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302383",
+                                            "StopPointName": "FULTON ST/KINGSTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:09.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:51.468-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6672.57,
+                                                    "DistanceFromCall": 6190.32,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307926",
+                                            "StopPointName": "FULTON ST/ALBANY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:16.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:13.933-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6936.05,
+                                                    "DistanceFromCall": 6453.8,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307251",
+                                            "StopPointName": "FULTON ST/TROY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:58.715-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:43.550-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7101.74,
+                                                    "DistanceFromCall": 6619.49,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307252",
+                                            "StopPointName": "FULTON ST/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:21.715-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:58.572-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7428.2,
+                                                    "DistanceFromCall": 6945.95,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307253",
+                                            "StopPointName": "FULTON ST/UTICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:59.716-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:32.692-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7811.0,
+                                                    "DistanceFromCall": 7328.75,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307254",
+                                            "StopPointName": "FULTON ST/BUFFALO AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:00.716-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:38.116-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8052.95,
+                                                    "DistanceFromCall": 7570.7,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307255",
+                                            "StopPointName": "FULTON ST/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:13.716-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:33.557-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8280.0,
+                                                    "DistanceFromCall": 7797.74,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307256",
+                                            "StopPointName": "FULTON ST/HOWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:26.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:24.971-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8505.81,
+                                                    "DistanceFromCall": 8023.56,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307257",
+                                            "StopPointName": "FULTON ST/SARATOGA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:42.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:23.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8739.01,
+                                                    "DistanceFromCall": 8256.75,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307259",
+                                            "StopPointName": "FULTON ST/THOMAS S BOYLAND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:58.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:39.933-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 8973.78,
+                                                    "DistanceFromCall": 8491.53,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307260",
+                                            "StopPointName": "FULTON ST/ROCKAWAY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:47:57.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:16.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9157.26,
+                                                    "DistanceFromCall": 8675.01,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307631",
+                                            "StopPointName": "FULTON ST/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:50:04.718-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:31.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 9550.22,
+                                                    "DistanceFromCall": 9067.96,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307263",
+                                            "StopPointName": "FULTON ST/VAN SINDEREN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:52:00.718-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:14.545-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 9910.58,
+                                                    "DistanceFromCall": 9428.32,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901211",
+                                            "StopPointName": "EAST NEW YORK AV/ALABAMA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:25.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.632-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.632-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

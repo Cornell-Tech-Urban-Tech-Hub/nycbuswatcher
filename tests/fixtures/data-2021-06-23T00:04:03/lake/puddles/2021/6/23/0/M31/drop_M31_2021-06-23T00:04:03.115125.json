@@ -1,0 +1,815 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.269-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M31",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OH_B1-Weekday-SDon-141500_M31_328"
+                                },
+                                "JourneyPatternRef": "MTA_M310173",
+                                "PublishedLineName": "M31",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404058",
+                                "DestinationName": "YORKVILLE 91 ST via YORK AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.946865,
+                                    "Latitude": 40.780272
+                                },
+                                "Bearing": 53.297146,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_OH_B1-Weekday-SDon_E_OH_51180_M31-321",
+                                "VehicleRef": "MTA NYCT_9637",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:11.299-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.269-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.269-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6122.86
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403383",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "1 AV/E 91 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:11.305-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6122.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403383",
+                                            "StopPointName": "1 AV/E 91 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.305-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:47.031-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 226.23,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6349.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904918",
+                                            "StopPointName": "EAST 92 ST/YORK AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:29.708-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M31",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OH_B1-Weekday-SDon-144100_M31_327"
+                                },
+                                "JourneyPatternRef": "MTA_M310176",
+                                "PublishedLineName": "M31",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_405003",
+                                "DestinationName": "CLINTON 11 AV via 57 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.949841,
+                                    "Latitude": 40.772198
+                                },
+                                "Bearing": 234.2933,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_OH_B1-Weekday-SDon_E_OH_25440_M31-310",
+                                "VehicleRef": "MTA NYCT_3936",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:19.289-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:29.934-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:29.934-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 145.83,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1120.45
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_402348",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "YORK AV/E 79 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:19.291-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:29.934-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 145.83,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1120.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402348",
+                                            "StopPointName": "YORK AV/E 79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:47.291-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:55.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 305.41,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1280.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402349",
+                                            "StopPointName": "YORK AV/E 77 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:28.291-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:32.502-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 532.32,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1506.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403726",
+                                            "StopPointName": "YORK AV/E 74 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.291-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:12.789-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 715.12,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1689.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402351",
+                                            "StopPointName": "YORK AV/E 72 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:59.291-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:13.911-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 915.81,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1890.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403297",
+                                            "StopPointName": "YORK AV/E 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.292-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:06.067-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1124.76,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2099.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403735",
+                                            "StopPointName": "YORK AV/E 67 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:55.292-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:18.667-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1355.38,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2330.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402355",
+                                            "StopPointName": "YORK AV/E 64 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:22.292-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:44.648-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1465.92,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2440.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405389",
+                                            "StopPointName": "YORK AV/E 62 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:50.292-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:04.820-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1831.94,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2806.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404266",
+                                            "StopPointName": "SUTTON PL/E 58 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:05.292-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:39.330-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2145.27,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3119.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402222",
+                                            "StopPointName": "E 57 ST/1 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.293-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:28.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2374.78,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3349.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402223",
+                                            "StopPointName": "E 57 ST/2 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:20.293-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:29.420-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2592.06,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3566.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402224",
+                                            "StopPointName": "E 57 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:17.293-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.220-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2743.8,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3718.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403617",
+                                            "StopPointName": "E 57 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.293-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:27.507-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3023.43,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3998.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803117",
+                                            "StopPointName": "E 57 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:58.294-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:32.552-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3205.85,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4180.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402228",
+                                            "StopPointName": "W 57 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:39.294-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:55.530-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3525.85,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4500.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402229",
+                                            "StopPointName": "W 57 ST/AV OF THE AMERICAS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:04.294-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:57.818-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3791.87,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4766.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400744",
+                                            "StopPointName": "W 57 ST/7 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.294-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:03.173-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3969.79,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4944.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400745",
+                                            "StopPointName": "W 57 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:32.295-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:09.882-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4322.67,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5297.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402233",
+                                            "StopPointName": "W 57 ST/9 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:48.295-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:09.702-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4615.06,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5589.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403986",
+                                            "StopPointName": "W 57 ST/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.295-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:26.502-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5122.44,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 6097.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903074",
+                                            "StopPointName": "W 54 ST/11 AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M31",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_OH_B1-Weekday-SDon-143500_M31_326"
+                                },
+                                "JourneyPatternRef": "MTA_M310173",
+                                "PublishedLineName": "M31",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404058",
+                                "DestinationName": "YORKVILLE 91 ST via YORK AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.980132,
+                                    "Latitude": 40.765562
+                                },
+                                "Bearing": 336.80142,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_OH_B1-Weekday-SDon_E_OH_28860_M31-315",
+                                "VehicleRef": "MTA NYCT_3930",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:17.277-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:51.568-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:51.568-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 331.71,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1565.76
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403621",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 57 ST/AV OF THE AMERICAS"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:17.279-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:51.568-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 331.71,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1565.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403621",
+                                            "StopPointName": "W 57 ST/AV OF THE AMERICAS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:40.279-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.525-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 565.82,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1799.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803095",
+                                            "StopPointName": "W 57 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.280-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.157-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 792.7,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2026.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403620",
+                                            "StopPointName": "E 57 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:50.280-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:22.160-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1100.95,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2335.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402214",
+                                            "StopPointName": "E 57 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:57.280-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:27.629-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1286.44,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2520.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402215",
+                                            "StopPointName": "E 57 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:04.280-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:07.931-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1474.28,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2708.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402216",
+                                            "StopPointName": "E 57 ST/2 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:26.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:31.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1703.18,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2937.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402217",
+                                            "StopPointName": "E 57 ST/1 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:00.195-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1799.81,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3033.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402218",
+                                            "StopPointName": "E 57 ST/SUTTON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:10.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:51.075-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1993.84,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3227.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402328",
+                                            "StopPointName": "SUTTON PL/SUTTON SQ"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:09.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:24.832-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2159.59,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3393.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404154",
+                                            "StopPointName": "YORK AV/E 60 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:36.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:45.023-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2404.63,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3638.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402330",
+                                            "StopPointName": "YORK AV/E 63 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.281-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:31.432-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2639.04,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3873.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402331",
+                                            "StopPointName": "YORK AV/E 66 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:36.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.377-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2826.95,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4061.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403563",
+                                            "StopPointName": "YORK AV/E 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:34.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:07.008-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3126.25,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4360.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402334",
+                                            "StopPointName": "YORK AV/E 72 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:01.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:48.759-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3265.65,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4499.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803159",
+                                            "StopPointName": "YORK AV/E 74 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:36.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:17.182-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3445.5,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4679.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402336",
+                                            "StopPointName": "YORK AV/E 76 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:23.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:20.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3686.35,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4920.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401877",
+                                            "StopPointName": "YORK AV/E 79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:13.282-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:06.761-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3942.16,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5176.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402338",
+                                            "StopPointName": "YORK AV/E 82 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:44.283-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:45.155-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4103.33,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5337.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402339",
+                                            "StopPointName": "YORK AV/E 84 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:20.283-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:15.598-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4291.71,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5525.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401909",
+                                            "StopPointName": "YORK AV/E 86 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:48.283-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:39.438-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4436.02,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5670.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401910",
+                                            "StopPointName": "YORK AV/E 88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:32.284-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:33.570-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4661.76,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5895.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403367",
+                                            "StopPointName": "E 91 ST/YORK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:16.284-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:31.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4888.81,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6122.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403383",
+                                            "StopPointName": "1 AV/E 91 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.284-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:47.493-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5115.04,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6349.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904918",
+                                            "StopPointName": "EAST 92 ST/YORK AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:28.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.269-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.269-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

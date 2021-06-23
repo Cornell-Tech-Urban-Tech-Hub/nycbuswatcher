@@ -1,0 +1,1046 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:01.574-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX3",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-143000_BX3_329"
+                                },
+                                "JourneyPatternRef": "MTA_BX030009",
+                                "PublishedLineName": "Bx3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_100176",
+                                "DestinationName": "WASHINGTON HEIGHTS G W BRIDGE",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_277078"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.904849,
+                                    "Latitude": 40.862897
+                                },
+                                "Bearing": 236.30994,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_52200_BX3-310",
+                                "VehicleRef": "MTA NYCT_8389",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:00.582-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.574-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.574-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 6.34,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3073.78
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 10
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100189",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNIVERSITY AV/W FORDHAM RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.585-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.574-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 6.34,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3073.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100189",
+                                            "StopPointName": "UNIVERSITY AV/W FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:18.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:22.737-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 478.4,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3545.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100191",
+                                            "StopPointName": "UNIVERSITY AV/W 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:16.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:23.937-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 828.55,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 3895.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103927",
+                                            "StopPointName": "UNIVERSITY AV/HALL OF FAME TE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:12.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1096.9,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4164.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103490",
+                                            "StopPointName": "UNIVERSITY AV/W 179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:25.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:42.430-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1421.25,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4488.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103532",
+                                            "StopPointName": "UNIVERSITY AV/MORTON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:41.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:13.995-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1712.53,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4779.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100195",
+                                            "StopPointName": "UNIVERSITY AV/W TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:45.587-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:18.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1959.12,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5026.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100197",
+                                            "StopPointName": "UNIVERSITY AV/W 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.587-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:16.392-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2245.28,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5312.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100198",
+                                            "StopPointName": "UNIVERSITY AV/W 174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:41.587-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:13.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2490.21,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5557.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100199",
+                                            "StopPointName": "UNIVERSITY AV/WASHINGTON BRIDGE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:59.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:22.799-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3317.63,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6385.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403652",
+                                            "StopPointName": "W 181 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:39.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:19.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3560.57,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6628.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403653",
+                                            "StopPointName": "W 181 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:05.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:25.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3711.34,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6778.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404324",
+                                            "StopPointName": "WADSWORTH AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:49.799-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4044.51,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7111.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903271",
+                                            "StopPointName": "W 179 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:28.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX3",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-140500_BX3_330"
+                                },
+                                "JourneyPatternRef": "MTA_BX030025",
+                                "PublishedLineName": "Bx3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_903273",
+                                "DestinationName": "RIVERDALE BWAY-238 ST",
+                                "OriginAimedDepartureTime": "2021-06-23T00:10:00.000-04:00",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_275646"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.900184,
+                                    "Latitude": 40.884947
+                                },
+                                "Bearing": 163.38335,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_54540_BX3-324",
+                                "VehicleRef": "MTA NYCT_4368",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:53:00.595-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.574-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.574-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 25.18,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7137.3
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100173",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 238 ST/BROADWAY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:00.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.574-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 25.18,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7137.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100173",
+                                            "StopPointName": "W 238 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:56.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX3",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-142500_BX3_331"
+                                },
+                                "JourneyPatternRef": "MTA_BX030025",
+                                "PublishedLineName": "Bx3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_903273",
+                                "DestinationName": "RIVERDALE BWAY-238 ST",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_275646"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.901155,
+                                    "Latitude": 40.868145
+                                },
+                                "Bearing": 52.765167,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_44220_BX13-405",
+                                "VehicleRef": "MTA NYCT_8670",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:01.628-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:04.214-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:04.214-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 40.93,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4771.08
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 6
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_103008",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W KINGSBRIDGE RD/UNIVERSITY AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:01.632-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:04.214-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 40.93,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4771.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103008",
+                                            "StopPointName": "W KINGSBRIDGE RD/UNIVERSITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.632-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:17.614-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 277.9,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5008.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100164",
+                                            "StopPointName": "W KINGSBRIDGE RD/SEDGWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:31.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:20.976-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 459.2,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5189.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100165",
+                                            "StopPointName": "SEDGWICK AV/W 195 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:11.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:08.950-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 695.43,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5425.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100166",
+                                            "StopPointName": "SEDGWICK AV/W 197 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:27.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:30.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 790.14,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5520.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100167",
+                                            "StopPointName": "SEDGWICK AV/W 229 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:10.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:13.293-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1043.91,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5774.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103489",
+                                            "StopPointName": "SEDGWICK AV/W 231 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:09.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:07.564-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1396.63,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 6126.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103931",
+                                            "StopPointName": "SEDGWICK AV/FT INDEPENDENCE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:25.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.764-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1487.43,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 6217.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100169",
+                                            "StopPointName": "FT INDEPENDENCE/GILES PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:10.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:32.964-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1755.02,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6485.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100170",
+                                            "StopPointName": "FT INDEPENDENCE ST/BAILEY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:58.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:17.536-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2042.44,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6772.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100171",
+                                            "StopPointName": "W 238 ST/ORLOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:26.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:04.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2205.74,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6935.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100172",
+                                            "StopPointName": "W 238 ST/BAILEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:34.836-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2407.16,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7137.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100173",
+                                            "StopPointName": "W 238 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:55.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX3",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-144500_BX3_332"
+                                },
+                                "JourneyPatternRef": "MTA_BX030025",
+                                "PublishedLineName": "Bx3",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_903273",
+                                "DestinationName": "RIVERDALE BWAY-238 ST",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_275646"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.937009,
+                                    "Latitude": 40.848992
+                                },
+                                "Bearing": 41.009087,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_18240_BX3-301",
+                                "VehicleRef": "MTA NYCT_8547",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:56.609-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:07.620-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:07.620-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 228.2,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 245.76
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_404330",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 181 ST/WADSWORTH AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:56.611-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:07.620-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 228.2,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 245.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404330",
+                                            "StopPointName": "W 181 ST/WADSWORTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:25.612-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:50.620-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 351.72,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 369.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403656",
+                                            "StopPointName": "W 181 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:25.612-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:03.820-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 612.93,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 630.48
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403658",
+                                            "StopPointName": "W 181 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:19.613-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.020-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1631.77,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1649.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100148",
+                                            "StopPointName": "UNIVERSITY AV/N OF WASHINGTON BDG"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.614-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:28.020-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1810.02,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1827.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100149",
+                                            "StopPointName": "UNIVERSITY AV/W 174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.614-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:07.831-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2210.52,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2228.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100151",
+                                            "StopPointName": "UNIVERSITY AV/W 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:46.614-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:45.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2372.84,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2390.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100152",
+                                            "StopPointName": "UNIVERSITY AV/W TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:03.615-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:32.159-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2637.09,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2654.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100153",
+                                            "StopPointName": "UNIVERSITY AV/MORTON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.615-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:05.317-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2830.59,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2848.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100154",
+                                            "StopPointName": "UNIVERSITY AV/W BURNSIDE AV #1"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:39.615-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:02.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2987.09,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3004.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100155",
+                                            "StopPointName": "UNIVERSITY AV/W BURNSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:02.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:25.516-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3314.38,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3331.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100156",
+                                            "StopPointName": "UNIVERSITY AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:20.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:20.728-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3625.45,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3643.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100157",
+                                            "StopPointName": "UNIVERSITY AV/W 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:11.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:00.462-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3826.65,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3844.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100158",
+                                            "StopPointName": "UNIVERSITY AV/W 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:39.180-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4020.9,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4038.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100159",
+                                            "StopPointName": "UNIVERSITY AV/W FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:29.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:10.180-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4380.41,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4397.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100161",
+                                            "StopPointName": "UNIVERSITY AV/W 190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:23.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:48.697-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4597.98,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4615.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100162",
+                                            "StopPointName": "UNIVERSITY AV/W 192 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:01.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:23.713-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4753.53,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4771.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103008",
+                                            "StopPointName": "W KINGSBRIDGE RD/UNIVERSITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:37.113-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4990.49,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5008.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100164",
+                                            "StopPointName": "W KINGSBRIDGE RD/SEDGWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:31.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:40.475-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5171.79,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5189.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100165",
+                                            "StopPointName": "SEDGWICK AV/W 195 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:11.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:28.449-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5408.03,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5425.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100166",
+                                            "StopPointName": "SEDGWICK AV/W 197 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:27.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:50.459-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5502.73,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5520.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100167",
+                                            "StopPointName": "SEDGWICK AV/W 229 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:10.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:32.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5756.51,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5774.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103489",
+                                            "StopPointName": "SEDGWICK AV/W 231 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:09.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:27.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6109.22,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6126.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103931",
+                                            "StopPointName": "SEDGWICK AV/FT INDEPENDENCE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:25.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:54.263-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6200.03,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6217.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100169",
+                                            "StopPointName": "FT INDEPENDENCE/GILES PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:10.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:52.463-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6467.62,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6485.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100170",
+                                            "StopPointName": "FT INDEPENDENCE ST/BAILEY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:58.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:37.035-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6755.03,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6772.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100171",
+                                            "StopPointName": "W 238 ST/ORLOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:26.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:23.535-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6918.33,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6935.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100172",
+                                            "StopPointName": "W 238 ST/BAILEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:54.335-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7119.75,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7137.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100173",
+                                            "StopPointName": "W 238 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:46.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:01.574-04:00",
+                    "ValidUntil": "2021-06-23T00:05:01.574-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-03-26T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Northbound Bx3 stop on University Ave at 174th St is closed because of construction",
+                                "Description": "Until further notice Northbound Bx3 stop on University Ave at 174th St is closed because of construction   Buses make a stop on University Ave at Featherbed Lane.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX3",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-03-26T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_275646"
+                            },
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-04-21T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Southbound Bx3 buses may experience delays because of construction on 181st St between Amsterdam Ave and University Ave",
+                                "Description": "Until further notice Southbound Bx3 buses may experience delays because of construction on 181st St between Amsterdam Ave and University Ave",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX3",
+                                                "DirectionRef": "1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "altered"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-04-21T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_277078"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

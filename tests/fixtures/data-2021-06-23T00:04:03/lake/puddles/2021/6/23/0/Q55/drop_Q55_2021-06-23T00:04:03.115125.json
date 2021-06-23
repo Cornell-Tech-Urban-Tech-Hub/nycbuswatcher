@@ -1,0 +1,293 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:00.527-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q55",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-142500_Q55_522"
+                                },
+                                "JourneyPatternRef": "MTA_Q550337",
+                                "PublishedLineName": "Q55",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504353",
+                                "DestinationName": "RIDGEWOOD TERM via MYRTLE",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.899717,
+                                    "Latitude": 40.700494
+                                },
+                                "Bearing": 180.75385,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_74880_Q55-522",
+                                "VehicleRef": "MTA NYCT_7805",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:34.537-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.527-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.527-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5784.48,
+                                            "DistanceFromCall": 77.69,
+                                            "PresentableDistance": "approaching"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 4
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504377",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MYRTLE AV/FOREST AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:34.553-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.527-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5784.48,
+                                                    "DistanceFromCall": 77.69,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504377",
+                                            "StopPointName": "MYRTLE AV/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:53.553-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.264-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5895.26,
+                                                    "DistanceFromCall": 188.47,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504378",
+                                            "StopPointName": "MYRTLE AV/ONDERDONK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:27.554-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:57.705-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6086.12,
+                                                    "DistanceFromCall": 379.33,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504379",
+                                            "StopPointName": "MYRTLE AV/SENECA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:05.555-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:49.530-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6304.3,
+                                                    "DistanceFromCall": 597.51,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504380",
+                                            "StopPointName": "MYRTLE AV/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:32.555-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:15.091-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6455.84,
+                                                    "DistanceFromCall": 749.05,
+                                                    "PresentableDistance": "4 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504381",
+                                            "StopPointName": "MYRTLE AV/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:21.557-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:35.342-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6737.49,
+                                                    "DistanceFromCall": 1030.7,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304418",
+                                            "StopPointName": "MYRTLE AV/PALMETTO AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.557-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:33.942-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7299.92,
+                                                    "DistanceFromCall": 1593.13,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901026",
+                                            "StopPointName": "PALMETTO ST/MYRTLE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:39.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q55",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-142500_B54_420"
+                                },
+                                "JourneyPatternRef": "MTA_Q550338",
+                                "PublishedLineName": "Q55",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_306442",
+                                "DestinationName": "RICHMOND HILL JAMAICA AV via MYRTLE",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.845808,
+                                    "Latitude": 40.701554
+                                },
+                                "Bearing": 353.83456,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_80700_B54-420",
+                                "VehicleRef": "MTA NYCT_4408",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:34.564-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.527-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.527-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5776.95,
+                                            "DistanceFromCall": 292.84,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504347",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MYRTLE AV/108 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:34.580-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.527-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5776.95,
+                                                    "DistanceFromCall": 292.84,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504347",
+                                            "StopPointName": "MYRTLE AV/108 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:10.580-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:35.178-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6041.68,
+                                                    "DistanceFromCall": 557.58,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504348",
+                                            "StopPointName": "MYRTLE AV/111 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:48.584-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.147-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6316.99,
+                                                    "DistanceFromCall": 832.89,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504349",
+                                            "StopPointName": "MYRTLE AV/114 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.585-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:37.270-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6406.0,
+                                                    "DistanceFromCall": 921.9,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504350",
+                                            "StopPointName": "MYRTLE AV/115 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:34.585-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:21.414-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6655.98,
+                                                    "DistanceFromCall": 1171.87,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504351",
+                                            "StopPointName": "117 ST/JAMAICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.586-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:15.814-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6844.46,
+                                                    "DistanceFromCall": 1360.36,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_804055",
+                                            "StopPointName": "MYRTLE AV/HILLSIDE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:31.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:00.527-04:00",
+                    "ValidUntil": "2021-06-23T00:05:00.527-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

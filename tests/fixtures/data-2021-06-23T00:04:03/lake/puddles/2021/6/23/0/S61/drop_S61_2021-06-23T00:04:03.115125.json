@@ -1,0 +1,804 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:02.851-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_S61",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_YU_B1-Weekday-SDon-144000_S6191_16"
+                                },
+                                "JourneyPatternRef": "MTA_S610205",
+                                "PublishedLineName": "S61",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_203006",
+                                "DestinationName": "S I MALL YUKON AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.073997,
+                                    "Latitude": 40.642962
+                                },
+                                "Bearing": 199.359,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_YU_B1-Weekday-SDon_E_YU_58200_MISC-165",
+                                "VehicleRef": "MTA NYCT_8725",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:49.859-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:48.104-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:48.104-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 292.61,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 333.44
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_200176",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "BAY ST/NICK LAPORTE PL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:49.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:48.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 292.61,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 333.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200176",
+                                            "StopPointName": "BAY ST/NICK LAPORTE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:41.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:37.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 644.77,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 685.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200177",
+                                            "StopPointName": "BAY ST/CENTRAL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:57.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 771.68,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 812.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_905003",
+                                            "StopPointName": "VICTORY BL / BAY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:34.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:53.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 908.99,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 949.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200293",
+                                            "StopPointName": "VICTORY BL/MONTGOMERY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:36.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:52.093-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1164.43,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1205.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203922",
+                                            "StopPointName": "VICTORY BL/BROOK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:58.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:56.517-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1503.92,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1544.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200570",
+                                            "StopPointName": "VICTORY BL/JERSEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:12.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.886-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1805.24,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1846.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203709",
+                                            "StopPointName": "VICTORY BL/CEBRA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:15.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:35.600-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2065.91,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2106.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200572",
+                                            "StopPointName": "VICTORY BL/WOODSTOCK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:05.658-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2251.12,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2291.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200573",
+                                            "StopPointName": "VICTORY BL/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:59.123-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2777.75,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2818.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200574",
+                                            "StopPointName": "VICTORY BL/EDDY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:38.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:47.271-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3110.36,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3151.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200575",
+                                            "StopPointName": "VICTORY BL/THERESA PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:04.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:10.286-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3340.77,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3381.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200576",
+                                            "StopPointName": "VICTORY BL/GOLF COURSE ENT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:33.862-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:34.864-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3589.32,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3630.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203092",
+                                            "StopPointName": "VICTORY BL/SILVER LAKE APTS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:57.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:02.311-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3804.59,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3845.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202661",
+                                            "StopPointName": "VICTORY BL/CHESHIRE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:24.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:31.929-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4035.31,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4076.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200579",
+                                            "StopPointName": "VICTORY BL/MELROSE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:25.870-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4354.32,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4395.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200580",
+                                            "StopPointName": "VICTORY BL/CLOVE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:38.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:57.706-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4634.51,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4675.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202604",
+                                            "StopPointName": "VICTORY BL/LABAU AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:52.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:07.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4746.07,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4786.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202660",
+                                            "StopPointName": "VICTORY BL/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:23.863-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:28.171-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4974.43,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5015.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200582",
+                                            "StopPointName": "VICTORY BL/ALBERT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:49.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:46.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5171.13,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5211.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200583",
+                                            "StopPointName": "VICTORY BL/LITTLE CLOVE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:31.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:37.930-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5484.22,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5525.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200584",
+                                            "StopPointName": "VICTORY BL/SLOSSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:02.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5699.43,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5740.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200585",
+                                            "StopPointName": "VICTORY BL/HODGES PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:36.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:37.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5967.0,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6007.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200586",
+                                            "StopPointName": "VICTORY BL/MANOR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:59.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:05.248-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6138.09,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6178.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203050",
+                                            "StopPointName": "VICTORY BL/S GREENLEAF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:26.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:26.385-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6338.9,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6379.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203710",
+                                            "StopPointName": "VICTORY BL/WESTCOTT BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:53.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6595.48,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6636.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201422",
+                                            "StopPointName": "VICTORY BL/JEWETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:34.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:50.312-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6798.1,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6838.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202548",
+                                            "StopPointName": "BRADLEY AV/VICTORY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:06.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:18.060-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6984.46,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7025.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201356",
+                                            "StopPointName": "BRADLEY AV/PURDY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:52.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:06.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7261.47,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7302.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201357",
+                                            "StopPointName": "BRADLEY AV/N GANNON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:33.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:38.794-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7506.66,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7547.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201358",
+                                            "StopPointName": "BRADLEY AV/WESTWOOD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:09.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:23.403-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7718.61,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7759.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201359",
+                                            "StopPointName": "BRADLEY AV/WILLOWBROOK RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:52.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:14.230-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 7972.67,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8013.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201360",
+                                            "StopPointName": "BRADLEY AV/HAROLD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:14.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:50.513-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8104.36,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8145.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202709",
+                                            "StopPointName": "HAROLD ST/ROOSEVELT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:48.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:15.434-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8306.72,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8347.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202710",
+                                            "StopPointName": "HAROLD ST/SUNSET AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:19.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:34.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8492.15,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8532.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202711",
+                                            "StopPointName": "HAROLD ST/JOSEPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:01.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:05.484-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8738.09,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8778.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202712",
+                                            "StopPointName": "HAROLD ST/FOREST HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:21.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:15.903-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9211.51,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9252.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203074",
+                                            "StopPointName": "FOREST HILL RD/STEERS  ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:18.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:35.924-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.2 miles away",
+                                                    "DistanceFromCall": 9910.25,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9951.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202715",
+                                            "StopPointName": "FOREST HILL RD/1150 FOREST HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:05.622-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.3 miles away",
+                                                    "DistanceFromCall": 10158.81,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10199.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203689",
+                                            "StopPointName": "FOREST HILL RD/ROCKLAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:30.866-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:27.158-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.7 miles away",
+                                                    "DistanceFromCall": 10784.77,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10825.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202716",
+                                            "StopPointName": "TRAVIS AV/BOGOTA ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:05.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:50.220-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.9 miles away",
+                                                    "DistanceFromCall": 11028.53,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 11069.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202717",
+                                            "StopPointName": "TRAVIS AV/EVANS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:56.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:28.898-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.1 miles away",
+                                                    "DistanceFromCall": 11387.59,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 11428.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202718",
+                                            "StopPointName": "TRAVIS AV/DENKER PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:35.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:01.568-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.2 miles away",
+                                                    "DistanceFromCall": 11663.48,
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 11704.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202719",
+                                            "StopPointName": "TRAVIS AV/NEHRING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:01.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:30.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.4 miles away",
+                                                    "DistanceFromCall": 11842.01,
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11882.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202720",
+                                            "StopPointName": "MERRYMOUNT ST/TRAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:38.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:09.973-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.5 miles away",
+                                                    "DistanceFromCall": 12099.63,
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 12140.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202721",
+                                            "StopPointName": "MERRYMOUNT ST/SHILOH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:38.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:19.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.8 miles away",
+                                                    "DistanceFromCall": 12517.98,
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 12558.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202991",
+                                            "StopPointName": "RICHMOND HILL RD/VASSAR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:13.867-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:55.299-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.9 miles away",
+                                                    "DistanceFromCall": 12762.53,
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 12803.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202931",
+                                            "StopPointName": "MARSH AV/RICHMOND HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:36.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:18.972-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "8.0 miles away",
+                                                    "DistanceFromCall": 12922.77,
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 12963.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203478",
+                                            "StopPointName": "MARSH AV/RING RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:19.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:47.522-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "8.2 miles away",
+                                                    "DistanceFromCall": 13224.66,
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 13265.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202849",
+                                            "StopPointName": "MARSH AV/ELMWOOD PK DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:07.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:19.928-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "8.4 miles away",
+                                                    "DistanceFromCall": 13561.6,
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 13602.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202850",
+                                            "StopPointName": "MARSH AV/WINDHAM LOOP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:00.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:21.131-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "8.7 miles away",
+                                                    "DistanceFromCall": 13931.41,
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 13972.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203197",
+                                            "StopPointName": "PLATINUM AV/SEARS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:39.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:47.172-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "9.1 miles away",
+                                                    "DistanceFromCall": 14587.61,
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 14628.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200456",
+                                            "StopPointName": "YUKON AV/RICHMOND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:00.868-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:05.101-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "9.1 miles away",
+                                                    "DistanceFromCall": 14725.19,
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 14766.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203831",
+                                            "StopPointName": "YUKON AV/KMART DRWY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:55.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:02.851-04:00",
+                    "ValidUntil": "2021-06-23T00:05:02.851-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

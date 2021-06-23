@@ -1,0 +1,444 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.721-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M50",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-144000_M50_360"
+                                },
+                                "JourneyPatternRef": "MTA_M500049",
+                                "PublishedLineName": "M50",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_402183",
+                                "DestinationName": "WEST SIDE 42 ST PIER CROSSTOWN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.972599,
+                                    "Latitude": 40.755769
+                                },
+                                "Bearing": 157.15297,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_17820_M50-352",
+                                "VehicleRef": "MTA NYCT_13",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:11.734-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:13.492-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:13.492-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 55.41,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 592.35
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_402186",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 49 ST/LEXINGTON AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:11.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:13.492-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 55.41,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 592.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402186",
+                                            "StopPointName": "E 49 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:59.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:56.072-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 356.65,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 893.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402188",
+                                            "StopPointName": "E 49 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:53.092-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 525.77,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1062.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402189",
+                                            "StopPointName": "W 49 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:33.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:24.892-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 828.97,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1365.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402191",
+                                            "StopPointName": "W 49 ST/AV OF THE AMERICAS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:35.707-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1111.53,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1648.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404035",
+                                            "StopPointName": "W 49 ST/7 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:07.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:34.078-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1399.69,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1936.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404948",
+                                            "StopPointName": "W 49 ST/8 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:04.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:33.878-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1641.19,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2178.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402194",
+                                            "StopPointName": "W 49 ST/9 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:59.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:27.387-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1877.65,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2414.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402195",
+                                            "StopPointName": "W 49 ST/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:16.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:47.503-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2208.73,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2745.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403954",
+                                            "StopPointName": "W 49 ST/11 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:55.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:20.103-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2373.05,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2909.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403955",
+                                            "StopPointName": "W 49 ST/12 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:50.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:17.481-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2608.47,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3145.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403956",
+                                            "StopPointName": "12 AV/W 46 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.740-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:01.253-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2910.24,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3447.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_903082",
+                                            "StopPointName": "12 AV/W 42 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M50",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-144000_M50_361"
+                                },
+                                "JourneyPatternRef": "MTA_M500048",
+                                "PublishedLineName": "M50",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803055",
+                                "DestinationName": "EAST SIDE 49 ST-1 AV CROSSTOWN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.996394,
+                                    "Latitude": 40.766607
+                                },
+                                "Bearing": 337.68155,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_20520_M50-353",
+                                "VehicleRef": "MTA NYCT_3817",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:00.744-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:19.980-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:19.980-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 184.03,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 900.92
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_402164",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 50 ST/11 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:19.980-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 184.03,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 900.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402164",
+                                            "StopPointName": "W 50 ST/11 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:59.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:41.780-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 458.98,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1175.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402165",
+                                            "StopPointName": "W 50 ST/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:51.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:33.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 706.49,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1423.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402166",
+                                            "StopPointName": "W 50 ST/9 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:35.919-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1028.21,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1745.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402167",
+                                            "StopPointName": "W 50 ST/8 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:19.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:56.453-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1248.1,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1964.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403760",
+                                            "StopPointName": "W 50 ST/7 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:14.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:07.030-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1566.2,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2283.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402169",
+                                            "StopPointName": "W 50 ST/AV OF THE AMERICAS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:28.245-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1862.05,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2578.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402171",
+                                            "StopPointName": "E 50 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:49.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:30.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2025.97,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2742.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402172",
+                                            "StopPointName": "E 50 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:25.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:01.787-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2346.04,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3062.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402173",
+                                            "StopPointName": "E 50 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:12.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:25.388-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2505.69,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3222.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402174",
+                                            "StopPointName": "E 50 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.762-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:59.188-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2665.32,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3382.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402175",
+                                            "StopPointName": "E 50 ST/2 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.762-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:59.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3169.15,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3886.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803151",
+                                            "StopPointName": "49 ST/1 AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:43.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.721-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.721-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

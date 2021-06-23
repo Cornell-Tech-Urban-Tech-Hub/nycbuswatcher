@@ -1,0 +1,1921 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.562-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B20",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-143600_B20_124"
+                                },
+                                "JourneyPatternRef": "MTA_B200104",
+                                "PublishedLineName": "B20",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504175",
+                                "DestinationName": "SPRING CREEK STANLEY AV POSTAL FAC",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.902203,
+                                    "Latitude": 40.704671
+                                },
+                                "Bearing": 215.23544,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "VehicleRef": "MTA NYCT_7750",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:56:00.587-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 0.0
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504175",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "PUTNAM AV/FAIRVIEW AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:00.587-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 0.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504175",
+                                            "StopPointName": "PUTNAM AV/FAIRVIEW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:40.587-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.562-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 176.01,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 176.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503454",
+                                            "StopPointName": "67 AV/60 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:00.587-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:58.843-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 532.44,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 532.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503455",
+                                            "StopPointName": "67 AV/FRESH POND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:58.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:18.793-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 791.8,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 791.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504127",
+                                            "StopPointName": "FRESH POND RD/CATALPA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:24.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:35.062-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 906.13,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 906.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504129",
+                                            "StopPointName": "FRESH POND RD/70 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:09.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:06.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1108.52,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1108.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504130",
+                                            "StopPointName": "FRESH POND RD/MYRTLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:03.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:12.015-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1351.23,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1351.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504177",
+                                            "StopPointName": "SUMMERFIELD ST/MYRTLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:44.588-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:49.075-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1531.77,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1531.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504178",
+                                            "StopPointName": "SUMMERFIELD ST/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:25.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.066-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1717.05,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 1717.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504179",
+                                            "StopPointName": "SUMMERFIELD ST/SENECA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:50.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.420-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1829.8,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 1829.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504180",
+                                            "StopPointName": "SUMMERFIELD ST/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:54.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:39.730-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2114.09,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2114.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504181",
+                                            "StopPointName": "SUMMERFIELD ST/WYCKOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:28.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:23.064-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2266.29,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2266.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504182",
+                                            "StopPointName": "COVERT ST/WYCKOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:17.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:07.062-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2483.47,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 2483.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302013",
+                                            "StopPointName": "IRVING AV/COVERT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:23.589-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:04.327-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2779.36,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 2779.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302014",
+                                            "StopPointName": "SCHAEFER ST/KNICKERBOCKER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:09.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:44.262-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2984.77,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 2984.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302015",
+                                            "StopPointName": "SCHAEFER ST/WILSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:56.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:32.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3193.21,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3193.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302016",
+                                            "StopPointName": "SCHAEFER ST/CENTRAL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:41.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:05.998-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3393.5,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3393.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302017",
+                                            "StopPointName": "SCHAEFER ST/EVERGREEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:28.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:53.795-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3603.69,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 3603.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306374",
+                                            "StopPointName": "SCHAEFER ST/BUSHWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:24.595-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3748.86,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 3748.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302018",
+                                            "StopPointName": "SCHAEFER ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:10.590-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:50.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3964.78,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 3964.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302019",
+                                            "StopPointName": "BROADWAY/ROCKAWAY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:57.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:24.355-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4109.57,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4109.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302020",
+                                            "StopPointName": "BROADWAY/CHAUNCEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:45.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:51.868-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4255.41,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 4255.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307207",
+                                            "StopPointName": "BROADWAY/GRANITE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:11.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:03.734-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4519.74,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 4519.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302022",
+                                            "StopPointName": "BROADWAY/HULL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:27.534-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4857.0,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 4857.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307897",
+                                            "StopPointName": "VAN SINDEREN AV/FULTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:11.245-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5271.9,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5271.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307305",
+                                            "StopPointName": "FULTON ST/ALABAMA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:42.591-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:46.205-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5404.04,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 5404.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901523",
+                                            "StopPointName": "FULTON ST/SHEFFIELD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:22.592-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:12.933-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5713.64,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 5713.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307925",
+                                            "StopPointName": "PENNSYLVANIA AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:30.592-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:20.760-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6113.64,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6113.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302030",
+                                            "StopPointName": "PENNSYLVANIA AV/PITKIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:15.592-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:45.559-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6256.34,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6256.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302031",
+                                            "StopPointName": "PENNSYLVANIA AV/BELMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.592-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:21.945-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6396.2,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 6396.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302032",
+                                            "StopPointName": "PENNSYLVANIA AV/SUTTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:37.592-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:55.121-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6570.77,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 6570.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302033",
+                                            "StopPointName": "PENNSYLVANIA AV/BLAKE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:12.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:27.321-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6742.1,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 6742.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302034",
+                                            "StopPointName": "PENNSYLVANIA AV/DUMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:54.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:08.543-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6939.54,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 6939.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302035",
+                                            "StopPointName": "PENNSYLVANIA AV/LIVONIA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:27.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:48.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7094.57,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7094.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302036",
+                                            "StopPointName": "PENNSYLVANIA AV/RIVERDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:26.435-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7254.32,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 7254.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302037",
+                                            "StopPointName": "PENNSYLVANIA AV/NEW LOTS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:49.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:16.423-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7500.14,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 7500.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302038",
+                                            "StopPointName": "PENNSYLVANIA AV/HEGEMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:29.593-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:23.683-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7696.85,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 7696.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302039",
+                                            "StopPointName": "PENNSYLVANIA AV/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:05.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:19.719-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7879.56,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 7879.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302040",
+                                            "StopPointName": "PENNSYLVANIA AV/STANLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:46.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:17.519-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8083.79,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 8083.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300584",
+                                            "StopPointName": "WORTMAN AV/PENNSYLVANIA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:17.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:57.873-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8237.97,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 8237.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300585",
+                                            "StopPointName": "WORTMAN AV/VERMONT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:08.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:36.304-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8493.08,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 8493.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307119",
+                                            "StopPointName": "WORTMAN AV/VAN SICLEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:51.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:39.067-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8708.31,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 8708.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300587",
+                                            "StopPointName": "WORTMAN AV/SCHENCK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:23.594-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:00.975-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8866.59,
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 8866.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300588",
+                                            "StopPointName": "WORTMAN AV/JEROME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:54.595-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:30.313-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 9022.91,
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 9022.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306881",
+                                            "StopPointName": "ASHFORD ST/WORTMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:31.595-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:01.746-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9206.54,
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 9206.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307600",
+                                            "StopPointName": "ASHFORD ST/STANLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:00.595-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:32.168-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.8 miles away",
+                                                    "DistanceFromCall": 9365.17,
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 9365.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306855",
+                                            "StopPointName": "ASHFORD ST/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:49.595-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:30.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9708.46,
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 9708.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302049",
+                                            "StopPointName": "LINDEN BL/ESSEX ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:22.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:23.397-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.2 miles away",
+                                                    "DistanceFromCall": 9947.72,
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 9947.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302050",
+                                            "StopPointName": "LINDEN BL/ATKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:54.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:05.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.3 miles away",
+                                                    "DistanceFromCall": 10180.49,
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 10180.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302051",
+                                            "StopPointName": "LINDEN BL/LOGAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:32.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:17.344-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.5 miles away",
+                                                    "DistanceFromCall": 10454.37,
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 10454.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301155",
+                                            "StopPointName": "LINDEN BL/EUCLID AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:55.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:50.309-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.6 miles away",
+                                                    "DistanceFromCall": 10627.79,
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 10627.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301156",
+                                            "StopPointName": "LINDEN BL/CRESCENT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:17.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:18.709-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.7 miles away",
+                                                    "DistanceFromCall": 10782.4,
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 10782.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307627",
+                                            "StopPointName": "LINDEN BL/AUTUMN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.597-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:21.934-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.9 miles away",
+                                                    "DistanceFromCall": 11095.72,
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 11095.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307628",
+                                            "StopPointName": "ELDERT LA/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:31.597-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:53.334-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.0 miles away",
+                                                    "DistanceFromCall": 11262.28,
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 11262.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307629",
+                                            "StopPointName": "ELDERT LA/LORING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:06.597-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:25.134-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.1 miles away",
+                                                    "DistanceFromCall": 11442.68,
+                                                    "StopsFromCall": 54,
+                                                    "CallDistanceAlongRoute": 11442.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307896",
+                                            "StopPointName": "STANLEY AV/ELDERT LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:00.597-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:26.392-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.3 miles away",
+                                                    "DistanceFromCall": 11731.26,
+                                                    "StopsFromCall": 55,
+                                                    "CallDistanceAlongRoute": 11731.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901067",
+                                            "StopPointName": "POSTAL FACILITY RD/IN FRONT OF FACILITY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B20",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-140000_B20_126"
+                                },
+                                "JourneyPatternRef": "MTA_B200017",
+                                "PublishedLineName": "B20",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307269",
+                                "DestinationName": "RIDGEWOOD FOREST AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.902025,
+                                    "Latitude": 40.704909
+                                },
+                                "Bearing": 292.02304,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_51420_B20-121",
+                                "VehicleRef": "MTA NYCT_7512",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:00.614-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 3.88,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 12238.2
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 2
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_901066",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "PUTNAM AV/FAIRVIEW AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.622-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 3.88,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 12238.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901066",
+                                            "StopPointName": "PUTNAM AV/FAIRVIEW AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:29.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B20",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-141100_B26_232"
+                                },
+                                "JourneyPatternRef": "MTA_B200104",
+                                "PublishedLineName": "B20",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504175",
+                                "DestinationName": "SPRING CREEK STANLEY AV POSTAL FAC",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.883729,
+                                    "Latitude": 40.657479
+                                },
+                                "Bearing": 22.879055,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_22440_B20-112",
+                                "VehicleRef": "MTA NYCT_7268",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:08.573-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.562-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.562-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 5.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8493.08
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_307119",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WORTMAN AV/VAN SICLEN AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:08.579-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.562-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 5.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8493.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307119",
+                                            "StopPointName": "WORTMAN AV/VAN SICLEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:51.579-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:31.516-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 220.24,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8708.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300587",
+                                            "StopPointName": "WORTMAN AV/SCHENCK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:23.580-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:53.424-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 378.52,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8866.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300588",
+                                            "StopPointName": "WORTMAN AV/JEROME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:54.580-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:22.762-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 534.83,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9022.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306881",
+                                            "StopPointName": "ASHFORD ST/WORTMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:31.580-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:54.195-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 718.46,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9206.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307600",
+                                            "StopPointName": "ASHFORD ST/STANLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.581-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:24.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 877.09,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9365.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306855",
+                                            "StopPointName": "ASHFORD ST/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:49.581-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:23.217-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1220.39,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 9708.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302049",
+                                            "StopPointName": "LINDEN BL/ESSEX ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:22.581-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:15.846-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1459.64,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 9947.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302050",
+                                            "StopPointName": "LINDEN BL/ATKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:54.581-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:58.389-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1692.42,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10180.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302051",
+                                            "StopPointName": "LINDEN BL/LOGAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:32.581-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:09.793-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1966.29,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 10454.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301155",
+                                            "StopPointName": "LINDEN BL/EUCLID AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:55.582-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:42.758-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2139.71,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10627.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301156",
+                                            "StopPointName": "LINDEN BL/CRESCENT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:17.582-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:11.158-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2294.33,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 10782.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307627",
+                                            "StopPointName": "LINDEN BL/AUTUMN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.582-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:14.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2607.64,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11095.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307628",
+                                            "StopPointName": "ELDERT LA/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:31.582-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:45.783-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2774.21,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 11262.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307629",
+                                            "StopPointName": "ELDERT LA/LORING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:06.582-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:17.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2954.61,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 11442.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307896",
+                                            "StopPointName": "STANLEY AV/ELDERT LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.583-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:18.841-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3243.18,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 11731.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901067",
+                                            "StopPointName": "POSTAL FACILITY RD/IN FRONT OF FACILITY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:28.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B20",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-144000_B20_125"
+                                },
+                                "JourneyPatternRef": "MTA_B200017",
+                                "PublishedLineName": "B20",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307269",
+                                "DestinationName": "RIDGEWOOD FOREST AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.8699,
+                                    "Latitude": 40.668276
+                                },
+                                "Bearing": 217.74681,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_56160_B20-124",
+                                "VehicleRef": "MTA NYCT_7717",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:54.601-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.562-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.562-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 37.59,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1975.97
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301033",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "LINDEN BL/EUCLID AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:54.602-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.562-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 37.59,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1975.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301033",
+                                            "StopPointName": "LINDEN BL/EUCLID AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:46.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:56.094-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 353.87,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 2292.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301943",
+                                            "StopPointName": "LINDEN BL/LOGAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:25.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:22.214-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 591.48,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2529.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301944",
+                                            "StopPointName": "LINDEN BL/ATKINS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:43.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.560-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 705.86,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2644.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301945",
+                                            "StopPointName": "LINDEN BL/SHEPHERD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:01.146-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1177.78,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 3116.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301947",
+                                            "StopPointName": "ASHFORD ST/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:42.603-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:36.094-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1368.44,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 3306.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307398",
+                                            "StopPointName": "ASHFORD ST/STANLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:13.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:02.813-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1503.06,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3441.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306847",
+                                            "StopPointName": "ASHFORD ST/WORTMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:19.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:50.556-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1796.65,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3735.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306848",
+                                            "StopPointName": "WORTMAN AV/BARBEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:02.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:30.254-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1983.39,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3921.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307225",
+                                            "StopPointName": "WORTMAN AV/VAN SICLEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:21.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:24.841-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2338.29,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4276.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307103",
+                                            "StopPointName": "WORTMAN AV/VERMONT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:58.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:13.455-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2498.62,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4437.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301956",
+                                            "StopPointName": "PENNSYLVANIA AV/WORTMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:39.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:09.887-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2684.32,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4622.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301957",
+                                            "StopPointName": "PENNSYLVANIA AV/STANLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:09.604-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:37.463-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2815.92,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4754.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301958",
+                                            "StopPointName": "PENNSYLVANIA AV/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:05.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:42.187-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3063.48,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5001.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301959",
+                                            "StopPointName": "PENNSYLVANIA AV/HEGEMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:15.443-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3309.84,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 5248.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301960",
+                                            "StopPointName": "PENNSYLVANIA AV/NEW LOTS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:15.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:35.094-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3418.05,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 5356.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301961",
+                                            "StopPointName": "PENNSYLVANIA AV/RIVERDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:49.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:08.446-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3659.69,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5598.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301962",
+                                            "StopPointName": "PENNSYLVANIA AV/LIVONIA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:11.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:37.246-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3815.01,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5753.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301963",
+                                            "StopPointName": "PENNSYLVANIA AV/DUMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:35.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:18.846-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3986.44,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5924.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301964",
+                                            "StopPointName": "PENNSYLVANIA AV/BLAKE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.605-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:47.154-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4162.08,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 6100.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301965",
+                                            "StopPointName": "PENNSYLVANIA AV/SUTTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:34.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:18.354-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4301.92,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 6240.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301966",
+                                            "StopPointName": "PENNSYLVANIA AV/BELMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:10.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:57.208-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4454.8,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6393.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301967",
+                                            "StopPointName": "PENNSYLVANIA AV/PITKIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:07.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:43.496-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4689.22,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6627.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301969",
+                                            "StopPointName": "PENNSYLVANIA AV/LIBERTY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:17.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:56.909-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4733.17,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6671.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301382",
+                                            "StopPointName": "PENNSYLVANIA AV/LIBERTY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:13.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:53.223-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5213.73,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7152.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301384",
+                                            "StopPointName": "JAMAICA AV/FANCHON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:27.023-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5409.09,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 7347.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301973",
+                                            "StopPointName": "JAMAICA AV/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:50.359-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5728.96,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7667.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308276",
+                                            "StopPointName": "VAN SINDEREN AV/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:48.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:32.907-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5992.7,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7931.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301976",
+                                            "StopPointName": "BROADWAY/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:17.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:09.388-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6148.16,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 8086.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301977",
+                                            "StopPointName": "BROADWAY/ABERDEEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:46.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:57.658-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6309.72,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 8248.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301978",
+                                            "StopPointName": "BROADWAY/GRANITE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:16.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:26.401-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6469.21,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 8407.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301979",
+                                            "StopPointName": "BROADWAY/CHAUNCEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:44.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:55.894-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6623.92,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8562.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301980",
+                                            "StopPointName": "BROADWAY/COOPER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:38.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:01.892-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6911.81,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8850.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301982",
+                                            "StopPointName": "DECATUR ST/BUSHWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:18.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:45.202-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7119.94,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 9058.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301983",
+                                            "StopPointName": "DECATUR ST/EVERGREEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:55.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:16.640-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7312.7,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9251.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301984",
+                                            "StopPointName": "DECATUR ST/CENTRAL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:34.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:01.309-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7517.9,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9456.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301985",
+                                            "StopPointName": "DECATUR ST/WILSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:13.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:34.818-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7720.96,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9659.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301986",
+                                            "StopPointName": "DECATUR ST/KNICKERBOCKER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:56.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:09.801-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7943.3,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9881.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504547",
+                                            "StopPointName": "DECATUR ST/IRVING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:38.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:59.419-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8163.56,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10101.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504170",
+                                            "StopPointName": "DECATUR ST/WYCKOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:31.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:43.123-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8438.33,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10376.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504171",
+                                            "StopPointName": "DECATUR ST/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:55.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:06.461-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8564.89,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10503.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504172",
+                                            "StopPointName": "DECATUR ST/SENECA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:31.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:44.106-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8749.4,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 10687.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504173",
+                                            "StopPointName": "DECATUR ST/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:18.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:39.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 8998.0,
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 10936.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504174",
+                                            "StopPointName": "DECATUR ST/MYRTLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:55.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:53.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9189.38,
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11127.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504102",
+                                            "StopPointName": "FRESH POND RD/MYRTLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:31.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:20.136-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.8 miles away",
+                                                    "DistanceFromCall": 9380.03,
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 11318.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504104",
+                                            "StopPointName": "FRESH POND RD/70 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:02.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:44.574-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.9 miles away",
+                                                    "DistanceFromCall": 9539.21,
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 11477.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504105",
+                                            "StopPointName": "FRESH POND RD/CATALPA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:31.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:19.016-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9691.79,
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 11630.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504106",
+                                            "StopPointName": "FRESH POND RD/68 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:00.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:50.016-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.1 miles away",
+                                                    "DistanceFromCall": 9842.39,
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 11780.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504107",
+                                            "StopPointName": "PUTNAM AV/FRESH POND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:49.610-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.4 miles away",
+                                                    "DistanceFromCall": 10257.14,
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 12195.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504109",
+                                            "StopPointName": "PUTNAM AV/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:01.016-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.4 miles away",
+                                                    "DistanceFromCall": 10299.82,
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 12238.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901066",
+                                            "StopPointName": "PUTNAM AV/FAIRVIEW AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:26.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.562-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.562-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

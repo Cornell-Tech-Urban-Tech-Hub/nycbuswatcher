@@ -1,0 +1,1660 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.658-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M10",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-142500_M116_717"
+                                },
+                                "JourneyPatternRef": "MTA_M100005",
+                                "PublishedLineName": "M10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403846",
+                                "DestinationName": "HARLEM 159 ST via 8 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.956723,
+                                    "Latitude": 40.802558
+                                },
+                                "Bearing": 53.8129,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_4173",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:58.678-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.538-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.538-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 28.25,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4648.95
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_401268",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FRED DOUGLASS BL/W 113 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:58.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.538-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 28.25,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4648.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401268",
+                                            "StopPointName": "FRED DOUGLASS BL/W 113 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.816-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 281.73,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4902.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401269",
+                                            "StopPointName": "FRED DOUGLASS BL/W 116 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:23.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:15.978-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 487.27,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5107.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401270",
+                                            "StopPointName": "FRED DOUGLASS BL/W 119 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:19.682-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.938-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 625.14,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5245.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401271",
+                                            "StopPointName": "FRED DOUGLASS BL/W 121 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:43.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.738-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 832.27,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5452.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401272",
+                                            "StopPointName": "FRED DOUGLASS BL/W 123 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:18.746-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1021.25,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5641.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405182",
+                                            "StopPointName": "FRED DOUGLASS BL/W 125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:38.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:32.209-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1172.7,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5793.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401274",
+                                            "StopPointName": "FRED DOUGLASS BL/W 127 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:15.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:02.351-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1318.89,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5939.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401275",
+                                            "StopPointName": "FRED DOUGLASS BL/W 129 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:55.683-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:47.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1476.94,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6097.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401276",
+                                            "StopPointName": "FRED DOUGLASS BL/W 131 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:36.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:38.312-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1641.2,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6261.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401277",
+                                            "StopPointName": "FRED DOUGLASS BL/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:19.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:33.356-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1811.36,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6432.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403982",
+                                            "StopPointName": "FRED DOUGLASS BL/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:19.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:45.756-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2049.12,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6669.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403832",
+                                            "StopPointName": "FRED DOUGLASS BL/W 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:19.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:53.349-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2290.16,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6910.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401281",
+                                            "StopPointName": "FRED DOUGLASS BL/W 141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:58.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:45.270-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2444.91,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7065.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401282",
+                                            "StopPointName": "FRED DOUGLASS BL/W 143 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:42.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:36.804-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2617.95,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7238.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403826",
+                                            "StopPointName": "FRED DOUGLASS BL/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:40.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:49.019-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2847.88,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 7468.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404825",
+                                            "StopPointName": "FRED DOUGLASS BL/W 148 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:07.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:30.819-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2958.59,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7579.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404325",
+                                            "StopPointName": "FRED DOUGLASS BL/MACOMBS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:22.684-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:54.784-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3254.41,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7875.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401286",
+                                            "StopPointName": "FRED DOUGLASS BL/W 153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:59.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:37.556-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3401.5,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8022.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401287",
+                                            "StopPointName": "FRED DOUGLASS BL/W 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.685-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:39.756-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3644.63,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 8265.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401288",
+                                            "StopPointName": "FRED DOUGLASS BL/W 158 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:52.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M10",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-140000_M98_910"
+                                },
+                                "JourneyPatternRef": "MTA_M100005",
+                                "PublishedLineName": "M10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403846",
+                                "DestinationName": "HARLEM 159 ST via 8 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.941904,
+                                    "Latitude": 40.822853
+                                },
+                                "Bearing": 53.130104,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_6708",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:52:42.666-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 39.33,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7238.65
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403826",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FRED DOUGLASS BL/W 145 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:42.672-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 39.33,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7238.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403826",
+                                            "StopPointName": "FRED DOUGLASS BL/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:40.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 269.25,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7468.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404825",
+                                            "StopPointName": "FRED DOUGLASS BL/W 148 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:07.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 379.97,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7579.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404325",
+                                            "StopPointName": "FRED DOUGLASS BL/MACOMBS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:22.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 675.79,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 7875.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401286",
+                                            "StopPointName": "FRED DOUGLASS BL/W 153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:59.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 822.87,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8022.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401287",
+                                            "StopPointName": "FRED DOUGLASS BL/W 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:00.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1066.01,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8265.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401288",
+                                            "StopPointName": "FRED DOUGLASS BL/W 158 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:57.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M10",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-143500_M116_718"
+                                },
+                                "JourneyPatternRef": "MTA_M100067",
+                                "PublishedLineName": "M10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404135",
+                                "DestinationName": "57 ST-BROADWAY via CENTRAL PK W.",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.945067,
+                                    "Latitude": 40.818513
+                                },
+                                "Bearing": 234.46233,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_53400_M10-20",
+                                "VehicleRef": "MTA NYCT_4059",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:57.702-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.658-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.658-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 47.65,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1628.05
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_401313",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FRED DOUGLASS BL/W 138 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:57.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.658-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 47.65,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1628.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401313",
+                                            "StopPointName": "FRED DOUGLASS BL/W 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:11.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:53.694-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 298.78,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1879.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401314",
+                                            "StopPointName": "FRED DOUGLASS BL/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:59.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:35.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 462.29,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2042.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401315",
+                                            "StopPointName": "FRED DOUGLASS BL/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:16.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:45.753-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 726.39,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2306.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401317",
+                                            "StopPointName": "FRED DOUGLASS BL/W 129 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:51.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:11.757-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 846.77,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2427.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403276",
+                                            "StopPointName": "FRED DOUGLASS BL/W 128 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:30.464-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1081.74,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2662.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405384",
+                                            "StopPointName": "FREDERICK DOUGLASS BL/125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:18.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:34.138-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1404.31,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2984.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405289",
+                                            "StopPointName": "FREDERICK DOUGLASS/W 121 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:01.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:12.052-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1583.61,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3164.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404245",
+                                            "StopPointName": "FRED DOUGLASS BL/W 119 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:22.427-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1829.55,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3409.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404915",
+                                            "StopPointName": "FREDERICK DOUGLASS BL/W 116 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:27.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:09.162-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1938.25,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3518.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405247",
+                                            "StopPointName": "FREDERICK DOUGLASS BL/114 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:18.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:02.779-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2148.36,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3728.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401324",
+                                            "StopPointName": "FRED DOUGLASS BL/W 112 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:39.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:31.379-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2236.86,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3817.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401325",
+                                            "StopPointName": "FRED DOUGLASS BL/CATHEDRAL PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:43.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:40.475-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2498.51,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4078.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401326",
+                                            "StopPointName": "CENTRAL PK W/W 108 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:14.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:13.424-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2624.7,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4205.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401327",
+                                            "StopPointName": "CENTRAL PK W/W 106 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:04.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:52.895-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2831.56,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4411.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401328",
+                                            "StopPointName": "CENTRAL PK W/W 104 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:43.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:28.951-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2989.07,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4569.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401329",
+                                            "StopPointName": "CENTRAL PK W/W 102 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:24.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:10.205-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3157.15,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4737.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401330",
+                                            "StopPointName": "CENTRAL PK W/W 100 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:16.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:59.434-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3371.14,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4951.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401331",
+                                            "StopPointName": "CENTRAL PK W/W 97 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:23.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:05.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3645.76,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5226.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401333",
+                                            "StopPointName": "CENTRAL PK W/W 94 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:34.999-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3800.07,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5380.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401334",
+                                            "StopPointName": "CENTRAL PK W/W 92 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:40.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:15.530-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3961.5,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5541.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401335",
+                                            "StopPointName": "CENTRAL PK W/W 90 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:13.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:42.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4098.1,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5678.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401336",
+                                            "StopPointName": "CENTRAL PK W/W 88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:41.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4290.67,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5871.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401337",
+                                            "StopPointName": "CENTRAL PK W/W 86 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:37.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:12.284-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4453.23,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6033.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401338",
+                                            "StopPointName": "CENTRAL PK W/W 84 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:29.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:08.465-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4679.45,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6259.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401339",
+                                            "StopPointName": "CENTRAL PK W/W 81 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:07.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:44.805-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4849.88,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6430.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404136",
+                                            "StopPointName": "CENTRAL PK W/W 79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:43.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:14.455-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5006.67,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6587.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401341",
+                                            "StopPointName": "CENTRAL PK W/W 77 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:39.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:15.601-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5251.22,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6831.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401342",
+                                            "StopPointName": "CENTRAL PK W/W 74 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:18.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:52.176-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5422.45,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7002.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401343",
+                                            "StopPointName": "CENTRAL PK W/W 72 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:55.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:45.444-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5588.15,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7168.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401344",
+                                            "StopPointName": "CENTRAL PK W/W 70 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:32.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:22.014-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5747.52,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7327.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401345",
+                                            "StopPointName": "CENTRAL PK W/W 68 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:08.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:07.711-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5905.79,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7486.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404987",
+                                            "StopPointName": "CENTRAL PK W/W 66 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:43.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:35.692-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6062.7,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7643.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404988",
+                                            "StopPointName": "CENTRAL PK W/W 64 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:21.073-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6399.34,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7979.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401348",
+                                            "StopPointName": "BROADWAY/W 63 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:17.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:42.643-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6556.59,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8136.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400860",
+                                            "StopPointName": "BROADWAY/W 61 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:40.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:35.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6764.01,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8344.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400861",
+                                            "StopPointName": "COLUMBUS CIR/8 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:10.505-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6944.88,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 8525.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405376",
+                                            "StopPointName": "BROADWAY/WEST 57 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:34.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M10",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MV_B1-Weekday-SDon-145500_M98_912"
+                                },
+                                "JourneyPatternRef": "MTA_M100005",
+                                "PublishedLineName": "M10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403846",
+                                "DestinationName": "HARLEM 159 ST via 8 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.982719,
+                                    "Latitude": 40.766844
+                                },
+                                "Bearing": 55.1802,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MV_B1-Weekday-SDon_E_MV_24600_M10-7",
+                                "VehicleRef": "MTA NYCT_4354",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:16:06.690-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:20.045-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:20.045-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 281.07,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 289.87
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_404871",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CENTRAL PK W/COLUMBUS CIR"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:06.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.045-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 281.07,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 289.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404871",
+                                            "StopPointName": "CENTRAL PK W/COLUMBUS CIR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:03.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.097-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 533.33,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 542.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404049",
+                                            "StopPointName": "CENTRAL PK W/W 63 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:13.441-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 785.61,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 794.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401245",
+                                            "StopPointName": "CENTRAL PK W/W 67 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:51.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:53.721-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1022.45,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1031.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403981",
+                                            "StopPointName": "CENTRAL PK W/W 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:46.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:07.242-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1277.79,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1286.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401248",
+                                            "StopPointName": "CENTRAL PK W/W 72 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:40.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:59.860-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1531.16,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1539.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404024",
+                                            "StopPointName": "CENTRAL PK W/W 75 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:16.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:27.184-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1697.22,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1706.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401250",
+                                            "StopPointName": "CENTRAL PK W/W 77 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:52.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:52.789-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1865.6,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1874.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404134",
+                                            "StopPointName": "CENTRAL PK W/W 79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:30.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:42.046-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2042.86,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2051.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401252",
+                                            "StopPointName": "CENTRAL PK W/W 82 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:11.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:30.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2232.38,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2241.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401253",
+                                            "StopPointName": "CENTRAL PK W/W 84 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:35.150-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2460.14,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2468.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401254",
+                                            "StopPointName": "CENTRAL PK W/W 87 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:32.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:01.375-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2590.36,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2599.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401255",
+                                            "StopPointName": "CENTRAL PK W/W 88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:10.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:36.353-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2744.09,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 2752.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401256",
+                                            "StopPointName": "CENTRAL PK W/W 90 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:50.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:05.116-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2904.83,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 2913.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401257",
+                                            "StopPointName": "CENTRAL PK W/W 92 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:28.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:32.419-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3059.23,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3068.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401258",
+                                            "StopPointName": "CENTRAL PK W/W 94 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:20.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:29.889-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3269.87,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3278.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401259",
+                                            "StopPointName": "CENTRAL PK W/W 97 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:32.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:39.512-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3563.26,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3572.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401261",
+                                            "StopPointName": "CENTRAL PK W/W 100 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:11.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:09.409-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3721.24,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 3730.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401262",
+                                            "StopPointName": "CENTRAL PK W/W 102 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:51.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:48.589-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3884.1,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 3892.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401263",
+                                            "StopPointName": "CENTRAL PK W/W 104 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:31.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:18.934-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4044.36,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4053.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401264",
+                                            "StopPointName": "CENTRAL PK W/W 106 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:14.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:06.542-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4220.88,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4229.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401265",
+                                            "StopPointName": "CENTRAL PK W/W 108 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:17.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:32.258-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4474.66,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 4483.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401267",
+                                            "StopPointName": "FRED DOUGLASS BL/W 111 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:58.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:28.129-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4640.15,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 4648.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401268",
+                                            "StopPointName": "FRED DOUGLASS BL/W 113 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:00.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:33.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4893.63,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 4902.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401269",
+                                            "StopPointName": "FRED DOUGLASS BL/W 116 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:23.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:42.569-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5099.17,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5107.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401270",
+                                            "StopPointName": "FRED DOUGLASS BL/W 119 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:19.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:18.529-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5237.03,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 5245.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401271",
+                                            "StopPointName": "FRED DOUGLASS BL/W 121 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:43.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:23.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5444.16,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 5452.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401272",
+                                            "StopPointName": "FRED DOUGLASS BL/W 123 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:45.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5633.14,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 5641.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405182",
+                                            "StopPointName": "FRED DOUGLASS BL/W 125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:38.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:58.800-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5784.6,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 5793.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401274",
+                                            "StopPointName": "FRED DOUGLASS BL/W 127 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:15.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:28.942-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5930.79,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 5939.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401275",
+                                            "StopPointName": "FRED DOUGLASS BL/W 129 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:55.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:13.999-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6088.84,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 6097.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401276",
+                                            "StopPointName": "FRED DOUGLASS BL/W 131 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:36.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:04.903-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6253.09,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 6261.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401277",
+                                            "StopPointName": "FRED DOUGLASS BL/W 133 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:19.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:59.947-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6423.25,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 6432.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403982",
+                                            "StopPointName": "FRED DOUGLASS BL/W 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:19.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:12.347-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6661.01,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 6669.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403832",
+                                            "StopPointName": "FRED DOUGLASS BL/W 138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:19.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:19.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6902.05,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 6910.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401281",
+                                            "StopPointName": "FRED DOUGLASS BL/W 141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:58.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:11.861-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7056.8,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 7065.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401282",
+                                            "StopPointName": "FRED DOUGLASS BL/W 143 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:42.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:03.395-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7229.85,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 7238.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403826",
+                                            "StopPointName": "FRED DOUGLASS BL/W 145 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:40.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:15.610-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7459.77,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 7468.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404825",
+                                            "StopPointName": "FRED DOUGLASS BL/W 148 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:47:07.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:57.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7570.48,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 7579.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404325",
+                                            "StopPointName": "FRED DOUGLASS BL/MACOMBS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:22.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:21.375-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7866.31,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 7875.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401286",
+                                            "StopPointName": "FRED DOUGLASS BL/W 153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:59.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:04.147-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8013.39,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 8022.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401287",
+                                            "StopPointName": "FRED DOUGLASS BL/W 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:50:00.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:06.347-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8256.52,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 8265.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_401288",
+                                            "StopPointName": "FRED DOUGLASS BL/W 158 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:48.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.658-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.658-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

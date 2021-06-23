@@ -1,0 +1,416 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.665-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX16",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-141000_BX34_360"
+                                },
+                                "JourneyPatternRef": "MTA_BX160101",
+                                "PublishedLineName": "Bx16",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103620",
+                                "DestinationName": "PELHAM ROPES AV via MUNDY LA",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_277088"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.820284,
+                                    "Latitude": 40.889292
+                                },
+                                "Bearing": 316.73572,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_53940_BX16-324",
+                                "VehicleRef": "MTA NYCT_8336",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:31.679-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.665-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.665-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10820.98,
+                                            "DistanceFromCall": 0.0,
+                                            "PresentableDistance": "at stop"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101161",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MC OWEN AV/BOSTON RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:31.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.665-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10820.98,
+                                                    "DistanceFromCall": 0.0,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101161",
+                                            "StopPointName": "MC OWEN AV/BOSTON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:20.697-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:09.516-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 11115.49,
+                                                    "DistanceFromCall": 294.51,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101162",
+                                            "StopPointName": "HOLLERS AV/ROPES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.699-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:45.416-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11359.33,
+                                                    "DistanceFromCall": 538.35,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101163",
+                                            "StopPointName": "ROPES AV/BOSTON RD"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:31.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX16",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-142500_BX34_362"
+                                },
+                                "JourneyPatternRef": "MTA_BX160106",
+                                "PublishedLineName": "Bx16",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_101167",
+                                "DestinationName": "NORWOOD 205 ST STA via MUNDY LA",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.852728,
+                                    "Latitude": 40.897826
+                                },
+                                "Bearing": 174.80557,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_24480_BX16-313",
+                                "VehicleRef": "MTA NYCT_4098",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:00.708-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:12.704-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:12.704-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5605.17,
+                                            "DistanceFromCall": 133.39,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101184",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "NEREID AV/WHITE PLAINS RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.716-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:12.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5605.17,
+                                                    "DistanceFromCall": 133.39,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101184",
+                                            "StopPointName": "NEREID AV/WHITE PLAINS RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:50.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:20.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5911.75,
+                                                    "DistanceFromCall": 439.98,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101185",
+                                            "StopPointName": "NEREID AV/CARPENTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:37.020-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6340.23,
+                                                    "DistanceFromCall": 868.45,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101186",
+                                            "StopPointName": "WEBSTER AV/E 240 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:43.717-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:18.457-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6679.16,
+                                                    "DistanceFromCall": 1207.38,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101187",
+                                            "StopPointName": "WEBSTER AV/E 235 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:16.718-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.463-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6941.38,
+                                                    "DistanceFromCall": 1469.6,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101188",
+                                            "StopPointName": "WEBSTER AV/E 233 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:54.719-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:03.863-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7246.44,
+                                                    "DistanceFromCall": 1774.67,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101189",
+                                            "StopPointName": "E 233 ST/KATONAH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:34.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:52.302-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7555.88,
+                                                    "DistanceFromCall": 2084.1,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101190",
+                                            "StopPointName": "E 233 ST/KEPLER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:16.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7764.79,
+                                                    "DistanceFromCall": 2293.01,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101191",
+                                            "StopPointName": "E 233 ST/ONEIDA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:31.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:37.011-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7974.7,
+                                                    "DistanceFromCall": 2502.92,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101192",
+                                            "StopPointName": "E 233 ST/NAPIER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:41.721-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:39.457-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 8445.37,
+                                                    "DistanceFromCall": 2973.6,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103800",
+                                            "StopPointName": "JEROME AV/E 233 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:23.519-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 9383.4,
+                                                    "DistanceFromCall": 3911.62,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101193",
+                                            "StopPointName": "BAINBRIDGE AV/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:30.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:38.478-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 9774.7,
+                                                    "DistanceFromCall": 4302.92,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101194",
+                                            "StopPointName": "BAINBRIDGE AV/E 212 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:33.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:53.327-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 10051.28,
+                                                    "DistanceFromCall": 4579.5,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100729",
+                                            "StopPointName": "BAINBRIDGE AV/E GUN HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:10.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:36.432-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 10212.03,
+                                                    "DistanceFromCall": 4740.25,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100730",
+                                            "StopPointName": "BAINBRIDGE AV/E 210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:08.727-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:16.225-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 10467.04,
+                                                    "DistanceFromCall": 4995.26,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100731",
+                                            "StopPointName": "BAINBRIDGE AV/VAN CORTLANDT AV E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.728-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:10.125-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 10693.26,
+                                                    "DistanceFromCall": 5221.48,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102030",
+                                            "StopPointName": "BAINBRIDGE AV/E 206 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:44.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.665-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.665-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-04-21T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Eastbound Bx16 stops on Bainbridge Ave at East 212th St and Jerome Ave are closed because of construction",
+                                "Description": "Until further notice Eastbound Bx16 stops on Bainbridge Ave at East 212th St and Jerome Ave are closed because of construction   Please use stops along Jerome Ave at East 212th St and at Bainbridge Ave.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX16",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-04-21T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_277088"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

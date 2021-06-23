@@ -1,0 +1,573 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.811-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M55",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-143400_M55_414"
+                                },
+                                "JourneyPatternRef": "MTA_M550117",
+                                "PublishedLineName": "M55",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803184",
+                                "DestinationName": "44 ST 6 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.000453,
+                                    "Latitude": 40.732388
+                                },
+                                "Bearing": 53.972626,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_18600_M55-402",
+                                "VehicleRef": "MTA NYCT_7610",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:09.826-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:11.128-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:11.128-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 85.23,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3878.24
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 2
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400723",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "AV OF THE AMERICAS/WAVERLY PL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:09.832-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:11.128-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 85.23,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3878.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400723",
+                                            "StopPointName": "AV OF THE AMERICAS/WAVERLY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:39.832-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:58.140-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 321.83,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4114.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400724",
+                                            "StopPointName": "AV OF THE AMERICAS/W 10 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.832-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:19.151-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 485.45,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4278.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400725",
+                                            "StopPointName": "AV OF THE AMERICAS/W 12 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:37.833-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:51.237-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 729.19,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4522.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400726",
+                                            "StopPointName": "AV OF THE AMERICAS/W 15 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:08.833-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:14.439-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 919.87,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4712.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404991",
+                                            "StopPointName": "AV OF THE AMERICAS/W 18 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:41.833-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:38.159-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1121.21,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4914.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403914",
+                                            "StopPointName": "AV OF THE AMERICAS/W 20 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:18.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:09.453-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1353.79,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5146.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400929",
+                                            "StopPointName": "AV OF THE AMERICAS/W 23 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:04.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.570-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1643.22,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5436.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400731",
+                                            "StopPointName": "AV OF THE AMERICAS/W 27 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:30.835-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:15.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1799.55,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5592.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400732",
+                                            "StopPointName": "AV OF THE AMERICAS/W 29 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.835-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:38.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1988.73,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5781.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403769",
+                                            "StopPointName": "AV OF THE AMERICAS/W 31 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:40.836-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:10.836-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2221.46,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6014.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400933",
+                                            "StopPointName": "AV OF THE AMERICAS/W 34 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:30.837-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:25.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2512.53,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6305.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404039",
+                                            "StopPointName": "AV OF THE AMERICAS/W 38 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:05.837-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:55.883-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2715.73,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6508.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404040",
+                                            "StopPointName": "AV OF THE AMERICAS/W 40 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:35.838-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:37.764-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2890.66,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 6683.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400936",
+                                            "StopPointName": "AV OF THE AMERICAS/W 42 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.838-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:03.439-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3035.39,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6828.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803081",
+                                            "StopPointName": "W 44 St/6 AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M55",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-143000_M55_415"
+                                },
+                                "JourneyPatternRef": "MTA_M550056",
+                                "PublishedLineName": "M55",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803080",
+                                "DestinationName": "SOUTH FERRY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.992568,
+                                    "Latitude": 40.730382
+                                },
+                                "Bearing": 229.86452,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_30600_M55-407",
+                                "VehicleRef": "MTA NYCT_4133",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:45.846-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:37.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:37.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 134.99,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3673.89
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_400153",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "BROADWAY/WAVERLY PL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:45.855-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:37.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 134.99,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3673.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400153",
+                                            "StopPointName": "BROADWAY/WAVERLY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:44.856-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:15.173-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 381.29,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3920.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400154",
+                                            "StopPointName": "BROADWAY/W 3 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:24.856-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:39.639-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 549.54,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4088.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400155",
+                                            "StopPointName": "BROADWAY/BLEECKER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.857-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:02.575-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 700.03,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4238.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403311",
+                                            "StopPointName": "BROADWAY/W HOUSTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:31.857-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:23.288-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 847.28,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4386.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404916",
+                                            "StopPointName": "BROADWAY/PRINCE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:04.858-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:50.389-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1001.15,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4540.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400157",
+                                            "StopPointName": "BROADWAY/SPRING ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:05.858-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:50.713-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1285.86,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4824.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400159",
+                                            "StopPointName": "BROADWAY/GRAND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.858-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:01.998-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1542.02,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5080.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405266",
+                                            "StopPointName": "BROADWAY/WALKER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:26.859-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:24.348-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1699.79,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5238.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405377",
+                                            "StopPointName": "BROADWAY/FRANKLIN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:18.859-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:11.745-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2019.19,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5558.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405230",
+                                            "StopPointName": "BROADWAY/DUANE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:42.859-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:36.925-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2163.32,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5702.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404224",
+                                            "StopPointName": "BROADWAY/CHAMBERS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:12.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:04.003-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2344.27,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5883.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400166",
+                                            "StopPointName": "BROADWAY/PARK PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:29.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:18.700-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2447.22,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5986.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404225",
+                                            "StopPointName": "BROADWAY/BARCLAY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:11.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:56.324-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2701.55,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 6240.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400168",
+                                            "StopPointName": "BROADWAY/CORTLANDT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:39.864-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:22.910-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2876.19,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6415.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400988",
+                                            "StopPointName": "BROADWAY/THAMES ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:03.865-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:41.712-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3019.53,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6558.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400170",
+                                            "StopPointName": "BROADWAY/RECTOR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:28.871-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:38.129-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3538.67,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7077.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403953",
+                                            "StopPointName": "STATE ST/BRIDGE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.873-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:24.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3732.65,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7271.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803185",
+                                            "StopPointName": "STATE ST/WHITEHALL ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:45.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.811-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.811-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

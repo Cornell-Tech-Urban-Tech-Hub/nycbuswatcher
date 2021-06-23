@@ -1,0 +1,1585 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.320-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B4",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-142600_B4_25"
+                                },
+                                "JourneyPatternRef": "MTA_B40008",
+                                "PublishedLineName": "B4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_300350",
+                                "DestinationName": "BAY RIDGE NARROWS AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.948511,
+                                    "Latitude": 40.584128
+                                },
+                                "Bearing": 97.943474,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JG_B1-Weekday-SDon_E_JG_75300_B4-25",
+                                "VehicleRef": "MTA NYCT_383",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:52:36.366-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.320-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.320-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1770.8,
+                                            "DistanceFromCall": 8.93,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_307033",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "OCEAN AV/SHORE PY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:36.370-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.320-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1770.8,
+                                                    "DistanceFromCall": 8.93,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307033",
+                                            "StopPointName": "OCEAN AV/SHORE PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:36.370-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:01.358-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 2039.33,
+                                                    "DistanceFromCall": 277.46,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300339",
+                                            "StopPointName": "OCEAN AV/VOORHIES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:32.370-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:49.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2291.03,
+                                                    "DistanceFromCall": 529.16,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300361",
+                                            "StopPointName": "AV Z/OCEAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:11.371-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:28.522-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2467.22,
+                                                    "DistanceFromCall": 705.36,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300362",
+                                            "StopPointName": "AV Z/E 18 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:00.371-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:17.785-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2684.7,
+                                                    "DistanceFromCall": 922.83,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300363",
+                                            "StopPointName": "E 16 ST/SHEEPSHEAD BAY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:57.372-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:22.423-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2949.29,
+                                                    "DistanceFromCall": 1187.42,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300364",
+                                            "StopPointName": "SHEEPSHEAD BAY RD/VOORHIES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:24.372-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:47.149-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3073.81,
+                                                    "DistanceFromCall": 1311.94,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304019",
+                                            "StopPointName": "SHEEPSHEAD BAY RD/SHORE PKY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:45.372-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:11.147-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3169.49,
+                                                    "DistanceFromCall": 1407.62,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300366",
+                                            "StopPointName": "SHEEPSHEAD BAY RD/EMMONS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:43.373-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:11.270-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3436.64,
+                                                    "DistanceFromCall": 1674.77,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300367",
+                                            "StopPointName": "EMMONS AV/E 16 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:07.373-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:25.594-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3546.06,
+                                                    "DistanceFromCall": 1784.2,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300368",
+                                            "StopPointName": "EMMONS AV/E 14 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:04.373-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:04.948-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3810.15,
+                                                    "DistanceFromCall": 2048.28,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300369",
+                                            "StopPointName": "NEPTUNE AV/E 12 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:58.373-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:03.829-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4057.35,
+                                                    "DistanceFromCall": 2295.48,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300370",
+                                            "StopPointName": "NEPTUNE AV/CONEY ISLAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:51.374-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:48.176-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4305.11,
+                                                    "DistanceFromCall": 2543.25,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300372",
+                                            "StopPointName": "NEPTUNE AV/BRIGHTON 6 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:24.374-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:17.070-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4454.11,
+                                                    "DistanceFromCall": 2692.24,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300373",
+                                            "StopPointName": "NEPTUNE AV/BRIGHTON 4 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:05.374-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:04.894-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4646.06,
+                                                    "DistanceFromCall": 2884.19,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300374",
+                                            "StopPointName": "NEPTUNE AV/OCEAN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:41.375-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:55.238-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4810.43,
+                                                    "DistanceFromCall": 3048.56,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300019",
+                                            "StopPointName": "OCEAN PY/WEST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:20.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:41.438-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5269.48,
+                                                    "DistanceFromCall": 3507.61,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300020",
+                                            "StopPointName": "OCEAN PY/SHORE PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:26.366-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5454.3,
+                                                    "DistanceFromCall": 3692.44,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300377",
+                                            "StopPointName": "AV Z/OCEAN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:33.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:56.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5667.73,
+                                                    "DistanceFromCall": 3905.87,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300378",
+                                            "StopPointName": "AV Z/WEST ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:57.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:19.482-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5824.26,
+                                                    "DistanceFromCall": 4062.39,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300379",
+                                            "StopPointName": "AV Z/W 2 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:38.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:02.782-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 6084.36,
+                                                    "DistanceFromCall": 4322.49,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300380",
+                                            "StopPointName": "AV Z/SHELL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:35.377-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:51.731-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6452.74,
+                                                    "DistanceFromCall": 4690.87,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300381",
+                                            "StopPointName": "SHELL RD/BOUCK CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:29.377-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:03.433-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6802.75,
+                                                    "DistanceFromCall": 5040.88,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300026",
+                                            "StopPointName": "86 ST/VAN SICKLEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.377-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:36.439-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 7002.49,
+                                                    "DistanceFromCall": 5240.62,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308183",
+                                            "StopPointName": "86 ST/W 7 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:38.378-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:45.070-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7248.14,
+                                                    "DistanceFromCall": 5486.28,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300028",
+                                            "StopPointName": "86 ST/W 9 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:13.378-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:36.073-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 7479.01,
+                                                    "DistanceFromCall": 5717.15,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300029",
+                                            "StopPointName": "86 ST/W 11 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:31.379-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:48.465-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7590.45,
+                                                    "DistanceFromCall": 5828.58,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300030",
+                                            "StopPointName": "86 ST/AV U"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.380-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:14.257-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7781.14,
+                                                    "DistanceFromCall": 6019.28,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300031",
+                                            "StopPointName": "86 ST/STILLWELL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:33.380-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:17.083-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7954.87,
+                                                    "DistanceFromCall": 6193.01,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306268",
+                                            "StopPointName": "STILLWELL AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:24.381-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:53.521-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 8220.57,
+                                                    "DistanceFromCall": 6458.71,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300388",
+                                            "StopPointName": "STILLWELL AV/AV S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:13.381-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:52.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 8479.85,
+                                                    "DistanceFromCall": 6717.99,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300389",
+                                            "StopPointName": "STILLWELL AV/HIGHLAWN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:57.381-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:33.541-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8707.54,
+                                                    "DistanceFromCall": 6945.68,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300390",
+                                            "StopPointName": "STILLWELL AV/QUENTIN RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:16.382-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:10.030-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8806.92,
+                                                    "DistanceFromCall": 7045.06,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300391",
+                                            "StopPointName": "STILLWELL AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:12.382-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:31.915-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 9100.48,
+                                                    "DistanceFromCall": 7338.61,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300393",
+                                            "StopPointName": "BAY RIDGE PY/BAY PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:57.382-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:24.321-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9339.03,
+                                                    "DistanceFromCall": 7577.16,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300394",
+                                            "StopPointName": "BAY RIDGE PY/21 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:42.383-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:04.247-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9574.86,
+                                                    "DistanceFromCall": 7813.0,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300395",
+                                            "StopPointName": "BAY RIDGE PY/20 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:28.383-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:51.454-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9814.5,
+                                                    "DistanceFromCall": 8052.63,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300396",
+                                            "StopPointName": "BAY RIDGE PY/19 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.384-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:22.654-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9981.35,
+                                                    "DistanceFromCall": 8219.48,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300397",
+                                            "StopPointName": "BAY RIDGE PY/18 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:50.384-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:12.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10289.09,
+                                                    "DistanceFromCall": 8527.22,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300398",
+                                            "StopPointName": "BAY RIDGE PY/17 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:19.384-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:01.278-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10466.36,
+                                                    "DistanceFromCall": 8704.5,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300399",
+                                            "StopPointName": "BAY RIDGE PY/NEW UTRECHT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:12.384-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:09.364-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10792.56,
+                                                    "DistanceFromCall": 9030.69,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300400",
+                                            "StopPointName": "BAY RIDGE PY/15 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:50.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:46.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 11025.49,
+                                                    "DistanceFromCall": 9263.63,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300401",
+                                            "StopPointName": "BAY RIDGE PY/14 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:21.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:23.641-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 11217.26,
+                                                    "DistanceFromCall": 9455.4,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300402",
+                                            "StopPointName": "BAY RIDGE PY/13 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:06.335-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11455.1,
+                                                    "DistanceFromCall": 9693.23,
+                                                    "PresentableDistance": "6.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300403",
+                                            "StopPointName": "BAY RIDGE PY/12 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:46.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:52.723-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 11737.95,
+                                                    "DistanceFromCall": 9976.09,
+                                                    "PresentableDistance": "6.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300404",
+                                            "StopPointName": "BAY RIDGE PY/11 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:24.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:33.359-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 11972.41,
+                                                    "DistanceFromCall": 10210.54,
+                                                    "PresentableDistance": "6.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300405",
+                                            "StopPointName": "BAY RIDGE PY/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:18.923-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 12195.85,
+                                                    "DistanceFromCall": 10433.98,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300406",
+                                            "StopPointName": "BAY RIDGE PY/FT HAMILTON PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:27.386-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:56.789-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 12349.34,
+                                                    "DistanceFromCall": 10587.48,
+                                                    "PresentableDistance": "6.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300407",
+                                            "StopPointName": "BAY RIDGE PY/7 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:22.386-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:47.363-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 12643.17,
+                                                    "DistanceFromCall": 10881.3,
+                                                    "PresentableDistance": "6.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300408",
+                                            "StopPointName": "BAY RIDGE PY/6 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.386-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:21.669-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 12856.88,
+                                                    "DistanceFromCall": 11095.02,
+                                                    "PresentableDistance": "6.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300409",
+                                            "StopPointName": "BAY RIDGE PY/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:44.386-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:39.733-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 13161.08,
+                                                    "DistanceFromCall": 11399.21,
+                                                    "PresentableDistance": "7.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300410",
+                                            "StopPointName": "4 AV/BAY RIDGE PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.386-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:08.095-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 13273.71,
+                                                    "DistanceFromCall": 11511.84,
+                                                    "PresentableDistance": "7.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300411",
+                                            "StopPointName": "4 AV/77 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:31.387-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:44.240-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 13418.39,
+                                                    "DistanceFromCall": 11656.53,
+                                                    "PresentableDistance": "7.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300412",
+                                            "StopPointName": "78 ST/4 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:12.387-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:17.240-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 13610.1,
+                                                    "DistanceFromCall": 11848.23,
+                                                    "PresentableDistance": "7.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300413",
+                                            "StopPointName": "78 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:13.387-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:34.343-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 54,
+                                                    "CallDistanceAlongRoute": 13895.94,
+                                                    "DistanceFromCall": 12134.08,
+                                                    "PresentableDistance": "7.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300414",
+                                            "StopPointName": "78 ST/RIDGE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:02.387-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:11.873-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 55,
+                                                    "CallDistanceAlongRoute": 14128.31,
+                                                    "DistanceFromCall": 12366.45,
+                                                    "PresentableDistance": "7.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300415",
+                                            "StopPointName": "78 ST/COLONIAL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.387-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:53.368-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 56,
+                                                    "CallDistanceAlongRoute": 14400.53,
+                                                    "DistanceFromCall": 12638.67,
+                                                    "PresentableDistance": "7.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901003",
+                                            "StopPointName": "NARROWS AV/77 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B4",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-139000_B4_24"
+                                },
+                                "JourneyPatternRef": "MTA_B40008",
+                                "PublishedLineName": "B4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_300350",
+                                "DestinationName": "BAY RIDGE NARROWS AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.031492,
+                                    "Latitude": 40.629953
+                                },
+                                "Bearing": 166.71135,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_431",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:58:13.392-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.320-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.320-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 13895.94,
+                                            "DistanceFromCall": 23.43,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_300414",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "78 ST/RIDGE BL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:13.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.320-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 13895.94,
+                                                    "DistanceFromCall": 23.43,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300414",
+                                            "StopPointName": "78 ST/RIDGE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:02.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:07.849-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 14128.31,
+                                                    "DistanceFromCall": 255.8,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300415",
+                                            "StopPointName": "78 ST/COLONIAL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:00.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:49.344-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 14400.53,
+                                                    "DistanceFromCall": 528.02,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901003",
+                                            "StopPointName": "NARROWS AV/77 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:24.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B4",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-139000_B4_23"
+                                },
+                                "JourneyPatternRef": "MTA_B40009",
+                                "PublishedLineName": "B4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_300284",
+                                "DestinationName": "SHEEPSHEAD BAY KNAPP ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.933704,
+                                    "Latitude": 40.587885
+                                },
+                                "Bearing": 100.669785,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JG_B1-Weekday-SDon_E_JG_82200_B4-23",
+                                "VehicleRef": "MTA NYCT_393",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:58:32.428-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:14.167-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:14.167-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 14899.31,
+                                            "DistanceFromCall": 153.83,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_308112",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "VOORHIES AV/KNAPP ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:32.457-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:14.167-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 14899.31,
+                                                    "DistanceFromCall": 153.83,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308112",
+                                            "StopPointName": "VOORHIES AV/KNAPP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:00.458-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:28.967-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 15078.46,
+                                                    "DistanceFromCall": 332.97,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901263",
+                                            "StopPointName": "KNAPP ST/HARKNESS AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:39.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B4",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-142000_B4_22"
+                                },
+                                "JourneyPatternRef": "MTA_B40009",
+                                "PublishedLineName": "B4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_300284",
+                                "DestinationName": "SHEEPSHEAD BAY KNAPP ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.986314,
+                                    "Latitude": 40.602351
+                                },
+                                "Bearing": 280.30484,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JG_B1-Weekday-SDon_E_JG_75000_B4-22",
+                                "VehicleRef": "MTA NYCT_381",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:38.329-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:29.152-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:29.152-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6027.96,
+                                            "DistanceFromCall": 183.08,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_300310",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "STILLWELL AV/82 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:38.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:29.152-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6027.96,
+                                                    "DistanceFromCall": 183.08,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300310",
+                                            "StopPointName": "STILLWELL AV/82 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:13.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:50.174-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6181.95,
+                                                    "DistanceFromCall": 337.07,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300311",
+                                            "StopPointName": "STILLWELL AV/25 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:30.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6393.1,
+                                                    "DistanceFromCall": 548.22,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300189",
+                                            "StopPointName": "STILLWELL AV/85 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:03.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:00.610-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6674.04,
+                                                    "DistanceFromCall": 829.16,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300107",
+                                            "StopPointName": "86 ST/AV U"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:16.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:15.439-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 7003.49,
+                                                    "DistanceFromCall": 1158.61,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300109",
+                                            "StopPointName": "86 ST/AV V"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:53.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:39.964-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7170.37,
+                                                    "DistanceFromCall": 1325.49,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300110",
+                                            "StopPointName": "86 ST/W 8 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:37.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:13.164-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7368.79,
+                                                    "DistanceFromCall": 1523.91,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300111",
+                                            "StopPointName": "86 ST/AV W"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:52.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:33.594-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7706.31,
+                                                    "DistanceFromCall": 1861.43,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306288",
+                                            "StopPointName": "SHELL RD/AV X"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:44.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:15.262-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7939.12,
+                                                    "DistanceFromCall": 2094.24,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300319",
+                                            "StopPointName": "SHELL RD/AV Y"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:40.344-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:05.389-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 8192.91,
+                                                    "DistanceFromCall": 2348.03,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300320",
+                                            "StopPointName": "AV Z/SHELL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:21.344-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:40.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 8376.34,
+                                                    "DistanceFromCall": 2531.45,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308120",
+                                            "StopPointName": "AV Z/W 3 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:04.344-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:14.621-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 8568.69,
+                                                    "DistanceFromCall": 2723.81,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300322",
+                                            "StopPointName": "AV Z/WEST ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.345-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:52.265-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 8819.94,
+                                                    "DistanceFromCall": 2975.05,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300323",
+                                            "StopPointName": "AV Z/OCEAN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:45.345-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:53.126-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 9085.35,
+                                                    "DistanceFromCall": 3240.46,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300117",
+                                            "StopPointName": "OCEAN PKY/SHORE PKY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:45.345-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:16.163-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 9440.58,
+                                                    "DistanceFromCall": 3595.69,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300118",
+                                            "StopPointName": "OCEAN PY/WEST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:18.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:53.775-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 9638.15,
+                                                    "DistanceFromCall": 3793.27,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300326",
+                                            "StopPointName": "NEPTUNE AV/OCEAN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:25.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:00.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 10032.96,
+                                                    "DistanceFromCall": 4188.08,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300328",
+                                            "StopPointName": "NEPTUNE AV/BRIGHTON 6 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:09.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:58.588-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 10291.26,
+                                                    "DistanceFromCall": 4446.38,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300329",
+                                            "StopPointName": "NEPTUNE AV/CONEY ISLAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:39.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:23.618-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 10469.14,
+                                                    "DistanceFromCall": 4624.26,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308129",
+                                            "StopPointName": "NEPTUNE AV/BRIGHTON 10 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:24.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:05.623-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 10735.08,
+                                                    "DistanceFromCall": 4890.2,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308128",
+                                            "StopPointName": "NEPTUNE AV/SHORE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:37.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:52.972-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 11163.53,
+                                                    "DistanceFromCall": 5318.65,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300332",
+                                            "StopPointName": "SHEEPSHEAD BAY RD/EMMONS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:16.484-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 11301.12,
+                                                    "DistanceFromCall": 5456.24,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308281",
+                                            "StopPointName": "SHORE PKY NS/SHEEPSHEAD BAY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:53.348-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:40.284-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 11613.1,
+                                                    "DistanceFromCall": 5768.22,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300334",
+                                            "StopPointName": "VOORHIES AV/E 14 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:31.349-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:22.679-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 11837.15,
+                                                    "DistanceFromCall": 5992.27,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300335",
+                                            "StopPointName": "E 14 ST/SHEEPSHEAD BAY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.349-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:01.674-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 12009.11,
+                                                    "DistanceFromCall": 6164.23,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308282",
+                                            "StopPointName": "AV Z/E 15 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:47.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:12.139-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 12311.83,
+                                                    "DistanceFromCall": 6466.95,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300338",
+                                            "StopPointName": "AV Z/E 19 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:42.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:37.306-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 12664.38,
+                                                    "DistanceFromCall": 6819.5,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306986",
+                                            "StopPointName": "OCEAN AV/VOORHIES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:17.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:08.947-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 12888.27,
+                                                    "DistanceFromCall": 7043.38,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307040",
+                                            "StopPointName": "SHORE PY/OCEAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:21.351-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:19.049-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 13293.45,
+                                                    "DistanceFromCall": 7448.56,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307041",
+                                            "StopPointName": "SHORE PY/BEDFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:51.351-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:43.334-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 13487.34,
+                                                    "DistanceFromCall": 7642.46,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307042",
+                                            "StopPointName": "SHORE PY/E 28 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:23.351-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:26.534-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 13688.88,
+                                                    "DistanceFromCall": 7844.0,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306898",
+                                            "StopPointName": "SHORE PKY/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:47.352-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:49.650-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 13846.0,
+                                                    "DistanceFromCall": 8001.12,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306899",
+                                            "StopPointName": "SHORE PKY/BROWN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:28.352-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:20.713-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 14106.66,
+                                                    "DistanceFromCall": 8261.78,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307669",
+                                            "StopPointName": "SHORE PKY/COYLE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:55.353-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:48.751-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 14279.66,
+                                                    "DistanceFromCall": 8434.78,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307045",
+                                            "StopPointName": "SHORE PKY/BRIGHAM ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:43.353-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:05.046-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 14585.25,
+                                                    "DistanceFromCall": 8740.37,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307806",
+                                            "StopPointName": "SHORE PKY/BRAGG ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:32.354-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:16.846-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 14899.31,
+                                                    "DistanceFromCall": 9054.43,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308112",
+                                            "StopPointName": "VOORHIES AV/KNAPP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.355-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:31.646-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 15078.46,
+                                                    "DistanceFromCall": 9233.58,
+                                                    "PresentableDistance": "5.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901263",
+                                            "StopPointName": "KNAPP ST/HARKNESS AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:34.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.320-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.320-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

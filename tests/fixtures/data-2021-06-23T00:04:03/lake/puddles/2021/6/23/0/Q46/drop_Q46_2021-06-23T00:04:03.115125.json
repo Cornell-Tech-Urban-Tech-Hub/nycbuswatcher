@@ -1,0 +1,2279 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:01.326-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q46",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-142000_MISC_323"
+                                },
+                                "JourneyPatternRef": "MTA_Q460318",
+                                "PublishedLineName": "Q46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504555",
+                                "DestinationName": "KEW GARDENS QUEENS BL via UNION",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.812743,
+                                    "Latitude": 40.718943
+                                },
+                                "Bearing": 194.71866,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_80400_MISC-323",
+                                "VehicleRef": "MTA NYCT_8539",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:11.342-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10790.72
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 8
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_502412",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNION TP/150 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:11.377-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10790.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502412",
+                                            "StopPointName": "UNION TP/150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:38.378-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:11.297-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 206.75,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 10997.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502413",
+                                            "StopPointName": "UNION TP/147 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:10.379-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:23.548-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 448.97,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11239.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502414",
+                                            "StopPointName": "UNION TP/MAIN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:52.381-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:15.207-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 759.93,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 11550.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503445",
+                                            "StopPointName": "UNION TP/VLEIGH PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.383-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:54.407-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1726.79,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 12517.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504489",
+                                            "StopPointName": "QUEENS BL/78 CR"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:44.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q46",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-142500_MISC_303"
+                                },
+                                "JourneyPatternRef": "MTA_Q460317",
+                                "PublishedLineName": "Q46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_904088",
+                                "DestinationName": "LAKE SUCCESS LIJ HOSPITAL via UNION",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.792036,
+                                    "Latitude": 40.725651
+                                },
+                                "Bearing": 14.349332,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_73020_MISC-303",
+                                "VehicleRef": "MTA NYCT_4052",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:00.479-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.326-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.326-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 77.91,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4121.88
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_502313",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNION TP/UTOPIA PY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:00.502-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.326-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 77.91,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4121.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502313",
+                                            "StopPointName": "UNION TP/UTOPIA PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:28.502-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:39.623-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 302.34,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4346.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502314",
+                                            "StopPointName": "UNION TP/SURREY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:00.503-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:08.944-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 570.73,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4614.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502315",
+                                            "StopPointName": "UNION TP/KENT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:29.503-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:32.530-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 807.96,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4851.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502316",
+                                            "StopPointName": "UNION TP/CHEVY CHASE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:57.507-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:00.379-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1033.95,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5077.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502317",
+                                            "StopPointName": "UNION TP/188 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:17.507-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:17.596-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1192.26,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5236.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502318",
+                                            "StopPointName": "UNION TP/190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:36.508-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:34.598-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1354.26,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5398.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502319",
+                                            "StopPointName": "UNION TP/193 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:04.508-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:58.144-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1576.71,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5620.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502320",
+                                            "StopPointName": "UNION TP/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:28.508-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:17.610-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1776.24,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5820.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502321",
+                                            "StopPointName": "UNION TP/198 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:58.508-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.045-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2023.73,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6067.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502322",
+                                            "StopPointName": "UNION TP/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:07.509-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:38.969-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2581.93,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6625.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502323",
+                                            "StopPointName": "UNION TP/HOLLIS HILLS TER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:45.512-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:10.569-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2891.16,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6935.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502325",
+                                            "StopPointName": "UNION TP/211 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:34.512-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:52.552-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3296.9,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7340.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502327",
+                                            "StopPointName": "UNION TP/BELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:04.514-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:17.305-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3536.07,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7580.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502328",
+                                            "StopPointName": "UNION TP/STEWART RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:43.515-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:52.203-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3859.22,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7903.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502330",
+                                            "StopPointName": "UNION TP/222 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.515-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:14.238-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3996.41,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 8040.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502331",
+                                            "StopPointName": "UNION TP/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:25.515-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:56.038-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4186.64,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 8230.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502332",
+                                            "StopPointName": "UNION TP/226 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:50.516-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:16.709-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4384.19,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 8428.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502333",
+                                            "StopPointName": "UNION TP/GRAND CENTRAL PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:18.518-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:41.374-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4597.82,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8641.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502334",
+                                            "StopPointName": "UNION TP/232 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:46.518-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:06.163-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4814.13,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 8858.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502335",
+                                            "StopPointName": "UNION TP/234 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:06.518-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:22.361-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4973.8,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 9017.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502336",
+                                            "StopPointName": "UNION TP/236 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:32.519-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:42.848-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5172.82,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 9216.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502337",
+                                            "StopPointName": "UNION TP/WINCHESTER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:51.520-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:44.901-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5787.61,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 9831.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502338",
+                                            "StopPointName": "UNION TP/CROSS ISLAND PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:18.520-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:35.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5995.21,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10039.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502339",
+                                            "StopPointName": "UNION TP/COMMONWEALTH BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:52.520-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.452-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6259.95,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 10303.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503588",
+                                            "StopPointName": "UNION TP/248 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:34.521-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:55.388-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6584.0,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 10627.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503033",
+                                            "StopPointName": "UNION TP/252 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:18.521-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:49.588-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6924.66,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 10968.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505152",
+                                            "StopPointName": "UNION TP/256 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:39.521-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:08.643-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7092.63,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 11136.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502344",
+                                            "StopPointName": "UNION TP/258 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:01.522-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:26.295-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7259.31,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 11303.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502350",
+                                            "StopPointName": "UNION TPKE/260 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:34.522-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:52.657-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7517.45,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 11561.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502351",
+                                            "StopPointName": "UNION TP/263 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:55.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:08.721-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7681.46,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 11725.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502352",
+                                            "StopPointName": "UNION TP/265 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:28.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:45.195-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7935.91,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 11979.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502354",
+                                            "StopPointName": "UNION TP/268 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.524-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:13.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8187.99,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 12231.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502355",
+                                            "StopPointName": "UNION TP/271 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:20.525-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:12.551-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8339.96,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 12383.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504553",
+                                            "StopPointName": "LAKEVILLE RD/UNION TPK"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:39.526-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:31.850-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8487.01,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 12530.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504554",
+                                            "StopPointName": "LAKEVILLE RD/ HEWLETT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.526-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:11.345-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9117.8,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 13161.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904121",
+                                            "StopPointName": "LIJ MEDICAL CTR/271 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:38.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q46",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-141500_Q46_617"
+                                },
+                                "JourneyPatternRef": "MTA_Q460317",
+                                "PublishedLineName": "Q46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_904088",
+                                "DestinationName": "LAKE SUCCESS LIJ HOSPITAL via UNION",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.723038,
+                                    "Latitude": 40.741925
+                                },
+                                "Bearing": 17.840204,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_70980_Q46-617",
+                                "VehicleRef": "MTA NYCT_8077",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:45.430-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.978-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.978-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 132.37,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10303.91
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_503588",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNION TP/248 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:45.441-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:02.978-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 132.37,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10303.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503588",
+                                            "StopPointName": "UNION TP/248 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:34.441-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:49.314-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 456.42,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 10627.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503033",
+                                            "StopPointName": "UNION TP/252 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:26.441-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:45.114-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 797.07,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 10968.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505152",
+                                            "StopPointName": "UNION TP/256 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:52.441-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:05.169-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 965.05,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 11136.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502344",
+                                            "StopPointName": "UNION TP/258 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:17.441-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:23.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1131.73,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 11303.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502350",
+                                            "StopPointName": "UNION TPKE/260 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:56.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:50.983-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1389.86,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 11561.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502351",
+                                            "StopPointName": "UNION TP/263 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:21.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:07.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1553.87,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 11725.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502352",
+                                            "StopPointName": "UNION TP/265 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:45.521-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1808.33,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 11979.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502354",
+                                            "StopPointName": "UNION TP/268 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:39.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:14.995-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2060.4,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 12231.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502355",
+                                            "StopPointName": "UNION TP/271 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:02.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:14.877-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2212.38,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 12383.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504553",
+                                            "StopPointName": "LAKEVILLE RD/UNION TPK"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:24.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.776-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2359.42,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 12530.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504554",
+                                            "StopPointName": "LAKEVILLE RD/ HEWLETT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:17.271-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2990.22,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 13161.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904121",
+                                            "StopPointName": "LIJ MEDICAL CTR/271 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:45.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q46",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-143800_MISC_319"
+                                },
+                                "JourneyPatternRef": "MTA_Q460318",
+                                "PublishedLineName": "Q46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504555",
+                                "DestinationName": "KEW GARDENS QUEENS BL via UNION",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.710607,
+                                    "Latitude": 40.74779
+                                },
+                                "Bearing": 208.25803,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_79920_MISC-319",
+                                "VehicleRef": "MTA NYCT_8014",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:00.458-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:14.491-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:14.491-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 195.63,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1722.27
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_502371",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNION TP/260 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:14.491-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 195.63,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1722.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502371",
+                                            "StopPointName": "UNION TP/260 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:14.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:27.973-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 297.48,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1824.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502372",
+                                            "StopPointName": "UNION TP/258 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:41.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:56.007-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 503.81,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2030.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502373",
+                                            "StopPointName": "UNION TP/255 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:08.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:24.370-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 704.13,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2230.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502374",
+                                            "StopPointName": "UNION TP/LITTLE NECK PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:38.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:51.771-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 927.29,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2453.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502375",
+                                            "StopPointName": "UNION TP/251 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:10.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:16.453-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1173.93,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2700.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503684",
+                                            "StopPointName": "UNION TP/248 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:39.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:41.571-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1391.55,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2918.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502378",
+                                            "StopPointName": "UNION TP/COMMONWEALTH BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:04.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:00.467-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1573.23,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3099.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502379",
+                                            "StopPointName": "UNION TP/CROSS ISLAND PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:26.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.555-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2190.04,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3716.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502380",
+                                            "StopPointName": "UNION TP/WINCHESTER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:07.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:33.019-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2496.42,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4023.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502381",
+                                            "StopPointName": "UNION TP/235 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:44.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:59.857-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2775.8,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4302.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502382",
+                                            "StopPointName": "UNION TP/GRAND CENTRAL PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:18.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:35.447-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3033.88,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4560.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502383",
+                                            "StopPointName": "UNION TP/CLOVERDALE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:42.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:57.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3211.28,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4737.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502384",
+                                            "StopPointName": "UNION TP/226 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:23.762-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3345.75,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4872.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502385",
+                                            "StopPointName": "UNION TP/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:27.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:58.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3570.99,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 5097.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502386",
+                                            "StopPointName": "UNION TP/222 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:46.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:13.004-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3729.14,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 5255.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502387",
+                                            "StopPointName": "UNION TP/220 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:35.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:50.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4144.43,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5671.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502389",
+                                            "StopPointName": "UNION TP/BELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:22.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:28.923-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4540.93,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6067.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502391",
+                                            "StopPointName": "UNION TP/211 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:57.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:57.233-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4828.19,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6354.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502393",
+                                            "StopPointName": "UNION TP/HOLLIS HILLS TER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:09.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:55.184-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5438.99,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 6965.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502394",
+                                            "StopPointName": "UNION TP/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:38.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:18.156-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5682.95,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7209.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502395",
+                                            "StopPointName": "UNION TP/197 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:57.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:32.849-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5841.36,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 7368.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502396",
+                                            "StopPointName": "UNION TP/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:26.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:59.824-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6081.17,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 7607.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502397",
+                                            "StopPointName": "UNION TP/193 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:45.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:19.334-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6239.08,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 7765.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502398",
+                                            "StopPointName": "UNION TP/190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:04.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:38.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6403.23,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7929.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502399",
+                                            "StopPointName": "UNION TP/188 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:34.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:16.570-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6658.29,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 8184.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502400",
+                                            "StopPointName": "UNION TP/185 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:53.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:42.013-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6815.06,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 8341.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502401",
+                                            "StopPointName": "UNION TP/183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:30.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:20.181-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7127.25,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 8653.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502402",
+                                            "StopPointName": "UNION TP/179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:06.571-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7377.56,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 8904.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502403",
+                                            "StopPointName": "UNION TP/UTOPIA PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:40.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:44.584-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7678.08,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 9204.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502404",
+                                            "StopPointName": "UNION TP/174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:11.467-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:09.274-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7908.93,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 9435.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502405",
+                                            "StopPointName": "UNION TP/171 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:43.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:33.986-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8149.6,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 9676.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502406",
+                                            "StopPointName": "UNION TP/168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:04.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:51.221-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8312.95,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 9839.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502407",
+                                            "StopPointName": "UNION TP/166 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:28.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:13.794-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8492.77,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 10019.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502408",
+                                            "StopPointName": "UNION TP/164 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:03.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:50.161-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8758.13,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 10284.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502409",
+                                            "StopPointName": "UNION TP/160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:25.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:06.436-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8920.5,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 10447.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502410",
+                                            "StopPointName": "UNION TP/PARSONS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:50.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:40.197-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9109.61,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 10636.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503037",
+                                            "StopPointName": "UNION TP/153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:11.470-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:17.234-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.8 miles away",
+                                                    "DistanceFromCall": 9264.07,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 10790.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502412",
+                                            "StopPointName": "UNION TP/150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:38.472-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:44.532-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.9 miles away",
+                                                    "DistanceFromCall": 9470.82,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10997.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502413",
+                                            "StopPointName": "UNION TP/147 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:10.472-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:56.783-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9713.04,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 11239.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502414",
+                                            "StopPointName": "UNION TP/MAIN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:52.473-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:48.442-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.2 miles away",
+                                                    "DistanceFromCall": 10024.0,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 11550.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503445",
+                                            "StopPointName": "UNION TP/VLEIGH PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.473-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:27.642-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.8 miles away",
+                                                    "DistanceFromCall": 10990.86,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 12517.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504489",
+                                            "StopPointName": "QUEENS BL/78 CR"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:47.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q46",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-144000_MISC_318"
+                                },
+                                "JourneyPatternRef": "MTA_Q460317",
+                                "PublishedLineName": "Q46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_904088",
+                                "DestinationName": "LAKE SUCCESS LIJ HOSPITAL via UNION",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.832759,
+                                    "Latitude": 40.715425
+                                },
+                                "Bearing": 322.864,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_82980_MISC-318",
+                                "VehicleRef": "MTA NYCT_8643",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:57.391-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:12.334-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:12.334-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 394.55,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 699.43
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 2
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504545",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNION TP/QUEENS BL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:57.394-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:12.334-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 394.55,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 699.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504545",
+                                            "StopPointName": "UNION TP/QUEENS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:12.394-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:16.134-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 846.09,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1150.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502300",
+                                            "StopPointName": "UNION TP/135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:18.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:04.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1241.53,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1546.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502301",
+                                            "StopPointName": "UNION TP/141 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:51.372-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1492.78,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1797.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502302",
+                                            "StopPointName": "UNION TP/MAIN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:22.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:16.277-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1613.17,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1918.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502303",
+                                            "StopPointName": "UNION TP/147 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:19.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:35.525-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1928.14,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2233.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502304",
+                                            "StopPointName": "UNION TP/150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:09.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2154.96,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2459.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502305",
+                                            "StopPointName": "UNION TP/PARSONS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:38.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:47.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2368.33,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2673.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502306",
+                                            "StopPointName": "UNION TP/160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:14.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:12.111-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2563.56,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2868.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502307",
+                                            "StopPointName": "UNION TP/164 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:52.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:47.670-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2778.91,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3083.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502308",
+                                            "StopPointName": "UNION TP/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:36.402-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:16.727-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3020.52,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3325.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502309",
+                                            "StopPointName": "UNION TP/168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:05.402-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:35.597-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3181.01,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3485.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502310",
+                                            "StopPointName": "UNION TP/170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:49.403-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:02.372-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3424.25,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3729.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502311",
+                                            "StopPointName": "UNION TP/173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:16.404-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:21.569-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3573.52,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3878.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502312",
+                                            "StopPointName": "UNION TP/175 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.404-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:30.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3817.0,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4121.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502313",
+                                            "StopPointName": "UNION TP/UTOPIA PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:28.404-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:09.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4041.43,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4346.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502314",
+                                            "StopPointName": "UNION TP/SURREY PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.405-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:39.025-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4309.81,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4614.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502315",
+                                            "StopPointName": "UNION TP/KENT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:29.405-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:02.611-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4547.04,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4851.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502316",
+                                            "StopPointName": "UNION TP/CHEVY CHASE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:57.406-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:30.460-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4773.03,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5077.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502317",
+                                            "StopPointName": "UNION TP/188 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:17.406-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:47.677-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4931.35,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5236.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502318",
+                                            "StopPointName": "UNION TP/190 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:36.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:04.679-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5093.34,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5398.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502319",
+                                            "StopPointName": "UNION TP/193 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:04.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:28.225-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5315.8,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5620.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502320",
+                                            "StopPointName": "UNION TP/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:28.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:47.691-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5515.33,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5820.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502321",
+                                            "StopPointName": "UNION TP/198 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:58.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:13.126-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5762.82,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6067.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502322",
+                                            "StopPointName": "UNION TP/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:07.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:09.050-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6321.01,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6625.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502323",
+                                            "StopPointName": "UNION TP/HOLLIS HILLS TER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:45.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:40.650-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6630.25,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6935.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502325",
+                                            "StopPointName": "UNION TP/211 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:34.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:22.633-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7035.99,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7340.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502327",
+                                            "StopPointName": "UNION TP/BELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:04.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:47.386-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7275.15,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7580.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502328",
+                                            "StopPointName": "UNION TP/STEWART RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:43.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:22.284-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7598.3,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7903.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502330",
+                                            "StopPointName": "UNION TP/222 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:44.319-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7735.49,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 8040.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502331",
+                                            "StopPointName": "UNION TP/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:25.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:26.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7925.73,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 8230.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502332",
+                                            "StopPointName": "UNION TP/226 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:50.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:46.790-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8123.28,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8428.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502333",
+                                            "StopPointName": "UNION TP/GRAND CENTRAL PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:18.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:11.455-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8336.91,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8641.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502334",
+                                            "StopPointName": "UNION TP/232 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:46.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:36.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8553.21,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8858.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502335",
+                                            "StopPointName": "UNION TP/234 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:06.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:52.442-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8712.89,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9017.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502336",
+                                            "StopPointName": "UNION TP/236 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:32.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:12.929-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8911.91,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9216.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502337",
+                                            "StopPointName": "UNION TP/WINCHESTER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:51.418-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:14.982-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.9 miles away",
+                                                    "DistanceFromCall": 9526.69,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9831.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502338",
+                                            "StopPointName": "UNION TP/CROSS ISLAND PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:18.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:06.752-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9734.3,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 10039.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502339",
+                                            "StopPointName": "UNION TP/COMMONWEALTH BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:52.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:41.509-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.2 miles away",
+                                                    "DistanceFromCall": 9999.04,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10303.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503588",
+                                            "StopPointName": "UNION TP/248 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:34.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:26.445-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.4 miles away",
+                                                    "DistanceFromCall": 10323.08,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10627.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503033",
+                                            "StopPointName": "UNION TP/252 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:18.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:20.645-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.6 miles away",
+                                                    "DistanceFromCall": 10663.74,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10968.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505152",
+                                            "StopPointName": "UNION TP/256 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:39.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:39.700-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.7 miles away",
+                                                    "DistanceFromCall": 10831.72,
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 11136.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502344",
+                                            "StopPointName": "UNION TP/258 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:01.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:57.352-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.8 miles away",
+                                                    "DistanceFromCall": 10998.4,
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 11303.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502350",
+                                            "StopPointName": "UNION TPKE/260 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:34.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:23.714-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.0 miles away",
+                                                    "DistanceFromCall": 11256.53,
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11561.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502351",
+                                            "StopPointName": "UNION TP/263 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:55.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:39.778-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.1 miles away",
+                                                    "DistanceFromCall": 11420.54,
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 11725.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502352",
+                                            "StopPointName": "UNION TP/265 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:28.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:16.252-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.3 miles away",
+                                                    "DistanceFromCall": 11675.0,
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 11979.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502354",
+                                            "StopPointName": "UNION TP/268 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:44.326-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.4 miles away",
+                                                    "DistanceFromCall": 11927.07,
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 12231.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502355",
+                                            "StopPointName": "UNION TP/271 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:20.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:43.608-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.5 miles away",
+                                                    "DistanceFromCall": 12079.05,
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 12383.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504553",
+                                            "StopPointName": "LAKEVILLE RD/UNION TPK"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:39.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:02.907-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "7.6 miles away",
+                                                    "DistanceFromCall": 12226.09,
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 12530.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504554",
+                                            "StopPointName": "LAKEVILLE RD/ HEWLETT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:00.424-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:42.402-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "8.0 miles away",
+                                                    "DistanceFromCall": 12856.89,
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 13161.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904121",
+                                            "StopPointName": "LIJ MEDICAL CTR/271 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:01.326-04:00",
+                    "ValidUntil": "2021-06-23T00:05:01.326-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

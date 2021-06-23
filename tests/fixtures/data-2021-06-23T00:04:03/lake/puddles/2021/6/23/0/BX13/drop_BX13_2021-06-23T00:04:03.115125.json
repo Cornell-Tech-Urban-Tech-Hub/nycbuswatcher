@@ -1,0 +1,532 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.867-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX13",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-140800_BX3_328"
+                                },
+                                "JourneyPatternRef": "MTA_BX130003",
+                                "PublishedLineName": "Bx13",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_802031",
+                                "DestinationName": "RIVER AV-149 ST",
+                                "OriginAimedDepartureTime": "2021-06-23T00:00:00.000-04:00",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_272911"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.929856,
+                                    "Latitude": 40.819989
+                                },
+                                "Bearing": 248.622,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_58620_BX3-321",
+                                "VehicleRef": "MTA NYCT_8551",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:51:00.918-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.867-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.867-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4661.83,
+                                            "DistanceFromCall": 36.1,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104483",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "RIVER AV/E 149 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:51:00.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.867-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4661.83,
+                                                    "DistanceFromCall": 36.1,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104483",
+                                            "StopPointName": "RIVER AV/E 149 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:32.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX13",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-142500_BX13_430"
+                                },
+                                "JourneyPatternRef": "MTA_BX130004",
+                                "PublishedLineName": "Bx13",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104478",
+                                "DestinationName": "WASHINGTON HEIGHTS G.W. BRIDGE",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_277084"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.922434,
+                                    "Latitude": 40.84493
+                                },
+                                "Bearing": 66.03751,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_18840_BX13-403",
+                                "VehicleRef": "MTA NYCT_8379",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:13.884-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:07:15.508-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:07:15.508-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4106.61,
+                                            "DistanceFromCall": 836.11,
+                                            "PresentableDistance": "0.5 miles away"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403652",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 181 ST/AMSTERDAM AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:13.899-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:15.508-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4106.61,
+                                                    "DistanceFromCall": 836.11,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403652",
+                                            "StopPointName": "W 181 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:18.900-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:17.308-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4349.55,
+                                                    "DistanceFromCall": 1079.06,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403653",
+                                            "StopPointName": "W 181 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:58.900-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:26.508-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4500.32,
+                                                    "DistanceFromCall": 1229.83,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404324",
+                                            "StopPointName": "WADSWORTH AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.901-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:20.745-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4731.7,
+                                                    "DistanceFromCall": 1461.21,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803011",
+                                            "StopPointName": "W 179 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:39.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX13",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-143800_BX13_429"
+                                },
+                                "JourneyPatternRef": "MTA_BX130003",
+                                "PublishedLineName": "Bx13",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_802031",
+                                "DestinationName": "RIVER AV-149 ST",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_272911"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.931028,
+                                    "Latitude": 40.848174
+                                },
+                                "Bearing": 336.80142,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_54960_BX3-315",
+                                "VehicleRef": "MTA NYCT_4421",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:00.906-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:06:22.871-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:06:22.871-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1504.1,
+                                            "DistanceFromCall": 851.34,
+                                            "PresentableDistance": "0.5 miles away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100737",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "OGDEN AV/UNIVERSITY AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.909-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:22.871-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1504.1,
+                                                    "DistanceFromCall": 851.34,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100737",
+                                            "StopPointName": "OGDEN AV/UNIVERSITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:48.910-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:01.908-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1675.06,
+                                                    "DistanceFromCall": 1022.3,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100738",
+                                            "StopPointName": "OGDEN AV/W 171 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:53.911-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:06.033-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1908.65,
+                                                    "DistanceFromCall": 1255.9,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100740",
+                                            "StopPointName": "OGDEN AV/W 169 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:02.911-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:12.773-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2155.58,
+                                                    "DistanceFromCall": 1502.83,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100922",
+                                            "StopPointName": "OGDEN AV/W 168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:03.435-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2364.95,
+                                                    "DistanceFromCall": 1712.2,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100923",
+                                            "StopPointName": "OGDEN AV/W 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:37.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:38.620-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2506.07,
+                                                    "DistanceFromCall": 1853.32,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100924",
+                                            "StopPointName": "OGDEN AV/W 166 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:14.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:17.803-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2644.13,
+                                                    "DistanceFromCall": 1991.37,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100925",
+                                            "StopPointName": "OGDEN AV/W 165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:03.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:15.603-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2830.42,
+                                                    "DistanceFromCall": 2177.66,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100926",
+                                            "StopPointName": "OGDEN AV/W 164 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:32.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:45.403-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2940.53,
+                                                    "DistanceFromCall": 2287.77,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100927",
+                                            "StopPointName": "OGDEN AV/W 162 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:51.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:27.603-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3239.93,
+                                                    "DistanceFromCall": 2587.18,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103809",
+                                            "StopPointName": "JEROME AV/E 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:24.413-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3730.31,
+                                                    "DistanceFromCall": 3077.56,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802117",
+                                            "StopPointName": "E 161 ST/RIVER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:20.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:22.521-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3937.53,
+                                                    "DistanceFromCall": 3284.78,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104480",
+                                            "StopPointName": "RIVER AV/E 157 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:45.914-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:43.485-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4313.69,
+                                                    "DistanceFromCall": 3660.93,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802150",
+                                            "StopPointName": "RIVER AV/E 151 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.914-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:48.748-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4661.83,
+                                                    "DistanceFromCall": 4009.08,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104483",
+                                            "StopPointName": "RIVER AV/E 149 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:34.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.867-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.867-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-04-21T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Westbound Bx11, Bx13, Bx35 and Bx36/Bx36 LTD buses may experience delays because of construction on 181st St between Amsterdam Ave and University Ave",
+                                "Description": "Until further notice Westbound Bx11, Bx13, Bx35 and Bx36/Bx36 LTD buses may experience delays because of construction on 181st St between Amsterdam Ave and University Ave",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX11",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX13",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX35",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX36",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX36",
+                                                "DirectionRef": "1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "altered"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-04-21T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_277084"
+                            },
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-01-28T00:00:00.000-05:00",
+                                    "EndTime": "2021-12-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Through Dec 2021 Eastbound Bx11, Bx13, Bx35 and Bx36/Bx36 LTD stop on St Nicholas Ave at 181st St is closed while we replace elevators at the 181 St [1] station",
+                                "Description": "Through Dec 2021 Eastbound Bx11, Bx13, Bx35 and Bx36/Bx36 LTD stop on St Nicholas Ave at 181st St is closed while we replace elevators at the 181 St [1] station   Buses make a stop on 181st St between Wadsworth Ave and St Nicholas Ave.  Reminder: Bx36 LTD buses do not run overnight or weekends or July 5",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX11",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX13",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX35",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX36",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX36",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-01-28T00:00:00.000-05:00",
+                                "SituationNumber": "MTA NYCT_272911"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

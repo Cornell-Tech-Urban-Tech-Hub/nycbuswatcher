@@ -1,0 +1,741 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:00.825-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B68",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-140500_B6769_937"
+                                },
+                                "JourneyPatternRef": "MTA_B680261",
+                                "PublishedLineName": "B68",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_305733",
+                                "DestinationName": "CONEY ISLAND STILLWELL AV via C I AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.971932,
+                                    "Latitude": 40.579487
+                                },
+                                "Bearing": 72.658875,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JG_B1-Weekday-SDon_E_JG_83400_B6769-937",
+                                "VehicleRef": "MTA NYCT_810",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:05.836-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:06.107-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:06.107-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 11093.04,
+                                            "DistanceFromCall": 63.02,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_308305",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "NEPTUNE AV/W 5 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:05.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:06.107-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 11093.04,
+                                                    "DistanceFromCall": 63.02,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308305",
+                                            "StopPointName": "NEPTUNE AV/W 5 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:48.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:39.507-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 11300.2,
+                                                    "DistanceFromCall": 270.18,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308306",
+                                            "StopPointName": "NEPTUNE AV/W 6 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:24.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:02.750-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11474.77,
+                                                    "DistanceFromCall": 444.75,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308307",
+                                            "StopPointName": "NEPTUNE AV/SHELL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:14.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.340-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 11719.03,
+                                                    "DistanceFromCall": 689.01,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308308",
+                                            "StopPointName": "NEPTUNE AV/W 12 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:02.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:19.815-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 11952.57,
+                                                    "DistanceFromCall": 922.55,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306419",
+                                            "StopPointName": "STILLWELL AV/NEPTUNE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:11.236-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 12231.91,
+                                                    "DistanceFromCall": 1201.88,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801074",
+                                            "StopPointName": "STILLWELL/TERMINAL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B68",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-139500_B68_985"
+                                },
+                                "JourneyPatternRef": "MTA_B680262",
+                                "PublishedLineName": "B68",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308479",
+                                "DestinationName": "WINDSOR TERR PRITCHARD SQ via C I AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.971836,
+                                    "Latitude": 40.649818
+                                },
+                                "Bearing": 105.762146,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JG_B1-Weekday-SDon_E_JG_79800_B68-985",
+                                "VehicleRef": "MTA NYCT_405",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:50:54.855-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:03.007-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:03.007-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10774.88,
+                                            "DistanceFromCall": 70.53,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_307623",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CONEY ISLAND AV/PARK CI"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:50:54.976-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:03.007-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10774.88,
+                                                    "DistanceFromCall": 70.53,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307623",
+                                            "StopPointName": "CONEY ISLAND AV/PARK CI"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:51:36.978-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.839-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 11091.7,
+                                                    "DistanceFromCall": 387.35,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305727",
+                                            "StopPointName": "PROSPECT PK SW/GREENWOOD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:06.980-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:37.639-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11324.65,
+                                                    "DistanceFromCall": 620.3,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305728",
+                                            "StopPointName": "PROSPECT PK SW/VANDERBILT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:31.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:01.465-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 11521.23,
+                                                    "DistanceFromCall": 816.88,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305729",
+                                            "StopPointName": "PROSPECT PK SW/TERRACE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:09.982-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:45.491-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 11811.44,
+                                                    "DistanceFromCall": 1107.09,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305730",
+                                            "StopPointName": "PROSPECT PK SW/11 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:39.983-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:12.296-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 12044.32,
+                                                    "DistanceFromCall": 1339.97,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305731",
+                                            "StopPointName": "PROSPECT PK SW/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:00.003-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:30.670-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 12206.13,
+                                                    "DistanceFromCall": 1501.78,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307938",
+                                            "StopPointName": "PROSPECT PK SW/BARTEL PRITCHARD SQ"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B68",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JG_B1-Weekday-SDon-142500_B68_982"
+                                },
+                                "JourneyPatternRef": "MTA_B680262",
+                                "PublishedLineName": "B68",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308479",
+                                "DestinationName": "WINDSOR TERR PRITCHARD SQ via C I AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.961305,
+                                    "Latitude": 40.599766
+                                },
+                                "Bearing": 94.76364,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_234",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:12.035-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:26.731-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:26.731-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5185.68,
+                                            "DistanceFromCall": 125.67,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_305703",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CONEY ISLAND AV/AV T"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:12.112-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:26.731-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5185.68,
+                                                    "DistanceFromCall": 125.67,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305703",
+                                            "StopPointName": "CONEY ISLAND AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:17.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:27.448-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5457.39,
+                                                    "DistanceFromCall": 397.38,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305704",
+                                            "StopPointName": "CONEY ISLAND AV/AV S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:20.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:13.091-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5716.48,
+                                                    "DistanceFromCall": 656.47,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305705",
+                                            "StopPointName": "CONEY ISLAND AV/AV R"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.115-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:46.804-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5885.23,
+                                                    "DistanceFromCall": 825.22,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305706",
+                                            "StopPointName": "CONEY ISLAND AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:16.116-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:39.204-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6247.85,
+                                                    "DistanceFromCall": 1187.85,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305707",
+                                            "StopPointName": "CONEY ISLAND AV/AV P"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:14.120-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:24.540-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6527.2,
+                                                    "DistanceFromCall": 1467.19,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305708",
+                                            "StopPointName": "CONEY ISLAND AV/AV O"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:16.121-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:12.145-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 6823.26,
+                                                    "DistanceFromCall": 1763.25,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305709",
+                                            "StopPointName": "CONEY ISLAND AV/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:55.121-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:43.258-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7008.3,
+                                                    "DistanceFromCall": 1948.3,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305710",
+                                            "StopPointName": "CONEY ISLAND AV/CHESTNUT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:09.122-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:05.731-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7363.83,
+                                                    "DistanceFromCall": 2303.82,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305711",
+                                            "StopPointName": "CONEY ISLAND AV/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:05.122-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:54.399-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7630.8,
+                                                    "DistanceFromCall": 2570.79,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305712",
+                                            "StopPointName": "CONEY ISLAND AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.123-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:01.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 7893.39,
+                                                    "DistanceFromCall": 2833.38,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305713",
+                                            "StopPointName": "CONEY ISLAND AV/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:43.123-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:46.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 8111.93,
+                                                    "DistanceFromCall": 3051.93,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301278",
+                                            "StopPointName": "CONEY ISLAND AV/AV I"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:47.127-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.300-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 8439.97,
+                                                    "DistanceFromCall": 3379.96,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305715",
+                                            "StopPointName": "CONEY ISLAND AV/AV H"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:37.128-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:19.520-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 8700.12,
+                                                    "DistanceFromCall": 3640.11,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305716",
+                                            "StopPointName": "CONEY ISLAND AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:17.128-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:03.895-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 8901.14,
+                                                    "DistanceFromCall": 3841.14,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300883",
+                                            "StopPointName": "CONEY ISLAND AV/NEWKIRK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:52.130-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:00.095-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 9082.66,
+                                                    "DistanceFromCall": 4022.65,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305718",
+                                            "StopPointName": "CONEY ISLAND AV/DITMAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:36.131-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:53.688-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9309.91,
+                                                    "DistanceFromCall": 4249.9,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305719",
+                                            "StopPointName": "CONEY ISLAND AV/DORCHESTER RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:22.131-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:51.688-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9545.53,
+                                                    "DistanceFromCall": 4485.52,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305720",
+                                            "StopPointName": "CONEY ISLAND AV/CORTELYOU RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:14.132-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:29.907-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9813.41,
+                                                    "DistanceFromCall": 4753.4,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305721",
+                                            "StopPointName": "CONEY ISLAND AV/SLOCUM PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:01.132-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:22.571-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 10049.7,
+                                                    "DistanceFromCall": 4989.7,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305722",
+                                            "StopPointName": "CONEY ISLAND AV/BEVERLEY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.133-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:25.433-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 10355.06,
+                                                    "DistanceFromCall": 5295.06,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305724",
+                                            "StopPointName": "CONEY ISLAND AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:27.134-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:05.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10563.29,
+                                                    "DistanceFromCall": 5503.29,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305725",
+                                            "StopPointName": "CONEY ISLAND AV/CATON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:54.134-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:35.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10774.88,
+                                                    "DistanceFromCall": 5714.87,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307623",
+                                            "StopPointName": "CONEY ISLAND AV/PARK CI"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:36.135-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:39.572-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 11091.7,
+                                                    "DistanceFromCall": 6031.69,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305727",
+                                            "StopPointName": "PROSPECT PK SW/GREENWOOD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:06.136-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:10.372-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 11324.65,
+                                                    "DistanceFromCall": 6264.64,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305728",
+                                            "StopPointName": "PROSPECT PK SW/VANDERBILT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:31.137-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:34.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 11521.23,
+                                                    "DistanceFromCall": 6461.22,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305729",
+                                            "StopPointName": "PROSPECT PK SW/TERRACE PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:09.137-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:18.224-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 11811.44,
+                                                    "DistanceFromCall": 6751.43,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305730",
+                                            "StopPointName": "PROSPECT PK SW/11 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:39.138-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:45.029-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 12044.32,
+                                                    "DistanceFromCall": 6984.31,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_305731",
+                                            "StopPointName": "PROSPECT PK SW/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.138-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:03.403-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 12206.13,
+                                                    "DistanceFromCall": 7146.13,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307938",
+                                            "StopPointName": "PROSPECT PK SW/BARTEL PRITCHARD SQ"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:58.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:00.825-04:00",
+                    "ValidUntil": "2021-06-23T00:05:00.825-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

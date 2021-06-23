@@ -1,0 +1,1268 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.331-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX41",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-142400_BX41_921"
+                                },
+                                "JourneyPatternRef": "MTA_BX410029",
+                                "PublishedLineName": "Bx41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104523",
+                                "DestinationName": "WILLAMSBRIDGE GUN HILL RD via WEBSTER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.877975,
+                                    "Latitude": 40.870466
+                                },
+                                "Bearing": 29.320477,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_47280_BX41-920",
+                                "VehicleRef": "MTA NYCT_5779",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:12:50.342-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.427-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.427-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 154.07,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7391.68
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104559",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WEBSTER AV/E 204 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:50.355-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.427-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 154.07,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7391.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104559",
+                                            "StopPointName": "WEBSTER AV/E 204 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:22.356-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:54.237-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 361.37,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7598.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102977",
+                                            "StopPointName": "WEBSTER AV/E 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:06.356-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:15.037-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1051.6,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8289.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101958",
+                                            "StopPointName": "WEBSTER AV/E GUN HILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:56.356-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:13.037-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1383.22,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8620.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101865",
+                                            "StopPointName": "E GUN HILL RD/OLINVILLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.357-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:47.899-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1808.6,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9046.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802131",
+                                            "StopPointName": "WHITE PLAINS RD/E GUN HILL RD"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-142100_BX41_922"
+                                },
+                                "JourneyPatternRef": "MTA_BX410013",
+                                "PublishedLineName": "Bx41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104525",
+                                "DestinationName": "THE HUB 150 ST via WEBSTER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.873907,
+                                    "Latitude": 40.874204
+                                },
+                                "Bearing": 231.5198,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_23520_BX41-909",
+                                "VehicleRef": "MTA NYCT_5809",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:44:58.408-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:19.264-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:19.264-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 199.38,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1213.1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_102796",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WEBSTER AV/E 205 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:44:58.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:19.264-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 199.38,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1213.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102796",
+                                            "StopPointName": "WEBSTER AV/E 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:45:50.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:57.680-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 462.63,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1476.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104560",
+                                            "StopPointName": "WEBSTER AV/E 204 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:46:49.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:50.640-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 762.33,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1776.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102798",
+                                            "StopPointName": "WEBSTER AV/E MOSHOLU PY N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:47:32.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:23.721-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 981.43,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1995.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102799",
+                                            "StopPointName": "WEBSTER AV/E 201 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:48:00.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:44.786-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1123.76,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2137.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104518",
+                                            "StopPointName": "WEBSTER AV/BEDFORD PK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:49:28.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:04.342-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1471.19,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2484.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103406",
+                                            "StopPointName": "WEBSTER AV/E 197 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:50:53.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:19.040-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1805.33,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2819.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104076",
+                                            "StopPointName": "WEBSTER AV/E 194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:00.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:28.377-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2068.58,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3082.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104561",
+                                            "StopPointName": "WEBSTER AV/E FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:10.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:08.810-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2443.32,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3457.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102808",
+                                            "StopPointName": "WEBSTER AV/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:05.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:06.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2737.32,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3751.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102809",
+                                            "StopPointName": "WEBSTER AV/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:35.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:31.471-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2900.7,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3914.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103072",
+                                            "StopPointName": "WEBSTER AV/E 182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:00.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:06.669-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3358.57,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4372.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102811",
+                                            "StopPointName": "WEBSTER AV/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:49.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:36.265-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3778.34,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4792.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102445",
+                                            "StopPointName": "WEBSTER AV/TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:06.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:48.379-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3844.34,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4858.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102814",
+                                            "StopPointName": "WEBSTER AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:31.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:43.715-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4403.52,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 5417.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103695",
+                                            "StopPointName": "WEBSTER AV/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:03.382-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4744.64,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 5758.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104612",
+                                            "StopPointName": "WEBSTER AV/CLAREMONT PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:43.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:20.744-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5221.0,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6234.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104564",
+                                            "StopPointName": "WEBSTER AV/E 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:41.418-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:08.908-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5492.65,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6506.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103073",
+                                            "StopPointName": "WEBSTER AV/E 169 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:49.418-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:32.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5806.15,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6819.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104565",
+                                            "StopPointName": "WEBSTER AV/E 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:20.418-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:02.866-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6230.94,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7244.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104054",
+                                            "StopPointName": "MELROSE AV/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.418-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:17.138-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6693.7,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7707.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104293",
+                                            "StopPointName": "MELROSE AV/E 160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:55.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:31.794-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6893.18,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 7906.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100126",
+                                            "StopPointName": "MELROSE AV/E 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:56.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:41.191-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7118.5,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8132.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103124",
+                                            "StopPointName": "MELROSE AV/E 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:07.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:56.591-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7376.64,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8390.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100129",
+                                            "StopPointName": "MELROSE AV/E 152 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.419-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:43.991-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7571.15,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 8584.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103802",
+                                            "StopPointName": "MELROSE AV/E 149 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:52.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX41",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-140900_BX41_924"
+                                },
+                                "JourneyPatternRef": "MTA_BX410029",
+                                "PublishedLineName": "Bx41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104523",
+                                "DestinationName": "WILLAMSBRIDGE GUN HILL RD via WEBSTER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.866263,
+                                    "Latitude": 40.877307
+                                },
+                                "Bearing": 341.56506,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_18600_BX41-906",
+                                "VehicleRef": "MTA NYCT_5777",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:00.370-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:07:12.877-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:07:12.877-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 255.23,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9046.22
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_802131",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WHITE PLAINS RD/E GUN HILL RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.385-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:12.877-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 255.23,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9046.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802131",
+                                            "StopPointName": "WHITE PLAINS RD/E GUN HILL RD"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-BM-143500_BX41_901"
+                                },
+                                "JourneyPatternRef": "MTA_BX410013",
+                                "PublishedLineName": "Bx41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104525",
+                                "DestinationName": "THE HUB 150 ST via WEBSTER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.887336,
+                                    "Latitude": 40.864974
+                                },
+                                "Bearing": 221.45523,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon-BM_E_GH_-1020_BX41-901",
+                                "VehicleRef": "MTA NYCT_5570",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:53.423-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:45.879-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:45.879-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 263.38,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 2819.05
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104076",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WEBSTER AV/E 194 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:53.428-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:45.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 263.38,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 2819.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104076",
+                                            "StopPointName": "WEBSTER AV/E 194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.428-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:55.216-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 526.62,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3082.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104561",
+                                            "StopPointName": "WEBSTER AV/E FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:10.429-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:35.649-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 901.37,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 3457.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102808",
+                                            "StopPointName": "WEBSTER AV/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:05.429-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:33.247-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1195.37,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 3751.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102809",
+                                            "StopPointName": "WEBSTER AV/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:35.429-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:58.310-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1358.74,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 3914.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103072",
+                                            "StopPointName": "WEBSTER AV/E 182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.431-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:33.508-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1816.62,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4372.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102811",
+                                            "StopPointName": "WEBSTER AV/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:49.431-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:03.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2236.39,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4792.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102445",
+                                            "StopPointName": "WEBSTER AV/TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:06.431-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:15.218-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2302.39,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 4858.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102814",
+                                            "StopPointName": "WEBSTER AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:31.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:10.554-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2861.57,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5417.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103695",
+                                            "StopPointName": "WEBSTER AV/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:30.221-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3202.68,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5758.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104612",
+                                            "StopPointName": "WEBSTER AV/CLAREMONT PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:43.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:47.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3679.05,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6234.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104564",
+                                            "StopPointName": "WEBSTER AV/E 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:41.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:35.747-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3950.7,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6506.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103073",
+                                            "StopPointName": "WEBSTER AV/E 169 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:49.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:59.534-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4264.2,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6819.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104565",
+                                            "StopPointName": "WEBSTER AV/E 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:20.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:29.705-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4688.99,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7244.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104054",
+                                            "StopPointName": "MELROSE AV/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:43.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5151.75,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7707.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104293",
+                                            "StopPointName": "MELROSE AV/E 160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:55.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:58.633-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5351.23,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 7906.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100126",
+                                            "StopPointName": "MELROSE AV/E 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:56.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:08.030-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5576.55,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 8132.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103124",
+                                            "StopPointName": "MELROSE AV/E 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:07.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:23.430-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5834.69,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 8390.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100129",
+                                            "StopPointName": "MELROSE AV/E 152 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.434-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:10.830-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 6029.2,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8584.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103802",
+                                            "StopPointName": "MELROSE AV/E 149 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:47.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144100_BX41_923"
+                                },
+                                "JourneyPatternRef": "MTA_BX410013",
+                                "PublishedLineName": "Bx41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104525",
+                                "DestinationName": "THE HUB 150 ST via WEBSTER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.877545,
+                                    "Latitude": 40.870706
+                                },
+                                "Bearing": 208.0725,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_18720_BX41-907",
+                                "VehicleRef": "MTA NYCT_5783",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:59.391-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:35.020-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:35.020-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 263.74,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1776.05
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_102798",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WEBSTER AV/E MOSHOLU PY N"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:59.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:35.020-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 263.74,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1776.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102798",
+                                            "StopPointName": "WEBSTER AV/E MOSHOLU PY N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:36.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.901-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 482.84,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1995.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102799",
+                                            "StopPointName": "WEBSTER AV/E 201 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:27.166-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 625.17,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2137.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104518",
+                                            "StopPointName": "WEBSTER AV/BEDFORD PK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:28.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:46.722-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 972.6,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2484.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103406",
+                                            "StopPointName": "WEBSTER AV/E 197 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:53.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:01.420-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1306.74,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2819.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104076",
+                                            "StopPointName": "WEBSTER AV/E 194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:10.757-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1569.98,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 3082.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104561",
+                                            "StopPointName": "WEBSTER AV/E FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:10.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:51.190-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1944.73,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3457.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102808",
+                                            "StopPointName": "WEBSTER AV/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:05.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:48.788-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2238.73,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3751.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102809",
+                                            "StopPointName": "WEBSTER AV/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:35.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:13.851-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2402.1,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3914.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103072",
+                                            "StopPointName": "WEBSTER AV/E 182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:49.049-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2859.98,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4372.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102811",
+                                            "StopPointName": "WEBSTER AV/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:49.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:18.645-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3279.75,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4792.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102445",
+                                            "StopPointName": "WEBSTER AV/TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:06.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:30.759-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3345.75,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4858.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102814",
+                                            "StopPointName": "WEBSTER AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:31.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:26.095-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3904.93,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5417.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103695",
+                                            "StopPointName": "WEBSTER AV/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:45.762-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4246.04,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5758.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104612",
+                                            "StopPointName": "WEBSTER AV/CLAREMONT PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:43.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:03.124-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4722.41,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6234.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104564",
+                                            "StopPointName": "WEBSTER AV/E 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:41.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:51.288-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4994.06,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6506.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103073",
+                                            "StopPointName": "WEBSTER AV/E 169 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:49.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:15.075-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5307.56,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6819.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104565",
+                                            "StopPointName": "WEBSTER AV/E 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:20.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:45.246-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5732.35,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7244.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104054",
+                                            "StopPointName": "MELROSE AV/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:59.518-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6195.11,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 7707.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104293",
+                                            "StopPointName": "MELROSE AV/E 160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:55.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:14.174-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6394.59,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7906.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100126",
+                                            "StopPointName": "MELROSE AV/E 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:56.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:23.571-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6619.9,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8132.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103124",
+                                            "StopPointName": "MELROSE AV/E 155 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:07.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:38.971-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6878.05,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8390.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100129",
+                                            "StopPointName": "MELROSE AV/E 152 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.402-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:26.371-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7072.55,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8584.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103802",
+                                            "StopPointName": "MELROSE AV/E 149 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:50.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.331-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.331-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.549-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B42",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-23",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-000000_B42_501"
+                                },
+                                "JourneyPatternRef": "MTA_B420005",
+                                "PublishedLineName": "B42",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_303345",
+                                "DestinationName": "CANARSIE PIER",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.899969,
+                                    "Latitude": 40.643039
+                                },
+                                "Bearing": 317.80804,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_-1140_B42-501",
+                                "VehicleRef": "MTA NYCT_7105",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T00:02:00.555-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:16.779-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:16.779-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 192.03,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 619.31
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303348",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "ROCKAWAY PY/AV J"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:02:00.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:16.779-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 192.03,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 619.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303348",
+                                            "StopPointName": "ROCKAWAY PY/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:02:35.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:40.638-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 365.73,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 793.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303349",
+                                            "StopPointName": "ROCKAWAY PY/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:03:25.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:15.786-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 611.44,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1038.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303350",
+                                            "StopPointName": "ROCKAWAY PY/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:04:13.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:52.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 850.2,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1277.48
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303351",
+                                            "StopPointName": "ROCKAWAY PY/AV M"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:05:11.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1135.69,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1562.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303352",
+                                            "StopPointName": "ROCKAWAY PY/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:05:47.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:39.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1316.23,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1743.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303353",
+                                            "StopPointName": "ROCKAWAY PY/SEAVIEW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:07:00.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:12.783-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1677.51,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2104.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306405",
+                                            "StopPointName": "ROCKAWAY PY/SCHENCK ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.549-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.549-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

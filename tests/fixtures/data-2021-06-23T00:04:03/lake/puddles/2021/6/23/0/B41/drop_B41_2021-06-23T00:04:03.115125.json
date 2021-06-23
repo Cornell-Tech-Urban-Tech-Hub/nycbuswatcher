@@ -1,0 +1,2563 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.547-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-139900_B41_284"
+                                },
+                                "JourneyPatternRef": "MTA_B410393",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_303215",
+                                "DestinationName": "DOWNTOWN BKLYN CADMAN PLAZA via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.99029,
+                                    "Latitude": 40.692437
+                                },
+                                "Bearing": 172.81296,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_83640_B41-284",
+                                "VehicleRef": "MTA NYCT_7308",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:32.556-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.523-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.523-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 34.38,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 11401.66
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_302434",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "JORALEMON ST/COURT ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:32.595-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.523-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 34.38,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 11401.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302434",
+                                            "StopPointName": "JORALEMON ST/COURT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:07.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:27.561-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 168.42,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 11535.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306533",
+                                            "StopPointName": "CADMAN PLZ W/MONTAGUE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.596-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:31.927-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 372.94,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11740.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901007",
+                                            "StopPointName": "CADMAN PZ W/JOHNSON ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-141800_B41_281"
+                                },
+                                "JourneyPatternRef": "MTA_B410395",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308381",
+                                "DestinationName": "DOWNTOWN BKLYN CADMAN PLAZA via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.947293,
+                                    "Latitude": 40.632454
+                                },
+                                "Bearing": 137.00787,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_24780_B41-230",
+                                "VehicleRef": "MTA NYCT_7652",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:52:00.712-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.800-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.800-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 40.87,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4044.37
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 6
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303232",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:00.718-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.800-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 40.87,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4044.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303232",
+                                            "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:56.718-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:25.800-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 257.25,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4260.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303233",
+                                            "StopPointName": "FLATBUSH AV/E 29 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:12.719-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:37.925-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 548.87,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4552.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303234",
+                                            "StopPointName": "FLATBUSH AV/ROGERS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:39.719-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:48.631-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 886.92,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4890.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303235",
+                                            "StopPointName": "FLATBUSH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:53.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:12.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1173.44,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5176.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306324",
+                                            "StopPointName": "FLATBUSH AV/AV D"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:12.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:16.679-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1478.28,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5481.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303237",
+                                            "StopPointName": "FLATBUSH AV/CLARENDON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:46.720-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:48.279-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1608.68,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5612.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303238",
+                                            "StopPointName": "FLATBUSH AV/CORTELYOU RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:02.721-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:16.279-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1905.65,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5909.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303239",
+                                            "StopPointName": "FLATBUSH AV/TILDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.721-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:29.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2361.04,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6364.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308348",
+                                            "StopPointName": "FLATBUSH AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:22.721-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:59.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2629.53,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6633.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303241",
+                                            "StopPointName": "FLATBUSH AV/CATON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:27.722-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:56.744-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2846.59,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6850.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303242",
+                                            "StopPointName": "FLATBUSH AV/CLARKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:47.722-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:25.544-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3109.36,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7112.87
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303243",
+                                            "StopPointName": "FLATBUSH AV/HAWTHORNE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:04.722-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:23.235-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3363.62,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7367.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303244",
+                                            "StopPointName": "FLATBUSH AV/MIDWOOD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.722-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:48.435-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3744.99,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7748.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306325",
+                                            "StopPointName": "FLATBUSH AV/EMPIRE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:21.723-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:05.345-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4118.43,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 8121.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303247",
+                                            "StopPointName": "FLATBUSH AV/PARK ENTRANCE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:21.723-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:52.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4952.33,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 8955.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308070",
+                                            "StopPointName": "FLATBUSH AV/GRAND ARMY PLZ"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:37.723-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:39.800-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5306.56,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9310.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307853",
+                                            "StopPointName": "FLATBUSH AV/PLAZA ST E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:05.723-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:00.014-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5438.2,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9441.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303249",
+                                            "StopPointName": "FLATBUSH AV/STERLING PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:48.723-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:57.817-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5634.03,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9637.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303250",
+                                            "StopPointName": "FLATBUSH AV/PARK PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:50.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:16.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5924.64,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 9928.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307210",
+                                            "StopPointName": "FLATBUSH AV/ST MARKS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:21.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:06.852-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6064.07,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 10067.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303253",
+                                            "StopPointName": "FLATBUSH AV/BERGEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:17.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:31.763-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6323.56,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10327.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308641",
+                                            "StopPointName": "FLATBUSH AV/PACIFIC ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:35.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6524.44,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10527.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303254",
+                                            "StopPointName": "FLATBUSH AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:03.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:14.951-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6995.09,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10998.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303256",
+                                            "StopPointName": "LIVINGSTON ST/NEVINS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:10.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:13.965-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7253.29,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 11256.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306892",
+                                            "StopPointName": "LIVINGSTON ST/BOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:02.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:52.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7452.85,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 11456.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303258",
+                                            "StopPointName": "LIVINGSTON ST/HOYT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:42.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:35.281-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7605.57,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 11609.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303259",
+                                            "StopPointName": "LIVINGSTON ST/SMITH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:32.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:31.676-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8025.74,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 12029.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302434",
+                                            "StopPointName": "JORALEMON ST/COURT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:07.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:00.714-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8159.79,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 12163.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306533",
+                                            "StopPointName": "CADMAN PLZ W/MONTAGUE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:05.080-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8364.31,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 12367.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901007",
+                                            "StopPointName": "CADMAN PZ W/JOHNSON ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-138800_B41_276"
+                                },
+                                "JourneyPatternRef": "MTA_B410428",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307403",
+                                "DestinationName": "BERGEN BEACH VETERANS AV via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.933234,
+                                    "Latitude": 40.619279
+                                },
+                                "Bearing": 318.17984,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_78540_B41-276",
+                                "VehicleRef": "MTA NYCT_4228",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:54:00.602-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 62.8,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10561.98
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303324",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FLATBUSH AV/AV P"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:00.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 62.8,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10561.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303324",
+                                            "StopPointName": "FLATBUSH AV/AV P"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:21.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 154.54,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 10653.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306318",
+                                            "StopPointName": "AV N/E 45 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:09.616-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 363.61,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 10862.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303326",
+                                            "StopPointName": "AV N/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:06.616-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 612.39,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 11111.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308152",
+                                            "StopPointName": "AV N/UTICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:42.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 767.09,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 11266.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303328",
+                                            "StopPointName": "AV N/E 52 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:19.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 930.63,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 11429.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303329",
+                                            "StopPointName": "AV N/E 54 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:58.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1099.23,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 11598.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303330",
+                                            "StopPointName": "AV N/E 56 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:35.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1261.39,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 11760.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303331",
+                                            "StopPointName": "AV N/E 58 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:00.618-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1371.13,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 11870.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303332",
+                                            "StopPointName": "AV N/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:43.618-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1558.59,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 12057.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303333",
+                                            "StopPointName": "VETERANS AV/E 64 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:23.618-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1730.39,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 12229.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303334",
+                                            "StopPointName": "VETERANS AV/E 66 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:50.620-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1851.76,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 12350.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303335",
+                                            "StopPointName": "VETERANS AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:33.621-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2038.88,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 12538.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307895",
+                                            "StopPointName": "VETERANS AV/E 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.621-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2155.33,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 12654.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303337",
+                                            "StopPointName": "VETERANS AV/E 71 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:46.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-143900_B41_279"
+                                },
+                                "JourneyPatternRef": "MTA_B410393",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_303215",
+                                "DestinationName": "DOWNTOWN BKLYN CADMAN PLAZA via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.935129,
+                                    "Latitude": 40.620987
+                                },
+                                "Bearing": 135.8551,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_86040_B41-279",
+                                "VehicleRef": "MTA NYCT_7649",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:05.626-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:06.964-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:06.964-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 72.3,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1811.0
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 5
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303223",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FLATBUSH AV/FLATLANDS AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:05.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:06.964-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 72.3,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1811.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303223",
+                                            "StopPointName": "FLATBUSH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:28.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:26.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 176.18,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1914.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303224",
+                                            "StopPointName": "FLATBUSH AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:08.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:04.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 627.43,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2366.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303227",
+                                            "StopPointName": "FLATBUSH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:49.633-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:34.497-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 814.57,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2553.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303228",
+                                            "StopPointName": "FLATBUSH AV/BROOKLYN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:23.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:16.359-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 966.78,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2705.48
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303229",
+                                            "StopPointName": "FLATBUSH AV/E 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:14.635-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:57.518-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1196.73,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2935.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303230",
+                                            "StopPointName": "FLATBUSH AV/AV I"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.635-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:41.168-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1678.09,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3416.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303232",
+                                            "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:56.635-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:05.168-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1894.47,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3633.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303233",
+                                            "StopPointName": "FLATBUSH AV/E 29 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:12.636-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:17.293-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2186.09,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3924.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303234",
+                                            "StopPointName": "FLATBUSH AV/ROGERS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:39.637-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:27.999-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2524.14,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4262.84
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303235",
+                                            "StopPointName": "FLATBUSH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:53.639-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:51.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2810.66,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4549.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306324",
+                                            "StopPointName": "FLATBUSH AV/AV D"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:12.640-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:56.047-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3115.49,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4854.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303237",
+                                            "StopPointName": "FLATBUSH AV/CLARENDON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:46.640-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:27.647-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3245.89,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4984.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303238",
+                                            "StopPointName": "FLATBUSH AV/CORTELYOU RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:02.641-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:55.647-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3542.87,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5281.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303239",
+                                            "StopPointName": "FLATBUSH AV/TILDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.641-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:08.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3998.25,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 5736.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308348",
+                                            "StopPointName": "FLATBUSH AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:22.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:38.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4266.74,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6005.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303241",
+                                            "StopPointName": "FLATBUSH AV/CATON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:27.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:36.112-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4483.81,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6222.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303242",
+                                            "StopPointName": "FLATBUSH AV/CLARKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:47.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:04.912-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4746.58,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6485.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303243",
+                                            "StopPointName": "FLATBUSH AV/HAWTHORNE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:04.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:02.603-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5000.84,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6739.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303244",
+                                            "StopPointName": "FLATBUSH AV/MIDWOOD ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:27.803-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5382.21,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7120.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306325",
+                                            "StopPointName": "FLATBUSH AV/EMPIRE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:21.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:44.713-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5755.65,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7494.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303247",
+                                            "StopPointName": "FLATBUSH AV/PARK ENTRANCE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:21.649-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:32.317-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6589.55,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8328.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308070",
+                                            "StopPointName": "FLATBUSH AV/GRAND ARMY PLZ"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:37.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:19.168-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6943.77,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8682.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307853",
+                                            "StopPointName": "FLATBUSH AV/PLAZA ST E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:05.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:39.382-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7075.41,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8814.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303249",
+                                            "StopPointName": "FLATBUSH AV/STERLING PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:48.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:37.185-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7271.25,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 9009.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303250",
+                                            "StopPointName": "FLATBUSH AV/PARK PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:50.651-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:55.844-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7561.86,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 9300.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307210",
+                                            "StopPointName": "FLATBUSH AV/ST MARKS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:21.651-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:46.220-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7701.29,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 9439.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303253",
+                                            "StopPointName": "FLATBUSH AV/BERGEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:17.652-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:11.131-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7960.77,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 9699.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308641",
+                                            "StopPointName": "FLATBUSH AV/PACIFIC ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.653-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:14.983-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8161.65,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 9900.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303254",
+                                            "StopPointName": "FLATBUSH AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:47.653-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:51.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8632.31,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 10371.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303256",
+                                            "StopPointName": "LIVINGSTON ST/NEVINS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:46.653-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:48.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8890.51,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 10629.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306892",
+                                            "StopPointName": "LIVINGSTON ST/BOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:32.654-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:25.444-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 9090.06,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 10828.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303258",
+                                            "StopPointName": "LIVINGSTON ST/HOYT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:07.654-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:07.649-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9242.79,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 10981.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303259",
+                                            "StopPointName": "LIVINGSTON ST/SMITH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:43.654-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:01.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9662.96,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 11401.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302434",
+                                            "StopPointName": "JORALEMON ST/COURT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:13.656-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:29.282-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.1 miles away",
+                                                    "DistanceFromCall": 9797.0,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 11535.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306533",
+                                            "StopPointName": "CADMAN PLZ W/MONTAGUE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:00.657-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:32.448-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.2 miles away",
+                                                    "DistanceFromCall": 10001.53,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 11740.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901007",
+                                            "StopPointName": "CADMAN PZ W/JOHNSON ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:55.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-140300_B41_277"
+                                },
+                                "JourneyPatternRef": "MTA_B410429",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307403",
+                                "DestinationName": "KINGS PLAZA via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.950314,
+                                    "Latitude": 40.635322
+                                },
+                                "Bearing": 316.7758,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_79860_B41-277",
+                                "VehicleRef": "MTA NYCT_7623",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:21.660-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:16.269-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:16.269-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 153.54,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8358.79
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 5
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303316",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FLATBUSH AV/GLENWOOD RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:21.670-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:16.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 153.54,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8358.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303316",
+                                            "StopPointName": "FLATBUSH AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.671-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:17.962-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 468.92,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8674.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303317",
+                                            "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:58.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:42.705-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 770.24,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8975.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303318",
+                                            "StopPointName": "FLATBUSH AV/AURELIA CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:58.672-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:42.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1089.0,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9294.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303319",
+                                            "StopPointName": "FLATBUSH AV/E 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:13.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:49.180-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1483.0,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9688.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307516",
+                                            "StopPointName": "FLATBUSH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:27.673-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:52.780-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1868.98,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10074.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308557",
+                                            "StopPointName": "FLATBUSH AV/KINGS HWY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.674-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:51.646-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2042.73,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 10247.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303323",
+                                            "StopPointName": "FLATBUSH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.676-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:00.304-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2356.73,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10561.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303324",
+                                            "StopPointName": "FLATBUSH AV/AV P"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:30.676-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:24.428-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2529.17,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10734.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303338",
+                                            "StopPointName": "FLATBUSH AV/QUENTIN RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:12.677-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:54.301-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2766.39,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 10971.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303339",
+                                            "StopPointName": "FLATBUSH AV/AV R"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:44.677-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:25.501-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2953.24,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 11158.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303340",
+                                            "StopPointName": "FLATBUSH AV/FILLMORE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:25.677-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:10.101-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3187.03,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 11392.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303341",
+                                            "StopPointName": "FLATBUSH AV/AV S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:12.677-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:00.004-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3455.45,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11660.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307636",
+                                            "StopPointName": "FLATBUSH AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.678-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:59.604-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4071.42,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 12276.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801144",
+                                            "StopPointName": "Flatbush Av/Av U"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:37.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-141800_B41_280"
+                                },
+                                "JourneyPatternRef": "MTA_B410428",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307403",
+                                "DestinationName": "BERGEN BEACH VETERANS AV via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.958112,
+                                    "Latitude": 40.646618
+                                },
+                                "Bearing": 271.154,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_80340_B41-280",
+                                "VehicleRef": "MTA NYCT_7629",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:49.729-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:13.751-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:13.751-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 238.51,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6976.46
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303311",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FLATBUSH AV/BEVERLY RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:49.740-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:13.751-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 238.51,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6976.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303311",
+                                            "StopPointName": "FLATBUSH AV/BEVERLY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:08.740-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:42.751-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 513.18,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7251.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303312",
+                                            "StopPointName": "FLATBUSH AV/DORCHESTER RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:20.740-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:46.151-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 758.96,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7496.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303313",
+                                            "StopPointName": "FLATBUSH AV/DITMAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:43.741-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:15.951-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1046.21,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 7784.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303314",
+                                            "StopPointName": "FLATBUSH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:27.741-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:22.913-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1407.76,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8145.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303315",
+                                            "StopPointName": "FLATBUSH AV/FARRAGUT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:29.742-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:16.209-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1620.84,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8358.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303316",
+                                            "StopPointName": "FLATBUSH AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.742-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:16.302-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1936.21,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 8674.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303317",
+                                            "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:58.743-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:41.045-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2237.53,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 8975.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303318",
+                                            "StopPointName": "FLATBUSH AV/AURELIA CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:58.744-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:41.035-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2556.3,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 9294.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303319",
+                                            "StopPointName": "FLATBUSH AV/E 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:13.745-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:47.520-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2950.3,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 9688.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307516",
+                                            "StopPointName": "FLATBUSH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:27.745-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:51.120-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3336.27,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10074.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308557",
+                                            "StopPointName": "FLATBUSH AV/KINGS HWY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.745-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:49.986-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3510.03,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 10247.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303323",
+                                            "StopPointName": "FLATBUSH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.745-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:58.644-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3824.02,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 10561.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303324",
+                                            "StopPointName": "FLATBUSH AV/AV P"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:21.746-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:14.212-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3915.77,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 10653.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306318",
+                                            "StopPointName": "AV N/E 45 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:09.746-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:53.909-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4124.83,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 10862.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303326",
+                                            "StopPointName": "AV N/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:06.747-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:04.217-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4373.61,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 11111.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308152",
+                                            "StopPointName": "AV N/UTICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:42.747-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:31.948-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4528.32,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 11266.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303328",
+                                            "StopPointName": "AV N/E 52 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:19.747-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:11.827-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4691.86,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 11429.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303329",
+                                            "StopPointName": "AV N/E 54 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:58.749-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:45.092-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4860.46,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 11598.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303330",
+                                            "StopPointName": "AV N/E 56 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:35.749-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:20.763-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5022.61,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 11760.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303331",
+                                            "StopPointName": "AV N/E 58 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.749-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:50.163-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5132.35,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 11870.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303332",
+                                            "StopPointName": "AV N/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:43.750-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:39.983-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5319.81,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 12057.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303333",
+                                            "StopPointName": "VETERANS AV/E 64 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:23.751-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:02.943-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5491.61,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 12229.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303334",
+                                            "StopPointName": "VETERANS AV/E 66 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:50.752-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:18.722-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5612.99,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 12350.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303335",
+                                            "StopPointName": "VETERANS AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:33.752-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:04.972-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5800.1,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 12538.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307895",
+                                            "StopPointName": "VETERANS AV/E 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.753-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:28.741-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5916.55,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 12654.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303337",
+                                            "StopPointName": "VETERANS AV/E 71 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B41",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-143300_B41_278"
+                                },
+                                "JourneyPatternRef": "MTA_B410429",
+                                "PublishedLineName": "B41",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307403",
+                                "DestinationName": "KINGS PLAZA via FLATBUSH",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.984794,
+                                    "Latitude": 40.689269
+                                },
+                                "Bearing": 339.53024,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_53220_B41-272",
+                                "VehicleRef": "MTA NYCT_7310",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:44.683-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:14.394-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:14.394-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 380.62,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1653.28
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_303294",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "LIVINGSTON ST/NEVINS ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:44.687-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:14.394-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 380.62,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1653.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303294",
+                                            "StopPointName": "LIVINGSTON ST/NEVINS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.994-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 866.82,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 2139.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303295",
+                                            "StopPointName": "FLATBUSH AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:51.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:58.828-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1126.58,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2399.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901500",
+                                            "StopPointName": "FLATBUSH AV/DEAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:32.689-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1337.69,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2610.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303297",
+                                            "StopPointName": "FLATBUSH AV/BERGEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:56.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:57.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1460.42,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2733.09
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307360",
+                                            "StopPointName": "FLATBUSH AV/ST MARKS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:49.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:36.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1733.86,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 3006.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303300",
+                                            "StopPointName": "FLATBUSH AV/PARK PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:29.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:24.535-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1935.64,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3208.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303301",
+                                            "StopPointName": "FLATBUSH AV/8 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:08.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:54.866-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2140.54,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3413.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308061",
+                                            "StopPointName": "GRAND ARMY PLZ/FLATBUSH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:03.692-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:27.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2420.31,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3692.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306716",
+                                            "StopPointName": "FLATBUSH AV/GRAND ARMY PZ"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:48.693-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:08.568-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3266.31,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4538.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303303",
+                                            "StopPointName": "FLATBUSH AV/PROSPECT PARK ENT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.694-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:27.611-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3634.98,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4907.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307646",
+                                            "StopPointName": "FLATBUSH AV/OCEAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.695-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:48.451-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3846.95,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5119.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302623",
+                                            "StopPointName": "FLATBUSH AV/LINCOLN RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:29.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:15.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4161.71,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5434.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303306",
+                                            "StopPointName": "FLATBUSH AV/CHESTER CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:03.696-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:47.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4491.41,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5764.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303307",
+                                            "StopPointName": "FLATBUSH AV/PARKSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:27.699-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:22.514-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4790.7,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6063.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303308",
+                                            "StopPointName": "FLATBUSH AV/CATON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.699-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:53.914-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5118.49,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6391.15
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308369",
+                                            "StopPointName": "FLATBUSH AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:22.700-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:26.624-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5403.08,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6675.74
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303310",
+                                            "StopPointName": "FLATBUSH AV/ALBEMARLE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:49.700-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:13.484-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5703.8,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6976.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303311",
+                                            "StopPointName": "FLATBUSH AV/BEVERLY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:08.700-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:42.484-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5978.47,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 7251.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303312",
+                                            "StopPointName": "FLATBUSH AV/DORCHESTER RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:20.701-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:45.884-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6224.26,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7496.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303313",
+                                            "StopPointName": "FLATBUSH AV/DITMAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:43.701-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:15.684-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6511.5,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7784.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303314",
+                                            "StopPointName": "FLATBUSH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:27.701-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:22.646-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6873.05,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8145.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303315",
+                                            "StopPointName": "FLATBUSH AV/FARRAGUT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:29.701-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:15.942-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7086.13,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8358.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303316",
+                                            "StopPointName": "FLATBUSH AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:16.035-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7401.51,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8674.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303317",
+                                            "StopPointName": "FLATBUSH AV/NOSTRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:58.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:40.778-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7702.83,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 8975.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303318",
+                                            "StopPointName": "FLATBUSH AV/AURELIA CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:58.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:40.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8021.59,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 9294.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303319",
+                                            "StopPointName": "FLATBUSH AV/E 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:13.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:47.253-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8415.59,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 9688.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307516",
+                                            "StopPointName": "FLATBUSH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:27.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:50.853-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8801.56,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 10074.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308557",
+                                            "StopPointName": "FLATBUSH AV/KINGS HWY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:00.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:49.719-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 8975.32,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 10247.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303323",
+                                            "StopPointName": "FLATBUSH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:00.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:58.377-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.8 miles away",
+                                                    "DistanceFromCall": 9289.32,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 10561.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303324",
+                                            "StopPointName": "FLATBUSH AV/AV P"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:30.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:22.501-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.9 miles away",
+                                                    "DistanceFromCall": 9461.76,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 10734.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303338",
+                                            "StopPointName": "FLATBUSH AV/QUENTIN RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:12.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:52.374-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.0 miles away",
+                                                    "DistanceFromCall": 9698.98,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 10971.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303339",
+                                            "StopPointName": "FLATBUSH AV/AV R"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:44.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:23.574-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.1 miles away",
+                                                    "DistanceFromCall": 9885.83,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 11158.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303340",
+                                            "StopPointName": "FLATBUSH AV/FILLMORE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:25.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:08.174-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.3 miles away",
+                                                    "DistanceFromCall": 10119.62,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 11392.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303341",
+                                            "StopPointName": "FLATBUSH AV/AV S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:12.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:58.077-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.5 miles away",
+                                                    "DistanceFromCall": 10388.03,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 11660.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307636",
+                                            "StopPointName": "FLATBUSH AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:00.706-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:57.677-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "6.8 miles away",
+                                                    "DistanceFromCall": 11004.01,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 12276.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801144",
+                                            "StopPointName": "Flatbush Av/Av U"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.547-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.547-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

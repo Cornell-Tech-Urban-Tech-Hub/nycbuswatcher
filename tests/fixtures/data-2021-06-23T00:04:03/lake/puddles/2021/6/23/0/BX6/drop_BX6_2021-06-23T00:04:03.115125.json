@@ -1,0 +1,1286 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:01.476-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-140100_BX6_132"
+                                },
+                                "JourneyPatternRef": "MTA_BX060252",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104503",
+                                "DestinationName": "WASHINGTON HTS RIVERSIDE DR",
+                                "OriginAimedDepartureTime": "2021-06-23T00:10:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.948566,
+                                    "Latitude": 40.83622
+                                },
+                                "Bearing": 73.159676,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_23820_BX6-114",
+                                "VehicleRef": "MTA NYCT_5985",
+                                "OnwardCalls": {}
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-138900_BX6_129"
+                                },
+                                "JourneyPatternRef": "MTA_BX060287",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403728",
+                                "DestinationName": "HUNTS POINT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.880712,
+                                    "Latitude": 40.810715
+                                },
+                                "Bearing": 284.03625,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_27060_BX6-116",
+                                "VehicleRef": "MTA NYCT_5941",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:42:57.499-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.476-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.476-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 5.51,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8010.14
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_103547",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HALLECK ST/OAK PT AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:42:57.516-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 5.51,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8010.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103547",
+                                            "StopPointName": "HALLECK ST/OAK PT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:43:18.516-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 122.98,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8127.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104059",
+                                            "StopPointName": "HALLECK ST/FOOD CENTER DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:43:58.516-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:46.506-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 344.27,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8348.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104504",
+                                            "StopPointName": "HALLECK ST/VIELE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:44:45.517-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:29.842-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 603.51,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8608.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104499",
+                                            "StopPointName": "RYAWA AV/HALLECK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:45:41.517-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:20.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 913.32,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8917.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104605",
+                                            "StopPointName": "FOOD CENTER DR/FULTON FISH MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:46:32.517-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:59.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1191.92,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9196.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104500",
+                                            "StopPointName": "FOOD CENTER DR/FARRAGUT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:48:35.517-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:32.538-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1871.37,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 9875.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104501",
+                                            "StopPointName": "FOOD CENTER DR/HUNTS PT MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:49:32.518-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:27.934-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2184.22,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10188.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104502",
+                                            "StopPointName": "FOOD CENTER DR/155 FOOD CENTER DR(BALDOR)"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:50:00.518-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:32.734-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2339.87,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10344.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902100",
+                                            "StopPointName": "FOOD CENTER DR/TERMINAL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-140400_BX6_131"
+                                },
+                                "JourneyPatternRef": "MTA_BX060287",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403728",
+                                "DestinationName": "HUNTS POINT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.887579,
+                                    "Latitude": 40.816197
+                                },
+                                "Bearing": 317.06293,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_51420_BX6-114",
+                                "VehicleRef": "MTA NYCT_5353",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:54:42.522-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.476-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.476-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 10.9,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6934.79
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100384",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HUNTS POINT AV/COSTER ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:42.528-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.476-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 10.9,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6934.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100384",
+                                            "StopPointName": "HUNTS POINT AV/COSTER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:33.529-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:40.667-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 292.83,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7216.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100385",
+                                            "StopPointName": "SPOFFORD AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:25.529-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:22.741-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 579.15,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7503.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802089",
+                                            "StopPointName": "HALLECK ST/SPOFFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:57.531-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:37.499-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1086.25,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8010.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103547",
+                                            "StopPointName": "HALLECK ST/OAK PT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:18.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.588-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1203.72,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8127.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104059",
+                                            "StopPointName": "HALLECK ST/FOOD CENTER DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:58.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:47.193-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1425.01,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8348.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104504",
+                                            "StopPointName": "HALLECK ST/VIELE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:45.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:30.529-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1684.25,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 8608.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104499",
+                                            "StopPointName": "RYAWA AV/HALLECK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:41.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:20.881-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1994.06,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 8917.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104605",
+                                            "StopPointName": "FOOD CENTER DR/FULTON FISH MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:32.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:59.763-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2272.66,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 9196.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104500",
+                                            "StopPointName": "FOOD CENTER DR/FARRAGUT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:35.532-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:33.225-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2952.11,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 9875.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104501",
+                                            "StopPointName": "FOOD CENTER DR/HUNTS PT MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:32.533-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:28.621-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3264.96,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10188.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104502",
+                                            "StopPointName": "FOOD CENTER DR/155 FOOD CENTER DR(BALDOR)"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.533-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:33.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3420.61,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 10344.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902100",
+                                            "StopPointName": "FOOD CENTER DR/TERMINAL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:30.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-141600_BX6_128"
+                                },
+                                "JourneyPatternRef": "MTA_BX060252",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104503",
+                                "DestinationName": "WASHINGTON HTS RIVERSIDE DR",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.917031,
+                                    "Latitude": 40.825129
+                                },
+                                "Bearing": 161.89532,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_23460_BX6-113",
+                                "VehicleRef": "MTA NYCT_1209",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:57:54.549-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:19.690-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:19.690-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 146.23,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4688.76
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104116",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 161 ST/MORRIS AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:54.556-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:19.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 146.23,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4688.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104116",
+                                            "StopPointName": "E 161 ST/MORRIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:50.557-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:20.090-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 337.91,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4880.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802146",
+                                            "StopPointName": "E 161 ST/SHERMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:00.558-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:11.690-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 789.79,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5332.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103807",
+                                            "StopPointName": "E 161 ST/RIVER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:05.559-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:36.002-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1042.04,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5584.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104530",
+                                            "StopPointName": "E 161 ST/MACOMBS DAM BRIDGE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:05.559-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:31.602-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2210.0,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6752.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403702",
+                                            "StopPointName": "W 155 ST/EDGECOMBE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.559-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:55.802-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2423.99,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6966.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403703",
+                                            "StopPointName": "W 155 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:02.560-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:21.402-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2703.67,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7246.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403704",
+                                            "StopPointName": "W 155 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:58.560-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:58.202-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2957.66,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7500.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400892",
+                                            "StopPointName": "W 157 ST/EDWARD M MORGAN PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:41.560-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:58.939-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3148.06,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7690.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403790",
+                                            "StopPointName": "RIVERSIDE DR/W 156 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.560-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:01.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3506.82,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 8049.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803062",
+                                            "StopPointName": "RIVERSIDE DR W/157-10 RIVERSIDE DR W"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:48.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-141900_BX6_130"
+                                },
+                                "JourneyPatternRef": "MTA_BX060287",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403728",
+                                "DestinationName": "HUNTS POINT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.88676,
+                                    "Latitude": 40.815421
+                                },
+                                "Bearing": 316.3322,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_22560_BX6-111",
+                                "VehicleRef": "MTA NYCT_5963",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:10:33.485-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:36.779-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:36.779-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 182.42,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7216.71
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100385",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SPOFFORD AV/BRYANT AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:33.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:36.779-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 182.42,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7216.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100385",
+                                            "StopPointName": "SPOFFORD AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:25.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:18.853-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 468.75,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7503.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802089",
+                                            "StopPointName": "HALLECK ST/SPOFFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:57.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:33.611-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 975.85,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8010.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103547",
+                                            "StopPointName": "HALLECK ST/OAK PT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:18.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:47.700-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1093.32,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8127.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104059",
+                                            "StopPointName": "HALLECK ST/FOOD CENTER DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.305-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1314.61,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 8348.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104504",
+                                            "StopPointName": "HALLECK ST/VIELE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:45.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:26.641-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1573.85,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8608.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104499",
+                                            "StopPointName": "RYAWA AV/HALLECK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:41.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:16.993-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1883.66,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 8917.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104605",
+                                            "StopPointName": "FOOD CENTER DR/FULTON FISH MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:32.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.875-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2162.25,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 9196.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104500",
+                                            "StopPointName": "FOOD CENTER DR/FARRAGUT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:35.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:29.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2841.7,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 9875.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104501",
+                                            "StopPointName": "FOOD CENTER DR/HUNTS PT MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:32.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:24.733-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3154.56,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 10188.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104502",
+                                            "StopPointName": "FOOD CENTER DR/155 FOOD CENTER DR(BALDOR)"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:29.533-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3310.21,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10344.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902100",
+                                            "StopPointName": "FOOD CENTER DR/TERMINAL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX6",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-143400_BX6_127"
+                                },
+                                "JourneyPatternRef": "MTA_BX060287",
+                                "PublishedLineName": "Bx6",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403728",
+                                "DestinationName": "HUNTS POINT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.935201,
+                                    "Latitude": 40.828301
+                                },
+                                "Bearing": 337.38013,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_51240_BX6-118",
+                                "VehicleRef": "MTA NYCT_1053",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:09.536-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:57.501-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:57.501-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 787.89,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 2680.47
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 12
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_103809",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "JEROME AV/E 161 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:09.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:57.501-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 787.89,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 2680.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103809",
+                                            "StopPointName": "JEROME AV/E 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:41.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:17.829-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1244.12,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3136.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100363",
+                                            "StopPointName": "E 161 ST/RIVER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:11.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1337.57,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 3230.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103806",
+                                            "StopPointName": "E 161 ST/GERARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:33.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:14.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1775.82,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 3668.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802088",
+                                            "StopPointName": "E 161 ST/SHERMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:40.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:39.954-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1970.59,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 3863.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100366",
+                                            "StopPointName": "E 161 ST/CONCOURSE VILLAGE E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:32.538-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:17.833-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2119.02,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4011.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100367",
+                                            "StopPointName": "E 161 ST/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:24.633-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2372.14,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4264.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100368",
+                                            "StopPointName": "E 161 ST/MELROSE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:49.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:23.633-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2538.39,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 4430.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100369",
+                                            "StopPointName": "ELTON AV/E 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:10.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:28.633-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2810.72,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 4703.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100370",
+                                            "StopPointName": "E 163 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:46.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:19.159-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3133.94,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5026.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104093",
+                                            "StopPointName": "E 163 ST/TRINITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:53.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:33.759-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3358.17,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5250.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100373",
+                                            "StopPointName": "E 163 ST/TINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.539-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:49.863-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3584.41,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5476.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100374",
+                                            "StopPointName": "E 163 ST/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:16.540-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:24.666-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3812.71,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5705.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100376",
+                                            "StopPointName": "E 163 ST/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:08.540-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:55.359-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3967.18,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5859.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104323",
+                                            "StopPointName": "E 163 St/INTERVALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:51.540-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:23.848-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4275.86,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6168.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100379",
+                                            "StopPointName": "E 163 ST/FOX ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.540-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:40.947-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4482.64,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6375.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902062",
+                                            "StopPointName": "HUNTS POINT AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:29.540-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:12.347-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4644.4,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6536.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100382",
+                                            "StopPointName": "HUNTS POINT AV/SENECA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:09.541-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:04.210-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4862.36,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6754.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100383",
+                                            "StopPointName": "HUNTS POINT AV/GILBERT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:42.541-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:53.854-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5042.21,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6934.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100384",
+                                            "StopPointName": "HUNTS POINT AV/COSTER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:33.541-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:01.513-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5324.14,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7216.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100385",
+                                            "StopPointName": "SPOFFORD AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:25.541-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:43.587-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5610.46,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7503.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802089",
+                                            "StopPointName": "HALLECK ST/SPOFFORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:57.542-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:58.345-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6117.57,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8010.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103547",
+                                            "StopPointName": "HALLECK ST/OAK PT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:18.542-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:12.434-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6235.04,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8127.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104059",
+                                            "StopPointName": "HALLECK ST/FOOD CENTER DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:58.542-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:08.039-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6456.33,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8348.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104504",
+                                            "StopPointName": "HALLECK ST/VIELE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:45.542-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:51.375-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6715.57,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 8608.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104499",
+                                            "StopPointName": "RYAWA AV/HALLECK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:41.542-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:41.727-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7025.37,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 8917.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104605",
+                                            "StopPointName": "FOOD CENTER DR/FULTON FISH MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:32.543-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:20.609-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7303.97,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 9196.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104500",
+                                            "StopPointName": "FOOD CENTER DR/FARRAGUT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:35.543-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:54.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 7983.42,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 9875.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104501",
+                                            "StopPointName": "FOOD CENTER DR/HUNTS PT MARKET"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:32.543-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:49.467-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8296.28,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 10188.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104502",
+                                            "StopPointName": "FOOD CENTER DR/155 FOOD CENTER DR(BALDOR)"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:00.543-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:54.267-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8451.93,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 10344.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902100",
+                                            "StopPointName": "FOOD CENTER DR/TERMINAL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:44.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:01.476-04:00",
+                    "ValidUntil": "2021-06-23T00:05:01.476-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

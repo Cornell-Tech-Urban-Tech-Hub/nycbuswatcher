@@ -1,0 +1,694 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.429-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX32",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-141500_BX32_672"
+                                },
+                                "JourneyPatternRef": "MTA_BX320006",
+                                "PublishedLineName": "Bx32",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103012",
+                                "DestinationName": "MOTT HAVEN 136 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.926611,
+                                    "Latitude": 40.81185
+                                },
+                                "Bearing": 233.48161,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_692",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:54.435-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.429-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.429-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 61.76,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8364.41
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104567",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "3 AV/E 139 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:54.452-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.429-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 61.76,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8364.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104567",
+                                            "StopPointName": "3 AV/E 139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:25.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:39.499-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 189.16,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8491.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104224",
+                                            "StopPointName": "3 AV/E 137 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 332.76,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8635.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101473",
+                                            "StopPointName": "E 136 ST/LINCOLN AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:46.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX32",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-141500_BX32_672"
+                                },
+                                "JourneyPatternRef": "MTA_BX320006",
+                                "PublishedLineName": "Bx32",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103012",
+                                "DestinationName": "MOTT HAVEN 136 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.905618,
+                                    "Latitude": 40.867005
+                                },
+                                "Bearing": 43.025066,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_311",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:36:51.459-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:05.223-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:05.223-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 478.89,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 559.64
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100629",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W KINGSBRIDGE RD/UNIVERSITY AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:36:51.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:05.223-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 478.89,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 559.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100629",
+                                            "StopPointName": "W KINGSBRIDGE RD/UNIVERSITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:38:03.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:24.343-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 840.26,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 921.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101512",
+                                            "StopPointName": "RESERVOIR AV/W 195 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:38:48.467-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:07.873-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1068.04,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1148.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102143",
+                                            "StopPointName": "W 195 ST/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:39:17.467-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:50.873-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1215.44,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1296.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101781",
+                                            "StopPointName": "JEROME AV/W KINGSBRIDGE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:40:05.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:36.951-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1460.03,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1540.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102145",
+                                            "StopPointName": "JEROME AV/W 192 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:41:17.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:17.751-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1819.05,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1899.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102146",
+                                            "StopPointName": "JEROME AV/W FORDHAM RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:42:12.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:30.637-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2098.06,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2178.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102147",
+                                            "StopPointName": "JEROME AV/W 184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:42:34.468-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:44.742-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2212.42,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2293.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102148",
+                                            "StopPointName": "JEROME AV/NORTH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:43:06.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:11.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2370.7,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2451.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102149",
+                                            "StopPointName": "JEROME AV/W 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:43:37.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:49.966-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2529.75,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2610.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102150",
+                                            "StopPointName": "JEROME AV/W 182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:44:09.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:16.837-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2688.78,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2769.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102151",
+                                            "StopPointName": "JEROME AV/W 181 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:45:00.469-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:09.237-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2948.06,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3028.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102152",
+                                            "StopPointName": "JEROME AV/W BURNSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:45:57.470-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:18.041-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3220.45,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3301.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102153",
+                                            "StopPointName": "JEROME AV/W TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:46:48.470-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.398-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3464.76,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3545.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103211",
+                                            "StopPointName": "JEROME AV/W 177 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:47:25.471-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:00.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3643.54,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3724.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103212",
+                                            "StopPointName": "JEROME AV/W 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:48:00.472-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:43.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3809.83,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3890.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103213",
+                                            "StopPointName": "E 175 ST/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:48:32.473-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:22.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3969.76,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4050.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103214",
+                                            "StopPointName": "MORRIS AV/WALTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:49:31.473-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:31.924-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4271.31,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4352.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103215",
+                                            "StopPointName": "MORRIS AV/E 174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:50:17.474-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:34.275-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4503.71,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4584.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102159",
+                                            "StopPointName": "MORRIS AV/E MT EDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:51:16.474-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:46.798-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4804.22,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4884.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102160",
+                                            "StopPointName": "MORRIS AV/E 172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:51:42.475-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:14.496-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4937.94,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5018.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102161",
+                                            "StopPointName": "MORRIS AV/E 171 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:52:00.475-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:36.920-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5028.48,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5109.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102162",
+                                            "StopPointName": "MORRIS AV/E 170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:53:12.476-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:53.520-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5398.56,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5479.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102163",
+                                            "StopPointName": "MORRIS AV/E 169 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:00.476-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:19.060-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5646.55,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5727.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102164",
+                                            "StopPointName": "MORRIS AV/E 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:36.476-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:01.308-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5833.46,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5914.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102165",
+                                            "StopPointName": "MORRIS AV/MC CLELLAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:55.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:24.101-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5932.21,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6012.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102166",
+                                            "StopPointName": "MORRIS AV/E 166 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:33.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:08.309-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6130.03,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6210.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102167",
+                                            "StopPointName": "MORRIS AV/E 165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:20.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:03.673-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6372.64,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6453.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102168",
+                                            "StopPointName": "MORRIS AV/E 163 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:00.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:03.970-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6580.02,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6660.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102169",
+                                            "StopPointName": "MORRIS AV/E 161 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:37.478-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:32.044-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6732.24,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 6812.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102170",
+                                            "StopPointName": "MORRIS AV/E 158 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:31.479-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:20.404-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6956.25,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7037.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102171",
+                                            "StopPointName": "MORRIS AV/E 156 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:38.479-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:13.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7231.84,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7312.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102172",
+                                            "StopPointName": "MORRIS AV/E 153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:18.479-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:43.160-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7394.07,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7474.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102173",
+                                            "StopPointName": "MORRIS AV/E 151 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:46.480-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:12.760-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7508.58,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7589.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102174",
+                                            "StopPointName": "MORRIS AV/E 149 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:28.480-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:59.094-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7930.68,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8011.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103472",
+                                            "StopPointName": "MORRIS AV/E 142 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:13.481-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:39.382-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8114.85,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8195.6
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102176",
+                                            "StopPointName": "MORRIS AV/E 140 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:54.481-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:15.573-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8283.67,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 8364.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104567",
+                                            "StopPointName": "3 AV/E 139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:25.481-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:55.832-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.2 miles away",
+                                                    "DistanceFromCall": 8411.06,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 8491.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104224",
+                                            "StopPointName": "3 AV/E 137 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.481-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:22.396-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8554.66,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 8635.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101473",
+                                            "StopPointName": "E 136 ST/LINCOLN AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:33.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.429-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.429-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

@@ -1,0 +1,1787 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:02.592-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B47",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GA_B1-Weekday-SDon-142400_B47_449"
+                                },
+                                "JourneyPatternRef": "MTA_B470091",
+                                "PublishedLineName": "B47",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_308312",
+                                "DestinationName": "KINGS PLAZA via RALPH AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.923179,
+                                    "Latitude": 40.664759
+                                },
+                                "Bearing": 212.3292,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GA_B1-Weekday-SDon_E_GA_75540_B47-449",
+                                "VehicleRef": "MTA NYCT_7231",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:08:00.637-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:07.421-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:07.421-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4930.25,
+                                            "DistanceFromCall": 25.62,
+                                            "PresentableDistance": "at stop"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 4
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_306180",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "RUTLAND RD/E 98 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:07.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4930.25,
+                                                    "DistanceFromCall": 25.62,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306180",
+                                            "StopPointName": "RUTLAND RD/E 98 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:24.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:33.133-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5246.1,
+                                                    "DistanceFromCall": 341.48,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306181",
+                                            "StopPointName": "ROCKAWAY PY/WINTHROP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:49.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:49.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5565.93,
+                                                    "DistanceFromCall": 661.3,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306182",
+                                            "StopPointName": "CLARKSON AV/E 96 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:36.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:41.452-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5744.53,
+                                                    "DistanceFromCall": 839.91,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306183",
+                                            "StopPointName": "CLARKSON AV/E 94 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:39.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:42.852-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5983.34,
+                                                    "DistanceFromCall": 1078.71,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306184",
+                                            "StopPointName": "CLARKSON AV/E 91 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:59.837-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6285.83,
+                                                    "DistanceFromCall": 1381.21,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308546",
+                                            "StopPointName": "REMSEN AV/LENOX ROAD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:45.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:39.723-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 6456.83,
+                                                    "DistanceFromCall": 1552.2,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301781",
+                                            "StopPointName": "REMSEN AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:56.323-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 6739.16,
+                                                    "DistanceFromCall": 1834.54,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306189",
+                                            "StopPointName": "RALPH AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:45.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:52.090-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6991.63,
+                                                    "DistanceFromCall": 2087.01,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306190",
+                                            "StopPointName": "RALPH AV/SNYDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:22.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:23.649-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7202.52,
+                                                    "DistanceFromCall": 2297.89,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306191",
+                                            "StopPointName": "RALPH AV/TILDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:47.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:45.942-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 7347.1,
+                                                    "DistanceFromCall": 2442.48,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306192",
+                                            "StopPointName": "RALPH AV/BEVERLY RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:25.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:36.598-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7562.02,
+                                                    "DistanceFromCall": 2657.4,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306193",
+                                            "StopPointName": "RALPH AV/CLARENDON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:31.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:36.531-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7934.46,
+                                                    "DistanceFromCall": 3029.84,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306332",
+                                            "StopPointName": "RALPH AV/CHASE CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:13.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:34.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 8169.91,
+                                                    "DistanceFromCall": 3265.29,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306195",
+                                            "StopPointName": "RALPH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:08.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:27.206-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 8480.23,
+                                                    "DistanceFromCall": 3575.6,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300557",
+                                            "StopPointName": "RALPH AV/FARRAGUT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:07.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:32.069-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 8813.76,
+                                                    "DistanceFromCall": 3909.14,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300559",
+                                            "StopPointName": "RALPH AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:47.097-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9116.41,
+                                                    "DistanceFromCall": 4211.78,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306198",
+                                            "StopPointName": "RALPH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:01.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:38.815-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9435.61,
+                                                    "DistanceFromCall": 4530.98,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306199",
+                                            "StopPointName": "RALPH AV/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:52.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:27.722-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9696.77,
+                                                    "DistanceFromCall": 4792.15,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306200",
+                                            "StopPointName": "RALPH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:41.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:23.121-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 9953.43,
+                                                    "DistanceFromCall": 5048.81,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306201",
+                                            "StopPointName": "RALPH AV/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:27.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:01.083-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 10194.7,
+                                                    "DistanceFromCall": 5290.08,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306202",
+                                            "StopPointName": "RALPH AV/AV M"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:19.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:49.590-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10461.87,
+                                                    "DistanceFromCall": 5557.25,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306203",
+                                            "StopPointName": "RALPH AV/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:51.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:19.213-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10631.76,
+                                                    "DistanceFromCall": 5727.13,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306204",
+                                            "StopPointName": "MILL AV/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:21.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:51.242-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10783.73,
+                                                    "DistanceFromCall": 5879.1,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306205",
+                                            "StopPointName": "MILL AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:20.667-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 10988.92,
+                                                    "DistanceFromCall": 6084.3,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306206",
+                                            "StopPointName": "MILL AV/AV U"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:46.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:34.656-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 11261.1,
+                                                    "DistanceFromCall": 6356.47,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300245",
+                                            "StopPointName": "AV U/E 59 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:14.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:55.191-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 11425.38,
+                                                    "DistanceFromCall": 6520.76,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300246",
+                                            "StopPointName": "AV U/E 57 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:41.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:19.697-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 11585.3,
+                                                    "DistanceFromCall": 6680.68,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300247",
+                                            "StopPointName": "AV U/E 56 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:04.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:52.944-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 11727.3,
+                                                    "DistanceFromCall": 6822.68,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306209",
+                                            "StopPointName": "AV U/E 54 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:00.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:15.509-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 12659.87,
+                                                    "DistanceFromCall": 7755.24,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306144",
+                                            "StopPointName": "AV U/E 54 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:59.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B47",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GA_B1-Weekday-SDon-144500_B62_823"
+                                },
+                                "JourneyPatternRef": "MTA_B470092",
+                                "PublishedLineName": "B47",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_306144",
+                                "DestinationName": "BED-STUY WOODHULL HOSPITAL via RALPH AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.918329,
+                                    "Latitude": 40.612552
+                                },
+                                "Bearing": 34.167522,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GA_B1-Weekday-SDon_E_GA_81540_B62-823",
+                                "VehicleRef": "MTA NYCT_7825",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:55.614-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.984-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.984-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 367.01,
+                                            "DistanceFromCall": 121.48,
+                                            "PresentableDistance": "approaching"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 1
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_300223",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "AV U/E 57 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:55.615-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:02.984-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 367.01,
+                                                    "DistanceFromCall": 121.48,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300223",
+                                            "StopPointName": "AV U/E 57 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:18.615-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:23.096-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 525.14,
+                                                    "DistanceFromCall": 279.61,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300224",
+                                            "StopPointName": "AV U/E 59 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:17.110-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 808.01,
+                                                    "DistanceFromCall": 562.48,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307361",
+                                            "StopPointName": "MILL AV/AV U"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:36.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:48.310-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1005.55,
+                                                    "DistanceFromCall": 760.02,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306366",
+                                            "StopPointName": "MILL AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:11.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:19.441-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1191.56,
+                                                    "DistanceFromCall": 946.02,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307397",
+                                            "StopPointName": "RALPH AV/MILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:36.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:48.201-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1329.32,
+                                                    "DistanceFromCall": 1083.79,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306153",
+                                            "StopPointName": "RALPH AV/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:25.616-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:39.825-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1596.52,
+                                                    "DistanceFromCall": 1350.99,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306154",
+                                            "StopPointName": "RALPH AV/E 65 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:13.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:24.884-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1857.92,
+                                                    "DistanceFromCall": 1612.39,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306155",
+                                            "StopPointName": "RALPH AV/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:02.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:01.360-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2126.07,
+                                                    "DistanceFromCall": 1880.53,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306156",
+                                            "StopPointName": "RALPH AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:47.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:45.606-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2370.77,
+                                                    "DistanceFromCall": 2125.24,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306157",
+                                            "StopPointName": "RALPH AV/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:58.322-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2768.69,
+                                                    "DistanceFromCall": 2523.16,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306158",
+                                            "StopPointName": "RALPH AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:34.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:30.122-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2949.35,
+                                                    "DistanceFromCall": 2703.82,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306159",
+                                            "StopPointName": "RALPH AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:12.617-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:05.091-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3160.46,
+                                                    "DistanceFromCall": 2914.93,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306160",
+                                            "StopPointName": "RALPH AV/E 76 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:46.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:26.890-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3341.84,
+                                                    "DistanceFromCall": 3096.31,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306161",
+                                            "StopPointName": "RALPH AV/FARRAGUT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:44.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:25.416-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3654.27,
+                                                    "DistanceFromCall": 3408.74,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306162",
+                                            "StopPointName": "RALPH AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:20.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:52.516-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3848.6,
+                                                    "DistanceFromCall": 3603.07,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306502",
+                                            "StopPointName": "RALPH AV/CHASE CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:20.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:51.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4176.13,
+                                                    "DistanceFromCall": 3930.59,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300857",
+                                            "StopPointName": "RALPH AV/CLARENDON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:03.618-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:24.286-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4409.91,
+                                                    "DistanceFromCall": 4164.37,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306165",
+                                            "StopPointName": "RALPH AV/AV B"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:20.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:34.972-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4501.62,
+                                                    "DistanceFromCall": 4256.09,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306333",
+                                            "StopPointName": "RALPH AV/E 86 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:21.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:35.331-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4832.0,
+                                                    "DistanceFromCall": 4586.47,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306167",
+                                            "StopPointName": "RALPH AV/E 88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:23.129-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5040.56,
+                                                    "DistanceFromCall": 4795.03,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306168",
+                                            "StopPointName": "RALPH AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:34.619-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:06.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5169.63,
+                                                    "DistanceFromCall": 4924.1,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301748",
+                                            "StopPointName": "REMSEN AV/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:09.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:47.542-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5301.78,
+                                                    "DistanceFromCall": 5056.25,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301749",
+                                            "StopPointName": "REMSEN AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:56.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:21.761-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5483.16,
+                                                    "DistanceFromCall": 5237.62,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301750",
+                                            "StopPointName": "REMSEN AV/LENOX RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:01.620-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:06.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5726.99,
+                                                    "DistanceFromCall": 5481.45,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306172",
+                                            "StopPointName": "CLARKSON AV/REMSEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:42.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:45.525-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 5884.19,
+                                                    "DistanceFromCall": 5638.66,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306173",
+                                            "StopPointName": "CLARKSON AV/E 92 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:25.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:17.276-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6048.08,
+                                                    "DistanceFromCall": 5802.54,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306174",
+                                            "StopPointName": "CLARKSON AV/E 94 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:12.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:11.817-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6225.39,
+                                                    "DistanceFromCall": 5979.85,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306175",
+                                            "StopPointName": "CLARKSON AV/E 96 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:38.621-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:05.254-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6324.44,
+                                                    "DistanceFromCall": 6078.9,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306176",
+                                            "StopPointName": "ROCKAWAY PY/CLARKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:39.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:09.661-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 6558.2,
+                                                    "DistanceFromCall": 6312.66,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306177",
+                                            "StopPointName": "WINTHROP ST/ROCKAWAY PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:23.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:08.814-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 6724.22,
+                                                    "DistanceFromCall": 6478.68,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301062",
+                                            "StopPointName": "E 98 ST/BLAKE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:38.948-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 6865.45,
+                                                    "DistanceFromCall": 6619.92,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308311",
+                                            "StopPointName": "E 98 ST/SUTTER AV."
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:57.622-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:15.548-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7193.39,
+                                                    "DistanceFromCall": 6947.86,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301332",
+                                            "StopPointName": "EAST NEW YORK AV/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:13.623-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:40.864-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7404.99,
+                                                    "DistanceFromCall": 7159.46,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307990",
+                                            "StopPointName": "RALPH AV/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.624-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:13.019-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 7537.16,
+                                                    "DistanceFromCall": 7291.63,
+                                                    "PresentableDistance": "4.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301066",
+                                            "StopPointName": "RALPH AV/ST JOHNS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:54.624-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:48.916-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 7682.27,
+                                                    "DistanceFromCall": 7436.74,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303135",
+                                            "StopPointName": "RALPH AV/STERLING PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:08.624-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:43.551-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 7882.3,
+                                                    "DistanceFromCall": 7636.77,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303136",
+                                            "StopPointName": "RALPH AV/PROSPECT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:03.625-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:25.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 8031.95,
+                                                    "DistanceFromCall": 7786.42,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303137",
+                                            "StopPointName": "RALPH AV/BERGEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:53.625-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:54.963-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 8167.78,
+                                                    "DistanceFromCall": 7922.24,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303138",
+                                            "StopPointName": "RALPH AV/DEAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:58.625-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:45.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 8344.43,
+                                                    "DistanceFromCall": 8098.89,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303140",
+                                            "StopPointName": "RALPH AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:00.625-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:53.453-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 8511.25,
+                                                    "DistanceFromCall": 8265.72,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303141",
+                                            "StopPointName": "RALPH AV/FULTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:42.626-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:45.256-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 8669.67,
+                                                    "DistanceFromCall": 8424.13,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303142",
+                                            "StopPointName": "RALPH AV/SUMPTER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:46.626-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:35.508-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 8913.95,
+                                                    "DistanceFromCall": 8668.41,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303143",
+                                            "StopPointName": "RALPH AV/BAINBRIDGE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:31.627-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:11.935-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 9082.37,
+                                                    "DistanceFromCall": 8836.83,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303144",
+                                            "StopPointName": "RALPH AV/MC DONOUGH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:01.628-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:42.735-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 9198.93,
+                                                    "DistanceFromCall": 8953.4,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303145",
+                                            "StopPointName": "RALPH AV/HALSEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:36.628-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:07.818-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 9329.61,
+                                                    "DistanceFromCall": 9084.08,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303146",
+                                            "StopPointName": "RALPH AV/HANCOCK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:19.628-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:43.750-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 9495.82,
+                                                    "DistanceFromCall": 9250.28,
+                                                    "PresentableDistance": "5.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303147",
+                                            "StopPointName": "RALPH AV/PUTNAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:12.628-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:43.150-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 9693.48,
+                                                    "DistanceFromCall": 9447.95,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303148",
+                                            "StopPointName": "RALPH AV/GATES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:00.629-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:27.275-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 9877.75,
+                                                    "DistanceFromCall": 9632.22,
+                                                    "PresentableDistance": "6.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303149",
+                                            "StopPointName": "RALPH AV/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:33.629-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:04.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 10041.83,
+                                                    "DistanceFromCall": 9796.29,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307157",
+                                            "StopPointName": "BROADWAY/GREENE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:19.629-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:02.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 10277.65,
+                                                    "DistanceFromCall": 10032.11,
+                                                    "PresentableDistance": "6.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303151",
+                                            "StopPointName": "BROADWAY/KOSSUTH PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:59.629-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:05.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 10479.67,
+                                                    "DistanceFromCall": 10234.14,
+                                                    "PresentableDistance": "6.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303152",
+                                            "StopPointName": "BROADWAY/DE KALB AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:29.630-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:43.921-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 10631.92,
+                                                    "DistanceFromCall": 10386.38,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303153",
+                                            "StopPointName": "BROADWAY/LAWTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:47:10.630-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:26.791-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 10839.83,
+                                                    "DistanceFromCall": 10594.3,
+                                                    "PresentableDistance": "6.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303154",
+                                            "StopPointName": "BROADWAY/WILLOUGHBY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:00.631-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:36.017-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 54,
+                                                    "CallDistanceAlongRoute": 11091.27,
+                                                    "DistanceFromCall": 10845.73,
+                                                    "PresentableDistance": "6.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307637",
+                                            "StopPointName": "BROADWAY/JEFFERSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:26.631-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:05.217-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 55,
+                                                    "CallDistanceAlongRoute": 11222.62,
+                                                    "DistanceFromCall": 10977.08,
+                                                    "PresentableDistance": "6.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303156",
+                                            "StopPointName": "BROADWAY/ARION PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:49:09.632-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:38.887-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 56,
+                                                    "CallDistanceAlongRoute": 11446.53,
+                                                    "DistanceFromCall": 11200.99,
+                                                    "PresentableDistance": "7.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301092",
+                                            "StopPointName": "BROADWAY/PARK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:50:00.632-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:23.414-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 57,
+                                                    "CallDistanceAlongRoute": 11710.76,
+                                                    "DistanceFromCall": 11465.23,
+                                                    "PresentableDistance": "7.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901017",
+                                            "StopPointName": "MARCUS GARVEY BL/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:48.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B47",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GA_B1-Weekday-SDon-142000_B47_446"
+                                },
+                                "JourneyPatternRef": "MTA_B470092",
+                                "PublishedLineName": "B47",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_306144",
+                                "DestinationName": "BED-STUY WOODHULL HOSPITAL via RALPH AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.921314,
+                                    "Latitude": 40.663145
+                                },
+                                "Bearing": 33.225674,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GA_B1-Weekday-SDon_E_GA_79440_B47-446",
+                                "VehicleRef": "MTA NYCT_7203",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:23.601-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:39.086-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:39.086-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6724.22,
+                                            "DistanceFromCall": 143.38,
+                                            "PresentableDistance": "approaching"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 5
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301062",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 98 ST/BLAKE AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:23.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:39.086-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6724.22,
+                                                    "DistanceFromCall": 143.38,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301062",
+                                            "StopPointName": "E 98 ST/BLAKE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:09.220-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6865.45,
+                                                    "DistanceFromCall": 284.62,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308311",
+                                            "StopPointName": "E 98 ST/SUTTER AV."
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:57.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:45.820-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7193.39,
+                                                    "DistanceFromCall": 612.56,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301332",
+                                            "StopPointName": "EAST NEW YORK AV/RALPH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:13.606-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:11.136-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 7404.99,
+                                                    "DistanceFromCall": 824.15,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307990",
+                                            "StopPointName": "RALPH AV/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:43.291-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 7537.16,
+                                                    "DistanceFromCall": 956.32,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301066",
+                                            "StopPointName": "RALPH AV/ST JOHNS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:54.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:19.188-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7682.27,
+                                                    "DistanceFromCall": 1101.44,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303135",
+                                            "StopPointName": "RALPH AV/STERLING PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:08.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:13.823-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7882.3,
+                                                    "DistanceFromCall": 1301.47,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303136",
+                                            "StopPointName": "RALPH AV/PROSPECT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:03.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:55.466-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 8031.95,
+                                                    "DistanceFromCall": 1451.12,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303137",
+                                            "StopPointName": "RALPH AV/BERGEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:53.607-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:25.235-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 8167.78,
+                                                    "DistanceFromCall": 1586.94,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303138",
+                                            "StopPointName": "RALPH AV/DEAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:58.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:15.348-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 8344.43,
+                                                    "DistanceFromCall": 1763.59,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303140",
+                                            "StopPointName": "RALPH AV/ATLANTIC AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:23.725-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 8511.25,
+                                                    "DistanceFromCall": 1930.41,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303141",
+                                            "StopPointName": "RALPH AV/FULTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:42.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:15.528-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 8669.67,
+                                                    "DistanceFromCall": 2088.83,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303142",
+                                            "StopPointName": "RALPH AV/SUMPTER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:46.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:05.780-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 8913.95,
+                                                    "DistanceFromCall": 2333.11,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303143",
+                                            "StopPointName": "RALPH AV/BAINBRIDGE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:31.608-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:42.207-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 9082.37,
+                                                    "DistanceFromCall": 2501.53,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303144",
+                                            "StopPointName": "RALPH AV/MC DONOUGH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:01.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:13.007-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 9198.93,
+                                                    "DistanceFromCall": 2618.1,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303145",
+                                            "StopPointName": "RALPH AV/HALSEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:36.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:38.090-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 9329.61,
+                                                    "DistanceFromCall": 2748.77,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303146",
+                                            "StopPointName": "RALPH AV/HANCOCK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:19.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:14.022-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9495.82,
+                                                    "DistanceFromCall": 2914.98,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303147",
+                                            "StopPointName": "RALPH AV/PUTNAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:12.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:13.422-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9693.48,
+                                                    "DistanceFromCall": 3112.64,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303148",
+                                            "StopPointName": "RALPH AV/GATES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:57.547-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9877.75,
+                                                    "DistanceFromCall": 3296.91,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303149",
+                                            "StopPointName": "RALPH AV/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:33.609-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:35.130-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 10041.83,
+                                                    "DistanceFromCall": 3460.99,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307157",
+                                            "StopPointName": "BROADWAY/GREENE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:19.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:33.130-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 10277.65,
+                                                    "DistanceFromCall": 3696.81,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303151",
+                                            "StopPointName": "BROADWAY/KOSSUTH PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:59.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:35.770-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10479.67,
+                                                    "DistanceFromCall": 3898.84,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303152",
+                                            "StopPointName": "BROADWAY/DE KALB AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:29.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:14.193-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10631.92,
+                                                    "DistanceFromCall": 4051.08,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303153",
+                                            "StopPointName": "BROADWAY/LAWTON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:10.610-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:57.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10839.83,
+                                                    "DistanceFromCall": 4258.99,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303154",
+                                            "StopPointName": "BROADWAY/WILLOUGHBY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.611-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:06.289-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 11091.27,
+                                                    "DistanceFromCall": 4510.43,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307637",
+                                            "StopPointName": "BROADWAY/JEFFERSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:26.611-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:35.489-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 11222.62,
+                                                    "DistanceFromCall": 4641.78,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_303156",
+                                            "StopPointName": "BROADWAY/ARION PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:09.612-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:09.159-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 11446.53,
+                                                    "DistanceFromCall": 4865.69,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301092",
+                                            "StopPointName": "BROADWAY/PARK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.612-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:53.686-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 11710.76,
+                                                    "DistanceFromCall": 5129.93,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901017",
+                                            "StopPointName": "MARCUS GARVEY BL/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:48.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:02.592-04:00",
+                    "ValidUntil": "2021-06-23T00:05:02.592-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}
