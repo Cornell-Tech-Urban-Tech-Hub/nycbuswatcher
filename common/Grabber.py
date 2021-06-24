@@ -1,21 +1,48 @@
-import os
-import datetime as dt
 import requests
-import pickle
-
-from functools import wraps
 from time import time
+import datetime as dt
+import trio
 
-def timeit(func):
-    @wraps(func)
-    def _time_it(*args, **kwargs):
-        start = int(round(time() * 1000))
+from common.Models import *
+
+def async_grab_and_store(localhost):
+    start = time()
+    SIRI_request_urlpaths = get_SIRI_request_urlpaths()
+    feeds = []
+
+    async def grabber(s,a_path,route_id):
         try:
-            return func(*args, **kwargs)
-        finally:
-            end_ = int(round(time() * 1000)) - start
-            print(f"Total execution time: {end_ if end_ > 0 else 0} ms")
-    return _time_it
+            r = await s.get(path=a_path)
+            #todo HIGH find a way to retry these, connection errors lead to a gap for any route that raises an Exception
+            feeds.append({route_id:r}) # UnboundLocalError: local variable 'r' referenced before assignment
+        except Exception as e:
+            print ('\tCould not fetch feed for {}. (Maybe you should write some retry code?)'.format(route_id) )
+
+    async def main(path_list):
+        from asks.sessions import Session
+
+        if localhost is True:
+            s = Session('http://bustime.mta.info', connections=5)
+        else:
+            s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
+        async with trio.open_nursery() as n:
+            for path_bundle in path_list:
+                for route_id,path in path_bundle.items():
+                    n.start_soon(grabber, s, path, route_id )
+
+    trio.run(main, SIRI_request_urlpaths)
+
+    # dump to the various locations
+    timestamp = dt.datetime.now()
+    DataLake().make_puddles(feeds, DatePointer(timestamp))
+    DataStore().make_barrels(feeds, DatePointer(timestamp))
+
+    # report results to console
+    n_buses = num_buses(feeds)
+    end = time()
+    print('Fetched and saved {} route feeds and pickled {} BusObservations in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    return
+
 
 def get_OBA_routelist():
     url = "http://bustime.mta.info/api/where/routes-for-agency/MTA%20NYCT.json?key=" + os.getenv("API_KEY")
@@ -32,18 +59,14 @@ def get_OBA_routelist():
         print("Route URLs loaded from pickle cache.")
     finally:
         routes = response.json()
-        now=dt.datetime.now()
-        # print('Found {} routes at {}.'.format(len(routes['data']['list']),now.strftime("%Y-%m-%d %H:%M:%S")))
-
     return routes
+
 
 def get_SIRI_request_urlpaths():
     SIRI_request_urlpaths = []
     routes=get_OBA_routelist()
-
     for route in routes['data']['list']:
         SIRI_request_urlpaths.append({route['id']:"/api/siri/vehicle-monitoring.json?key={}&VehicleMonitoringDetailLevel=calls&LineRef={}".format(os.getenv("API_KEY"), route['id'])})
-
     return SIRI_request_urlpaths
 
 
@@ -58,4 +81,3 @@ def num_buses(feeds):
             except: # no vehicle activity?
                 pass
     return num_buses
-

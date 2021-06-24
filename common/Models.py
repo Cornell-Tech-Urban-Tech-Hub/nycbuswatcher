@@ -10,7 +10,7 @@ from pathlib import Path, PurePath
 from glob import glob
 from uuid import uuid4
 
-import shared.config.config as config
+import common.config.config as config
 
 pathmap = {
     'glacier':'../data/lake/glaciers',

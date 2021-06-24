@@ -1,6 +1,6 @@
 import datetime, os
 
-from shared.Models import DatePointer
+from common.Models import DatePointer
 
 def test_get_purepath():
     now = datetime.datetime.now()

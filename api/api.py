@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 
-from shared.Models import DatePointer, DateRoutePointer, DataStore, Shipment
+from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment
 
 from dotenv import load_dotenv
 

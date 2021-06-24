@@ -9,7 +9,7 @@ import datetime
 from datetime import datetime as dt
 import pathlib
 
-import shared.config.config as config
+import common.config.config as config
 
 
 app = dash.Dash(
