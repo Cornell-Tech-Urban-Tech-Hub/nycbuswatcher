@@ -13,13 +13,13 @@ from uuid import uuid4
 import common.config.config as config
 
 pathmap = {
-    'glacier':'../data/lake/glaciers',
-    'lake':'../data/lake',
-    'puddle':'../data/lake/puddles',
-    'shipment':'../data/store/shipments',
-    'store':'../data/store',
-    'barrel':'../data/store/barrels',
-    'dashboard':'../data/dashboard.csv'
+    'glacier':'data/lake/glaciers',
+    'lake':'data/lake',
+    'puddle':'data/lake/puddles',
+    'shipment':'data/store/shipments',
+    'store':'data/store',
+    'barrel':'data/store/barrels',
+    'dashboard':'data/dashboard.csv'
     }
 
 

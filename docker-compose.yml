@@ -10,7 +10,7 @@ services:
 #      - GANDI_DOMAIN=$GANDI_DOMAIN
 #      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
 
-  #todo fix uid issue, unable to delete old puddles?
+  #todo fix uid issue, unable to delete old puddles (on cornellbus)
   acquire:
     restart: always
     build:
@@ -32,16 +32,17 @@ services:
       - 80:80
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
-#
-#    # dashboard dash app (standalone)
-#    app:
-#      restart: always
-#      build:
-#        context: .
-#        dockerfile: ./build/app/Dockerfile
-#      volumes:
-#        - bus_assets:/app/assets
-#      ports:
-#        - 8000:80
-#      command:
-#        gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app:server
+
+  # dashboard dash app (standalone)
+  app:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./build/app/Dockerfile
+#    volumes:
+#      - bus_assets:/app/app/assets
+    ports:
+      - 8000:80
+    command:
+      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app_dash:server
+

@@ -22,10 +22,10 @@ load_dotenv()
 api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()
-templates = Jinja2Templates(directory="../app/assets/templates")
+templates = Jinja2Templates(directory="assets/templates")
 
 #bug this isn't loading in dashboard because it keeps try to get it on port 8050 not 5000
-app.mount("/assets", StaticFiles(directory="../app/assets"), name="assets")
+app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 #-------------- Fast API -------------------------------------------------------------
 
@@ -69,7 +69,7 @@ async def discover_endpoints(request: Request):
 @app.get('/api/v2/nyc/dashboard')
 # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def fetch_dashboard_data():
-    filename='../data/dashboard.csv'
+    filename= 'data/dashboard.csv'
     if not isfile(filename):
         return Response(status_code=404)
     with open(filename) as f:

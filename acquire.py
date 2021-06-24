@@ -1,8 +1,10 @@
 import argparse
-import time
+import time, os
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
+
+from pathlib import Path
 
 from common.Models import *
 from common.Grabber import async_grab_and_store
@@ -33,8 +35,8 @@ if __name__ == "__main__":
                           misfire_grace_time=15)
 
         # every 15 minutes
-        lake = DataLake()
-        store = DataStore()
+        lake = DataLake(Path.cwd())
+        store = DataStore(Path.cwd())
 
         scheduler.add_job(store.dump_dashboard,
                           'interval',
