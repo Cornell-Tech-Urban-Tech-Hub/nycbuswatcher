@@ -27,8 +27,6 @@ DATA_PATH = BASE_PATH.joinpath("data").resolve()
 # Read data
 url=config.config['base_api_url']+'/dashboard'
 df=pd.read_csv(url)
-# url = config.config['base_api_url']+'/dashboard'
-# df = pd.read_json('https://financialmodelingprep.com/api/v3/company-key-metrics/AAPL?period=quarter', orient='records').set_index('route', inplace=True)
 
 route_list = df["route"].unique()
 kind = df["kind"].unique().tolist()

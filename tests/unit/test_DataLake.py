@@ -5,10 +5,10 @@ import glob, os, shutil
 import json
 from common.Models import DatePointer, DataLake
 
-# a DataLake with just one grab in it
+# empty DataLake
 @pytest.fixture
 def lake():
-    lake = DataLake()
+    lake = DataLake() #todo pass workdir into here?
     return lake
 
 def test_init_lake():
@@ -19,7 +19,9 @@ def test_init_lake():
 @pytest.fixture()
 def single_current_feed():
     from common.Grabber import async_grab_and_store
-    return async_grab_and_store(True) #todo need to refactor async grab and store to not store?
+    return async_grab_and_store(True)
+
+    #todo need to refactor async grab and store to not store?
     #todo because async_grab_and_store will create a DataLake and DataStore, could we trick it into using the tmpdir?
 
 

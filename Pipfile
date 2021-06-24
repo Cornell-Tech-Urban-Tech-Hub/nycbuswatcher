@@ -15,6 +15,7 @@ pandas = "*"
 asks = "*"
 jinja2 = "*"
 pyfakefs = "*"
+dash = "*"
 
 [dev-packages]
 

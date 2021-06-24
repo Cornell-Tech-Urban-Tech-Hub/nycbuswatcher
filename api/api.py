@@ -6,6 +6,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 
+from pathlib import Path
+
 from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment
 
 from dotenv import load_dotenv
@@ -20,13 +22,11 @@ load_dotenv()
 api_url_stem="/api/v2/nyc/"
 
 app = FastAPI()
-templates = Jinja2Templates(directory="assets/templates")
+templates = Jinja2Templates(directory="../app/assets/templates")
 
-app.mount("/static", StaticFiles(directory="../assets"), name="static")
+#bug this isn't loading in dashboard because it keeps try to get it on port 8050 not 5000
+app.mount("/assets", StaticFiles(directory="../app/assets"), name="assets")
 
-
-# add CORS stuff https://fastapi.tiangolo.com/tutorial/cors/
-# add auth/key registry (3rd party plugin? for API control)
 #-------------- Fast API -------------------------------------------------------------
 
 
@@ -52,7 +52,7 @@ class PrettyJSONResponse(Response):
 
 def make_store(): #bug too costly? how to automate this for refresh periodically
     print ('i recreated the DataStore()')
-    return DataStore()
+    return DataStore(Path.cwd())
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ async def discover_endpoints(request: Request):
 @app.get('/api/v2/nyc/dashboard')
 # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def fetch_dashboard_data():
-    filename='data/dashboard.csv'
+    filename='../data/dashboard.csv'
     if not isfile(filename):
         return Response(status_code=404)
     with open(filename) as f:

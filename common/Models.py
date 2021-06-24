@@ -63,16 +63,22 @@ class DateRoutePointer(DatePointer):
                               self.route]))
 
 
-class GenericStore():
+class WorkDir():
 
-    def __init__(self, kind=None):
+    def __init__(self, cwd):
+        self.cwd = cwd
+
+class GenericStore(WorkDir):
+
+    def __init__(self, cwd, kind=None):
+        super().__init__(cwd)
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
         # print('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
 
 
     def get_path(self, prefix):
-        folderpath = Path.cwd() / prefix
+        folderpath = self.cwd / prefix
         Path(folderpath).mkdir(parents=True, exist_ok=True)
         return folderpath
 
@@ -87,15 +93,16 @@ class GenericStore():
         return pointer
 
 
-class GenericFolder():
+class GenericFolder(WorkDir):
 
-    def __init__(self, date_pointer, kind=None):
+    def __init__(self, cwd, date_pointer, kind=None):
+        super().__init__(cwd)
         self.date_pointer=date_pointer
         self.path = self.get_path(pathmap[kind], date_pointer)
         # print('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
 
     def get_path(self, prefix, date_pointer):
-        folderpath = Path.cwd() / prefix / date_pointer.purepath
+        folderpath = self.cwd / prefix / date_pointer.purepath
         Path(folderpath).mkdir(parents=True, exist_ok=True)
         return folderpath
 
@@ -114,8 +121,8 @@ class GenericFolder():
 
 class DataLake(GenericStore):
 
-    def __init__(self):
-        super().__init__(kind='lake')
+    def __init__(self, cwd):
+        super().__init__(cwd, kind='lake')
         #dont init self.puddles but call self.scan_puddles() as needed
 
     def make_puddles(self, feeds, date_pointer):
@@ -124,7 +131,7 @@ class DataLake(GenericStore):
                 route=route_id.split('_')[1]
                 puddle_date_pointer=DateRoutePointer(date_pointer.timestamp, route)
                 try:
-                    folder = Puddle(puddle_date_pointer).path
+                    folder = Puddle(self.cwd, puddle_date_pointer).path
                     filename = 'drop_{}_{}.json'.format(puddle_date_pointer.route, puddle_date_pointer.timestamp).replace(' ', 'T')
                     filepath = folder / PurePath(filename)
                     route_data = route_data.json()
@@ -136,14 +143,14 @@ class DataLake(GenericStore):
         return
 
     def scan_puddles(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['puddle']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['puddle']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         puddles = []
         for d in dirs:
             rt=d.split('/')[-1]
-            p=Puddle(self.path_to_DateRoutePointer(d,rt))
+            p=Puddle(self.cwd, self.path_to_DateRoutePointer(d,rt))
             puddles.append(p)
-        print('rescanned::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(Path.cwd() / pathmap['puddle'])))
+        print('rescanned::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(self.cwd / pathmap['puddle'])))
         return puddles
 
     def list_expired_puddles(self):
@@ -163,7 +170,7 @@ class DataLake(GenericStore):
         for puddle in puddles_to_archive:
             puddle.freeze_myself_to_glacier()
         # https://gist.github.com/roddds/aff960f47d4d1dffba2235cc34cb45fb
-        for dirpath, dirnames, files in os.walk( (str(Path.cwd() / pathmap['lake']))):
+        for dirpath, dirnames, files in os.walk( (str(self.cwd / pathmap['lake']))):
             if not (files or dirnames):
                 os.rmdir(dirpath)
         return
@@ -171,8 +178,8 @@ class DataLake(GenericStore):
 
 class Puddle(GenericFolder):
 
-    def __init__(self, date_pointer):
-        super().__init__(date_pointer, kind='puddle')
+    def __init__(self, cwd, date_pointer):
+        super().__init__(cwd, date_pointer, kind='puddle')
         if self.date_pointer.route is False:
             raise Exception ('tried to instantiate Puddle because you called __init__ without a value in DatePointer.route')
         self.route = self.date_pointer.route
@@ -181,7 +188,7 @@ class Puddle(GenericFolder):
     def freeze_myself_to_glacier(self):
         drops_to_freeze=[x for x in self.path.glob('*.json') if x.is_file()]
         try:
-            outfile = Glacier(self.date_pointer)
+            outfile = Glacier(self.cwd, self.date_pointer)
         except OSError:
             # future write handler for partially rendered puddles(maybe a different filename, or move it to a lost+found?)
             return
@@ -195,8 +202,8 @@ class Puddle(GenericFolder):
 
 class Glacier(GenericFolder):
 
-    def __init__(self, date_pointer):
-        super().__init__(date_pointer, kind='glacier')
+    def __init__(self, cwd, date_pointer):
+        super().__init__(cwd, date_pointer, kind='glacier')
         self.route = self.date_pointer.route
         self.exist, self.filepath = self.check_exist()
         if self.exist == True:
@@ -213,8 +220,8 @@ class Glacier(GenericFolder):
 
 class DataStore(GenericStore):
 
-    def __init__(self):
-        super().__init__(kind='store')
+    def __init__(self, cwd):
+        super().__init__(cwd, kind='store')
         # dont init self.barrels and self.shipments instead call them as needed with self.scan_barrels() and self.scan_shipments()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
@@ -225,7 +232,7 @@ class DataStore(GenericStore):
                 barrel_date_pointer=DateRoutePointer(date_pointer.timestamp, route)
                 pickles = []
                 try:
-                    folder = Barrel(barrel_date_pointer).path
+                    folder = Barrel(self.cwd, barrel_date_pointer).path
                     filename = 'pickle_{}_{}.dat'.format(barrel_date_pointer.route, barrel_date_pointer.timestamp).replace(' ', 'T')
                     filepath = folder / PurePath(filename)
                     route_data = route_data.json()
@@ -245,14 +252,14 @@ class DataStore(GenericStore):
         return
 
     def scan_barrels(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['barrel']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['barrel']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         barrels = []
         for d in dirs:
             rt=d.split('/')[-1]
-            b = Barrel(self.path_to_DateRoutePointer(d,rt))
+            b = Barrel(self.cwd, self.path_to_DateRoutePointer(d,rt))
             barrels.append(b)
-        print('rescanned::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(Path.cwd() / pathmap['barrel'])))
+        print('rescanned::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(self.cwd / pathmap['barrel'])))
         return barrels
 
     def list_expired_barrels(self):
@@ -272,7 +279,7 @@ class DataStore(GenericStore):
         for barrel in barrels_to_archive:
             barrel.render_myself_to_shipment()
         # https://gist.github.com/roddds/aff960f47d4d1dffba2235cc34cb45fb
-        for dirpath, dirnames, files in os.walk( (str(Path.cwd() / pathmap['store']))):
+        for dirpath, dirnames, files in os.walk( (str(self.cwd / pathmap['store']))):
             if not (files or dirnames):
                 os.rmdir(dirpath)
         return
@@ -316,16 +323,16 @@ class DataStore(GenericStore):
                  s.count_buses())
             )
         dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
-        dashboard_data.to_csv(Path.cwd() / Path(pathmap['dashboard']),index=False)
+        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
         return
 
     def scan_shipments(self):
-        files = glob('{}/*/*/*/*/*'.format(Path.cwd() / pathmap['shipment']), recursive=True)
+        files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['shipment']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
         shipments = []
         for d in dirs:
             rt=d.split('/')[-1]
-            s = Shipment(self.path_to_DateRoutePointer(d,rt))
+            s = Shipment(self.cwd, self.path_to_DateRoutePointer(d,rt))
             s.path = s.path / PurePath (s.route)
             shipments.append(s)
         return shipments
@@ -342,8 +349,8 @@ class DataStore(GenericStore):
 
 class Barrel(GenericFolder):
 
-    def __init__(self, date_pointer):
-        super().__init__(date_pointer, kind='barrel')
+    def __init__(self, cwd, date_pointer):
+        super().__init__(cwd, date_pointer, kind='barrel')
         if self.date_pointer.route is False:
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
@@ -357,16 +364,18 @@ class Barrel(GenericFolder):
                 barrel = pickle.load(pickle_file)
                 for p in barrel:
                     pickle_array.append(p)
-
-        sorted_pickle_array = pickle_array.sorted(key= lambda i: (i.timestamp, i.trip_id))
+        pickle_array.sort(key= lambda i: (i.timestamp, i.trip_id))
         serial_array=[]
-        for p in sorted_pickle_array:
-            serial_array.append(p.to_serial())
+        try:
+            for p in pickle_array:
+                serial_array.append(p.to_serial())
+        except TypeError: # empty list
+            return
         json_container = dict()
         json_container['buses'] = serial_array
 
         try:
-            outfile = Shipment(self.date_pointer)
+            outfile = Shipment(self.cwd, self.date_pointer)
         except OSError:
             return
 
@@ -388,8 +397,8 @@ class Barrel(GenericFolder):
 
 class Shipment(GenericFolder):
 
-    def __init__(self, date_pointer):
-        super().__init__(date_pointer, kind='shipment')
+    def __init__(self, cwd, date_pointer):
+        super().__init__(cwd, date_pointer, kind='shipment')
         self.route = date_pointer.route
         self.exist, self.filepath = self.check_exist()
         self.url = config.config['shipment_api_url'].format(str(date_pointer.year),

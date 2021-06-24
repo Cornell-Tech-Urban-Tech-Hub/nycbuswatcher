@@ -25,16 +25,32 @@ if __name__ == "__main__":
         # every minute
         scan_interval_seconds = 60
         print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
-        scheduler.add_job(async_grab_and_store, 'interval', args.localhost, seconds=scan_interval_seconds, max_instances=2, misfire_grace_time=15)
+        scheduler.add_job(async_grab_and_store,
+                          'interval',
+                          args=[args.localhost, Path.cwd()],
+                          seconds=scan_interval_seconds,
+                          max_instances=2,
+                          misfire_grace_time=15)
 
-        # # every 15 minutes
+        # every 15 minutes
         lake = DataLake()
         store = DataStore()
-        scheduler.add_job(store.dump_dashboard, 'interval', minutes=5, misfire_grace_time=1)
 
-        # # every hour
-        scheduler.add_job(lake.freeze_puddles, 'interval', minutes=60,  misfire_grace_time=5)
-        scheduler.add_job(store.render_barrels, 'interval', minutes=60,  misfire_grace_time=5)
+        scheduler.add_job(store.dump_dashboard,
+                          'interval',
+                          minutes=5,
+                          misfire_grace_time=1)
+
+        # every hour
+        scheduler.add_job(lake.freeze_puddles,
+                          'interval',
+                          minutes=60,
+                          misfire_grace_time=5)
+
+        scheduler.add_job(store.render_barrels,
+                          'interval',
+                          minutes=60,
+                          misfire_grace_time=5)
 
         # todo add an hourly job to update the dashboard.csv file that's read by dashboard.py
 
@@ -49,7 +65,7 @@ if __name__ == "__main__":
 
     # DEVELOPMENT = run once and quit
     elif os.environ['PYTHON_ENV'] == "development":
-        async_grab_and_store(args.localhost)
+        async_grab_and_store(args.localhost, Path.cwd())
 
 
 
