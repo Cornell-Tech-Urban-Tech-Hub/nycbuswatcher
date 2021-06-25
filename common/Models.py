@@ -68,6 +68,7 @@ class WorkDir():
     def __init__(self, cwd):
         self.cwd = cwd
 
+
 class GenericStore(WorkDir):
 
     def __init__(self, cwd, kind=None):
@@ -284,7 +285,6 @@ class DataStore(GenericStore):
                 os.rmdir(dirpath)
         return
 
-
     def list_routes_in_store(self, date_pointer_query):
         routes = []
         self.shipments = self.scan_shipments() #reload here Just In Case
@@ -345,6 +345,38 @@ class DataStore(GenericStore):
                 result.append(s)
         return result
 
+    #todo test and debug
+    def find_query_shipments(self, params):
+
+        def filter_params(params):
+            new_params = dict()
+            for k,v in params.items():
+                if v != None:
+                    new_params[k] = v
+            return new_params
+
+        def filter_shipment(shipment):
+            for k,v in filter_params(params).items():
+                print ('filtering {} == {}'.format(k, v))
+                if getattr(shipment, k) != v:
+                    return False
+            return True
+
+        shipments_filtered = list(
+            filter(
+                filter_shipment,
+                self.scan_shipments()
+            )
+        )
+
+        result=[ {"route": s.route,
+                  "year": s.date_pointer.year,
+                  "month": s.date_pointer.month,
+                  "day": s.date_pointer.day,
+                  "hour": s.date_pointer.hour,
+                  "url":s.url
+                 } for s in shipments_filtered]
+        return result
 
 
 class Barrel(GenericFolder):
@@ -357,7 +389,7 @@ class Barrel(GenericFolder):
 
 
     def render_myself_to_shipment(self):
-        pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
+        pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]  #bug isnt excluding current hour
         pickle_array = []
         for picklefile in pickles_to_render:
             with open(picklefile, 'rb') as pickle_file:
@@ -406,6 +438,10 @@ class Shipment(GenericFolder):
                                                             str(date_pointer.day),
                                                             str(date_pointer.hour),
                                                             date_pointer.route)
+        self.year, self.month, self.day, self.hour = date_pointer.year, \
+                                                     date_pointer.month,\
+                                                     date_pointer.day, \
+                                                     date_pointer.hour
         try:
             if self.exist == True:
                 pass

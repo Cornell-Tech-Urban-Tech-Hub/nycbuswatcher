@@ -2,14 +2,6 @@ version: '3'
 
 services:
 
-#  gandi_dns:
-#    image: anthonymobile/gandi-live-dns
-#    restart: always
-#    environment:
-#      - GANDI_API_KEY=$GANDI_API_KEY
-#      - GANDI_DOMAIN=$GANDI_DOMAIN
-#      - GANDI_SUBDOMAINS=$GANDI_SUBDOMAINS
-
   #todo fix uid issue, unable to delete old puddles (on cornellbus)
   acquire:
     restart: always
@@ -33,16 +25,16 @@ services:
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
 
-  # dashboard dash app (standalone)
-  app:
-    restart: always
-    build:
-      context: .
-      dockerfile: ./build/app/Dockerfile
-#    volumes:
-#      - bus_assets:/app/app/assets
-    ports:
-      - 8000:80
-    command:
-      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app_dash:server
+#  # dashboard dash app (standalone)
+#  app:
+#    restart: always
+#    build:
+#      context: .
+#      dockerfile: ./build/app/Dockerfile
+##    volumes:
+##      - ./assets:/app/assets
+#    ports:
+#      - 8000:80
+#    command:
+#      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app_dash:server
 

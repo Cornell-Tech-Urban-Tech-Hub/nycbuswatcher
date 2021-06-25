@@ -1,6 +1,7 @@
 from datetime import datetime
 from os.path import isfile
 from fastapi import FastAPI, Request
+from typing import Optional
 from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
@@ -24,7 +25,7 @@ api_url_stem="/api/v2/nyc/"
 app = FastAPI()
 templates = Jinja2Templates(directory="assets/templates")
 
-#bug this isn't loading in dashboard because it keeps try to get it on port 8050 not 5000
+#bug this isn't loading in dashboard because it keeps try to get it on port 8000 not 5000?
 app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 #-------------- Fast API -------------------------------------------------------------
@@ -141,6 +142,33 @@ async def list_all_shipments_in_history_for_route(route):
     shipments_sorted = sorted(shipments, key = lambda i: (i['year'],i['month'],i['day'],i['hour']))
     return {"route":route.upper(),
             "shipments": shipments_sorted}
+
+#todo add validation for the query parameters
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/shipments?route=BX4&year=2021&month=6&day=10&hour=4
+# FUNCTION List shipments available for a given set of arguments
+@app.get('/api/v2/shipments',response_class=PrettyJSONResponse)
+async def list_all_shipments_for_query(
+        year: Optional[int] = None,
+        month: Optional[int] = None,
+        day: Optional[int] = None,
+        hour: Optional[int] = None,
+        route: Optional[str] = None
+):
+    store = make_store()
+    params = {
+        'route':route.upper(), #bug only the route filter isnt working
+        'year':year,
+        'month':month,
+        'day':day,
+        'hour':hour
+    }
+    shipments = store.find_query_shipments(params)
+    return {"query":params,
+            "shipments": shipments}
+
+
+
 
 #------------------------------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
