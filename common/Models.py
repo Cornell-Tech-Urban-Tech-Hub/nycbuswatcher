@@ -158,10 +158,13 @@ class DataLake(GenericStore):
         expired_puddles = []
         for puddle in self.scan_puddles():
             bottom_of_hour = DatePointer(datetime.now())
-            bottom_of_hour.route=puddle.route
-            if str(puddle.date_pointer) != str(bottom_of_hour):
-                expired_puddles.append(puddle)
-        return expired_puddles
+            if (puddle.date_pointer.year, puddle.date_pointer.month,
+                puddle.date_pointer.day, puddle.date_pointer.hour) \
+                != \
+                (bottom_of_hour.year, bottom_of_hour.month,
+                 bottom_of_hour.day,bottom_of_hour.hour):
+                    expired_puddles.append(puddle)
+        return sorted(expired_puddles, key=lambda p: p.date_pointer.timestamp)
 
     def freeze_puddles(self):
         puddles_to_archive = self.list_expired_puddles()
@@ -265,12 +268,15 @@ class DataStore(GenericStore):
 
     def list_expired_barrels(self):
         expired_barrels = []
-        for puddle in self.scan_barrels():
+        for barrel in self.scan_barrels():
             bottom_of_hour = DatePointer(datetime.now())
-            bottom_of_hour.route=puddle.route
-            if str(puddle.date_pointer) != str(bottom_of_hour):
-                expired_barrels.append(puddle)
-        return expired_barrels  # future sort list from oldest to newest
+            if (barrel.date_pointer.year, barrel.date_pointer.month,
+                barrel.date_pointer.day, barrel.date_pointer.hour) \
+                    != \
+                    (bottom_of_hour.year, bottom_of_hour.month,
+                     bottom_of_hour.day,bottom_of_hour.hour):
+                        expired_barrels.append(barrel)
+        return sorted(expired_barrels, key=lambda b: b.date_pointer.timestamp)
 
     def render_barrels(self):
         barrels_to_archive = self.list_expired_barrels()
@@ -295,7 +301,7 @@ class DataStore(GenericStore):
                 if dp1.month == dp2.month:
                     if dp1.day == dp2.day:
                         if dp1.hour == dp2.hour:
-                            routes.append((shipment.route, shipment.url)) #todo change shipment.filepath to a URL
+                            routes.append((shipment.route, shipment.url))
         return routes
 
     def dump_dashboard(self):
@@ -345,7 +351,7 @@ class DataStore(GenericStore):
                 result.append(s)
         return result
 
-    #todo test and debug
+
     def find_query_shipments(self, params):
 
         def filter_params(params):
@@ -387,9 +393,8 @@ class Barrel(GenericFolder):
             raise Exception ('tried to instantiate Barrel because you called __init__ without a value in DatePointer.route')
         self.route = date_pointer.route
 
-
     def render_myself_to_shipment(self):
-        pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]  #bug isnt excluding current hour
+        pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
         pickle_array = []
         for picklefile in pickles_to_render:
             with open(picklefile, 'rb') as pickle_file:

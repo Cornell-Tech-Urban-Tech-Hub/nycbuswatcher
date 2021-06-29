@@ -28,7 +28,7 @@ def single_current_feed():
 # todo test that runs off a fixture containing 2 whole days' worth of data
 
 
-# bug this doesn't work but not even sure what we are trying to test
+# this doesn't work but not even sure what we are trying to test
 # # using tmp_path, which creates a pathlib.Path object (need to make the cwd for my tests)
 # def test_make_puddles(tmp_path):
 #

@@ -25,7 +25,7 @@ api_url_stem="/api/v2/nyc/"
 app = FastAPI()
 templates = Jinja2Templates(directory="assets/templates")
 
-#bug this isn't loading in dashboard because it keeps try to get it on port 8000 not 5000?
+#todo this isn't loading in dashboard because it keeps try to get it on port 8000 not 5000?
 app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 #-------------- Fast API -------------------------------------------------------------
@@ -51,7 +51,7 @@ class PrettyJSONResponse(Response):
         ).encode("utf-8")
 
 
-def make_store(): #bug too costly? how to automate this for refresh periodically
+def make_store(): #todo too costly? how to automate this for refresh periodically
     print ('i recreated the DataStore()')
     return DataStore(pathlib.Path.cwd())
 
@@ -88,7 +88,7 @@ async def list_shipments_by_query_all_fields_optional(
     return {"query":params,
             "shipments": shipments}
 
-# todo update so that it will work for a less precise date path (e.g. just year/month/day or year/month or year)
+# future update so that it will work for a less precise date path (e.g. just year/month/day or year/month or year)
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/{route}
 # FUNCTION List shipments available for a given route
@@ -152,7 +152,7 @@ async def fetch_single_Shipment_as_geoJSON(
     return Shipment(date_route_pointer).to_FeatureCollection()
 
 
-# todo update so that it will work for a less precise date path (e.g. just year/month/day or year/month or year)
+# future update so that it will work for a less precise date path (e.g. just year/month/day or year/month or year)
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/routes
 # FUNCTION List routes with shipment data for period specified.
@@ -164,7 +164,7 @@ async def list_all_routes_for_hour(
         day: int = Path(..., ge=1, le=31),
         hour: int = Path(..., ge=0, le=23)
 ):
-    store = make_store() #bug is this expensive/not scalable for each request?
+    store = make_store() #todo is this expensive/not scalable for each request?
     date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
     routes = sorted(store.list_routes_in_store(date_pointer))
     result = {"year":year,

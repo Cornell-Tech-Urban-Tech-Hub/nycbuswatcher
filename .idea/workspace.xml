@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88070558-94cd-4c73-9a72-9d04941486d9" name="Default Changelist" comment="">
+    <list default="true" id="88070558-94cd-4c73-9a72-9d04941486d9" name="Default Changelist" comment="roughed out database to shipment converter">
+      <change afterPath="$PROJECT_DIR$/archive_db2shipments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive_reprocessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reprocessor/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reprocessor/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/Database_reprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nycbuswatcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nycbuswatcher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/acquire/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/build/acquire/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/Grabber.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Grabber.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/ReprocessedDatabase.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Database_db2shipments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db2shipments.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/test_DataLake.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_DataLake.py" afterDir="false" />
     </list>
@@ -59,15 +73,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
+    <property name="TODO_SCOPE" value="core libraries" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/fixtures" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -76,14 +90,14 @@
       <recent name="$PROJECT_DIR$/tests/integration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/reprocessor" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/api" />
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/tests/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.acquire (*)">
     <configuration name="acquire (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="nycbuswatcher" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +154,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="PYTHON_ENV" value="development" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/nycbuswatcher-n1v_2nF3/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/nycbuswatcher-UuaCSnf6/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -272,6 +286,13 @@
       <workItem from="1624497219198" duration="8491000" />
       <workItem from="1624567070299" duration="6079000" />
       <workItem from="1624670500667" duration="2078000" />
+      <workItem from="1624748640933" duration="119000" />
+      <workItem from="1624832746936" duration="1729000" />
+      <workItem from="1624845051340" duration="1298000" />
+      <workItem from="1624849340972" duration="1967000" />
+      <workItem from="1624908593317" duration="252000" />
+      <workItem from="1624920791883" duration="52000" />
+      <workItem from="1624925873727" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring in progress (done: api, todo: acquire, dashboard + docker-compose stack)">
       <created>1624396500770</created>
@@ -329,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624671789850</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="roughed out database to shipment converter">
+      <created>1624845541445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624845541445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,18 +372,19 @@
     <MESSAGE value="docker stack mostly working except app_dash web access" />
     <MESSAGE value="new api endpoint for open query" />
     <MESSAGE value="added validation and constraints for all endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="added validation and constraints for all endpoints" />
+    <MESSAGE value="roughed out database to shipment converter" />
+    <option name="LAST_COMMIT_MESSAGE" value="roughed out database to shipment converter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_for_test_DataLake_test_make_puddles.coverage" NAME="pytest for test_DataLake.test_make_puddles Coverage Results" MODIFIED="1624495515296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$acquire__1_.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1624507273695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1624422306653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$render.coverage" NAME="render Coverage Results" MODIFIED="1624589597908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$api.coverage" NAME="api Coverage Results" MODIFIED="1624672003616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$render.coverage" NAME="render Coverage Results" MODIFIED="1624910724336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$api.coverage" NAME="api Coverage Results" MODIFIED="1624910921686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$acquire.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1624421032147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/acquire" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_for_test_DatePointerGetPurepath_test_get_purepath.coverage" NAME="pytest for test_DatePointerGetPurepath.test_get_purepath Coverage Results" MODIFIED="1624419893298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$test_pytest.coverage" NAME="test_pytest Coverage Results" MODIFIED="1624418320925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire____.coverage" NAME="acquire (*) Coverage Results" MODIFIED="1624506670574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire____.coverage" NAME="acquire (*) Coverage Results" MODIFIED="1624928782421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$dashboard.coverage" NAME="app_dash Coverage Results" MODIFIED="1624506683328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1624420050320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>

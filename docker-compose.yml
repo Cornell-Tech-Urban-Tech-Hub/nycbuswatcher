@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  #todo fix uid issue, unable to delete old puddles (on cornellbus)
+  #bug fix uid issue, unable to delete old puddles (on cornellbus)
   acquire:
     restart: always
     build:
@@ -24,6 +24,17 @@ services:
       - 80:80
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
+
+#  reprocessor:
+#    restart: always
+#    build:
+#      context: .
+#      dockerfile: ./build/reprocessor/Dockerfile
+#    volumes:
+#      - ./data:/app/data
+#      - ./archives:/app/archives
+#    command:
+#      tail -f /dev/null # keep the container alive for me
 
 #  # dashboard dash app (standalone)
 #  app:

@@ -16,6 +16,7 @@ asks = "*"
 jinja2 = "*"
 pyfakefs = "*"
 dash = "*"
+ijson = "*"
 
 [dev-packages]
 
