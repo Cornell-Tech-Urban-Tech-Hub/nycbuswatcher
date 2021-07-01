@@ -431,13 +431,13 @@ class Barrel(GenericFolder):
         pickles_to_count=[x for x in self.path.glob('*.dat') if x.is_file()]
         pickle_count = 0
         for picklefile in pickles_to_count:
-            # try:
-            with open(picklefile, 'rb') as pickle_file:
-                barrel = pickle.load(pickle_file)
-                pickle_count = pickle_count + len(barrel)
-            # except Exception as e:
-            #     print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
-            #     pass
+            try:
+                with open(picklefile, 'rb') as pickle_file:
+                    barrel = pickle.load(pickle_file)
+                    pickle_count = pickle_count + len(barrel)
+            except Exception as e:
+                print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                pass
         return pickle_count
 
 
