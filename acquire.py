@@ -1,11 +1,7 @@
 import argparse
-import time, os
-
+import time
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
-
-from pathlib import Path
-
 from common.Models import *
 from common.Grabber import async_grab_and_store
 
@@ -17,7 +13,7 @@ if __name__ == "__main__":
     parser.add_argument('-l', action="store_true", dest="localhost", help="force localhost for production mode")
     args = parser.parse_args()
 
-    load_dotenv()
+    load_dotenv() #todo is this used? is this what populates os.environ?
 
     # PRODUCTION = start main loop
     if os.environ['PYTHON_ENV'] == "production":
@@ -31,30 +27,38 @@ if __name__ == "__main__":
                           'interval',
                           args=[args.localhost, Path.cwd()],
                           seconds=scan_interval_seconds,
-                          max_instances=2,
                           misfire_grace_time=15)
 
         # every 15 minutes
         lake = DataLake(Path.cwd())
         store = DataStore(Path.cwd())
-
         scheduler.add_job(store.dump_dashboard,
                           'interval',
                           minutes=5,
-                          misfire_grace_time=1)
+                          misfire_grace_time=60)
 
-        # every hour
+        # # every hour
+        # scheduler.add_job(lake.freeze_puddles,
+        #                   'interval',
+        #                   minutes=60,
+        #                   misfire_grace_time=300)
+        # scheduler.add_job(store.render_barrels,
+        #                   'interval',
+        #                   minutes=60,
+        #                   misfire_grace_time=15)
+
+        # # every hour, 2 minutes after the hour
         scheduler.add_job(lake.freeze_puddles,
-                          'interval',
-                          minutes=60,
-                          misfire_grace_time=5)
-
+                      'cron',
+                      hour='*',
+                      minute=2,
+                      misfire_grace_time=300)
         scheduler.add_job(store.render_barrels,
-                          'interval',
-                          minutes=60,
-                          misfire_grace_time=5)
+                          'cron',
+                          hour='*',
+                          minute=2,
+                          misfire_grace_time=300)
 
-        # todo add an hourly job to update the dashboard.csv file that's read by dashboard.py
 
         # Start the schedulers
         scheduler.start()

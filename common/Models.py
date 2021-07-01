@@ -4,6 +4,7 @@ import pickle
 import tarfile
 import pandas as pd
 import dateutil
+import inspect
 
 from datetime import date, datetime
 from pathlib import Path, PurePath
@@ -104,7 +105,7 @@ class GenericFolder(WorkDir):
 
     def get_path(self, prefix, date_pointer):
         folderpath = self.cwd / prefix / date_pointer.purepath
-        Path(folderpath).mkdir(parents=True, exist_ok=True)
+        Path(folderpath).mkdir(parents=True, exist_ok=True) #  bug FileExistsError: [Errno 17] File exists:
         return folderpath
 
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
@@ -363,7 +364,7 @@ class DataStore(GenericStore):
 
         def filter_shipment(shipment):
             for k,v in filter_params(params).items():
-                print ('filtering {} == {}'.format(k, v))
+                # print ('filtering {} == {}'.format(k, v))
                 if getattr(shipment, k) != v:
                     return False
             return True
@@ -398,7 +399,11 @@ class Barrel(GenericFolder):
         pickle_array = []
         for picklefile in pickles_to_render:
             with open(picklefile, 'rb') as pickle_file:
-                barrel = pickle.load(pickle_file)
+                try:
+                    barrel = pickle.load(pickle_file)
+                except Exception as e:
+                    print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                    continue
                 for p in barrel:
                     pickle_array.append(p)
         pickle_array.sort(key= lambda i: (i.timestamp, i.trip_id))
@@ -426,9 +431,13 @@ class Barrel(GenericFolder):
         pickles_to_count=[x for x in self.path.glob('*.dat') if x.is_file()]
         pickle_count = 0
         for picklefile in pickles_to_count:
-            with open(picklefile, 'rb') as pickle_file:
-                barrel = pickle.load(pickle_file)
-                pickle_count = pickle_count + len(barrel)
+            try:
+                with open(picklefile, 'rb') as pickle_file:
+                    barrel = pickle.load(pickle_file)
+                    pickle_count = pickle_count + len(barrel)
+            except Exception as e:
+                print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                pass
         return pickle_count
 
 

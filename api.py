@@ -74,11 +74,11 @@ async def list_shipments_by_query_all_fields_optional(
         month: Optional[int] = Query(None, ge=1, le=12),
         day: Optional[int] = Query(None, ge=1, le=31),
         hour: Optional[int] = Query(None, ge=0, le=23),
-        route: Optional[str] = Query(None, max_length=6)
+        route: Optional[str] = Query(None, max_length=6) #bug throws error if `route` omitted
 ):
     store = make_store()
     params = {
-        'route':route.upper(),
+        'route':route.upper(), #bug throws error if `route` omitted
         'year':year,
         'month':month,
         'day':day,
@@ -149,7 +149,7 @@ async def fetch_single_Shipment_as_geoJSON(
                                                  day=int(day),
                                                  hour=int(hour)),
                                         route.upper())
-    return Shipment(date_route_pointer).to_FeatureCollection()
+    return Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
 
 
 # future update so that it will work for a less precise date path (e.g. just year/month/day or year/month or year)
@@ -177,11 +177,12 @@ async def list_all_routes_for_hour(
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/dashboard
 # FUNCTION Dashboard metadata showing number of barrels and shipments per hour per route currently stored.
-@app.get('/api/v2/nyc/dashboard')
+@app.get('/api/v2/nyc/dashboard/csv')
 # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
 async def fetch_dashboard_data():
     filename= 'data/dashboard.csv'
     if not isfile(filename):
+        print('didnt find the dashboard.csv')
         return Response(status_code=404)
     with open(filename) as f:
         content = f.read()
