@@ -15,7 +15,7 @@ def async_grab_and_store(localhost, cwd):
             r = await s.get(path=a_path, retries=10)
             feeds.append({route_id:r})
         except Exception as e:
-            print ('\tCould not fetch feed for {}. (Increase max retries for Session.get()?)'.format(route_id) )
+            logging.error ('\tCould not fetch feed for {}. (Increase max retries for Session.get()?)'.format(route_id) )
 
     async def main(path_list):
         from asks.sessions import Session
@@ -39,7 +39,7 @@ def async_grab_and_store(localhost, cwd):
     # report results to console
     n_buses = num_buses(feeds)
     end = time()
-    print('Saved {} route feeds into puddles and pickled {} BusObservations in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    logging.debug('Saved {} route feeds into puddles and pickled {} BusObservations in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
     return
 
 
@@ -55,7 +55,7 @@ def get_OBA_routelist():
     except Exception as e: # response is bad, so load the last good pickle
         with open(('data/routes-for-agency.pickle'), "rb") as pickle_file:
             response = pickle.load(pickle_file)
-        print("Route URLs loaded from pickle cache.")
+        logging.debug("Route URLs loaded from pickle cache.")
     finally:
         routes = response.json()
     return routes

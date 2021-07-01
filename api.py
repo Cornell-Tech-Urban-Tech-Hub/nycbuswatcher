@@ -6,7 +6,8 @@ from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
-
+import argparse
+import logging
 import pathlib
 
 from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment
@@ -182,7 +183,7 @@ async def list_all_routes_for_hour(
 async def fetch_dashboard_data():
     filename= 'data/dashboard.csv'
     if not isfile(filename):
-        print('didnt find the dashboard.csv')
+        logging.debug('didnt find the dashboard.csv')
         return Response(status_code=404)
     with open(filename) as f:
         content = f.read()
@@ -191,46 +192,18 @@ async def fetch_dashboard_data():
 
 #------------------------------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description='NYCbuswatcher v2 API')
+    parser.add_argument("-v",
+                        "--verbose",
+                        help="increase output verbosity",
+                        action="store_true")
+
+    args = parser.parse_args()
+
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.ERROR)
+
     uvicorn.run(app, port=5000, debug=True)
-
-
-
-
-#######################################################################################################################
-## Alternate, abandoned implementations of the main shipment retreival endpoint, might be useful later for optimization
-#######################################################################################################################
-
-# # using Shipment class = elegant but creates empty folders
-# #------------------------------------------------------------------------------------------------------------------------
-# # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
-# # FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
-# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',response_class=PrettyJSONResponse)
-# async def fetch_Shipment(year,month,day,hour,route):
-#     date_route_pointer=DateRoutePointer(datetime(year=int(year),
-#                                                  month=int(month),
-#                                                  day=int(day),
-#                                                  hour=int(hour)),
-#                                         route)
-#
-#     # need to check if the shipment exists before instantiating object, otherwise it creates an empty folder because of GenericFolder inheritance
-#     return Shipment(date_route_pointer).load_file()
-
-# # STATIC, NOT SO SIMPLE, FASTER?
-# #------------------------------------------------------------------------------------------------------------------------
-# # ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses
-# # FUNCTION get a single Shipment by date_pointer as flat JSON 'buses' array
-# #per https://fastapi.tiangolo.com/advanced/additional-responses/#additional-media-types-for-the-main-response
-# class IndentedJSON(BaseModel):
-#     id: str
-#     value: str
-# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',
-#     response_model=IndentedJSON,
-#          responses={200: {
-#                  'content': {'application/json': {}},
-#                  'description': 'Return the JSON item or an image.',
-#              }
-#          },
-#          )
-# async def fetch_shipment(year,month,day,hour,route):
-#     shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.format(year,month,day,hour,route,year,month,day,hour,route)
-#     return FileResponse(shipment_to_get, media_type="application/json")

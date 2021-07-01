@@ -1,5 +1,7 @@
 import argparse
 import time
+import logging
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
 from common.Models import *
@@ -7,11 +9,21 @@ from common.Grabber import async_grab_and_store
 
 if __name__ == "__main__":
 
-    print('NYC MTA BusTime API Scraper v2.0 (no-database branch) June 2021. Anthony Townsend <atownsend@cornell.edu>')
-
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
     parser.add_argument('-l', action="store_true", dest="localhost", help="force localhost for production mode")
+    parser.add_argument("-v", "--verbose", action="store_true", help="increase output verbosity")
+
     args = parser.parse_args()
+    print('NYC MTA BusTime API Scraper v2.0 (no-database branch) June 2021. Anthony Townsend <atownsend@cornell.edu>')
+
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+        print ('VERBOSE ON')
+    else:
+        logging.basicConfig(level=logging.ERROR)
+        print ('VERBOSE OFF, ERRORS ONLY')
+
+
 
     load_dotenv() #todo is this used? is this what populates os.environ?
 
@@ -22,7 +34,10 @@ if __name__ == "__main__":
 
         # every minute
         scan_interval_seconds = 60
-        print('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
+
+
+
+        logging.debug('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
         scheduler.add_job(async_grab_and_store,
                           'interval',
                           args=[args.localhost, Path.cwd()],
@@ -37,15 +52,6 @@ if __name__ == "__main__":
                           minutes=5,
                           misfire_grace_time=60)
 
-        # # every hour
-        # scheduler.add_job(lake.freeze_puddles,
-        #                   'interval',
-        #                   minutes=60,
-        #                   misfire_grace_time=300)
-        # scheduler.add_job(store.render_barrels,
-        #                   'interval',
-        #                   minutes=60,
-        #                   misfire_grace_time=15)
 
         # # every hour, 2 minutes after the hour
         scheduler.add_job(lake.freeze_puddles,

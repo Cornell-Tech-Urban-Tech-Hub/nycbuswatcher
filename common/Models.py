@@ -5,6 +5,7 @@ import tarfile
 import pandas as pd
 import dateutil
 import inspect
+import logging
 
 from datetime import date, datetime
 from pathlib import Path, PurePath
@@ -76,7 +77,7 @@ class GenericStore(WorkDir):
         super().__init__(cwd)
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
-        # print('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
+        logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
 
 
     def get_path(self, prefix):
@@ -101,7 +102,7 @@ class GenericFolder(WorkDir):
         super().__init__(cwd)
         self.date_pointer=date_pointer
         self.path = self.get_path(pathmap[kind], date_pointer)
-        # print('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
+        logging.debug('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
 
     def get_path(self, prefix, date_pointer):
         folderpath = self.cwd / prefix / date_pointer.purepath
@@ -140,7 +141,7 @@ class DataLake(GenericStore):
                     with open(filepath, 'wt', encoding="ascii") as f:
                         json.dump(route_data, f, indent=4)
                 except Exception as e: # no vehicle activity?
-                    print (e)
+                    logging.error (e)
                     pass
         return
 
@@ -152,7 +153,7 @@ class DataLake(GenericStore):
             rt=d.split('/')[-1]
             p=Puddle(self.cwd, self.path_to_DateRoutePointer(d,rt))
             puddles.append(p)
-        print('rescanned::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(self.cwd / pathmap['puddle'])))
+        logging.debug('rescanned::DataLake uid {}::found {} Puddles at {}'.format(self.uid, len(puddles),str(self.cwd / pathmap['puddle'])))
         return puddles
 
     def list_expired_puddles(self):
@@ -170,7 +171,7 @@ class DataLake(GenericStore):
     def freeze_puddles(self):
         puddles_to_archive = self.list_expired_puddles()
         if len(puddles_to_archive) == 0:
-            print('no expired puddles to freeze')
+            logging.debug('no expired puddles to freeze')
             return
         for puddle in puddles_to_archive:
             puddle.freeze_myself_to_glacier()
@@ -200,7 +201,7 @@ class Puddle(GenericFolder):
         with tarfile.open(outfile.filepath, "w:gz") as tar:
                 for drop in drops_to_freeze:
                     tar.add(drop, arcname=drop.name.replace(':','-')) # tar doesnt like colons
-        print ('froze {} drops to Glacier at {}'.format(len(drops_to_freeze), outfile.path))
+        logging.debug ('froze {} drops to Glacier at {}'.format(len(drops_to_freeze), outfile.path))
         self.delete_folder()
         return
 
@@ -252,7 +253,7 @@ class DataStore(GenericStore):
                     pass
                 except json.JSONDecodeError:
                     # this is probably no response?
-                    print ('JSONDecodeError: No/Bad API response? - route {}'.format(route))
+                    logging.error ('JSONDecodeError: No/Bad API response? - route {}'.format(route))
                     pass
         return
 
@@ -264,7 +265,7 @@ class DataStore(GenericStore):
             rt=d.split('/')[-1]
             b = Barrel(self.cwd, self.path_to_DateRoutePointer(d,rt))
             barrels.append(b)
-        print('rescanned::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(self.cwd / pathmap['barrel'])))
+        logging.debug('rescanned::DataStore uid {}::found {} Barrels at {}'.format(self.uid, len(barrels),str(self.cwd / pathmap['barrel'])))
         return barrels
 
     def list_expired_barrels(self):
@@ -282,7 +283,7 @@ class DataStore(GenericStore):
     def render_barrels(self):
         barrels_to_archive = self.list_expired_barrels()
         if len(barrels_to_archive) == 0:
-            print('no expired barrels to render')
+            logging.debug('no expired barrels to render')
             return
         for barrel in barrels_to_archive:
             barrel.render_myself_to_shipment()
@@ -364,7 +365,7 @@ class DataStore(GenericStore):
 
         def filter_shipment(shipment):
             for k,v in filter_params(params).items():
-                # print ('filtering {} == {}'.format(k, v))
+                # logging.debug ('filtering {} == {}'.format(k, v))
                 if getattr(shipment, k) != v:
                     return False
             return True
@@ -402,7 +403,7 @@ class Barrel(GenericFolder):
                 try:
                     barrel = pickle.load(pickle_file)
                 except Exception as e:
-                    print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                    logging.error ('error {} in {}'.format(e, inspect.stack()[0][3]) )
                     continue
                 for p in barrel:
                     pickle_array.append(p)
@@ -423,7 +424,7 @@ class Barrel(GenericFolder):
 
         with open(outfile.filepath, 'w') as f:
             json.dump(json_container, f, indent=4)
-        print ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.filepath))
+        logging.debug ('wrote {} pickles to Shipment at {}'.format(len(pickle_array), outfile.filepath))
         self.delete_folder()
         return
 
@@ -436,7 +437,7 @@ class Barrel(GenericFolder):
                     barrel = pickle.load(pickle_file)
                     pickle_count = pickle_count + len(barrel)
             except Exception as e:
-                print ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                logging.debug ('error {} in {}'.format(e, inspect.stack()[0][3]) )
                 pass
         return pickle_count
 
@@ -460,7 +461,7 @@ class Shipment(GenericFolder):
             if self.exist == True:
                 pass
         except OSError:
-            print ('!!error::Shipment::skipping! there is already a Shipment at {}'.format(self.filepath))
+            logging.error ('!!error::Shipment::skipping! there is already a Shipment at {}'.format(self.filepath))
 
     def check_exist(self):
         filepath = self.path / 'shipment_{}.json'.\
