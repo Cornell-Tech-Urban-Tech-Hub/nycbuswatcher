@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+apscheduler = "*"
+trio = "*"
+python-dotenv = "*"
+fastapi = "*"
+aiofiles = "*"
+uvicorn = "*"
+pandas = "*"
+asks = "*"
+jinja2 = "*"
+pyfakefs = "*"
+dash = "*"
+ijson = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

@@ -1,0 +1,527 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.449-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX33",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-144000_BX33_809"
+                                },
+                                "JourneyPatternRef": "MTA_BX330135",
+                                "PublishedLineName": "Bx33",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104249",
+                                "DestinationName": "HARLEM ST NICHOLAS",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.914603,
+                                    "Latitude": 40.805599
+                                },
+                                "Bearing": 156.8014,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_680",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:16.471-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.449-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.449-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1053.87,
+                                            "DistanceFromCall": 26.88,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_102206",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 138 ST/CYPRESS AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:16.474-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.449-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1053.87,
+                                                    "DistanceFromCall": 26.88,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102206",
+                                            "StopPointName": "E 138 ST/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.474-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:35.825-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1292.11,
+                                                    "DistanceFromCall": 265.12,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102207",
+                                            "StopPointName": "E 138 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:42.474-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:24.091-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1508.96,
+                                                    "DistanceFromCall": 481.96,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102208",
+                                            "StopPointName": "E 138 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:50.475-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:38.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1864.17,
+                                                    "DistanceFromCall": 837.18,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102209",
+                                            "StopPointName": "E 138 ST/WILLIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:22.475-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:08.156-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2027.26,
+                                                    "DistanceFromCall": 1000.27,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102210",
+                                            "StopPointName": "E 138 ST/ALEXANDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.476-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:46.284-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2225.08,
+                                                    "DistanceFromCall": 1198.09,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101074",
+                                            "StopPointName": "E 138 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:05.476-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:46.130-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2612.04,
+                                                    "DistanceFromCall": 1585.05,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103778",
+                                            "StopPointName": "E 138 ST/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:23.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3293.49,
+                                                    "DistanceFromCall": 2266.5,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403711",
+                                            "StopPointName": "E 135 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:36.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:04.372-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3432.76,
+                                                    "DistanceFromCall": 2405.76,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403712",
+                                            "StopPointName": "W 135 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.477-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:15.164-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3756.76,
+                                                    "DistanceFromCall": 2729.77,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403713",
+                                            "StopPointName": "W 135 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:55.478-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:28.164-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4042.98,
+                                                    "DistanceFromCall": 3015.99,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404114",
+                                            "StopPointName": "W 135 ST/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:39.478-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:14.221-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4270.39,
+                                                    "DistanceFromCall": 3243.4,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404112",
+                                            "StopPointName": "W 135 ST/FRED DOUGLASS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.478-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:42.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4376.57,
+                                                    "DistanceFromCall": 3349.58,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403716",
+                                            "StopPointName": "W 135 ST/ST NICHOLAS AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:52.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX33",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-144000_BX32_673"
+                                },
+                                "JourneyPatternRef": "MTA_BX330009",
+                                "PublishedLineName": "Bx33",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403717",
+                                "DestinationName": "PORT MORRIS 132 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.94104,
+                                    "Latitude": 40.814184
+                                },
+                                "Bearing": 336.98755,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_79800_BX32-673",
+                                "VehicleRef": "MTA NYCT_300",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:00.484-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.510-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.510-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 719.03,
+                                            "DistanceFromCall": 71.21,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403720",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 135 ST/MALCOLM X BL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.489-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.510-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 719.03,
+                                                    "DistanceFromCall": 71.21,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403720",
+                                            "StopPointName": "W 135 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:12.490-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:03.110-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 955.91,
+                                                    "DistanceFromCall": 308.08,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403721",
+                                            "StopPointName": "W 135 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.491-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:01.510-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1112.66,
+                                                    "DistanceFromCall": 464.84,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403722",
+                                            "StopPointName": "E 135 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:23.492-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:59.540-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1743.53,
+                                                    "DistanceFromCall": 1095.7,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102185",
+                                            "StopPointName": "E 138 ST/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.492-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:04.857-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2169.22,
+                                                    "DistanceFromCall": 1521.4,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102187",
+                                            "StopPointName": "E 138 ST/LINCOLN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:05.493-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:07.106-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2368.27,
+                                                    "DistanceFromCall": 1720.45,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102188",
+                                            "StopPointName": "E 138 ST/ALEXANDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:15.493-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:20.513-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2585.65,
+                                                    "DistanceFromCall": 1937.83,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102189",
+                                            "StopPointName": "E 138 ST/WILLIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:09.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:41.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2935.26,
+                                                    "DistanceFromCall": 2287.44,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102190",
+                                            "StopPointName": "E 138 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:18.268-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3092.44,
+                                                    "DistanceFromCall": 2444.62,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102191",
+                                            "StopPointName": "E 138 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:24.496-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:58.119-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3343.12,
+                                                    "DistanceFromCall": 2695.3,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102192",
+                                            "StopPointName": "E 138 ST/CYPRESS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:40.499-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:28.180-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3509.51,
+                                                    "DistanceFromCall": 2861.69,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102193",
+                                            "StopPointName": "E 138 ST/JACKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.500-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:11.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3691.35,
+                                                    "DistanceFromCall": 3043.53,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102988",
+                                            "StopPointName": "E 138 ST/WILLOW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:21.501-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:42.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3936.95,
+                                                    "DistanceFromCall": 3289.13,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102195",
+                                            "StopPointName": "E 138 ST/WALNUT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:50.501-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:15.436-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4232.81,
+                                                    "DistanceFromCall": 3584.99,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104248",
+                                            "StopPointName": "WALNUT AV/E 135 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:58.502-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:24.010-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4314.48,
+                                                    "DistanceFromCall": 3666.66,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103284",
+                                            "StopPointName": "E 134 ST/WALNUT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:17.503-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:51.099-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4511.84,
+                                                    "DistanceFromCall": 3864.02,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101201",
+                                            "StopPointName": "E 134 ST/WILLOW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.504-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:13.297-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4964.14,
+                                                    "DistanceFromCall": 4316.31,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802102",
+                                            "StopPointName": "WALNUT AV/E 133 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:40.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.449-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.449-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

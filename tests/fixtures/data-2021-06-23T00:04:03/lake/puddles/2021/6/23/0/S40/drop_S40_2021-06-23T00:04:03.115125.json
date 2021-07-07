@@ -1,0 +1,1593 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.034-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_S40",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CA_B1-Weekday-SDon-141000_MISC_567"
+                                },
+                                "JourneyPatternRef": "MTA_S400094",
+                                "PublishedLineName": "S40",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_202577",
+                                "DestinationName": "MATRIX PT RICH TERR via GULF AV ARLNGTON",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_274249"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.174713,
+                                    "Latitude": 40.626431
+                                },
+                                "Bearing": 204.01671,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_7050",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:19.049-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.034-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.034-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 11155.0,
+                                            "DistanceFromCall": 8.84,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_203407",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FOREST AV/ELIZABETH GROVE RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:19.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.034-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 11155.0,
+                                                    "DistanceFromCall": 8.84,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203407",
+                                            "StopPointName": "FOREST AV/ELIZABETH GROVE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:21.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:29.481-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 11702.37,
+                                                    "DistanceFromCall": 556.22,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_805005",
+                                            "StopPointName": "GOETHALS RD N/MOBILE HOME PARK ROW A"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:47.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:46.636-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 11929.64,
+                                                    "DistanceFromCall": 783.48,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200001",
+                                            "StopPointName": "GOETHALS RD N/ADMIN PARKING LOT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:20.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:58.073-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 15381.44,
+                                                    "DistanceFromCall": 4235.28,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_905131",
+                                            "StopPointName": "CHELSEA RD/BLOOMFIELD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:07.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 16262.43,
+                                                    "DistanceFromCall": 5116.27,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_805202",
+                                            "StopPointName": "FRANK W. GAY BL/10 AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:38.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_S40",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CA_B1-Weekday-SDon-143500_S4090_320"
+                                },
+                                "JourneyPatternRef": "MTA_S400095",
+                                "PublishedLineName": "S40",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_805203",
+                                "DestinationName": "ST GEORGE FERRY via RICHMOND TERR",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_274249"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.172466,
+                                    "Latitude": 40.627448
+                                },
+                                "Bearing": 19.817152,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_CA_B1-Weekday-SDon_E_CA_81780_S4090-320",
+                                "VehicleRef": "MTA NYCT_8256",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:11.106-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.034-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.034-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3645.28,
+                                            "DistanceFromCall": 60.15,
+                                            "PresentableDistance": "approaching"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 19
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_203760",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "FOREST AV/UA THEATERS"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:11.108-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.034-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3645.28,
+                                                    "DistanceFromCall": 60.15,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203760",
+                                            "StopPointName": "FOREST AV/UA THEATERS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:47.108-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.317-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3991.74,
+                                                    "DistanceFromCall": 406.6,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202998",
+                                            "StopPointName": "FOREST AV/LILAC CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.109-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:19.380-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4120.79,
+                                                    "DistanceFromCall": 535.65,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202985",
+                                            "StopPointName": "FOREST AV/SOUTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:24.109-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:40.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4313.65,
+                                                    "DistanceFromCall": 728.52,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201574",
+                                            "StopPointName": "SOUTH AV/NETHERLAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:03.109-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:10.176-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4616.89,
+                                                    "DistanceFromCall": 1031.76,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201576",
+                                            "StopPointName": "SOUTH AV/BRABANT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.109-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:06.798-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5069.02,
+                                                    "DistanceFromCall": 1483.89,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201525",
+                                            "StopPointName": "SOUTH AV/ARLINGTON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:11.110-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:09.964-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5558.45,
+                                                    "DistanceFromCall": 1973.31,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200008",
+                                            "StopPointName": "RICHMOND TER/SOUTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:30.110-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:26.897-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5690.97,
+                                                    "DistanceFromCall": 2105.83,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200009",
+                                            "StopPointName": "RICHMOND TER/POST LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:09.110-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:52.675-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5958.8,
+                                                    "DistanceFromCall": 2373.67,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200010",
+                                            "StopPointName": "RICHMOND TER/ANDROS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:39.111-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:21.235-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6167.35,
+                                                    "DistanceFromCall": 2582.21,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200011",
+                                            "StopPointName": "RICHMOND TER/HARBOR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:08.112-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:44.926-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6368.46,
+                                                    "DistanceFromCall": 2783.33,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202994",
+                                            "StopPointName": "RICHMOND TER/UNION AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:41.112-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:05.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6594.47,
+                                                    "DistanceFromCall": 3009.33,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200013",
+                                            "StopPointName": "RICHMOND TER/VAN PELT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:39.113-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:40.738-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6990.04,
+                                                    "DistanceFromCall": 3404.9,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200015",
+                                            "StopPointName": "RICHMOND TER/LAKE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:57.113-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:52.153-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7118.4,
+                                                    "DistanceFromCall": 3533.27,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200016",
+                                            "StopPointName": "RICHMOND TER/HOUSEMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:22.113-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:08.322-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7287.24,
+                                                    "DistanceFromCall": 3702.1,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200017",
+                                            "StopPointName": "RICHMOND TER/GRANITE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:45.113-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:23.267-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 7444.19,
+                                                    "DistanceFromCall": 3859.05,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200018",
+                                            "StopPointName": "RICHMOND TER/MORNINGSTAR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:21.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:48.066-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7692.77,
+                                                    "DistanceFromCall": 4107.63,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200019",
+                                            "StopPointName": "RICHMOND TER/JOHN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:01.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:14.611-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7966.9,
+                                                    "DistanceFromCall": 4381.77,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200020",
+                                            "StopPointName": "RICHMOND TER/NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:34.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:37.493-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8195.3,
+                                                    "DistanceFromCall": 4610.16,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200021",
+                                            "StopPointName": "RICHMOND TER/SHARPE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:59.114-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:56.682-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 8368.75,
+                                                    "DistanceFromCall": 4783.62,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200022",
+                                            "StopPointName": "RICHMOND TER/FABER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:17.115-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:09.177-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8490.59,
+                                                    "DistanceFromCall": 4905.46,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200023",
+                                            "StopPointName": "RICHMOND TER/MAPLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.115-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:46.536-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8788.32,
+                                                    "DistanceFromCall": 5203.18,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202738",
+                                            "StopPointName": "RICHMOND TER/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:15.116-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:00.669-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 8892.72,
+                                                    "DistanceFromCall": 5307.59,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200025",
+                                            "StopPointName": "RICHMOND TER/HEBERTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:36.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:19.467-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 9050.27,
+                                                    "DistanceFromCall": 5465.13,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200026",
+                                            "StopPointName": "RICHMOND TER/JEWETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:57.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:49.939-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 9196.96,
+                                                    "DistanceFromCall": 5611.82,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200027",
+                                            "StopPointName": "RICHMOND TER/RECTOR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:15.118-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:11.574-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 9326.14,
+                                                    "DistanceFromCall": 5741.0,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200028",
+                                            "StopPointName": "RICHMOND TER/BODINE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:43.119-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:31.661-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 9524.46,
+                                                    "DistanceFromCall": 5939.32,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200029",
+                                            "StopPointName": "RICHMOND TER/TAYLOR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:11.119-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:52.772-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 9725.59,
+                                                    "DistanceFromCall": 6140.45,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200030",
+                                            "StopPointName": "RICHMOND TER/ALASKA ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:33.120-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:08.473-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 9887.34,
+                                                    "DistanceFromCall": 6302.2,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200031",
+                                            "StopPointName": "RICHMOND TER/TOMPKINS CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:23.120-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:01.980-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 10244.52,
+                                                    "DistanceFromCall": 6659.38,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200032",
+                                            "StopPointName": "RICHMOND TER/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:48.121-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:25.870-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 10428.73,
+                                                    "DistanceFromCall": 6843.59,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200033",
+                                            "StopPointName": "RICHMOND TER/N BURGHER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:12.121-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:47.371-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 10595.82,
+                                                    "DistanceFromCall": 7010.69,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200034",
+                                            "StopPointName": "RICHMOND TER/BEMENT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:01.122-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:28.830-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 10949.72,
+                                                    "DistanceFromCall": 7364.59,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200035",
+                                            "StopPointName": "RICHMOND TER/DAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:27.122-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:47.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 11136.87,
+                                                    "DistanceFromCall": 7551.74,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200036",
+                                            "StopPointName": "RICHMOND TER/BARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:14.124-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:18.127-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 11473.31,
+                                                    "DistanceFromCall": 7888.18,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202532",
+                                            "StopPointName": "RICHMOND TER/SNUG HARBOR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:51.124-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:40.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 11735.29,
+                                                    "DistanceFromCall": 8150.15,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200037",
+                                            "StopPointName": "RICHMOND TER/SAILORS S H GATE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:36.125-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:10.243-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 12061.26,
+                                                    "DistanceFromCall": 8476.13,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200038",
+                                            "StopPointName": "RICHMOND TER/CLINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.125-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:27.012-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 12234.01,
+                                                    "DistanceFromCall": 8648.88,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202995",
+                                            "StopPointName": "RICHMOND TER/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:32.125-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:51.603-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 12507.26,
+                                                    "DistanceFromCall": 8922.12,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200040",
+                                            "StopPointName": "RICHMOND TER/FRANKLIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:20.125-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:33.048-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 12915.28,
+                                                    "DistanceFromCall": 9330.15,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200041",
+                                            "StopPointName": "RICHMOND TER/JERSEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:39.126-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:55.310-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 13082.5,
+                                                    "DistanceFromCall": 9497.36,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200042",
+                                            "StopPointName": "RICHMOND TER/WESTERVELT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:10.127-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:25.517-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 13344.19,
+                                                    "DistanceFromCall": 9759.05,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200043",
+                                            "StopPointName": "RICHMOND TER/ST PETERS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:42.128-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:53.686-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 13618.73,
+                                                    "DistanceFromCall": 10033.59,
+                                                    "PresentableDistance": "6.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200044",
+                                            "StopPointName": "RICHMOND TER/NICHOLAS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:14.129-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:21.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 13897.38,
+                                                    "DistanceFromCall": 10312.24,
+                                                    "PresentableDistance": "6.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200045",
+                                            "StopPointName": "RICHMOND TER/STUYVESANT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:46.129-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:54.507-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 14168.5,
+                                                    "DistanceFromCall": 10583.37,
+                                                    "PresentableDistance": "6.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200046",
+                                            "StopPointName": "RICHMOND TER/WALL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:59.130-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:09.344-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 14282.88,
+                                                    "DistanceFromCall": 10697.74,
+                                                    "PresentableDistance": "6.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200047",
+                                            "StopPointName": "RICHMOND TER/SCHUYLER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.130-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:40.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 14801.6,
+                                                    "DistanceFromCall": 11216.47,
+                                                    "PresentableDistance": "7.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_805006",
+                                            "StopPointName": "ST GEORGE FERRY /ST GEORGE FERRY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:26.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_S40",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CA_B1-Weekday-SDon-144000_S4090_321"
+                                },
+                                "JourneyPatternRef": "MTA_S400094",
+                                "PublishedLineName": "S40",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_202577",
+                                "DestinationName": "MATRIX PT RICH TERR via GULF AV ARLNGTON",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_274249"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.074077,
+                                    "Latitude": 40.643351
+                                },
+                                "Bearing": 199.15814,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_CA_B1-Weekday-SDon_E_CA_74400_S4090-321",
+                                "VehicleRef": "MTA NYCT_7043",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:32.084-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.034-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.034-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 173.78,
+                                            "DistanceFromCall": 157.48,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_201256",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "RICHMOND TER/ST GEORGE FERRY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:32.085-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.034-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 173.78,
+                                                    "DistanceFromCall": 157.48,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_201256",
+                                            "StopPointName": "RICHMOND TER/ST GEORGE FERRY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:17.085-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:56.431-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 425.59,
+                                                    "DistanceFromCall": 409.29,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200050",
+                                            "StopPointName": "RICHMOND TER/WALL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:56.085-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:46.790-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 638.54,
+                                                    "DistanceFromCall": 622.24,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200051",
+                                            "StopPointName": "RICHMOND TER/STUYVESANT PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:37.086-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:18.239-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 864.78,
+                                                    "DistanceFromCall": 848.49,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200052",
+                                            "StopPointName": "RICHMOND TER/NICHOLAS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:40.086-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:02.176-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1207.06,
+                                                    "DistanceFromCall": 1190.77,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200053",
+                                            "StopPointName": "RICHMOND TER/ST PETERS PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:35.086-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:44.588-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1512.14,
+                                                    "DistanceFromCall": 1495.85,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200054",
+                                            "StopPointName": "RICHMOND TER/WESTERVELT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:02.087-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:05.822-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1657.97,
+                                                    "DistanceFromCall": 1641.68,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200055",
+                                            "StopPointName": "RICHMOND TER/JERSEY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:01.087-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:49.712-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1981.35,
+                                                    "DistanceFromCall": 1965.06,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200056",
+                                            "StopPointName": "RICHMOND TER/FRANKLIN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.087-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:59.595-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2305.38,
+                                                    "DistanceFromCall": 2289.09,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200057",
+                                            "StopPointName": "RICHMOND TER/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.087-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:18.341-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2471.95,
+                                                    "DistanceFromCall": 2455.66,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200058",
+                                            "StopPointName": "RICHMOND TER/CLINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:21.087-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:48.810-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2775.24,
+                                                    "DistanceFromCall": 2758.95,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203469",
+                                            "StopPointName": "RICHMOND TER/SAILORS S H GATE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:01.088-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:15.928-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3011.4,
+                                                    "DistanceFromCall": 2995.11,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203222",
+                                            "StopPointName": "RICHMOND TER/SNUG HARBOR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:45.088-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:58.214-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3265.76,
+                                                    "DistanceFromCall": 3249.47,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203481",
+                                            "StopPointName": "RICHMOND TER/SNUG HARBOR RD 2"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:31.089-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:32.031-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3533.62,
+                                                    "DistanceFromCall": 3517.33,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200014",
+                                            "StopPointName": "RICHMOND TER/DAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:38.089-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:26.068-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3924.27,
+                                                    "DistanceFromCall": 3907.98,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200062",
+                                            "StopPointName": "RICHMOND TER/BEMENT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:17.089-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:15.990-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4155.39,
+                                                    "DistanceFromCall": 4139.1,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200063",
+                                            "StopPointName": "RICHMOND TER/N BURGHER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:46.090-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:43.931-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4325.47,
+                                                    "DistanceFromCall": 4309.18,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200064",
+                                            "StopPointName": "RICHMOND TER/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:30.090-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:38.043-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4581.47,
+                                                    "DistanceFromCall": 4565.18,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200065",
+                                            "StopPointName": "RICHMOND TER/TOMPKINS CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:10.090-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:02.993-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4810.7,
+                                                    "DistanceFromCall": 4794.41,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200066",
+                                            "StopPointName": "RICHMOND TER/ALASKA ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:44.090-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:22.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5010.51,
+                                                    "DistanceFromCall": 4994.22,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203102",
+                                            "StopPointName": "RICHMOND TER/TAYLOR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:26.090-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:54.233-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5256.8,
+                                                    "DistanceFromCall": 5240.51,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200069",
+                                            "StopPointName": "RICHMOND TER/CLOVE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:01.091-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:25.064-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5461.1,
+                                                    "DistanceFromCall": 5444.81,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200070",
+                                            "StopPointName": "RICHMOND TER/JEWETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.092-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:08.469-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5805.34,
+                                                    "DistanceFromCall": 5789.04,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200072",
+                                            "StopPointName": "RICHMOND TER/PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:56.092-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:52.935-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6153.21,
+                                                    "DistanceFromCall": 6136.92,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200073",
+                                            "StopPointName": "RICHMOND TER/NORTH ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:19.093-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:09.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6292.85,
+                                                    "DistanceFromCall": 6276.56,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200074",
+                                            "StopPointName": "RICHMOND TER/SHARPE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:02.093-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:51.310-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6562.38,
+                                                    "DistanceFromCall": 6546.09,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200075",
+                                            "StopPointName": "RICHMOND TER/NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:46.094-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:21.766-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6831.36,
+                                                    "DistanceFromCall": 6815.07,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200076",
+                                            "StopPointName": "RICHMOND TER/JOHN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:21.094-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:41.445-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7046.98,
+                                                    "DistanceFromCall": 7030.69,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200077",
+                                            "StopPointName": "RICHMOND TER/MORNINGSTAR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:52.094-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:59.681-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7239.58,
+                                                    "DistanceFromCall": 7223.29,
+                                                    "PresentableDistance": "4.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200078",
+                                            "StopPointName": "RICHMOND TER/GRANITE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:13.095-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:12.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7369.87,
+                                                    "DistanceFromCall": 7353.58,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200079",
+                                            "StopPointName": "RICHMOND TER/HOUSEMAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:50.095-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:34.836-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7595.74,
+                                                    "DistanceFromCall": 7579.45,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200080",
+                                            "StopPointName": "RICHMOND TER/SIMONSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:13.095-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:50.077-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7740.36,
+                                                    "DistanceFromCall": 7724.07,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200081",
+                                            "StopPointName": "RICHMOND TER/VAN NAME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:20.096-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:31.109-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8155.05,
+                                                    "DistanceFromCall": 8138.76,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200083",
+                                            "StopPointName": "RICHMOND TER/UNION AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:53.096-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:52.117-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8360.31,
+                                                    "DistanceFromCall": 8344.02,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200084",
+                                            "StopPointName": "RICHMOND TER/HARBOR RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:33.097-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:21.931-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 8605.33,
+                                                    "DistanceFromCall": 8589.04,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200085",
+                                            "StopPointName": "RICHMOND TER/ANDROS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:14.098-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:50.445-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8859.77,
+                                                    "DistanceFromCall": 8843.48,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200086",
+                                            "StopPointName": "RICHMOND TER/GRANDVIEW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:36.098-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:06.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 8995.12,
+                                                    "DistanceFromCall": 8978.83,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202823",
+                                            "StopPointName": "SOUTH AV/RICHMOND TER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.098-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:13.117-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9518.42,
+                                                    "DistanceFromCall": 9502.13,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202824",
+                                            "StopPointName": "SOUTH AV/ARLINGTON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:50.099-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:01.106-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 9910.74,
+                                                    "DistanceFromCall": 9894.45,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203087",
+                                            "StopPointName": "SOUTH AV/BRABANT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:20.099-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:24.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10147.88,
+                                                    "DistanceFromCall": 10131.59,
+                                                    "PresentableDistance": "6.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202830",
+                                            "StopPointName": "SOUTH AV/CABLE WAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.100-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:04.894-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10461.13,
+                                                    "DistanceFromCall": 10444.84,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203762",
+                                            "StopPointName": "FOREST AV/SOUTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:50.100-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:53.795-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 10898.63,
+                                                    "DistanceFromCall": 10882.34,
+                                                    "PresentableDistance": "6.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203763",
+                                            "StopPointName": "FOREST AV / HOME DEPOT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:19.100-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:15.173-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 11155.0,
+                                                    "DistanceFromCall": 11138.71,
+                                                    "PresentableDistance": "6.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203407",
+                                            "StopPointName": "FOREST AV/ELIZABETH GROVE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:21.100-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:05.917-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11702.37,
+                                                    "DistanceFromCall": 11686.08,
+                                                    "PresentableDistance": "7.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_805005",
+                                            "StopPointName": "GOETHALS RD N/MOBILE HOME PARK ROW A"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:47.101-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:23.072-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 11929.64,
+                                                    "DistanceFromCall": 11913.35,
+                                                    "PresentableDistance": "7.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200001",
+                                            "StopPointName": "GOETHALS RD N/ADMIN PARKING LOT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:20.101-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:34.509-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 15381.44,
+                                                    "DistanceFromCall": 15365.14,
+                                                    "PresentableDistance": "9.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_905131",
+                                            "StopPointName": "CHELSEA RD/BLOOMFIELD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:00.101-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:44.283-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 16262.43,
+                                                    "DistanceFromCall": 16246.14,
+                                                    "PresentableDistance": "10.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_805202",
+                                            "StopPointName": "FRANK W. GAY BL/10 AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.034-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.034-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-03-01T00:00:00.000-05:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice S40 buses are detoured in both directions because of flooding on Bloomfield Ave between Chelsea Ave and Gulf Ave",
+                                "Description": "Until further notice S40 buses are detoured in both directions because of flooding on Bloomfield Ave between Chelsea Ave and Gulf Ave   You'll experience a few turns but no stops will be missed.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_S40",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_S40",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "diverted"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-03-01T00:00:00.000-05:00",
+                                "SituationNumber": "MTA NYCT_274249"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,112 +1,77 @@
 # NYCBusWatcher
-- v1.2 2021 May 2
+- v2.0 July 2021
 - Anthony Townsend <atownsend@cornell.edu>
 
-## description
 
-Fetches list of active routes from MTA BusTime OneBusAway API via asynchronous http requests, then cycles through and fetches current vehicle positions for all buses operating on these routes. This avoids the poor performance of trying to grab the entire system feed from the MTA BusTime SIRI API. Dumps full API response (for later reprocessing to extract additional data) to compressed individual files and most of the vehicle status fields to mysql table (the upcoming stop data is omitted from the database dump for now). Fully dockerized, runs on scheduler 1x per minute. Data storage requirments ~ 1-2 Gb/day (guesstimate).
+## Description
+
+NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parses, and redistributes bulk data of bus position records from the NYC Transit BusTime API. For speed and scalability, there is no database. Everything is done with serialized data stored in static files for speed, scalability, and economy.
+
+## Quickstart
+
+The easiesy way to use NYCBusWatcher is to simply pull data from our public API, powered by FastAPI. This API serves up batches of bus observations in either JSON or GeoJSON format, bundled in hourly increments per route (hereafter referred to as 'shipments'). This allows data users to quickly pull large amounts of data without the overhead of a database. Several APIs are provided for discovering what shipments are available (e.g. date coverage, and route coverage). Please suggest other APIs.
+
+- [API home page]((https://api.buswatcher.org)), redirects to /docs for now.
+- [API docs](https://api.buswatcher.org/docs), includes test capabilities.
+- [Alt API docs (redoc)](https://api.buswatcher.org/redoc), easier reading.
+
+## Run Your Own Service
 
 
-## installation 
+1. Clone the repo.
 
-#### with docker-compose
-
-1. clone the repo
-
-    `git clone https://github.com/anthonymobile/nycbuswatcher.git`
+    `git clone https://github.com/anthonymobile/nycbuswatcher.git
+   && cd nycbuswatcher`
     
-2. obtain API keys and put them in .env (quotes not needed apparently)
-    - http://bustime.mta.info/wiki/Developers/Index/
+    
+2. [Obtain a BusTime API key](http://bustime.mta.info/wiki/Developers/Index/) and put it in .env (quotes not needed, but no spaces)
 
     ```txt
-    API_KEY = fasjhfasfajskjrwer242jk424242
+    API_KEY=fasjhfasfajskjrwer242jk424242
     ```
-    
-3. build and run the images
+
+3. If you want to use the gandi dyndns updater, add these three keys to .env and make sure to uncomment the appropriate section in `docker-compose.yml`
+    - GANDI_API_KEY=rwer242jk424242
+    - GANDI_DOMAIN=buswatcher.org
+    - GANDI_SUBDOMAINS=api, www, thisistheapiforreal
+
+
+4. Bring the stack up.
 
     ```
-    cd nycbuswatcher
+    export COMPOSE_PROJECT_NAME=nycbuswatcher2 # (optional, if running alongside another nycbuswatcher deployment)
     docker-compose up -d --build
     ```
 
-#### manual installation
-
-1. clone the repo
-
-    `git clone https://github.com/anthonymobile/nycbuswatcher.git`
-    
-2. obtain an API key from http://bustime.mta.info/wiki/Developers/Index/ and put it in .env
-
-    `echo 'API_KEY = fasjhfasfajskjrwer242jk424242' > .env`
-    
-3. create the database (mysql only, 5.7 recommended)
-    ```sql
-    CREATE DATABASE buses;
-    USE buses;
-    CREATE USER 'nycbuswatcher'@'localhost' IDENTIFIED BY 'bustime';
-    GRANT ALL PRIVILEGES ON * . * TO 'nycbuswatcher'@'localhost';
-    FLUSH PRIVILEGES;
- 
-    ```
-3. run
-    ```python
-    python acquire.py # development: run once and quit
-    python acquire.py -p # production: runs in infinite loop at set interval using scheduler (hardcoded for now)
-    ```
-
-## usage 
-
-#### 1. localhost production mode
-
-if you just want to test out the grabber, you can run `export PYTHON_ENV=development; python grabber.py -l` and it will run once, dump the responses to a pile of files, and quit after throwing a database connection error. (or not, if you did step 3 in "manual" above). if you have a mysql database running it will operate in production mode locally until stopped.
-
-#### 2. docker stack
+## How It Works
 
 
-###### app
-- Dash app running the front end.
+### Acquire
+The main daemon that fetches 200+ individual JSON feeds from the MTA BusTime API asynchronously, every minute, parses and dumps both the full response and a set of pickled `BusObservation` class instances to disk. Once per hour, these files are reprocessed—the raw responses are tar'ed into cold storage, and the pickles are serialized into a single JSON file for each hour, each route. 
 
-####### api v2 (april 2021)
-- FastAPI app providing the API endpoints:
-    - `/api/v1/nyc/livemap` Selected fields for buses seen in the last 60 seconds.
-    - `/api/v1/nyc/buses?` Returns a selected set of fields for all positions during a time interval specific using ISO 8601 format for a single route at a time.
-    - Required:
-        - `output=geojson`
-        - `route_short` e.g. `Bx4`
-        - `start`
-        - `end` in ISO8601, max 24 hours. e.g.
-    - example: 
-        ```json
-        http://nyc.buswatcher.org/api/v1/nyc/buses?output=geojson&route_short=Bx4&start=2021-03-28T00:00:00+00:00&end=2021-03-28T01:00:00+00:00
-        ```
-- Swagger doc endpoint `http://127.0.0.1:8000/docs`
-- ReDoc doc endpoint `http://127.0.0.1:8000/redoc`
+### API
+The API serves these hourly, per route JSON files full of serialized `BusObservation` instances. There's no database, and no queries or data processing at all to serve API responses. Endpoint routes are converted into a `DateRoutePointer` instance, which is how `acquire.py` manages data internally (and uses several classes to convert to filepaths in the `data/` folder).
 
-###### acquire
-- Daemon that uses apscheduler to trigger a set of asynchronous API requests to get each route's current bus locations, dump the responses to archive files, parse the response and dump that to the database. For debugging, its possible to get a shell on the container and run another instance of the script, it should run with the same environment as the docker entrypoint and will spit out any errors that process is having without having to hunt around through log files.
 
-    ```
-    docker exec -it nycbuswatcher_grabber_1 /bin/bash
-    python buswatcher.py
-    ```
+## Reprocessor
 
-###### db
-- For debugging, run the mysql client directly inside the container.
-    
-    ```
-    docker exec -it nycbuswatcher_db_1 mysql -uroot -p buses
-    [root password=bustime]
-    ```
-    
-- quick diagnostic query for how many records per day
+Utilities for migrating data from older versions.
 
-    ```sql
-    SELECT service_date, COUNT(*) FROM buses GROUP BY service_date;
-    ```
+#### archive_reprocessor.py
 
-- query # of records by date/hour/minute
+Copy your *.gz files to `./archive` exec into the `nycbuswatcher_reprocessor` container:
+- `docker exec -it nycbuswatcher_reprocessor_1 /bin/bash`
 
-    ```sql
-     SELECT service_date, date_format(timestamp,'%Y-%m-%d %H-%i'), COUNT(*) \
-     FROM buses GROUP BY service_date, date_format(timestamp,'%Y-%m-%d %H-%i');
-    ```
+and run the script:
+- `python archive_reprocessor.py -d [sqlite, mysql] ./archives`
+
+The script will look in `./archives` or any `<datadir>` for any files in the form of `daily-YYYY-MM-DD.gz` and starting form the earliest date does the following:
+
+1. Unzips the archive to the current folder with the name structure `daily-YYYY-MM-DD.json.gz`
+2. Begins loading the JSON as a stream, pulling out each `Siri` response, which represents a single route for a single point in time.
+3. Parses each `MonitoredVehicleJourney` into a `BusObservation` class instance, and adds that to a database session. The session is committed after each `Siri` response is parsed.
+4. Writes each day's data to a single `daily-YYYY-MM-DD.sqlite3` file.
+
+#### archive_db2shipments.py
+
+This script will dump from a mysql database to `shipment` files.

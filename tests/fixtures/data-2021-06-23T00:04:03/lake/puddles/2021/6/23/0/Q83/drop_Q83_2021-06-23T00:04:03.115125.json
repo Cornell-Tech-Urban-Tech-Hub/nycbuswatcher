@@ -1,0 +1,1598 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.037-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q83",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-144900_MISC_315"
+                                },
+                                "JourneyPatternRef": "MTA_Q830188",
+                                "PublishedLineName": "Q83",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_503169",
+                                "DestinationName": "CAMBRIA HTS 227 ST via LIBERTY via MRDCK",
+                                "OriginAimedDepartureTime": "2021-06-23T00:09:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.804449,
+                                    "Latitude": 40.707106
+                                },
+                                "Bearing": 115.25317,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_81480_MISC-315",
+                                "VehicleRef": "MTA NYCT_8519",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:00.046-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 0.0
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_503169",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "153 ST/HILLSIDE AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.046-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 0.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503169",
+                                            "StopPointName": "153 ST/HILLSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:28.046-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.371-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 715.29,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 715.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503168",
+                                            "StopPointName": "150 ST/JAMAICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.046-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:19.171-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1160.73,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1160.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504467",
+                                            "StopPointName": "ARCHER AV /BAY D"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:08.046-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:07.774-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1705.39,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1705.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503950",
+                                            "StopPointName": "ARCHER AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:33.480-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2180.93,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2180.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500256",
+                                            "StopPointName": "LIBERTY AV/168 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:30.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:03.880-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2347.18,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2347.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500257",
+                                            "StopPointName": "LIBERTY AV/170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:27.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:46.251-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2658.98,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2658.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500258",
+                                            "StopPointName": "LIBERTY AV/173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:08.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:35.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2883.11,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2883.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500259",
+                                            "StopPointName": "LIBERTY AV/177 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:24.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:57.665-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3298.66,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3298.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504464",
+                                            "StopPointName": "LIBERTY AV/180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:48.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:14.564-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3430.06,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3430.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504465",
+                                            "StopPointName": "LIBERTY AV/183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:45.047-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:14.731-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3741.02,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3741.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503831",
+                                            "StopPointName": "LIBERTY AV/184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:20.048-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:38.744-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3931.21,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3931.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500264",
+                                            "StopPointName": "LIBERTY AV/CAMDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:53.049-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:01.313-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4112.79,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4112.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500265",
+                                            "StopPointName": "LIBERTY AV/ELMIRA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:17.049-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:28.262-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4245.79,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4245.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500266",
+                                            "StopPointName": "LIBERTY AV/HILBURN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:57.049-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:24.202-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4464.75,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4464.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500220",
+                                            "StopPointName": "FARMERS BL/JORDAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:29.049-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:52.023-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4638.67,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4638.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500221",
+                                            "StopPointName": "FARMERS BL/KEESEVILLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.049-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:19.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4811.77,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4811.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500222",
+                                            "StopPointName": "FARMERS BL/113 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:27.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:08.544-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4993.98,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4993.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503911",
+                                            "StopPointName": "MURDOCK AV/FARMERS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:51.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:35.132-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5158.21,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5158.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500271",
+                                            "StopPointName": "MURDOCK AV/194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:21.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:07.002-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5357.5,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5357.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500272",
+                                            "StopPointName": "MURDOCK AV/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:44.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:29.139-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5514.57,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5514.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500273",
+                                            "StopPointName": "MURDOCK AV/198 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:47.849-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5628.0,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5628.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504541",
+                                            "StopPointName": "MURDOCK AV/200 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:30.050-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:21.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5829.7,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5829.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503244",
+                                            "StopPointName": "MURDOCK AV/202 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:54.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:46.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5991.55,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5991.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503245",
+                                            "StopPointName": "MURDOCK AV/204 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:19.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:15.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6161.68,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6161.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503062",
+                                            "StopPointName": "MURDOCK AV/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:50.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:50.373-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6371.94,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6371.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503246",
+                                            "StopPointName": "MURDOCK AV/208 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:14.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:19.173-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6532.83,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6532.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503080",
+                                            "StopPointName": "MURDOCK AV/210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:37.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:50.725-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6689.34,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6689.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500282",
+                                            "StopPointName": "COLFAX ST/212 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.051-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:19.725-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6844.64,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6844.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500283",
+                                            "StopPointName": "COLFAX ST/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:49.052-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:30.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7112.02,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7112.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500284",
+                                            "StopPointName": "114 AV/219 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:19.052-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:51.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7276.57,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7276.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500285",
+                                            "StopPointName": "114 AV/221 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:49.052-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:15.052-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.6 miles away",
+                                                    "DistanceFromCall": 7439.11,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 7439.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500286",
+                                            "StopPointName": "114 AV/223 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:19.052-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:42.276-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7604.91,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7604.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500287",
+                                            "StopPointName": "114 AV/225 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:48.052-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7765.71,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7765.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500288",
+                                            "StopPointName": "114 AV/227 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:00.053-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:17.570-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7828.85,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 7828.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904104",
+                                            "StopPointName": "227 ST/113 DR"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:45.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q83",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-143100_MISC_314"
+                                },
+                                "JourneyPatternRef": "MTA_Q830188",
+                                "PublishedLineName": "Q83",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_503169",
+                                "DestinationName": "CAMBRIA HTS 227 ST via LIBERTY via MRDCK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.772686,
+                                    "Latitude": 40.704781
+                                },
+                                "Bearing": 348.4763,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_8657",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:45.062-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.037-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.037-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3741.02
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 20
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_503831",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "LIBERTY AV/184 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:45.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.037-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3741.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503831",
+                                            "StopPointName": "LIBERTY AV/184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:20.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.037-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 190.2,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3931.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500264",
+                                            "StopPointName": "LIBERTY AV/CAMDEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:53.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 371.77,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4112.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500265",
+                                            "StopPointName": "LIBERTY AV/ELMIRA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:17.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:47.531-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 504.77,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4245.79
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500266",
+                                            "StopPointName": "LIBERTY AV/HILBURN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:57.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:43.471-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 723.74,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4464.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500220",
+                                            "StopPointName": "FARMERS BL/JORDAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:11.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 897.65,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4638.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500221",
+                                            "StopPointName": "FARMERS BL/KEESEVILLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:38.606-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1070.76,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 4811.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500222",
+                                            "StopPointName": "FARMERS BL/113 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:27.064-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:27.813-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1252.96,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 4993.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503911",
+                                            "StopPointName": "MURDOCK AV/FARMERS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:51.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:54.401-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1417.2,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5158.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500271",
+                                            "StopPointName": "MURDOCK AV/194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:21.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:26.271-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1616.49,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5357.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500272",
+                                            "StopPointName": "MURDOCK AV/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:44.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:48.408-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1773.56,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5514.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500273",
+                                            "StopPointName": "MURDOCK AV/198 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:07.118-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1886.99,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5628.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504541",
+                                            "StopPointName": "MURDOCK AV/200 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:30.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:40.652-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2088.69,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5829.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503244",
+                                            "StopPointName": "MURDOCK AV/202 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:54.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:06.116-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2250.53,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5991.55
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503245",
+                                            "StopPointName": "MURDOCK AV/204 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:19.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:35.116-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2420.66,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6161.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503062",
+                                            "StopPointName": "MURDOCK AV/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:50.065-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:09.642-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2630.93,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6371.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503246",
+                                            "StopPointName": "MURDOCK AV/208 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:14.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:38.442-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2791.81,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 6532.83
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503080",
+                                            "StopPointName": "MURDOCK AV/210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:37.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:09.994-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2948.32,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6689.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500282",
+                                            "StopPointName": "COLFAX ST/212 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:38.994-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3103.62,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6844.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500283",
+                                            "StopPointName": "COLFAX ST/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:49.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:50.148-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3371.0,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7112.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500284",
+                                            "StopPointName": "114 AV/219 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:19.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:11.127-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3535.56,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7276.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500285",
+                                            "StopPointName": "114 AV/221 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:49.066-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:34.321-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3698.1,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 7439.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500286",
+                                            "StopPointName": "114 AV/223 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:19.067-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:01.545-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3863.89,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 7604.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500287",
+                                            "StopPointName": "114 AV/225 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:48.067-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4024.69,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 7765.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500288",
+                                            "StopPointName": "114 AV/227 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.067-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:36.839-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4087.84,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7828.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904104",
+                                            "StopPointName": "227 ST/113 DR"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:34.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q83",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-23",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-000200_Q83_651"
+                                },
+                                "JourneyPatternRef": "MTA_Q830020",
+                                "PublishedLineName": "Q83",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_500304",
+                                "DestinationName": "JAMAICA HILLSIDE-153 ST via LIBERTY",
+                                "OriginAimedDepartureTime": "2021-06-23T00:02:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.735378,
+                                    "Latitude": 40.717755
+                                },
+                                "Bearing": 251.56505,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_-180_Q83-651",
+                                "VehicleRef": "MTA NYCT_8536",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T00:02:00.071-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.37,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 0.37
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_500304",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SPRINGFIELD BL/AMBOY LA"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:02:00.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.37,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 0.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500304",
+                                            "StopPointName": "SPRINGFIELD BL/AMBOY LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:02:47.071-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:15.513-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 268.25,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 268.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500305",
+                                            "StopPointName": "SPRINGFIELD BL/99 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:03:36.071-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:13.140-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 540.86,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 540.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500126",
+                                            "StopPointName": "SPRINGFIELD BL/HEMPSTEAD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:03:55.071-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:35.938-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 650.03,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 650.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500127",
+                                            "StopPointName": "SPRINGFIELD BL/HOLLIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:04:33.071-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:25.012-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 863.91,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 863.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500309",
+                                            "StopPointName": "SPRINGFIELD BL/107 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:04:58.072-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:42.458-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1007.39,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1007.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500310",
+                                            "StopPointName": "SPRINGFIELD BL/109 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:06:09.072-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:31.113-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1407.13,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1407.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500312",
+                                            "StopPointName": "SPRINGFIELD BL/111 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:06:35.072-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:53.031-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1556.94,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 1556.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500313",
+                                            "StopPointName": "SPRINGFIELD BL/112 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:07:00.072-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:19.375-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1698.34,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 1698.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500315",
+                                            "StopPointName": "MURDOCK AV/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:07:29.072-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:49.975-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1893.07,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 1893.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503064",
+                                            "StopPointName": "MURDOCK AV/212 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:07:59.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:19.435-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2093.93,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2093.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500317",
+                                            "StopPointName": "MURDOCK AV/210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:08:22.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:37.813-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2252.01,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2252.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500318",
+                                            "StopPointName": "MURDOCK AV/208 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:08:43.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:54.112-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2391.78,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 2391.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503067",
+                                            "StopPointName": "MURDOCK AV/FRANCIS LEWIS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:09:19.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:29.022-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2636.26,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 2636.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500320",
+                                            "StopPointName": "MURDOCK AV/204 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:09:42.073-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:50.779-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2795.32,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 2795.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500321",
+                                            "StopPointName": "MURDOCK AV/202 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:10:06.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:10.871-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2954.75,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 2954.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500322",
+                                            "StopPointName": "MURDOCK AV/200 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:10:29.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:29.109-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3113.11,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3113.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500323",
+                                            "StopPointName": "MURDOCK AV/198 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:10:46.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:44.133-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3227.01,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 3227.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503922",
+                                            "StopPointName": "MURDOCK AV/196 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:11:23.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:16.333-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3472.08,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 3472.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503070",
+                                            "StopPointName": "MURDOCK AV/194 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:11:39.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:38.638-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3583.49,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 3583.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503247",
+                                            "StopPointName": "MURDOCK AV/FARMERS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:12:00.074-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:12.541-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3725.77,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 3725.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503784",
+                                            "StopPointName": "FARMERS BL/113 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:12:33.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:43.541-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3951.98,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 3951.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500182",
+                                            "StopPointName": "FARMERS BL/112 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:12:58.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:04.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4126.92,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 4126.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500183",
+                                            "StopPointName": "FARMERS BL/111 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:13:44.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:19.067-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4438.54,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 4438.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504523",
+                                            "StopPointName": "BRINKERHOFF AV/189 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:14:18.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:52.227-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4671.46,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 4671.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500331",
+                                            "StopPointName": "LIBERTY AV/187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:14:59.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:27.662-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4956.39,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 4956.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500332",
+                                            "StopPointName": "LIBERTY AV/184 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:15:39.075-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:16.320-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5226.45,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 5226.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503604",
+                                            "StopPointName": "LIBERTY AV/183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:16:01.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:37.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5381.5,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 5381.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500334",
+                                            "StopPointName": "LIBERTY AV/182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:16:28.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:00.915-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5567.42,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 5567.42
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500335",
+                                            "StopPointName": "LIBERTY AV/180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:17:02.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:44.209-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5797.03,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 5797.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500336",
+                                            "StopPointName": "LIBERTY AV/177 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:17:42.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:14.826-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6075.66,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 6075.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500337",
+                                            "StopPointName": "LIBERTY AV/172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:18:08.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:39.870-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6253.67,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 6253.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504437",
+                                            "StopPointName": "LIBERTY AV/170 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:19:00.076-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:45.048-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6608.12,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 6608.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504008",
+                                            "StopPointName": "LIBERTY AV/MERRICK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:20:08.077-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:40.450-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6941.39,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 6941.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503671",
+                                            "StopPointName": "ARCHER AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:22:00.077-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:32.290-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7489.04,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 7489.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503175",
+                                            "StopPointName": "ARCHER AV/153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:22:28.077-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:57.172-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7594.7,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 7594.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503174",
+                                            "StopPointName": "ARCHER AV/153 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:23:04.078-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:53.172-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7735.12,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 7735.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503789",
+                                            "StopPointName": "153 ST/JAMAICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:24:21.078-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:52.697-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 8029.53,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 8029.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503166",
+                                            "StopPointName": "153 ST/89 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T00:25:00.078-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:24.497-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8179.18,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 8179.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503167",
+                                            "StopPointName": "153 ST/HILLSIDE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:46.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q83",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_QV_B1-Weekday-SDon-141600_MISC_308"
+                                },
+                                "JourneyPatternRef": "MTA_Q830188",
+                                "PublishedLineName": "Q83",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_503169",
+                                "DestinationName": "CAMBRIA HTS 227 ST via LIBERTY via MRDCK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.730455,
+                                    "Latitude": 40.701642
+                                },
+                                "Bearing": 0.0,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_QV_B1-Weekday-SDon_E_QV_79020_MISC-308",
+                                "VehicleRef": "MTA NYCT_8081",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:00.054-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.292-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.292-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 52.62,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7828.85
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_904104",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "227 ST/113 DR"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.059-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 52.62,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7828.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904104",
+                                            "StopPointName": "227 ST/113 DR"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.037-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.037-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

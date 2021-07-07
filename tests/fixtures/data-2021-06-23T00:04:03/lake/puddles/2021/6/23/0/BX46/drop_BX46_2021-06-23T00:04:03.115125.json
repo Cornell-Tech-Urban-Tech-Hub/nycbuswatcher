@@ -1,0 +1,90 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.382-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX46",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-144000_BX46_955"
+                                },
+                                "JourneyPatternRef": "MTA_BX460046",
+                                "PublishedLineName": "Bx46",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104503",
+                                "DestinationName": "PROSPECT AV WESTCHESTER AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.89674,
+                                    "Latitude": 40.816619
+                                },
+                                "Bearing": 148.52188,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_70800_BX46-955",
+                                "VehicleRef": "MTA NYCT_309",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:51.390-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:12.250-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:12.250-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 262.5,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3004.47
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104514",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "LONGWOOD AV/DAWSON ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:51.393-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:12.250-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 262.5,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3004.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104514",
+                                            "StopPointName": "LONGWOOD AV/DAWSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.393-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:11.036-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 569.81,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 3311.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802091",
+                                            "StopPointName": "PROSPECT AV/WESTCHESTER AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:50.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.382-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.382-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

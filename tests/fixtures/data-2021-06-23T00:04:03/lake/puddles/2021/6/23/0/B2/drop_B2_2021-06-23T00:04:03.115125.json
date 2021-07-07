@@ -1,0 +1,261 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:55.760-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B2",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FB_B1-Weekday-SDon-143700_B2_6"
+                                },
+                                "JourneyPatternRef": "MTA_B20053",
+                                "PublishedLineName": "B2",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_300137",
+                                "DestinationName": "KINGS PLAZA",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.941874,
+                                    "Latitude": 40.60752
+                                },
+                                "Bearing": 6.414602,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FB_B1-Weekday-SDon_E_FB_45120_B31-102",
+                                "VehicleRef": "MTA NYCT_7634",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:29.770-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:56.483-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:56.483-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1457.64,
+                                            "DistanceFromCall": 14.69,
+                                            "PresentableDistance": "at stop"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 4
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_300147",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "AV R/GERRITSEN AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:29.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.483-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1457.64,
+                                                    "DistanceFromCall": 14.69,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300147",
+                                            "StopPointName": "AV R/GERRITSEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:05.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:11.951-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1639.14,
+                                                    "DistanceFromCall": 196.18,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300148",
+                                            "StopPointName": "AV R/STUART ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:38.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:31.999-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1797.76,
+                                                    "DistanceFromCall": 354.8,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306907",
+                                            "StopPointName": "AV R/MADISON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:12.774-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:55.160-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1967.9,
+                                                    "DistanceFromCall": 524.95,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300150",
+                                            "StopPointName": "AV R/E 31 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:44.774-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:19.462-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2126.65,
+                                                    "DistanceFromCall": 683.69,
+                                                    "PresentableDistance": "4 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300151",
+                                            "StopPointName": "AV R/E 33 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:16.774-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:50.653-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2284.15,
+                                                    "DistanceFromCall": 841.2,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300152",
+                                            "StopPointName": "AV R/E 35 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:32.775-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:07.150-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2364.91,
+                                                    "DistanceFromCall": 921.96,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300153",
+                                            "StopPointName": "AV R/E 36 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:20.775-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:58.012-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2599.71,
+                                                    "DistanceFromCall": 1156.76,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300154",
+                                            "StopPointName": "E 36 ST/FILLMORE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:07.775-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:50.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2836.16,
+                                                    "DistanceFromCall": 1393.2,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300155",
+                                            "StopPointName": "E 36 ST/AV S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:57.776-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:31.829-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3081.4,
+                                                    "DistanceFromCall": 1638.45,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300157",
+                                            "StopPointName": "AV S/RYDER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:29.776-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:02.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3241.11,
+                                                    "DistanceFromCall": 1798.16,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300158",
+                                            "StopPointName": "AV S/COLEMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.776-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:33.629-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3393.31,
+                                                    "DistanceFromCall": 1950.36,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300159",
+                                            "StopPointName": "AV S/FLATBUSH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:12.776-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:49.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3668.61,
+                                                    "DistanceFromCall": 2225.66,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307636",
+                                            "StopPointName": "FLATBUSH AV/AV T"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.777-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:00.385-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4316.22,
+                                                    "DistanceFromCall": 2873.27,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901001",
+                                            "StopPointName": "FLATBUSH AV/AV U"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:55.760-04:00",
+                    "ValidUntil": "2021-06-23T00:04:55.760-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

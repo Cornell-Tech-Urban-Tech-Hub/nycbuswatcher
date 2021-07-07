@@ -1,0 +1,1138 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:01.617-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX4",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144000_BX44A_724"
+                                },
+                                "JourneyPatternRef": "MTA_BX040086",
+                                "PublishedLineName": "Bx4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103678",
+                                "DestinationName": "THE HUB 3 AV via WESTCHESTER AV",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_279183"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.851378,
+                                    "Latitude": 40.834248
+                                },
+                                "Bearing": 186.16484,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_25260_BX44A-714",
+                                "VehicleRef": "MTA NYCT_5781",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:00.630-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.617-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.617-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1252.62,
+                                            "DistanceFromCall": 7.0,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100242",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WESTCHESTER AV/CASTLE HILL AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1252.62,
+                                                    "DistanceFromCall": 7.0,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100242",
+                                            "StopPointName": "WESTCHESTER AV/CASTLE HILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:54.634-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:32.808-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1505.75,
+                                                    "DistanceFromCall": 260.13,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100243",
+                                            "StopPointName": "WESTCHESTER AV/OLMSTEAD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:52.635-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:14.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1773.11,
+                                                    "DistanceFromCall": 527.49,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100244",
+                                            "StopPointName": "WESTCHESTER AV/PUGSLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.635-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:17.992-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2089.94,
+                                                    "DistanceFromCall": 844.33,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100245",
+                                            "StopPointName": "HUGH GRANT CIR/CROSS BX SVC RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:32.636-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:13.806-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2220.56,
+                                                    "DistanceFromCall": 974.94,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100246",
+                                            "StopPointName": "WESTCHESTER AV/WHITE PLAINS RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:17.636-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:16.263-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2400.04,
+                                                    "DistanceFromCall": 1154.42,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100247",
+                                            "StopPointName": "WESTCHESTER AV/THIERIOT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:15.636-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:05.055-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2634.66,
+                                                    "DistanceFromCall": 1389.04,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100249",
+                                            "StopPointName": "WESTCHESTER AV/ST LAWRENCE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:03.637-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:33.748-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2830.76,
+                                                    "DistanceFromCall": 1585.14,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104316",
+                                            "StopPointName": "WESTCHESTER AV/ROSEDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:57.640-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:28.361-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3049.7,
+                                                    "DistanceFromCall": 1804.08,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104317",
+                                            "StopPointName": "WESTCHESTER AV/ FTELEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.641-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:29.361-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3302.87,
+                                                    "DistanceFromCall": 2057.25,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100253",
+                                            "StopPointName": "WESTCHESTER AV/MORRISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:46.641-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:48.557-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3465.07,
+                                                    "DistanceFromCall": 2219.45,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100254",
+                                            "StopPointName": "WESTCHESTER AV/MANOR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:54.641-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:26.358-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3705.83,
+                                                    "DistanceFromCall": 2460.21,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100256",
+                                            "StopPointName": "WESTCHESTER AV/ELDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:59.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:40.358-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3932.31,
+                                                    "DistanceFromCall": 2686.7,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104318",
+                                            "StopPointName": "WESTCHESTER AV/ COLGATE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:03.642-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:32.284-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4369.2,
+                                                    "DistanceFromCall": 3123.59,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100259",
+                                            "StopPointName": "WESTCHESTER AV/HOME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:02.643-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:42.472-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4579.41,
+                                                    "DistanceFromCall": 3333.8,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103127",
+                                            "StopPointName": "WESTCHESTER AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:06.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:27.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4803.21,
+                                                    "DistanceFromCall": 3557.59,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100260",
+                                            "StopPointName": "WESTCHESTER AV/HOE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.644-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:30.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4994.83,
+                                                    "DistanceFromCall": 3749.22,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100261",
+                                            "StopPointName": "WESTCHESTER AV/SIMPSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:56.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:19.779-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5194.73,
+                                                    "DistanceFromCall": 3949.11,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100262",
+                                            "StopPointName": "WESTCHESTER AV/TIFFANY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:51.645-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:06.420-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5392.6,
+                                                    "DistanceFromCall": 4146.99,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103606",
+                                            "StopPointName": "WESTCHESTER AV/INTERVALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:51.646-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:55.220-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5610.31,
+                                                    "DistanceFromCall": 4364.69,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100264",
+                                            "StopPointName": "WESTCHESTER AV/E 163 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:09.820-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5857.9,
+                                                    "DistanceFromCall": 4612.28,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100265",
+                                            "StopPointName": "WESTCHESTER AV/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:07.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:04.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6215.01,
+                                                    "DistanceFromCall": 4969.4,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100267",
+                                            "StopPointName": "WESTCHESTER AV/TINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:07.647-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:29.679-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6536.71,
+                                                    "DistanceFromCall": 5291.09,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100268",
+                                            "StopPointName": "WESTCHESTER AV/JACKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:11.648-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:47.241-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6878.99,
+                                                    "DistanceFromCall": 5633.37,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100270",
+                                            "StopPointName": "WESTCHESTER AV/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:01.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:25.135-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7144.28,
+                                                    "DistanceFromCall": 5898.66,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103723",
+                                            "StopPointName": "E 149 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:37.650-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:58.370-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 7333.34,
+                                                    "DistanceFromCall": 6087.72,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101372",
+                                            "StopPointName": "E 149 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.651-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:22.401-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7458.95,
+                                                    "DistanceFromCall": 6213.34,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902105",
+                                            "StopPointName": "E 149 ST/BERGEN AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:35.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX4",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-142000_BX44A_723"
+                                },
+                                "JourneyPatternRef": "MTA_BX040086",
+                                "PublishedLineName": "Bx4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103678",
+                                "DestinationName": "THE HUB 3 AV via WESTCHESTER AV",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_279183"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.898634,
+                                    "Latitude": 40.821171
+                                },
+                                "Bearing": 206.94417,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_25380_BX44A-715",
+                                "VehicleRef": "MTA NYCT_1232",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:51.663-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.617-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.617-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5610.31,
+                                            "DistanceFromCall": 10.89,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100264",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WESTCHESTER AV/E 163 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:51.686-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5610.31,
+                                                    "DistanceFromCall": 10.89,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100264",
+                                            "StopPointName": "WESTCHESTER AV/E 163 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.687-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:07.040-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5857.9,
+                                                    "DistanceFromCall": 258.48,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100265",
+                                            "StopPointName": "WESTCHESTER AV/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:07.687-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:01.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6215.01,
+                                                    "DistanceFromCall": 615.59,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100267",
+                                            "StopPointName": "WESTCHESTER AV/TINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:07.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:26.899-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6536.71,
+                                                    "DistanceFromCall": 937.28,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100268",
+                                            "StopPointName": "WESTCHESTER AV/JACKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:11.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:44.461-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6878.99,
+                                                    "DistanceFromCall": 1279.56,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100270",
+                                            "StopPointName": "WESTCHESTER AV/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:01.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:22.355-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7144.28,
+                                                    "DistanceFromCall": 1544.85,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103723",
+                                            "StopPointName": "E 149 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:37.689-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:55.590-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7333.34,
+                                                    "DistanceFromCall": 1733.92,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101372",
+                                            "StopPointName": "E 149 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:19.621-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7458.95,
+                                                    "DistanceFromCall": 1859.53,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902105",
+                                            "StopPointName": "E 149 ST/BERGEN AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:50.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX4",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144300_BX44A_725"
+                                },
+                                "JourneyPatternRef": "MTA_BX040204",
+                                "PublishedLineName": "Bx4",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103708",
+                                "DestinationName": "WESTCHTR SQ via WESTCHTR AV",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_279183"
+                                    },
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_277092"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.911542,
+                                    "Latitude": 40.816025
+                                },
+                                "Bearing": 354.38242,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_58200_BX402-44",
+                                "VehicleRef": "MTA NYCT_5808",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:06.698-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:13.704-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:13.704-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 705.32,
+                                            "DistanceFromCall": 275.2,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100206",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WESTCHESTER AV/JACKSON AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:06.701-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:13.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 705.32,
+                                                    "DistanceFromCall": 275.2,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100206",
+                                            "StopPointName": "WESTCHESTER AV/JACKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1011.53,
+                                                    "DistanceFromCall": 581.41,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100207",
+                                            "StopPointName": "WESTCHESTER AV/E 156 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1347.55,
+                                                    "DistanceFromCall": 917.43,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100209",
+                                            "StopPointName": "WESTCHESTER AV/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:23.702-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:11.478-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1642.42,
+                                                    "DistanceFromCall": 1212.3,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100211",
+                                            "StopPointName": "WESTCHESTER AV/REV J POLITE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:22.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:23.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1849.16,
+                                                    "DistanceFromCall": 1419.04,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100212",
+                                            "StopPointName": "WESTCHESTER AV/INTERVALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:20.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:05.670-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2055.42,
+                                                    "DistanceFromCall": 1625.3,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100213",
+                                            "StopPointName": "WESTCHESTER AV/TIFFANY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:16.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:39.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2254.61,
+                                                    "DistanceFromCall": 1824.49,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100214",
+                                            "StopPointName": "WESTCHESTER AV/SIMPSON ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:01.717-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2410.83,
+                                                    "DistanceFromCall": 1980.7,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103650",
+                                            "StopPointName": "WESTCHESTER AV/SOUTHERN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:31.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:05.378-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2705.56,
+                                                    "DistanceFromCall": 2275.44,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104312",
+                                            "StopPointName": "WESTCHESTER AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:47.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:51.680-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2948.64,
+                                                    "DistanceFromCall": 2518.52,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100219",
+                                            "StopPointName": "WESTCHESTER AV/WHITLOCK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:53.704-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:02.225-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3355.86,
+                                                    "DistanceFromCall": 2925.73,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104313",
+                                            "StopPointName": "WESTCHESTER AV/COLGATE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:58.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:56.887-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3563.89,
+                                                    "DistanceFromCall": 3133.77,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100221",
+                                            "StopPointName": "WESTCHESTER AV/ELDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:11.705-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:00.687-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3800.83,
+                                                    "DistanceFromCall": 3370.71,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100223",
+                                            "StopPointName": "WESTCHESTER AV/MANOR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:05.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3957.16,
+                                                    "DistanceFromCall": 3527.03,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100224",
+                                            "StopPointName": "WESTCHESTER AV/MORRISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:09.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:03.805-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4208.48,
+                                                    "DistanceFromCall": 3778.36,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104314",
+                                            "StopPointName": "WESTCHESTER AV/ FTELEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:52.707-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:28.990-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4367.0,
+                                                    "DistanceFromCall": 3936.88,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104315",
+                                            "StopPointName": "WESTCHESTER AV/ NOBLE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:58.708-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:12.233-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4608.35,
+                                                    "DistanceFromCall": 4178.22,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100227",
+                                            "StopPointName": "WESTCHESTER AV/ST LAWRENCE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:07.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:08.153-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4858.36,
+                                                    "DistanceFromCall": 4428.24,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100229",
+                                            "StopPointName": "WESTCHESTER AV/THIERIOT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:52.709-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:41.553-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5024.62,
+                                                    "DistanceFromCall": 4594.5,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100230",
+                                            "StopPointName": "WESTCHESTER AV/WHITE PLAINS RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:21.553-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5272.87,
+                                                    "DistanceFromCall": 4842.74,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104068",
+                                            "StopPointName": "HUGH GRANT CIR/CROSS BX SVC RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:34.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:51.627-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5412.62,
+                                                    "DistanceFromCall": 4982.5,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103613",
+                                            "StopPointName": "WESTCHESTER AV/CROSS BX SVC RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:55.710-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:08.765-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5502.31,
+                                                    "DistanceFromCall": 5072.19,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100232",
+                                            "StopPointName": "WESTCHESTER AV/PUGSLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:07.712-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:59.266-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5798.67,
+                                                    "DistanceFromCall": 5368.55,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100233",
+                                            "StopPointName": "WESTCHESTER AV/OLMSTEAD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.713-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:48.759-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6020.5,
+                                                    "DistanceFromCall": 5590.38,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100234",
+                                            "StopPointName": "WESTCHESTER AV/CASTLE HILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:31.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:40.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6295.24,
+                                                    "DistanceFromCall": 5865.12,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103453",
+                                            "StopPointName": "WESTCHESTER AV/HAVEMEYER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:01.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:12.014-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6556.85,
+                                                    "DistanceFromCall": 6126.73,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100235",
+                                            "StopPointName": "WESTCHESTER AV/ZEREGA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:30.714-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:42.614-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6813.43,
+                                                    "DistanceFromCall": 6383.3,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100236",
+                                            "StopPointName": "WESTCHESTER AV/ST PETERS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:00.715-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:29.424-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7076.85,
+                                                    "DistanceFromCall": 6646.73,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802065",
+                                            "StopPointName": "TREMONT AV/LANE AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:01.617-04:00",
+                    "ValidUntil": "2021-06-23T00:05:01.617-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-06-04T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Bx4/Bx4A and Bx27 buses may experience delays in both directions because of construction at Westchester Ave and Whitlock Ave",
+                                "Description": "Until further notice Bx4/Bx4A and Bx27 buses may experience delays in both directions because of construction at Westchester Ave and Whitlock Ave",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX27",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX27",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX4",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX4",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX4A",
+                                                "DirectionRef": "1"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX4A",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "altered"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-06-04T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_279183"
+                            },
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-04-21T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Northbound Bx4/Bx4A stop on Bergen Ave at Westchester Ave has been relocated because of construction",
+                                "Description": "Until further notice Northbound Bx4/Bx4A stop on Bergen Ave at Westchester Ave has been relocated because of construction   Buses will stop on Bergen Ave near East 149th St.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX4",
+                                                "DirectionRef": "0"
+                                            },
+                                            {
+                                                "LineRef": "MTA NYCT_BX4A",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "diverted"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-04-21T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_277092"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

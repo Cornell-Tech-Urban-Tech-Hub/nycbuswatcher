@@ -1,0 +1,300 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.781-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M57",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-144000_M72_619"
+                                },
+                                "JourneyPatternRef": "MTA_M570109",
+                                "PublishedLineName": "M57",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404938",
+                                "DestinationName": "WEST SIDE BROADWAY-72 ST CROSSTOWN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.966588,
+                                    "Latitude": 40.759889
+                                },
+                                "Bearing": 157.439,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_20760_M57-453",
+                                "VehicleRef": "MTA NYCT_4122",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:20.795-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:34.243-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:34.243-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1303.89,
+                                            "DistanceFromCall": 133.08,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_402224",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 57 ST/3 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:20.798-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:34.243-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1303.89,
+                                                    "DistanceFromCall": 133.08,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402224",
+                                            "StopPointName": "E 57 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:17.798-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:10.443-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1455.63,
+                                                    "DistanceFromCall": 284.82,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403617",
+                                            "StopPointName": "E 57 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.798-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:35.719-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1735.26,
+                                                    "DistanceFromCall": 564.46,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803117",
+                                            "StopPointName": "E 57 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:09.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:33.019-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1917.68,
+                                                    "DistanceFromCall": 746.87,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402228",
+                                            "StopPointName": "W 57 ST/5 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:11.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:07.269-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2237.68,
+                                                    "DistanceFromCall": 1066.87,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402229",
+                                            "StopPointName": "W 57 ST/AV OF THE AMERICAS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:52.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:09.557-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2503.7,
+                                                    "DistanceFromCall": 1332.9,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400744",
+                                            "StopPointName": "W 57 ST/7 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:07.006-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2681.62,
+                                                    "DistanceFromCall": 1510.82,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400745",
+                                            "StopPointName": "W 57 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:30.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:18.685-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3034.5,
+                                                    "DistanceFromCall": 1863.7,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_402233",
+                                            "StopPointName": "W 57 ST/9 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:44.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:15.003-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3326.89,
+                                                    "DistanceFromCall": 2156.08,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403986",
+                                            "StopPointName": "W 57 ST/10 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:10.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:03.487-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3663.17,
+                                                    "DistanceFromCall": 2492.37,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405562",
+                                            "StopPointName": "11 AV/W 58 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:09.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:12.555-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3896.55,
+                                                    "DistanceFromCall": 2725.75,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405353",
+                                            "StopPointName": "WEST END AV/W 61 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:10.802-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:24.087-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4138.0,
+                                                    "DistanceFromCall": 2967.19,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405468",
+                                            "StopPointName": "WEST END AV/W 64 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.802-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:59.777-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4333.05,
+                                                    "DistanceFromCall": 3162.24,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403076",
+                                            "StopPointName": "WEST END AV/W 66 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:32.802-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:28.952-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4507.31,
+                                                    "DistanceFromCall": 3336.5,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403608",
+                                            "StopPointName": "WEST END AV/W 69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:55.802-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:53.774-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4635.23,
+                                                    "DistanceFromCall": 3464.42,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_405086",
+                                            "StopPointName": "WEST END AV/WEST 70 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:27.803-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:34.110-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4806.93,
+                                                    "DistanceFromCall": 3636.12,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400853",
+                                            "StopPointName": "W 72 ST/WEST END AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.803-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:05.510-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4986.6,
+                                                    "DistanceFromCall": 3815.79,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_400854",
+                                            "StopPointName": "W 72 ST/BROADWAY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.781-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.781-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

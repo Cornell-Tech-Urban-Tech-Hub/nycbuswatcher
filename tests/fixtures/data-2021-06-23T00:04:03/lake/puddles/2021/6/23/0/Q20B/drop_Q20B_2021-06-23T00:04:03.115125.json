@@ -1,0 +1,90 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.494-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q20B",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CS_B1-Weekday-SDon-139000_MISC_528"
+                                },
+                                "JourneyPatternRef": "MTA_Q20B0040",
+                                "PublishedLineName": "Q20B",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_503964",
+                                "DestinationName": "COLLEGE PT via MAIN ST via 14 AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.844451,
+                                    "Latitude": 40.78537
+                                },
+                                "Bearing": 178.06941,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_CS_B1-Weekday-SDon_E_CS_77580_MISC-528",
+                                "VehicleRef": "MTA NYCT_4192",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:33.501-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.494-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.494-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 98.29,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 14447.56
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_502460",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "14 AV/123 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:33.514-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.494-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 98.29,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 14447.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_502460",
+                                            "StopPointName": "14 AV/123 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.514-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:48.811-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 271.3,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 14620.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505021",
+                                            "StopPointName": "15 AV/COLLEGE PT BL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:26.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.494-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.494-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

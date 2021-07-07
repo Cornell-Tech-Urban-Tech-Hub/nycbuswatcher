@@ -1,0 +1,2159 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:00.294-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q54",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-140800_Q58_885"
+                                },
+                                "JourneyPatternRef": "MTA_Q54O0251",
+                                "PublishedLineName": "Q54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307916",
+                                "DestinationName": "JAMAICA 170 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.826162,
+                                    "Latitude": 40.704539
+                                },
+                                "Bearing": 343.89334,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_82980_Q58-885",
+                                "VehicleRef": "MTA NYCT_4435",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:09:27.309-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.294-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.294-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 12143.36,
+                                            "DistanceFromCall": 14.67,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504518",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "METROPOLITAN AV/125 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:27.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 12143.36,
+                                                    "DistanceFromCall": 14.67,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504518",
+                                            "StopPointName": "METROPOLITAN AV/125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:21.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:20.799-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 12409.24,
+                                                    "DistanceFromCall": 280.54,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504286",
+                                            "StopPointName": "METROPOLITAN AV/HILLSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:04.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:30.150-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 12620.44,
+                                                    "DistanceFromCall": 491.75,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504288",
+                                            "StopPointName": "METROPOLITAN AV/132 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:28.327-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:59.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 12738.38,
+                                                    "DistanceFromCall": 609.69,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503591",
+                                            "StopPointName": "132 ST/JAMAICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:05.327-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:55.150-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 12921.21,
+                                                    "DistanceFromCall": 792.51,
+                                                    "PresentableDistance": "4 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504289",
+                                            "StopPointName": "JAMAICA AV/134 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:28.327-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:18.780-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 13033.93,
+                                                    "DistanceFromCall": 905.24,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503402",
+                                            "StopPointName": "JAMAICA AV/VAN WYCK EP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.328-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:04.237-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 13192.56,
+                                                    "DistanceFromCall": 1063.87,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503825",
+                                            "StopPointName": "JAMAICA AV/138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:38.328-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:55.434-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 13408.42,
+                                                    "DistanceFromCall": 1279.73,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503404",
+                                            "StopPointName": "JAMAICA AV/139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:02.328-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:17.264-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 13544.45,
+                                                    "DistanceFromCall": 1415.76,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504196",
+                                            "StopPointName": "JAMAICA AV/144 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.328-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:19.955-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 13879.41,
+                                                    "DistanceFromCall": 1750.72,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503727",
+                                            "StopPointName": "JAMAICA AV/147 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:38.329-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:40.355-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 14085.73,
+                                                    "DistanceFromCall": 1957.03,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504984",
+                                            "StopPointName": "JAMAICA AV/150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:47.329-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:40.125-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 14461.21,
+                                                    "DistanceFromCall": 2332.52,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503200",
+                                            "StopPointName": "JAMAICA AV/PARSONS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:08.329-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:21.125-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 14571.09,
+                                                    "DistanceFromCall": 2442.4,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_553036",
+                                            "StopPointName": "JAMAICA AV/160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:45.330-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:09.707-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 14775.34,
+                                                    "DistanceFromCall": 2646.64,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503938",
+                                            "StopPointName": "JAMAICA AV/GUY R BREWER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:32.330-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:16.299-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 15029.24,
+                                                    "DistanceFromCall": 2900.55,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503614",
+                                            "StopPointName": "JAMAICA AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:10.330-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:58.912-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 15233.77,
+                                                    "DistanceFromCall": 3105.07,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503283",
+                                            "StopPointName": "JAMAICA AV/168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.331-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:43.471-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 15504.52,
+                                                    "DistanceFromCall": 3375.83,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_501422",
+                                            "StopPointName": "170 ST/JAMAICA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:34.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q54",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-143600_Q58_882"
+                                },
+                                "JourneyPatternRef": "MTA_Q54O0012",
+                                "PublishedLineName": "Q54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504384",
+                                "DestinationName": "WILLAMSBURG BRIDGE PLZ",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.815273,
+                                    "Latitude": 40.702484
+                                },
+                                "Bearing": 183.36646,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_80160_Q58-882",
+                                "VehicleRef": "MTA NYCT_4427",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:23.407-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.294-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.294-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 2349.5,
+                                            "DistanceFromCall": 41.8,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_504293",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "JAMAICA AV/138 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:23.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 2349.5,
+                                                    "DistanceFromCall": 41.8,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504293",
+                                            "StopPointName": "JAMAICA AV/138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:55.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:40.996-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 2536.95,
+                                                    "DistanceFromCall": 229.25,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504080",
+                                            "StopPointName": "JAMAICA AV/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:36.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.710-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 2775.75,
+                                                    "DistanceFromCall": 468.05,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503415",
+                                            "StopPointName": "JAMAICA AV/132 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:06.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:19.160-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2954.22,
+                                                    "DistanceFromCall": 646.52,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_801096",
+                                            "StopPointName": "131 ST/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:45.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:06.518-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 3181.76,
+                                                    "DistanceFromCall": 874.06,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504296",
+                                            "StopPointName": "METROPOLITAN AV/129 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:35.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:39.853-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 3479.35,
+                                                    "DistanceFromCall": 1171.65,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504298",
+                                            "StopPointName": "METROPOLITAN AV/125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:19.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:09.809-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3736.02,
+                                                    "DistanceFromCall": 1428.32,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504299",
+                                            "StopPointName": "METROPOLITAN AV/BREVOORT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:52.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:47.805-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3933.02,
+                                                    "DistanceFromCall": 1625.32,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504300",
+                                            "StopPointName": "METROPOLITAN AV/LEFFERTS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:40.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.162-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 4216.21,
+                                                    "DistanceFromCall": 1908.51,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504440",
+                                            "StopPointName": "METROPOLITAN AV/83 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:15.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:08.446-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 4401.16,
+                                                    "DistanceFromCall": 2093.46,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504302",
+                                            "StopPointName": "METROPOLITAN AV/PARK LA S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:44.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:37.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 4571.72,
+                                                    "DistanceFromCall": 2264.02,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504303",
+                                            "StopPointName": "METROPOLITAN AV/FOREST PARK DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:13.794-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5040.12,
+                                                    "DistanceFromCall": 2732.42,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504304",
+                                            "StopPointName": "METROPOLITAN AV/75 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:21.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:31.575-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5199.61,
+                                                    "DistanceFromCall": 2891.91,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504305",
+                                            "StopPointName": "METROPOLITAN AV/ASCAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:47.413-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:54.105-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 5408.66,
+                                                    "DistanceFromCall": 3100.96,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504306",
+                                            "StopPointName": "METROPOLITAN AV/72 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:17.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:20.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 5643.77,
+                                                    "DistanceFromCall": 3336.07,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504307",
+                                            "StopPointName": "METROPOLITAN AV/71 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:37.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:43.037-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 5807.45,
+                                                    "DistanceFromCall": 3499.75,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504450",
+                                            "StopPointName": "METROPOLITAN AV/70 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:08.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:03.828-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5982.48,
+                                                    "DistanceFromCall": 3674.78,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504309",
+                                            "StopPointName": "METROPOLITAN AV/69 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:39.040-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 6397.23,
+                                                    "DistanceFromCall": 4089.53,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504452",
+                                            "StopPointName": "METROPOLITAN AV/WOODHAVEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:43.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:26.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 6657.3,
+                                                    "DistanceFromCall": 4349.6,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505205",
+                                            "StopPointName": "COOPER AV/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:15.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:47.996-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 6849.37,
+                                                    "DistanceFromCall": 4541.67,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505206",
+                                            "StopPointName": "COOPER AV/88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:39.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:59.087-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 7348.55,
+                                                    "DistanceFromCall": 5040.85,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_551065",
+                                            "StopPointName": "80 ST/COOPER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:06.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:28.569-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 7508.89,
+                                                    "DistanceFromCall": 5201.19,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_551067",
+                                            "StopPointName": "80TH ST / 68TH AVE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:52.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:06.778-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 7788.15,
+                                                    "DistanceFromCall": 5480.45,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504313",
+                                            "StopPointName": "METROPOLITAN AV/80 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:30.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:40.834-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 8015.59,
+                                                    "DistanceFromCall": 5707.89,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504314",
+                                            "StopPointName": "METROPOLITAN AV/79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:27.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:33.266-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 8356.12,
+                                                    "DistanceFromCall": 6048.42,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504315",
+                                            "StopPointName": "METROPOLITAN AV/74 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:20.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:13.428-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 8675.02,
+                                                    "DistanceFromCall": 6367.31,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504317",
+                                            "StopPointName": "METROPOLITAN AV/PLEASANT VIEW ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:52.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:35.593-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 8864.4,
+                                                    "DistanceFromCall": 6556.7,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504318",
+                                            "StopPointName": "METROPOLITAN AV/71 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:22.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:56.045-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 9044.28,
+                                                    "DistanceFromCall": 6736.57,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504319",
+                                            "StopPointName": "METROPOLITAN AV/69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:25.273-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 9273.24,
+                                                    "DistanceFromCall": 6965.54,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504320",
+                                            "StopPointName": "METROPOLITAN AV/ METRO EL STATION"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:55.417-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:17.968-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 9731.12,
+                                                    "DistanceFromCall": 7423.42,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504322",
+                                            "StopPointName": "METROPOLITAN AV/MT OLIVET CR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:11.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:31.687-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 9867.08,
+                                                    "DistanceFromCall": 7559.38,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504323",
+                                            "StopPointName": "METROPOLITAN AV/65 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:43.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:02.087-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 10138.69,
+                                                    "DistanceFromCall": 7830.99,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504439",
+                                            "StopPointName": "METROPOLITAN AV/62 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:29.887-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 10277.71,
+                                                    "DistanceFromCall": 7970.01,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504324",
+                                            "StopPointName": "METROPOLITAN AV/FRESH POND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:24.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:50.360-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 10438.39,
+                                                    "DistanceFromCall": 8130.69,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504325",
+                                            "StopPointName": "METROPOLITAN AV/60 LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:37.420-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:00.355-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 10524.23,
+                                                    "DistanceFromCall": 8216.53,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504326",
+                                            "StopPointName": "METROPOLITAN AV/ELIOT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:02.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:22.277-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 10687.08,
+                                                    "DistanceFromCall": 8379.38,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503237",
+                                            "StopPointName": "METROPOLITAN AV/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:41.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:15.603-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 10943.1,
+                                                    "DistanceFromCall": 8635.4,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503238",
+                                            "StopPointName": "METROPOLITAN AV/ANDREWS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:05.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:46.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 11100.41,
+                                                    "DistanceFromCall": 8792.71,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504327",
+                                            "StopPointName": "METROPOLITAN AV/ARNOLD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:26.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:03.860-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 11239.81,
+                                                    "DistanceFromCall": 8932.1,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504328",
+                                            "StopPointName": "METROPOLITAN AV/NURGE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:09.421-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:48.223-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 11518.37,
+                                                    "DistanceFromCall": 9210.66,
+                                                    "PresentableDistance": "5.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503834",
+                                            "StopPointName": "METROPOLITAN AV/FLUSHING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:33.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:07.089-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 11678.23,
+                                                    "DistanceFromCall": 9370.53,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504329",
+                                            "StopPointName": "METROPOLITAN AV/CHURCHILL FURN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:03.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:30.221-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 11877.69,
+                                                    "DistanceFromCall": 9569.99,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504449",
+                                            "StopPointName": "METROPOLITAN AV/WOODWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:50.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:11.393-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 12188.76,
+                                                    "DistanceFromCall": 9881.06,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308458",
+                                            "StopPointName": "METROPOLITAN AV/ONDERDONK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:26.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:39.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 12424.8,
+                                                    "DistanceFromCall": 10117.1,
+                                                    "PresentableDistance": "6.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304364",
+                                            "StopPointName": "METROPOLITAN AV/GARDNER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:00.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:05.830-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 12641.92,
+                                                    "DistanceFromCall": 10334.22,
+                                                    "PresentableDistance": "6.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307857",
+                                            "StopPointName": "METROPOLITAN AV/VARICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:03.422-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:02.270-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 13107.74,
+                                                    "DistanceFromCall": 10800.04,
+                                                    "PresentableDistance": "6.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304368",
+                                            "StopPointName": "GRAND ST/MORGAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:53.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:49.470-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 13472.06,
+                                                    "DistanceFromCall": 11164.36,
+                                                    "PresentableDistance": "6.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301856",
+                                            "StopPointName": "GRAND ST/OLIVE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:22.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:25.550-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 13684.46,
+                                                    "DistanceFromCall": 11376.76,
+                                                    "PresentableDistance": "7.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301857",
+                                            "StopPointName": "GRAND ST/BUSHWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:00.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:14.356-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 13964.35,
+                                                    "DistanceFromCall": 11656.65,
+                                                    "PresentableDistance": "7.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304373",
+                                            "StopPointName": "GRAND ST/GRAHAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.423-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:43.228-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 14368.44,
+                                                    "DistanceFromCall": 12060.74,
+                                                    "PresentableDistance": "7.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304376",
+                                            "StopPointName": "GRAND ST/LORIMER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:20.424-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:08.440-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 14511.72,
+                                                    "DistanceFromCall": 12204.02,
+                                                    "PresentableDistance": "7.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308271",
+                                            "StopPointName": "GRAND ST/UNION AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:56.424-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:03.080-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 14761.67,
+                                                    "DistanceFromCall": 12453.97,
+                                                    "PresentableDistance": "7.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307918",
+                                            "StopPointName": "BORINQUEN PL/S 1 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:48.424-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:56.644-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 15126.69,
+                                                    "DistanceFromCall": 12818.99,
+                                                    "PresentableDistance": "8.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302292",
+                                            "StopPointName": "MARCY AV/S 4 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:16.424-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:51.902-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 15320.73,
+                                                    "DistanceFromCall": 13013.03,
+                                                    "PresentableDistance": "8.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_302310",
+                                            "StopPointName": "BROADWAY/MARCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:00.425-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:14.302-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 54,
+                                                    "CallDistanceAlongRoute": 15628.43,
+                                                    "DistanceFromCall": 13320.73,
+                                                    "PresentableDistance": "8.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904153",
+                                            "StopPointName": "WASHINGTON PLZ/BAY 3"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:41.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q54",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-139600_B7_618"
+                                },
+                                "JourneyPatternRef": "MTA_Q54O0012",
+                                "PublishedLineName": "Q54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504384",
+                                "DestinationName": "WILLAMSBURG BRIDGE PLZ",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.960049,
+                                    "Latitude": 40.709576
+                                },
+                                "Bearing": 13.541107,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_FP_B1-Weekday-SDon_E_FP_77220_B7-618",
+                                "VehicleRef": "MTA NYCT_4447",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:00.382-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:01.294-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:01.294-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 15628.43,
+                                            "DistanceFromCall": 48.95,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_904153",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WASHINGTON PLZ/BAY 3"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:00.294-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 15628.43,
+                                                    "DistanceFromCall": 48.95,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904153",
+                                            "StopPointName": "WASHINGTON PLZ/BAY 3"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:27.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q54",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_FP_B1-Weekday-SDon-143800_Q54_751"
+                                },
+                                "JourneyPatternRef": "MTA_Q54O0251",
+                                "PublishedLineName": "Q54",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307916",
+                                "DestinationName": "JAMAICA 170 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.951627,
+                                    "Latitude": 40.710897
+                                },
+                                "Bearing": 5.671058,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_7288",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:13.337-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:12.101-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:12.101-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1005.5,
+                                            "DistanceFromCall": 79.21,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_308272",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "GRAND ST/UNION AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:13.338-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:12.101-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1005.5,
+                                                    "DistanceFromCall": 79.21,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308272",
+                                            "StopPointName": "GRAND ST/UNION AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.338-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:54.112-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1191.43,
+                                                    "DistanceFromCall": 265.13,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307860",
+                                            "StopPointName": "GRAND ST/LORIMER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.339-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:31.712-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1648.56,
+                                                    "DistanceFromCall": 722.27,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304244",
+                                            "StopPointName": "GRAND ST/GRAHAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:05.339-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:33.512-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1914.05,
+                                                    "DistanceFromCall": 987.76,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308503",
+                                            "StopPointName": "GRAND ST/BUSHWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:42.339-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:05.312-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2052.81,
+                                                    "DistanceFromCall": 1126.52,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304246",
+                                            "StopPointName": "GRAND ST/WATERBURY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:59.340-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:56.935-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2366.61,
+                                                    "DistanceFromCall": 1440.31,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304247",
+                                            "StopPointName": "GRAND ST/MORGAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.340-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:42.854-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2617.34,
+                                                    "DistanceFromCall": 1691.04,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304863",
+                                            "StopPointName": "GRAND ST/METRO BRIDGE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:16.340-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:42.195-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3001.41,
+                                                    "DistanceFromCall": 2075.11,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308218",
+                                            "StopPointName": "METROPOLITAN AV/STEWART AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:46.340-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:03.358-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3155.46,
+                                                    "DistanceFromCall": 2229.16,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_304249",
+                                            "StopPointName": "METROPOLITAN AV/GARDNER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:19.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:22.670-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3322.91,
+                                                    "DistanceFromCall": 2396.62,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505177",
+                                            "StopPointName": "METROPOLITAN AV/ONDERDONK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:20.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:03.950-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3631.29,
+                                                    "DistanceFromCall": 2704.99,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504251",
+                                            "StopPointName": "METROPOLITAN AV/WOODWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:54.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:30.324-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3807.64,
+                                                    "DistanceFromCall": 2881.34,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504252",
+                                            "StopPointName": "METROPOLITAN AV/FLUSHING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:58.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:20.948-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4129.65,
+                                                    "DistanceFromCall": 3203.36,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503707",
+                                            "StopPointName": "METROPOLITAN AV/STARR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:29.341-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:42.833-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4286.86,
+                                                    "DistanceFromCall": 3360.56,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504253",
+                                            "StopPointName": "METROPOLITAN AV/GRANDVIEW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:21.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:28.044-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4551.69,
+                                                    "DistanceFromCall": 3625.4,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504254",
+                                            "StopPointName": "METROPOLITAN AV/AMORY CT"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:23.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:28.978-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4863.71,
+                                                    "DistanceFromCall": 3937.41,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504256",
+                                            "StopPointName": "METROPOLITAN AV/FOREST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:01.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.781-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5059.67,
+                                                    "DistanceFromCall": 4133.38,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504257",
+                                            "StopPointName": "METROPOLITAN AV/60 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:27.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:39.981-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5189.19,
+                                                    "DistanceFromCall": 4262.89,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504258",
+                                            "StopPointName": "METROPOLITAN AV/61 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.342-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:16.421-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5359.56,
+                                                    "DistanceFromCall": 4433.27,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504259",
+                                            "StopPointName": "METROPOLITAN AV/FRESH POND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:40.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:45.835-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5568.8,
+                                                    "DistanceFromCall": 4642.51,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504448",
+                                            "StopPointName": "METROPOLITAN AV/ADMIRAL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:09.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:06.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5718.59,
+                                                    "DistanceFromCall": 4792.3,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504260",
+                                            "StopPointName": "METROPOLITAN AV/65 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:18.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:03.401-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6078.26,
+                                                    "DistanceFromCall": 5151.96,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503725",
+                                            "StopPointName": "METROPOLITAN AV/TOYS R US"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:40.852-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6294.69,
+                                                    "DistanceFromCall": 5368.4,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504261",
+                                            "StopPointName": "METROPOLITAN AV/ METRO AV EL STA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:44.343-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:36.450-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6531.47,
+                                                    "DistanceFromCall": 5605.17,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504262",
+                                            "StopPointName": "METROPOLITAN AV/69 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:13.344-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:59.065-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6689.39,
+                                                    "DistanceFromCall": 5763.09,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504263",
+                                            "StopPointName": "METROPOLITAN AV/71 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:49.344-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:28.006-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6889.22,
+                                                    "DistanceFromCall": 5962.93,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504264",
+                                            "StopPointName": "METROPOLITAN AV/PLEASANT VIEW ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:32.345-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:55.767-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7119.27,
+                                                    "DistanceFromCall": 6192.97,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504265",
+                                            "StopPointName": "METROPOLITAN AV/73 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:57.345-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:19.847-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7258.91,
+                                                    "DistanceFromCall": 6332.61,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504266",
+                                            "StopPointName": "METROPOLITAN AV/75 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:23.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:41.276-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7401.71,
+                                                    "DistanceFromCall": 6475.42,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504267",
+                                            "StopPointName": "METROPOLITAN AV/78 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:53.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:08.744-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7562.44,
+                                                    "DistanceFromCall": 6636.15,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504268",
+                                            "StopPointName": "METROPOLITAN AV/79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:28.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:40.743-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7752.39,
+                                                    "DistanceFromCall": 6826.09,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_551070",
+                                            "StopPointName": "80 ST/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:21.346-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:40.143-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8043.89,
+                                                    "DistanceFromCall": 7117.59,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_551110",
+                                            "StopPointName": "80 ST/68 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:26.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:15.812-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8399.2,
+                                                    "DistanceFromCall": 7472.9,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505203",
+                                            "StopPointName": "COOPER AV/ATLAS PARK MALL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:10.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:55.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8637.61,
+                                                    "DistanceFromCall": 7711.31,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505204",
+                                            "StopPointName": "COOPER AV/84 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:17.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:09.396-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9002.91,
+                                                    "DistanceFromCall": 8076.61,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504271",
+                                            "StopPointName": "METROPOLITAN AV/COOPER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:36.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:32.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9106.69,
+                                                    "DistanceFromCall": 8180.39,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_505069",
+                                            "StopPointName": "METROPOLITAN AV/AUBREY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.347-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:06.156-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9237.11,
+                                                    "DistanceFromCall": 8310.82,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504273",
+                                            "StopPointName": "METROPOLITAN AV/WOODHAVEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:25.348-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:40.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9413.92,
+                                                    "DistanceFromCall": 8487.62,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504274",
+                                            "StopPointName": "METROPOLITAN AV/SELFRIDGE ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:54.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:23.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 9624.94,
+                                                    "DistanceFromCall": 8698.65,
+                                                    "PresentableDistance": "5.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504275",
+                                            "StopPointName": "METROPOLITAN AV/69 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:18.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:57.524-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 9801.84,
+                                                    "DistanceFromCall": 8875.54,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504276",
+                                            "StopPointName": "METROPOLITAN AV/70 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:43.350-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:22.879-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 9983.89,
+                                                    "DistanceFromCall": 9057.59,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504277",
+                                            "StopPointName": "METROPOLITAN AV/71 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:14.351-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:51.483-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 10203.77,
+                                                    "DistanceFromCall": 9277.48,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504278",
+                                            "StopPointName": "METROPOLITAN AV/72 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:36.352-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:09.089-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 10361.91,
+                                                    "DistanceFromCall": 9435.61,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504279",
+                                            "StopPointName": "METROPOLITAN AV/72 DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:00.352-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:28.068-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 10537.4,
+                                                    "DistanceFromCall": 9611.1,
+                                                    "PresentableDistance": "6.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504280",
+                                            "StopPointName": "METROPOLITAN AV/UNION TP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:33.356-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:23.652-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 10991.94,
+                                                    "DistanceFromCall": 10065.64,
+                                                    "PresentableDistance": "6.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503882",
+                                            "StopPointName": "METROPOLITAN AV/FOREST PARK DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:08.357-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:08.493-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 11163.68,
+                                                    "DistanceFromCall": 10237.39,
+                                                    "PresentableDistance": "6.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504281",
+                                            "StopPointName": "METROPOLITAN AV/PARK LA S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:51.357-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:59.313-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 11376.78,
+                                                    "DistanceFromCall": 10450.48,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504282",
+                                            "StopPointName": "METROPOLITAN AV/118 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:50.359-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:45.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 11667.14,
+                                                    "DistanceFromCall": 10740.85,
+                                                    "PresentableDistance": "6.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504283",
+                                            "StopPointName": "METROPOLITAN AV/LEFFERTS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:27.359-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:17.092-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 11848.49,
+                                                    "DistanceFromCall": 10922.19,
+                                                    "PresentableDistance": "6.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504284",
+                                            "StopPointName": "METROPOLITAN AV/BREVOORT ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:55.360-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:34.511-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 11986.93,
+                                                    "DistanceFromCall": 11060.63,
+                                                    "PresentableDistance": "6.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504285",
+                                            "StopPointName": "METROPOLITAN AV/124 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:27.360-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:36:56.223-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 12143.36,
+                                                    "DistanceFromCall": 11217.06,
+                                                    "PresentableDistance": "7.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504518",
+                                            "StopPointName": "METROPOLITAN AV/125 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:21.361-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:40.987-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 12409.24,
+                                                    "DistanceFromCall": 11482.94,
+                                                    "PresentableDistance": "7.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504286",
+                                            "StopPointName": "METROPOLITAN AV/HILLSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:04.362-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:50.338-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 12620.44,
+                                                    "DistanceFromCall": 11694.14,
+                                                    "PresentableDistance": "7.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504288",
+                                            "StopPointName": "METROPOLITAN AV/132 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:28.362-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:19.538-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 12738.38,
+                                                    "DistanceFromCall": 11812.08,
+                                                    "PresentableDistance": "7.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503591",
+                                            "StopPointName": "132 ST/JAMAICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:05.363-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:15.338-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 54,
+                                                    "CallDistanceAlongRoute": 12921.21,
+                                                    "DistanceFromCall": 11994.91,
+                                                    "PresentableDistance": "7.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504289",
+                                            "StopPointName": "JAMAICA AV/134 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:28.363-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:38.968-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 55,
+                                                    "CallDistanceAlongRoute": 13033.93,
+                                                    "DistanceFromCall": 12107.64,
+                                                    "PresentableDistance": "7.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503402",
+                                            "StopPointName": "JAMAICA AV/VAN WYCK EP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:00.364-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:24.425-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 56,
+                                                    "CallDistanceAlongRoute": 13192.56,
+                                                    "DistanceFromCall": 12266.26,
+                                                    "PresentableDistance": "7.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503825",
+                                            "StopPointName": "JAMAICA AV/138 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:38.365-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:15.622-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 57,
+                                                    "CallDistanceAlongRoute": 13408.42,
+                                                    "DistanceFromCall": 12482.13,
+                                                    "PresentableDistance": "7.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503404",
+                                            "StopPointName": "JAMAICA AV/139 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:02.367-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:37.452-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 58,
+                                                    "CallDistanceAlongRoute": 13544.45,
+                                                    "DistanceFromCall": 12618.15,
+                                                    "PresentableDistance": "7.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504196",
+                                            "StopPointName": "JAMAICA AV/144 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:00.368-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:40.143-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 59,
+                                                    "CallDistanceAlongRoute": 13879.41,
+                                                    "DistanceFromCall": 12953.12,
+                                                    "PresentableDistance": "8.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503727",
+                                            "StopPointName": "JAMAICA AV/147 PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:38.370-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:00.543-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 60,
+                                                    "CallDistanceAlongRoute": 14085.73,
+                                                    "DistanceFromCall": 13159.43,
+                                                    "PresentableDistance": "8.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504984",
+                                            "StopPointName": "JAMAICA AV/150 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:47.370-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:00.313-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 61,
+                                                    "CallDistanceAlongRoute": 14461.21,
+                                                    "DistanceFromCall": 13534.92,
+                                                    "PresentableDistance": "8.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503200",
+                                            "StopPointName": "JAMAICA AV/PARSONS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:08.371-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:41.313-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 62,
+                                                    "CallDistanceAlongRoute": 14571.09,
+                                                    "DistanceFromCall": 13644.79,
+                                                    "PresentableDistance": "8.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_553036",
+                                            "StopPointName": "JAMAICA AV/160 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:45.371-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:29.895-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 63,
+                                                    "CallDistanceAlongRoute": 14775.34,
+                                                    "DistanceFromCall": 13849.04,
+                                                    "PresentableDistance": "8.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503938",
+                                            "StopPointName": "JAMAICA AV/GUY R BREWER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:47:32.374-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:48:36.487-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 64,
+                                                    "CallDistanceAlongRoute": 15029.24,
+                                                    "DistanceFromCall": 14102.95,
+                                                    "PresentableDistance": "8.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503614",
+                                            "StopPointName": "JAMAICA AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:10.375-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:49:19.100-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 65,
+                                                    "CallDistanceAlongRoute": 15233.77,
+                                                    "DistanceFromCall": 14307.47,
+                                                    "PresentableDistance": "8.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503283",
+                                            "StopPointName": "JAMAICA AV/168 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:49:00.376-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:50:03.659-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 66,
+                                                    "CallDistanceAlongRoute": 15504.52,
+                                                    "DistanceFromCall": 14578.23,
+                                                    "PresentableDistance": "9.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_501422",
+                                            "StopPointName": "170 ST/JAMAICA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:55.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:00.294-04:00",
+                    "ValidUntil": "2021-06-23T00:05:00.294-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

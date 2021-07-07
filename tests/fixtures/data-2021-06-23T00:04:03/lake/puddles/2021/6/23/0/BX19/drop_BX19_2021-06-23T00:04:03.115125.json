@@ -1,0 +1,2190 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.711-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-138800_BX19_340"
+                                },
+                                "JourneyPatternRef": "MTA_BX190014",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803195",
+                                "DestinationName": "BRONX PARK via 149 ST via SOUTHERN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.885581,
+                                    "Latitude": 40.843071
+                                },
+                                "Bearing": 78.38742,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_58500_BX19-343",
+                                "VehicleRef": "MTA NYCT_1018",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:55:00.729-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.711-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.711-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8837.0
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 17
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101335",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/E TREMONT AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:55:00.734-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.711-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8837.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101335",
+                                            "StopPointName": "SOUTHERN BL/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:56:16.734-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:44.097-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 328.72,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 9165.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101337",
+                                            "StopPointName": "SOUTHERN BL/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:09.734-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:07.897-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 562.17,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9399.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100561",
+                                            "StopPointName": "SOUTHERN BL/BRONX PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:40.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:15.297-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 957.9,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9794.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100562",
+                                            "StopPointName": "SOUTHERN BL/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:33.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:03.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1190.24,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 10027.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100563",
+                                            "StopPointName": "SOUTHERN BL/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:57.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:34.382-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1553.45,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10390.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100564",
+                                            "StopPointName": "SOUTHERN BL/E 189 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:24.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2089.51,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 10926.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902030",
+                                            "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:43.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-142000_BX19_347"
+                                },
+                                "JourneyPatternRef": "MTA_BX190152",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103640",
+                                "DestinationName": "RIVERBANK PK via SOUTHERN BL via 149 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.899719,
+                                    "Latitude": 40.81337
+                                },
+                                "Bearing": 195.63432,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_5964",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:59.805-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.711-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.711-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 5.93,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5804.29
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101365",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/LEGGETT AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:59.810-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.711-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 5.93,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5804.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101365",
+                                            "StopPointName": "SOUTHERN BL/LEGGETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:21.810-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:11.995-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 142.23,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5940.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104242",
+                                            "StopPointName": "SOUTHERN BL/AV ST. JOHN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.811-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:55.774-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 376.85,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6175.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101366",
+                                            "StopPointName": "E 149 ST/SOUTHERN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:26.811-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:49.374-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 489.27,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6287.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101367",
+                                            "StopPointName": "E 149 ST/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:47.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:24.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 578.76,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6377.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101368",
+                                            "StopPointName": "E 149 ST/TINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:36.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:35.960-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5 stops away",
+                                                    "DistanceFromCall": 788.6,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6586.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101369",
+                                            "StopPointName": "E 149 ST/CONCORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:16.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:47.006-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 956.3,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 6754.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101370",
+                                            "StopPointName": "E 149 ST/TRINITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:16.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:32.816-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1213.33,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7011.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103723",
+                                            "StopPointName": "E 149 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.813-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:09.289-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1402.39,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7200.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101372",
+                                            "StopPointName": "E 149 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:17.814-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:13.889-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1667.61,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7465.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104233",
+                                            "StopPointName": "E 149 ST/MELROSE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:43.814-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:20.689-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1823.41,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 7621.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101374",
+                                            "StopPointName": "E 149 ST/COURTLANDT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:09.815-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:30.730-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2104.23,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7902.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101375",
+                                            "StopPointName": "E 149 ST/MORRIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:54.815-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:26.015-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2465.67,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 8264.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101377",
+                                            "StopPointName": "E 149 ST/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:45.816-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:10.949-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2642.89,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 8441.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101378",
+                                            "StopPointName": "E 149 ST/GERARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:52.817-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:02.749-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3291.09,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 9089.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403689",
+                                            "StopPointName": "W 145 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.817-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:17.749-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3528.44,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 9326.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403690",
+                                            "StopPointName": "W 145 ST/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:21.818-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:46.749-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3808.63,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9607.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403691",
+                                            "StopPointName": "W 145 ST/FRED DOUGLASS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:40.818-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:39.749-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4079.48,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9877.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403693",
+                                            "StopPointName": "W 145 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:23.819-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:42.129-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4225.52,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 10023.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403694",
+                                            "StopPointName": "W 145 ST/CONVENT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.820-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:13.529-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4354.76,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 10153.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403695",
+                                            "StopPointName": "W 145 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.820-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:38.729-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4624.56,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 10422.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403696",
+                                            "StopPointName": "W 145 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:34.820-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:42.565-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4759.42,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10557.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403950",
+                                            "StopPointName": "W 145 ST/RIVERSIDE DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.821-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:11.043-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5096.02,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10894.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803194",
+                                            "StopPointName": "RIVERBANK/STATE PARK"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-142400_BX19_343"
+                                },
+                                "JourneyPatternRef": "MTA_BX190014",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803195",
+                                "DestinationName": "BRONX PARK via 149 ST via SOUTHERN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.907539,
+                                    "Latitude": 40.812901
+                                },
+                                "Bearing": 348.07925,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_5895",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:08:28.750-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.711-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.711-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 36.23,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4515.04
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101316",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 149 ST/WALES AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:28.756-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.711-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 36.23,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4515.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101316",
+                                            "StopPointName": "E 149 ST/WALES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.756-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:48.637-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 344.59,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4823.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101318",
+                                            "StopPointName": "SOUTHERN BL/E 149 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.756-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:50.493-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 582.83,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5061.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104099",
+                                            "StopPointName": "SOUTHERN BL/AV SAINT JOHN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:51.756-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:30.918-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 787.23,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5266.04
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101319",
+                                            "StopPointName": "SOUTHERN BL/LEGGETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:41.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:14.252-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 986.25,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5465.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101320",
+                                            "StopPointName": "SOUTHERN BL/E 156 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:31.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:00.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1185.85,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5664.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101321",
+                                            "StopPointName": "SOUTHERN BL/LONGWOOD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:42.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:26.867-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1469.01,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5947.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101322",
+                                            "StopPointName": "SOUTHERN BL/TIFFANY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:29.098-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1779.43,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 6258.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103507",
+                                            "StopPointName": "SOUTHERN BL/HUNTS POINT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:01.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:54.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2039.35,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6518.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101324",
+                                            "StopPointName": "SOUTHERN BL/ALDUS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:38.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:33.341-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2192.14,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6670.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101359",
+                                            "StopPointName": "SOUTHERN BL/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:21.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:44.341-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2629.04,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 7107.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101327",
+                                            "StopPointName": "SOUTHERN BL/HOME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:16.941-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2795.46,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7274.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101328",
+                                            "StopPointName": "SOUTHERN BL/FREEMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:04.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:08.031-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3074.04,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7552.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101329",
+                                            "StopPointName": "SOUTHERN BL/JENNINGS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:51.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:42.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3275.89,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7754.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101330",
+                                            "StopPointName": "SOUTHERN BL/E 172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:37.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:15.251-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3477.6,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7956.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101331",
+                                            "StopPointName": "SOUTHERN BL/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:23.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:04.642-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3675.15,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 8153.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101332",
+                                            "StopPointName": "SOUTHERN BL/BOSTON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:01.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:30.812-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4103.39,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 8582.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103611",
+                                            "StopPointName": "SOUTHERN BL/E 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:00.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:40.187-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4358.19,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 8837.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101335",
+                                            "StopPointName": "SOUTHERN BL/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:16.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:24.823-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4686.91,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9165.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101337",
+                                            "StopPointName": "SOUTHERN BL/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:09.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:48.623-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4920.37,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 9399.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100561",
+                                            "StopPointName": "SOUTHERN BL/BRONX PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:40.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:56.023-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5316.09,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 9794.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100562",
+                                            "StopPointName": "SOUTHERN BL/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:33.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:36.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5548.44,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10027.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100563",
+                                            "StopPointName": "SOUTHERN BL/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:57.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:07.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5911.64,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10390.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100564",
+                                            "StopPointName": "SOUTHERN BL/E 189 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:00.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:57.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6447.71,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10926.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902030",
+                                            "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:27.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-140000_BX19_341"
+                                },
+                                "JourneyPatternRef": "MTA_BX190014",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803195",
+                                "DestinationName": "BRONX PARK via 149 ST via SOUTHERN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.88534,
+                                    "Latitude": 40.844302
+                                },
+                                "Bearing": 80.27242,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_19020_BX19-307",
+                                "VehicleRef": "MTA NYCT_5937",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:07:16.764-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:31.578-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:31.578-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 190.31,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9165.72
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101337",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/E 180 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:16.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:31.578-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 190.31,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9165.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101337",
+                                            "StopPointName": "SOUTHERN BL/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:09.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:55.378-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 423.76,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 9399.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100561",
+                                            "StopPointName": "SOUTHERN BL/BRONX PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:40.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:02.778-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 819.49,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9794.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100562",
+                                            "StopPointName": "SOUTHERN BL/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:33.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.338-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1051.84,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 10027.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100563",
+                                            "StopPointName": "SOUTHERN BL/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:57.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:14.138-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1415.04,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 10390.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100564",
+                                            "StopPointName": "SOUTHERN BL/E 189 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.773-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:04.338-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1951.11,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10926.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902030",
+                                            "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:31.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-143500_BX19_348"
+                                },
+                                "JourneyPatternRef": "MTA_BX190152",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103640",
+                                "DestinationName": "RIVERBANK PK via SOUTHERN BL via 149 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.882701,
+                                    "Latitude": 40.849796
+                                },
+                                "Bearing": 255.96376,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_24060_BX19-321",
+                                "VehicleRef": "MTA NYCT_5841",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:52.780-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:22.258-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:22.258-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 209.32,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1549.66
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100643",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/E 182 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:52.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:22.258-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 209.32,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1549.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100643",
+                                            "StopPointName": "SOUTHERN BL/E 182 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:04.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:21.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 442.85,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1783.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101347",
+                                            "StopPointName": "SOUTHERN BL/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:06.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:10.342-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 641.89,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1982.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101348",
+                                            "StopPointName": "SOUTHERN BL/E 179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:13.290-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 816.89,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2157.23
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103917",
+                                            "StopPointName": "SOUTHERN BL/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:12.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:38.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1123.0,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2463.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103612",
+                                            "StopPointName": "SOUTHERN BL/E 176 St"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:30.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:56.027-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1452.31,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2792.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101352",
+                                            "StopPointName": "SOUTHERN BL/E 174 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:18.781-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:18.827-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1656.56,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2996.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101353",
+                                            "StopPointName": "SOUTHERN BL/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:05.782-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:05.027-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1859.87,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 3200.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101354",
+                                            "StopPointName": "SOUTHERN BL/E 172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:52.782-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:44.565-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2058.63,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3398.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101355",
+                                            "StopPointName": "SOUTHERN BL/JENNINGS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.782-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:36.092-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2346.47,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3686.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101356",
+                                            "StopPointName": "SOUTHERN BL/FREEMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:38.782-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:08.092-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2509.95,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3850.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101357",
+                                            "StopPointName": "SOUTHERN BL/HOME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:22.782-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:39.536-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2702.01,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 4042.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101358",
+                                            "StopPointName": "SOUTHERN BL/E 167 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:28.783-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:53.462-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2983.65,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4323.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100273",
+                                            "StopPointName": "SOUTHERN BL/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:07.783-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:35.869-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3150.91,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4491.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101360",
+                                            "StopPointName": "SOUTHERN BL/ALDUS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.783-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:33.869-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3381.6,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4721.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104221",
+                                            "StopPointName": "SOUTHERN BL/E 163 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:55.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:57.669-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3712.69,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 5053.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101362",
+                                            "StopPointName": "SOUTHERN BL/TIFFANY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:51.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:54.047-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4051.56,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 5391.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101363",
+                                            "StopPointName": "SOUTHERN BL/LONGWOOD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:22.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:30.078-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4244.52,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5584.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101364",
+                                            "StopPointName": "SOUTHERN BL/E 156 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:59.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:21.404-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4463.96,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5804.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101365",
+                                            "StopPointName": "SOUTHERN BL/LEGGETT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:21.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:41.012-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4600.25,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5940.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104242",
+                                            "StopPointName": "SOUTHERN BL/AV ST. JOHN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.784-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:24.791-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4834.88,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 6175.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101366",
+                                            "StopPointName": "E 149 ST/SOUTHERN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:26.785-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:18.391-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4947.3,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6287.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101367",
+                                            "StopPointName": "E 149 ST/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:47.785-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:53.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 5036.79,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6377.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101368",
+                                            "StopPointName": "E 149 ST/TINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:36.785-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:04.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5246.63,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6586.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101369",
+                                            "StopPointName": "E 149 ST/CONCORD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:16.785-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:16.023-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5414.33,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6754.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101370",
+                                            "StopPointName": "E 149 ST/TRINITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:16.785-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:01.833-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5671.36,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 7011.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103723",
+                                            "StopPointName": "E 149 ST/ST ANNS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.786-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:38.306-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5860.42,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7200.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101372",
+                                            "StopPointName": "E 149 ST/BROOK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:17.786-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:42.906-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6125.64,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7465.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104233",
+                                            "StopPointName": "E 149 ST/MELROSE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:43.786-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:49.706-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6281.44,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7621.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101374",
+                                            "StopPointName": "E 149 ST/COURTLANDT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:09.786-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:59.747-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6562.26,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7902.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101375",
+                                            "StopPointName": "E 149 ST/MORRIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:54.786-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:55.032-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6923.7,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 8264.03
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101377",
+                                            "StopPointName": "E 149 ST/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:45.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:39.966-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.4 miles away",
+                                                    "DistanceFromCall": 7100.92,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8441.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101378",
+                                            "StopPointName": "E 149 ST/GERARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:52.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:31.766-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.8 miles away",
+                                                    "DistanceFromCall": 7749.11,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 9089.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403689",
+                                            "StopPointName": "W 145 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:00.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:38:46.766-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.0 miles away",
+                                                    "DistanceFromCall": 7986.46,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 9326.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403690",
+                                            "StopPointName": "W 145 ST/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:21.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:15.766-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8266.66,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9607.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403691",
+                                            "StopPointName": "W 145 ST/FRED DOUGLASS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:40.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:08.766-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8537.51,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9877.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403693",
+                                            "StopPointName": "W 145 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:23.787-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:11.146-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8683.55,
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 10023.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403694",
+                                            "StopPointName": "W 145 ST/CONVENT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:00.788-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:42.546-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8812.78,
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 10153.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403695",
+                                            "StopPointName": "W 145 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:00.788-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:07.746-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.6 miles away",
+                                                    "DistanceFromCall": 9082.59,
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 10422.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403696",
+                                            "StopPointName": "W 145 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:34.788-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:11.582-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9217.45,
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10557.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403950",
+                                            "StopPointName": "W 145 ST/RIVERSIDE DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:00.788-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:40.060-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.9 miles away",
+                                                    "DistanceFromCall": 9554.05,
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10894.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803194",
+                                            "StopPointName": "RIVERBANK/STATE PARK"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:28.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-141200_BX19_342"
+                                },
+                                "JourneyPatternRef": "MTA_BX190014",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803195",
+                                "DestinationName": "BRONX PARK via 149 ST via SOUTHERN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.895422,
+                                    "Latitude": 40.817072
+                                },
+                                "Bearing": 44.344685,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_21660_BX19-313",
+                                "VehicleRef": "MTA NYCT_5350",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:29.792-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:54.070-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:54.070-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 214.93,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5947.82
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101322",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/TIFFANY ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:29.798-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:54.070-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 214.93,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5947.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101322",
+                                            "StopPointName": "SOUTHERN BL/TIFFANY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.798-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:58.901-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 525.34,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6258.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103507",
+                                            "StopPointName": "SOUTHERN BL/HUNTS POINT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:01.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:24.301-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 785.26,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6518.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101324",
+                                            "StopPointName": "SOUTHERN BL/ALDUS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:38.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:03.144-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 938.05,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6670.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101359",
+                                            "StopPointName": "SOUTHERN BL/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:21.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:14.144-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1374.95,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 7107.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101327",
+                                            "StopPointName": "SOUTHERN BL/HOME ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:46.744-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1541.37,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7274.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101328",
+                                            "StopPointName": "SOUTHERN BL/FREEMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:04.799-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:37.834-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1819.95,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7552.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101329",
+                                            "StopPointName": "SOUTHERN BL/JENNINGS ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:51.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:12.132-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2021.8,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7754.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101330",
+                                            "StopPointName": "SOUTHERN BL/E 172 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:37.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:45.054-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2223.51,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7956.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101331",
+                                            "StopPointName": "SOUTHERN BL/E 173 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:23.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:34.445-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2421.06,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 8153.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101332",
+                                            "StopPointName": "SOUTHERN BL/BOSTON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:01.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:00.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2849.3,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 8582.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103611",
+                                            "StopPointName": "SOUTHERN BL/E 176 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.800-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:09.990-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3104.11,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 8837.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101335",
+                                            "StopPointName": "SOUTHERN BL/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:16.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:54.626-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3432.83,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 9165.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101337",
+                                            "StopPointName": "SOUTHERN BL/E 180 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:09.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:18.426-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3666.28,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 9399.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100561",
+                                            "StopPointName": "SOUTHERN BL/BRONX PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:40.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:25.826-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4062.0,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 9794.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100562",
+                                            "StopPointName": "SOUTHERN BL/E 183 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:33.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:06.386-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4294.35,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 10027.25
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100563",
+                                            "StopPointName": "SOUTHERN BL/E 187 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:57.801-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:37.186-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4657.56,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 10390.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100564",
+                                            "StopPointName": "SOUTHERN BL/E 189 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:00.802-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:27.386-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5193.62,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 10926.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902030",
+                                            "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:47.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-140500_BX19_346"
+                                },
+                                "JourneyPatternRef": "MTA_BX190152",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103640",
+                                "DestinationName": "RIVERBANK PK via SOUTHERN BL via 149 ST",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.930989,
+                                    "Latitude": 40.819417
+                                },
+                                "Bearing": 176.42366,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_WF_B1-Weekday-SDon_E_WF_54180_BX19-348",
+                                "VehicleRef": "MTA NYCT_5359",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:36.718-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:06:01.210-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:06:01.210-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 483.3,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9089.45
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403689",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "W 145 ST/MALCOLM X BL"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:36.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:01.210-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 483.3,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9089.45
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403689",
+                                            "StopPointName": "W 145 ST/MALCOLM X BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.724-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:19.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 720.65,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 9326.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403690",
+                                            "StopPointName": "W 145 ST/ADAM C POWELL BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:21.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:48.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1000.85,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9607.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403691",
+                                            "StopPointName": "W 145 ST/FRED DOUGLASS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:40.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:41.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1271.7,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9877.85
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403693",
+                                            "StopPointName": "W 145 ST/ST NICHOLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:23.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:43.790-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1417.74,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 10023.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403694",
+                                            "StopPointName": "W 145 ST/CONVENT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:15.190-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1546.97,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10153.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403695",
+                                            "StopPointName": "W 145 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.725-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:40.390-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1816.78,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 10422.93
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403696",
+                                            "StopPointName": "W 145 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:34.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:44.226-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1951.64,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10557.78
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403950",
+                                            "StopPointName": "W 145 ST/RIVERSIDE DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.726-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:12.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2288.24,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 10894.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803194",
+                                            "StopPointName": "RIVERBANK/STATE PARK"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:47.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX19",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_WF_B1-Weekday-SDon-138800_BX19_340"
+                                },
+                                "JourneyPatternRef": "MTA_BX190014",
+                                "PublishedLineName": "Bx19",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803195",
+                                "DestinationName": "BRONX PARK via 149 ST via SOUTHERN",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.880731,
+                                    "Latitude": 40.856575
+                                },
+                                "Bearing": 92.04541,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_1059",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:00.738-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:36.004-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:36.004-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 518.63,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 10926.52
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_902030",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.745-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:36.004-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 518.63,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 10926.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_902030",
+                                            "StopPointName": "SOUTHERN BL/BOTANICAL GARDENS"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:56.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.711-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.711-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

@@ -88,3 +88,6 @@ venv.bak/
 *.gz
 /data
 /routemap
+
+# tests
+.pytest_cache

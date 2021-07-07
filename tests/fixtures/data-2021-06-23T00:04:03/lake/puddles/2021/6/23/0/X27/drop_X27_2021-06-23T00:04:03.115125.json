@@ -1,0 +1,300 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:04:01.500-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_X27",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_UP_B1-Weekday-SDon-140000_B36_428"
+                                },
+                                "JourneyPatternRef": "MTA_X271249",
+                                "PublishedLineName": "X27",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_402227",
+                                "DestinationName": "BAY RIDGE SHORE RD via BROADWAY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.026284,
+                                    "Latitude": 40.635786
+                                },
+                                "Bearing": 162.61302,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_UP_B1-Weekday-SDon_E_UP_79200_B36-428",
+                                "VehicleRef": "MTA NYCT_2408",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:44.515-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:02.500-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:02.500-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 23.79,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 17979.69
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_300064",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "BAY RIDGE AV/3 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:44.520-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:01.500-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 23.79,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 17979.69
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300064",
+                                            "StopPointName": "BAY RIDGE AV/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:42.521-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:06.367-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 488.54,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 18444.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_300066",
+                                            "StopPointName": "BAY RIDGE AV/COLONIAL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:37.522-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:33.967-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 927.54,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 18883.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308088",
+                                            "StopPointName": "SHORE RD/BAY RIDGE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:17.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:07.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1241.71,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 19197.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308089",
+                                            "StopPointName": "SHORE RD/72 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:53.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:38.624-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1532.43,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 19488.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308090",
+                                            "StopPointName": "SHORE RD/BAY RIDGE PKY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:09.479-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1815.63,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 19771.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308091",
+                                            "StopPointName": "SHORE RD/79 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:25.523-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:51.606-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2262.74,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 20218.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_308092",
+                                            "StopPointName": "SHORE RD/83 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:14.524-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:51.747-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2656.17,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 20612.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301714",
+                                            "StopPointName": "SHORE RD/88 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:58.524-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:37.042-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3011.12,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 20967.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301716",
+                                            "StopPointName": "SHORE RD/91 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:32.524-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:08.242-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3280.02,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 21235.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301717",
+                                            "StopPointName": "SHORE RD/OLIVER ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:02.525-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:38.419-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3518.66,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 21474.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301718",
+                                            "StopPointName": "SHORE RD/RIDGE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:31.525-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:04.790-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3754.0,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 21709.89
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301719",
+                                            "StopPointName": "SHORE RD/97 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:52.525-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:22.140-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3918.42,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 21874.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301720",
+                                            "StopPointName": "SHORE RD/99 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:12.525-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:51.340-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4078.63,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 22034.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301721",
+                                            "StopPointName": "3 AV/SHORE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:45.526-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:53.055-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4340.75,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 22296.64
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301722",
+                                            "StopPointName": "3 AV/MARINE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:09.526-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:23.455-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4531.44,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 22487.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301723",
+                                            "StopPointName": "MARINE AV/4 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.526-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:59.255-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4941.44,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 22897.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901024",
+                                            "StopPointName": "4TH AV/SHORE RD"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:38.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:04:01.500-04:00",
+                    "ValidUntil": "2021-06-23T00:05:01.500-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

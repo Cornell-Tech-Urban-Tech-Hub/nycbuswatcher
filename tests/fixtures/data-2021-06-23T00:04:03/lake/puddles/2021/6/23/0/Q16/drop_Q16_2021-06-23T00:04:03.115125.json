@@ -1,0 +1,140 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.088-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q16",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CS_B1-Weekday-SDon-141500_MISC_533"
+                                },
+                                "JourneyPatternRef": "MTA_Q160046",
+                                "PublishedLineName": "Q16",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504445",
+                                "DestinationName": "FLUSHING MAIN ST STATION via UTOPIA",
+                                "OriginAimedDepartureTime": "2021-06-23T00:11:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.828232,
+                                    "Latitude": 40.760744
+                                },
+                                "Bearing": 13.884667,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_CS_B1-Weekday-SDon_E_CS_78600_MISC-533",
+                                "VehicleRef": "MTA NYCT_4698",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:54:00.098-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:06.188-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:06.188-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7666.7,
+                                            "DistanceFromCall": 74.89,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_804050",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "39 AV/UNION ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:54:00.127-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:06.188-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7666.7,
+                                                    "DistanceFromCall": 74.89,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_804050",
+                                            "StopPointName": "39 AV/UNION ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q16",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CS_B1-Weekday-SDon-141700_MISC_538"
+                                },
+                                "JourneyPatternRef": "MTA_Q160036",
+                                "PublishedLineName": "Q16",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504477",
+                                "DestinationName": "FORT TOTTEN via FRANCIS LEWIS",
+                                "OriginAimedDepartureTime": "2021-06-23T00:08:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.781603,
+                                    "Latitude": 40.790743
+                                },
+                                "Bearing": 61.630955,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_CS_B1-Weekday-SDon_E_CS_80400_MISC-538",
+                                "VehicleRef": "MTA NYCT_4573",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:59:00.134-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:05:18.125-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:05:18.125-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 7643.26,
+                                            "DistanceFromCall": 89.06,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_904021",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "TOTTEN AV /CROSS ISLAND PKY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:00.175-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:18.125-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 7643.26,
+                                                    "DistanceFromCall": 89.06,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_904021",
+                                            "StopPointName": "TOTTEN AV /CROSS ISLAND PKY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:37.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.088-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.088-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

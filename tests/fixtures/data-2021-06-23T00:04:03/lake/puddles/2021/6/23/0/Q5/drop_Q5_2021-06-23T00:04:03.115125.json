@@ -1,0 +1,1286 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:56.726-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-140900_MISC_870"
+                                },
+                                "JourneyPatternRef": "MTA_Q050053",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504463",
+                                "DestinationName": "JAMAICA PARSONS-ARCHER via MERRICK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.803021,
+                                    "Latitude": 40.701339
+                                },
+                                "Bearing": 16.848366,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_81060_MISC-870",
+                                "VehicleRef": "MTA NYCT_7546",
+                                "OnwardCalls": {}
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:27.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-142600_Q5_215"
+                                },
+                                "JourneyPatternRef": "MTA_Q050035",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504467",
+                                "DestinationName": "ROSEDALE LIRR via MERRICK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.762049,
+                                    "Latitude": 40.679885
+                                },
+                                "Bearing": 335.17947,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_79860_Q5-215",
+                                "VehicleRef": "MTA NYCT_7760",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:00.739-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.726-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.726-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 4781.57
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_500547",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MERRICK BL/130 RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.751-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 4781.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500547",
+                                            "StopPointName": "MERRICK BL/130 RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.751-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:08.699-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 257.23,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5038.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500548",
+                                            "StopPointName": "MERRICK BL/BELKNAP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:47.752-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:41.784-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 457.67,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5239.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500549",
+                                            "StopPointName": "MERRICK BL/MONTAUK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:21.753-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:02.099-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 605.14,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5386.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500550",
+                                            "StopPointName": "MERRICK BL/PINEVILLE LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.753-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:29.191-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4 stops away",
+                                                    "DistanceFromCall": 770.34,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5551.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500551",
+                                            "StopPointName": "MERRICK BL/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:02.753-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:44.549-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 994.93,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 5776.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500552",
+                                            "StopPointName": "MERRICK BL/218 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:58.753-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:23.330-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1196.04,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5977.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500553",
+                                            "StopPointName": "MERRICK BL/220 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:55.754-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:53.596-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1403.89,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 6185.46
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500554",
+                                            "StopPointName": "MERRICK BL/222 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:31.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:16.461-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1532.48,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6314.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500555",
+                                            "StopPointName": "MERRICK BL/224 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:13.758-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:49.391-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1686.84,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 6468.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500556",
+                                            "StopPointName": "MERRICK BL/226 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:59.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:46.501-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1851.75,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 6633.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500557",
+                                            "StopPointName": "MERRICK BL/228 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:43.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:30.249-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2011.99,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6793.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503564",
+                                            "StopPointName": "MERRICK BL/230 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:29.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:00.379-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2176.24,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6957.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500559",
+                                            "StopPointName": "MERRICK BL/231 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:34.206-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2289.95,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 7071.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500560",
+                                            "StopPointName": "MERRICK BL/233 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:31.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:21.000-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2476.61,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 7258.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500561",
+                                            "StopPointName": "MERRICK BL/LAURELTON PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:11.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:58.335-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2722.49,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 7504.06
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500562",
+                                            "StopPointName": "MERRICK BL/241 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:33.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:19.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2854.04,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7635.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500563",
+                                            "StopPointName": "MERRICK BL/243 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:18.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:19.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3126.77,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7908.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500564",
+                                            "StopPointName": "MERRICK BL/HOOK CREEK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:59.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:09.550-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3379.69,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 8161.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500565",
+                                            "StopPointName": "HOOK CREEK BL/133 DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:40.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:35.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3623.79,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 8405.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500566",
+                                            "StopPointName": "HOOK CREEK BL/135 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:06.765-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:52.801-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3785.33,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8566.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500567",
+                                            "StopPointName": "HOOK CREEK BL/136 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.765-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:36.836-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4113.99,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8895.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500568",
+                                            "StopPointName": "HOOK CREEK BL/SUNRISE HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:40.767-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:26.013-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4482.82,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 9264.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504091",
+                                            "StopPointName": "SUNRISE HWY/Opp 24502 S CONDUIT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.767-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:54.013-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4663.05,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 9444.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_804062",
+                                            "StopPointName": "FRANCIS LEWIS BL/SUNRISE HY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:51.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-140200_MISC_868"
+                                },
+                                "JourneyPatternRef": "MTA_Q050036",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504467",
+                                "DestinationName": "GREEN ACRES via MERRICK",
+                                "OriginAimedDepartureTime": "2021-06-23T00:10:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.721417,
+                                    "Latitude": 40.661377
+                                },
+                                "Bearing": 165.96376,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_77880_MISC-868",
+                                "VehicleRef": "MTA NYCT_8433",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:00.795-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.726-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.726-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 0.0,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 11229.94
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_804053",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "WEST CIRCLE DR /PARKING STRUCTURE (ARRIVE)"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:00.820-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 0.0,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 11229.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_804053",
+                                            "StopPointName": "WEST CIRCLE DR /PARKING STRUCTURE (ARRIVE)"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-141300_MISC_872"
+                                },
+                                "JourneyPatternRef": "MTA_Q050035",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504467",
+                                "DestinationName": "ROSEDALE LIRR via MERRICK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.728627,
+                                    "Latitude": 40.66998
+                                },
+                                "Bearing": 250.57086,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_79260_MISC-872",
+                                "VehicleRef": "MTA NYCT_8065",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:40.770-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.726-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.726-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 5.95,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8405.36
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_500566",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HOOK CREEK BL/135 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:40.789-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 5.95,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8405.36
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500566",
+                                            "StopPointName": "HOOK CREEK BL/135 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:06.790-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 167.5,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8566.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500567",
+                                            "StopPointName": "HOOK CREEK BL/136 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.790-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:28.115-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 496.16,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8895.56
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500568",
+                                            "StopPointName": "HOOK CREEK BL/SUNRISE HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:40.790-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:17.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 864.99,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 9264.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504091",
+                                            "StopPointName": "SUNRISE HWY/Opp 24502 S CONDUIT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.791-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:45.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1045.21,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9444.62
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_804062",
+                                            "StopPointName": "FRANCIS LEWIS BL/SUNRISE HY"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:26.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-142000_MISC_875"
+                                },
+                                "JourneyPatternRef": "MTA_Q050038",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_503105",
+                                "DestinationName": "JAMAICA PARSONS-ARCHER via MERRICK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.787267,
+                                    "Latitude": 40.698732
+                                },
+                                "Bearing": 141.95296,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_75840_MISC-875",
+                                "VehicleRef": "MTA NYCT_8467",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:48.827-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:57.726-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:57.726-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 126.54,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8274.19
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 7
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_500431",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MERRICK BL/107 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:48.857-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:56.726-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 126.54,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8274.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500431",
+                                            "StopPointName": "MERRICK BL/107 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:18.858-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:04.249-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 286.65,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 8434.31
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500607",
+                                            "StopPointName": "MERRICK BL/105 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:33.010-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 506.42,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 8654.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500433",
+                                            "StopPointName": "MERRICK BL/LIBERTY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:41.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:09.762-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 680.54,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 8828.2
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500340",
+                                            "StopPointName": "168 ST/DOUGLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:47.860-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:51.098-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 959.34,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 9107.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503622",
+                                            "StopPointName": "ARCHER AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.861-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:47.268-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1521.66,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 9669.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503172",
+                                            "StopPointName": "ARCHER AV/PARSONS BL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:30.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_Q5",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_JA_B1-Weekday-SDon-143900_MISC_866"
+                                },
+                                "JourneyPatternRef": "MTA_Q050053",
+                                "PublishedLineName": "Q5",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_504463",
+                                "DestinationName": "JAMAICA PARSONS-ARCHER via MERRICK",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.733512,
+                                    "Latitude": 40.673595
+                                },
+                                "Bearing": 48.814075,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_JA_B1-Weekday-SDon_E_JA_72000_MISC-866",
+                                "VehicleRef": "MTA NYCT_8430",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:34.898-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:51.236-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:51.236-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 175.98,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1128.19
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_500576",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "MERRICK BL/LAURELTON PY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:34.901-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:51.236-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 175.98,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1128.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500576",
+                                            "StopPointName": "MERRICK BL/LAURELTON PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.902-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:17.105-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 312.92,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1265.13
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_553021",
+                                            "StopPointName": "MERRICK BL/233 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:43.902-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:48.460-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 525.3,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1477.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500578",
+                                            "StopPointName": "MERRICK BL/231 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:18.902-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:15.761-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 695.72,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1647.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500579",
+                                            "StopPointName": "MERRICK BL/230 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:50.903-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:36.888-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 853.96,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1806.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500580",
+                                            "StopPointName": "MERRICK BL/228 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:23.903-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:55.838-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1013.67,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1965.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500581",
+                                            "StopPointName": "MERRICK BL/226 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:54.904-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:13.496-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1169.33,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2121.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500582",
+                                            "StopPointName": "MERRICK BL/224 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:27.904-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:32.141-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1328.12,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2280.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500583",
+                                            "StopPointName": "MERRICK BL/222 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:59.905-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:50.609-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1486.96,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2439.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500584",
+                                            "StopPointName": "MERRICK BL/220 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.905-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:10.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1634.47,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2586.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500585",
+                                            "StopPointName": "MERRICK BL/218 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.906-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:37.039-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1786.59,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2738.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500586",
+                                            "StopPointName": "MERRICK BL/SPRINGFIELD BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:20.906-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:59.802-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1883.27,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2835.48
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500587",
+                                            "StopPointName": "MERRICK BL/RIDGEDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:55.907-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:27.720-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2049.29,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3001.5
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500588",
+                                            "StopPointName": "MERRICK BL/PINEVILLE LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:25.907-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:02.553-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2190.04,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3142.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500589",
+                                            "StopPointName": "MERRICK BL/MONTAUK ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:21.908-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:45.103-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2457.17,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3409.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500590",
+                                            "StopPointName": "MERRICK BL/BELKNAP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.909-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:20.520-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2643.98,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3596.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500591",
+                                            "StopPointName": "MERRICK BL/FARMERS BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:32.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:49.472-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2863.89,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 3816.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500592",
+                                            "StopPointName": "MERRICK BL/ZOLLER RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:48.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:03.823-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2969.87,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 3922.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500593",
+                                            "StopPointName": "MERRICK BL/SELOVER RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:18.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:46.346-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3170.05,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4122.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500594",
+                                            "StopPointName": "MERRICK BL/URSINA RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:30.224-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3458.45,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4410.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500507",
+                                            "StopPointName": "MERRICK BL/BAISLEY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:42.913-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:02.674-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3720.19,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4672.4
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500508",
+                                            "StopPointName": "MERRICK BL/VICTORIA RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:27.914-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:34.375-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 4008.05,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 4960.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500509",
+                                            "StopPointName": "MERRICK BL/FOCH BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.916-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:58.197-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4211.7,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5163.91
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500510",
+                                            "StopPointName": "MERRICK BL/116 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:34.917-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:27.986-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4429.79,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5381.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500511",
+                                            "StopPointName": "MERRICK BL/115 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.920-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:54.249-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4590.84,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 5543.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500512",
+                                            "StopPointName": "MERRICK BL/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:34.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:37.139-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4817.23,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 5769.44
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500426",
+                                            "StopPointName": "MERRICK BL/SAYRES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:55.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:51.979-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4953.97,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 5906.17
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_504462",
+                                            "StopPointName": "MERRICK BL/111 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:34.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:21.241-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5214.07,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 6166.28
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500428",
+                                            "StopPointName": "MERRICK BL/110 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:52.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:35.376-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.3 miles away",
+                                                    "DistanceFromCall": 5331.55,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 6283.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500429",
+                                            "StopPointName": "MERRICK BL/109 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:33.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:04.982-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.5 miles away",
+                                                    "DistanceFromCall": 5601.3,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 6553.51
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500430",
+                                            "StopPointName": "MERRICK BL/108 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:03.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:27.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5796.38,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 6748.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500431",
+                                            "StopPointName": "MERRICK BL/107 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:27.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:44.940-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5956.5,
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 6908.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500607",
+                                            "StopPointName": "MERRICK BL/105 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:11.901-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.8 miles away",
+                                                    "DistanceFromCall": 6176.26,
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 7128.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500433",
+                                            "StopPointName": "MERRICK BL/LIBERTY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:41.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:48.653-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6350.39,
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 7302.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_500340",
+                                            "StopPointName": "168 ST/DOUGLAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:47.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:29.989-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6629.19,
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 7581.39
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503622",
+                                            "StopPointName": "ARCHER AV/165 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.925-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:26.159-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7191.5,
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 8143.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_503172",
+                                            "StopPointName": "ARCHER AV/PARSONS BL"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:54.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:56.726-04:00",
+                    "ValidUntil": "2021-06-23T00:04:56.726-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

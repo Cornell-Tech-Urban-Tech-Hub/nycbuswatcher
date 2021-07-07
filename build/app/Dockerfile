@@ -1,6 +1,5 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
 
-
 # RUN apt-get update -y; apt-get upgrade -y; apt-get install -y default-libmysqlclient-dev python-dev gcc python3-pip
 RUN apt-get update -y; apt-get upgrade -y; apt-get install -y python3-pip
 

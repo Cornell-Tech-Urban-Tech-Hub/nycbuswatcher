@@ -1,0 +1,1056 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:59.792-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX10",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-138000_BX10_733"
+                                },
+                                "JourneyPatternRef": "MTA_BX100010",
+                                "PublishedLineName": "Bx10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_100607",
+                                "DestinationName": "NORWOOD 205 ST STA",
+                                "OriginAimedDepartureTime": "2021-06-23T00:00:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.879491,
+                                    "Latitude": 40.875193
+                                },
+                                "Bearing": 277.3524,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_51120_BX10-729",
+                                "VehicleRef": "MTA NYCT_8683",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:38:00.859-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.792-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.792-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 14.14,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 11682.52
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_102030",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "BAINBRIDGE AV/E 206 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:38:00.880-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 14.14,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 11682.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102030",
+                                            "StopPointName": "BAINBRIDGE AV/E 206 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:38.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX10",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-144000_BX10_732"
+                                },
+                                "JourneyPatternRef": "MTA_BX100010",
+                                "PublishedLineName": "Bx10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_100607",
+                                "DestinationName": "NORWOOD 205 ST STA",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.908792,
+                                    "Latitude": 40.890156
+                                },
+                                "Bearing": 250.55997,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_45840_BX10-707",
+                                "VehicleRef": "MTA NYCT_8560",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:12.842-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.792-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.792-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 64.13,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 2609.98
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100700",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HENRY HUDSON PKY W/W 239 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:12.845-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 64.13,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 2609.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100700",
+                                            "StopPointName": "HENRY HUDSON PKY W/W 239 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:11.845-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:46.998-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 406.34,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 2952.19
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100701",
+                                            "StopPointName": "HENRY HUDSON PKY W/W 237 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:34.845-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:23.255-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 535.47,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 3081.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100702",
+                                            "StopPointName": "HENRY HUDSON PKY W/W 236 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:35.845-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:35.843-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 889.83,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 3435.68
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100703",
+                                            "StopPointName": "HENRY HUDSON PKY W/W 232 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:17.846-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:17.535-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1134.09,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 3679.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103607",
+                                            "StopPointName": "HENRY HUDSON PKY/2735 HENRY HUDSON PKY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:37.846-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:40.041-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1252.42,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 3798.27
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100704",
+                                            "StopPointName": "HENRY HUDSON PKY W/W 227 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:10.846-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:14.111-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1444.2,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 3990.05
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100705",
+                                            "StopPointName": "HENRY HUDSON PKY W/INDEPENDENCE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:11.847-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:35.274-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1794.41,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 4340.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100706",
+                                            "StopPointName": "KAPPOCK ST/KNOLLS CRES"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:48.847-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:10.796-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2011.81,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 4557.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100707",
+                                            "StopPointName": "KAPPOCK ST/JOHNSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:24.847-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:15.924-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2564.25,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5110.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103916",
+                                            "StopPointName": "IRWIN AV/JOHNSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:26.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:27.689-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2924.86,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5470.71
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100082",
+                                            "StopPointName": "W 231 ST/RIVERDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:59.689-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3123.03,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 5668.88
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102995",
+                                            "StopPointName": "W 231 ST/CORLEAR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:30.115-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.1 miles away",
+                                                    "DistanceFromCall": 3414.96,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 5960.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100084",
+                                            "StopPointName": "W 231 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:26.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:24.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3582.09,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 6127.94
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100085",
+                                            "StopPointName": "W 231 ST/BAILEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:09.848-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:02.922-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3851.25,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6397.1
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103960",
+                                            "StopPointName": "BAILEY AV/W 233 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:32.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:09.693-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4382.26,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6928.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103961",
+                                            "StopPointName": "BAILEY AV/W 238 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:20.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:04.331-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4683.05,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 7228.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103966",
+                                            "StopPointName": "BAILEY AV/VAN CORTLANDT PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:46.072-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.1 miles away",
+                                                    "DistanceFromCall": 4940.27,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 7486.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103962",
+                                            "StopPointName": "VAN CORTLANDT AV W/ORLOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:33.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:16.022-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.2 miles away",
+                                                    "DistanceFromCall": 5116.1,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 7661.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103954",
+                                            "StopPointName": "SEDGWICK AV/STEVENSON PL 2"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:29.849-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:14.063-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.4 miles away",
+                                                    "DistanceFromCall": 5413.11,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 7958.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103595",
+                                            "StopPointName": "SEDGWICK AV/DICKINSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:52.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:10.808-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5858.31,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 8404.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103671",
+                                            "StopPointName": "PAUL AV/W MOSHOLU PY S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:32.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:15.084-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6387.81,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 8933.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103400",
+                                            "StopPointName": "PAUL AV/W 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:21.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:56.856-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6652.88,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 9198.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100080",
+                                            "StopPointName": "PAUL AV/BEDFORD PK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:04.850-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:44.261-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.3 miles away",
+                                                    "DistanceFromCall": 6880.37,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 9426.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104085",
+                                            "StopPointName": "BEDFORD PK/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:00.851-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:21.461-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.5 miles away",
+                                                    "DistanceFromCall": 7179.48,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 9725.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100726",
+                                            "StopPointName": "JEROME AV/E 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:20.851-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:27.261-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.9 miles away",
+                                                    "DistanceFromCall": 7833.74,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 10379.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100727",
+                                            "StopPointName": "JEROME AV/E MOSHOLU PY N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:41.851-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:55.531-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.1 miles away",
+                                                    "DistanceFromCall": 8206.96,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 10752.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104227",
+                                            "StopPointName": "E GUN HILL RD/DEKALB AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:42.852-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:52.026-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.3 miles away",
+                                                    "DistanceFromCall": 8494.69,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 11040.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100729",
+                                            "StopPointName": "BAINBRIDGE AV/E GUN HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:17.853-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:33.495-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.4 miles away",
+                                                    "DistanceFromCall": 8655.44,
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 11201.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100730",
+                                            "StopPointName": "BAINBRIDGE AV/E 210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:12.853-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:16.858-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.5 miles away",
+                                                    "DistanceFromCall": 8910.45,
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 11456.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100731",
+                                            "StopPointName": "BAINBRIDGE AV/VAN CORTLANDT AV E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:00.854-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:06.204-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "5.7 miles away",
+                                                    "DistanceFromCall": 9136.67,
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 11682.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102030",
+                                            "StopPointName": "BAINBRIDGE AV/E 206 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:45.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX10",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-141000_BX10_731"
+                                },
+                                "JourneyPatternRef": "MTA_BX100008",
+                                "PublishedLineName": "Bx10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_103620",
+                                "DestinationName": "RIVERDALE 263 ST",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_277083"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.908604,
+                                    "Latitude": 40.889069
+                                },
+                                "Bearing": 19.440035,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_23400_BX10-711",
+                                "VehicleRef": "MTA NYCT_8569",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:33.819-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.792-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.792-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 78.57,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9130.9
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 2
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100071",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HENRY HUDSON PKY E/W 239 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:33.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 78.57,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9130.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100071",
+                                            "StopPointName": "HENRY HUDSON PKY E/W 239 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:46.113-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 570.99,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 9623.32
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100459",
+                                            "StopPointName": "HENRY HUDSON PKY E/W 246 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:59.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:27.423-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 993.34,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 10045.67
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100460",
+                                            "StopPointName": "HENRY HUDSON PKY E/W 250 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:27.834-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:49.602-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1188.28,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 10240.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100461",
+                                            "StopPointName": "HENRY HUDSON PKY E/W 252 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:13.835-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:29.240-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1518.57,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 10570.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100462",
+                                            "StopPointName": "RIVERDALE AV/W 254 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:51.835-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:03.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1792.85,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10845.18
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100463",
+                                            "StopPointName": "RIVERDALE AV/W 256 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:37.835-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:01.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2116.67,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 11169.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100464",
+                                            "StopPointName": "RIVERDALE AV/W 259 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:02.836-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:30.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2294.14,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 11346.47
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100465",
+                                            "StopPointName": "RIVERDALE AV/W 260 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:29.836-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:01.464-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2486.65,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 11538.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100466",
+                                            "StopPointName": "RIVERDALE AV/W 261 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.836-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:32.464-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2710.1,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 11762.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100606",
+                                            "StopPointName": "RIVERDALE AV/W 263 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:30.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX10",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_KB_B1-Weekday-SDon-142000_BX10_734"
+                                },
+                                "JourneyPatternRef": "MTA_BX100010",
+                                "PublishedLineName": "Bx10",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_100607",
+                                "DestinationName": "NORWOOD 205 ST STA",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.898843,
+                                    "Latitude": 40.883092
+                                },
+                                "Bearing": 51.581944,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_KB_B1-Weekday-SDon_E_KB_26400_BX10-719",
+                                "VehicleRef": "MTA NYCT_4376",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:10.802-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:00.792-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:00.792-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 142.96,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6928.11
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_103961",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "BAILEY AV/W 238 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:10.807-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:59.792-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 142.96,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6928.11
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103961",
+                                            "StopPointName": "BAILEY AV/W 238 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:09.807-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:50.945-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 443.75,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 7228.9
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103966",
+                                            "StopPointName": "BAILEY AV/VAN CORTLANDT PK S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:00.807-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:34.886-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 700.97,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 7486.12
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103962",
+                                            "StopPointName": "VAN CORTLANDT AV W/ORLOFF AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:33.808-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:04.836-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 876.8,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 7661.95
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103954",
+                                            "StopPointName": "SEDGWICK AV/STEVENSON PL 2"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:29.808-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:02.877-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1173.81,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 7958.96
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103595",
+                                            "StopPointName": "SEDGWICK AV/DICKINSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:52.808-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:59.622-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1619.01,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 8404.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103671",
+                                            "StopPointName": "PAUL AV/W MOSHOLU PY S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:32.808-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:03.898-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.3 miles away",
+                                                    "DistanceFromCall": 2148.51,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 8933.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103400",
+                                            "StopPointName": "PAUL AV/W 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:21.809-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:45.670-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2413.58,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 9198.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100080",
+                                            "StopPointName": "PAUL AV/BEDFORD PK BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:04.809-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:33.075-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2641.07,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 9426.22
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104085",
+                                            "StopPointName": "BEDFORD PK/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.809-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:10.275-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.8 miles away",
+                                                    "DistanceFromCall": 2940.19,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 9725.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100726",
+                                            "StopPointName": "JEROME AV/E 205 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:20.809-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:16.075-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3594.44,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 10379.59
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100727",
+                                            "StopPointName": "JEROME AV/E MOSHOLU PY N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:41.810-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:44.345-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.5 miles away",
+                                                    "DistanceFromCall": 3967.66,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 10752.81
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104227",
+                                            "StopPointName": "E GUN HILL RD/DEKALB AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:42.810-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:40.840-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4255.39,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11040.54
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100729",
+                                            "StopPointName": "BAINBRIDGE AV/E GUN HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:17.811-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:22.309-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4416.14,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 11201.29
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100730",
+                                            "StopPointName": "BAINBRIDGE AV/E 210 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:12.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:05.672-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.9 miles away",
+                                                    "DistanceFromCall": 4671.15,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 11456.3
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100731",
+                                            "StopPointName": "BAINBRIDGE AV/VAN CORTLANDT AV E"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.812-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:55.018-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.0 miles away",
+                                                    "DistanceFromCall": 4897.37,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 11682.52
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102030",
+                                            "StopPointName": "BAINBRIDGE AV/E 206 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:35.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:59.792-04:00",
+                    "ValidUntil": "2021-06-23T00:04:59.792-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2021-04-21T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-31T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Northbound Bx10 stop on East Gun Hill Rd at Bainbridge Ave is closed because of construction",
+                                "Description": "Until further notice Northbound Bx10 stop on East Gun Hill Rd at Bainbridge Ave is closed because of construction   Please use stops on Bainbridge Ave at East 210th St or on East Gun Hill Rd at Dekalb Ave.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_BX10",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2021-04-21T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_277083"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

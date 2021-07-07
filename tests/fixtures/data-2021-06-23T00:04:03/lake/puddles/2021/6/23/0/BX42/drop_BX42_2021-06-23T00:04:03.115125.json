@@ -1,0 +1,2106 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.378-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX42",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-140900_BX402_52"
+                                },
+                                "JourneyPatternRef": "MTA_BX420023",
+                                "PublishedLineName": "Bx42",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803087",
+                                "DestinationName": "RIVER PARK TOWER via TREMONT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.881334,
+                                    "Latitude": 40.840565
+                                },
+                                "Bearing": 156.37062,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_18600_BX402-10",
+                                "VehicleRef": "MTA NYCT_5482",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:01:37.477-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:16.878-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:16.878-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 9395.77,
+                                            "DistanceFromCall": 51.69,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_102529",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E TREMONT AV/BRYANT AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:37.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:16.878-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 9395.77,
+                                                    "DistanceFromCall": 51.69,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102529",
+                                            "StopPointName": "E TREMONT AV/BRYANT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:00.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:00.579-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 9731.16,
+                                                    "DistanceFromCall": 387.07,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102692",
+                                            "StopPointName": "E TREMONT AV/CROTONA PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:07.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:03.979-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 9933.51,
+                                                    "DistanceFromCall": 589.43,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102693",
+                                            "StopPointName": "E TREMONT AV/MARMION AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:18.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:31.379-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 10151.36,
+                                                    "DistanceFromCall": 807.28,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102532",
+                                            "StopPointName": "E TREMONT AV/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:29.494-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:40.989-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 10364.74,
+                                                    "DistanceFromCall": 1020.66,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102533",
+                                            "StopPointName": "E TREMONT AV/CROTONA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:39.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:08.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 10579.3,
+                                                    "DistanceFromCall": 1235.21,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102534",
+                                            "StopPointName": "E TREMONT AV/ARTHUR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:18.926-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 10823.11,
+                                                    "DistanceFromCall": 1479.03,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103446",
+                                            "StopPointName": "E TREMONT AV/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:52.495-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:18.188-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 10981.59,
+                                                    "DistanceFromCall": 1637.51,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102536",
+                                            "StopPointName": "E TREMONT AV/WASHINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.496-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:32.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 11187.8,
+                                                    "DistanceFromCall": 1843.72,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102538",
+                                            "StopPointName": "E TREMONT AV/WEBSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:55.496-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:45.812-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 11342.93,
+                                                    "DistanceFromCall": 1998.85,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102986",
+                                            "StopPointName": "VALENTINE AV/E 178 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:35.497-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:24.542-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 11629.72,
+                                                    "DistanceFromCall": 2285.64,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103505",
+                                            "StopPointName": "E BURNSIDE AV/RYER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:42.497-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:14.781-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 11818.73,
+                                                    "DistanceFromCall": 2474.65,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104010",
+                                            "StopPointName": "E BURNSIDE AV/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:04.497-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:55.684-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 11882.42,
+                                                    "DistanceFromCall": 2538.34,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102702",
+                                            "StopPointName": "E BURNSIDE AV/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:09.497-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:53.414-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 12066.41,
+                                                    "DistanceFromCall": 2722.33,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102703",
+                                            "StopPointName": "E BURNSIDE AV/MORRIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:00.498-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:48.053-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 12210.37,
+                                                    "DistanceFromCall": 2866.29,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103525",
+                                            "StopPointName": "W BURNSIDE AV/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:56.498-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:12.610-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 12414.63,
+                                                    "DistanceFromCall": 3070.55,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103526",
+                                            "StopPointName": "W BURNSIDE AV/GRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:46.498-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:35.132-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 12596.51,
+                                                    "DistanceFromCall": 3252.43,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103490",
+                                            "StopPointName": "UNIVERSITY AV/W 179 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:30.499-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:20.539-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 12755.78,
+                                                    "DistanceFromCall": 3411.69,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103982",
+                                            "StopPointName": "W BURNSIDE AV/UNIVERSITY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:20.499-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:10.712-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 12937.64,
+                                                    "DistanceFromCall": 3593.56,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103528",
+                                            "StopPointName": "W BURNSIDE AV/LORING PL S"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:02.499-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:57.233-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 13091.85,
+                                                    "DistanceFromCall": 3747.77,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103529",
+                                            "StopPointName": "W BURNSIDE AV/SEDGWICK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:15.499-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:13.425-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 13361.1,
+                                                    "DistanceFromCall": 4017.02,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103654",
+                                            "StopPointName": "SEDGWICK AV/W TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:00.500-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:55.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 13523.44,
+                                                    "DistanceFromCall": 4179.36,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104009",
+                                            "StopPointName": "SEDGWICK AV/CEDAR AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX42",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144000_BX402_47"
+                                },
+                                "JourneyPatternRef": "MTA_BX420032",
+                                "PublishedLineName": "Bx42",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104011",
+                                "DestinationName": "THROGGS NECK HARDING AV via TREMONT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.912579,
+                                    "Latitude": 40.853761
+                                },
+                                "Bearing": 358.1817,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_25440_BX402-25",
+                                "VehicleRef": "MTA NYCT_5568",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:17.390-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:41.857-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:41.857-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1243.89,
+                                            "DistanceFromCall": 164.05,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_100155",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "UNIVERSITY AV/W BURNSIDE AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:17.392-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:41.857-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1243.89,
+                                                    "DistanceFromCall": 164.05,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100155",
+                                            "StopPointName": "UNIVERSITY AV/W BURNSIDE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:08.392-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:45.773-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1444.14,
+                                                    "DistanceFromCall": 364.3,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102546",
+                                            "StopPointName": "W BURNSIDE AV/GRAND AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:00.392-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:57.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1650.31,
+                                                    "DistanceFromCall": 570.47,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102547",
+                                            "StopPointName": "E BURNSIDE AV/JEROME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:54.392-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:57.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1808.07,
+                                                    "DistanceFromCall": 728.23,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102548",
+                                            "StopPointName": "E BURNSIDE AV/MORRIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:34.392-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:29.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1924.58,
+                                                    "DistanceFromCall": 844.74,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802178",
+                                            "StopPointName": "E BURNSIDE AV/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:06.393-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:37.340-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2017.73,
+                                                    "DistanceFromCall": 937.89,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102549",
+                                            "StopPointName": "E BURNSIDE AV/GRAND CONCOURSE"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:39.393-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:45.357-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2292.09,
+                                                    "DistanceFromCall": 1212.25,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102487",
+                                            "StopPointName": "E BURNSIDE AV/VALENTINE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:34.393-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:31.660-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2452.25,
+                                                    "DistanceFromCall": 1372.41,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104520",
+                                            "StopPointName": "VALENTINE AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.394-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:31.126-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2705.35,
+                                                    "DistanceFromCall": 1625.51,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102489",
+                                            "StopPointName": "E TREMONT AV/WEBSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:16.394-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:35.342-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2953.35,
+                                                    "DistanceFromCall": 1873.51,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102491",
+                                            "StopPointName": "E TREMONT AV/WASHINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:07.394-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:35.902-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3119.84,
+                                                    "DistanceFromCall": 2040.0,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102492",
+                                            "StopPointName": "E TREMONT AV/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:34.395-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:11.543-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3402.39,
+                                                    "DistanceFromCall": 2322.55,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102493",
+                                            "StopPointName": "E TREMONT AV/ARTHUR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:27.395-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:32.255-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3575.13,
+                                                    "DistanceFromCall": 2495.29,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102494",
+                                            "StopPointName": "E TREMONT AV/CROTONA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:32.395-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:52.575-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3786.1,
+                                                    "DistanceFromCall": 2706.26,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102495",
+                                            "StopPointName": "E TREMONT AV/PROSPECT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:49.768-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4072.33,
+                                                    "DistanceFromCall": 2992.49,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102496",
+                                            "StopPointName": "E TREMONT AV/SOUTHERN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:18.396-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:38.684-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4412.21,
+                                                    "DistanceFromCall": 3332.37,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102498",
+                                            "StopPointName": "E TREMONT AV/VYSE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:12.100-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4593.35,
+                                                    "DistanceFromCall": 3513.51,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102499",
+                                            "StopPointName": "E TREMONT AV/BOSTON RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:45.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:55.187-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4799.83,
+                                                    "DistanceFromCall": 3719.99,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103930",
+                                            "StopPointName": "E TREMONT AV/E 177 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:32.397-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:55.546-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5012.76,
+                                                    "DistanceFromCall": 3932.92,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101413",
+                                            "StopPointName": "E TREMONT AV/BRONX PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:14.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:30.970-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5203.04,
+                                                    "DistanceFromCall": 4123.2,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102566",
+                                            "StopPointName": "E TREMONT AV/MORRIS PK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:27.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:56.758-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5533.84,
+                                                    "DistanceFromCall": 4454.0,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104103",
+                                            "StopPointName": "E TREMONT AV/BRONX RIVER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:41.398-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:09.314-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5596.39,
+                                                    "DistanceFromCall": 4516.55,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102568",
+                                            "StopPointName": "E TREMONT AV/COMMONWEALTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:38.399-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:01.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5856.15,
+                                                    "DistanceFromCall": 4776.31,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104104",
+                                            "StopPointName": "E TREMONT AV/THIERIOT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:23.400-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:00.104-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6061.3,
+                                                    "DistanceFromCall": 4981.46,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102571",
+                                            "StopPointName": "E TREMONT AV/UNIONPORT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:07.401-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:06.948-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6262.92,
+                                                    "DistanceFromCall": 5183.08,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102572",
+                                            "StopPointName": "E TREMONT AV/DOGWOOD DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.402-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:15.430-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6774.52,
+                                                    "DistanceFromCall": 5694.68,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102574",
+                                            "StopPointName": "E TREMONT AV/PURDY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:49.402-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:14.430-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 6937.86,
+                                                    "DistanceFromCall": 5858.03,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102575",
+                                            "StopPointName": "E TREMONT AV/CASTLE HILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:18.403-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:34:43.467-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7237.08,
+                                                    "DistanceFromCall": 6157.24,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102577",
+                                            "StopPointName": "E TREMONT AV/ST PETERS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:33:08.403-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:13.477-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7402.38,
+                                                    "DistanceFromCall": 6322.54,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102578",
+                                            "StopPointName": "E TREMONT AV/OVERING ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:11.404-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:51.277-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7613.32,
+                                                    "DistanceFromCall": 6533.49,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102579",
+                                            "StopPointName": "E TREMONT AV/ST RAYMONDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:36:00.404-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:37:27.077-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7980.12,
+                                                    "DistanceFromCall": 6900.28,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103683",
+                                            "StopPointName": "E TREMONT AV/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:16.405-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:20.728-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 8443.71,
+                                                    "DistanceFromCall": 7363.87,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102582",
+                                            "StopPointName": "E TREMONT AV/ERICSON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:37:50.406-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:52.728-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 8650.28,
+                                                    "DistanceFromCall": 7570.44,
+                                                    "PresentableDistance": "4.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102583",
+                                            "StopPointName": "E TREMONT AV/LATTING ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:39.406-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:34.678-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 8949.23,
+                                                    "DistanceFromCall": 7869.39,
+                                                    "PresentableDistance": "4.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102584",
+                                            "StopPointName": "E TREMONT AV/WATERBURY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:15.408-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:24.753-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 9168.9,
+                                                    "DistanceFromCall": 8089.06,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102585",
+                                            "StopPointName": "E TREMONT AV/PURITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:37.408-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:45.429-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 9305.3,
+                                                    "DistanceFromCall": 8225.46,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102586",
+                                            "StopPointName": "E TREMONT AV/BAISLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:13.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:33.594-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 36,
+                                                    "CallDistanceAlongRoute": 9524.77,
+                                                    "DistanceFromCall": 8444.93,
+                                                    "PresentableDistance": "5.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102587",
+                                            "StopPointName": "E TREMONT AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:07.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:33.410-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 37,
+                                                    "CallDistanceAlongRoute": 9853.18,
+                                                    "DistanceFromCall": 8773.34,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102588",
+                                            "StopPointName": "E TREMONT AV/BARKLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:31.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:56.758-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 38,
+                                                    "CallDistanceAlongRoute": 9996.98,
+                                                    "DistanceFromCall": 8917.14,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102589",
+                                            "StopPointName": "E TREMONT AV/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:12.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:41.758-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 39,
+                                                    "CallDistanceAlongRoute": 10247.91,
+                                                    "DistanceFromCall": 9168.07,
+                                                    "PresentableDistance": "5.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102590",
+                                            "StopPointName": "E TREMONT AV/PHILIP AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:00.409-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:37.158-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 40,
+                                                    "CallDistanceAlongRoute": 10542.72,
+                                                    "DistanceFromCall": 9462.88,
+                                                    "PresentableDistance": "5.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102613",
+                                            "StopPointName": "RANDALL AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:00.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:46:24.866-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 41,
+                                                    "CallDistanceAlongRoute": 10872.44,
+                                                    "DistanceFromCall": 9792.6,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102614",
+                                            "StopPointName": "RANDALL AV/CROSS BRONX  EP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:56.410-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:15.853-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 42,
+                                                    "CallDistanceAlongRoute": 11175.04,
+                                                    "DistanceFromCall": 10095.2,
+                                                    "PresentableDistance": "6.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102615",
+                                            "StopPointName": "BALCOM AV/RANDALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:45:27.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:39.729-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 43,
+                                                    "CallDistanceAlongRoute": 11344.56,
+                                                    "DistanceFromCall": 10264.72,
+                                                    "PresentableDistance": "6.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102616",
+                                            "StopPointName": "BALCOM AV/SCHLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:05.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:48:09.735-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 44,
+                                                    "CallDistanceAlongRoute": 11555.42,
+                                                    "DistanceFromCall": 10475.58,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102617",
+                                            "StopPointName": "DEWEY AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:40.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:48:40.735-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 45,
+                                                    "CallDistanceAlongRoute": 11749.08,
+                                                    "DistanceFromCall": 10669.24,
+                                                    "PresentableDistance": "6.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102618",
+                                            "StopPointName": "DEWEY AV/SWINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:47:00.411-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:48:55.167-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 46,
+                                                    "CallDistanceAlongRoute": 11855.91,
+                                                    "DistanceFromCall": 10776.07,
+                                                    "PresentableDistance": "6.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102619",
+                                            "StopPointName": "DEWEY AV/QUINCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:06.412-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:50:04.835-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 47,
+                                                    "CallDistanceAlongRoute": 12273.76,
+                                                    "DistanceFromCall": 11193.92,
+                                                    "PresentableDistance": "7.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103228",
+                                            "StopPointName": "E TREMONT AV/SAMPSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:39.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:50:51.349-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 48,
+                                                    "CallDistanceAlongRoute": 12478.42,
+                                                    "DistanceFromCall": 11398.58,
+                                                    "PresentableDistance": "7.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103229",
+                                            "StopPointName": "E TREMONT AV/MILES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:49:39.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:51:59.011-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 49,
+                                                    "CallDistanceAlongRoute": 12859.05,
+                                                    "DistanceFromCall": 11779.21,
+                                                    "PresentableDistance": "7.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104243",
+                                            "StopPointName": "HARDING AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:50:05.414-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:52:19.542-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 50,
+                                                    "CallDistanceAlongRoute": 13023.9,
+                                                    "DistanceFromCall": 11944.06,
+                                                    "PresentableDistance": "7.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102622",
+                                            "StopPointName": "HARDING AV/CALHOUN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:51:00.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:53:05.835-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 51,
+                                                    "CallDistanceAlongRoute": 13370.92,
+                                                    "DistanceFromCall": 12291.08,
+                                                    "PresentableDistance": "7.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102624",
+                                            "StopPointName": "HARDING AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:51:33.415-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:53:36.954-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 52,
+                                                    "CallDistanceAlongRoute": 13638.93,
+                                                    "DistanceFromCall": 12559.09,
+                                                    "PresentableDistance": "7.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803085",
+                                            "StopPointName": "HARDING AV/DAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:52:00.416-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:54:09.229-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 53,
+                                                    "CallDistanceAlongRoute": 13854.85,
+                                                    "DistanceFromCall": 12775.01,
+                                                    "PresentableDistance": "7.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803086",
+                                            "StopPointName": "HARDING AV/EMERSON AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:52.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX42",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144400_BX402_44"
+                                },
+                                "JourneyPatternRef": "MTA_BX420121",
+                                "PublishedLineName": "Bx42",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_803087",
+                                "DestinationName": "WESTCHESTER SQ",
+                                "OriginAimedDepartureTime": "2021-06-23T00:04:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.826618,
+                                    "Latitude": 40.813151
+                                },
+                                "Bearing": 19.611237,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_52980_BX402-45",
+                                "VehicleRef": "MTA NYCT_1202",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:28.424-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.378-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.378-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 236.1,
+                                            "DistanceFromCall": 193.94,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_803088",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "HARDING AV/DAVIS AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:28.425-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.378-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 236.1,
+                                                    "DistanceFromCall": 193.94,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803088",
+                                            "StopPointName": "HARDING AV/DAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.425-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:09.158-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 505.49,
+                                                    "DistanceFromCall": 463.32,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102653",
+                                            "StopPointName": "HARDING AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:26.425-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:27.323-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 668.58,
+                                                    "DistanceFromCall": 626.42,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102654",
+                                            "StopPointName": "HARDING AV/BRINSMADE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:01.425-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:51.599-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 887.04,
+                                                    "DistanceFromCall": 844.88,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102655",
+                                            "StopPointName": "HARDING AV/CALHOUN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:29.426-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.142-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1065.31,
+                                                    "DistanceFromCall": 1023.15,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103544",
+                                            "StopPointName": "E TREMONT AV/HARDING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:18.426-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:18.591-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1371.33,
+                                                    "DistanceFromCall": 1329.17,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102658",
+                                            "StopPointName": "E TREMONT AV/MILES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:45.426-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:40.203-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 1544.39,
+                                                    "DistanceFromCall": 1502.22,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102659",
+                                            "StopPointName": "E TREMONT AV/SAMPSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.426-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:01.208-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2017.31,
+                                                    "DistanceFromCall": 1975.14,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102645",
+                                            "StopPointName": "DEWEY AV/CALHOUN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:18.427-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:13.808-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2120.69,
+                                                    "DistanceFromCall": 2078.52,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_150045",
+                                            "StopPointName": "DEWEY AV/SWINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:57.427-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:46.008-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2342.22,
+                                                    "DistanceFromCall": 2300.06,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102647",
+                                            "StopPointName": "DEWEY AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:34.427-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:19.198-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 2555.09,
+                                                    "DistanceFromCall": 2512.93,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102648",
+                                            "StopPointName": "BALCOM AV/SCHLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:05.427-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:44.904-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 2735.13,
+                                                    "DistanceFromCall": 2692.96,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102649",
+                                            "StopPointName": "BALCOM AV/RANDALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:52.427-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:29.329-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3005.97,
+                                                    "DistanceFromCall": 2963.81,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104114",
+                                            "StopPointName": "RANDALL AV/CROSS BX EXP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.428-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:56.351-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 3398.41,
+                                                    "DistanceFromCall": 3356.25,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102662",
+                                            "StopPointName": "E TREMONT AV/RANDALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:47.428-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:33.961-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 3643.32,
+                                                    "DistanceFromCall": 3601.16,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104107",
+                                            "StopPointName": "E TREMONT AV/PHILLIP AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:35.428-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:08.761-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 3891.35,
+                                                    "DistanceFromCall": 3849.19,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102664",
+                                            "StopPointName": "E TREMONT AV/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.429-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:32.854-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4025.32,
+                                                    "DistanceFromCall": 3983.16,
+                                                    "PresentableDistance": "2.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104063",
+                                            "StopPointName": "E TREMONT AV/BARKLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:49.430-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:23.497-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4280.17,
+                                                    "DistanceFromCall": 4238.0,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102666",
+                                            "StopPointName": "E TREMONT AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:29.430-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:01.583-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 4488.4,
+                                                    "DistanceFromCall": 4446.24,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102667",
+                                            "StopPointName": "E TREMONT AV/HASKIN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:23.430-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:47.123-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 4768.27,
+                                                    "DistanceFromCall": 4726.11,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102668",
+                                            "StopPointName": "E TREMONT AV/PURITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:06.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:17.162-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 4995.39,
+                                                    "DistanceFromCall": 4953.22,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102669",
+                                            "StopPointName": "E TREMONT AV/WATERBURY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:16.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:40.614-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5360.52,
+                                                    "DistanceFromCall": 5318.36,
+                                                    "PresentableDistance": "3.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102671",
+                                            "StopPointName": "E TREMONT AV/DUDLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:59.432-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:13.612-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 5583.03,
+                                                    "DistanceFromCall": 5540.87,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102672",
+                                            "StopPointName": "E TREMONT AV/HUTCHINSON RVR PK"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.433-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:07.388-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 5901.28,
+                                                    "DistanceFromCall": 5859.12,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103684",
+                                            "StopPointName": "E TREMONT AV/WESTCHESTER AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:29.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX42",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-141600_BX402_48"
+                                },
+                                "JourneyPatternRef": "MTA_BX420032",
+                                "PublishedLineName": "Bx42",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_104011",
+                                "DestinationName": "THROGGS NECK HARDING AV via TREMONT",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.878053,
+                                    "Latitude": 40.839902
+                                },
+                                "Bearing": 10.304847,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_13860_BX402-4",
+                                "VehicleRef": "MTA NYCT_5770",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:44.445-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:32.913-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:32.913-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5012.76,
+                                            "DistanceFromCall": 196.86,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101413",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E TREMONT AV/BRONX PARK AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:44.452-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:32.913-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5012.76,
+                                                    "DistanceFromCall": 196.86,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101413",
+                                            "StopPointName": "E TREMONT AV/BRONX PARK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:01:31.452-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:09.337-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 5203.04,
+                                                    "DistanceFromCall": 387.14,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102566",
+                                            "StopPointName": "E TREMONT AV/MORRIS PK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:53.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:36.925-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 5533.84,
+                                                    "DistanceFromCall": 717.94,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104103",
+                                            "StopPointName": "E TREMONT AV/BRONX RIVER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:08.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:49.681-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 5596.39,
+                                                    "DistanceFromCall": 780.49,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102568",
+                                            "StopPointName": "E TREMONT AV/COMMONWEALTH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:13.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.871-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 5856.15,
+                                                    "DistanceFromCall": 1040.25,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104104",
+                                            "StopPointName": "E TREMONT AV/THIERIOT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:03.453-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:43.071-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6061.3,
+                                                    "DistanceFromCall": 1245.4,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102571",
+                                            "StopPointName": "E TREMONT AV/UNIONPORT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:53.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:51.115-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 6262.92,
+                                                    "DistanceFromCall": 1447.02,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102572",
+                                            "StopPointName": "E TREMONT AV/DOGWOOD DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.454-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:02.397-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 6774.52,
+                                                    "DistanceFromCall": 1958.62,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102574",
+                                            "StopPointName": "E TREMONT AV/PURDY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:49.455-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:01.397-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 6937.86,
+                                                    "DistanceFromCall": 2121.96,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102575",
+                                            "StopPointName": "E TREMONT AV/CASTLE HILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:18.455-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:30.434-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7237.08,
+                                                    "DistanceFromCall": 2421.18,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102577",
+                                            "StopPointName": "E TREMONT AV/ST PETERS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:08.456-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:00.444-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 7402.38,
+                                                    "DistanceFromCall": 2586.48,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102578",
+                                            "StopPointName": "E TREMONT AV/OVERING ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:11.456-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:38.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 7613.32,
+                                                    "DistanceFromCall": 2797.42,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102579",
+                                            "StopPointName": "E TREMONT AV/ST RAYMONDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:00.457-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:14.044-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 7980.12,
+                                                    "DistanceFromCall": 3164.22,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103683",
+                                            "StopPointName": "E TREMONT AV/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:16.457-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:07.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 8443.71,
+                                                    "DistanceFromCall": 3627.81,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102582",
+                                            "StopPointName": "E TREMONT AV/ERICSON PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:50.457-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:39.695-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 8650.28,
+                                                    "DistanceFromCall": 3834.38,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102583",
+                                            "StopPointName": "E TREMONT AV/LATTING ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:39.458-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:21.645-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 8949.23,
+                                                    "DistanceFromCall": 4133.33,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102584",
+                                            "StopPointName": "E TREMONT AV/WATERBURY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:15.458-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:11.720-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 9168.9,
+                                                    "DistanceFromCall": 4353.0,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102585",
+                                            "StopPointName": "E TREMONT AV/PURITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:37.459-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:32.396-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 9305.3,
+                                                    "DistanceFromCall": 4489.4,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102586",
+                                            "StopPointName": "E TREMONT AV/BAISLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:13.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:20.561-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 9524.77,
+                                                    "DistanceFromCall": 4708.87,
+                                                    "PresentableDistance": "2.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102587",
+                                            "StopPointName": "E TREMONT AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:07.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:20.377-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 9853.18,
+                                                    "DistanceFromCall": 5037.28,
+                                                    "PresentableDistance": "3.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102588",
+                                            "StopPointName": "E TREMONT AV/BARKLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:31.460-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:43.725-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 9996.98,
+                                                    "DistanceFromCall": 5181.08,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102589",
+                                            "StopPointName": "E TREMONT AV/LAFAYETTE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:12.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:28.725-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 10247.91,
+                                                    "DistanceFromCall": 5432.01,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102590",
+                                            "StopPointName": "E TREMONT AV/PHILIP AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:24.125-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 10542.72,
+                                                    "DistanceFromCall": 5726.82,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102613",
+                                            "StopPointName": "RANDALL AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:00.461-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:11.833-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 10872.44,
+                                                    "DistanceFromCall": 6056.54,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102614",
+                                            "StopPointName": "RANDALL AV/CROSS BRONX  EP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:56.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:02.820-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 11175.04,
+                                                    "DistanceFromCall": 6359.14,
+                                                    "PresentableDistance": "4.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102615",
+                                            "StopPointName": "BALCOM AV/RANDALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:27.462-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:26.696-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 11344.56,
+                                                    "DistanceFromCall": 6528.66,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102616",
+                                            "StopPointName": "BALCOM AV/SCHLEY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:05.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:56.702-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 11555.42,
+                                                    "DistanceFromCall": 6739.52,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102617",
+                                            "StopPointName": "DEWEY AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:40.463-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:27.702-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 11749.08,
+                                                    "DistanceFromCall": 6933.18,
+                                                    "PresentableDistance": "4.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102618",
+                                            "StopPointName": "DEWEY AV/SWINTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:42.134-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 11855.91,
+                                                    "DistanceFromCall": 7040.01,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102619",
+                                            "StopPointName": "DEWEY AV/QUINCY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:06.464-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:51.802-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 12273.76,
+                                                    "DistanceFromCall": 7457.86,
+                                                    "PresentableDistance": "4.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103228",
+                                            "StopPointName": "E TREMONT AV/SAMPSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:39.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:38.316-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 12478.42,
+                                                    "DistanceFromCall": 7662.52,
+                                                    "PresentableDistance": "4.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103229",
+                                            "StopPointName": "E TREMONT AV/MILES AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:39.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:45.978-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 31,
+                                                    "CallDistanceAlongRoute": 12859.05,
+                                                    "DistanceFromCall": 8043.15,
+                                                    "PresentableDistance": "5.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104243",
+                                            "StopPointName": "HARDING AV/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:05.465-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:06.509-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 32,
+                                                    "CallDistanceAlongRoute": 13023.9,
+                                                    "DistanceFromCall": 8208.0,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102622",
+                                            "StopPointName": "HARDING AV/CALHOUN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:52.802-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 33,
+                                                    "CallDistanceAlongRoute": 13370.92,
+                                                    "DistanceFromCall": 8555.02,
+                                                    "PresentableDistance": "5.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_102624",
+                                            "StopPointName": "HARDING AV/BALCOM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:33.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:23.921-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 34,
+                                                    "CallDistanceAlongRoute": 13638.93,
+                                                    "DistanceFromCall": 8823.03,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803085",
+                                            "StopPointName": "HARDING AV/DAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:00.466-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:56.196-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 35,
+                                                    "CallDistanceAlongRoute": 13854.85,
+                                                    "DistanceFromCall": 9038.95,
+                                                    "PresentableDistance": "5.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803086",
+                                            "StopPointName": "HARDING AV/EMERSON AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:36.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.378-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.378-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

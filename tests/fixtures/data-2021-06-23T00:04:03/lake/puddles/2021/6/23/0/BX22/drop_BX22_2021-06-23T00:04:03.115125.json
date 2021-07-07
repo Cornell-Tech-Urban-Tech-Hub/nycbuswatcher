@@ -1,0 +1,654 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:58.889-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX22",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-142000_BX22_432"
+                                },
+                                "JourneyPatternRef": "MTA_BX220112",
+                                "PublishedLineName": "Bx22",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_102269",
+                                "DestinationName": "CASTLE HILL ZEREGA AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.851522,
+                                    "Latitude": 40.833907
+                                },
+                                "Bearing": 285.4034,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_50160_BX22-418",
+                                "VehicleRef": "MTA NYCT_5573",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:00.901-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:59.889-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:59.889-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "at stop",
+                                            "DistanceFromCall": 6.89,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5821.86
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_101553",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CASTLE HILL AV/WESTCHESTER AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:00.908-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:58.889-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "at stop",
+                                                    "DistanceFromCall": 6.89,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5821.86
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101553",
+                                            "StopPointName": "CASTLE HILL AV/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:33.908-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.848-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 259.61,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6074.57
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101554",
+                                            "StopPointName": "CASTLE HILL AV/GLEASON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:40.908-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:33.614-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 444.86,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6259.82
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101555",
+                                            "StopPointName": "CASTLE HILL AV/CROSS BX SVC RD N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:01.908-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:57.614-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 664.41,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6479.37
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101556",
+                                            "StopPointName": "CASTLE HILL AV/CHATTERTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.909-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:08.076-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 826.76,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6641.72
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101557",
+                                            "StopPointName": "CASTLE HILL AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:02.909-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:59.976-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1049.24,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 6864.21
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104077",
+                                            "StopPointName": "CASTLE HILL AV/HERMANY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:18.909-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:00.042-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1322.52,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7137.48
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101560",
+                                            "StopPointName": "CASTLE HILL AV/VIRGIL PL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:02.910-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:50.200-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.9 miles away",
+                                                    "DistanceFromCall": 1481.2,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7296.16
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101561",
+                                            "StopPointName": "CASTLE HILL AV/SEWARD AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:10.911-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:05.400-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1726.57,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7541.53
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101562",
+                                            "StopPointName": "CASTLE HILL AV/RANDALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:00.911-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:40.200-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1907.04,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7722.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101563",
+                                            "StopPointName": "CASTLE HILL AV/LACOMBE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.912-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:41.208-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2191.67,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 8006.63
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101564",
+                                            "StopPointName": "CASTLE HILL AV/NORTON AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:53.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_BX22",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_GH_B1-Weekday-SDon-144000_BX22_434"
+                                },
+                                "JourneyPatternRef": "MTA_BX220111",
+                                "PublishedLineName": "Bx22",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_101478",
+                                "DestinationName": "FORDHAM CENTER VALENTINE AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.848962,
+                                    "Latitude": 40.82302
+                                },
+                                "Bearing": 103.69005,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_GH_B1-Weekday-SDon_E_GH_19980_BX22-405",
+                                "VehicleRef": "MTA NYCT_1246",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:04:03.919-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:08.760-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:08.760-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 80.68,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1018.7
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_104078",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "CASTLE HILL AV/TURNBULL AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:03.920-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:08.760-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 80.68,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1018.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104078",
+                                            "StopPointName": "CASTLE HILL AV/TURNBULL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:09.920-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:14.155-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 344.41,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1282.43
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101484",
+                                            "StopPointName": "CASTLE HILL AV/QUIMBY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.920-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:58.524-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 549.31,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1487.33
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101485",
+                                            "StopPointName": "CASTLE HILL AV/BRUCKNER BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:37.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:03.747-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3 stops away",
+                                                    "DistanceFromCall": 751.47,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 1689.49
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101486",
+                                            "StopPointName": "CASTLE HILL AV/WATSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:38.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:43.120-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 879.99,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1818.01
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101487",
+                                            "StopPointName": "CASTLE HILL AV/CROSS BX SVC RD N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:55.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:47.930-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.6 miles away",
+                                                    "DistanceFromCall": 1039.78,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1977.8
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101488",
+                                            "StopPointName": "CASTLE HILL AV/GLEASON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:00.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:22.657-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1301.24,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2239.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101489",
+                                            "StopPointName": "CASTLE HILL AV/WESTCHESTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:27.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:06.057-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.0 miles away",
+                                                    "DistanceFromCall": 1579.12,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2517.14
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101490",
+                                            "StopPointName": "STARLING AV/PURDY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:38.921-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:03.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.1 miles away",
+                                                    "DistanceFromCall": 1802.06,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2740.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101491",
+                                            "StopPointName": "STARLING AV/UNIONPORT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:38.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:12.135-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.2 miles away",
+                                                    "DistanceFromCall": 1994.55,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2932.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103935",
+                                            "StopPointName": "UNIONPORT RD/STARLING AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:00.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:18.135-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2255.0,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3193.02
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103514",
+                                            "StopPointName": "AILEEN RYAN OVAL/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:40.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:10.209-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2418.73,
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3356.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103936",
+                                            "StopPointName": "UNIONPORT RD/METROPOLITAN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:46.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:05.323-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2696.59,
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 3634.61
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101494",
+                                            "StopPointName": "UNIONPORT RD/E TREMONT AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:19.922-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:27.878-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 3088.24,
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4026.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101496",
+                                            "StopPointName": "WHITE PLAINS RD/VAN NEST AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:00.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:34.110-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.0 miles away",
+                                                    "DistanceFromCall": 3259.75,
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4197.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101497",
+                                            "StopPointName": "WHITE PLAINS RD/MORRIS PK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:49.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:39.396-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.2 miles away",
+                                                    "DistanceFromCall": 3521.96,
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4459.98
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101498",
+                                            "StopPointName": "WHITE PLAINS RD/RHINELANDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:33.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:36.769-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.3 miles away",
+                                                    "DistanceFromCall": 3761.05,
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4699.07
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103542",
+                                            "StopPointName": "WHITE PLAINS RD/BIRCHALL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:02.923-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:05.296-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.4 miles away",
+                                                    "DistanceFromCall": 3918.75,
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 4856.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_101499",
+                                            "StopPointName": "WHITE PLAINS RD/BRONXDALE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:37.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:52.943-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.6 miles away",
+                                                    "DistanceFromCall": 4108.68,
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5046.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103324",
+                                            "StopPointName": "BRONX PARK E/BRADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:17.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:23.950-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.7 miles away",
+                                                    "DistanceFromCall": 4322.36,
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5260.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103325",
+                                            "StopPointName": "BRONX PARK E/LYDIG AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:00.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:21.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2.8 miles away",
+                                                    "DistanceFromCall": 4557.22,
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5495.24
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103326",
+                                            "StopPointName": "BRONX PARK E/PELHAM PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:21.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:16.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.6 miles away",
+                                                    "DistanceFromCall": 5721.71,
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 6659.73
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100843",
+                                            "StopPointName": "E FORDHAM RD/SOUTHERN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:01.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:05.971-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.7 miles away",
+                                                    "DistanceFromCall": 5952.89,
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6890.92
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100565",
+                                            "StopPointName": "E FORDHAM RD/CAMBERLENG AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:44.924-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:54.383-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "3.9 miles away",
+                                                    "DistanceFromCall": 6207.74,
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 7145.76
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103697",
+                                            "StopPointName": "E FORDHAM RD/HOFFMAN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:30:18.925-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:26.249-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.0 miles away",
+                                                    "DistanceFromCall": 6400.36,
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 7338.38
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_100567",
+                                            "StopPointName": "E FORDHAM RD/BATHGATE AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:00.925-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:18.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.1 miles away",
+                                                    "DistanceFromCall": 6646.94,
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 7584.97
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_104090",
+                                            "StopPointName": "E FORDHAM RD/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:37.925-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:23.787-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.2 miles away",
+                                                    "DistanceFromCall": 6824.24,
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7762.26
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_103801",
+                                            "StopPointName": "E FORDHAM RD/DECATUR AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:34:00.925-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:10.361-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "4.7 miles away",
+                                                    "DistanceFromCall": 7508.68,
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 8446.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_802062",
+                                            "StopPointName": "VALENTINE AV/FORDHAM RD"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:46.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:58.889-04:00",
+                    "ValidUntil": "2021-06-23T00:04:58.889-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

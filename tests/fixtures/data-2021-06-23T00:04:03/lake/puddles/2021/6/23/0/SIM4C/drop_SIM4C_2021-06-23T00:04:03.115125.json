@@ -1,0 +1,782 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.703-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_SIM4C",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CH_B1-Weekday-SDon-139000_SIM4_719"
+                                },
+                                "JourneyPatternRef": "MTA_SIM4C0145",
+                                "PublishedLineName": "SIM4C",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404923",
+                                "DestinationName": "HUGUENOT via RICHMOND AV via ARTHUR KILL",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.160334,
+                                    "Latitude": 40.609913
+                                },
+                                "Bearing": 244.88516,
+                                "ProgressRate": "normalProgress",
+                                "VehicleRef": "MTA NYCT_2740",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:02:04.747-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.703-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.703-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 33750.77,
+                                            "DistanceFromCall": 0.0,
+                                            "PresentableDistance": "at stop"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 12
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_200443",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "RICHMOND AV/MERRILL AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:04.755-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.703-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 33750.77,
+                                                    "DistanceFromCall": 0.0,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200443",
+                                            "StopPointName": "RICHMOND AV/MERRILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:48.756-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:21.813-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 34137.13,
+                                                    "DistanceFromCall": 386.36,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200444",
+                                            "StopPointName": "RICHMOND AV/VICTORY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:01.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:42.625-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 34777.74,
+                                                    "DistanceFromCall": 1026.97,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200447",
+                                            "StopPointName": "RICHMOND AV/SIGNS RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:56.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:23.973-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 35270.25,
+                                                    "DistanceFromCall": 1519.48,
+                                                    "PresentableDistance": "0.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200930",
+                                            "StopPointName": "RICHMOND AV/RIVINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:47.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:16.304-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 35720.1,
+                                                    "DistanceFromCall": 1969.34,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200450",
+                                            "StopPointName": "RICHMOND AV/TRAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:33.757-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:03.099-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 36122.13,
+                                                    "DistanceFromCall": 2371.36,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200452",
+                                            "StopPointName": "RICHMOND AV/NOME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:02.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:36.541-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 36913.37,
+                                                    "DistanceFromCall": 3162.6,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202991",
+                                            "StopPointName": "RICHMOND HILL RD/VASSAR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:48.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:50.226-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 37318.16,
+                                                    "DistanceFromCall": 3567.39,
+                                                    "PresentableDistance": "2.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203478",
+                                            "StopPointName": "MARSH AV/RING RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:22.759-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:18.908-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 37620.05,
+                                                    "DistanceFromCall": 3869.28,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202849",
+                                            "StopPointName": "MARSH AV/ELMWOOD PK DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:54.488-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 37956.99,
+                                                    "DistanceFromCall": 4206.22,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202850",
+                                            "StopPointName": "MARSH AV/WINDHAM LOOP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:07.760-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:26.988-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 38971.5,
+                                                    "DistanceFromCall": 5220.74,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203078",
+                                            "StopPointName": "RICHMOND AV/YUKON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:29.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:46.197-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 39631.85,
+                                                    "DistanceFromCall": 5881.08,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200459",
+                                            "StopPointName": "RICHMOND AV/FOREST HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:09.810-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 40838.6,
+                                                    "DistanceFromCall": 7087.83,
+                                                    "PresentableDistance": "4.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200386",
+                                            "StopPointName": "ELTINGVILLE/TRANSIT CENTER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:00.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:17.426-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 41938.82,
+                                                    "DistanceFromCall": 8188.05,
+                                                    "PresentableDistance": "5.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203814",
+                                            "StopPointName": "DRUMGOOLE RD W/ ANNADALE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:11.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:18.867-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 42562.14,
+                                                    "DistanceFromCall": 8811.37,
+                                                    "PresentableDistance": "5.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202918",
+                                            "StopPointName": "ANNADALE RD/TOKEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:19.761-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:51.192-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 43150.36,
+                                                    "DistanceFromCall": 9399.59,
+                                                    "PresentableDistance": "5.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203593",
+                                            "StopPointName": "ARTHUR KILL RD/WOODROW RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:12.762-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:40.783-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 43614.47,
+                                                    "DistanceFromCall": 9863.7,
+                                                    "PresentableDistance": "6.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203649",
+                                            "StopPointName": "ARTHUR KILL RD/OPP ASPEN KNOLLS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:14.762-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:29.217-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 44150.4,
+                                                    "DistanceFromCall": 10399.63,
+                                                    "PresentableDistance": "6.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202237",
+                                            "StopPointName": "ARTHUR KILL RD/1547 ARTHUR KILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:35.763-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:38.740-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 44855.6,
+                                                    "DistanceFromCall": 11104.83,
+                                                    "PresentableDistance": "6.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202292",
+                                            "StopPointName": "ARDEN AV/ARTHUR KILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:33.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:38.889-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 45363.35,
+                                                    "DistanceFromCall": 11612.58,
+                                                    "PresentableDistance": "7.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202295",
+                                            "StopPointName": "ARDEN AV/HAMPTON GREEN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:07.764-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:26.997-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 46185.91,
+                                                    "DistanceFromCall": 12435.14,
+                                                    "PresentableDistance": "7.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202913",
+                                            "StopPointName": "WOODROW RD/ALMOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:40.766-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:30:00.013-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 46474.67,
+                                                    "DistanceFromCall": 12723.9,
+                                                    "PresentableDistance": "7.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202912",
+                                            "StopPointName": "WOODROW RD/CANTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.766-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:31:00.832-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 47168.48,
+                                                    "DistanceFromCall": 13417.71,
+                                                    "PresentableDistance": "8.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202910",
+                                            "StopPointName": "WOODROW RD/BOULDER ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:27.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_SIM4C",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_CH_B1-Weekday-SDon-141000_SIM4_720"
+                                },
+                                "JourneyPatternRef": "MTA_SIM4C0145",
+                                "PublishedLineName": "SIM4C",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_404923",
+                                "DestinationName": "HUGUENOT via RICHMOND AV via ARTHUR KILL",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -74.003676,
+                                    "Latitude": 40.658288
+                                },
+                                "Bearing": 223.97697,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_CH_B1-Weekday-SDon_E_CH_79500_SIM4-720",
+                                "VehicleRef": "MTA NYCT_2718",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:20:00.716-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:20:09.170-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:20:09.170-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 33180.73,
+                                            "DistanceFromCall": 18128.97,
+                                            "PresentableDistance": "11.3 miles away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_200441",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "RICHMOND AV/LAMBERTS LA"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:00.728-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:09.170-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 33180.73,
+                                                    "DistanceFromCall": 18128.97,
+                                                    "PresentableDistance": "11.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200441",
+                                            "StopPointName": "RICHMOND AV/LAMBERTS LA"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:26.728-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:38.524-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 33413.33,
+                                                    "DistanceFromCall": 18361.57,
+                                                    "PresentableDistance": "11.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200442",
+                                            "StopPointName": "RICHMOND AV/LANDER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:04.729-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:16.400-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 33750.77,
+                                                    "DistanceFromCall": 18699.01,
+                                                    "PresentableDistance": "11.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200443",
+                                            "StopPointName": "RICHMOND AV/MERRILL AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:48.729-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:11.213-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 34137.13,
+                                                    "DistanceFromCall": 19085.37,
+                                                    "PresentableDistance": "11.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200444",
+                                            "StopPointName": "RICHMOND AV/VICTORY BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:01.730-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:32.025-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 34777.74,
+                                                    "DistanceFromCall": 19725.99,
+                                                    "PresentableDistance": "12.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200447",
+                                            "StopPointName": "RICHMOND AV/SIGNS RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:56.731-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:13.373-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 35270.25,
+                                                    "DistanceFromCall": 20218.49,
+                                                    "PresentableDistance": "12.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200930",
+                                            "StopPointName": "RICHMOND AV/RIVINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:47.732-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:05.704-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 35720.1,
+                                                    "DistanceFromCall": 20668.35,
+                                                    "PresentableDistance": "12.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200450",
+                                            "StopPointName": "RICHMOND AV/TRAVIS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:33.733-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:52.499-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 36122.13,
+                                                    "DistanceFromCall": 21070.38,
+                                                    "PresentableDistance": "13.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200452",
+                                            "StopPointName": "RICHMOND AV/NOME AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:02.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:25.941-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 36913.37,
+                                                    "DistanceFromCall": 21861.62,
+                                                    "PresentableDistance": "13.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202991",
+                                            "StopPointName": "RICHMOND HILL RD/VASSAR ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:48.735-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:28:39.626-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 37318.16,
+                                                    "DistanceFromCall": 22266.41,
+                                                    "PresentableDistance": "13.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203478",
+                                            "StopPointName": "MARSH AV/RING RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:28:22.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:08.308-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 37620.05,
+                                                    "DistanceFromCall": 22568.29,
+                                                    "PresentableDistance": "14.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202849",
+                                            "StopPointName": "MARSH AV/ELMWOOD PK DR"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:29:00.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:29:43.888-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 37956.99,
+                                                    "DistanceFromCall": 22905.23,
+                                                    "PresentableDistance": "14.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202850",
+                                            "StopPointName": "MARSH AV/WINDHAM LOOP"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:31:07.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:32:16.388-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 38971.5,
+                                                    "DistanceFromCall": 23919.75,
+                                                    "PresentableDistance": "14.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203078",
+                                            "StopPointName": "RICHMOND AV/YUKON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:32:29.736-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:33:35.597-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 39631.85,
+                                                    "DistanceFromCall": 24580.1,
+                                                    "PresentableDistance": "15.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200459",
+                                            "StopPointName": "RICHMOND AV/FOREST HILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:35:00.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:35:59.210-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 40838.6,
+                                                    "DistanceFromCall": 25786.85,
+                                                    "PresentableDistance": "16.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_200386",
+                                            "StopPointName": "ELTINGVILLE/TRANSIT CENTER"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:38:00.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:39:06.826-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 41938.82,
+                                                    "DistanceFromCall": 26887.06,
+                                                    "PresentableDistance": "16.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203814",
+                                            "StopPointName": "DRUMGOOLE RD W/ ANNADALE RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:39:11.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:40:08.267-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 42562.14,
+                                                    "DistanceFromCall": 27510.38,
+                                                    "PresentableDistance": "17.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202918",
+                                            "StopPointName": "ANNADALE RD/TOKEN ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:40:19.737-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:41:40.592-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 43150.36,
+                                                    "DistanceFromCall": 28098.6,
+                                                    "PresentableDistance": "17.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203593",
+                                            "StopPointName": "ARTHUR KILL RD/WOODROW RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:41:12.738-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:42:30.183-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 43614.47,
+                                                    "DistanceFromCall": 28562.71,
+                                                    "PresentableDistance": "17.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_203649",
+                                            "StopPointName": "ARTHUR KILL RD/OPP ASPEN KNOLLS"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:42:14.738-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:43:18.617-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 44150.4,
+                                                    "DistanceFromCall": 29098.64,
+                                                    "PresentableDistance": "18.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202237",
+                                            "StopPointName": "ARTHUR KILL RD/1547 ARTHUR KILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:43:35.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:44:28.140-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 44855.6,
+                                                    "DistanceFromCall": 29803.85,
+                                                    "PresentableDistance": "18.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202292",
+                                            "StopPointName": "ARDEN AV/ARTHUR KILL RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:44:33.739-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:45:28.289-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 45363.35,
+                                                    "DistanceFromCall": 30311.6,
+                                                    "PresentableDistance": "18.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202295",
+                                            "StopPointName": "ARDEN AV/HAMPTON GREEN"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:07.740-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:16.397-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 46185.91,
+                                                    "DistanceFromCall": 31134.16,
+                                                    "PresentableDistance": "19.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202913",
+                                            "StopPointName": "WOODROW RD/ALMOND ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:46:40.741-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:47:49.413-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 46474.67,
+                                                    "DistanceFromCall": 31422.92,
+                                                    "PresentableDistance": "19.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202912",
+                                            "StopPointName": "WOODROW RD/CANTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:48:00.742-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:48:50.232-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 47168.48,
+                                                    "DistanceFromCall": 32116.72,
+                                                    "PresentableDistance": "20.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_202910",
+                                            "StopPointName": "WOODROW RD/BOULDER ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:39.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.703-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.703-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

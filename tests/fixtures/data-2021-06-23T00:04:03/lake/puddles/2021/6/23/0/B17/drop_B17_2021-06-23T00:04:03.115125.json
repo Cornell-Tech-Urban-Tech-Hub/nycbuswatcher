@@ -1,0 +1,1126 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.244-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B17",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-139500_B17_780"
+                                },
+                                "JourneyPatternRef": "MTA_B170095",
+                                "PublishedLineName": "B17",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_301766",
+                                "DestinationName": "CROWN HEIGHTS EASTERN PKY",
+                                "OriginAimedDepartureTime": "2021-06-23T00:05:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.93167,
+                                    "Latitude": 40.668597
+                                },
+                                "Bearing": 357.04996,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_82020_B17-780",
+                                "VehicleRef": "MTA NYCT_3969",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:48:00.296-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.244-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.244-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 8728.59,
+                                            "DistanceFromCall": 4.04,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_901019",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "EASTERN PY/UTICA AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:48:00.304-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 8728.59,
+                                                    "DistanceFromCall": 4.04,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901019",
+                                            "StopPointName": "EASTERN PY/UTICA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:42.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B17",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-141500_B17_778"
+                                },
+                                "JourneyPatternRef": "MTA_B170092",
+                                "PublishedLineName": "B17",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307004",
+                                "DestinationName": "CANARSIE SEAVIEW AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.889322,
+                                    "Latitude": 40.633956
+                                },
+                                "Bearing": 32.5819,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_73680_B17-778",
+                                "VehicleRef": "MTA NYCT_4817",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:58:53.284-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 6056.55,
+                                            "DistanceFromCall": 18.37,
+                                            "PresentableDistance": "at stop"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301801",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SEAVIEW AV/ROCKAWAY PY"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:58:53.291-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 6056.55,
+                                                    "DistanceFromCall": 18.37,
+                                                    "PresentableDistance": "at stop"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301801",
+                                            "StopPointName": "SEAVIEW AV/ROCKAWAY PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:59:28.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6216.34,
+                                                    "DistanceFromCall": 178.16,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301802",
+                                            "StopPointName": "SEAVIEW AV/E 99 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:07.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6392.29,
+                                                    "DistanceFromCall": 354.11,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301803",
+                                            "StopPointName": "SEAVIEW AV/E 102 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:57.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6618.86,
+                                                    "DistanceFromCall": 580.68,
+                                                    "PresentableDistance": "3 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301804",
+                                            "StopPointName": "SEAVIEW AV/E 104 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:00.292-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6895.41,
+                                                    "DistanceFromCall": 857.24,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901495",
+                                            "StopPointName": "SEAVIEW AV/E 108 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:43.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B17",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-142000_B17_782"
+                                },
+                                "JourneyPatternRef": "MTA_B170093",
+                                "PublishedLineName": "B17",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_301726",
+                                "DestinationName": "CROWN HEIGHTS EASTERN PKY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.928864,
+                                    "Latitude": 40.660781
+                                },
+                                "Bearing": 138.3547,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_77220_B17-782",
+                                "VehicleRef": "MTA NYCT_7107",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:00:55.253-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:03:58.244-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:03:58.244-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 5978.96,
+                                            "DistanceFromCall": 59.98,
+                                            "PresentableDistance": "approaching"
+                                        },
+                                        "Capacities": {
+                                            "EstimatedPassengerCount": 3
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301753",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "REMSEN AV/RUTLAND RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:00:55.261-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:03:57.244-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 5978.96,
+                                                    "DistanceFromCall": 59.98,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301753",
+                                            "StopPointName": "REMSEN AV/RUTLAND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:02:13.262-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:43.977-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 6295.86,
+                                                    "DistanceFromCall": 376.88,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301754",
+                                            "StopPointName": "EAST NEW YORK AV/UTICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:22.263-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:53.189-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 6569.31,
+                                                    "DistanceFromCall": 650.33,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301755",
+                                            "StopPointName": "EAST NEW YORK AV/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:24.263-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:59.238-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 6821.48,
+                                                    "DistanceFromCall": 902.5,
+                                                    "PresentableDistance": "0.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301756",
+                                            "StopPointName": "TROY AV/EAST NEW YORK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:01.264-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:39.506-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 6968.82,
+                                                    "DistanceFromCall": 1049.84,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301757",
+                                            "StopPointName": "TROY AV/EMPIRE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:24.265-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:54.669-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 7062.42,
+                                                    "DistanceFromCall": 1143.44,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301758",
+                                            "StopPointName": "TROY AV/MONTGOMERY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:13.265-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:21.162-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 7255.8,
+                                                    "DistanceFromCall": 1336.82,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301759",
+                                            "StopPointName": "TROY AV/CARROLL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:10.267-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:57.362-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 7487.62,
+                                                    "DistanceFromCall": 1568.64,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301760",
+                                            "StopPointName": "TROY AV/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:09.267-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:09.962-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 7722.25,
+                                                    "DistanceFromCall": 1803.27,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307011",
+                                            "StopPointName": "EASTERN PY/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.269-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:09.362-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 7928.45,
+                                                    "DistanceFromCall": 2009.46,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901019",
+                                            "StopPointName": "EASTERN PY/UTICA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:41.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B17",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-144000_B14_722"
+                                },
+                                "JourneyPatternRef": "MTA_B170093",
+                                "PublishedLineName": "B17",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_301726",
+                                "DestinationName": "CROWN HEIGHTS EASTERN PKY",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.891981,
+                                    "Latitude": 40.632382
+                                },
+                                "Bearing": 213.13907,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_79620_B14-722",
+                                "VehicleRef": "MTA NYCT_4110",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:03:26.317-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:07.943-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:07.943-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 1283.18,
+                                            "DistanceFromCall": 124.04,
+                                            "PresentableDistance": "approaching"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301732",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "SEAVIEW AV/E 93 ST"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:26.319-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:07.943-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 1283.18,
+                                                    "DistanceFromCall": 124.04,
+                                                    "PresentableDistance": "approaching"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301732",
+                                            "StopPointName": "SEAVIEW AV/E 93 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:03:58.320-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:32.179-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 1481.97,
+                                                    "DistanceFromCall": 322.83,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301733",
+                                            "StopPointName": "SEAVIEW AV/REMSEN AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:04:45.320-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:25.923-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 1775.63,
+                                                    "DistanceFromCall": 616.49,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301734",
+                                            "StopPointName": "REMSEN AV/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:22.320-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:11.350-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 2005.67,
+                                                    "DistanceFromCall": 846.53,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301735",
+                                            "StopPointName": "REMSEN AV/AV M"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.320-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:07.750-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 2245.1,
+                                                    "DistanceFromCall": 1085.96,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301736",
+                                            "StopPointName": "REMSEN AV/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:58.321-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:04.441-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 2471.38,
+                                                    "DistanceFromCall": 1312.24,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301737",
+                                            "StopPointName": "REMSEN AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:02.321-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:04.255-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2721.39,
+                                                    "DistanceFromCall": 1562.25,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301738",
+                                            "StopPointName": "REMSEN AV/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:04.321-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:14.972-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2967.02,
+                                                    "DistanceFromCall": 1807.88,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301739",
+                                            "StopPointName": "REMSEN AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:00.321-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:09.782-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 3185.7,
+                                                    "DistanceFromCall": 2026.56,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301740",
+                                            "StopPointName": "REMSEN AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:33.322-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:51.860-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 3393.76,
+                                                    "DistanceFromCall": 2234.62,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306908",
+                                            "StopPointName": "REMSEN AV/FARRAGUT RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:13.322-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:48.260-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3640.94,
+                                                    "DistanceFromCall": 2481.8,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301742",
+                                            "StopPointName": "REMSEN AV/FOSTER AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:37.322-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:14.298-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 3795.14,
+                                                    "DistanceFromCall": 2636.0,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301743",
+                                            "StopPointName": "REMSEN AV/AV D"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:19.322-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:05.941-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 4057.55,
+                                                    "DistanceFromCall": 2898.41,
+                                                    "PresentableDistance": "1.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301744",
+                                            "StopPointName": "REMSEN AV/DITMAS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:00.322-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:54.045-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 4313.76,
+                                                    "DistanceFromCall": 3154.62,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_306870",
+                                            "StopPointName": "REMSEN AV/AV B"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:54.323-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:34.262-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 4547.02,
+                                                    "DistanceFromCall": 3387.88,
+                                                    "PresentableDistance": "2.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301746",
+                                            "StopPointName": "REMSEN AV/AV A"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:52.323-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:30.308-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 4795.54,
+                                                    "DistanceFromCall": 3636.4,
+                                                    "PresentableDistance": "2.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301747",
+                                            "StopPointName": "REMSEN AV/CHURCH AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:28.323-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:01.908-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 16,
+                                                    "CallDistanceAlongRoute": 4950.43,
+                                                    "DistanceFromCall": 3791.29,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301748",
+                                            "StopPointName": "REMSEN AV/LINDEN BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:59.323-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:17:35.643-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 17,
+                                                    "CallDistanceAlongRoute": 5082.57,
+                                                    "DistanceFromCall": 3923.43,
+                                                    "PresentableDistance": "2.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301749",
+                                            "StopPointName": "REMSEN AV/KINGS HY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:41.324-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:10.665-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 18,
+                                                    "CallDistanceAlongRoute": 5263.93,
+                                                    "DistanceFromCall": 4104.79,
+                                                    "PresentableDistance": "2.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301750",
+                                            "StopPointName": "REMSEN AV/LENOX RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:17:35.324-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:18:58.296-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 19,
+                                                    "CallDistanceAlongRoute": 5496.85,
+                                                    "DistanceFromCall": 4337.71,
+                                                    "PresentableDistance": "2.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301751",
+                                            "StopPointName": "REMSEN AV/CLARKSON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:18:32.325-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:19:56.369-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 20,
+                                                    "CallDistanceAlongRoute": 5743.06,
+                                                    "DistanceFromCall": 4583.92,
+                                                    "PresentableDistance": "2.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301752",
+                                            "StopPointName": "REMSEN AV/WINTHROP ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:19:27.325-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:20:43.493-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 21,
+                                                    "CallDistanceAlongRoute": 5978.96,
+                                                    "DistanceFromCall": 4819.82,
+                                                    "PresentableDistance": "3.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301753",
+                                            "StopPointName": "REMSEN AV/RUTLAND RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:20:41.325-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:21:33.486-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 22,
+                                                    "CallDistanceAlongRoute": 6295.86,
+                                                    "DistanceFromCall": 5136.72,
+                                                    "PresentableDistance": "3.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301754",
+                                            "StopPointName": "EAST NEW YORK AV/UTICA AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:21:44.325-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:22:41.498-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 23,
+                                                    "CallDistanceAlongRoute": 6569.31,
+                                                    "DistanceFromCall": 5410.17,
+                                                    "PresentableDistance": "3.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301755",
+                                            "StopPointName": "EAST NEW YORK AV/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:22:43.325-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:23:46.947-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 24,
+                                                    "CallDistanceAlongRoute": 6821.48,
+                                                    "DistanceFromCall": 5662.34,
+                                                    "PresentableDistance": "3.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301756",
+                                            "StopPointName": "TROY AV/EAST NEW YORK AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:17.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:26.615-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 25,
+                                                    "CallDistanceAlongRoute": 6968.82,
+                                                    "DistanceFromCall": 5809.68,
+                                                    "PresentableDistance": "3.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301757",
+                                            "StopPointName": "TROY AV/EMPIRE BL"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:23:39.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:24:41.578-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 26,
+                                                    "CallDistanceAlongRoute": 7062.42,
+                                                    "DistanceFromCall": 5903.28,
+                                                    "PresentableDistance": "3.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301758",
+                                            "StopPointName": "TROY AV/MONTGOMERY ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:24:24.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:07.271-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 27,
+                                                    "CallDistanceAlongRoute": 7255.8,
+                                                    "DistanceFromCall": 6096.67,
+                                                    "PresentableDistance": "3.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301759",
+                                            "StopPointName": "TROY AV/CARROLL ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:25:18.326-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:25:42.871-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 28,
+                                                    "CallDistanceAlongRoute": 7487.62,
+                                                    "DistanceFromCall": 6328.48,
+                                                    "PresentableDistance": "3.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301760",
+                                            "StopPointName": "TROY AV/EASTERN PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:26:12.327-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:26:54.471-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 29,
+                                                    "CallDistanceAlongRoute": 7722.25,
+                                                    "DistanceFromCall": 6563.11,
+                                                    "PresentableDistance": "4.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_307011",
+                                            "StopPointName": "EASTERN PY/SCHENECTADY AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:27:00.327-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:27:53.271-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 30,
+                                                    "CallDistanceAlongRoute": 7928.45,
+                                                    "DistanceFromCall": 6769.31,
+                                                    "PresentableDistance": "4.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901019",
+                                            "StopPointName": "EASTERN PY/UTICA AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:43.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_B17",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_EN_B1-Weekday-SDon-143000_B17_779"
+                                },
+                                "JourneyPatternRef": "MTA_B170092",
+                                "PublishedLineName": "B17",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_307004",
+                                "DestinationName": "CANARSIE SEAVIEW AV",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.908538,
+                                    "Latitude": 40.642524
+                                },
+                                "Bearing": 318.34274,
+                                "ProgressRate": "normalProgress",
+                                "BlockRef": "MTA NYCT_EN_B1-Weekday-SDon_E_EN_77640_B17-779",
+                                "VehicleRef": "MTA NYCT_7735",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:06:00.307-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:08.954-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:08.954-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3793.77,
+                                            "DistanceFromCall": 152.47,
+                                            "PresentableDistance": "< 1 stop away"
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_301790",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "REMSEN AV/GLENWOOD RD"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:00.311-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:08.954-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3793.77,
+                                                    "DistanceFromCall": 152.47,
+                                                    "PresentableDistance": "< 1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301790",
+                                            "StopPointName": "REMSEN AV/GLENWOOD RD"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:43.311-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:26.117-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 4017.13,
+                                                    "DistanceFromCall": 375.83,
+                                                    "PresentableDistance": "1 stop away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301791",
+                                            "StopPointName": "REMSEN AV/FLATLANDS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:07:28.312-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:06:11.716-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 4248.5,
+                                                    "DistanceFromCall": 607.2,
+                                                    "PresentableDistance": "2 stops away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301792",
+                                            "StopPointName": "REMSEN AV/AV J"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:18.312-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:03.989-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 4510.68,
+                                                    "DistanceFromCall": 869.38,
+                                                    "PresentableDistance": "0.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301793",
+                                            "StopPointName": "REMSEN AV/AV K"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:00.312-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:56.565-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 4726.48,
+                                                    "DistanceFromCall": 1085.18,
+                                                    "PresentableDistance": "0.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301794",
+                                            "StopPointName": "REMSEN AV/AV L"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:47.312-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:08:44.133-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 4967.44,
+                                                    "DistanceFromCall": 1326.14,
+                                                    "PresentableDistance": "0.8 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301795",
+                                            "StopPointName": "REMSEN AV/AV M"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:10:33.312-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:39.286-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 5208.06,
+                                                    "DistanceFromCall": 1566.76,
+                                                    "PresentableDistance": "1.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301796",
+                                            "StopPointName": "REMSEN AV/AV N"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:09.313-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:11.286-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 5393.26,
+                                                    "DistanceFromCall": 1751.96,
+                                                    "PresentableDistance": "1.1 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301797",
+                                            "StopPointName": "REMSEN AV/SEAVIEW AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:28.313-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:36.534-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 5493.12,
+                                                    "DistanceFromCall": 1851.82,
+                                                    "PresentableDistance": "1.2 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301798",
+                                            "StopPointName": "SEAVIEW AV/E 91 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:07.313-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:05.950-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 5695.88,
+                                                    "DistanceFromCall": 2054.58,
+                                                    "PresentableDistance": "1.3 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301799",
+                                            "StopPointName": "SEAVIEW AV/E 93 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:12:37.313-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:11:35.914-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 5849.87,
+                                                    "DistanceFromCall": 2208.57,
+                                                    "PresentableDistance": "1.4 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301800",
+                                            "StopPointName": "SEAVIEW AV/E 95 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:17.313-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:25.194-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 11,
+                                                    "CallDistanceAlongRoute": 6056.55,
+                                                    "DistanceFromCall": 2415.25,
+                                                    "PresentableDistance": "1.5 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301801",
+                                            "StopPointName": "SEAVIEW AV/ROCKAWAY PY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:47.314-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:03.838-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 12,
+                                                    "CallDistanceAlongRoute": 6216.34,
+                                                    "DistanceFromCall": 2575.04,
+                                                    "PresentableDistance": "1.6 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301802",
+                                            "StopPointName": "SEAVIEW AV/E 99 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:21.314-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:35.438-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 13,
+                                                    "CallDistanceAlongRoute": 6392.29,
+                                                    "DistanceFromCall": 2750.99,
+                                                    "PresentableDistance": "1.7 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301803",
+                                            "StopPointName": "SEAVIEW AV/E 102 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:05.314-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:07.338-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 14,
+                                                    "CallDistanceAlongRoute": 6618.86,
+                                                    "DistanceFromCall": 2977.56,
+                                                    "PresentableDistance": "1.9 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_301804",
+                                            "StopPointName": "SEAVIEW AV/E 104 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.314-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:45.254-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "StopsFromCall": 15,
+                                                    "CallDistanceAlongRoute": 6895.41,
+                                                    "DistanceFromCall": 3254.11,
+                                                    "PresentableDistance": "2.0 miles away"
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_901495",
+                                            "StopPointName": "SEAVIEW AV/E 108 ST"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:31.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.244-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.244-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": []
+        }
+    }
+}

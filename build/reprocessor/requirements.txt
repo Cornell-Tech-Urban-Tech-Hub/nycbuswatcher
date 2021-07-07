@@ -1,0 +1,4 @@
+ijson
+mysqlclient
+python-dateutil
+sqlalchemy

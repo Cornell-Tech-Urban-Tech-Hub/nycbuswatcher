@@ -1,0 +1,319 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2021-06-23T00:03:57.682-04:00",
+            "VehicleMonitoringDelivery": [
+                {
+                    "VehicleActivity": [
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M66",
+                                "DirectionRef": "0",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-142500_M66_522"
+                                },
+                                "JourneyPatternRef": "MTA_M660077",
+                                "PublishedLineName": "M66",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403487",
+                                "DestinationName": "EAST SIDE YORK AV CROSSTOWN",
+                                "OriginAimedDepartureTime": "2021-06-23T00:20:00.000-04:00",
+                                "SituationRef": [
+                                    {
+                                        "SituationSimpleRef": "MTA NYCT_267461"
+                                    }
+                                ],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.955939,
+                                    "Latitude": 40.764418
+                                },
+                                "Bearing": 336.99615,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_28560_M66-514",
+                                "VehicleRef": "MTA NYCT_7584",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-23T23:57:00.695-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:03.911-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:03.911-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "approaching",
+                                            "DistanceFromCall": 39.09,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 3335.35
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403996",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "EAST 68 ST/YORK AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-23T23:57:00.703-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:03.911-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "approaching",
+                                                    "DistanceFromCall": 39.09,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 3335.35
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403996",
+                                            "StopPointName": "EAST 68 ST/YORK AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:56.000-04:00"
+                        },
+                        {
+                            "MonitoredVehicleJourney": {
+                                "LineRef": "MTA NYCT_M66",
+                                "DirectionRef": "1",
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": "2021-06-22",
+                                    "DatedVehicleJourneyRef": "MTA NYCT_MQ_B1-Weekday-SDon-144400_M66_523"
+                                },
+                                "JourneyPatternRef": "MTA_M660076",
+                                "PublishedLineName": "M66",
+                                "OperatorRef": "MTA NYCT",
+                                "OriginRef": "MTA_403997",
+                                "DestinationName": "LINCOLN CENTER WEST END AV CROSSTOWN",
+                                "OriginAimedDepartureTime": "2021-06-23T00:04:00.000-04:00",
+                                "SituationRef": [],
+                                "Monitored": true,
+                                "VehicleLocation": {
+                                    "Longitude": -73.956531,
+                                    "Latitude": 40.763846
+                                },
+                                "Bearing": 156.66254,
+                                "ProgressRate": "noProgress",
+                                "ProgressStatus": "layover",
+                                "BlockRef": "MTA NYCT_MQ_B1-Weekday-SDon_E_MQ_61140_M66-517",
+                                "VehicleRef": "MTA NYCT_7611",
+                                "MonitoredCall": {
+                                    "AimedArrivalTime": "2021-06-24T00:05:06.687-04:00",
+                                    "ExpectedArrivalTime": "2021-06-23T00:04:14.182-04:00",
+                                    "ExpectedDepartureTime": "2021-06-23T00:04:14.182-04:00",
+                                    "Extensions": {
+                                        "Distances": {
+                                            "PresentableDistance": "< 1 stop away",
+                                            "DistanceFromCall": 213.85,
+                                            "StopsFromCall": 0,
+                                            "CallDistanceAlongRoute": 227.66
+                                        }
+                                    },
+                                    "StopPointRef": "MTA_403503",
+                                    "VisitNumber": 1,
+                                    "StopPointName": "E 67 ST/1 AV"
+                                },
+                                "OnwardCalls": {
+                                    "OnwardCall": [
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:05:06.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:04:14.182-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "< 1 stop away",
+                                                    "DistanceFromCall": 213.85,
+                                                    "StopsFromCall": 0,
+                                                    "CallDistanceAlongRoute": 227.66
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403503",
+                                            "StopPointName": "E 67 ST/1 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:13.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:13.189-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1 stop away",
+                                                    "DistanceFromCall": 442.28,
+                                                    "StopsFromCall": 1,
+                                                    "CallDistanceAlongRoute": 456.08
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403504",
+                                            "StopPointName": "E 67 ST/2 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:06:59.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:05:53.107-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "2 stops away",
+                                                    "DistanceFromCall": 601.19,
+                                                    "StopsFromCall": 2,
+                                                    "CallDistanceAlongRoute": 614.99
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403505",
+                                            "StopPointName": "E 67 ST/3 AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:08:00.688-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:07:24.646-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.5 miles away",
+                                                    "DistanceFromCall": 809.2,
+                                                    "StopsFromCall": 3,
+                                                    "CallDistanceAlongRoute": 823.0
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403506",
+                                            "StopPointName": "E 67 ST/LEXINGTON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:09:41.689-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:09:00.466-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.7 miles away",
+                                                    "DistanceFromCall": 1068.85,
+                                                    "StopsFromCall": 4,
+                                                    "CallDistanceAlongRoute": 1082.65
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403508",
+                                            "StopPointName": "E 67 ST/MADISON AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:11:00.689-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:10:17.466-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "0.8 miles away",
+                                                    "DistanceFromCall": 1270.9,
+                                                    "StopsFromCall": 5,
+                                                    "CallDistanceAlongRoute": 1284.7
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_404122",
+                                            "StopPointName": "5 AV/E  67 ST"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:13:50.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:12:52.570-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.4 miles away",
+                                                    "DistanceFromCall": 2245.97,
+                                                    "StopsFromCall": 6,
+                                                    "CallDistanceAlongRoute": 2259.77
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403510",
+                                            "StopPointName": "W 66 ST/CENTRAL PK W"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:28.690-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:13:50.256-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.5 miles away",
+                                                    "DistanceFromCall": 2464.61,
+                                                    "StopsFromCall": 7,
+                                                    "CallDistanceAlongRoute": 2478.41
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403779",
+                                            "StopPointName": "W 66 ST/COLUMBUS AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:14:51.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:14:55.656-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.6 miles away",
+                                                    "DistanceFromCall": 2592.95,
+                                                    "StopsFromCall": 8,
+                                                    "CallDistanceAlongRoute": 2606.75
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403512",
+                                            "StopPointName": "W 66 ST/BROADWAY"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:15:26.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:15:38.786-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.7 miles away",
+                                                    "DistanceFromCall": 2791.78,
+                                                    "StopsFromCall": 9,
+                                                    "CallDistanceAlongRoute": 2805.58
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_403513",
+                                            "StopPointName": "W 66 ST/AMSTERDAM AV"
+                                        },
+                                        {
+                                            "AimedArrivalTime": "2021-06-24T00:16:00.691-04:00",
+                                            "ExpectedArrivalTime": "2021-06-23T00:16:14.638-04:00",
+                                            "Extensions": {
+                                                "Distances": {
+                                                    "PresentableDistance": "1.9 miles away",
+                                                    "DistanceFromCall": 2989.54,
+                                                    "StopsFromCall": 10,
+                                                    "CallDistanceAlongRoute": 3003.34
+                                                }
+                                            },
+                                            "StopPointRef": "MTA_803057",
+                                            "StopPointName": "W 66 ST/WEST END AV"
+                                        }
+                                    ]
+                                }
+                            },
+                            "RecordedAtTime": "2021-06-23T00:03:49.000-04:00"
+                        }
+                    ],
+                    "ResponseTimestamp": "2021-06-23T00:03:57.682-04:00",
+                    "ValidUntil": "2021-06-23T00:04:57.682-04:00"
+                }
+            ],
+            "SituationExchangeDelivery": [
+                {
+                    "Situations": {
+                        "PtSituationElement": [
+                            {
+                                "PublicationWindow": {
+                                    "StartTime": "2020-08-25T00:00:00.000-04:00",
+                                    "EndTime": "2022-01-30T23:59:00.000-05:00"
+                                },
+                                "Severity": "undefined",
+                                "Summary": "Until further notice Eastbound M66 stop on 65th St at Broadway is closed because of construction",
+                                "Description": "Until further notice Eastbound M66 stop on 65th St at Broadway is closed because of construction   Buses will make stops on 65th St at Amsterdam Ave or Columbus Ave.",
+                                "Affects": {
+                                    "VehicleJourneys": {
+                                        "AffectedVehicleJourney": [
+                                            {
+                                                "LineRef": "MTA NYCT_M66",
+                                                "DirectionRef": "0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "Consequences": {
+                                    "Consequence": [
+                                        {
+                                            "Condition": "noService"
+                                        }
+                                    ]
+                                },
+                                "CreationTime": "2020-08-25T00:00:00.000-04:00",
+                                "SituationNumber": "MTA NYCT_267461"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
