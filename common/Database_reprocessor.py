@@ -20,9 +20,9 @@ def get_session(db_url):
 
 def get_db_url(dest, daily_filename):
     if dest == 'sqlite':
-        return 'sqlite:///archives/{}.sqlite3'.format(daily_filename)
+        return f'sqlite:///archives/{daily_filename}.sqlite3' #bug
     elif dest == 'mysql':
-        return 'mysql://{}:{}@{}:{}/{}'.format('nycbuswatcher', 'bustime', 'localhost', '3306', 'buses') #bug
+        return 'mysql://nycbuswatcher:bustime@localhost:3306/buses'  #bug
     # todo w/in the docker stack
     # return 'mysql://{}:{}@{}:{}/{}'.format('reprocessor', 'reprocessor', 'db', '3306', 'reprocessor')
 
