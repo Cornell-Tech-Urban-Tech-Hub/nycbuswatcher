@@ -79,7 +79,6 @@ class GenericStore(WorkDir):
         self.uid = uuid4().hex
         logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
 
-
     def get_path(self, prefix):
         folderpath = self.cwd / prefix
         Path(folderpath).mkdir(parents=True, exist_ok=True)
@@ -127,6 +126,11 @@ class DataLake(GenericStore):
     def __init__(self, cwd):
         super().__init__(cwd, kind='lake')
         #dont init self.puddles but call self.scan_puddles() as needed
+
+    def pickle_myself(self):
+            filepath=self.path / 'DataLake.pickle'
+            with open(filepath, "wb") as f:
+                pickle.dump(self, f)
 
     def make_puddles(self, feeds, date_pointer):
         for route_report in feeds:
@@ -230,6 +234,11 @@ class DataStore(GenericStore):
         super().__init__(cwd, kind='store')
         # dont init self.barrels and self.shipments instead call them as needed with self.scan_barrels() and self.scan_shipments()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
+
+    def pickle_myself(self):
+        filepath=self.path / 'DataStore.pickle'
+        with open(filepath, "wb") as f:
+            pickle.dump(self, f)
 
     def make_barrels(self, feeds, date_pointer):
         for route_report in feeds:
