@@ -49,6 +49,5 @@ services:
 #      gunicorn --workers=4 --timeout=120 --threads=1 -b 0.0.0.0:8000 --forwarded-allow-ips="*" app_dash:server
 
 networks:
-  default:
+  nycbuswatcr_default:
     external: true
-    name: nycbuswatcher_default
