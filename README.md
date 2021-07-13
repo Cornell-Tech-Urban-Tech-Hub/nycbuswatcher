@@ -5,7 +5,7 @@
 
 ## Description
 
-NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parses, and redistributes bulk data of bus position records from the NYC Transit BusTime API. For speed and scalability, there is no database. Everything is done with serialized data stored in static files for speed, scalability, and economy.
+NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parses, and redistributes bulk data of bus position records from the NYC Transit BusTime API. For speed and scalability, there is no database. Everything is done with serialized data stored in static files.
 
 ## Quickstart
 

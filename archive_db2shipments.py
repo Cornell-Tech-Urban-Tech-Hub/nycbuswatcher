@@ -5,6 +5,28 @@ from common.Database_db2shipments import *
 from common.Models import *
 store = DataStore(Path.cwd())
 
+
+'''
+general approach
+
+1. loop over all the tables and create a new lookup table with the following columns
+
+tablename, record_id, timestamp
+
+2. then iterate over dates from 10-15-2020 to 04-30-2021 through that, pulling records that match from the right tables, concatente them into a shipment file and dump oit 
+
+'''
+
+
+
+
+
+
+
+
+
+
+
 # tablenames=['buses_reprocessed_2020_10',
 # 			'buses_reprocessed_2020_11',
 # 			'buses_reprocessed_2020_12_a',
@@ -20,6 +42,79 @@ store = DataStore(Path.cwd())
 # 			'buses_dumped_2021_05',
 # 			'buses_dumped_2021_06'
 # 			]
+
+
+make_single_table_sql="""
+# use a union query https://support.microsoft.com/en-us/office/use-a-union-query-to-combine-multiple-queries-into-a-single-result-1f772ec0-cc73-474d-ab10-ad0a75541c6e
+
+CREATE_TABLE buses_reprocessed_2020_10_thru_2021_04
+
+AS
+
+SELECT *
+FROM buses_reprocessed_2020_10
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2020_11
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2020_12_a
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2020_12_b
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_01_a
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_01_b
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_02_a
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_02_b
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_03_a
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_03_b
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_04_a
+
+UNION
+
+SELECT *
+FROM buses_reprocessed_2021_04_b
+
+;"""
+
+
+
+
+
 
 # for testing
 tablenames=['buses_reprocessed_2020_10',

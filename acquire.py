@@ -52,8 +52,7 @@ if __name__ == "__main__":
                           minutes=5,
                           misfire_grace_time=60)
 
-
-        # # every hour, 2 minutes after the hour
+        # every hour, 2 minutes after the hour
         scheduler.add_job(lake.freeze_puddles,
                       'cron',
                       hour='*',
@@ -64,6 +63,14 @@ if __name__ == "__main__":
                           hour='*',
                           minute=2,
                           misfire_grace_time=300)
+
+        # every hour, 4 minutes after the hour
+        scheduler.add_job(store.pickle_myself,
+                          'cron',
+                          hour='*',
+                          minute=4,
+                          misfire_grace_time=300)
+
 
 
         # Start the schedulers

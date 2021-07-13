@@ -5,6 +5,7 @@ from typing import Optional
 from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+import pickle
 import uvicorn
 import argparse
 import logging
@@ -52,9 +53,14 @@ class PrettyJSONResponse(Response):
         ).encode("utf-8")
 
 
-def make_store(): #todo too costly? how to automate this for refresh periodically
-    print ('i recreated the DataStore()')
-    return DataStore(pathlib.Path.cwd())
+def reload_store():
+    try:
+        with open('data/store/DataStore.pickle', 'rb') as f:
+            return pickle.load(f)
+    except:
+        store = DataStore(pathlib.Path.cwd()).pickle_myself()
+        with open('data/store/DataStore.pickle', 'rb') as f:
+            return pickle.load(f)
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -77,7 +83,7 @@ async def list_shipments_by_query_all_fields_optional(
         hour: Optional[int] = Query(None, ge=0, le=23),
         route: Optional[str] = Query(None, max_length=6) #bug throws error if `route` omitted
 ):
-    store = make_store()
+    store = reload_store()
     params = {
         'route':route.upper(), #bug throws error if `route` omitted
         'year':year,
@@ -96,7 +102,7 @@ async def list_shipments_by_query_all_fields_optional(
 @app.get('/api/v2/nyc/{route}',response_class=PrettyJSONResponse)
 async def list_all_shipments_in_history_for_route(
         route: str = Query("M15", max_length=6)):
-    store = make_store()
+    store = reload_store()
     route_shipments = store.find_route_shipments(route.upper())
     shipments = [
         {"route": s.date_pointer.route,
@@ -165,7 +171,7 @@ async def list_all_routes_for_hour(
         day: int = Path(..., ge=1, le=31),
         hour: int = Path(..., ge=0, le=23)
 ):
-    store = make_store() #todo is this expensive/not scalable for each request?
+    store = reload_store() #todo is this expensive/not scalable for each request?
     date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
     routes = sorted(store.list_routes_in_store(date_pointer))
     result = {"year":year,
