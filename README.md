@@ -9,7 +9,7 @@ NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parse
 
 ## Quickstart
 
-The easiesy way to use NYCBusWatcher is to simply pull data from our public API, powered by FastAPI. This API serves up batches of bus observations in either JSON or GeoJSON format, bundled in hourly increments per route (hereafter referred to as 'shipments'). This allows data users to quickly pull large amounts of data without the overhead of a database. Several APIs are provided for discovering what shipments are available (e.g. date coverage, and route coverage). Please suggest other APIs.
+The easiest way to use NYCBusWatcher is to simply pull data from our public API, powered by FastAPI. This API serves up batches of bus observations in either JSON or GeoJSON format, bundled in hourly increments per route (hereafter referred to as 'shipments'). This allows data users to quickly pull large amounts of data without the overhead of a database. Several APIs are provided for discovering what shipments are available (e.g. date coverage, and route coverage). Please suggest other APIs.
 
 - [API home page]((https://api.buswatcher.org)), redirects to /docs for now.
 - [API docs](https://api.buswatcher.org/docs), includes test capabilities.

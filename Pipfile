@@ -17,6 +17,7 @@ jinja2 = "*"
 pyfakefs = "*"
 dash = "*"
 ijson = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
