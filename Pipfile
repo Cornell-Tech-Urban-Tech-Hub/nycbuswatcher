@@ -4,20 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
-apscheduler = "*"
-trio = "*"
-python-dotenv = "*"
-fastapi = "*"
-aiofiles = "*"
-uvicorn = "*"
-pandas = "*"
-asks = "*"
-jinja2 = "*"
-pyfakefs = "*"
-dash = "*"
-ijson = "*"
+mysqlclient = "*"
 sqlalchemy = "*"
+python-dotenv = "*"
+apscheduler = "*"
+fastapi = "*"
+uvicorn = "*"
+trio = "*"
+pandas = "*"
 
 [dev-packages]
 
