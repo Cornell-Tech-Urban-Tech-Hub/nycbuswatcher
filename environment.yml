@@ -68,6 +68,6 @@ dependencies:
   - zstd=1.4.9
   - pip:
     - ijson==3.1.4
-    - mysqlclient==2.0.3
+    - mysqlclient
     - python-dateutil==2.8.1
 prefix: /opt/bin/miniconda3/envs/reprocessor
