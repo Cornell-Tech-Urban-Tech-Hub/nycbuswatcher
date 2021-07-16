@@ -28,8 +28,7 @@ metadata.create_all(bind=engine)
 from common.Models import *
 store = DataStore(Path.cwd())
 
-#todo create this as a list of DatePointers and query against that? then convert htem to DateRoutePointers to make the barrels
-# create datelist
+#create datalist as list of DatePointer objects by hour
 import datetime as dt
 date1 = '2020-10-16'
 date2 = '2021-05-31'
@@ -38,7 +37,12 @@ start = dt.datetime.strptime(date1, '%Y-%m-%d')
 end = dt.datetime.strptime(date2, '%Y-%m-%d')
 step = dt.timedelta(days=1)
 while start <= end:
-	datelist.append(start.date())
+	for hr in range(24):
+		datelist.append(
+			DatePointer(
+				start+dt.timedelta(hours=hr)
+			)
+		)
 	start += step
 
 # define tablespace
@@ -91,42 +95,19 @@ print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
 # concatente them into a shipment file and dump it
 
 for date in datelist:
-	print(date)
-	query = f"""SELECT * FROM buses_reprocessed_all WHERE service_date='{date}'"""
+	date_str=date.timestamp.strftime('%Y-%m-%d')
+	#todo might be more consistent to have both conditions query against timestamp
+	query = f"""SELECT * FROM buses_reprocessed_all WHERE service_date='{date_str}' AND HOUR(timestamp) = {date.hour}"""
+	print(query)
+				
 	with engine.connect() as conn:
-		results = conn.execute(query) #todo might want to load these as BusObservation objects?
+		print('parsing buses')
+		results = conn.execute(query)
 		for row in results:
-			print (row)
-			# print (f'{row.service_date} \t {row.route_simple} \t {row.trip_id} \r {row.vehicle_id}')
+			bus = BusObservation.Load(row)
+			print (bus)
 
 # make barrels
-# todo break this down by hour and route
+
 # todo dump each route-hours buses together
 
-
-###################################################################################################################
-##### old
-#
-#
-# # 1. loop over all the tables and create a new lookup table with the following columns
-# # tablename, record_id, timestamp
-# import sys
-#
-# count = 0
-# for table in tablespace:
-#
-# 	query = f'SELECT "{table}", id, service_date FROM {table}'
-#
-# 	with engine.connect() as conn:
-# 		results = conn.execute(query)
-#
-# 		for row in results:
-# 			# sys.stdout.write('.')
-# 			conn.execute(
-# 				insert(lookup).values(
-# 					origin_table=table, id=row.id, service_date=row.service_date
-# 				)
-# 			)
-# 			count = count +1
-#
-# print (f'done. added {count} buses to lookup table')
