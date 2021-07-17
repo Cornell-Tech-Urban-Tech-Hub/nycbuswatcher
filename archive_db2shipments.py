@@ -111,8 +111,9 @@ for date in datelist:
 
 		# iterate over the groups
 		for route_long, route_group in itertools.groupby(rows, lambda x: x.route_long):
-			feed = defaultdict()
-			feed['VehicleActivity'] = []
+
+			data = defaultdict()
+			data['VehicleActivity'] = []
 
 			for bus in route_group:
 				# process the route_group into a feed and feed it to store.make_barrels
@@ -155,13 +156,19 @@ for date in datelist:
 						"RecordedAtTime": f'{bus.timestamp.isoformat()}'
 					}
 
-				feed['VehicleActivity'].append(monitored_vehicle_journey)
+				data['VehicleActivity'].append(monitored_vehicle_journey)
+
+			fake_response =  {"Siri" :{
+								"ServiceDelivery" : {
+									"VehicleMonitoringDelivery" : []
+													}
+									}
+							}
 
 
-			# print (f"made a feed with {len(feed['VehicleActivity'])} buses for {bus.route_short}")
+			fake_response['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'].append(data)
 
-			feeds = [{ route_long: feed} ]
-
+			feeds = [{ route_long: fake_response} ]
 			store.make_barrels(feeds, date)
 
-	# store.render_barrels()
+	store.render_barrels()

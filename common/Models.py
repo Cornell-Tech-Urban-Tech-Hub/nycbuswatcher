@@ -250,7 +250,10 @@ class DataStore(GenericStore):
                     folder = Barrel(self.cwd, barrel_date_pointer).path
                     filename = 'pickle_{}_{}.dat'.format(barrel_date_pointer.route, barrel_date_pointer.timestamp).replace(' ', 'T')
                     filepath = folder / PurePath(filename)
-                    route_data = route_data.json() #bug stopped here... run acquire and stop here what format is the route_data usually in?
+                    try:
+                        route_data = route_data.json()
+                    except AttributeError: #this means we are running the shipment dumper
+                        pass
                     for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
                         bus = BusObservation(route, monitored_vehicle_journey)
                         pickles.append(bus)
