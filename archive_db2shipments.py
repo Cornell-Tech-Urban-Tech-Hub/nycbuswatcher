@@ -65,11 +65,9 @@ tablespace=['buses_reprocessed_2020_10',
 
 # n.b. this is faster than using a lookup table! but the ids are no longer unique
 
-"""
-running it offline
+# already ran this query on the server by hand
+# nohup docker exec -i nycbuswatcher_db_1 mysql -unycbuswatcher -pbustime buses -e "CREATE TABLE buses_reprocessed_merged AS SELECT * FROM buses_reprocessed_2020_10 UNION SELECT * FROM buses_reprocessed_2020_11 UNION SELECT * FROM buses_reprocessed_2020_12_a UNION SELECT * FROM buses_reprocessed_2020_12_b UNION SELECT * FROM buses_reprocessed_2021_01_a UNION SELECT * FROM buses_reprocessed_2021_01_b UNION SELECT * FROM buses_reprocessed_2021_02_a UNION SELECT * FROM buses_reprocessed_2021_02_b UNION SELECT * FROM buses_reprocessed_2021_03_a UNION SELECT * FROM buses_reprocessed_2021_03_b UNION SELECT * FROM buses_reprocessed_2021_04_a UNION SELECT * FROM buses_reprocessed_2021_04_b UNION SELECT * FROM buses_reprocessed_copied_2021_05 UNION SELECT * FROM buses_reprocessed_copied_2021_06;" &
 
-nohup docker exec -i nycbuswatcher_db_1 mysql -unycbuswatcher -pbustime buses -e "CREATE TABLE buses_reprocessed_merged AS SELECT * FROM buses_reprocessed_2020_10 UNION SELECT * FROM buses_reprocessed_2020_11 UNION SELECT * FROM buses_reprocessed_2020_12_a UNION SELECT * FROM buses_reprocessed_2020_12_b UNION SELECT * FROM buses_reprocessed_2021_01_a UNION SELECT * FROM buses_reprocessed_2021_01_b UNION SELECT * FROM buses_reprocessed_2021_02_a UNION SELECT * FROM buses_reprocessed_2021_02_b UNION SELECT * FROM buses_reprocessed_2021_03_a UNION SELECT * FROM buses_reprocessed_2021_03_b UNION SELECT * FROM buses_reprocessed_2021_04_a UNION SELECT * FROM buses_reprocessed_2021_04_b UNION SELECT * FROM buses_reprocessed_copied_2021_05 UNION SELECT * FROM buses_reprocessed_copied_2021_06;" &
-"""
 
 merge_tables_query = \
 """
@@ -90,9 +88,14 @@ SELECT * FROM buses_reprocessed_2021_04_b UNION
 SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
 SELECT * FROM buses_reprocessed_dumped_2021_06
 """
+
 with engine.connect() as conn:
-	conn.execute(merge_tables_query)
-print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
+	if args.localhost == True:
+		conn.execute('DROP TABLE buses_reprocessed_merged')
+		conn.execute(merge_tables_query)
+		print (f'merged {len(tablespace)} tables into table:buses_reprocessed_merged')
+	else:
+		print('running on cornellbus server, did not attempt to merge all tables in table:buses_reprocessed_merged')
 
 
 # create a datastore in cwd
