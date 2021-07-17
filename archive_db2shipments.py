@@ -26,7 +26,6 @@ metadata.create_all(bind=engine)
 
 # load the DataStore
 from common.Models import *
-store = DataStore(Path.cwd())
 
 #create datalist as list of DatePointer objects by hour
 import datetime as dt
@@ -65,9 +64,16 @@ tablespace=['buses_reprocessed_2020_10',
 # merge all the tables with one query
 
 # n.b. this is faster than using a lookup table! but the ids are no longer unique
+
+"""
+running it offline
+
+nohup docker exec -i nycbuswatcher_db_1 mysql -unycbuswatcher -pbustime buses -e "CREATE TABLE buses_reprocessed_merged AS SELECT * FROM buses_reprocessed_2020_10 UNION SELECT * FROM buses_reprocessed_2020_11 UNION SELECT * FROM buses_reprocessed_2020_12_a UNION SELECT * FROM buses_reprocessed_2020_12_b UNION SELECT * FROM buses_reprocessed_2021_01_a UNION SELECT * FROM buses_reprocessed_2021_01_b UNION SELECT * FROM buses_reprocessed_2021_02_a UNION SELECT * FROM buses_reprocessed_2021_02_b UNION SELECT * FROM buses_reprocessed_2021_03_a UNION SELECT * FROM buses_reprocessed_2021_03_b UNION SELECT * FROM buses_reprocessed_2021_04_a UNION SELECT * FROM buses_reprocessed_2021_04_b UNION SELECT * FROM buses_reprocessed_copied_2021_05 UNION SELECT * FROM buses_reprocessed_copied_2021_06;" &
+"""
+
 merge_tables_query = \
 """
-CREATE TABLE buses_reprocessed_merged
+CREATE TABLE IF NOT EXISTS buses_reprocessed_merged
 AS
 SELECT * FROM buses_reprocessed_2020_10 UNION
 SELECT * FROM buses_reprocessed_2020_11 UNION
@@ -85,7 +91,6 @@ SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
 SELECT * FROM buses_reprocessed_dumped_2021_06
 """
 with engine.connect() as conn:
-	# conn.execute("DROP TABLE buses_reprocessed_merged") #bug this is dangerous
 	conn.execute(merge_tables_query)
 print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
 
@@ -152,7 +157,7 @@ for date in datelist:
 								}
 							}
 						},
-						"RecordedAtTime": f'{bus.timestamp.isoformat()}'
+						"RecordedAtTime": f'{bus.timestamp.isoformat()}' #bug compare with standard shipment
 					}
 
 				data['VehicleActivity'].append(monitored_vehicle_journey)
