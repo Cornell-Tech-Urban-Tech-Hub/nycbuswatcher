@@ -67,7 +67,7 @@ tablespace=['buses_reprocessed_2020_10',
 # n.b. this is faster than using a lookup table! but the ids are no longer unique
 merge_tables_query = \
 """
-CREATE TABLE buses_reprocessed_all
+CREATE TABLE buses_reprocessed_merged
 AS
 SELECT * FROM buses_reprocessed_2020_10 UNION
 SELECT * FROM buses_reprocessed_2020_11 UNION
@@ -84,10 +84,10 @@ SELECT * FROM buses_reprocessed_2021_04_b UNION
 SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
 SELECT * FROM buses_reprocessed_dumped_2021_06
 """
-# with engine.connect() as conn:
-# 	conn.execute("DROP TABLE buses_reprocessed_all") #bug this is dangerous
-# 	conn.execute(merge_tables_query)
-# print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
+with engine.connect() as conn:
+	# conn.execute("DROP TABLE buses_reprocessed_merged") #bug this is dangerous
+	conn.execute(merge_tables_query)
+print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
 
 
 # create a datastore in cwd
@@ -100,10 +100,9 @@ store = DataStore(Path.cwd() / 'tmp')
 for date in datelist:
 	date_str=date.timestamp.strftime('%Y-%m-%d')
 	#todo might be more consistent to have both conditions query against timestamp
-	query = f"""SELECT * FROM buses_reprocessed_all WHERE service_date='{date_str}' AND HOUR(timestamp) = {date.hour}"""
+	query = f"""SELECT * FROM buses_reprocessed_merged WHERE service_date='{date_str}' AND HOUR(timestamp) = {date.hour}"""
 
 	with engine.connect() as conn:
-		print('parsing buses')
 		results = conn.execute(query)
 
 		import itertools
