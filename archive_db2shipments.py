@@ -1,4 +1,4 @@
-
+from collections import defaultdict
 from sqlalchemy import (Column, Date, Integer, MetaData, Table, String, create_engine, select, insert)
 
 # database setup
@@ -84,30 +84,84 @@ SELECT * FROM buses_reprocessed_2021_04_b UNION
 SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
 SELECT * FROM buses_reprocessed_dumped_2021_06
 """
-with engine.connect() as conn:
-	conn.execute("DROP TABLE buses_reprocessed_all") #bug this is dangerous
-	conn.execute(merge_tables_query)
-print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
+# with engine.connect() as conn:
+# 	conn.execute("DROP TABLE buses_reprocessed_all") #bug this is dangerous
+# 	conn.execute(merge_tables_query)
+# print (f'merged {len(tablespace)} tables into table:buses_reprocessed_all')
 
+
+# create a datastore in cwd
+store = DataStore(Path.cwd() / 'tmp')
 
 # 2. then iterate over dates from 10-15-2020 to 04-30-2021 through that, pulling records that match from the right tables
 # make a shipment for each
-# concatente them into a shipment file and dump it
+# concatenate them into a shipment file and dump it
 
 for date in datelist:
 	date_str=date.timestamp.strftime('%Y-%m-%d')
 	#todo might be more consistent to have both conditions query against timestamp
 	query = f"""SELECT * FROM buses_reprocessed_all WHERE service_date='{date_str}' AND HOUR(timestamp) = {date.hour}"""
-	print(query)
-				
+
 	with engine.connect() as conn:
 		print('parsing buses')
 		results = conn.execute(query)
-		for row in results:
-			bus = BusObservation.Load(row)
-			print (bus)
 
-# make barrels
+		import itertools
+		rows = [x for x in results]
 
-# todo dump each route-hours buses together
+		# iterate over the groups
+		for route_long, route_group in itertools.groupby(rows, lambda x: x.route_long):
+			feed = defaultdict()
+			feed['VehicleActivity'] = []
 
+			for bus in route_group:
+				# process the route_group into a feed and feed it to store.make_barrels
+
+				monitored_vehicle_journey = \
+					{
+						"MonitoredVehicleJourney": {
+							"LineRef": f'{bus.route_long}',
+							"DirectionRef": f'{bus.direction}',
+							"FramedVehicleJourneyRef": {
+								"DataFrameRef": f'{bus.service_date}',
+								"DatedVehicleJourneyRef": f'{bus.trip_id}'
+							},
+							"JourneyPatternRef": f'{bus.gtfs_shape_id}',
+							"PublishedLineName": f'{bus.route_short}',
+							"OperatorRef": f'{bus.agency}',
+							"OriginRef": f'{bus.origin_id}',
+							"DestinationName": f'{bus.destination_name}',
+							"OriginAimedDepartureTime": "2021-07-13T17:57:00.000-04:00",
+							"SituationRef": [], #bug how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
+							"VehicleLocation": {
+								"Longitude": f'{bus.lon}',
+								"Latitude": f'{bus.lat}'
+							},
+							"Bearing": f'{bus.bearing}',
+							"ProgressRate": f'{bus.progress_rate}',
+							"ProgressStatus": f'{bus.progress_status}',
+							"BlockRef": f'{bus.gtfs_block_id}',
+							"VehicleRef": f'{bus.vehicle_id}',
+							"MonitoredCall": {
+								"Extensions": {
+									"Capacities": {
+										"EstimatedPassengerCount": f'{bus.passenger_count}',
+										"DistanceFromCall": f'{bus.next_stop_d}',
+										"CallDistanceAlongRoute": f'{bus.next_stop_d_along_route}'
+									}
+								}
+							}
+						},
+						"RecordedAtTime": f'{bus.timestamp.isoformat()}'
+					}
+
+				feed['VehicleActivity'].append(monitored_vehicle_journey)
+
+
+			# print (f"made a feed with {len(feed['VehicleActivity'])} buses for {bus.route_short}")
+
+			feeds = [{ route_long: feed} ]
+
+			store.make_barrels(feeds, date)
+
+	# store.render_barrels()

@@ -250,7 +250,7 @@ class DataStore(GenericStore):
                     folder = Barrel(self.cwd, barrel_date_pointer).path
                     filename = 'pickle_{}_{}.dat'.format(barrel_date_pointer.route, barrel_date_pointer.timestamp).replace(' ', 'T')
                     filepath = folder / PurePath(filename)
-                    route_data = route_data.json()
+                    route_data = route_data.json() #bug stopped here... run acquire and stop here what format is the route_data usually in?
                     for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
                         bus = BusObservation(route, monitored_vehicle_journey)
                         pickles.append(bus)
@@ -600,3 +600,52 @@ class BusObservation():
     def __init__(self,route,monitored_vehicle_journey):
         self.route = route
         self.parse_buses(monitored_vehicle_journey)
+
+    # alternate constructor
+    # # add this https://stackoverflow.com/questions/6383914/is-there-a-way-to-instantiate-a-class-without-calling-init/6384228#6384228
+    # call this class method with for row in results: BusObservation.Load(row)
+    @classmethod
+    def Load(cls, table_row):
+
+        row_dict = \
+        {
+            "MonitoredVehicleJourney": {
+                "LineRef": f'{table_row.route_long}',
+                "DirectionRef": f'{table_row.direction}',
+                "FramedVehicleJourneyRef": {
+                    "DataFrameRef": f'{table_row.service_date}',
+                    "DatedVehicleJourneyRef": f'{table_row.trip_id}'
+                },
+                "JourneyPatternRef": f'{table_row.gtfs_shape_id}',
+                "PublishedLineName": f'{table_row.route_short}',
+                "OperatorRef": f'{table_row.agency}',
+                "OriginRef": f'{table_row.origin_id}',
+                "DestinationName": f'{table_row.destination_name}',
+                "OriginAimedDepartureTime": "2021-07-13T17:57:00.000-04:00",
+                "SituationRef": [], #bug how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
+                "VehicleLocation": {
+                    "Longitude": f'{table_row.lon}',
+                    "Latitude": f'{table_row.lat}'
+                },
+                "Bearing": f'{table_row.bearing}',
+                "ProgressRate": f'{table_row.progress_rate}',
+                "ProgressStatus": f'{table_row.progress_status}',
+                "BlockRef": f'{table_row.gtfs_block_id}',
+                "VehicleRef": f'{table_row.vehicle_id}',
+                "MonitoredCall": {
+                    "Extensions": {
+                        "Capacities": {
+                            "EstimatedPassengerCount": f'{table_row.passenger_count}',
+                            "DistanceFromCall": f'{table_row.next_stop_d}',
+                            "CallDistanceAlongRoute": f'{table_row.next_stop_d_along_route}'
+                        }
+                    }
+                }
+            },
+            "RecordedAtTime": f'{table_row.timestamp.isoformat()}'
+        }
+
+        return cls(
+            table_row.route_short,
+            row_dict
+        )
