@@ -1,5 +1,6 @@
 from collections import defaultdict
 from sqlalchemy import (Column, Date, Integer, MetaData, Table, String, create_engine, select, insert)
+import itertools
 
 # database setup
 # define the lookup table
@@ -61,42 +62,8 @@ tablespace=['buses_reprocessed_2020_10',
 			'buses_reprocessed_dumped_2021_06'
 			]
 
-# merge all the tables with one query
 
-# n.b. this is faster than using a lookup table! but the ids are no longer unique
-
-# already ran this query on the server by hand
-# nohup docker exec -i nycbuswatcher_db_1 mysql -unycbuswatcher -pbustime buses -e "CREATE TABLE buses_reprocessed_merged AS SELECT * FROM buses_reprocessed_2020_10 UNION SELECT * FROM buses_reprocessed_2020_11 UNION SELECT * FROM buses_reprocessed_2020_12_a UNION SELECT * FROM buses_reprocessed_2020_12_b UNION SELECT * FROM buses_reprocessed_2021_01_a UNION SELECT * FROM buses_reprocessed_2021_01_b UNION SELECT * FROM buses_reprocessed_2021_02_a UNION SELECT * FROM buses_reprocessed_2021_02_b UNION SELECT * FROM buses_reprocessed_2021_03_a UNION SELECT * FROM buses_reprocessed_2021_03_b UNION SELECT * FROM buses_reprocessed_2021_04_a UNION SELECT * FROM buses_reprocessed_2021_04_b UNION SELECT * FROM buses_reprocessed_copied_2021_05 UNION SELECT * FROM buses_reprocessed_copied_2021_06;" &
-
-
-merge_tables_query = \
-"""
-CREATE TABLE IF NOT EXISTS buses_reprocessed_merged
-AS
-SELECT * FROM buses_reprocessed_2020_10 UNION
-SELECT * FROM buses_reprocessed_2020_11 UNION
-SELECT * FROM buses_reprocessed_2020_12_a UNION
-SELECT * FROM buses_reprocessed_2020_12_b UNION
-SELECT * FROM buses_reprocessed_2021_01_a UNION
-SELECT * FROM buses_reprocessed_2021_01_b UNION
-SELECT * FROM buses_reprocessed_2021_02_a UNION
-SELECT * FROM buses_reprocessed_2021_02_b UNION
-SELECT * FROM buses_reprocessed_2021_03_a UNION
-SELECT * FROM buses_reprocessed_2021_03_b UNION
-SELECT * FROM buses_reprocessed_2021_04_a UNION
-SELECT * FROM buses_reprocessed_2021_04_b UNION
-SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
-SELECT * FROM buses_reprocessed_dumped_2021_06
-"""
-
-with engine.connect() as conn:
-	if args.localhost == True:
-		conn.execute('DROP TABLE buses_reprocessed_merged')
-		conn.execute(merge_tables_query)
-		print (f'merged {len(tablespace)} tables into table:buses_reprocessed_merged')
-	else:
-		print('running on cornellbus server, did not attempt to merge all tables in table:buses_reprocessed_merged')
-
+# SECOND APPROACH -- iterate over tables with a query for each date
 
 # create a datastore in cwd
 store = DataStore(Path.cwd() / 'tmp')
@@ -106,14 +73,34 @@ store = DataStore(Path.cwd() / 'tmp')
 # concatenate them into a shipment file and dump it
 
 for date in datelist:
+
 	date_str=date.timestamp.strftime('%Y-%m-%d')
-	#todo might be more consistent to have both conditions query against timestamp
-	query = f"""SELECT * FROM buses_reprocessed_merged WHERE service_date='{date_str}' AND HOUR(timestamp) = {date.hour}"""
+
+	# todo might be more consistent to have both conditions query against timestamp
+
+	query = f"""
+	SELECT * FROM buses_reprocessed_2020_10 UNION
+	SELECT * FROM buses_reprocessed_2020_11 UNION
+	SELECT * FROM buses_reprocessed_2020_12_a UNION
+	SELECT * FROM buses_reprocessed_2020_12_b UNION
+	SELECT * FROM buses_reprocessed_2021_01_a UNION
+	SELECT * FROM buses_reprocessed_2021_01_b UNION
+	SELECT * FROM buses_reprocessed_2021_02_a UNION
+	SELECT * FROM buses_reprocessed_2021_02_b UNION
+	SELECT * FROM buses_reprocessed_2021_03_a UNION
+	SELECT * FROM buses_reprocessed_2021_03_b UNION
+	SELECT * FROM buses_reprocessed_2021_04_a UNION
+	SELECT * FROM buses_reprocessed_2021_04_b UNION
+	SELECT * FROM buses_reprocessed_dumped_2021_05 UNION
+	SELECT * FROM buses_reprocessed_dumped_2021_06
+	WHERE service_date='{date_str}' 
+	AND HOUR(timestamp) = {date.hour}
+	"""
+
 
 	with engine.connect() as conn:
 		results = conn.execute(query)
-
-		import itertools
+		print(f'queried: {date_str}, hour {date.hour} completed at {dt.datetime.now()}')
 		rows = [x for x in results]
 
 		# iterate over the groups
