@@ -98,7 +98,7 @@ def get_hour_of_data(table, datehour):
 		date_str=datehour.timestamp.strftime('%Y-%m-%d')
 		# todo might be more consistent to have both conditions query against timestamp
 		query = f"""SELECT * FROM {table} WHERE service_date='{date_str}' AND HOUR(timestamp) = {datehour.hour}"""
-		print(f'querying: table {table} \t\t date {date_str} \t hour {datehour.hour} \t completed at {dt.datetime.now()}')
+		print(f'querying: table {table} \t\t date {date_str} \t hour {datehour.hour} \t started at {dt.datetime.now()}')
 		results = conn.execute(query)
 		return [x for x in results]
 
