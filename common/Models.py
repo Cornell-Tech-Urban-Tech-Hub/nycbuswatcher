@@ -14,6 +14,23 @@ from uuid import uuid4
 
 import common.config.config as config
 
+#-------------- debugging and testing -------------------------------------------------------------
+import functools
+from time import perf_counter
+
+def timer(func):
+    @functools.wraps(func)
+    def wrapper_timer(*args, **kwargs):
+        tic = perf_counter()
+        value = func(*args, **kwargs)
+        toc = perf_counter()
+        elapsed_time = toc - tic
+        logging.warning(f"{func.__name__!r} executed in {elapsed_time:0.4f} seconds")
+        return value
+    return wrapper_timer
+#--------------------------------------------------------------------------------------------------
+
+
 pathmap = {
     'glacier':'data/lake/glaciers',
     'lake':'data/lake',
@@ -107,7 +124,7 @@ class GenericFolder(WorkDir):
 
     def get_path(self, prefix, date_pointer):
         folderpath = self.cwd / prefix / date_pointer.purepath
-        Path(folderpath).mkdir(parents=True, exist_ok=True) #  bug FileExistsError: [Errno 17] File exists:
+        Path(folderpath).mkdir(parents=True, exist_ok=True)
         return folderpath
 
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
@@ -347,9 +364,11 @@ class DataStore(GenericStore):
             )
         dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
         # dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
-        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False) #bug this is writing to data/ and shouldnt
+        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
         return
 
+    @timer
+    #bug this is slow when the DataStore gets big
     def scan_shipments(self):
         files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['shipment']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
@@ -361,6 +380,8 @@ class DataStore(GenericStore):
             shipments.append(s)
         return shipments
 
+    @timer
+    #bug this is slow when the DataStore gets big
     def find_route_shipments(self,route):
         result = []
         shipments = self.scan_shipments()
@@ -369,7 +390,8 @@ class DataStore(GenericStore):
                 result.append(s)
         return result
 
-
+    @timer
+    #bug this is slow when the DataStore gets big
     def find_query_shipments(self, params):
 
         def filter_params(params):
@@ -392,9 +414,6 @@ class DataStore(GenericStore):
                 self.scan_shipments()
             )
         )
-
-        # todo sort these results by all params, in sequence
-        # https://www.geeksforgeeks.org/ways-sort-list-dictionaries-values-python-using-lambda-function/
 
         result=[ {"route": s.route,
                   "year": s.date_pointer.year,
@@ -632,7 +651,7 @@ class BusObservation():
                 "OriginRef": f'{table_row.origin_id}',
                 "DestinationName": f'{table_row.destination_name}',
                 "OriginAimedDepartureTime": "2021-07-13T17:57:00.000-04:00",
-                "SituationRef": [], #bug how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
+                "SituationRef": [], #todo how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
                 "VehicleLocation": {
                     "Longitude": f'{table_row.lon}',
                     "Latitude": f'{table_row.lat}'

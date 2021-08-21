@@ -11,7 +11,7 @@ import argparse
 import logging
 import pathlib
 
-from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment
+from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment, timer
 
 from dotenv import load_dotenv
 
@@ -27,8 +27,8 @@ api_url_stem="/api/v2/nyc/"
 app = FastAPI()
 templates = Jinja2Templates(directory="assets/templates")
 
-#todo this isn't loading in dashboard because it keeps try to get it on port 8000 not 5000?
-app.mount("/assets", StaticFiles(directory="assets"), name="assets")
+# # this isn't loading in dashboard because it keeps try to get it on port 8000 not 5000?
+# app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 
 
@@ -51,23 +51,8 @@ class PrettyJSONResponse(Response):
             separators=(", ", ": "),
         ).encode("utf-8")
 
-#-------------- debugging and testing -------------------------------------------------------------
-import functools
-import time
-
-def timer(func):
-    @functools.wraps(func)
-    def wrapper_timer(*args, **kwargs):
-        tic = time.perf_counter()
-        value = func(*args, **kwargs)
-        toc = time.perf_counter()
-        elapsed_time = toc - tic
-        logging.warning(f"Elapsed time: {elapsed_time:0.4f} seconds")
-        return value
-    return wrapper_timer
 
 #-------------- Initialize Data Store -------------------------------------------------------------
-#bug find a way to not do this with each request, but every 5 min?
 @timer
 def reload_store():
     try:
@@ -127,28 +112,30 @@ async def list_all_routes_for_hour(
               "day":day,
               "hour":hour,
               "routes": routes}
+
+    # bug copy/adapt shipments_sorted from list_all_shipments_in_history_for_route()
     return result
 
 
-# #------------------------------------------------------------------------------------------------------------------------
-# # ENDPOINT /api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}/json
-# # FUNCTION get a single Shipment by date_pointer as JSON
-# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
-# # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
-# async def fetch_single_shipment(*,
-#         year: int = Path(..., ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
-#         month: int = Path(..., ge=1, le=12),
-#         day: int = Path(..., ge=1, le=31),
-#         hour: int = Path(..., ge=0, le=23),
-#         route: str = Path(..., max_length=6)
-# ):
-#     shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.\
-#         format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
-#     if not isfile(shipment_to_get):
-#         return Response(status_code=404)
-#     with open(shipment_to_get) as f:
-#         content = f.read()
-#     return Response(content, media_type='application/json')
+#------------------------------------------------------------------------------------------------------------------------
+# ENDPOINT /api/v2/nyc/buses/{year}/{month}/{day}/{hour}/{route}/json
+# FUNCTION get a single Shipment by date_pointer as JSON
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
+# after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
+async def fetch_single_shipment(*,
+        year: int = Path(..., ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
+        month: int = Path(..., ge=1, le=12),
+        day: int = Path(..., ge=1, le=31),
+        hour: int = Path(..., ge=0, le=23),
+        route: str = Path(..., max_length=6)
+):
+    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'.\
+        format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
+    if not isfile(shipment_to_get):
+        return Response(status_code=404)
+    with open(shipment_to_get) as f:
+        content = f.read()
+    return Response(content, media_type='application/json')
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -197,6 +184,9 @@ async def list_shipments_by_query_all_fields_optional(
         'hour':hour
     }
     shipments = store.find_query_shipments(params)
+
+    # bug copy/adapt shipments_sorted from list_all_shipments_in_history_for_route()
+
     return {"query":params,
             "shipments": shipments}
 

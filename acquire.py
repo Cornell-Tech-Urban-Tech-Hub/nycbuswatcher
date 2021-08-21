@@ -20,8 +20,8 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.DEBUG)
         print ('VERBOSE ON')
     else:
-        logging.basicConfig(level=logging.ERROR)
-        print ('VERBOSE OFF, ERRORS ONLY')
+        logging.basicConfig(level=logging.WARNING)
+        print ('VERBOSE OFF, WARNINGS+ERRORS ONLY')
 
 
 
