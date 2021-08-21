@@ -75,9 +75,11 @@ class GenericStore(WorkDir):
 
     def __init__(self, cwd, kind=None):
         super().__init__(cwd)
+        # self.path = self.get_path(pathmap[kind])
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
         logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
+
 
     def get_path(self, prefix):
         folderpath = self.cwd / prefix
@@ -236,6 +238,7 @@ class DataStore(GenericStore):
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
     def pickle_myself(self):
+        logging.warning('i am REBUILDING DataStore.pickle')
         filepath=self.path / 'DataStore.pickle'
         with open(filepath, "wb") as f:
             pickle.dump(self, f)
@@ -343,7 +346,8 @@ class DataStore(GenericStore):
                  s.count_buses())
             )
         dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
-        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
+        # dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
+        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False) #bug this is writing to data/ and shouldnt
         return
 
     def scan_shipments(self):
@@ -388,6 +392,9 @@ class DataStore(GenericStore):
                 self.scan_shipments()
             )
         )
+
+        # todo sort these results by all params, in sequence
+        # https://www.geeksforgeeks.org/ways-sort-list-dictionaries-values-python-using-lambda-function/
 
         result=[ {"route": s.route,
                   "year": s.date_pointer.year,

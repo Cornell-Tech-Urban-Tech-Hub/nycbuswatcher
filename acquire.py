@@ -35,8 +35,6 @@ if __name__ == "__main__":
         # every minute
         scan_interval_seconds = 60
 
-
-
         logging.debug('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
         scheduler.add_job(async_grab_and_store,
                           'interval',
