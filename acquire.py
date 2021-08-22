@@ -42,13 +42,16 @@ if __name__ == "__main__":
                           seconds=scan_interval_seconds,
                           misfire_grace_time=15)
 
-        # every 15 minutes
-        lake = DataLake(Path.cwd())
-        store = DataStore(Path.cwd())
-        scheduler.add_job(store.dump_dashboard,
-                          'interval',
-                          minutes=5,
-                          misfire_grace_time=60)
+
+        lake = DataLake(Path.cwd()) # todo wont need to implement a load_lake method because this doesn't suffer from scaling like the DataStore does.
+        # store = DataStore(Path.cwd())
+        store = load_store()
+
+        # # every 15 minutes
+        # scheduler.add_job(store.dump_dashboard,
+        #                   'interval',
+        #                   minutes=5,
+        #                   misfire_grace_time=60)
 
         # every hour, 2 minutes after the hour
         scheduler.add_job(lake.freeze_puddles,
@@ -62,6 +65,7 @@ if __name__ == "__main__":
                           minute=2,
                           misfire_grace_time=300)
 
+        # rebuild the pickled DataStore in data/DataStore.pickle
         # every hour, 4 minutes after the hour
         scheduler.add_job(store.pickle_myself,
                           'cron',

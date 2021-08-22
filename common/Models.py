@@ -2,7 +2,6 @@ import os
 import json
 import pickle
 import tarfile
-import pandas as pd
 import dateutil
 import inspect
 import logging
@@ -16,7 +15,7 @@ import common.config.config as config
 
 #-------------- debugging and testing -------------------------------------------------------------
 import functools
-from time import perf_counter
+from time import perf_counter, strftime
 
 def timer(func):
     @functools.wraps(func)
@@ -25,7 +24,7 @@ def timer(func):
         value = func(*args, **kwargs)
         toc = perf_counter()
         elapsed_time = toc - tic
-        logging.warning(f"{func.__name__!r} executed in {elapsed_time:0.4f} seconds")
+        logging.warning(f"{func.__name__!r} finished at {strftime('%l:%M%p %Z on %b %d, %Y') } in {elapsed_time:0.4f} seconds")
         return value
     return wrapper_timer
 #--------------------------------------------------------------------------------------------------
@@ -128,16 +127,45 @@ class GenericFolder(WorkDir):
         return folderpath
 
     # after https://stackoverflow.com/questions/50186904/pathlib-recursively-remove-directory
+    # all these trapped FileNotFound errors can be ignored since they mean its already been deleted
     def delete_folder(self):
         def rm_tree(pth):
             for child in pth.glob('*'):
                 if child.is_file():
-                    child.unlink()
+                    try:
+                        child.unlink()
+                    except FileNotFoundError as e:
+                        pass
+                        # logging.error(f'{e}')
                 else:
-                    rm_tree(child)
-            pth.rmdir()
+                    try:
+                        rm_tree(child)
+                    except FileNotFoundError as e:
+                        pass
+                        # logging.error(f'{e}')
+            try:
+                pth.rmdir()
+            except FileNotFoundError as e:
+                pass
+                # logging.error(f'{e}')
         rm_tree(self.path)
         return
+
+
+#-------------- Load Data Store -------------------------------------------------------------
+@timer
+def load_store():
+    picklepath = Path.cwd() / PurePath('data/store/DataStore.pickle')
+    try:
+        with open(picklepath, 'rb') as f:
+            logging.warning('i LOADED existing DataStore.pickle')
+            return pickle.load(f)
+    except:
+        store = DataStore(Path.cwd()).pickle_myself()
+        logging.warning('i REBUILT DataStore.pickle')
+        with open(picklepath, 'rb') as f:
+            return pickle.load(f)
+
 
 
 class DataLake(GenericStore):
@@ -251,11 +279,13 @@ class DataStore(GenericStore):
 
     def __init__(self, cwd):
         super().__init__(cwd, kind='store')
-        # dont init self.barrels and self.shipments instead call them as needed with self.scan_barrels() and self.scan_shipments()
+        self.shipments = self.scan_shipments()
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
     def pickle_myself(self):
-        logging.warning('i am REBUILDING DataStore.pickle')
+        logging.warning('i am RESCANNING /data/store to REBUILD DataStore.pickle')
+        # update shipments before pickling myself
+        self.scan_shipments()
         filepath=self.path / 'DataStore.pickle'
         with open(filepath, "wb") as f:
             pickle.dump(self, f)
@@ -327,7 +357,6 @@ class DataStore(GenericStore):
 
     def list_routes_in_store(self, date_pointer_query):
         routes = []
-        self.shipments = self.scan_shipments() #reload here Just In Case
         dp1=date_pointer_query
         for shipment in self.shipments:
             dp2=shipment.date_pointer
@@ -338,37 +367,36 @@ class DataStore(GenericStore):
                             routes.append((shipment.route, shipment.url))
         return routes
 
-    def dump_dashboard(self):
-        dashboard=[]
-        for b in self.scan_barrels():
-            dashboard.append(
-                ('Barrel',
-                 b.date_pointer.route,
-                 str(b.date_pointer),
-                 b.date_pointer.year,
-                 b.date_pointer.month,
-                 b.date_pointer.day,
-                 b.date_pointer.hour,
-                 b.count_pickles())
-            )
-        for s in self.scan_shipments():
-            dashboard.append(
-                ('Shipment',
-                 s.date_pointer.route,
-                 str(s.date_pointer),
-                 s.date_pointer.year,
-                 s.date_pointer.month,
-                 s.date_pointer.day,
-                 s.date_pointer.hour,
-                 s.count_buses())
-            )
-        dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
-        # dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
-        dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
-        return
+    # def dump_dashboard(self):
+    #     dashboard=[]
+    #     for b in self.scan_barrels():
+    #         dashboard.append(
+    #             ('Barrel',
+    #              b.date_pointer.route,
+    #              str(b.date_pointer),
+    #              b.date_pointer.year,
+    #              b.date_pointer.month,
+    #              b.date_pointer.day,
+    #              b.date_pointer.hour,
+    #              b.count_pickles())
+    #         )
+    #     for s in self.scan_shipments():
+    #         dashboard.append(
+    #             ('Shipment',
+    #              s.date_pointer.route,
+    #              str(s.date_pointer),
+    #              s.date_pointer.year,
+    #              s.date_pointer.month,
+    #              s.date_pointer.day,
+    #              s.date_pointer.hour,
+    #              s.count_buses())
+    #         )
+    #     dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
+    #     # dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
+    #     dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
+    #     return
 
     @timer
-    #bug this is slow when the DataStore gets big
     def scan_shipments(self):
         files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['shipment']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
@@ -381,17 +409,14 @@ class DataStore(GenericStore):
         return shipments
 
     @timer
-    #bug this is slow when the DataStore gets big
     def find_route_shipments(self,route):
         result = []
-        shipments = self.scan_shipments()
-        for s in shipments:
+        for s in self.shipments:
             if s.route == route:
                 result.append(s)
         return result
 
     @timer
-    #bug this is slow when the DataStore gets big
     def find_query_shipments(self, params):
 
         def filter_params(params):
@@ -411,7 +436,7 @@ class DataStore(GenericStore):
         shipments_filtered = list(
             filter(
                 filter_shipment,
-                self.scan_shipments()
+                self.shipments
             )
         )
 

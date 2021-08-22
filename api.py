@@ -11,7 +11,7 @@ import argparse
 import logging
 import pathlib
 
-from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment, timer
+from common.Models import DatePointer, DateRoutePointer, DataStore, Shipment, load_store
 
 from dotenv import load_dotenv
 
@@ -52,18 +52,7 @@ class PrettyJSONResponse(Response):
         ).encode("utf-8")
 
 
-#-------------- Initialize Data Store -------------------------------------------------------------
-@timer
-def reload_store():
-    try:
-        with open('data/store/DataStore.pickle', 'rb') as f:
-            logging.warning('i LOADED existing DataStore.pickle')
-            return pickle.load(f)
-    except:
-        store = DataStore(pathlib.Path.cwd()).pickle_myself()
-        logging.warning('i REBUILT DataStore.pickle')
-        with open('data/store/DataStore.pickle', 'rb') as f:
-            return pickle.load(f)
+
 
 #------------------------------------------------------------------------------------------------------------------------
 # ENDPOINT /api/v2/nyc/{route}
@@ -72,8 +61,8 @@ def reload_store():
 async def list_all_shipments_in_history_for_route(
         route: str = Query("M15", max_length=6)):
 
-    logging.debug('calling reload_store()')
-    store = reload_store()
+    logging.warning('calling reload_store()')
+    store = load_store()
 
     route_shipments = store.find_route_shipments(route.upper())
     shipments = [
@@ -102,8 +91,8 @@ async def list_all_routes_for_hour(
         hour: int = Path(..., ge=0, le=23)
 ):
 
-    logging.debug('calling reload_store()')
-    store = reload_store()
+    logging.warning('calling reload_store()')
+    store = load_store()
 
     date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
     routes = sorted(store.list_routes_in_store(date_pointer))
@@ -170,8 +159,8 @@ async def list_shipments_by_query_all_fields_optional(
         route: Optional[str] = Query(None, max_length=6)
 ):
 
-    logging.debug('calling reload_store()')
-    store = reload_store()
+    logging.warning('calling reload_store()')
+    store = load_store()
 
     if route:
         route = route.upper()
