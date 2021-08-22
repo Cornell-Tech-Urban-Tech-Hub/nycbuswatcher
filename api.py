@@ -118,30 +118,38 @@ async def list_all_shipments_in_history_for_route(
 
 
 #------------------------------------------------------------------------------------------------------------------------
-# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/routes
-# FUNCTION List routes with shipment data for period specified.
-@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/routes',response_class=PrettyJSONResponse)
-async def list_all_routes_for_hour(
-        *,
-        year: int = Path(..., ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
-        month: int = Path(..., ge=1, le=12),
-        day: int = Path(..., ge=1, le=31),
-        hour: int = Path(..., ge=0, le=23)
+# ENDPOINT /api/v2/nyc/shipments?route=BX4&year=2021&month=6&day=10&hour=4
+# FUNCTION List shipments available for a given set of arguments
+@app.get('/api/v2/shipments',response_class=PrettyJSONResponse)
+async def list_shipments_by_query_all_fields_optional(
+        year: Optional[int] = Query(None, ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
+        month: Optional[int] = Query(None, ge=1, le=12),
+        day: Optional[int] = Query(None, ge=1, le=31),
+        hour: Optional[int] = Query(None, ge=0, le=23),
+        route: Optional[str] = Query(None, max_length=6)
 ):
 
     logging.warning('calling reload_store()')
     store = load_store()
 
-    date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
-    routes = sorted(store.list_routes_in_store(date_pointer))
-    result = {"year":year,
-              "month":month,
-              "day":day,
-              "hour":hour,
-              "routes": routes}
+    if route:
+        route = route.upper()
+
+    params = {
+        'route':route,
+        'year':year,
+        'month':month,
+        'day':day,
+        'hour':hour
+    }
+    shipments = store.find_query_shipments(params)
 
     # bug copy/adapt shipments_sorted from list_all_shipments_in_history_for_route()
-    return result
+
+    return {"query":params,
+            "shipments": shipments}
+
+
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -185,38 +193,32 @@ async def fetch_single_Shipment_as_geoJSON(
     return Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
 
 
+
 #------------------------------------------------------------------------------------------------------------------------
-# ENDPOINT /api/v2/nyc/shipments?route=BX4&year=2021&month=6&day=10&hour=4
-# FUNCTION List shipments available for a given set of arguments
-@app.get('/api/v2/shipments',response_class=PrettyJSONResponse)
-async def list_shipments_by_query_all_fields_optional(
-        year: Optional[int] = Query(None, ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
-        month: Optional[int] = Query(None, ge=1, le=12),
-        day: Optional[int] = Query(None, ge=1, le=31),
-        hour: Optional[int] = Query(None, ge=0, le=23),
-        route: Optional[str] = Query(None, max_length=6)
+# ENDPOINT /api/v2/nyc/{year}/{month}/{day}/{hour}/routes
+# FUNCTION List routes with shipment data for period specified.
+@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/routes',response_class=PrettyJSONResponse)
+async def list_all_routes_for_hour(
+        *,
+        year: int = Path(..., ge=2020, le=2050), #future populate these #s based on DataStore's metadata about what's in the data (e.g. prevent a request for something that isn't there
+        month: int = Path(..., ge=1, le=12),
+        day: int = Path(..., ge=1, le=31),
+        hour: int = Path(..., ge=0, le=23)
 ):
 
     logging.warning('calling reload_store()')
     store = load_store()
 
-    if route:
-        route = route.upper()
-
-    params = {
-        'route':route,
-        'year':year,
-        'month':month,
-        'day':day,
-        'hour':hour
-    }
-    shipments = store.find_query_shipments(params)
+    date_pointer=DatePointer(datetime(year=int(year),month=int(month),day=int(day),hour=int(hour)))
+    routes = sorted(store.list_routes_in_store(date_pointer))
+    result = {"year":year,
+              "month":month,
+              "day":day,
+              "hour":hour,
+              "routes": routes}
 
     # bug copy/adapt shipments_sorted from list_all_shipments_in_history_for_route()
-
-    return {"query":params,
-            "shipments": shipments}
-
+    return result
 
 # #------------------------------------------------------------------------------------------------------------------------
 # # ENDPOINT /api/v2/nyc/dashboard
