@@ -35,3 +35,5 @@ services:
       - ./archives:/app/archives
     command:
       tail -f /dev/null # keep the container alive for me
+
+# todo add an nginx or traefik reverse proxy

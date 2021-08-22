@@ -1,6 +1,7 @@
 import argparse
 import time
 import logging
+from pathlib import Path
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
@@ -67,7 +68,7 @@ if __name__ == "__main__":
 
         # rebuild the pickled DataStore in data/DataStore.pickle
         # every hour, 4 minutes after the hour
-        scheduler.add_job(store.pickle_myself,
+        scheduler.add_job(DataStore(Path.cwd()).pickle_myself(),
                           'cron',
                           hour='*',
                           minute=4,
