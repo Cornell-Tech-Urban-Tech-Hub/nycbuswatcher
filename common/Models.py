@@ -13,22 +13,7 @@ from uuid import uuid4
 
 import common.config.config as config
 
-#-------------- debugging and testing -------------------------------------------------------------
-import functools
-from time import perf_counter, strftime
-
-def timer(func):
-    @functools.wraps(func)
-    def wrapper_timer(*args, **kwargs):
-        tic = perf_counter()
-        value = func(*args, **kwargs)
-        toc = perf_counter()
-        elapsed_time = toc - tic
-        logging.warning(f"{func.__name__!r} finished at {strftime('%l:%M%p %Z on %b %d, %Y') } in {elapsed_time:0.4f} seconds")
-        return value
-    return wrapper_timer
-#--------------------------------------------------------------------------------------------------
-
+from common.Helpers import timer
 
 pathmap = {
     'glacier':'data/lake/glaciers',
@@ -152,23 +137,6 @@ class GenericFolder(WorkDir):
         return
 
 
-#-------------- Load Data Store -------------------------------------------------------------
-@timer
-def load_store():
-    # picklepath = Path.cwd() / PurePath('data/store/DataStore.pickle')
-    picklepath = Path.cwd() / 'data/store/DataStore.pickle'
-    try:
-        with open(picklepath, 'rb') as f:
-            logging.warning('i LOADED existing DataStore.pickle')
-            return pickle.load(f)
-    except:
-        store = DataStore(Path.cwd()).pickle_myself()
-        logging.warning('i REBUILT DataStore.pickle')
-        with open(picklepath, 'rb') as f:
-            return pickle.load(f)
-
-
-
 class DataLake(GenericStore):
 
     def __init__(self, cwd):
@@ -280,17 +248,7 @@ class DataStore(GenericStore):
 
     def __init__(self, cwd):
         super().__init__(cwd, kind='store')
-        self.shipments = None
-        self.shipments = self.scan_shipments() # bug AttributeError: 'DataStore' object has no attribute 'shipments' <-- should init this with a default null first before calling function in case it takes a while to run?
-        # future other metadata -- array of dates and hours covered, total # of records, etc.
-
-    def pickle_myself(self):
-        logging.warning('i am RESCANNING /data/store to REBUILD DataStore.pickle')
-        # update shipments before pickling myself
-        self.scan_shipments()
-        filepath=self.path / 'DataStore.pickle'
-        with open(filepath, "wb") as f:
-            pickle.dump(self, f)
+        self.shipments = self.scan_shipments() # bug is this necessary at init?
 
     def make_barrels(self, feeds, date_pointer):
         for route_report in feeds:
@@ -357,48 +315,6 @@ class DataStore(GenericStore):
                 os.rmdir(dirpath)
         return
 
-    def list_routes_in_store(self, date_pointer_query):
-        routes = []
-        dp1=date_pointer_query
-        for shipment in self.shipments:
-            dp2=shipment.date_pointer
-            if dp1.year == dp2.year:
-                if dp1.month == dp2.month:
-                    if dp1.day == dp2.day:
-                        if dp1.hour == dp2.hour:
-                            routes.append((shipment.route, shipment.url))
-        return routes
-
-    # def dump_dashboard(self):
-    #     dashboard=[]
-    #     for b in self.scan_barrels():
-    #         dashboard.append(
-    #             ('Barrel',
-    #              b.date_pointer.route,
-    #              str(b.date_pointer),
-    #              b.date_pointer.year,
-    #              b.date_pointer.month,
-    #              b.date_pointer.day,
-    #              b.date_pointer.hour,
-    #              b.count_pickles())
-    #         )
-    #     for s in self.scan_shipments():
-    #         dashboard.append(
-    #             ('Shipment',
-    #              s.date_pointer.route,
-    #              str(s.date_pointer),
-    #              s.date_pointer.year,
-    #              s.date_pointer.month,
-    #              s.date_pointer.day,
-    #              s.date_pointer.hour,
-    #              s.count_buses())
-    #         )
-    #     dashboard_data=pd.DataFrame(dashboard, columns=['kind', 'route', 'datepointer_as_str', 'year', 'month', 'day', 'hour', 'num_buses'])
-    #     # dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
-    #     dashboard_data.to_csv(self.cwd / Path(pathmap['dashboard']),index=False)
-    #     return
-
-    @timer
     def scan_shipments(self):
         files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['shipment']), recursive=True)
         dirs = filter(lambda f: os.path.isdir(f), files)
@@ -410,46 +326,23 @@ class DataStore(GenericStore):
             shipments.append(s)
         return shipments
 
-    @timer
-    def find_route_shipments(self,route):
-        result = []
-        for s in self.shipments:
-            if s.route == route:
-                result.append(s)
-        return result
+    #todo write shipment index dumper
+    def make_shipment_indexes(self):
 
-    @timer
-    def find_query_shipments(self, params):
+        # start by rescanning all shipments
+        self.shipments = self.scan_shipments()
 
-        def filter_params(params):
-            new_params = dict()
-            for k,v in params.items():
-                if v != None:
-                    new_params[k] = v
-            return new_params
+        # todo 1 make a list of routes in self.shipments
+        # todo 2 iterate over self.shipments grouping by route -- use
+        # result = []
+        # for s in self.shipments:
+        #     if s.route == route:
+        #         result.append(s)
+        # todo 3 sort by year,month,day,hour in those groups
+        # todo 4 dump each group to a file
+        # shipment_to_dump = f'data/store/shipments/indexes/shipment_index_{route.upper()}.json'
 
-        def filter_shipment(shipment):
-            for k,v in filter_params(params).items():
-                # logging.debug ('filtering {} == {}'.format(k, v))
-                if getattr(shipment, k) != v:
-                    return False
-            return True
-
-        shipments_filtered = list(
-            filter(
-                filter_shipment,
-                self.shipments
-            )
-        )
-
-        result=[ {"route": s.route,
-                  "year": s.date_pointer.year,
-                  "month": s.date_pointer.month,
-                  "day": s.date_pointer.day,
-                  "hour": s.date_pointer.hour,
-                  "url":s.url
-                 } for s in shipments_filtered]
-        return result
+        return
 
 
 class Barrel(GenericFolder):
