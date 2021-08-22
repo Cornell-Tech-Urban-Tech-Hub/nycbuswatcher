@@ -1,10 +1,5 @@
 version: '3'
 
-networks:
-  nycbuswatcher_default:
-    # external: true
-    driver: bridge
-
 services:
 
   acquire:
@@ -14,8 +9,6 @@ services:
       dockerfile: ./build/acquire/Dockerfile
     volumes:
       - ./data:/app/data
-    networks:
-      - nycbuswatcher-default
     command:
       python3 /app/acquire.py
 
@@ -27,8 +20,6 @@ services:
       dockerfile: ./build/api/Dockerfile
     volumes:
       - ./data:/app/data
-    networks:
-      - nycbuswatcher-default
     ports:
       - 8000:8000
     command:
@@ -45,8 +36,6 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       # - ./letsencrypt/certs:/etc/nginx/certs:ro
       - ./build/nginx/nginx.conf:/etc/nginx/nginx.conf
-    networks:
-      - nycbuswatcher-default
     restart: always
 
 
@@ -58,8 +47,6 @@ services:
     volumes:
       - ./data:/app/data
       - ./archives:/app/archives
-    networks:
-      - nycbuswatcher-default
     command:
       tail -f /dev/null # keep the container alive for me
 
