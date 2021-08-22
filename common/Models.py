@@ -2,7 +2,7 @@ import os
 import json
 import pickle
 import tarfile
-import dateutil
+from dateutil import parser
 import inspect
 import logging
 
@@ -589,7 +589,7 @@ class BusObservation():
                   }
         buses = []
         try:
-            setattr(self,'timestamp',dateutil.parser.isoparse(monitored_vehicle_journey['RecordedAtTime']))
+            setattr(self,'timestamp',parser.isoparse(monitored_vehicle_journey['RecordedAtTime']))
             for k,v in lookup.items():
                 try:
                     if len(v) == 2:
