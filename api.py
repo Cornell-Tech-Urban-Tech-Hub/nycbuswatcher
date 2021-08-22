@@ -52,48 +52,44 @@ class PrettyJSONResponse(Response):
             separators=(", ", ": "),
         ).encode("utf-8")
 
-
-# disk cache----------------------------------------------------------------------------------------------------------
-# for each request, check if we have a copy in the cache that is less than TTL
-# if so, return that
-# if not, return this and also pickle it
-
-
-def cache_check(cache_name, response, params):
-
-    def file_age(filepath):
-        import os
-        import time
-        x=os.stat(filepath)
-        return (time.time()-x.st_mtime)
-
-    def pickle_response(response):
-        with open(cache_path, 'wb') as f:
-            logging.warning(f'saved cached response for {cache_name}')
-            pickle.dump(response,f)
-
-    ttl = 1800 # 30 minutes
-    cache_path = pathlib.Path.cwd() / 'data/api_cache'
-    cache_path.mkdir(parents=True, exist_ok=True)
-
-    if isinstance(params, str) is True:
-        params_path = params
-    else:
-        params_path = '-'.join([str(x) for x in params])
-
-    cache_path = cache_path / f'{cache_name}-{params_path}.pickle'
-
-    try:
-        with open(cache_path, 'rb') as f:
-            logging.warning(f'loaded cached response for endpoint: {cache_name}')
-            if file_age(cache_path) > ttl:
-                pickle_response(response)
-                return response
-            else:
-                return pickle.load(f)
-    except:
-        pickle_response(response)
-        return response
+#
+# # response cache----------------------------------------------------------------------------------------------------------
+#
+# def cache_check(endpoint, response, params):
+#
+#     def file_age(filepath):
+#         import os
+#         import time
+#         x=os.stat(filepath)
+#         return (time.time()-x.st_mtime)
+#
+#     def pickle_response(response):
+#         with open(cache_path, 'wb') as f:
+#             logging.warning(f'saved cached response for {endpoint}')
+#             pickle.dump(response,f)
+#
+#     ttl = 1800 # 30 minutes
+#     cache_path = pathlib.Path.cwd() / 'data/api_cache'
+#     cache_path.mkdir(parents=True, exist_ok=True)
+#
+#     if isinstance(params, str) is True:
+#         params_path = params
+#     else:
+#         params_path = '-'.join([str(x) for x in params])
+#
+#     cache_path = cache_path / f'{endpoint}-{params_path}.pickle'
+#
+#     try:
+#         with open(cache_path, 'rb') as f:
+#             logging.warning(f'loaded cached response for endpoint: {endpoint}')
+#             if file_age(cache_path) > ttl:
+#                 pickle_response(response)
+#                 return response
+#             else:
+#                 return pickle.load(f)
+#     except:
+#         pickle_response(response)
+#         return response
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -117,12 +113,8 @@ async def list_all_shipments_in_history_for_route(
          } for s in route_shipments
     ]
     shipments_sorted = sorted(shipments, key = lambda i: (i['year'],i['month'],i['day'],i['hour']))
-    return \
-        cache_check( inspect.currentframe().f_code.co_name,
-                     {"route":route.upper(),
-                      "shipments": shipments_sorted},
-                     route
-        )
+    return {"route":route.upper(),
+                      "shipments": shipments_sorted}
 
 
 #------------------------------------------------------------------------------------------------------------------------
@@ -149,13 +141,7 @@ async def list_all_routes_for_hour(
               "routes": routes}
 
     # bug copy/adapt shipments_sorted from list_all_shipments_in_history_for_route()
-    return \
-        cache_check( inspect.currentframe().f_code.co_name,
-                     result,
-                     [year,month,day,hour]
-                     )
-
-
+    return result
 
 
 #------------------------------------------------------------------------------------------------------------------------
