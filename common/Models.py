@@ -155,7 +155,8 @@ class GenericFolder(WorkDir):
 #-------------- Load Data Store -------------------------------------------------------------
 @timer
 def load_store():
-    picklepath = Path.cwd() / PurePath('data/store/DataStore.pickle')
+    # picklepath = Path.cwd() / PurePath('data/store/DataStore.pickle')
+    picklepath = Path.cwd() / 'data/store/DataStore.pickle'
     try:
         with open(picklepath, 'rb') as f:
             logging.warning('i LOADED existing DataStore.pickle')
@@ -279,7 +280,8 @@ class DataStore(GenericStore):
 
     def __init__(self, cwd):
         super().__init__(cwd, kind='store')
-        self.shipments = self.scan_shipments()
+        self.shipments = None
+        self.shipments = self.scan_shipments() # bug AttributeError: 'DataStore' object has no attribute 'shipments' <-- should init this with a default null first before calling function in case it takes a while to run?
         # future other metadata -- array of dates and hours covered, total # of records, etc.
 
     def pickle_myself(self):

@@ -74,7 +74,6 @@ if __name__ == "__main__":
                           misfire_grace_time=300)
 
 
-
         # Start the schedulers
         scheduler.start()
 
