@@ -9,8 +9,11 @@ services:
       dockerfile: ./build/acquire/Dockerfile
     volumes:
       - ./data:/app/data
+    networks:
+      - nycbuswatcher-default
     command:
       python3 /app/acquire.py
+
 
   api:
     restart: always
@@ -19,10 +22,13 @@ services:
       dockerfile: ./build/api/Dockerfile
     volumes:
       - ./data:/app/data
+    networks:
+      - nycbuswatcher-default
     ports:
       - 8000:8000
     command:
       uvicorn --host=0.0.0.0 --port=8000 api:app
+
 
   nginx: 
     image: jwilder/nginx-proxy
@@ -37,9 +43,6 @@ services:
     networks:
       - nycbuswatcher-default
     restart: always
-    deploy:
-      mode: replicated
-      replicas: 1
 
 
   reprocessor:
