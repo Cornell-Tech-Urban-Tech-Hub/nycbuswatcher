@@ -9,7 +9,7 @@ import logging
 import pathlib
 import inspect
 from starlette.responses import Response
-from common.Models import DateRoutePointer, Shipment, load_store
+from common.Models import DateRoutePointer, Shipment
 from dotenv import load_dotenv
 from common.Helpers import PrettyJSONResponse
 

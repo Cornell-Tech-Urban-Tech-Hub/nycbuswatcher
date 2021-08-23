@@ -5,6 +5,7 @@ import tarfile
 from dateutil import parser
 import inspect
 import logging
+from collections import defaultdict
 
 from datetime import date, datetime
 from pathlib import Path, PurePath
@@ -79,7 +80,7 @@ class GenericStore(WorkDir):
         # self.path = self.get_path(pathmap[kind])
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
-        logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
+        # logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
 
 
     def get_path(self, prefix):
@@ -104,7 +105,7 @@ class GenericFolder(WorkDir):
         super().__init__(cwd)
         self.date_pointer=date_pointer
         self.path = self.get_path(pathmap[kind], date_pointer)
-        logging.debug('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
+        # logging.debug('+instance::GenericFolder::of kind {} at {} from pointer {}'.format(kind,self.path,date_pointer))
 
     def get_path(self, prefix, date_pointer):
         folderpath = self.cwd / prefix / date_pointer.purepath
@@ -248,7 +249,6 @@ class DataStore(GenericStore):
 
     def __init__(self, cwd):
         super().__init__(cwd, kind='store')
-        self.shipments = self.scan_shipments() # bug is this necessary at init?
 
     def make_barrels(self, feeds, date_pointer):
         for route_report in feeds:
@@ -326,21 +326,46 @@ class DataStore(GenericStore):
             shipments.append(s)
         return shipments
 
-    #todo write shipment index dumper
+    #bug debug me
     def make_shipment_indexes(self):
 
-        # start by rescanning all shipments
+        # 1 populate the shipments list
         self.shipments = self.scan_shipments()
 
-        # todo 1 make a list of routes in self.shipments
-        # todo 2 iterate over self.shipments grouping by route -- use
-        # result = []
-        # for s in self.shipments:
-        #     if s.route == route:
-        #         result.append(s)
-        # todo 3 sort by year,month,day,hour in those groups
-        # todo 4 dump each group to a file
-        # shipment_to_dump = f'data/store/shipments/indexes/shipment_index_{route.upper()}.json'
+        #  2 sort all the shipments into a dict of lists
+        # { 'M15': [Shipment, Shipment, Shipment...],
+        #   'Bx44': [Shipment, Shipment, Shipment...]}
+        shipments_grouped=defaultdict(list)
+        for s in self.shipments:
+            shipments_grouped[s.route].append(s)
+
+        for route, shipment_list in shipments_grouped.items():
+
+            # 3 sort each route's shipments by year,month,day,hour
+            shipment_list_sorted = sorted(shipment_list, key = lambda i: (i.year,i.month,i.day,i.hour))
+            folderpath = self.path / PurePath('shipments/indexes')
+            Path(folderpath).mkdir(parents=True, exist_ok=True)
+
+            outfile = folderpath / PurePath(f'shipment_index_{route.upper()}.json')
+            Path(folderpath).mkdir(parents=True, exist_ok=True)
+
+            # make the shipment_insert
+            shipment_insert = []
+
+            for s in shipment_list_sorted:
+                the_pointer = {'route': s.route,
+                               'year': s.year,
+                               'month': s.month,
+                               'day': s.day,
+                               'hour': s.hour,
+                               'url' : s.url}
+                shipment_insert.append(the_pointer)
+
+            json_container = {"route":route.upper(), "shipments": shipment_insert}
+
+            with open(outfile, "w") as f:
+                json.dump(json_container, f, indent=4)
+            logging.debug ('wrote Shipment index for {route} to {outfile}')
 
         return
 
@@ -571,7 +596,7 @@ class BusObservation():
                 "OriginRef": f'{table_row.origin_id}',
                 "DestinationName": f'{table_row.destination_name}',
                 "OriginAimedDepartureTime": "2021-07-13T17:57:00.000-04:00",
-                "SituationRef": [], #todo how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
+                "SituationRef": [], # how to parse -- 'alert': ['SituationRef', 'SituationSimpleRef']
                 "VehicleLocation": {
                     "Longitude": f'{table_row.lon}',
                     "Latitude": f'{table_row.lat}'

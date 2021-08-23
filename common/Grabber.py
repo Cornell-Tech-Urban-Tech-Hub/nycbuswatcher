@@ -33,11 +33,8 @@ def async_grab_and_store(localhost, cwd):
 
     # dump to the various locations
     timestamp = dt.datetime.now()
-    DataLake(cwd).make_puddles(feeds, DatePointer(timestamp)) #bug launch these using a store loaded from the pickle, using code from api.py
-
-    store = load_store()
-    store.make_barrels(feeds, DatePointer(timestamp))
-    # DataStore(cwd).make_barrels(feeds, DatePointer(timestamp)) #bug launch these using Models.load_store?
+    DataLake(cwd).make_puddles(feeds, DatePointer(timestamp))
+    DataStore(cwd).make_barrels(feeds, DatePointer(timestamp))
 
     # report results to console
     n_buses = num_buses(feeds)

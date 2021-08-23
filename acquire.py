@@ -24,9 +24,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.WARNING)
         print ('VERBOSE OFF, WARNINGS+ERRORS ONLY')
 
-
-
-    load_dotenv() #todo is this used? is this what populates os.environ?
+    load_dotenv()
 
     # PRODUCTION = start main loop
     if os.environ['PYTHON_ENV'] == "production":
