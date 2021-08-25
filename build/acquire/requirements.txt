@@ -4,4 +4,5 @@ pandas
 python-dotenv
 python-dateutil
 requests
+starlette
 trio
