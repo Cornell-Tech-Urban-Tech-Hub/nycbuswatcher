@@ -24,19 +24,13 @@ The easiest way to use NYCBusWatcher is to simply pull data from our public API,
    && cd nycbuswatcher`
     
     
-2. [Obtain a BusTime API key](http://bustime.mta.info/wiki/Developers/Index/) and put it in .env (quotes not needed, but no spaces)
+2. [Obtain a BusTime API key](http://bustime.mta.info/wiki/Developers/Index/) and save it in .env in the root of the repo (quotes not needed, but no spaces)
 
     ```txt
     API_KEY=fasjhfasfajskjrwer242jk424242
     ```
 
-3. If you want to use the gandi dyndns updater, add these three keys to .env and make sure to uncomment the appropriate section in `docker-compose.yml`
-    - GANDI_API_KEY=rwer242jk424242
-    - GANDI_DOMAIN=buswatcher.org
-    - GANDI_SUBDOMAINS=api, www, thisistheapiforreal
-
-
-4. Bring the stack up.
+3. Bring the stack up.
 
     ```
     export COMPOSE_PROJECT_NAME=nycbuswatcher2 # (optional, if running alongside another nycbuswatcher deployment)
@@ -55,7 +49,7 @@ The API serves these hourly, per route JSON files full of serialized `BusObserva
 
 ## Reprocessor
 
-Utilities for migrating data from older versions.
+These are utilities for migrating data from older versions. New users won't need them.
 
 #### archive_reprocessor.py
 
