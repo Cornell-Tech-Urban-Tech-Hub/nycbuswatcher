@@ -202,6 +202,62 @@ class DataLake(GenericStore):
                 os.rmdir(dirpath)
         return
 
+    def scan_glaciers(self):
+        files = glob('{}/*/*/*/*/*'.format(self.cwd / pathmap['glacier']), recursive=True)
+        dirs = filter(lambda f: os.path.isdir(f), files)
+        glaciers = []
+        for d in dirs:
+            rt=d.split('/')[-1]
+            g = Glacier(self.cwd, self.path_to_DateRoutePointer(d,rt))
+            g.path = g.path / PurePath (g.route)
+            glaciers.append(g)
+        return glaciers
+
+
+    def make_glacier_indexes(self):
+
+        # 1 populate the shipments list
+        self.glaciers = self.scan_glaciers()
+        # logging.warning(f'scanned {len(self.glaciers)} glaciers')
+
+        #  2 sort all the glaciers into a dict of lists
+        # { 'M15': [Shipment, Shipment, Shipment...],
+        #   'Bx44': [Shipment, Shipment, Shipment...]}
+        glaciers_grouped=defaultdict(list)
+        for g in self.glaciers:
+            glaciers_grouped[g.route].append(g)
+
+        for route, glaciers_list in glaciers_grouped.items():     # bug debug
+
+            # 3 sort each route's shipments by year,month,day,hour
+            glaciers_list_sorted = sorted(glaciers_list, key = lambda i: (i.date_pointer.year,i.date_pointer.month,i.date_pointer.day,i.date_pointer.hour))
+            folderpath = self.path / PurePath('glaciers/indexes')
+            Path(folderpath).mkdir(parents=True, exist_ok=True)
+
+            outfile = folderpath / PurePath(f'glacier_index_{route.upper()}.json')
+            Path(folderpath).mkdir(parents=True, exist_ok=True)
+
+            # make the shipment_insert
+            glacier_insert = []
+
+            for s in glaciers_list_sorted:
+                the_pointer = {'route': s.date_pointer.route,
+                               'year': s.date_pointer.year,
+                               'month': s.date_pointer.month,
+                               'day': s.date_pointer.day,
+                               'hour': s.date_pointer.hour,
+                               'url' : s.url}
+                glacier_insert.append(the_pointer)
+
+            json_container = {"route":route.upper(), "glaciers": glacier_insert}
+
+            with open(outfile, "w") as f:
+                json.dump(json_container, f, indent=4)
+            logging.debug ('wrote Glacier index for {route} to {outfile}')
+
+        return
+
+
 
 class Puddle(GenericFolder):
 
@@ -233,8 +289,16 @@ class Glacier(GenericFolder):
         super().__init__(cwd, date_pointer, kind='glacier')
         self.route = self.date_pointer.route
         self.exist, self.filepath = self.check_exist()
-        if self.exist == True:
-            raise OSError ('there is already an archive at {}'.format(self.filepath))
+        try:
+            if self.exist == True:
+                pass
+        except OSError:
+            logging.error ('!!error::Glacier::skipping! there is already a Glacier at {}'.format(self.filepath))
+        self.url = config.config['glacier_api_url'].format(str(date_pointer.year),
+                                                            str(date_pointer.month),
+                                                            str(date_pointer.day),
+                                                            str(date_pointer.hour),
+                                                            date_pointer.route)
 
     def check_exist(self):
         filepath = self.path / 'glacier_{}.tar.gz'. \
@@ -326,7 +390,6 @@ class DataStore(GenericStore):
             shipments.append(s)
         return shipments
 
-    #bug debug me
     def make_shipment_indexes(self):
 
         # 1 populate the shipments list

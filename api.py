@@ -26,14 +26,14 @@ templates = Jinja2Templates(directory="assets/templates")
 #######################
 
 # List All Shipments In History For Route
-@app.get('/api/v2/nyc/{route}',response_class=PrettyJSONResponse)
+@app.get('/api/v2/nyc/{route}/shipments',response_class=PrettyJSONResponse)
 async def list_all_shipments_in_history_for_route(
         route: str = Query("M15", max_length=6)):
 
-    shipment_to_get = f'data/store/shipments/indexes/shipment_index_{route.upper()}.json'
-    if not isfile(shipment_to_get):
+    shipment_index_to_get = f'data/store/shipments/indexes/shipment_index_{route.upper()}.json'
+    if not isfile(shipment_index_to_get):
         return Response(status_code=404)
-    with open(shipment_to_get) as f:
+    with open(shipment_index_to_get) as f:
         content = f.read()
     return Response(content, media_type='application/json')
 
@@ -81,6 +81,18 @@ async def fetch_single_Shipment_as_geoJSON(
 # GLACIER ENDPOINTS
 ######################
 
+
+# List All Glaciers In History For Route
+@app.get('/api/v2/nyc/{route}/glaciers',response_class=PrettyJSONResponse)
+async def list_all_glaciers_in_history_for_route(
+        route: str = Query("M15", max_length=6)):
+
+    glacier_index_to_get = f'data/lake/glaciers/indexes/glacier_index_{route.upper()}.json'
+    if not isfile(glacier_index_to_get):
+        return Response(status_code=404)
+    with open(glacier_index_to_get) as f:
+        content = f.read()
+    return Response(content, media_type='application/json')
 
 # Fetch Single Glacier as Download
 @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/archive')
