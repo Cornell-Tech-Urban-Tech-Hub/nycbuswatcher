@@ -10,7 +10,7 @@ import pathlib
 import inspect
 from starlette.responses import Response
 from starlette.responses import FileResponse
-from common.Models import DateRoutePointer, Shipment
+from common.Models import DateRoutePointer, Shipment, RouteHistory
 from dotenv import load_dotenv
 from common.Helpers import PrettyJSONResponse
 
@@ -109,10 +109,35 @@ async def fetch_single_glacier(
     glacier_to_get = f'data/lake/glaciers/{year}/{month}/{day}/{hour}/{route.upper()}/{filename}'
     if not isfile(glacier_to_get):
         return Response(status_code=404)
-    # with open(glacier_to_get, "rb") as f:
-    #     content = f.read()
-    # return Response(content, media_type='application/gzip')
+
     return FileResponse(glacier_to_get, filename=filename)
+
+
+#######################
+# ROUTE ARCHIVE ENDPOINT
+#######################
+
+# Fetch An Entire Route's History as a Tarball—Glaciers and Shipments
+@app.get('/api/v2/nyc/{route}/history')
+# after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
+async def fetch_route_history(
+        route: str = Query("M15", max_length=6)
+):
+
+    # trigger creation of RouteHistory
+    RouteHistory(pathlib.Path.cwd(), route)
+
+    # create the pointers
+    filename = f'route_history_{route.upper()}.tar.gz'
+    route_history_to_get = f'data/history/{filename}'
+
+    if not isfile(route_history_to_get):
+        return Response(status_code=404)
+
+    return FileResponse(route_history_to_get, filename=filename)
+
+
+
 
 
 # main -----------------------------------------------------------------------------------------------------

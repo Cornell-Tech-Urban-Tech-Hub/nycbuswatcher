@@ -13,10 +13,10 @@ from common.Models import *
 
 # define datespace
 date1 = '2020-10-16'
-date2 = '2021-05-31'
+date2 = '2021-06-30'
 
 # define tablespace
-tablespace=['buses_reprocessed_2020_10',
+tablespace_old=['buses_reprocessed_2020_10',
 			'buses_reprocessed_2020_11',
 			'buses_reprocessed_2020_12_a',
 			'buses_reprocessed_2020_12_b',
@@ -31,6 +31,19 @@ tablespace=['buses_reprocessed_2020_10',
 			'buses_reprocessed_dumped_2021_05',
 			'buses_reprocessed_dumped_2021_06'
 			]
+
+# define tablespace
+tablespace= { '10': ['buses_reprocessed_2020_10'],
+			  '11': ['buses_reprocessed_2020_11'],
+			  '12': ['buses_reprocessed_2020_12'],
+			  '01': ['buses_reprocessed_2021_01a', 'buses_reprocessed_2021_01b'],
+			  '02': ['buses_reprocessed_2021_02a', 'buses_reprocessed_2021_02b'],
+			  '03': ['buses_reprocessed_2021_03a', 'buses_reprocessed_2021_03b'],
+			  '04': ['buses_reprocessed_2021_04a', 'buses_reprocessed_2021_04b'],
+			  '05': ['buses_reprocessed_dumped_2021_05'],
+			  '06': ['buses_reprocessed_dumped_2021_06']
+			  }
+
 
 # define template
 
@@ -137,8 +150,10 @@ def dump_hour(store, hour_of_data):
 if __name__=="__main__":
 
 	# parse arguments
+
 	parser = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps fromv1 database table to shipment json files')
 	parser.add_argument('-l', '--localhost', action='store_true', help="Run on localhost (otherwise uses docker container hostname 'db')")
+	parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
 	args = parser.parse_args()
 
 	# setup the db connection
@@ -150,17 +165,19 @@ if __name__=="__main__":
 	#create datelist as list of DatePointer objects by hour
 
 
-	# todo method 3 create a separate datastore for each table
-	# todo figure out how to combine -- then identify, load, and combine any that overlap
+	for month in args.months:
+		print(f'dumping month {month}')
+		if month in tablespace.keys():
 
+			# make a separate store for each month (will hold multiple table outputs)
+			store = DataStore(Path.cwd() / 'reprocessed_shipments' / f"""{month}""")
 
-	for table in tablespace:
+			# iterate over the table list for each month
+			for table in tablespace[month]:
+				print(f'parsing table {table}')
 
-		# create a separate datastore for each table
-		store = DataStore(Path.cwd() / 'tmp' / f"""{table}""")
-
-		#get each hour from the table and render it
-		for datehour in get_datelist(date1,date2):
-			hour_of_data = 	get_hour_of_data(table, datehour)
-			dump_hour(store, hour_of_data)
-
+				#get each hour from the table and render it
+				for datehour in get_datelist(date1,date2):
+					print(f'querying {datehour}')
+					hour_of_data = 	get_hour_of_data(table, datehour)
+					dump_hour(store, hour_of_data)

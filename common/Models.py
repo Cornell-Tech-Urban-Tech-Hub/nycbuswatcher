@@ -14,8 +14,6 @@ from uuid import uuid4
 
 import common.config.config as config
 
-from common.Helpers import timer
-
 pathmap = {
     'glacier':'data/lake/glaciers',
     'lake':'data/lake',
@@ -23,7 +21,8 @@ pathmap = {
     'shipment':'data/store/shipments',
     'store':'data/store',
     'barrel':'data/store/barrels',
-    'dashboard':'data/dashboard.csv'
+    'dashboard':'data/dashboard.csv',
+    'history':'data/history'
     }
 
 
@@ -77,11 +76,8 @@ class GenericStore(WorkDir):
 
     def __init__(self, cwd, kind=None):
         super().__init__(cwd)
-        # self.path = self.get_path(pathmap[kind])
         self.path = self.get_path(pathmap[kind])
         self.uid = uuid4().hex
-        # logging.debug('+instance::GenericStore::of kind {} at {} with uid {}'.format(kind,self.path,self.uid))
-
 
     def get_path(self, prefix):
         folderpath = self.cwd / prefix
@@ -136,6 +132,50 @@ class GenericFolder(WorkDir):
                 # logging.error(f'{e}')
         rm_tree(self.path)
         return
+
+
+class RouteHistory(WorkDir):
+
+    def __init__(self, cwd, route, kind='history'):
+        super().__init__(cwd)
+        self.cwd = cwd
+        self.route = route
+        self.path = self.get_path(pathmap[kind])
+        self.url = config.config['history_api_url'].format(route)
+        self.make_route_history()
+
+    def get_path(self, prefix):
+        folderpath = self.cwd / prefix
+        Path(folderpath).mkdir(parents=True, exist_ok=True)
+        return folderpath
+
+    def make_route_history(self):
+        lake = DataLake(self.cwd)
+        store = DataStore(self.cwd)
+
+        # populate the list of paths in the route history
+
+        filepaths_in_history=[]
+        for glacier in lake.scan_glaciers():
+            if glacier.route == self.route:
+                filepaths_in_history.append(glacier.filepath)
+        for shipment in store.scan_shipments():
+            if shipment.route == self.route:
+                filepaths_in_history.append(shipment.filepath)
+
+        # check if we can write the outfile
+        try:
+            outfile = self.path / f'route_history_{self.route}.tar.gz'
+        except OSError:
+            return
+
+        # dump them all into a tar.gz route history file and return the path to the file
+        with tarfile.open(outfile, "w:gz") as tar:
+            for file in filepaths_in_history:
+                tar.add(file, arcname=file.name.replace(':','-')) # tar doesnt like colons
+        logging.debug ('froze {} Glaciers and Shipments  to RouteHistory at {}'.format(len(filepaths_in_history), outfile))
+
+        return self.url
 
 
 class DataLake(GenericStore):
@@ -256,7 +296,6 @@ class DataLake(GenericStore):
             logging.debug ('wrote Glacier index for {route} to {outfile}')
 
         return
-
 
 
 class Puddle(GenericFolder):
