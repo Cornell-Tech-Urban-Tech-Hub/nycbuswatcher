@@ -77,6 +77,15 @@ if __name__ == "__main__":
                           minute=40,
                           misfire_grace_time=300)
 
+        # every night, at 3 am
+        scheduler.add_job(make_route_histories(),
+                          'cron',
+                          hour='3',
+                          minute=0,
+                          misfire_grace_time=300)
+
+
+
 
         # Start the schedulers
         scheduler.start()

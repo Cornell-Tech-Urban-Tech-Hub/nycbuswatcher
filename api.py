@@ -124,8 +124,9 @@ async def fetch_route_history(
         route: str = Query("M15", max_length=6)
 ):
 
-    # trigger creation of RouteHistory
-    RouteHistory(pathlib.Path.cwd(), route)
+    # bug this should be enough to make it load the batch processed route history, rather than generating on the fly
+    # # trigger creation of RouteHistory
+    # RouteHistory(pathlib.Path.cwd(), route)
 
     # create the pointers
     filename = f'route_history_{route.upper()}.tar.gz'

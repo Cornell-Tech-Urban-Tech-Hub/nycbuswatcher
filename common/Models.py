@@ -12,6 +12,8 @@ from pathlib import Path, PurePath
 from glob import glob
 from uuid import uuid4
 
+from Helpers import timer
+
 import common.config.config as config
 
 pathmap = {
@@ -177,6 +179,12 @@ class RouteHistory(WorkDir):
 
         return self.url
 
+@timer
+def make_route_histories():
+    for route in DataLake(Path.cwd()).list_unique_routes():
+        RouteHistory(Path.cwd(), route, kind='history').make_route_history()
+        logging.debug(f'Wrote RouteHistory for {route}')
+    return
 
 class DataLake(GenericStore):
 
@@ -267,7 +275,7 @@ class DataLake(GenericStore):
         for g in self.glaciers:
             glaciers_grouped[g.route].append(g)
 
-        for route, glaciers_list in glaciers_grouped.items():     # bug debug
+        for route, glaciers_list in glaciers_grouped.items():
 
             # 3 sort each route's shipments by year,month,day,hour
             glaciers_list_sorted = sorted(glaciers_list, key = lambda i: (i.date_pointer.year,i.date_pointer.month,i.date_pointer.day,i.date_pointer.hour))
@@ -296,6 +304,15 @@ class DataLake(GenericStore):
             logging.debug ('wrote Glacier index for {route} to {outfile}')
 
         return
+
+    def list_unique_routes(self):
+
+        glaciers_grouped=defaultdict(list)
+        for g in self.scan_glaciers():
+            glaciers_grouped[g.route].append(g)
+        routelist = [route for (route, glaciers_list) in glaciers_grouped.items()]
+
+        return sorted(list(set(routelist)))
 
 
 class Puddle(GenericFolder):
