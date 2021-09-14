@@ -12,6 +12,19 @@ from common.Models import *
 ######################################################
 
 # define datespace
+datespace = { '10': ['2020-10-16','2020-10-31'],
+			  '11': ['2020-11-01','2020-11-31'],
+			  '12': ['2020-12-01','2020-12-31'],
+			  '01': ['2021-01-01','2021-01-31'],
+			  '02': ['2021-02-01','2021-02-28'],
+			  '03': ['2021-03-01','2021-03-31'],
+			  '04': ['2021-04-01','2021-04-30'],
+			  '05': ['2021-05-01','2021-05-31'],
+			  '06': ['2021-06-01','2021-06-30']
+			  }
+
+
+
 date1 = '2020-10-16'
 date2 = '2021-06-30'
 
@@ -89,10 +102,11 @@ def make_monitored_vehicle_journey(bus,data):
 
 ######################################################
 
-def get_datelist(date1,date2):
+def get_datelist(month):
+
 	datelist = []
-	start = dt.datetime.strptime(date1, '%Y-%m-%d')
-	end = dt.datetime.strptime(date2, '%Y-%m-%d')
+	start = dt.datetime.strptime(datespace[month][0], '%Y-%m-%d')
+	end = dt.datetime.strptime(datespace[month][1], '%Y-%m-%d')
 	step = dt.timedelta(days=1)
 	while start <= end:
 		for hr in range(24):
@@ -177,7 +191,7 @@ if __name__=="__main__":
 				print(f'parsing table {table}')
 
 				#get each hour from the table and render it
-				for datehour in get_datelist(date1,date2):
+				for datehour in get_datelist(month):
 					print(f'querying {datehour}')
 					hour_of_data = 	get_hour_of_data(table, datehour)
 					dump_hour(store, hour_of_data)
