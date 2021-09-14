@@ -24,16 +24,16 @@ services:
     command:
       uvicorn --host=0.0.0.0 --port=80 api:app
 
-## this container only used for migration of old databases, requires db container from the old stack
-#  reprocessor:
-#    restart: always
-#    build:
-#      context: .
-#      dockerfile: ./build/reprocessor/Dockerfile
-#    volumes:
-#      - ./data:/app/data
-#      - ./archives:/app/archives
-#    command:
-#      tail -f /dev/null # keep the container alive for me
+# this container only used for migration of old databases, requires db container from the old stack
+  reprocessor:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./build/reprocessor/Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./archives:/app/archives
+    command:
+      tail -f /dev/null # keep the container alive for me
 
 # add an nginx or traefik reverse proxy
