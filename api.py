@@ -112,7 +112,7 @@ async def fetch_single_glacier(
 
     return FileResponse(glacier_to_get, filename=filename)
 
-
+'''
 #######################
 # ROUTE ARCHIVE ENDPOINT
 #######################
@@ -136,7 +136,7 @@ async def fetch_route_history(
         return Response(status_code=404)
 
     return FileResponse(route_history_to_get, filename=filename)
-
+'''
 
 
 
