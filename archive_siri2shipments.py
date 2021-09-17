@@ -1,7 +1,8 @@
 '''
 run me in shell with
 
-PYTHON_ENV='development' python3 archive_siri2shipments.py daily-2021-04-20.gz
+PYTHON_ENV='development' python3 archive_siri2shipments.py
+it will scan any GZ files in input
 output will show up in 'reprocessor' subfolder
 takes about 12 mins on desktop mac per day
 
@@ -62,11 +63,11 @@ if __name__=="__main__":
     logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
 
     # parse arguments
-    p = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
-    # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
-    p.add_argument('filename')
-
-    args = p.parse_args()
+    # p = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
+    # # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
+    # p.add_argument('filename')
+    #
+    # args = p.parse_args()
 
     # 1 make sure ./reprocessor exists
     pathlib.Path(topdir).mkdir(parents=True, exist_ok=True)
