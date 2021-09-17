@@ -1,4 +1,6 @@
 import argparse, pathlib
+import logging
+
 from common.Models import *
 import ijson, gzip, shutil
 from fnmatch import fnmatch
@@ -58,7 +60,7 @@ if __name__=="__main__":
     # 3 parse each response file
     for daily_filename in daily_filename_list:
         time_started = datetime.datetime.now()
-        print('started at {}'.format(datetime.datetime.now()))
+        logging.info('started at {}'.format(datetime.datetime.now()))
 
         gzipfile = input_path / daily_filename
         jsonfile = input_path / f'{daily_filename[:-3]}.json'
@@ -70,17 +72,14 @@ if __name__=="__main__":
 
         # if not exist, unzip it
         except:
-            print(f'Unzipping {input_path}/{daily_filename}')
+            logging.info(f'Unzipping {input_path}/{daily_filename}')
             with gzip.open(gzipfile, 'rb') as f_in:
                 with open(jsonfile, 'wb') as f_out:
                     shutil.copyfileobj(f_in, f_out)
 
         finally:
 
-            print('Parsing JSON responses and dumping to db.')
-
-            # inspect each siri response
-            timestamp = datetime.datetime.now()
+            logging.info('Parsing JSON responses and dumping to DataStore.Barrels')
 
             # open the day's JSON responses
             with open(jsonfile, 'r') as f:
@@ -88,8 +87,20 @@ if __name__=="__main__":
                 # separate the responses
                 for siri_response in extract_responses(f):
 
-                    # put each response in the DataStore
-                    store.make_barrels(siri_response, DatePointer(timestamp))
+                    #check if there's vehicle activity (e.g. this is not False)
+                    try:
+                        if not siri_response['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
+                            logging.warning("No VehicleActivity")
+                            continue
+                        else:
+                            route_id = siri_response['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][0]['MonitoredVehicleJourney']['LineRef']
+                            route_bundle = {route_id:siri_response}
+                            logging.info(f'{route_id} ServiceDelivery parsed into Barrels in DataStore')
+
+                            # note route_bundle is in a list so make_barrels unpacks it properly
+                            store.make_barrels([route_bundle], DatePointer(datetime.datetime.strptime(daily_filename, 'daily-%Y-%m-%d.gz')))
+                    except:
+                        logging.warning("Empty/invalid response (e.g. No such route)")
 
             #remove the json file
             try:
@@ -100,8 +111,8 @@ if __name__=="__main__":
 
             # close
             time_finished = datetime.datetime.now()
-            print ('finished at {}'.format(time_finished))
-            print ('time elapsed: {}'.format(time_finished-time_started))
+            logging.info('finished at {}'.format(time_finished))
+            logging.info('time elapsed: {}'.format(time_finished-time_started))
 
 
         #todo call store.render_shipments()
