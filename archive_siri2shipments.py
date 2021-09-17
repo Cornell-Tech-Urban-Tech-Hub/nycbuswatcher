@@ -111,11 +111,13 @@ if __name__=="__main__":
                             continue
                         else:
                             route_id = siri_response['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity'][0]['MonitoredVehicleJourney']['LineRef']
-                            route_bundle = {route_id:siri_response}
-                            logging.info(f'{route_id} ServiceDelivery parsed into Barrels in DataStore')
 
+                            route_bundle = {route_id:{
+                                'Siri':siri_response}
+                            }
                             date_pointer = parser.parse(siri_response['ServiceDelivery']['ResponseTimestamp'])
 
+                            # bug format is not correct format for make_barrels, which wants it as a Response object
                             store.make_barrels([route_bundle], DatePointer(date_pointer))
                     except:
                         logging.warning("Empty/invalid response (e.g. No such route)")

@@ -6,6 +6,7 @@ from dateutil import parser
 import inspect
 import logging
 from collections import defaultdict
+from decimal import Decimal
 
 from datetime import date, datetime
 from pathlib import Path, PurePath
@@ -27,6 +28,11 @@ pathmap = {
     'history':'data/history'
     }
 
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Decimal):
+            return str(o)
+        return super(DecimalEncoder, self).default(o)
 
 class DatePointer():
 
@@ -381,7 +387,13 @@ class DataStore(GenericStore):
                     filename = 'pickle_{}_{}.dat'.format(barrel_date_pointer.route, barrel_date_pointer.timestamp).replace(' ', 'T')
                     filepath = folder / PurePath(filename)
                     try:
-                        route_data = route_data.json()
+
+                        # we are running reprocessor
+                        if type(route_data) is dict:
+                            # route_data = json.dumps(route_data, cls=DecimalEncoder, indent=4)
+                            pass
+                        else:
+                            route_data = route_data.json()
                     except AttributeError: #this means we are running the shipment dumper
                         pass
                     for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
@@ -389,6 +401,7 @@ class DataStore(GenericStore):
                         pickles.append(bus)
                     with open(filepath, "wb") as f:
                         pickle.dump(pickles, f)
+                        logging.warning (f'dumped {len(pickles)} pickles to barrel for {route}')
                 except KeyError:
                     # future find a way to filter these out to reduce overhead
                     # this is almost always the result of a route that doesn't exist, so why is it in the OBA response?

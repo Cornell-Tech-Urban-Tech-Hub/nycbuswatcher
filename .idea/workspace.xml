@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="88070558-94cd-4c73-9a72-9d04941486d9" name="Default Changelist" comment="">
+    <list default="true" id="88070558-94cd-4c73-9a72-9d04941486d9" name="Default Changelist" comment="debugged. takes ~ min for 2021.04.20 file">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14782663-7a49-4c77-9ebd-10153a88984f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14782663-7a49-4c77-9ebd-10153a88984f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nycbuswatcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nycbuswatcher.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive_siri2shipments.py" beforeDir="false" afterPath="$PROJECT_DIR$/archive_siri2shipments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/Models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
+        <option value="Python Stub" />
         <option value="Python Script" />
       </list>
     </option>
@@ -44,11 +54,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/archive_siri2shipments.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="NamedScopeManager">
     <scope name="core libraries" pattern="file:api.py||file:acquire.py||file:common/Grabber.py||file:common/MakeRouteMap.py||file:common/Models.py||file[nycbuswatcher]:build//*||file:docker-compose.yml" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1uJmgxrZWXlbnkBQlHUtdK5RWXp" />
   <component name="ProjectViewState">
@@ -66,7 +76,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,14 +85,24 @@
       <recent name="$PROJECT_DIR$/tests/integration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/common" />
+      <recent name="$PROJECT_DIR$/reprocessor/input" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/reprocessor" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/utilities" />
+      <recent name="$PROJECT_DIR$/reprocessing" />
+      <recent name="$PROJECT_DIR$/tmp/dev" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.acquire (*) quiet">
+  <component name="RunManager" selected="Python.archive_siri2shipments">
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="api (*) quiet" type="PythonConfigurationType" />
+      <toRun name="acquire (*) quiet" type="PythonConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stack" type="CompoundRunConfigurationType">
+      <toRun name="api (*) quiet" type="PythonConfigurationType" />
+      <toRun name="acquire (*) quiet" type="PythonConfigurationType" />
+      <method v="2" />
+    </configuration>
     <configuration name="acquire (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="nycbuswatcher" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,7 +119,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/acquire.py" />
-      <option name="PARAMETERS" value="-l" />
+      <option name="PARAMETERS" value="-l -v" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -155,6 +175,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="api (*) quiet" type="PythonConfigurationType" factoryName="Python">
+      <module name="nycbuswatcher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHON_ENV" value="development" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api (*) verbose" type="PythonConfigurationType" factoryName="Python">
       <module name="nycbuswatcher" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,14 +206,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="PYTHON_ENV" value="development" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/nycbuswatcher-UuaCSnf6/bin/python" />
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-v" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -201,23 +244,91 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="render" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="archive_siri2shipments" type="PythonConfigurationType" factoryName="Python">
       <module name="nycbuswatcher" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="PYTHON_ENV" value="development" />
-        <env name="API_KEY" value="088886bd-cc48-4d7c-bd8a-498d353d7d13" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/render.py" />
-      <option name="PARAMETERS" value="-l" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/archive_siri2shipments.py" />
+      <option name="PARAMETERS" value="daily-2021-04-20.gz" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_glacier_indexes" type="PythonConfigurationType" factoryName="Python">
+      <module name="nycbuswatcher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHON_ENV" value="development" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_glacier_indexes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_route_histories" type="PythonConfigurationType" factoryName="Python">
+      <module name="nycbuswatcher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHON_ENV" value="development" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_route_histories.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_shipment_indexes" type="PythonConfigurationType" factoryName="Python">
+      <module name="nycbuswatcher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYTHON_ENV" value="development" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/bin/miniconda3/envs/nycbuswatcher/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_shipment_indexes.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -245,7 +356,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest in /Users/anthonytownsend/PyCharm Projects/nycbuswatcher/tests" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="nycbuswatcher" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,13 +377,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.api (*) verbose" />
-      <item itemvalue="Python.acquire (1)" />
-      <item itemvalue="Python.acquire (*) verbose" />
+      <item itemvalue="Compound.stack" />
+      <item itemvalue="Python.make_shipment_indexes" />
+      <item itemvalue="Python.archive_siri2shipments" />
+      <item itemvalue="Python.make_glacier_indexes" />
+      <item itemvalue="Python.make_route_histories" />
       <item itemvalue="Python.acquire (*) quiet" />
+      <item itemvalue="Python.api (*) quiet" />
+      <item itemvalue="Python.api (*) verbose" />
+      <item itemvalue="Python.acquire (*) verbose" />
+      <item itemvalue="Python.acquire (1)" />
       <item itemvalue="Python.app_dash" />
-      <item itemvalue="Python.render" />
-      <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.pytest in /Users/anthonytownsend/PyCharm Projects/nycbuswatcher/tests" />
       <item itemvalue="Python tests.pytest for test_DataLake.test_make_puddles" />
     </list>
     <recent_temporary>
@@ -308,69 +424,29 @@
       <workItem from="1625174444805" duration="1007000" />
       <workItem from="1625176179105" duration="170000" />
       <workItem from="1625259238599" duration="35000" />
-    </task>
-    <task id="LOCAL-00001" summary="refactoring in progress (done: api, todo: acquire, dashboard + docker-compose stack)">
-      <created>1624396500770</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1624396500770</updated>
-    </task>
-    <task id="LOCAL-00002" summary="first successful test!">
-      <created>1624419952751</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1624419952751</updated>
-    </task>
-    <task id="LOCAL-00003" summary="building out test infrastructure">
-      <created>1624421393453</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1624421393453</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refactored grabber to a common library, renamed; stuck on unit test fixtures">
-      <created>1624497287656</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1624497287656</updated>
-    </task>
-    <task id="LOCAL-00005" summary="dashboard app working in local mode">
-      <created>1624503518521</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1624503518521</updated>
-    </task>
-    <task id="LOCAL-00006" summary="docker stack mostly working except app_dash web access">
-      <created>1624508723090</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1624508723090</updated>
-    </task>
-    <task id="LOCAL-00007" summary="new api endpoint for open query">
-      <created>1624594846260</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1624594846260</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added validation and constraints for all endpoints">
-      <created>1624671789850</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1624671789850</updated>
-    </task>
-    <task id="LOCAL-00009" summary="roughed out database to shipment converter">
-      <created>1624845541445</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1624845541445</updated>
+      <workItem from="1626217163187" duration="471000" />
+      <workItem from="1626228019092" duration="2257000" />
+      <workItem from="1626388420337" duration="1359000" />
+      <workItem from="1626400679564" duration="3042000" />
+      <workItem from="1626458696159" duration="866000" />
+      <workItem from="1626461642211" duration="16398000" />
+      <workItem from="1626740001515" duration="4171000" />
+      <workItem from="1626825489822" duration="18000" />
+      <workItem from="1626881924231" duration="603000" />
+      <workItem from="1627351217364" duration="374000" />
+      <workItem from="1629504543134" duration="473000" />
+      <workItem from="1629507608009" duration="19458000" />
+      <workItem from="1629662720925" duration="3022000" />
+      <workItem from="1629668603929" duration="5843000" />
+      <workItem from="1629912826794" duration="651000" />
+      <workItem from="1631139079356" duration="3688000" />
+      <workItem from="1631235298062" duration="8966000" />
+      <workItem from="1631421456175" duration="5865000" />
+      <workItem from="1631575021448" duration="2733000" />
+      <workItem from="1631593219579" duration="922000" />
+      <workItem from="1631665481764" duration="1857000" />
+      <workItem from="1631670729555" duration="3969000" />
+      <workItem from="1631829932166" duration="7110000" />
     </task>
     <task id="LOCAL-00010" summary="roughed out reprocessor import; deployment candidate stack for multi-day testing">
       <created>1624932073598</created>
@@ -407,41 +483,411 @@
       <option name="project" value="LOCAL" />
       <updated>1625175937392</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="debug">
+      <created>1626217227737</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626217227737</updated>
+    </task>
+    <task id="LOCAL-00016" summary="debug2">
+      <created>1626217431226</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1626217431226</updated>
+    </task>
+    <task id="LOCAL-00017" summary="first crack at dump to shipment reprocessor">
+      <created>1626230312041</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1626230312041</updated>
+    </task>
+    <task id="LOCAL-00018" summary="WIP on dummy data 10,000 rows per table">
+      <created>1626403749778</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1626403749778</updated>
+    </task>
+    <task id="LOCAL-00019" summary="create BusObservation instances from db rows works">
+      <created>1626474270183</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1626474270183</updated>
+    </task>
+    <task id="LOCAL-00020" summary="debugging">
+      <created>1626483577013</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1626483577014</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1st test run">
+      <created>1626484941808</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1626484941808</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ready for test on server">
+      <created>1626486603709</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626486603709</updated>
+    </task>
+    <task id="LOCAL-00023" summary="removed DROP TABLE statement">
+      <created>1626535407097</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626535407097</updated>
+    </task>
+    <task id="LOCAL-00024" summary="safety condition to not drop table on server">
+      <created>1626536197839</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1626536197839</updated>
+    </task>
+    <task id="LOCAL-00025" summary="new approach -- union query for each hour on the fly">
+      <created>1626741063468</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1626741063468</updated>
+    </task>
+    <task id="LOCAL-00026" summary="new approach -- process each table to its own datastore">
+      <created>1626747815045</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626747815045</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added pandas">
+      <created>1626748020961</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1626748020961</updated>
+    </task>
+    <task id="LOCAL-00028" summary="log msg">
+      <created>1626748117885</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1626748117885</updated>
+    </task>
+    <task id="LOCAL-00029" summary="debugging warning msgs DataStore reload/regen for api production/quiet mode">
+      <created>1629553165423</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1629553165423</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added timer Warning log messages for DataStore API query routines">
+      <created>1629555323442</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1629555323442</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixed unneeded rebuild for DataStore, reload pickle instead">
+      <created>1629598284935</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1629598284935</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed import for dateutil">
+      <created>1629598632851</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1629598632851</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added api cache for 2 endpoints">
+      <created>1629602349188</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1629602349188</updated>
+    </task>
+    <task id="LOCAL-00034" summary="removed cache; added proxy">
+      <created>1629651225166</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1629651225166</updated>
+    </task>
+    <task id="LOCAL-00035" summary="removed cache; added proxy">
+      <created>1629651406570</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1629651406570</updated>
+    </task>
+    <task id="LOCAL-00036" summary="removed cache; added proxy">
+      <created>1629651441064</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1629651441064</updated>
+    </task>
+    <task id="LOCAL-00037" summary="removed cache; added proxy">
+      <created>1629651480433</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1629651480433</updated>
+    </task>
+    <task id="LOCAL-00038" summary="removed cache; added proxy">
+      <created>1629651623738</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1629651623738</updated>
+    </task>
+    <task id="LOCAL-00039" summary="rewrite nginx.conf">
+      <created>1629652030510</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1629652030511</updated>
+    </task>
+    <task id="LOCAL-00040" summary="rewrite nginx.conf">
+      <created>1629652201987</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1629652201987</updated>
+    </task>
+    <task id="LOCAL-00041" summary="revert to no proxy">
+      <created>1629652550067</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1629652550067</updated>
+    </task>
+    <task id="LOCAL-00042" summary="compose fix, removed dash">
+      <created>1629652646313</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1629652646313</updated>
+    </task>
+    <task id="LOCAL-00043" summary="reorder endpoints">
+      <created>1629653596546</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1629653596546</updated>
+    </task>
+    <task id="LOCAL-00044" summary="cleanup">
+      <created>1629663844613</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1629663844613</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ready for rewrite simplified all static API">
+      <created>1629665482864</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1629665482864</updated>
+    </task>
+    <task id="LOCAL-00046" summary="make_shipment_indexes works -- both generate and retrive by API">
+      <created>1629688261969</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1629688261970</updated>
+    </task>
+    <task id="LOCAL-00047" summary="added starlette to acquire requirements">
+      <created>1629917136256</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1629917136256</updated>
+    </task>
+    <task id="LOCAL-00048" summary="added endpoint for glacier retrieval">
+      <created>1631149574528</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1631149574528</updated>
+    </task>
+    <task id="LOCAL-00049" summary="added endpoint for glacier index and hourly build job">
+      <created>1631272982012</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1631272982012</updated>
+    </task>
+    <task id="LOCAL-00050" summary="repo re-org">
+      <created>1631285114464</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1631285114466</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added endpoint for entire route history">
+      <created>1631496894869</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496894870</updated>
+    </task>
+    <task id="LOCAL-00052" summary="added overnight batch processor for route histories">
+      <created>1631578585000</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1631578585004</updated>
+    </task>
+    <task id="LOCAL-00053" summary="rewrite db2_shipment for more limited query range and per table operation">
+      <created>1631594094687</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1631594094688</updated>
+    </task>
+    <task id="LOCAL-00054" summary="reinstate reprocessor container">
+      <created>1631594205998</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1631594205999</updated>
+    </task>
+    <task id="LOCAL-00055" summary="alpha of SIRI to Shipment archive reprocessor (for oct2020 to april 2021 archives only)">
+      <created>1631672332745</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1631672332746</updated>
+    </task>
+    <task id="LOCAL-00056" summary="SIRI shipment reprocessor first test on one day's responses">
+      <created>1631843258569</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1631843258570</updated>
+    </task>
+    <task id="LOCAL-00057" summary="deactivated route_histry endpoint and batch compiler">
+      <created>1631843649753</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1631843649754</updated>
+    </task>
+    <task id="LOCAL-00058" summary="successful run on 2021-04-20 full daily ~ 16 min">
+      <created>1631848466297</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1631848466298</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring in progress (done: api, todo: acquire, dashboard + docker-compose stack)" />
-    <MESSAGE value="first successful test!" />
-    <MESSAGE value="building out test infrastructure" />
-    <MESSAGE value="refactored grabber to a common library, renamed; stuck on unit test fixtures" />
-    <MESSAGE value="dashboard app working in local mode" />
-    <MESSAGE value="docker stack mostly working except app_dash web access" />
-    <MESSAGE value="new api endpoint for open query" />
-    <MESSAGE value="added validation and constraints for all endpoints" />
-    <MESSAGE value="roughed out database to shipment converter" />
-    <MESSAGE value="roughed out reprocessor import; deployment candidate stack for multi-day testing" />
-    <MESSAGE value="deployment candidate to cornell server for testing" />
-    <MESSAGE value="bug fix 'No module named shared'" />
-    <MESSAGE value="no bug--tried to process pickles with an old set of python module names (shared vs common)" />
-    <MESSAGE value="changed from print() to logging logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed from print() to logging logs" />
+    <MESSAGE value="debugging warning msgs DataStore reload/regen for api production/quiet mode" />
+    <MESSAGE value="added timer Warning log messages for DataStore API query routines" />
+    <MESSAGE value="fixed unneeded rebuild for DataStore, reload pickle instead" />
+    <MESSAGE value="fixed import for dateutil" />
+    <MESSAGE value="added api cache for 2 endpoints" />
+    <MESSAGE value="removed cache; added proxy" />
+    <MESSAGE value="rewrite nginx.conf" />
+    <MESSAGE value="revert to no proxy" />
+    <MESSAGE value="compose fix, removed dash" />
+    <MESSAGE value="reorder endpoints" />
+    <MESSAGE value="cleanup" />
+    <MESSAGE value="ready for rewrite simplified all static API" />
+    <MESSAGE value="make_shipment_indexes works -- both generate and retrive by API" />
+    <MESSAGE value="added starlette to acquire requirements" />
+    <MESSAGE value="added endpoint for glacier retrieval" />
+    <MESSAGE value="added endpoint for glacier index and hourly build job" />
+    <MESSAGE value="repo re-org" />
+    <MESSAGE value="added endpoint for entire route history" />
+    <MESSAGE value="added overnight batch processor for route histories" />
+    <MESSAGE value="rewrite db2_shipment for more limited query range and per table operation" />
+    <MESSAGE value="reinstate reprocessor container" />
+    <MESSAGE value="alpha of SIRI to Shipment archive reprocessor (for oct2020 to april 2021 archives only)" />
+    <MESSAGE value="SIRI shipment reprocessor first test on one day's responses" />
+    <MESSAGE value="deactivated route_histry endpoint and batch compiler" />
+    <MESSAGE value="successful run on 2021-04-20 full daily ~ 16 min" />
+    <option name="LAST_COMMIT_MESSAGE" value="successful run on 2021-04-20 full daily ~ 16 min" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/MakeRouteMap.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/Models.py</url>
+          <line>296</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/archive_db2shipments.py</url>
+          <line>195</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_for_test_DataLake_test_make_puddles.coverage" NAME="pytest for test_DataLake.test_make_puddles Coverage Results" MODIFIED="1624495515296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire__1_.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1624507273695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1624422306653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$render.coverage" NAME="render Coverage Results" MODIFIED="1625008117880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$api.coverage" NAME="api Coverage Results" MODIFIED="1625175955949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1624421032147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/acquire" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_for_test_DatePointerGetPurepath_test_get_purepath.coverage" NAME="pytest for test_DatePointerGetPurepath.test_get_purepath Coverage Results" MODIFIED="1624419893298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$test_pytest.coverage" NAME="test_pytest Coverage Results" MODIFIED="1624418320925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire____.coverage" NAME="acquire (*) verbose Coverage Results" MODIFIED="1625175883531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire_____quiet.coverage" NAME="acquire (*) quiet Coverage Results" MODIFIED="1625176187608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$archive_db2shipments__localhost_.coverage" NAME="archive_db2shipments (localhost) Coverage Results" MODIFIED="1626743949460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire_____verbose.coverage" NAME="acquire (*) verbose Coverage Results" MODIFIED="1631288484989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$archive_siri2shipments.coverage" NAME="archive_siri2shipments Coverage Results" MODIFIED="1631850187320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$dashboard.coverage" NAME="app_dash Coverage Results" MODIFIED="1624506683328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nycbuswatcher$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1624420050320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire__1_.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1631849084680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$make_shipment_indexes.coverage" NAME="make_shipment_indexes Coverage Results" MODIFIED="1629718042199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$api_____quiet.coverage" NAME="api (*) quiet Coverage Results" MODIFIED="1631576828499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire.coverage" NAME="acquire (1) Coverage Results" MODIFIED="1624421032147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/acquire" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$make_glacier_indexes_.coverage" NAME="make_glacier_indexes Coverage Results" MODIFIED="1631367639309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$api_____verbose.coverage" NAME="api (*) verbose Coverage Results" MODIFIED="1629551477983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$pytest_for_test_DatePointerGetPurepath_test_get_purepath.coverage" NAME="pytest for test_DatePointerGetPurepath.test_get_purepath Coverage Results" MODIFIED="1624419893298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$extract_monitoredvehiclejourney.coverage" NAME="extract_monitoredvehiclejourney Coverage Results" MODIFIED="1626473113811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tmp" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$test_pytest.coverage" NAME="test_pytest Coverage Results" MODIFIED="1624418320925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire____.coverage" NAME="acquire (*) verbose Coverage Results" MODIFIED="1625175883531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$acquire_____quiet.coverage" NAME="acquire (*) quiet Coverage Results" MODIFIED="1631245929721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nycbuswatcher$make_route_histories.coverage" NAME="make_route_histories Coverage Results" MODIFIED="1631576707120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
