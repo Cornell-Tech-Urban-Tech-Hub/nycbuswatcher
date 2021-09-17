@@ -1,3 +1,13 @@
+'''
+run me in shell with
+
+PYTHON_ENV='development' python3 archive_siri2shipments.py daily-2021-04-20.gz
+output will show up in 'reprocessor' subfolder
+takes about 12 mins on desktop mac per day
+
+'''
+
+
 import argparse, pathlib
 import logging
 
@@ -6,6 +16,7 @@ import ijson, gzip, shutil
 from fnmatch import fnmatch
 import datetime
 from pathlib import PurePath
+from dateutil import parser
 
 # archived response data should be in the ./reprocessor/input folder
 # that folder is ignored by docker and git
@@ -25,8 +36,11 @@ store = DataStore(output_path)
 # after https://www.aylakhan.tech/?p=27
 def extract_responses(f):
     responses = ijson.items(f, 'Siri', multiple_values=True)
-    for response in responses:
-        yield response
+    try:
+        for response in responses:
+            yield response
+    except Exception as e:
+        logging.warning(e)
 
 def get_daily_filelist(path):
     daily_filelist=[]
@@ -44,12 +58,15 @@ def get_daily_filelist(path):
 
 if __name__=="__main__":
 
-    # parse arguments
-    parser = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
-    # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
-    parser.add_argument('filename')
+    # logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
 
-    args = parser.parse_args()
+    # parse arguments
+    p = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
+    # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
+    p.add_argument('filename')
+
+    args = p.parse_args()
 
     # 1 make sure ./reprocessor exists
     pathlib.Path(topdir).mkdir(parents=True, exist_ok=True)
@@ -97,8 +114,9 @@ if __name__=="__main__":
                             route_bundle = {route_id:siri_response}
                             logging.info(f'{route_id} ServiceDelivery parsed into Barrels in DataStore')
 
-                            # note route_bundle is in a list so make_barrels unpacks it properly
-                            store.make_barrels([route_bundle], DatePointer(datetime.datetime.strptime(daily_filename, 'daily-%Y-%m-%d.gz')))
+                            date_pointer = parser.parse(siri_response['ServiceDelivery']['ResponseTimestamp'])
+
+                            store.make_barrels([route_bundle], DatePointer(date_pointer))
                     except:
                         logging.warning("Empty/invalid response (e.g. No such route)")
 
