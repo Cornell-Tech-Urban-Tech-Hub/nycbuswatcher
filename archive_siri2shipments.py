@@ -19,20 +19,6 @@ import datetime
 from pathlib import PurePath
 from dateutil import parser
 
-# archived response data should be in the ./reprocessor/input folder
-# that folder is ignored by docker and git
-# results of this process will output to
-
-#################################################################################
-
-cwd = Path.cwd()
-topdir=PurePath('reprocessor')
-input_path=topdir / 'input'
-output_path=topdir / 'output'
-lake = DataLake(output_path)
-store = DataStore(output_path)
-
-#################################################################################
 
 # after https://www.aylakhan.tech/?p=27
 def extract_responses(f):
@@ -63,17 +49,27 @@ if __name__=="__main__":
     logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
 
     # parse arguments
-    # p = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
-    # # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
-    # p.add_argument('filename')
-    #
-    # args = p.parse_args()
+    p = argparse.ArgumentParser(description='NYCbuswatcher shipment dumper, dumps from monthly SIRI response archives to shipments')
+    # parser.add_argument('-m','--months', nargs='+', help='<Required> List of months to process (leading zero, no year, e.g. -m 10 11 12 01 = Oct 2020, Nov 2020, Dec 2020, and Jan 2021)', required=True)
+    p.add_argument('input_path')
+
+    args = p.parse_args()
+
+    cwd = Path.cwd()
+    # topdir=PurePath('reprocessor')
+    topdir=cwd / PurePath('reprocessor')
+    input_path= PurePath(f'{args.input_path}') / 'input'
+    output_path=topdir / 'output'
+    lake = DataLake(output_path)
+    store = DataStore(output_path)
+
+
 
     # 1 make sure ./reprocessor exists
     pathlib.Path(topdir).mkdir(parents=True, exist_ok=True)
 
     # 2 unpack the archive into a temp file
-    daily_filename_list = get_daily_filelist(input_path)
+    daily_filename_list = get_daily_filelist(args.input_path)
 
     # 3 parse each response file
     for daily_filename in daily_filename_list:
@@ -118,7 +114,6 @@ if __name__=="__main__":
                             }
                             date_pointer = parser.parse(siri_response['ServiceDelivery']['ResponseTimestamp'])
 
-                            # bug format is not correct format for make_barrels, which wants it as a Response object
                             store.make_barrels([route_bundle], DatePointer(date_pointer))
                     except:
                         logging.warning("Empty/invalid response (e.g. No such route)")
@@ -136,5 +131,5 @@ if __name__=="__main__":
             logging.info('time elapsed: {}'.format(time_finished-time_started))
 
 
-        #todo call store.render_shipments()
-
+    #convert the whole cache of barrels to shipments
+    store.render_barrels()
