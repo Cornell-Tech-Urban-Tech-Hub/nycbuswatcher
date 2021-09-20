@@ -12,48 +12,17 @@ from common.Models import *
 ######################################################
 
 # define datespace
-datespace = { '10': ['2020-10-16','2020-10-31'],
-			  '11': ['2020-11-01','2020-11-31'],
-			  '12': ['2020-12-01','2020-12-31'],
-			  '01': ['2021-01-01','2021-01-31'],
-			  '02': ['2021-02-01','2021-02-28'],
-			  '03': ['2021-03-01','2021-03-31'],
-			  '04': ['2021-04-01','2021-04-30'],
+datespace = {
 			  '05': ['2021-05-01','2021-05-31'],
 			  '06': ['2021-06-01','2021-06-30']
 			  }
 
 
-
-date1 = '2020-10-16'
+date1 = '2020-05-02'
 date2 = '2021-06-30'
 
 # define tablespace
-tablespace_old=['buses_reprocessed_2020_10',
-			'buses_reprocessed_2020_11',
-			'buses_reprocessed_2020_12_a',
-			'buses_reprocessed_2020_12_b',
-			'buses_reprocessed_2021_01_a',
-			'buses_reprocessed_2021_01_b',
-			'buses_reprocessed_2021_02_a',
-			'buses_reprocessed_2021_02_b',
-			'buses_reprocessed_2021_03_a',
-			'buses_reprocessed_2021_03_b',
-			'buses_reprocessed_2021_04_a',
-			'buses_reprocessed_2021_04_b',
-			'buses_reprocessed_dumped_2021_05',
-			'buses_reprocessed_dumped_2021_06'
-			]
-
-# define tablespace
-tablespace= { '10': ['buses_reprocessed_2020_10'],
-			  '11': ['buses_reprocessed_2020_11'],
-			  '12': ['buses_reprocessed_2020_12'],
-			  '01': ['buses_reprocessed_2021_01a', 'buses_reprocessed_2021_01b'],
-			  '02': ['buses_reprocessed_2021_02a', 'buses_reprocessed_2021_02b'],
-			  '03': ['buses_reprocessed_2021_03a', 'buses_reprocessed_2021_03b'],
-			  '04': ['buses_reprocessed_2021_04a', 'buses_reprocessed_2021_04b'],
-			  '05': ['buses_reprocessed_dumped_2021_05'],
+tablespace= { '05': ['buses_reprocessed_dumped_2021_05'],
 			  '06': ['buses_reprocessed_dumped_2021_06']
 			  }
 
@@ -184,7 +153,7 @@ if __name__=="__main__":
 		if month in tablespace.keys():
 
 			# make a separate store for each month (will hold multiple table outputs)
-			store = DataStore(Path.cwd() / 'reprocessed_shipments' / f"""{month}""")
+			store = DataStore(Path.cwd() / 'reprocessor' / f"""{month}""")
 
 			# iterate over the table list for each month
 			for table in tablespace[month]:

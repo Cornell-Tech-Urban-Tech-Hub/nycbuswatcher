@@ -514,14 +514,16 @@ class Barrel(GenericFolder):
         pickles_to_render=[x for x in self.path.glob('*.dat') if x.is_file()]
         pickle_array = []
         for picklefile in pickles_to_render:
-            with open(picklefile, 'rb') as pickle_file:
-                try:
-                    barrel = pickle.load(pickle_file)
-                except Exception as e:
-                    logging.error ('error {} in {}'.format(e, inspect.stack()[0][3]) )
-                    continue
-                for p in barrel:
-                    pickle_array.append(p)
+            # make sure the pickle file isnt empty
+            if os.path.getsize(picklefile) > 0:
+                with open(picklefile, 'rb') as pickle_file:
+                    try:
+                        barrel = pickle.load(pickle_file)
+                    except Exception as e:
+                        logging.error ('error {} in {}'.format(e, inspect.stack()[0][3]) )
+                        continue
+                    for p in barrel:
+                        pickle_array.append(p)
         pickle_array.sort(key= lambda i: (i.timestamp, i.trip_id))
         serial_array=[]
         try:

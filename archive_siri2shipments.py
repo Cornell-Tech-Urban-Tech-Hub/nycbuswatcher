@@ -133,3 +133,19 @@ if __name__=="__main__":
 
     #convert the whole cache of barrels to shipments
     store.render_barrels()
+
+    '''
+    # if last line fails, manually render them to barrels with this script
+    
+    from common.Models import *
+
+    cwd = Path.cwd()
+    topdir=cwd / PurePath('reprocessor')
+    input_path=topdir / 'input'
+    output_path=topdir / 'output'
+    store = DataStore(output_path)
+    
+    store.render_barrels()
+    
+    '''
+
