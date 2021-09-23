@@ -58,7 +58,8 @@ if __name__=="__main__":
     cwd = Path.cwd()
     # topdir=PurePath('reprocessor')
     topdir=cwd / PurePath('reprocessor')
-    input_path= PurePath(f'{args.input_path}') / 'input'
+    input_path= PurePath(f'{args.input_path}')
+    # input_path= PurePath(f'{args.input_path}') / 'input'
     output_path=topdir / 'output'
     lake = DataLake(output_path)
     store = DataStore(output_path)

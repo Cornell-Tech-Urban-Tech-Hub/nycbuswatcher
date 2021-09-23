@@ -3,6 +3,7 @@ from os.path import isfile
 from fastapi import FastAPI, Query, Path
 
 from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import argparse
 import logging
@@ -19,6 +20,16 @@ load_dotenv()
 api_url_stem="/api/v2/nyc/"
 app = FastAPI()
 templates = Jinja2Templates(directory="assets/templates")
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 #######################
