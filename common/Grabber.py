@@ -12,7 +12,7 @@ def async_grab_and_store(localhost, cwd):
 
     async def grabber(s,a_path,route_id):
         try:
-            r = await s.get(path=a_path, retries=10)
+            r = await s.get(path=a_path, retries=2, timeout=10)
             feeds.append({route_id:r})
         except Exception as e:
             logging.error ('\tCould not fetch feed for {}. (Increase max retries for Session.get()?)'.format(route_id) )
@@ -46,7 +46,7 @@ def async_grab_and_store(localhost, cwd):
 def get_OBA_routelist():
     url = "http://bustime.mta.info/api/where/routes-for-agency/MTA%20NYCT.json?key=" + os.getenv("API_KEY")
     try:
-        response = requests.get(url, timeout=30)
+        response = requests.get(url, timeout=5)
         if response.status_code == 503: # response is bad, so go to exception and load the pickle
             raise Exception(503, "503 error code fetching route definitions. OneBusAway API probably overloaded.")
         else: # response is good, so save it to pickle and proceed
