@@ -495,6 +495,11 @@ class DataStore(GenericStore):
 
             json_container = {"route":route.upper(), "shipments": shipment_insert}
 
+            # check if outfile exists, delete it
+            if os.path.exists(outfile):
+                os.remove(outfile)
+            else:
+                pass
             with open(outfile, "w") as f:
                 json.dump(json_container, f, indent=4)
             logging.debug ('wrote Shipment index for {route} to {outfile}')

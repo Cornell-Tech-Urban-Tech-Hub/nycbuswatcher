@@ -63,18 +63,18 @@ if __name__ == "__main__":
                           minute=2,
                           misfire_grace_time=300)
 
-        # every hour, 20 minutes after the hour
+        # every hour, 15 minutes after the hour
         scheduler.add_job(store.make_shipment_indexes,
                           'cron',
                           hour='*',
-                          minute=20,
+                          minute=15,
                           misfire_grace_time=300)
 
-        # every hour, 40 minutes after the hour
+        # every hour, 45 minutes after the hour
         scheduler.add_job(lake.make_glacier_indexes,
                           'cron',
                           hour='*',
-                          minute=40,
+                          minute=45,
                           misfire_grace_time=300)
 
         '''
