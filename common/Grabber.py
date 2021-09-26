@@ -1,3 +1,5 @@
+import datetime
+
 import requests
 from time import time
 import datetime as dt
@@ -12,10 +14,10 @@ def async_grab_and_store(localhost, cwd):
 
     async def grabber(s,a_path,route_id):
         try:
-            r = await s.get(path=a_path, retries=2, timeout=10)
+            r = await s.get(path=a_path, retries=2, timeout=30)
             feeds.append({route_id:r})
         except Exception as e:
-            logging.error ('\tCould not fetch feed for {}. (Increase max retries for Session.get()?)'.format(route_id) )
+            logging.error (f'\t{datetime.datetime.now()}\tTimeout or too many retries for {route_id}.')
 
     async def main(path_list):
         from asks.sessions import Session
