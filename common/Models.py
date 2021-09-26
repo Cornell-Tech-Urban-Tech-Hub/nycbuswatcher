@@ -401,7 +401,7 @@ class DataStore(GenericStore):
                         pickles.append(bus)
                     with open(filepath, "wb") as f:
                         pickle.dump(pickles, f)
-                        logging.warning (f'dumped {len(pickles)} pickles to barrel for {route}')
+                        logging.debug (f'dumped {len(pickles)} pickles to barrel for {route}')
                 except KeyError:
                     # future find a way to filter these out to reduce overhead
                     # this is almost always the result of a route that doesn't exist, so why is it in the OBA response?
