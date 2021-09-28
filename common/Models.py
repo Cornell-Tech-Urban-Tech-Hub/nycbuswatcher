@@ -7,6 +7,7 @@ import inspect
 import logging
 from collections import defaultdict
 from decimal import Decimal
+from shutil import copy
 
 from datetime import date, datetime
 from pathlib import Path, PurePath
@@ -596,6 +597,18 @@ class Shipment(GenericFolder):
     def load_file(self):
         with open(self.filepath, "r") as f:
             return json.load(f)
+
+    def backup_file(self):
+        backup_filepath = self.filepath.with_suffix('.bak')
+        copy(self.filepath, backup_filepath) # n.b. will overwrite
+        logging.warning(f"backed up shipment {self.filepath} to {self.filepath.with_suffix('.bak')}")
+        return
+
+    def restore_backup_file(self):
+        backup_filepath = self.filepath.with_suffix('.bak')
+        copy(backup_filepath, self.filepath) # n.b. will overwrite
+        logging.warning(f"restored backup shipment {self.filepath.with_suffix('.bak')} to {self.filepath} ")
+        return
 
     def to_FeatureCollection(self):
         geojson = {'type': 'FeatureCollection', 'features': []}
