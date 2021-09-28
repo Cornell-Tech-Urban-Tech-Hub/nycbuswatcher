@@ -4,7 +4,7 @@ store = DataStore(Path.cwd())
 
 
 for shipment in store.scan_shipments():
-    if shipment.month in [10,11,12,1,2,3,4,5,6]:
+    if shipment.month in [10,11,12,1,2,3,4]:
 
         # make a backup of the file, overwriting backup
         shipment.backup_file()
