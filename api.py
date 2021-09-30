@@ -60,14 +60,27 @@ async def fetch_single_shipment(
         hour: int = Path(..., ge=0, le=23),
         route: str = Path(..., max_length=6)
 ):
-    shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'. \
-        format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
-    if not isfile(shipment_to_get):
-        return Response(status_code=404)
-    with open(shipment_to_get) as f:
-        content = f.read()
-    return Response(content, media_type='application/json')
 
+    # # original method, doesn't use Models.py
+    # shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'. \
+    #     format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
+    # if not isfile(shipment_to_get):
+    #     return Response(status_code=404)
+    # with open(shipment_to_get) as f:
+    #     content = f.read()
+    # return Response(content, media_type='application/json')
+
+
+
+    # new method, use Models.py
+    date_route_pointer=DateRoutePointer(datetime(year=int(year),
+                                                 month=int(month),
+                                                 day=int(day),
+                                                 hour=int(hour)),
+                                        route.upper())
+
+    data = Shipment(pathlib.Path.cwd(),date_route_pointer).load_file()
+    return Response(content=data, media_type="application/json")
 
 # Fetch Single Shipment As geoJSON
 @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses/geojson',response_class=PrettyJSONResponse)
@@ -84,8 +97,8 @@ async def fetch_single_Shipment_as_geoJSON(
                                                  day=int(day),
                                                  hour=int(hour)),
                                         route.upper())
-    return Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
-
+    data = Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
+    return data
 
 
 ######################

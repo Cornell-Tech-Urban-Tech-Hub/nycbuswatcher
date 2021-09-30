@@ -595,8 +595,22 @@ class Shipment(GenericFolder):
             return (False, filepath)
 
     def load_file(self):
-        with open(self.filepath, "r") as f:
-            return json.load(f)
+        if self.check_exist()[0] is True:
+            with open(self.filepath, "r") as f:
+                return f.read()
+        else:
+            response = {'type': 'Shipment',
+                        'Status': 'False',
+                        'Request': {
+                            "Year": str(self.year),
+                            "Month": str(self.month),
+                            "Day": str(self.day),
+                            "Hour":str(self.hour),
+                            "Route": self.route
+                        }
+                    }
+
+            return json.dumps(response, indent=4)
 
     def backup_file(self):
         backup_filepath = self.filepath.with_suffix('.bak')
