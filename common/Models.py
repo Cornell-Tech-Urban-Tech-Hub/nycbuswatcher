@@ -625,22 +625,43 @@ class Shipment(GenericFolder):
         return
 
     def to_FeatureCollection(self):
-        geojson = {'type': 'FeatureCollection', 'features': []}
-        shipment = self.load_file()
-        for bus in shipment['buses']:
-            feature = {'type': 'Feature',
-                       'properties': {},
-                       'geometry': {'type': 'Point',
-                                    'coordinates': []}}
-            feature['geometry']['coordinates'] = [bus['lon'], bus['lat']]
-            for k, v in bus.items():
-                if isinstance(v, (datetime, date)):
-                    v = v.isoformat()
-                feature['properties'][k] = v
-            geojson['features'].append(feature)
-        return geojson
 
-    def count_buses(self):
+        if self.check_exist()[0] is True:
+
+            geojson = {'type': 'FeatureCollection', 'features': []}
+            shipment = json.loads(self.load_file())
+            for bus in shipment['buses']:
+                feature = {'type': 'Feature',
+                           'properties': {},
+                           'geometry': {'type': 'Point',
+                                        'coordinates': []}}
+                feature['geometry']['coordinates'] = [bus['lon'], bus['lat']]
+                for k, v in bus.items():
+                    if isinstance(v, (datetime, date)):
+                        v = v.isoformat()
+                    feature['properties'][k] = v
+                geojson['features'].append(feature)
+            return geojson
+
+
+        else:
+            response = { "type": "Shipment as GeoJSON",
+                         "status": False,
+                         "Request": {
+                             "Year": str(self.year),
+                             "Month": str(self.month),
+                             "Day": str(self.day),
+                             "Hour":str(self.hour),
+                             "Route": self.route
+                         }
+                         }
+
+            return response
+
+
+
+
+def count_buses(self):
         data = self.load_file()
         return len(data['buses'])
 

@@ -99,6 +99,7 @@ async def fetch_single_Shipment_as_geoJSON(
                                         route.upper())
     data = Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
     return data
+    # return Response(content=data, media_type="application/json")
 
 
 ######################
