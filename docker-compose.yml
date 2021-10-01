@@ -1,6 +1,21 @@
-version: '3'
+# after https://towardsdatascience.com/how-to-deploy-a-secure-api-with-fastapi-docker-and-traefik-b1ca065b100f
+# github https://github.com/ahmedbesbes/fastapi-ssl
+
+version: "3"
 
 services:
+  api:
+    build:
+      context: .
+      dockerfile: ./build/api/Dockerfile
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.app-http.rule=Host(`api.buswatcher.org`)
+      - traefik.http.routers.app-http.tls=true
+      - traefik.http.routers.app-http.tls.certresolver=letsencrypt
+    volumes:
+      - ./data:/app/data
 
   acquire:
     restart: always
@@ -12,26 +27,16 @@ services:
     command:
       python3 /app/acquire.py
 
-  api:
-    restart: always
-    build:
-      context: .
-      dockerfile: ./build/api/Dockerfile
-    volumes:
-      - ./data:/app/data
+  traefik:
+    image: traefik:v2.3
     ports:
       - 80:80
-    command:
-      uvicorn --host=0.0.0.0 --port=80 api:app
-
-# this container only used for migration of old databases, requires db container from the old stack
-  reprocessor:
+      - 443:443
     restart: always
-    build:
-      context: .
-      dockerfile: ./build/reprocessor/Dockerfile
     volumes:
-      - ./data:/app/data
-      - ./reprocessor:/app/reprocessor
-    command:
-      tail -f /dev/null # keep the container alive for me
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - traefik-public-certificates:/certificates
+
+volumes:
+  traefik-public-certificates:
