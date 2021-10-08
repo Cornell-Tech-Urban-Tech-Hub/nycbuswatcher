@@ -709,7 +709,9 @@ class BusObservation():
                         val = monitored_vehicle_journey['MonitoredVehicleJourney'][v[0]]
                         setattr(self, k, val)
                 except LookupError:
-                    pass
+                    # if there's no passenger count, we will set it to null
+                    if k == 'passenger_count':
+                        setattr(self, k, None)
                 except Exception as e:
                     pass
             buses.append(self)
