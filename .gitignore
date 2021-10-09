@@ -92,3 +92,4 @@ venv.bak/
 
 # tests
 .pytest_cache
+.DS_Store

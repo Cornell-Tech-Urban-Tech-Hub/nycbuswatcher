@@ -18,3 +18,10 @@ ENV PYTHON_ENV="production"
 WORKDIR /app
 
 COPY . .
+
+EXPOSE 80
+# EXPOSE 8000
+
+CMD [ "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "80"]
+
+
