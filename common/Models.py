@@ -14,6 +14,8 @@ from pathlib import Path, PurePath
 from glob import glob
 from uuid import uuid4
 
+from pymongo import MongoClient
+
 from common.Helpers import timer
 
 import common.config.config as config
@@ -26,7 +28,8 @@ pathmap = {
     'store':'data/store',
     'barrel':'data/store/barrels',
     'dashboard':'data/dashboard.csv',
-    'history':'data/history'
+    'history':'data/history',
+    'mongodb':'db'
     }
 
 class DecimalEncoder(json.JSONEncoder):
@@ -659,8 +662,6 @@ class Shipment(GenericFolder):
             return response
 
 
-
-
 def count_buses(self):
         data = self.load_file()
         return len(data['buses'])
@@ -810,3 +811,40 @@ class BusObservation():
             table_row.route_short,
             row_dict
         )
+
+# with help from https://realpython.com/introduction-to-mongodb-and-python/
+class MongoLake(WorkDir):
+
+    def __init__(self, cwd, date_pointer, kind='mongodb'):
+        super().__init__(cwd)
+        self.path = self.get_path(pathmap[kind], date_pointer)
+        self.uid = uuid4().hex
+
+    def get_path(self, prefix, date_pointer):
+        folderpath = self.cwd / prefix / date_pointer.purepath
+        Path(folderpath).mkdir(parents=True, exist_ok=True)
+        return folderpath
+
+
+    def store_feeds(self, feeds):
+
+        # bug will have to configure hostname whether we are development or production
+        with MongoClient(host="localhost", port=27017) as client:
+
+            db = client.nycbuswatcher # db name is 'buswatcher'
+            Collection = db["buses"] # collection name is 'buses'
+
+            for route_report in feeds:
+                for route_id, response in route_report.items():
+                    logging.debug(response.json())
+                    Collection.insert_one(response.json())
+
+        return
+
+    #todo write function to return a shipment index from the route_reports in the Collection (backwards v2 api compatibility)
+
+    #todo write function to query db and make a shipment and return it  (backwards v2 api compatibility)
+
+    #todo write function that allows full queries for bus observations and returns as geojson
+
+

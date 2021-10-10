@@ -7,6 +7,7 @@ import trio
 
 from common.Models import *
 
+
 def async_grab_and_store(localhost, cwd):
     start = time()
     SIRI_request_urlpaths = get_SIRI_request_urlpaths()
@@ -35,8 +36,10 @@ def async_grab_and_store(localhost, cwd):
 
     # dump to the various locations
     timestamp = dt.datetime.now()
-    DataLake(cwd).make_puddles(feeds, DatePointer(timestamp))
-    DataStore(cwd).make_barrels(feeds, DatePointer(timestamp))
+    # DataLake(cwd).make_puddles(feeds, DatePointer(timestamp))
+    # DataStore(cwd).make_barrels(feeds, DatePointer(timestamp))
+
+    MongoLake(cwd, DatePointer(timestamp)).store_feeds(feeds)
 
     # report results to console
     n_buses = num_buses(feeds)

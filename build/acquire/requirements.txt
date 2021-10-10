@@ -1,5 +1,6 @@
 apscheduler
 asks
+mongoengine
 pandas
 python-dotenv
 python-dateutil
