@@ -38,6 +38,7 @@ app.add_middleware(
 # SHIPMENT ENDPOINTS
 #######################
 
+# todo implement date + time query down to 1-hour resolutin
 # All Buses In History For Route
 @app.get('/api/v2/nyc/{route}/history/buses',response_class=PrettyJSONResponse)
 async def get_all_buses_in_route_history(
@@ -53,57 +54,58 @@ async def get_all_buses_in_route_history(
     return Response(content, media_type='application/json')
 
 
-# Fetch Single Shipment As JSON
-@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
-# after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
-async def fetch_single_shipment(
-        *,
-        year: int = Path(..., ge=2020, le=2050),
-        month: int = Path(..., ge=1, le=12),
-        day: int = Path(..., ge=1, le=31),
-        hour: int = Path(..., ge=0, le=23),
-        route: str = Path(..., max_length=6)
-):
-
-    # # original method, doesn't use Models.py
-    # shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'. \
-    #     format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
-    # if not isfile(shipment_to_get):
-    #     return Response(status_code=404)
-    # with open(shipment_to_get) as f:
-    #     content = f.read()
-    # return Response(content, media_type='application/json')
-
-
-
-    # new method, use Models.py
-    date_route_pointer=DateRoutePointer(datetime(year=int(year),
-                                                 month=int(month),
-                                                 day=int(day),
-                                                 hour=int(hour)),
-                                        route.upper())
-
-    data = Shipment(pathlib.Path.cwd(),date_route_pointer).load_file()
-    return Response(content=data, media_type="application/json")
-
-# Fetch Single Shipment As geoJSON
-@app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses/geojson',response_class=PrettyJSONResponse)
-async def fetch_single_Shipment_as_geoJSON(
-        *,
-        year: int = Path(..., ge=2020, le=2050),
-        month: int = Path(..., ge=1, le=12),
-        day: int = Path(..., ge=1, le=31),
-        hour: int = Path(..., ge=0, le=23),
-        route: str = Path(..., max_length=6)
-        ):
-    date_route_pointer=DateRoutePointer(datetime(year=int(year),
-                                                 month=int(month),
-                                                 day=int(day),
-                                                 hour=int(hour)),
-                                        route.upper())
-    data = Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
-    return data
-    # return Response(content=data, media_type="application/json")
+# # Fetch Single Shipment As JSON
+# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses')
+# # after https://stackoverflow.com/questions/62455652/how-to-serve-static-files-in-fastapi
+# async def fetch_single_shipment(
+#         *,
+#         year: int = Path(..., ge=2020, le=2050),
+#         month: int = Path(..., ge=1, le=12),
+#         day: int = Path(..., ge=1, le=31),
+#         hour: int = Path(..., ge=0, le=23),
+#         route: str = Path(..., max_length=6)
+# ):
+#
+#     # # original method, doesn't use Models.py
+#     # shipment_to_get = 'data/store/shipments/{}/{}/{}/{}/{}/shipment_{}-{}-{}-{}-{}.json'. \
+#     #     format(year,month,day,hour,route.upper(),year,month,day,hour,route.upper())
+#     # if not isfile(shipment_to_get):
+#     #     return Response(status_code=404)
+#     # with open(shipment_to_get) as f:
+#     #     content = f.read()
+#     # return Response(content, media_type='application/json')
+#
+#
+#
+#     # new method, use Models.py
+#     date_route_pointer=DateRoutePointer(datetime(year=int(year),
+#                                                  month=int(month),
+#                                                  day=int(day),
+#                                                  hour=int(hour)),
+#                                         route.upper())
+#
+#     data = Shipment(pathlib.Path.cwd(),date_route_pointer).load_file()
+#     return Response(content=data, media_type="application/json")
+#
+#
+# # Fetch Single Shipment As geoJSON
+# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses/geojson',response_class=PrettyJSONResponse)
+# async def fetch_single_Shipment_as_geoJSON(
+#         *,
+#         year: int = Path(..., ge=2020, le=2050),
+#         month: int = Path(..., ge=1, le=12),
+#         day: int = Path(..., ge=1, le=31),
+#         hour: int = Path(..., ge=0, le=23),
+#         route: str = Path(..., max_length=6)
+#         ):
+#     date_route_pointer=DateRoutePointer(datetime(year=int(year),
+#                                                  month=int(month),
+#                                                  day=int(day),
+#                                                  hour=int(hour)),
+#                                         route.upper())
+#     data = Shipment(pathlib.Path.cwd(),date_route_pointer).to_FeatureCollection()
+#     return data
+#     # return Response(content=data, media_type="application/json")
 
 #
 # ######################
