@@ -2,6 +2,7 @@ apscheduler
 asks
 mongoengine
 pandas
+pymongo
 python-dotenv
 python-dateutil
 requests

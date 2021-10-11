@@ -4,6 +4,7 @@ geojson
 jinja2
 pandas
 fastapi
+pymongo
 python-dotenv
 uvicorn
 requests

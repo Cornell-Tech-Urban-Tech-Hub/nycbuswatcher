@@ -14,18 +14,6 @@ services:
     command:
       python3 /app/acquire.py
 
-  api:
-    restart: always
-    build:
-      context: .
-      dockerfile: ./build/api/Dockerfile
-    volumes:
-      - ./data:/app/data
-    ports:
-      - 80:80
-    command:
-      uvicorn --host=0.0.0.0 --port=80 api:app
-
   # based on https://dev.to/sonyarianto/how-to-spin-mongodb-server-with-docker-and-docker-compose-2lef
   # official docs at https://hub.docker.com/_/mongo
   db:
@@ -37,3 +25,32 @@ services:
       - 27017:27017
     volumes:
       - ./db:/data/db
+
+  #bug how to make this work properly on local test stack?
+  traefik:
+    image: traefik:v2.3
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - traefik-public-certificates:/certificates
+
+  api:
+    build:
+      context: .
+      dockerfile: ./build/api/Dockerfile
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.api.rule=Host(`api.buswatcher.org`)
+      - traefik.http.routers.api.tls=true
+      - traefik.http.routers.api.tls.certresolver=letsencrypt
+      # - traefik.port=8000
+    volumes:
+      - ./data:/app/data
+
+volumes:
+  traefik-public-certificates:
