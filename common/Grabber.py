@@ -34,12 +34,7 @@ def async_grab_and_store(localhost, cwd):
 
     trio.run(main, SIRI_request_urlpaths)
 
-    # dump to the various locations
-    timestamp = dt.datetime.now()
-    # DataLake(cwd).make_puddles(feeds, DatePointer(timestamp))
-    # DataStore(cwd).make_barrels(feeds, DatePointer(timestamp))
-
-    MongoLake(cwd, DatePointer(timestamp)).store_feeds(feeds)
+    MongoLake().store_feeds(feeds)
 
     # report results to console
     n_buses = num_buses(feeds)

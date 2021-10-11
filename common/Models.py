@@ -28,8 +28,7 @@ pathmap = {
     'store':'data/store',
     'barrel':'data/store/barrels',
     'dashboard':'data/dashboard.csv',
-    'history':'data/history',
-    'mongodb':'db'
+    'history':'data/history'
     }
 
 class DecimalEncoder(json.JSONEncoder):
@@ -813,21 +812,61 @@ class BusObservation():
         )
 
 # with help from https://realpython.com/introduction-to-mongodb-and-python/
-class MongoLake(WorkDir):
+class MongoLake():
 
-    def __init__(self, cwd, kind='mongodb'):
-        super().__init__(cwd)
+    def __init__(self):
         self.uid = uuid4().hex
 
 
     def store_feeds(self, feeds):
         with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
             db = client.nycbuswatcher # db name is 'buswatcher'
-            Collection = db["buses"] # collection name is 'buses'
+            response_db = db["siri_archive"] # raw responses
+            buses_db = db["buses"] # only the ['MonitoredVehicleJourney'] dicts
+
+            # iterate over each route
             for route_report in feeds:
                 for route_id, response in route_report.items():
-                    logging.debug(response.json())
-                    Collection.insert_one(response.json())
+
+                    # dump the response to archive
+                    response_db.insert_one(response.json())
+
+                    # make a dict with the response
+                    response_json = response.json()
+
+                    # bug this isnt parsing properly all the time
+                    """
+                    DEBUG:root:SIRI API response for MTA NYCT_SIM6 was 4 buses.
+                    DEBUG:root:SIRI API response for MTA NYCT_SIM6 was NO VEHICLE ACTIVITY.
+                    DEBUG:root:SIRI API response for MTA NYCT_SIM8 was 5 buses.
+                    DEBUG:root:SIRI API response for MTA NYCT_SIM8 was NO VEHICLE ACTIVITY.
+                    DEBUG:root:SIRI API response for MTA NYCT_B47 was 12 buses.
+                    DEBUG:root:SIRI API response for MTA NYCT_B47 was NO VEHICLE ACTIVITY.
+                    """
+
+                    # parse the response and dump each monitored vehicle journey to collection 'buses'
+                    try:
+                        error_condition = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['ErrorCondition']
+                        logging.debug(f"SIRI API response for {route_id} was {error_condition['OtherError']['ErrorText']}")
+                        continue
+                    except:
+
+                        # todo find smarter way to catch empty VehicleActivity—any error here could cause except to fire
+                        try:
+                            vehicle_activity = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
+                            logging.debug(f"SIRI API response for {route_id} was {len(vehicle_activity)} buses.")
+
+                            buses=[]
+                            for v in vehicle_activity:
+                                v['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
+                                # v['RecordedAtTimeAsDatetime'] = parser.isoparse(v['RecordedAtTime'])
+                                logging.debug(f"Route {v['MonitoredVehicleJourney']['LineRef']} Bus {v['MonitoredVehicleJourney']['VehicleRef'] } recorded at {v['RecordedAtTimeAsDatetime']}")
+                                buses.append(v)
+                            buses_db.insert_many(buses)
+
+                        except:
+                            logging.debug(f'SIRI API response for {route_id} was NO VEHICLE ACTIVITY.')
+                            continue
 
         return
 
@@ -841,14 +880,13 @@ class MongoLake(WorkDir):
             lineref_prefix = "MTA NYCT_"
             lineref = lineref_prefix + passed_route
 
-            #todo refine this to take a datepointer too
-            query_route = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
+            query = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
 
             # todo rewrite this as a generator
             # concatenate all the VehicleMonitoring reports with their timestamps
             buses = []
 
-            for route_report in Collection.find(json.loads(query_route)):
+            for route_report in Collection.find(json.loads(query)):
 
                 for bus in route_report['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
                     monitored_vehicle_journey = bus['MonitoredVehicleJourney']
@@ -864,20 +902,41 @@ class MongoLake(WorkDir):
                          }
             return json.dumps(response, indent=4)
 
+    # query db for all buses on a route for a specific hour (like the old Shipment)
+    def get_dateroute_query(self, date_route_pointer):
+
+        with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
+            db = client.nycbuswatcher # db name is 'buswatcher'
+            Collection = db["buses"] # collection name is 'buses'
+
+            lineref_prefix = "MTA NYCT_"
+            lineref = lineref_prefix + date_route_pointer.route
+
+            # todo rewrite this as a generator?
+            # todo add a date query
+            # todo https://medium.com/nerd-for-tech/how-to-prepare-a-python-date-object-to-be-inserted-into-mongodb-and-run-queries-by-dates-and-range-bc0da03ea0b2
+            query = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
+
+            # concatenate all the VehicleMonitoring reports with their timestamps
+            buses = []
+
+            for route_report in Collection.find(json.loads(query)):
+
+                for bus in route_report['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
+                    monitored_vehicle_journey = bus['MonitoredVehicleJourney']
+                    monitored_vehicle_journey['RecordedAtTime'] = bus['RecordedAtTime']
+                    buses.append(monitored_vehicle_journey)
 
 
 
+            # make a geojson out of it
+            response = { "scope": "hour",
+                         "query": {
+                             date_route_pointer
+                         },
+                         "results": buses
+                         }
 
-
-
-
-
-
-
-
-
-    #todo write function to return a shipment index from the route_reports in the Collection (backwards v2 api compatibility)
-
-    #todo write function that allows full queries for bus observations and returns as geojson
+            return json.dumps(response, indent=4)
 
 
