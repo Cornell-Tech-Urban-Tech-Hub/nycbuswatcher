@@ -91,6 +91,3 @@ if __name__ == "__main__":
     # DEVELOPMENT = run once and quit
     elif os.environ['PYTHON_ENV'] == "development":
         async_grab_and_store(args.localhost, Path.cwd())
-
-
-

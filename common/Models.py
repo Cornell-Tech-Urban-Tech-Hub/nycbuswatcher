@@ -815,25 +815,15 @@ class BusObservation():
 # with help from https://realpython.com/introduction-to-mongodb-and-python/
 class MongoLake(WorkDir):
 
-    def __init__(self, cwd, date_pointer, kind='mongodb'):
+    def __init__(self, cwd, kind='mongodb'):
         super().__init__(cwd)
-        self.path = self.get_path(pathmap[kind], date_pointer)
         self.uid = uuid4().hex
-
-    def get_path(self, prefix, date_pointer):
-        folderpath = self.cwd / prefix / date_pointer.purepath
-        Path(folderpath).mkdir(parents=True, exist_ok=True)
-        return folderpath
 
 
     def store_feeds(self, feeds):
-
-        # bug will have to configure hostname whether we are development or production
-        with MongoClient(host="localhost", port=27017) as client:
-
+        with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
             db = client.nycbuswatcher # db name is 'buswatcher'
             Collection = db["buses"] # collection name is 'buses'
-
             for route_report in feeds:
                 for route_id, response in route_report.items():
                     logging.debug(response.json())
@@ -841,9 +831,52 @@ class MongoLake(WorkDir):
 
         return
 
-    #todo write function to return a shipment index from the route_reports in the Collection (backwards v2 api compatibility)
+    # query db for all buses on a route in history
+    def get_route_history(self, passed_route):
 
-    #todo write function to query db and make a shipment and return it  (backwards v2 api compatibility)
+        with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
+            db = client.nycbuswatcher # db name is 'buswatcher'
+            Collection = db["buses"] # collection name is 'buses'
+
+            lineref_prefix = "MTA NYCT_"
+            lineref = lineref_prefix + passed_route
+
+            #todo refine this to take a datepointer too
+            query_route = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
+
+            # todo rewrite this as a generator
+            # concatenate all the VehicleMonitoring reports with their timestamps
+            buses = []
+
+            for route_report in Collection.find(json.loads(query_route)):
+
+                for bus in route_report['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
+                    monitored_vehicle_journey = bus['MonitoredVehicleJourney']
+                    monitored_vehicle_journey['RecordedAtTime'] = bus['RecordedAtTime']
+                    buses.append(monitored_vehicle_journey)
+
+            # make a geojson out of it
+            response = { "scope": "history",
+                         "query": {
+                             "lineref": lineref
+                         },
+                         "results": buses
+                         }
+            return json.dumps(response, indent=4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #todo write function to return a shipment index from the route_reports in the Collection (backwards v2 api compatibility)
 
     #todo write function that allows full queries for bus observations and returns as geojson
 
