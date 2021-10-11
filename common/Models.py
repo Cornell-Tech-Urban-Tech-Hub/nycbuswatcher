@@ -834,39 +834,30 @@ class MongoLake():
                     # make a dict with the response
                     response_json = response.json()
 
-                    # bug this isnt parsing properly all the time
-                    """
-                    DEBUG:root:SIRI API response for MTA NYCT_SIM6 was 4 buses.
-                    DEBUG:root:SIRI API response for MTA NYCT_SIM6 was NO VEHICLE ACTIVITY.
-                    DEBUG:root:SIRI API response for MTA NYCT_SIM8 was 5 buses.
-                    DEBUG:root:SIRI API response for MTA NYCT_SIM8 was NO VEHICLE ACTIVITY.
-                    DEBUG:root:SIRI API response for MTA NYCT_B47 was 12 buses.
-                    DEBUG:root:SIRI API response for MTA NYCT_B47 was NO VEHICLE ACTIVITY.
-                    """
-
-                    # parse the response and dump each monitored vehicle journey to collection 'buses'
+                    # APPROACH 2
+                    # exception handler based on DataStore.make_barrels()
                     try:
-                        error_condition = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['ErrorCondition']
-                        logging.debug(f"SIRI API response for {route_id} was {error_condition['OtherError']['ErrorText']}")
-                        continue
-                    except:
+                        vehicle_activity = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
+                        logging.debug(f"{route_id} has {len(vehicle_activity)} buses.")
 
-                        # todo find smarter way to catch empty VehicleActivity—any error here could cause except to fire
-                        try:
-                            vehicle_activity = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
-                            logging.debug(f"SIRI API response for {route_id} was {len(vehicle_activity)} buses.")
+                        buses=[]
+                        for v in vehicle_activity:
+                            v['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
+                            # v['RecordedAtTimeAsDatetime'] = parser.isoparse(v['RecordedAtTime'])
+                            logging.debug(f"Bus {v['MonitoredVehicleJourney']['VehicleRef'] } recorded at {v['RecordedAtTime']}")
+                            buses.append(v)
+                        buses_db.insert_many(buses)
 
-                            buses=[]
-                            for v in vehicle_activity:
-                                v['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
-                                # v['RecordedAtTimeAsDatetime'] = parser.isoparse(v['RecordedAtTime'])
-                                logging.debug(f"Route {v['MonitoredVehicleJourney']['LineRef']} Bus {v['MonitoredVehicleJourney']['VehicleRef'] } recorded at {v['RecordedAtTimeAsDatetime']}")
-                                buses.append(v)
-                            buses_db.insert_many(buses)
+                    except KeyError as e:
+                        # future find a way to filter these out to reduce overhead
+                        # this is almost always the result of a route that doesn't exist, so why is it in the OBA response?
+                        logging.debug(f"SIRI API response for {route_id} was {type(e)} {e}")
+                        pass
 
-                        except:
-                            logging.debug(f'SIRI API response for {route_id} was NO VEHICLE ACTIVITY.')
-                            continue
+                    except json.JSONDecodeError:
+                        # this is probably no response?
+                        logging.debug(f'SIRI API response for {route_id} was probably = NO VEHICLE ACTIVITY.')
+                        pass
 
         return
 

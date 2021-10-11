@@ -1,11 +1,11 @@
 # NYCBusWatcher
-- v2.0 July 2021
+- v2.1 October 2021
 - Anthony Townsend <atownsend@cornell.edu>
 
 
 ## Description
 
-NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parses, and redistributes bulk data of bus position records from the NYC Transit BusTime API. For speed and scalability, there is no database. Everything is done with serialized data stored in static files.
+NYCBusWatcher is a fully-containerized set of Python scripts that fetches, parses, and redistributes bulk data of bus position records from the NYC Transit BusTime API. Starting with version 2.1 it uses a mongodb backend containing 2 collections: ``siri_responses`` which keeps a copy of the full SIRI response from the MTA API, and ```buses``` which only retains the ```["VehicleActivity"]``` portion of the responses. The ```["RecordedAtTime"]``` string field in these records has been cast as a Javascript datetime object to make it easier to query based on datetime ranges.
 
 ## Quickstart
 
@@ -37,12 +37,31 @@ The easiest way to use NYCBusWatcher is to simply pull data from our public API,
     docker-compose up -d --build
     ```
 
+## Run in A Development Environment
+
+1. Run a mongo database locally on the standard port (27017)
+
+2. Build a conda environment with the ```environment.yml``` file:
+   
+   ```conda env -f environment.yml```
+   
+2. ```export PYTHON_ENV="development"``` 
+   
+3. Run the scraper with the following settings:
+
+   ```-v```   Verbose ON, will print all debug messages
+   ```-l```   Localhost ON, used in conjunction with ```export PYTHON_ENV="production"``` if you need to test some of those settings locally outside a docker environment.
+
+   Ex.: ```python acquire.py -v -l``` n.b. the scraper will only run once and quit in development mode.
+
+5. Run the API similarly:
+
+   Ex.: ```python api.py -v ``` n.b. there's no localhost override mode for API, its not needed.
+
 ## How It Works
 
-
 ### Acquire
-The main daemon that fetches 200+ individual JSON feeds from the MTA BusTime API asynchronously, every minute, parses and dumps both the full response and a set of pickled `BusObservation` class instances to disk. Once per hour, these files are reprocessed—the raw responses are tar'ed into cold storage, and the pickles are serialized into a single JSON file for each hour, each route. 
+The main daemon that fetches 200+ individual JSON feeds from the MTA BusTime API asynchronously, every minute, parses and dumps both the full response and a subset to a mongo database.
 
 ### API
-The API serves these hourly, per route JSON files full of serialized `BusObservation` instances. There's no database, and no queries or data processing at all to serve API responses. Endpoint routes are converted into a `DateRoutePointer` instance, which is how `acquire.py` manages data internally (and uses several classes to convert to filepaths in the `data/` folder).
-
+The API allows you to retrieve all observed buses on an hourly basis.

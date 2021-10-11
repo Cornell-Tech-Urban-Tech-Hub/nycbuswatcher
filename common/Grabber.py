@@ -39,7 +39,7 @@ def async_grab_and_store(localhost, cwd):
     # report results to console
     n_buses = num_buses(feeds)
     end = time()
-    logging.debug('Saved {} route feeds into puddles and pickled {} BusObservations in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    logging.info('Saved {} route feeds tracking {} buses in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
     return
 
 
