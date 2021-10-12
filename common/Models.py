@@ -818,9 +818,12 @@ class MongoLake():
     def __init__(self):
         self.uid = uuid4().hex
 
+    def get_mongo_client(self):
+        # bug will have to configure hostname whether we are development or production
+        return MongoClient(host="localhost", port=27017)
 
     def store_feeds(self, feeds):
-        with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
+        with self.get_mongo_client() as client:
             db = client.nycbuswatcher # db name is 'buswatcher'
             response_db = db["siri_archive"] # raw responses
             buses_db = db["buses"] # only the ['MonitoredVehicleJourney'] dicts
@@ -842,11 +845,21 @@ class MongoLake():
 
                         buses=[]
                         for v in vehicle_activity:
+
+                            # copy and cast the time into the MonitoredVehicleJourney dict
+                            #todo pick one of these and remove the other
                             v['MonitoredVehicleJourney']['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
-                            delete_keys_from_dict(v, 'OnwardCalls') # bug this doesnt work
+                            v['RecordedAtTimeDatetime'] = parser.isoparse(v['RecordedAtTime'])
+
+                            # and remove it from the VehicleActivity dict
                             # v.pop("RecordedAtTime", None) #bug this raises key errors even though a default value is provided
+
+                            # remove ['MonitoredVehicleJourney']['OnwardCalls'] dict
+                            v.get("MonitoredVehicleJourney", {}).pop("OnwardCalls", None)
+
                             logging.debug(f"Bus {v['MonitoredVehicleJourney']['VehicleRef'] } recorded at {v['RecordedAtTime']}")
                             buses.append(v)
+
                         buses_db.insert_many(buses)
 
                     except KeyError as e:
@@ -890,6 +903,7 @@ class MongoLake():
                          }
 
             #todo encapsulate this as geojson
+            #bug this dumps the MonitoredVehicleJourney / RecordedAtTime as "RecordedAtTime": { "$date": 1634002375000}
             return json_util.dumps(response, indent=4)
 
     # query db for all buses on a route for a specific hour (like the old Shipment)
