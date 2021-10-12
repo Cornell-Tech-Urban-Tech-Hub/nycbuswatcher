@@ -17,18 +17,17 @@ services:
   # based on https://dev.to/sonyarianto/how-to-spin-mongodb-server-with-docker-and-docker-compose-2lef
   # official docs at https://hub.docker.com/_/mongo
 
-  # todo add an init script to create indexes
   # https://faun.pub/managing-mongodb-on-docker-with-docker-compose-26bf8a0bbae3
 
   db:
     image: mongo:latest
     environment:
-      MONGO_INITDB_ROOT_USERNAME: nycbuswatcher
-      MONGO_INITDB_ROOT_PASSWORD: bustime
+      MONGO_INITDB_DATABASE: nycbuswatcher
     ports:
       - 27017:27017
     volumes:
       - ./db:/data/db
+      - ./build/mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro #bug may be unnecessary for authentication but useful for creating an index?
 
 
   api:
@@ -36,11 +35,13 @@ services:
       context: .
       dockerfile: ./build/api/Dockerfile
     restart: always
+    ports:
+      - 80:80
     volumes:
       - ./data:/app/data
 
 
-#  #bug how to make this work properly on local test stack?
+#  #todo how to make this work properly on local test stack?
 #  traefik:
 #    image: traefik:v2.3
 #    ports:

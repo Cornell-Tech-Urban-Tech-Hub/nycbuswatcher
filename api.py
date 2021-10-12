@@ -79,6 +79,7 @@ if __name__ == '__main__':
                         action="store_true")
     parser.add_argument('-l',
                         action="store_true",
+                        default=False,
                         dest="localhost_mode",
                         help="force localhost for production mode")
 

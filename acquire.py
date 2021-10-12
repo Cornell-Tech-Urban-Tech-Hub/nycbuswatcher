@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
     parser.add_argument('-a', action="store_true", dest="archive_mode", default=False, help="save full API responses in archive")
-    parser.add_argument('-l', action="store_true", dest="localhost_mode", help="force localhost for production mode")
+    parser.add_argument('-l', action="store_true", dest="localhost_mode", default=False, help="force localhost for production mode")
     parser.add_argument("-v", "--verbose", action="store_true", help="increase output verbosity")
 
     args = parser.parse_args()

@@ -71,11 +71,11 @@ class MongoLake():
 
     def __init__(self, python_env, localhost_mode, archive_mode):
         self.uid = uuid4().hex
+        self.archive_mode = archive_mode
         if python_env == "production" :
             self.db_host = "db"
         if python_env == "development" or localhost_mode == True:
             self.db_host = "localhost"
-        self.archive_mode = archive_mode
 
     def get_mongo_client(self):
         return MongoClient(host=self.db_host, port=27017)
