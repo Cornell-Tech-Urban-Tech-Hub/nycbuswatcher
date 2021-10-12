@@ -140,21 +140,9 @@ class MongoLake():
             lineref_prefix = "MTA NYCT_"
             lineref = lineref_prefix + passed_route
 
-            # todo rewrite this as a generator?
-            # query = f'{{ "MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
-            # results = [b for b in Collection.find(json.loads(query))]
-            # payload = [r for r in results]
-            #
-            # # make a json out of it
-            # response = { "scope": "history",
-            #              "query": {
-            #                  "lineref": lineref
-            #              },
-            #              "payload": payload
-            #              }
-            #
-
             criteria = { "MonitoredVehicleJourney.LineRef" : lineref }
+
+            #todo sort these
             payload = json.loads(dumps(Collection.find(criteria)))
 
             #todo encapsulate this as geojson
@@ -180,18 +168,26 @@ class MongoLake():
             lineref_prefix = "MTA NYCT_"
             lineref = lineref_prefix + date_route_pointer.route
 
-            # todo rewrite this as a generator?
-
             # https://medium.com/nerd-for-tech/how-to-prepare-a-python-date-object-to-be-inserted-into-mongodb-and-run-queries-by-dates-and-range-bc0da03ea0b2
 
             # build time criteria
-            from_date = date_route_pointer.timestamp
-            to_date = date_route_pointer.timestamp + timedelta(hours = 1)
+
+
+            #bug date queries are not working
+            # from_date = date_route_pointer.timestamp
+            # to_date = date_route_pointer.timestamp + timedelta(hours = 1)
+            # print(f'{date_route_pointer.route} from {from_date} to {to_date}')
+            # criteria = {"$and": [{"RecordedAtTimeDatetime": {"$gte": from_date, "$lte": to_date}},{ "MonitoredVehicleJourney.LineRef" : lineref } ]}
+
+            from_date = date_route_pointer.timestamp.isoformat()
+            to_date = (date_route_pointer.timestamp + timedelta(hours = 1)).isoformat()
             print(f'{date_route_pointer.route} from {from_date} to {to_date}')
+            criteria = {"$and": [{"RecordedAtTime": {"$gte": from_date, "$lte": to_date}},{ "MonitoredVehicleJourney.LineRef" : lineref } ]}
+            print(criteria)
 
-            criteria = {"$and": [{"RecordedAtTimeDatetime": {"$gte": from_date, "$lte": to_date}},{ "MonitoredVehicleJourney.LineRef" : lineref } ]}
 
-            payload = json.loads(dumps(Collection.find(criteria))) #bug this isnt working, but isnt throwing and error either
+
+            payload = json.loads(dumps(Collection.find(criteria)))
 
             # make a json out of it
             response = { "scope": "history",
