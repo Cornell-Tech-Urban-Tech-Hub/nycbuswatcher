@@ -40,7 +40,7 @@ app.add_middleware(
 async def get_all_buses_on_route_history(
         route: str = Query("M15", max_length=6)):
 
-    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode).get_all_buses_on_route_history(route)
+    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode, False).get_all_buses_on_route_history(route)
     return Response(content, media_type='application/json')
 
 # All Buses In Hour For Route
@@ -60,7 +60,7 @@ async def get_all_buses_on_route_single_hour(
                                                  hour=int(hour)),
                                         route.upper())
 
-    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode).get_all_buses_on_route_single_hour(date_route_pointer)
+    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode, False).get_all_buses_on_route_single_hour(date_route_pointer)
 
     return Response(content, media_type='application/json')
 

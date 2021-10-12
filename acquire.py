@@ -11,6 +11,7 @@ from common.Grabber import async_grab_and_store
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher grabber, fetches and stores current position for buses')
+    parser.add_argument('-a', action="store_true", dest="archive_mode", default=False, help="save full API responses in archive")
     parser.add_argument('-l', action="store_true", dest="localhost_mode", help="force localhost for production mode")
     parser.add_argument("-v", "--verbose", action="store_true", help="increase output verbosity")
 
@@ -37,7 +38,7 @@ if __name__ == "__main__":
         logging.debug('{} mode. Scanning on {}-second interval.'.format(os.environ['PYTHON_ENV'].capitalize(), scan_interval_seconds))
         scheduler.add_job(async_grab_and_store,
                           'interval',
-                          args=[args.localhost_mode, "production"],
+                          args=["production", args.localhost_mode, args.archive_mode],
                           seconds=scan_interval_seconds,
                           misfire_grace_time=15)
 
@@ -52,4 +53,4 @@ if __name__ == "__main__":
 
     # DEVELOPMENT = run once and quit
     elif os.environ['PYTHON_ENV'] == "development":
-        async_grab_and_store(args.localhost_mode, "development")
+        async_grab_and_store("development", args.localhost_mode, args.archive_mode)

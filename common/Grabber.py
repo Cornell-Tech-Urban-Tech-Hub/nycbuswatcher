@@ -8,7 +8,7 @@ import trio
 from common.Models import *
 
 
-def async_grab_and_store(localhost_mode, python_env):
+def async_grab_and_store(python_env, localhost_mode, archive_mode):
     start = time()
     SIRI_request_urlpaths = get_SIRI_request_urlpaths()
     feeds = []
@@ -34,7 +34,7 @@ def async_grab_and_store(localhost_mode, python_env):
 
     trio.run(main, SIRI_request_urlpaths)
 
-    MongoLake(python_env, localhost_mode).store_feeds(feeds)
+    MongoLake(python_env, localhost_mode, archive_mode).store_feeds(feeds)
 
     # report results to console
     n_buses = num_buses(feeds)

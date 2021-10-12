@@ -69,12 +69,13 @@ class DateRoutePointer(DatePointer):
 # with help from https://realpython.com/introduction-to-mongodb-and-python/
 class MongoLake():
 
-    def __init__(self, python_env, localhost_mode):
+    def __init__(self, python_env, localhost_mode, archive_mode):
         self.uid = uuid4().hex
         if python_env == "production" :
             self.db_host = "db"
         if python_env == "development" or localhost_mode == True:
             self.db_host = "localhost"
+        self.archive_mode = archive_mode
 
     def get_mongo_client(self):
         return MongoClient(host=self.db_host, port=27017)
@@ -90,7 +91,8 @@ class MongoLake():
                 for route_id, response in route_report.items():
 
                     # dump the response to archive
-                    response_db.insert_one(response.json())
+                    if self.archive_mode == True:
+                        response_db.insert_one(response.json())
 
                     # make a dict with the response
                     response_json = response.json()
