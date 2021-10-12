@@ -69,12 +69,15 @@ class DateRoutePointer(DatePointer):
 # with help from https://realpython.com/introduction-to-mongodb-and-python/
 class MongoLake():
 
-    def __init__(self):
+    def __init__(self, python_env, localhost_mode):
         self.uid = uuid4().hex
+        if python_env == "production" :
+            self.db_host = "db"
+        if python_env == "development" or localhost_mode == True:
+            self.db_host = "localhost"
 
     def get_mongo_client(self):
-        # bug will have to configure hostname whether we are development or production
-        return MongoClient(host="localhost", port=27017)
+        return MongoClient(host=self.db_host, port=27017)
 
     def store_feeds(self, feeds):
         with self.get_mongo_client() as client:

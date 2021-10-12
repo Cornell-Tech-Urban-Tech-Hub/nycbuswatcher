@@ -1,5 +1,6 @@
 from datetime import datetime
 from fastapi import FastAPI, Query, Path
+import os
 
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
@@ -39,7 +40,7 @@ app.add_middleware(
 async def get_all_buses_on_route_history(
         route: str = Query("M15", max_length=6)):
 
-    content = MongoLake().get_all_buses_on_route_history(route)
+    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode).get_all_buses_on_route_history(route)
     return Response(content, media_type='application/json')
 
 # All Buses In Hour For Route
@@ -59,7 +60,7 @@ async def get_all_buses_on_route_single_hour(
                                                  hour=int(hour)),
                                         route.upper())
 
-    content = MongoLake().get_all_buses_on_route_single_hour(date_route_pointer)
+    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode).get_all_buses_on_route_single_hour(date_route_pointer)
 
     return Response(content, media_type='application/json')
 
@@ -68,11 +69,18 @@ async def get_all_buses_on_route_single_hour(
 # main -----------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='NYCbuswatcher v2 API, mongodb version')
+    python_env = os.environ['PYTHON_ENV']
+    print(python_env)
+
+    parser = argparse.ArgumentParser(description='NYCbuswatcher v2.1 API, mongodb version')
     parser.add_argument("-v",
                         "--verbose",
                         help="increase output verbosity",
                         action="store_true")
+    parser.add_argument('-l',
+                        action="store_true",
+                        dest="localhost_mode",
+                        help="force localhost for production mode")
 
     args = parser.parse_args()
 
