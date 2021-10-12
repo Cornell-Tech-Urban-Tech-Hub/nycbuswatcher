@@ -1,5 +1,4 @@
 from datetime import datetime
-from os.path import isfile
 from fastapi import FastAPI, Query, Path
 
 from fastapi.templating import Jinja2Templates
@@ -7,14 +6,11 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import argparse
 import logging
-import pathlib
-import inspect
 from starlette.responses import Response
-from starlette.responses import FileResponse
-from common.Models import DateRoutePointer, Shipment, RouteHistory
+
+from common.Models import DateRoutePointer
 from dotenv import load_dotenv
 from common.Helpers import PrettyJSONResponse
-
 from common.Models import MongoLake
 
 #--------------- INITIALIZATION ---------------
@@ -40,33 +36,33 @@ app.add_middleware(
 
 
 # All Buses In History For Route
-@app.get('/api/v2/nyc/{route}/history/buses',response_class=PrettyJSONResponse)
+@app.get('/nyc/{route}/history',response_class=PrettyJSONResponse)
 async def get_all_buses_on_route_history(
         route: str = Query("M15", max_length=6)):
 
     content = MongoLake().get_all_buses_on_route_history(route)
     return Response(content, media_type='application/json')
 
-# # All Buses In Hour For Route
-# @app.get('/api/v2/nyc/{year}/{month}/{day}/{hour}/{route}/buses',response_class=PrettyJSONResponse)
-# async def get_all_buses_on_route_single_hour(
-#         *,
-#         year: int = Path(..., ge=2020, le=2050),
-#         month: int = Path(..., ge=1, le=12),
-#         day: int = Path(..., ge=1, le=31),
-#         hour: int = Path(..., ge=0, le=23),
-#         route: str = Path(..., max_length=6)
-# ):
-#
-#     date_route_pointer=DateRoutePointer(datetime(year=int(year),
-#                                                  month=int(month),
-#                                                  day=int(day),
-#                                                  hour=int(hour)),
-#                                         route.upper())
-#
-#     content = MongoLake().get_all_buses_on_route_single_hour(date_route_pointer)
-#
-#     return Response(content, media_type='application/json')
+# All Buses In Hour For Route
+@app.get('/nyc/{year}/{month}/{day}/{hour}/{route}/buses',response_class=PrettyJSONResponse)
+async def get_all_buses_on_route_single_hour(
+        *,
+        year: int = Path(..., ge=2020, le=2050),
+        month: int = Path(..., ge=1, le=12),
+        day: int = Path(..., ge=1, le=31),
+        hour: int = Path(..., ge=0, le=23),
+        route: str = Path(..., max_length=6)
+):
+
+    date_route_pointer=DateRoutePointer(datetime(year=int(year),
+                                                 month=int(month),
+                                                 day=int(day),
+                                                 hour=int(hour)),
+                                        route.upper())
+
+    content = MongoLake().get_all_buses_on_route_single_hour(date_route_pointer)
+
+    return Response(content, media_type='application/json')
 
 
 
