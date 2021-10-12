@@ -32,4 +32,18 @@ def timer(func):
         logging.warning(f"{func.__name__!r} finished at {strftime('%l:%M%p %Z on %b %d, %Y') } in {elapsed_time:0.4f} seconds")
         return value
     return wrapper_timer
-#--------------------------------------------------------------------------------------------------
+
+
+#------------- remove keys from nested dictionary-----------------------------------------------------------------
+
+# https://stackoverflow.com/questions/3405715/elegant-way-to-remove-fields-from-nested-dictionaries
+from collections import MutableMapping
+from contextlib import suppress
+
+def delete_keys_from_dict(dictionary, keys):
+    for key in keys:
+        with suppress(KeyError):
+            del dictionary[key]
+    for value in dictionary.values():
+        if isinstance(value, MutableMapping):
+            delete_keys_from_dict(value, keys)

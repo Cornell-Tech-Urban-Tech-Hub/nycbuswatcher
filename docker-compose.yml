@@ -16,6 +16,10 @@ services:
 
   # based on https://dev.to/sonyarianto/how-to-spin-mongodb-server-with-docker-and-docker-compose-2lef
   # official docs at https://hub.docker.com/_/mongo
+
+  # todo add an init script to create indexes
+  # https://faun.pub/managing-mongodb-on-docker-with-docker-compose-26bf8a0bbae3
+
   db:
     image: mongo:latest
     environment:

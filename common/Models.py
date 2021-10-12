@@ -15,8 +15,9 @@ from glob import glob
 from uuid import uuid4
 
 from pymongo import MongoClient
+from bson import json_util
 
-from common.Helpers import timer
+from common.Helpers import timer, delete_keys_from_dict
 
 import common.config.config as config
 
@@ -834,16 +835,16 @@ class MongoLake():
                     # make a dict with the response
                     response_json = response.json()
 
-                    # APPROACH 2
-                    # exception handler based on DataStore.make_barrels()
+                    # parse and dump
                     try:
                         vehicle_activity = response_json['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
                         logging.debug(f"{route_id} has {len(vehicle_activity)} buses.")
 
                         buses=[]
                         for v in vehicle_activity:
-                            v['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
-                            # v['RecordedAtTimeAsDatetime'] = parser.isoparse(v['RecordedAtTime'])
+                            v['MonitoredVehicleJourney']['RecordedAtTime'] = parser.isoparse(v['RecordedAtTime'])
+                            delete_keys_from_dict(v, 'OnwardCalls') # bug this doesnt work
+                            # v.pop("RecordedAtTime", None) #bug this raises key errors even though a default value is provided
                             logging.debug(f"Bus {v['MonitoredVehicleJourney']['VehicleRef'] } recorded at {v['RecordedAtTime']}")
                             buses.append(v)
                         buses_db.insert_many(buses)
@@ -861,8 +862,9 @@ class MongoLake():
 
         return
 
+
     # query db for all buses on a route in history
-    def get_route_history(self, passed_route):
+    def get_all_buses_on_route_history(self, passed_route):
 
         with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
             db = client.nycbuswatcher # db name is 'buswatcher'
@@ -871,30 +873,27 @@ class MongoLake():
             lineref_prefix = "MTA NYCT_"
             lineref = lineref_prefix + passed_route
 
-            query = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
+            # todo rewrite this as a generator?
+            query = f'{{ "MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
+            # query = f'{{ "Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity.MonitoredVehicleJourney.LineRef" : "{lineref}" }}'
 
-            # todo rewrite this as a generator
-            # concatenate all the VehicleMonitoring reports with their timestamps
-            buses = []
+            results = [b for b in Collection.find(json.loads(query))]
 
-            for route_report in Collection.find(json.loads(query)):
+            payload = [r for r in results]
 
-                for bus in route_report['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
-                    monitored_vehicle_journey = bus['MonitoredVehicleJourney']
-                    monitored_vehicle_journey['RecordedAtTime'] = bus['RecordedAtTime']
-                    buses.append(monitored_vehicle_journey)
-
-            # make a geojson out of it
+            # make a json out of it
             response = { "scope": "history",
                          "query": {
                              "lineref": lineref
                          },
-                         "results": buses
+                         "payload": payload
                          }
-            return json.dumps(response, indent=4)
+
+            #todo encapsulate this as geojson
+            return json_util.dumps(response, indent=4)
 
     # query db for all buses on a route for a specific hour (like the old Shipment)
-    def get_dateroute_query(self, date_route_pointer):
+    def get_all_buses_on_route_single_hour(self, date_route_pointer):
 
         with MongoClient(host="localhost", port=27017) as client: # bug will have to configure hostname whether we are development or production
             db = client.nycbuswatcher # db name is 'buswatcher'
