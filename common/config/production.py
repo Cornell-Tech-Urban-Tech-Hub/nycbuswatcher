@@ -1,4 +1,5 @@
 config = {
-    'base_api_url' : 'https://test.buswatcher.org:80/',
+    'base_api_url' : 'https://test.buswatcher.org/nyc',
+    'db_host' : 'db',
     'http_connections': 20
 }

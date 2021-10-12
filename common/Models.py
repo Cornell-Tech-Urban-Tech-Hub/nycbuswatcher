@@ -1,84 +1,106 @@
 import os
-import json
 import pickle
-import tarfile
 from dateutil import parser
-import inspect
-import logging
-from collections import defaultdict
 from decimal import Decimal
-from shutil import copy
 
 from datetime import date, datetime, timedelta
 from pathlib import Path, PurePath
-from glob import glob
 from uuid import uuid4
 
 from pymongo import MongoClient
 from bson import json_util
 from bson.json_util import dumps
 
-from common.Helpers import timer, delete_keys_from_dict
+import datetime
+import requests
+from time import time
+import datetime as dt
+import trio
 
 import common.config.config as config
 
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, o):
-        if isinstance(o, Decimal):
-            return str(o)
-        return super(DecimalEncoder, self).default(o)
 
-class DatePointer():
+#### grabber code ################################################################################################################
 
-    def __init__(self,timestamp):
-        self.timestamp = timestamp
-        self.year = timestamp.year
-        self.month = timestamp.month
-        self.day = timestamp.day
-        self.hour = timestamp.hour
-        self.purepath = self.get_purepath()
+def async_grab_and_store(environment):
 
-    def get_purepath(self):
-        return PurePath(str(self.year),
-                     str(self.month),
-                     str(self.day),
-                     str(self.hour)
-                     )
+    def get_OBA_routelist():
+        url = "http://bustime.mta.info/api/where/routes-for-agency/MTA%20NYCT.json?key=" + os.getenv("API_KEY")
+        try:
+            response = requests.get(url, timeout=5)
+            if response.status_code == 503: # response is bad, so go to exception and load the pickle
+                raise Exception(503, "503 error code fetching route definitions. OneBusAway API probably overloaded.")
+            else: # response is good, so save it to pickle and proceed
+                with open(('data/routes-for-agency.pickle'), "wb") as pickle_file:
+                    pickle.dump(response,pickle_file)
+        except Exception as e: # response is bad, so load the last good pickle
+            with open(('data/routes-for-agency.pickle'), "rb") as pickle_file:
+                response = pickle.load(pickle_file)
+            logging.debug("Route URLs loaded from pickle cache.")
+        finally:
+            routes = response.json()
+        return routes
 
-    def __repr__(self):
-        return ('-'.join([str(self.year),
-                              str(self.month),
-                              str(self.day),
-                              str(self.hour)
-                              ]))
+    def get_SIRI_request_urlpaths():
+        SIRI_request_urlpaths = []
+        routes=get_OBA_routelist()
+        for route in routes['data']['list']:
+            SIRI_request_urlpaths.append({route['id']:"/api/siri/vehicle-monitoring.json?key={}&VehicleMonitoringDetailLevel=calls&LineRef={}".format(os.getenv("API_KEY"), route['id'])})
+        return SIRI_request_urlpaths
 
-class DateRoutePointer(DatePointer):
+    def num_buses(feeds):
+        num_buses=0
+        for route_report in feeds:
+            for route_id,route_data in route_report.items():
+                try:
+                    route_data = route_data.json()
+                    for monitored_vehicle_journey in route_data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']:
+                        num_buses = num_buses + 1
+                except: # no vehicle activity?
+                    pass
+        return num_buses
 
-    def __init__(self,timestamp,route=None):
-        super().__init__(timestamp)
-        self.route = route
-        self.purepath = PurePath(self.purepath, self.route) #extend self.purepath inherited from parent.super()
 
-    def __repr__(self):
-        return ('-'.join([str(self.year),
-                              str(self.month),
-                              str(self.day),
-                              str(self.hour),
-                              self.route]))
+    # main function
+    start = time()
+    SIRI_request_urlpaths = get_SIRI_request_urlpaths()
+    feeds = []
+
+    async def grabber(s,a_path,route_id):
+        try:
+            r = await s.get(path=a_path, retries=2, timeout=30)
+            feeds.append({route_id:r})
+        except Exception:
+            logging.error (f'\t{datetime.datetime.now()}\tTimeout or too many retries for {route_id}.')
+
+    async def main(path_list):
+        from asks.sessions import Session
+        s = Session('http://bustime.mta.info', connections=config.config['http_connections'])
+        async with trio.open_nursery() as n:
+            for path_bundle in path_list:
+                for route_id,path in path_bundle.items():
+                    n.start_soon(grabber, s, path, route_id )
+
+    trio.run(main, SIRI_request_urlpaths)
+
+    MongoLake(environment).store_feeds(feeds)
+
+    # report results to console
+    n_buses = num_buses(feeds)
+    end = time()
+    logging.info('Saved {} route feeds tracking {} buses in {:2f} seconds at {}.'.format(len(feeds),n_buses,(end - start), dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    return
+
 
 # with help from https://realpython.com/introduction-to-mongodb-and-python/
 class MongoLake():
 
-    def __init__(self, python_env, localhost_mode, archive_mode):
+    def __init__(self, environment):
         self.uid = uuid4().hex
-        self.archive_mode = archive_mode
-        if python_env == "production" :
-            self.db_host = "db"
-        if python_env == "development" or localhost_mode == True:
-            self.db_host = "localhost"
+        self.environment = environment
 
     def get_mongo_client(self):
-        return MongoClient(host=self.db_host, port=27017)
+        return MongoClient(host=config.config['db_host'], port=27017)
 
     def store_feeds(self, feeds):
         with self.get_mongo_client() as client:
@@ -90,9 +112,8 @@ class MongoLake():
             for route_report in feeds:
                 for route_id, response in route_report.items():
 
-                    # dump the response to archive
-                    if self.archive_mode == True:
-                        response_db.insert_one(response.json())
+                    # # dump the response to archive
+                    # response_db.insert_one(response.json())
 
                     # make a dict with the response
                     response_json = response.json()
@@ -206,4 +227,67 @@ class MongoLake():
             return json_util.dumps(response, indent=4)
 
 
+#-------------- Pretty JSON -------------------------------------------------------------
+# https://gitter.im/tiangolo/fastapi?at=5d381c558fe53b671dc9aa80
+import json
+import typing
+from starlette.responses import Response
+import logging
 
+class PrettyJSONResponse(Response):
+    media_type = "application/json"
+
+    def render(self, content: typing.Any) -> bytes:
+        return json.dumps(
+            content,
+            ensure_ascii=False,
+            allow_nan=False,
+            indent=4,
+            separators=(", ", ": "),
+        ).encode("utf-8")
+
+
+
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Decimal):
+            return str(o)
+        return super(DecimalEncoder, self).default(o)
+
+class DatePointer():
+
+    def __init__(self,timestamp):
+        self.timestamp = timestamp
+        self.year = timestamp.year
+        self.month = timestamp.month
+        self.day = timestamp.day
+        self.hour = timestamp.hour
+        self.purepath = self.get_purepath()
+
+    def get_purepath(self):
+        return PurePath(str(self.year),
+                        str(self.month),
+                        str(self.day),
+                        str(self.hour)
+                        )
+
+    def __repr__(self):
+        return ('-'.join([str(self.year),
+                          str(self.month),
+                          str(self.day),
+                          str(self.hour)
+                          ]))
+
+class DateRoutePointer(DatePointer):
+
+    def __init__(self,timestamp,route=None):
+        super().__init__(timestamp)
+        self.route = route
+        self.purepath = PurePath(self.purepath, self.route) #extend self.purepath inherited from parent.super()
+
+    def __repr__(self):
+        return ('-'.join([str(self.year),
+                          str(self.month),
+                          str(self.day),
+                          str(self.hour),
+                          self.route]))

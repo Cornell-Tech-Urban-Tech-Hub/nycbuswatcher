@@ -2,23 +2,21 @@ from datetime import datetime
 from fastapi import FastAPI, Query, Path
 import os
 
-from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import argparse
 import logging
 from starlette.responses import Response
 
-from common.Models import DateRoutePointer
+from common.Models import DateRoutePointer, PrettyJSONResponse, MongoLake
 from dotenv import load_dotenv
-from common.Helpers import PrettyJSONResponse
-from common.Models import MongoLake
+
 
 #--------------- INITIALIZATION ---------------
 load_dotenv()
-api_url_stem="/api/v2/nyc/"
+environment = os.environ['PYTHON_ENV']
+api_url_stem="/nyc/"
 app = FastAPI()
-templates = Jinja2Templates(directory="assets/templates")
 
 origins = ["*"]
 
@@ -40,7 +38,7 @@ app.add_middleware(
 async def get_all_buses_on_route_history(
         route: str = Query("M15", max_length=6)):
 
-    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode, False).get_all_buses_on_route_history(route)
+    content = MongoLake(environment).get_all_buses_on_route_history(route)
     return Response(content, media_type='application/json')
 
 # All Buses In Hour For Route
@@ -60,28 +58,21 @@ async def get_all_buses_on_route_single_hour(
                                                  hour=int(hour)),
                                         route.upper())
 
-    content = MongoLake(os.environ['PYTHON_ENV'], args.localhost_mode, False).get_all_buses_on_route_single_hour(date_route_pointer)
+    content = MongoLake(environment).get_all_buses_on_route_single_hour(date_route_pointer)
 
     return Response(content, media_type='application/json')
 
 
 
+# todo this code doesnt execute in the docker environment
 # main -----------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
-
-    python_env = os.environ['PYTHON_ENV']
-    print(python_env)
 
     parser = argparse.ArgumentParser(description='NYCbuswatcher v2.1 API, mongodb version')
     parser.add_argument("-v",
                         "--verbose",
                         help="increase output verbosity",
                         action="store_true")
-    parser.add_argument('-l',
-                        action="store_true",
-                        default=False,
-                        dest="localhost_mode",
-                        help="force localhost for production mode")
 
     args = parser.parse_args()
 
