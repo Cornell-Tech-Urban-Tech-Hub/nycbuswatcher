@@ -38,8 +38,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./data:/app/data
-
+      - db:/app/data
 
 #  #todo how to make this work properly on local test stack?
 #  traefik:
@@ -67,5 +66,7 @@ services:
 #    volumes:
 #      - ./data:/app/data
 #
-#volumes:
-#  traefik-public-certificates:
+
+volumes:
+  traefik-public-certificates:
+  db:
