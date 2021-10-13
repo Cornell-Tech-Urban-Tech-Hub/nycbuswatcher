@@ -52,7 +52,7 @@ services:
       - traefik.http.routers.api.tls=true
       - traefik.http.routers.api.tls.certresolver=letsencrypt
     volumes:
-      - - db:/app/data
+      - db:/app/data
 
 
 volumes:
