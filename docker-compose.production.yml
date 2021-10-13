@@ -48,7 +48,7 @@ services:
     restart: always
     labels:
       - traefik.enable=true
-      - traefik.http.routers.api.rule=Host(`api.buswatcher.org`)
+      - traefik.http.routers.api.rule=Host(`test.buswatcher.org`)
       - traefik.http.routers.api.tls=true
       - traefik.http.routers.api.tls.certresolver=letsencrypt
     volumes:
