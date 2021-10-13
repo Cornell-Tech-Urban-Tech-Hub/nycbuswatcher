@@ -1,5 +1,4 @@
 import argparse
-import time
 import logging
 from pathlib import Path
 
@@ -48,6 +47,7 @@ if __name__ == "__main__":
 
         try:
             while True:
+                import time
                 time.sleep(2)
         except (KeyboardInterrupt, SystemExit):
             scheduler.shutdown()
