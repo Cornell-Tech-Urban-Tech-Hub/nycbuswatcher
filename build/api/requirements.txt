@@ -8,3 +8,4 @@ pymongo
 python-dotenv
 uvicorn
 requests
+trio

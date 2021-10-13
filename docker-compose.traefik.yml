@@ -30,42 +30,30 @@ services:
       - ./build/mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro #bug may be unnecessary for authentication but useful for creating an index?
 
 
+  traefik:
+    image: traefik:v2.3
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - traefik-public-certificates:/certificates
+
   api:
     build:
       context: .
       dockerfile: ./build/api/Dockerfile
     restart: always
-    ports:
-      - 80:80
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.api.rule=Host(`api.buswatcher.org`)
+      - traefik.http.routers.api.tls=true
+      - traefik.http.routers.api.tls.certresolver=letsencrypt
     volumes:
-      - db:/app/data
+      - - db:/app/data
 
-#  #todo how to make this work properly on local test stack?
-#  traefik:
-#    image: traefik:v2.3
-#    ports:
-#      - 80:80
-#      - 443:443
-#    restart: always
-#    volumes:
-#      - /var/run/docker.sock:/var/run/docker.sock:ro
-#      - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
-#      - traefik-public-certificates:/certificates
-#
-#  api:
-#    build:
-#      context: .
-#      dockerfile: ./build/api/Dockerfile
-#    restart: always
-#    labels:
-#      - traefik.enable=true
-#      - traefik.http.routers.api.rule=Host(`api.buswatcher.org`)
-#      - traefik.http.routers.api.tls=true
-#      - traefik.http.routers.api.tls.certresolver=letsencrypt
-#      # - traefik.port=8000
-#    volumes:
-#      - ./data:/app/data
-#
 
 volumes:
   traefik-public-certificates:
