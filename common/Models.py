@@ -3,6 +3,8 @@ import pickle
 from dateutil import parser
 from decimal import Decimal
 
+import urllib.parse
+
 from datetime import date, datetime, timedelta
 from pathlib import Path, PurePath
 from uuid import uuid4
@@ -100,7 +102,13 @@ class MongoLake():
         self.environment = environment
 
     def get_mongo_client(self):
-        return MongoClient(host=config.config['db_host'], port=27017)
+        hostname = os.getenv("DB_HOST")
+        username = os.getenv("DB_USERNAME")
+        password = urllib.parse.quote(os.getenv("DB_PASSWORD")) # escape @ in password
+        db_url =f"mongodb+srv://{username}:{password}@{hostname}/buses?retryWrites=true&w=majority"
+        print(db_url)
+        return MongoClient(db_url)
+
 
     def store_feeds(self, feeds):
         with self.get_mongo_client() as client:
