@@ -1,0 +1,53 @@
+# after https://towardsdatascience.com/how-to-deploy-a-secure-api-with-fastapi-docker-and-traefik-b1ca065b100f
+# github https://github.com/ahmedbesbes/fastapi-ssl
+
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./build/api/Dockerfile
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.api.rule=Host(`api.buswatcher.org`)
+      - traefik.http.routers.api.tls=true
+      - traefik.http.routers.api.tls.certresolver=letsencrypt
+      # - traefik.port=8000
+    volumes:
+      - ./data:/app/data
+
+  acquire:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./build/acquire/Dockerfile
+    volumes:
+      - ./data:/app/data
+    command:
+      python3 /app/acquire.py
+
+  traefik:
+    image: traefik:v2.3
+    ports:
+      - 80:80 #bug
+      - 443:443
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
+      - traefik-public-certificates:/certificates
+
+volumes:
+  traefik-public-certificates:
+
+# bug traefik seems to forward to port 80 on the api container not 8000
+#traefik_1  | time="2021-10-08T02:27:08Z" level=info msg="Configuration loaded from file: /etc/traefik/traefik.toml"
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:27:22 +0000] "GET /docs HTTP/1.1" 301 17 "-" "-" 1 "web-to-websecure@internal" "-" 3ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:27:27 +0000] "GET /docs HTTP/2.0" 502 11 "-" "-" 2 "api@docker" "http://172.30.0.5:80" 3ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:27:27 +0000] "GET /favicon.ico HTTP/2.0" 502 11 "-" "-" 3 "api@docker" "http://172.30.0.5:80" 0ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:27:59 +0000] "GET /docs HTTP/2.0" 502 11 "-" "-" 4 "api@docker" "http://172.30.0.5:80" 0ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:28:00 +0000] "GET /favicon.ico HTTP/2.0" 502 11 "-" "-" 5 "api@docker" "http://172.30.0.5:80" 0ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:28:05 +0000] "GET /docs HTTP/2.0" 502 11 "-" "-" 6 "api@docker" "http://172.30.0.5:80" 0ms
+#  traefik_1  | 108.53.39.70 - - [08/Oct/2021:02:28:05 +0000] "GET /favicon.ico HTTP/2.0" 502 11 "-" "-" 7 "api@docker" "http://172.30.0.5:80" 0ms
