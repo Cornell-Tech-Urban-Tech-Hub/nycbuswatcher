@@ -43,8 +43,23 @@ services:
       - $PWD/build/traefik/traefik.toml:/etc/traefik/traefik.toml
       - traefik-public-certificates:/certificates
 
+  # for data recovery work nov 2021
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: bustime
+      MYSQL_DATABASE: buses
+      MYSQL_USER: nycbuswatcher
+      MYSQL_PASSWORD: bustime
+      TZ: America/New_York
+    volumes:
+      - bus_database:/var/lib/mysql
+
+
 volumes:
   traefik-public-certificates:
+  bus_database:
 
 # bug traefik seems to forward to port 80 on the api container not 8000
 #traefik_1  | time="2021-10-08T02:27:08Z" level=info msg="Configuration loaded from file: /etc/traefik/traefik.toml"
